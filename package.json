@@ -1,16 +1,16 @@
 {
-  "name": "monorepo-template",
+  "name": "@arvinxu/components",
   "private": true,
   "author": "arvinxx(arvinx@foxmail.com)",
-  "description": "monorepo develop template",
+  "description": "personal components",
   "workspaces": [
     "packages/*"
   ],
-  "homepage": "https://github.com/arvinxx/monorepo-template#readme",
+  "homepage": "https://github.com/arvinxx/components#readme",
   "bugs": {
-    "url": "https://github.com/arvinxx/monorepo-template"
+    "url": "https://github.com/arvinxx/components"
   },
-  "repository": "git+https://github.com/arvinxx/monorepo-template.git",
+  "repository": "git+https://github.com/arvinxx/components.git",
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"yarn api:dev\" \"yarn site:dev\"",
@@ -68,11 +68,11 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@types/classnames": "^2.2.7",
     "@types/fs-extra": "^9.0.1",
-    "@types/jest": "^26.0.0",
+    "@types/jest": "^26.0.20",
     "@types/jsdom": "^16.2.3",
     "@types/node": "^14.14.10",
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.1",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
     "@types/uuid": "^8.3.0",
     "@umijs/fabric": "^2.2.2",
     "@umijs/preset-react": "1.x",
