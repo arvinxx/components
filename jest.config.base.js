@@ -6,8 +6,7 @@ module.exports = {
 
   verbose: true,
   moduleNameMapper: {
-    '@arvinxu/modules-foo': '<rootDir>/packages/foo/src',
-    '@arvinxu/modules-bar': '<rootDir>/packages/bar/src',
+    '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
   },
   rootDir: path.resolve(__dirname, '.'),
   globals: {

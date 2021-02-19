@@ -1,8 +1,8 @@
 const base = require('../../jest.config.base');
 
-const packageName = '@arvinxu/modules-foo';
+const packageName = '@arvinxu/float-label-input';
 
-const root = '<rootDir>/packages/foo';
+const root = '<rootDir>/packages/float-label-input';
 
 module.exports = {
   ...base,

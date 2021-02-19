@@ -3,5 +3,5 @@ module.exports = {
   cjs: 'babel',
   esm: 'babel',
   target: 'node',
-  extraBabelPlugins: ['add-module-exports'],
+  extraBabelPlugins: [['import', { libraryName: 'antd', style: true }]],
 };
