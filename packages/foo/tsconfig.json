@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    /* 模块导入配置项 */
+    "esModuleInterop": true
+  }
+}

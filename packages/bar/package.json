@@ -1,0 +1,25 @@
+{
+  "name": "@arvinxu/modules-bar",
+  "version": "1.0.0",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "build": "father-build",
+    "test": "jest",
+    "test:update": "jest -u",
+    "cov": "jest --coverage",
+    "clean": "rm -rf es lib dist build coverage .umi"
+  }
+}
