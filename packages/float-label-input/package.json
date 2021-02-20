@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "father-build && webpack",
-    "test": "jest",
+    "test": "umi-test",
     "test:update": "jest -u",
     "cov": "jest --coverage",
     "clean": "rm -rf es lib dist build coverage .umi"

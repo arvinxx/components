@@ -13,7 +13,7 @@
     "target": "es5",
     "module": "CommonJS",
     "sourceMap": true,
-    "lib": ["ES2020"],
+    "lib": ["DOM", "ES2020"],
     //
     /* Alias 路径 */
     "baseUrl": ".",

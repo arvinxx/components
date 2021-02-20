@@ -6,6 +6,6 @@
     "skipLibCheck": true,
     /* 模块导入配置项 */
     "esModuleInterop": true,
-    "types": ["../../types"]
+    "types": ["../../types", "@types/jest"]
   }
 }
