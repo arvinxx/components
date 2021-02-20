@@ -1,11 +1,8 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  title: 'monorepo-template',
+  title: '@arvinxu/components',
   mode: 'site',
-  // 部署在非根目录时, base 和 publicPath 都需要配置
-  base: '/',
-  publicPath: '/',
   extraBabelPlugins: [
     [
       'import',
@@ -17,10 +14,10 @@ export default defineConfig({
     ],
   ],
   navs: [
-    { title: '指南', path: '/guide' },
+    null,
     {
       title: 'GitHub',
-      path: 'https://github.com/arvinxx/monorepo-template',
+      path: 'https://github.com/arvinxx/components',
     },
   ],
   dynamicImport: {
