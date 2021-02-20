@@ -3523,7 +3523,7 @@
     semver "^7.1.2"
     tempy "^1.0.0"
 
-"@semantic-release/release-notes-generator@^9.0.0", "@semantic-release/release-notes-generator@^9.0.1":
+"@semantic-release/release-notes-generator@^9.0.0":
   version "9.0.1"
   resolved "https://registry.npm.taobao.org/@semantic-release/release-notes-generator/download/@semantic-release/release-notes-generator-9.0.1.tgz#732d285d103064f2a64f08a32031551ebb4f918b"
   integrity sha1-cy0oXRAwZPKmTwijIDFVHrtPkYs=
@@ -5876,11 +5876,6 @@ anymatch@^3.0.3, anymatch@~3.1.1:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-app-root-path@~3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npm.taobao.org/app-root-path/download/app-root-path-3.0.0.tgz#210b6f43873227e18a4b810a032283311555d5ad"
-  integrity sha1-IQtvQ4cyJ+GKS4EKAyKDMRVV1a0=
-
 append-buffer@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/append-buffer/download/append-buffer-1.0.2.tgz#d8220cf466081525efea50614f3de6514dfa58f1"
@@ -7765,14 +7760,6 @@ commander@^6.1.0, commander@^6.2.0:
   resolved "https://registry.npm.taobao.org/commander/download/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha1-B5LraC37wyWZm7K4T93duhEKxzw=
 
-commitlint-config-cz@^0.13.1:
-  version "0.13.2"
-  resolved "https://registry.npm.taobao.org/commitlint-config-cz/download/commitlint-config-cz-0.13.2.tgz#83f98a1217fb9e1e7cedd6d1d4fdb2d1492a867e"
-  integrity sha1-g/mKEhf7nh587dbR1P2y0Ukqhn4=
-  dependencies:
-    app-root-path "~3.0.0"
-    lodash.clonedeep "~4.5.0"
-
 commitlint-config-gitmoji@^2.2.1:
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/commitlint-config-gitmoji/download/commitlint-config-gitmoji-2.2.1.tgz#f42e247953f99cd328417956eef20c72f9926910"
@@ -8029,7 +8016,7 @@ conventional-changelog-core@^3.1.6:
     read-pkg-up "^3.0.0"
     through2 "^3.0.0"
 
-conventional-changelog-gitmoji-config@^1.4.0:
+conventional-changelog-gitmoji-config@1.4.0:
   version "1.4.0"
   resolved "https://registry.npm.taobao.org/conventional-changelog-gitmoji-config/download/conventional-changelog-gitmoji-config-1.4.0.tgz#aeaae17aca37ca04b771e19eaed305fb25311c5c"
   integrity sha1-rqrheso3ygS3ceGertMF+yUxHFw=
@@ -21116,6 +21103,15 @@ select@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/select/download/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
   integrity sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
+
+semantic-release-config-gitmoji-module@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji-module/download/semantic-release-config-gitmoji-module-1.0.1.tgz?cache=0&sync_timestamp=1613809469771&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemantic-release-config-gitmoji-module%2Fdownload%2Fsemantic-release-config-gitmoji-module-1.0.1.tgz#a8cd2b709bc123a4bee4487a7b2d0aa4ddcb0cd7"
+  integrity sha1-qM0rcJvBI6S+5Eh6ey0KpN3LDNc=
+  dependencies:
+    "@semantic-release/changelog" "^5.0.1"
+    "@semantic-release/git" "^9.0.0"
+    conventional-changelog-gitmoji-config "1.4.0"
 
 semantic-release@^17.3.0, semantic-release@^17.3.7:
   version "17.3.9"
