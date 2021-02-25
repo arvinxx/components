@@ -1,18 +1,17 @@
+const {
+  default: umiConfig,
+} = require('@umijs/test/lib/createDefaultConfig/createDefaultConfig');
+
+const defaultConfig = umiConfig(process.cwd(), {});
+
 const path = require('path');
 
 module.exports = {
-  preset: 'ts-jest',
-
-  // setupFiles: ['./tests/setupTests.ts'],
-
-  verbose: true,
+  ...defaultConfig,
+  setupFiles: [...defaultConfig.setupFiles],
   moduleNameMapper: {
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
+    '@arvinxu/page-loading': '<rootDir>/packages/page-loading/src',
   },
   rootDir: path.resolve(__dirname, '.'),
-  globals: {
-    'ts-jest': {
-      diagnostics: false,
-    },
-  },
 };

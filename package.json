@@ -13,7 +13,7 @@
   "repository": "git+https://github.com/arvinxx/components.git",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"yarn api:dev\" \"yarn site:dev\"",
+    "start": "yarn docs:dev",
     "build": "father-build && yarn build:webpack",
     "build:webpack": "lerna run webpack",
     "---------": "",
