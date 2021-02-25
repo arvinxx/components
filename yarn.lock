@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@ahooksjs/use-request@^2.0.0":
+"@ahooksjs/use-request@^2.0.0", "@ahooksjs/use-request@^2.8.3":
   version "2.8.3"
   resolved "https://registry.npm.taobao.org/@ahooksjs/use-request/download/@ahooksjs/use-request-2.8.3.tgz?cache=0&sync_timestamp=1612179679669&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40ahooksjs%2Fuse-request%2Fdownload%2F%40ahooksjs%2Fuse-request-2.8.3.tgz#9b7eff972658497473f61ceb89a268d665e28aeb"
   integrity sha1-m37/lyZYSXRz9hzriaJo1mXiius=
@@ -4107,6 +4107,11 @@
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
 
+"@types/js-cookie@^2.2.6":
+  version "2.2.6"
+  resolved "https://registry.npm.taobao.org/@types/js-cookie/download/@types/js-cookie-2.2.6.tgz#f1a1cb35aff47bc5cfb05cb0c441ca91e914c26f"
+  integrity sha1-8aHLNa/0e8XPsFywxEHKkekUwm8=
+
 "@types/jsdom@^16.2.3":
   version "16.2.6"
   resolved "https://registry.npm.taobao.org/@types/jsdom/download/@types/jsdom-16.2.6.tgz#9ddf0521e49be5365797e690c3ba63148e562c29"
@@ -5564,6 +5569,22 @@ aggregate-error@^3.0.0:
   dependencies:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
+
+ahooks@^2.9.6:
+  version "2.9.6"
+  resolved "https://registry.npm.taobao.org/ahooks/download/ahooks-2.9.6.tgz#afde34cc7af722da1c724fddf75c9191672ac2f5"
+  integrity sha1-r940zHr3Itocck/d91yRkWcqwvU=
+  dependencies:
+    "@ahooksjs/use-request" "^2.8.3"
+    "@types/js-cookie" "^2.2.6"
+    dayjs "^1.9.1"
+    intersection-observer "^0.7.0"
+    js-cookie "^2.2.1"
+    lodash.debounce "^4.0.8"
+    lodash.isequal "^4.5.0"
+    lodash.throttle "^4.1.1"
+    resize-observer-polyfill "^1.5.1"
+    screenfull "^5.0.0"
 
 airbnb-prop-types@^2.16.0:
   version "2.16.0"
@@ -8718,6 +8739,11 @@ dateformat@^3.0.0:
   version "3.0.3"
   resolved "https://registry.npm.taobao.org/dateformat/download/dateformat-3.0.3.tgz?cache=0&sync_timestamp=1612048492392&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdateformat%2Fdownload%2Fdateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
   integrity sha1-puN0maTZqc+F71hyBE1ikByYia4=
+
+dayjs@^1.9.1:
+  version "1.10.4"
+  resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.10.4.tgz?cache=0&sync_timestamp=1611309982734&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdayjs%2Fdownload%2Fdayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
+  integrity sha1-jlRKm4aD9heD9XCYCoqA6vVKseI=
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
   version "2.6.9"
@@ -14260,6 +14286,11 @@ joi2types@~1.1.0:
   integrity sha1-ufLMUEqbhuI57/judEwNT8CHGUc=
   dependencies:
     json-schema-to-typescript "^10.1.2"
+
+js-cookie@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/js-cookie/download/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
+  integrity sha1-aeEG3F1YBolFYpAqpbrsN0Tpsrg=
 
 js-levenshtein@^1.1.3:
   version "1.1.6"

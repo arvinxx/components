@@ -1,6 +1,6 @@
 {
   "name": "@arvinxu/float-label-input",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "files": [
     "lib",
     "es"
@@ -14,11 +14,11 @@
     "access": "public"
   },
   "dependencies": {
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "ahooks": "^2.9.6"
   },
   "peerDependencies": {
     "antd": "^4.12.3",
-    "ahooks": "^2.9.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
