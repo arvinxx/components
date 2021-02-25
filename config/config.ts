@@ -1,7 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  title: '@arvinxu/components',
+  title: '空谷的设计组件',
   mode: 'site',
   extraBabelPlugins: [
     [
