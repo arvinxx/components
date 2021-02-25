@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/page-loading [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.0.1...@arvinxu/page-loading@1.0.2) (2021-02-25)
+
+
+### ✅ 测试
+
+* 修复测试 ([dde7549](https://github.com/arvinxx/components/commit/dde7549))
+
+
+### 💄 样式
+
+* 优化组件背景色 ([95cedb7](https://github.com/arvinxx/components/commit/95cedb7))
+
 ## @arvinxu/page-loading [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.0.0...@arvinxu/page-loading@1.0.1) (2021-02-25)
 
 
