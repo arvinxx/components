@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/page-loading [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.0.0...@arvinxu/page-loading@1.0.1) (2021-02-25)
+
+
+### 👷 构建系统
+
+* 补充模块相关链接信息 ([c614d4c](https://github.com/arvinxx/components/commit/c614d4c))
+
 # @arvinxu/page-loading 1.0.0 (2021-02-25)
 
 
