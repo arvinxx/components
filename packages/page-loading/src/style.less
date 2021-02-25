@@ -1,0 +1,48 @@
+@loading-color: #1890ff;
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.avx-page-loading {
+  &-container {
+    z-index: 1000;
+    display: flex;
+    height: 100%;
+  }
+
+  &-fullscreen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 36px;
+    height: 36px;
+    margin: auto;
+  }
+
+  &-item {
+    width: 35%;
+    height: 35%;
+    animation: pulse 0.75s ease-in infinite alternate;
+  }
+
+  &-animation-delay {
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+  }
+}

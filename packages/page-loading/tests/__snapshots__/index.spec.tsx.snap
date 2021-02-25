@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageLoading 不带加载条 1`] = `
+<div>
+  <div
+    class="avx-page-loading-container"
+    id="avx-page-loading-container"
+    style="background: rgb(243, 244, 246);"
+  >
+    <div
+      class="avx-page-loading-content"
+    >
+      <div
+        class="avx-page-loading-item"
+        style="background: rgb(24, 144, 255);"
+      />
+      <div
+        class="avx-page-loading-item avx-page-loading-animation-delay"
+        style="background: rgb(24, 144, 255);"
+      />
+      <div
+        class="avx-page-loading-item avx-page-loading-animation-delay"
+        style="background: rgb(24, 144, 255);"
+      />
+      <div
+        class="avx-page-loading-item"
+        style="background: rgb(24, 144, 255);"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PageLoading 默认状态 1`] = `
+<div>
+  <div
+    class="avx-page-loading-container nprogress-custom-parent"
+    id="avx-page-loading-container"
+    style="background: rgb(243, 244, 246);"
+  >
+    <div
+      class="avx-page-loading-content"
+    >
+      <div
+        class="avx-page-loading-item"
+        style="background: rgb(24, 144, 255);"
+      />
+      <div
+        class="avx-page-loading-item avx-page-loading-animation-delay"
+        style="background: rgb(24, 144, 255);"
+      />
+      <div
+        class="avx-page-loading-item avx-page-loading-animation-delay"
+        style="background: rgb(24, 144, 255);"
+      />
+      <div
+        class="avx-page-loading-item"
+        style="background: rgb(24, 144, 255);"
+      />
+    </div>
+    <div
+      id="nprogress"
+    >
+      <div
+        class="bar"
+        role="bar"
+        style="transition: all 200ms ease; transform: translate3d(-100%,0,0); margin-left: -82.8%;"
+      >
+        <div
+          class="peg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
