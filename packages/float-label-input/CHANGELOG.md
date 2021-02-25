@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/float-label-input [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.0.1...@arvinxu/float-label-input@1.0.2) (2021-02-25)
+
+
+### 👷 构建系统
+
+* 重新 build 发布 ([83100ed](https://github.com/arvinxx/components/commit/83100ed))
+
 ## @arvinxu/float-label-input [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.0.0...@arvinxu/float-label-input@1.0.1) (2021-02-25)
 
 
