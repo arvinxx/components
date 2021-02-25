@@ -5,6 +5,20 @@
 
 ### 🎫 杂项
 
+* **自动发布**: @arvinxu/float-label-input@1.0.1 [skip ci] ([468a851](https://github.com/arvinxx/components/commit/468a851))
+* 优化打包配置 ([c4aaa4e](https://github.com/arvinxx/components/commit/c4aaa4e))
+
+
+### 👷 构建系统
+
+* 修复组件 build 配置项 ([90217ab](https://github.com/arvinxx/components/commit/90217ab))
+* 补充模块相关链接信息 ([c614d4c](https://github.com/arvinxx/components/commit/c614d4c))
+
+## @arvinxu/float-label-input [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.0.0...@arvinxu/float-label-input@1.0.1) (2021-02-25)
+
+
+### 🎫 杂项
+
 * 优化打包配置 ([c4aaa4e](https://github.com/arvinxx/components/commit/c4aaa4e))
 
 
