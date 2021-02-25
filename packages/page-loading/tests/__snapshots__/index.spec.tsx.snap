@@ -5,7 +5,7 @@ exports[`PageLoading 不带加载条 1`] = `
   <div
     class="avx-page-loading-container"
     id="avx-page-loading-container"
-    style="background: rgb(243, 244, 246);"
+    style="background: rgb(245, 245, 245);"
   >
     <div
       class="avx-page-loading-content"
@@ -36,7 +36,7 @@ exports[`PageLoading 默认状态 1`] = `
   <div
     class="avx-page-loading-container nprogress-custom-parent"
     id="avx-page-loading-container"
-    style="background: rgb(243, 244, 246);"
+    style="background: rgb(245, 245, 245);"
   >
     <div
       class="avx-page-loading-content"
