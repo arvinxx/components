@@ -29,15 +29,11 @@
 [coverage]: https://codecov.io/gh/arvinxx/components/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/arvinxx/components/branch/master
 
-## 使用案例
+## Why?
 
-- [Gitmoji Commit Workflow][gitmoji-commit-workflow]
-
-[gitmoji-commit-workflow]: https://github.com/arvinxx/gitmoji-commit-workflow
-
-## 快速上手
-
-使用指南: ➡️ [传送门](https://components.vercel.app/guide)
+- 做过的设计挺多, 但是缺少总结
+- 业务组件如果可以沉淀,那么未来可以给自己复用
+- 终身计划的一环
 
 ## License
 
