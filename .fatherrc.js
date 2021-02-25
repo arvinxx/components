@@ -2,6 +2,6 @@ module.exports = {
   entry: 'src/index.ts',
   cjs: 'babel',
   esm: 'babel',
-  target: 'node',
+  lessInBabelMode: true,
   extraBabelPlugins: [['import', { libraryName: 'antd', style: true }]],
 };
