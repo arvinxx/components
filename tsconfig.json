@@ -18,7 +18,8 @@
     /* Alias 路径 */
     "baseUrl": ".",
     "paths": {
-      "@arvinxu/float-label-input": ["./packages/float-label-input/src"]
+      "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
+      "@arvinxu/page-loading": ["./packages/page-loading/src"]
     },
     /* 类型 */
     "skipLibCheck": true

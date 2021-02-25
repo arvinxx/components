@@ -1,0 +1,30 @@
+{
+  "name": "@arvinxu/page-loading",
+  "version": "0.0.0",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "dependencies": {
+    "nprogress": "^0.2.0",
+    "insert-css": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/nprogress": "^0.2.0",
+    "@types/insert-css": "^2.0.0"
+  },
+  "scripts": {
+    "build": "father-build && webpack",
+    "test": "jest",
+    "test:update": "jest -u",
+    "prepublishOnly": "yarn build",
+    "cov": "jest --coverage",
+    "clean": "rm -rf es lib dist build coverage .umi"
+  }
+}
