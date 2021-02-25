@@ -1,11 +1,10 @@
 import type { CSSProperties } from 'react';
-import React, { useEffect } from 'react';
+import React from 'react';
 import classNames from 'classnames';
-import { insertCss } from 'insert-css';
 
 import 'nprogress/nprogress.css';
 
-import { useProgress, progressColor } from './useProgress';
+import { useProgress } from './useProgress';
 import './style.less';
 
 const clsPrefix = 'avx-page-loading';
@@ -45,15 +44,10 @@ const PageLoading: React.FC<PageLoadingProps> = ({
   fullscreen,
   color = '#1890ff',
   id = 'avx-page-loading-container',
-  backgroundColor = '#f3f4f6',
+  backgroundColor = '#f5f5f5',
 }) => {
-  // 控制 progress 颜色
-  useEffect(() => {
-    insertCss(progressColor(color));
-  }, [color]);
-
   // 控制 Progress 显示
-  useProgress(id, progress);
+  useProgress(id, color, progress);
 
   const colorStyle: CSSProperties = { background: color };
 
