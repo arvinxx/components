@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "father-build && webpack",
-    "test": "umi-test",
+    "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "yarn build",
     "cov": "jest --coverage",
