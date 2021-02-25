@@ -35,6 +35,10 @@
 - 业务组件如果可以沉淀,那么未来可以给自己复用
 - 终身计划的一环
 
+## 详情
+
+https://components.arvinx.com/
+
 ## License
 
 [MIT](./LICENSE) ® Arvin Xu
