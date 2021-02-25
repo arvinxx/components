@@ -21063,10 +21063,10 @@ select@^1.1.2:
   resolved "https://registry.npm.taobao.org/select/download/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
   integrity sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
 
-semantic-release-config-gitmoji-module@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji-module/download/semantic-release-config-gitmoji-module-1.0.1.tgz?cache=0&sync_timestamp=1613809469771&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemantic-release-config-gitmoji-module%2Fdownload%2Fsemantic-release-config-gitmoji-module-1.0.1.tgz#a8cd2b709bc123a4bee4487a7b2d0aa4ddcb0cd7"
-  integrity sha1-qM0rcJvBI6S+5Eh6ey0KpN3LDNc=
+semantic-release-config-gitmoji-module@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji-module/download/semantic-release-config-gitmoji-module-1.1.0.tgz#73dd666297b81371595eb8146631d5f3d02def86"
+  integrity sha1-c91mYpe4E3FZXrgUZjHV89At74Y=
   dependencies:
     "@semantic-release/changelog" "^5.0.1"
     "@semantic-release/git" "^9.0.0"
