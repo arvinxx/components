@@ -1,5 +1,27 @@
 # Changelog
 
+## @arvinxu/page-loading [1.1.1](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.0...@arvinxu/page-loading@1.1.1) (2021-02-26)
+
+
+### ✅ 测试
+
+* 补充测试 ([738fa46](https://github.com/arvinxx/components/commit/738fa46))
+
+
+### 🎫 杂项
+
+* 清理代码 ([fd3f699](https://github.com/arvinxx/components/commit/fd3f699))
+
+
+### 🐛 修复
+
+* 修正非全屏时组件的 z-index ([9a18b17](https://github.com/arvinxx/components/commit/9a18b17))
+
+
+### 📝 文档
+
+* 更新文档 ([73a2d9b](https://github.com/arvinxx/components/commit/73a2d9b))
+
 # @arvinxu/page-loading [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.0.2...@arvinxu/page-loading@1.1.0) (2021-02-26)
 
 
