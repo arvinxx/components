@@ -37,7 +37,7 @@
 
 ## 详情
 
-https://components.arvinx.com/
+[组件库](https://components.arvinx.com/components)
 
 ## License
 
