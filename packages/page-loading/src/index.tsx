@@ -34,7 +34,7 @@ export interface PageLoadingProps {
   backgroundColor?: string;
 
   /**
-   * 该组件的 id
+   * 进度条 id。如果存在多个 PageLoading 组件，需要指定 id 以区分进度条
    */
   id?: string;
 }
