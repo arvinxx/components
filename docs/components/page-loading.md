@@ -1,15 +1,16 @@
 ---
 title: PageLoading
 order: 1
+toc: menu
 ---
 
 # PageLoading
 
 页面加载组件
 
-## 案例
+## 使用案例
 
-### 基础样式
+### 默认用法
 
 <code src="./examples/PageLoading/Basic" />
 
@@ -20,5 +21,15 @@ order: 1
 ### 自定义颜色
 
 <code src="./examples/PageLoading/CustomColor" />
+
+### 全屏加载
+
+TODO
+
+### 加载状态控制
+
+TODO
+
+###
 
 <API src="../../packages/page-loading/src/index.tsx"></API>
