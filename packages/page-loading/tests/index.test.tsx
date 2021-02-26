@@ -12,4 +12,8 @@ describe('PageLoading', () => {
     const { container } = render(<PageLoading progress={false} />);
     expect(container).toMatchSnapshot();
   });
+  it('全屏', () => {
+    const { container } = render(<PageLoading fullscreen={true} />);
+    expect(container).toMatchSnapshot();
+  });
 });
