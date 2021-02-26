@@ -2,7 +2,7 @@ import type { CSSProperties } from 'react';
 import React from 'react';
 import classNames from 'classnames';
 
-import 'nprogress/nprogress.css';
+import 'multi-nprogress/nprogress.css';
 
 import { useProgress } from './useProgress';
 import './style.less';
@@ -23,7 +23,7 @@ export interface PageLoadingProps {
   progress?: boolean;
 
   /**
-   * 加载的颜色
+   * 主色
    * @default #1890ff
    */
   color?: string;

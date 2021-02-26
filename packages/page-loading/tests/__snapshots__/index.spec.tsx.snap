@@ -59,12 +59,13 @@ exports[`PageLoading 默认状态 1`] = `
       />
     </div>
     <div
+      class="nprogress"
       id="nprogress"
     >
       <div
         class="bar"
         role="bar"
-        style="transition: all 200ms ease; transform: translate3d(-100%,0,0); margin-left: -82.8%;"
+        style="transition: all 200ms linear; transform: translate3d(-100%,0,0); margin-left: -82%;"
       >
         <div
           class="peg"

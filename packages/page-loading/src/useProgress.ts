@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import NProgress from 'nprogress';
+import NProgress from 'multi-nprogress';
 import { insertCss } from 'insert-css';
 
 const progressColor = (color) => `
@@ -22,16 +22,18 @@ export const useProgress = (container, color, enable = true) => {
     // 如果传入 progress props 且为 false
     if (typeof enable === 'boolean' && !enable) return;
 
-    NProgress.configure({
+    const np = NProgress();
+
+    np.configure({
       showSpinner: false,
       parent: `#${container}`,
     });
 
-    NProgress.start();
-    NProgress.inc();
+    np.start();
+    np.inc();
 
     return () => {
-      NProgress.done();
+      np.done();
     };
   }, [container, enable]);
 
