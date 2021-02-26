@@ -19,7 +19,8 @@
     "baseUrl": ".",
     "paths": {
       "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
-      "@arvinxu/page-loading": ["./packages/page-loading/src"]
+      "@arvinxu/page-loading": ["./packages/page-loading/src"],
+      "@arvinxu/mindflow": ["./packages/mindflow/src"]
     },
     /* 类型 */
     "skipLibCheck": true
