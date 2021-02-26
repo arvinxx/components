@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FloatLabelInput 1`] = `
+<div>
+  <div>
+    <input
+      class="ant-input"
+      label="test"
+      type="text"
+      value=""
+    />
+    <label
+      class=""
+      style="margin-left: 8px; margin-top: -26px;"
+    >
+      test
+    </label>
+  </div>
+</div>
+`;
