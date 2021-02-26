@@ -1,7 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  title: '空谷的设计组件',
+  title: '空谷的组件库',
   mode: 'site',
   extraBabelPlugins: [
     [
