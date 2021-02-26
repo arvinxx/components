@@ -1,5 +1,17 @@
 # Changelog
 
+# @arvinxu/page-loading [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.0.2...@arvinxu/page-loading@1.1.0) (2021-02-26)
+
+
+### ✨ 新特性
+
+* 支持多 progress 实例 ([455d2f7](https://github.com/arvinxx/components/commit/455d2f7))
+
+
+### 🎫 杂项
+
+* 调整类型定义文件夹 ([475e3f9](https://github.com/arvinxx/components/commit/475e3f9))
+
 ## @arvinxu/page-loading [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.0.1...@arvinxu/page-loading@1.0.2) (2021-02-25)
 
 
