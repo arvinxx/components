@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/page-loading [1.1.2](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.1...@arvinxu/page-loading@1.1.2) (2021-03-03)
+
+
+### 🐛 修复
+
+* 修正依赖不正确的 bug ([dfc52a5](https://github.com/arvinxx/components/commit/dfc52a5))
+
 ## @arvinxu/page-loading [1.1.1](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.0...@arvinxu/page-loading@1.1.1) (2021-02-26)
 
 
