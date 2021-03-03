@@ -1,7 +1,16 @@
 module.exports = {
   entry: 'src/index.ts',
   cjs: 'babel',
-  esm: 'babel',
-  // lessInBabelMode: true,
-  extraBabelPlugins: [['import', { libraryName: 'antd', style: true }]],
+  esm: {
+    type: 'babel',
+    importLibToEs: true,
+  },
+  lessInBabelMode: true,
+  extraBabelPlugins: [
+    [
+      'import',
+      { libraryName: 'antd', libraryDirectory: 'es', style: true },
+      'antd',
+    ],
+  ],
 };
