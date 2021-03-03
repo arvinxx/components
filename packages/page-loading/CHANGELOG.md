@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/page-loading [1.1.3](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.2...@arvinxu/page-loading@1.1.3) (2021-03-03)
+
+
+### 👷 构建系统
+
+* 修正不包含 less 的 bug ([2e4e2a2](https://github.com/arvinxx/components/commit/2e4e2a2))
+
 ## @arvinxu/page-loading [1.1.2](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.1...@arvinxu/page-loading@1.1.2) (2021-03-03)
 
 
