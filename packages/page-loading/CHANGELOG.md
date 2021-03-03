@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/page-loading [1.1.4](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.3...@arvinxu/page-loading@1.1.4) (2021-03-03)
+
+
+### 👷 构建系统
+
+* 修正打包输出的 bug ([7fe1f89](https://github.com/arvinxx/components/commit/7fe1f89))
+
 ## @arvinxu/page-loading [1.1.3](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.2...@arvinxu/page-loading@1.1.3) (2021-03-03)
 
 
