@@ -1,7 +1,9 @@
 ---
 title: PageLoading
 order: 1
-toc: menu
+group:
+  title: 通用组件
+  order: 2
 ---
 
 # PageLoading
@@ -32,4 +34,4 @@ TODO
 
 ###
 
-<API src="../../packages/page-loading/src/index.tsx"></API>
+<API src="../../../packages/page-loading/src/index.tsx"></API>
