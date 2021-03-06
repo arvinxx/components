@@ -2,10 +2,18 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import TagSelector from '@arvinxu/tag-selector';
+import { smallLabel } from '../mock';
 
-test('正常渲染', () => {
-  const { container } = render(<TagSelector />);
-  expect(container).toMatchSnapshot();
+describe('TagSelector', () => {
+  test('正常渲染', () => {
+    const { container } = render(<TagSelector />);
+    expect(container).toMatchSnapshot();
+  });
+
+  it('smallLabel', () => {
+    const { container } = render(<TagSelector value={smallLabel} />);
+    expect(container).toMatchSnapshot();
+  });
 });
 
 // describe('响应操作', () => {

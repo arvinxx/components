@@ -21,7 +21,7 @@ const EditableTags: FC<IEditableTagsProps> = ({
   tagKey,
   editable,
   text,
-  selected,
+  selected = [],
 }) => {
   const editTagText = (e, key) => {
     // ({
