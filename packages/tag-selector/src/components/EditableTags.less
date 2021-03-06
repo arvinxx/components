@@ -1,0 +1,63 @@
+@import '../theme/token';
+
+.value-input {
+  align-self: center;
+  min-width: 72px;
+  max-width: 120px;
+  height: 24px;
+  margin-right: 16px;
+  padding-left: 10px;
+  font-size: @font-size-sm;
+  background-color: @base-white;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.value-container {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 4px 0;
+  margin-right: 8px;
+
+  .value-delete {
+    display: flex;
+    align-self: center;
+    margin-left: 4px;
+    color: @white-5;
+    font-size: @font-size-sm;
+    cursor: pointer;
+    opacity: 0;
+    transition: @animation-duration-base;
+
+    &:active {
+      color: @dark-2;
+      transform: scale(0.9);
+    }
+    &:hover {
+      color: @white-7;
+      transform: scale(1.1);
+    }
+  }
+  &:hover .value-delete {
+    opacity: 1;
+  }
+
+  :global {
+    .ant-tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 24px;
+      margin-right: 0;
+      padding: 0 12px;
+      &-checkable {
+        background: @base-white;
+        border: 1px solid @transBlack-6;
+      }
+      &-checkable-checked {
+        background-color: @primary-color;
+        border: 1px solid @primary-color;
+      }
+    }
+  }
+}

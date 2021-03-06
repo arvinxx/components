@@ -13,6 +13,7 @@ module.exports = {
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
     '@arvinxu/page-loading': '<rootDir>/packages/page-loading/src',
     '@arvinxu/mindflow': '<rootDir>/packages/mindflow/src',
+    '@arvinxu/tag-selector': '<rootDir>/packages/tag-selector/src',
   },
   rootDir: path.resolve(__dirname, '.'),
 };

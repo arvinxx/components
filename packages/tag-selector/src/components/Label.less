@@ -1,0 +1,39 @@
+@import '../theme/token';
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 136px;
+  text-align: right;
+  .delete {
+    color: @white-5;
+    cursor: pointer;
+    opacity: 0;
+    transition: @animation-duration-base;
+    &:active {
+      color: @dark-2;
+      transform: scale(0.9);
+    }
+    &:hover {
+      color: @white-7;
+      transform: scale(1.1);
+    }
+  }
+  &:hover .delete {
+    opacity: 1;
+  }
+}
+
+.exist-key {
+  .container;
+
+  max-width: 112px;
+  height: 28px;
+  margin-left: 4px;
+  background: none;
+  &:hover,
+  &:focus {
+    background-color: @base-white;
+  }
+}

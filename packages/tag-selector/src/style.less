@@ -1,0 +1,47 @@
+@import './theme/token';
+
+.avx-tag-selector {
+  &-container {
+    padding: @padding-lg @padding-md @padding-md @padding-md;
+    :global {
+      .ant-input {
+        border-color: transparent;
+        box-shadow: none;
+        &:hover {
+          border: solid 1px @white-5;
+          box-shadow: none;
+        }
+        &:focus {
+          color: @text-color;
+          border: solid 1px @white-7;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  &-key-container {
+    display: flex;
+    align-items: center;
+    min-height: 32px;
+    &:not(:last-child) {
+      margin-bottom: @padding-md;
+    }
+  }
+
+  &-value-container {
+    display: inline-flex;
+    //max-width: 480px;
+    flex-wrap: wrap;
+    margin-left: @padding-md;
+  }
+
+  &-add-key {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 136px;
+    padding-right: 11px;
+    text-align: right;
+    background: none;
+  }
+}

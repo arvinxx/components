@@ -20,7 +20,9 @@
     "paths": {
       "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
       "@arvinxu/page-loading": ["./packages/page-loading/src"],
-      "@arvinxu/mindflow": ["./packages/mindflow/src"]
+      "@arvinxu/mindflow": ["./packages/mindflow/src"],
+      "@arvinxu/tag-selector": ["./packages/tag-selector/src"],
+      "@arvinxu/tag-selector/*": ["./packages/tag-selector/src/*"]
     },
     /* 类型 */
     "skipLibCheck": true
