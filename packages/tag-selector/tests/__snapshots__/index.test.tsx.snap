@@ -147,7 +147,7 @@ exports[`TagSelector smallLabel 1`] = `
 </div>
 `;
 
-exports[`正常渲染 1`] = `
+exports[`TagSelector 正常渲染 1`] = `
 <div>
   <div
     class="avx-tag-selector-container"

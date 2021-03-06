@@ -24,12 +24,14 @@ const EditableTags: FC<IEditableTagsProps> = ({
   selected = [],
 }) => {
   const editTagText = (e, key) => {
+    console.log(e, key);
     // ({
     //   type: 'label/changeTagText',
     //   payload: { key, text: e.target.value },
     // });
   };
   const deleteTag = (key) => {
+    console.log(key);
     // ({
     //   type: 'label/deleteTag',
     //   payload: key,
@@ -37,12 +39,14 @@ const EditableTags: FC<IEditableTagsProps> = ({
   };
 
   const showTagEdit = (key) => {
+    console.log(key);
     // ({
     //   type: 'label/showTagEdit',
     //   payload: key,
     // });
   };
   const hideTagEdit = (key) => {
+    console.log(key);
     // ({
     //   type: 'label/hideTagEdit',
     //   payload: key,
@@ -50,6 +54,7 @@ const EditableTags: FC<IEditableTagsProps> = ({
   };
 
   const handleSelected = (key, checked) => {
+    console.log(key, checked);
     // ({
     //   type: 'label/handleSelectedTags',
     //   payload: { key, checked },

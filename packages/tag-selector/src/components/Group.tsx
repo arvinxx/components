@@ -2,38 +2,38 @@ import React, { Component } from 'react';
 import { Input, Popconfirm } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
 
-import styles from './Label.less';
+import styles from './Group.less';
 
-export interface ILabelProps {
+export interface IGroupProps {
   labelKey: string;
   value: string;
 }
-export default class Group extends Component<ILabelProps> {
-  static defaultProps: ILabelProps = {
+export default class Group extends Component<IGroupProps> {
+  static defaultProps: IGroupProps = {
     labelKey: '',
     value: '',
   };
 
   changeLabel = (e, key) => {
-    this.props.dispatch({
-      type: 'label/changeLabelText',
-      payload: { key, text: e.target.value },
-    });
+    // this.props.dispatch({
+    //   type: 'label/changeLabelText',
+    //   payload: { key, text: e.target.value },
+    // });
   };
   deleteLabel = (key) => {
-    this.props.dispatch({
-      type: 'label/deleteLabel',
-      payload: key,
-    });
+    // this.props.dispatch({
+    //   type: 'label/deleteLabel',
+    //   payload: key,
+    // });
   };
   shiftTagInput = (e) => {
     if (e.key === 'Tab') {
       e.preventDefault();
       const key = e.target.id;
-      this.props.dispatch({
-        type: 'label/showTagInput',
-        payload: key,
-      });
+      // this.props.dispatch({
+      //   type: 'label/showTagInput',
+      //   payload: key,
+      // });
     }
   };
   render() {

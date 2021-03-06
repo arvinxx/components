@@ -4,12 +4,12 @@ import { PlusOutlined } from '@ant-design/icons';
 
 import styles from './NewTag.less';
 
-export interface IValueInputProps {
+export interface INewTagProps {
   labelKey: string;
   inputVisible: boolean;
 }
-export default class NewTag extends PureComponent<IValueInputProps> {
-  static defaultProps: IValueInputProps = {
+export default class NewTag extends PureComponent<INewTagProps> {
+  static defaultProps: INewTagProps = {
     labelKey: '',
     inputVisible: false,
   };
@@ -20,12 +20,13 @@ export default class NewTag extends PureComponent<IValueInputProps> {
   };
 
   handleKeyDown = (e, key) => {
+    console.log(key);
     // 按 ESC 撤销修改并退出
     if (e.key === 'Escape') {
-      this.props.dispatch({
-        type: 'label/hideTagInput',
-        payload: key,
-      });
+      // this.props.dispatch({
+      //   type: 'label/hideTagInput',
+      //   payload: key,
+      // });
       this.setState({ text: '' });
     }
 
@@ -35,39 +36,41 @@ export default class NewTag extends PureComponent<IValueInputProps> {
       e.preventDefault();
       const { text } = this.state;
       if (text !== '') {
-        this.props.dispatch({
-          type: 'label/addTag',
-          payload: { key, text },
-        });
+        // this.props.dispatch({
+        //   type: 'label/addTag',
+        //   payload: { key, text },
+        // });
       }
       if (e.key === 'Enter') {
-        this.props.dispatch({
-          type: 'label/hideTagInput',
-          payload: key,
-        });
+        // this.props.dispatch({
+        //   type: 'label/hideTagInput',
+        //   payload: key,
+        // });
       }
       this.setState({ text: '' });
     }
   };
 
   showTagInput = (key) => {
-    this.props.dispatch({
-      type: 'label/showTagInput',
-      payload: key,
-    });
+    console.log(key);
+    // this.props.dispatch({
+    //   type: 'label/showTagInput',
+    //   payload: key,
+    // });
   };
   newTagOnBlur = (key) => {
     const { text } = this.state;
+    console.log(key);
     if (text !== '') {
-      this.props.dispatch({
-        type: 'label/addTag',
-        payload: { key, text },
-      });
+      // this.props.dispatch({
+      //   type: 'label/addTag',
+      //   payload: { key, text },
+      // });
     }
-    this.props.dispatch({
-      type: 'label/hideTagInput',
-      payload: key,
-    });
+    // this.props.dispatch({
+    //   type: 'label/hideTagInput',
+    //   payload: key,
+    // });
     this.setState({ text: '' });
   };
 
