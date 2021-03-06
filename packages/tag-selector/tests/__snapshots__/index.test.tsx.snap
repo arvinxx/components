@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`正常渲染 1`] = `
+<div>
+  <div
+    class="avx-tag-selector-container"
+  >
+    <div
+      class="avx-tag-selector-key-container"
+    >
+      <input
+        class="ant-input avx-tag-selector-add-key"
+        placeholder="添加条目"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
