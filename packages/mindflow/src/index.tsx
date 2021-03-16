@@ -4,6 +4,8 @@ import { useGraph } from './hooks/useGraph';
 import ErrorBoundary from './components/ErrorBoundary';
 import type { GraphData } from './types';
 
+import './style.less';
+
 export * from './types';
 
 export interface MindflowProps {
@@ -25,11 +27,13 @@ const Mindflow: FC<MindflowProps> = ({ data, width, height }) => {
 
   return (
     <ErrorBoundary>
-      <div
-        ref={container}
-        style={{ width: width || '100%', height: height || 400 }}
-      />
-      <div ref={minimapContainer} />
+      <div className="mindflow-container">
+        <div
+          ref={container}
+          style={{ width: width || '100%', height: height || 400 }}
+        />
+        <div ref={minimapContainer} className="mindflow-minimap" />
+      </div>
     </ErrorBoundary>
   );
 };

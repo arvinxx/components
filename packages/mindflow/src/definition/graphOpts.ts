@@ -11,8 +11,11 @@ export const graphOpts = (container, minimapCtn): Partial<Options.Manual> => ({
   background: {
     color: '#fafafa',
   },
-  panning: true,
   mousewheel: true,
-  scroller: true,
+  scroller: {
+    enabled: true,
+    pannable: true,
+    autoResize: true,
+  },
   minimap: minimapOpts(minimapCtn),
 });
