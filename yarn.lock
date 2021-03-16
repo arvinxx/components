@@ -3669,11 +3669,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/chroma-js@^2.1.3":
-  version "2.1.3"
-  resolved "https://registry.npm.taobao.org/@types/chroma-js/download/@types/chroma-js-2.1.3.tgz#0b03d737ff28fad10eb884e0c6cedd5ffdc4ba0a"
-  integrity sha1-CwPXN/8o+tEOuITgxs7dX/3Eugo=
-
 "@types/classnames@^2.2.7":
   version "2.2.11"
   resolved "https://registry.npm.taobao.org/@types/classnames/download/@types/classnames-2.2.11.tgz?cache=0&sync_timestamp=1613378392803&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fclassnames%2Fdownload%2F%40types%2Fclassnames-2.2.11.tgz#2521cc86f69d15c5b90664e4829d84566052c1cf"
@@ -6869,13 +6864,6 @@ chownr@^2.0.0:
   resolved "https://registry.npm.taobao.org/chownr/download/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha1-Fb++U9LqtM9w8YqM1o6+Wzyx3s4=
 
-chroma-js@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npm.taobao.org/chroma-js/download/chroma-js-2.1.1.tgz#413c8fbcc4c0988dc7c77bb59c4de36573b8fe97"
-  integrity sha1-QTyPvMTAmI3Hx3u1nE3jZXO4/pc=
-  dependencies:
-    cross-env "^6.0.3"
-
 ci-info@^1.5.0:
   version "1.6.0"
   resolved "https://registry.npm.taobao.org/ci-info/download/ci-info-1.6.0.tgz#2ca20dbb9ceb32d4524a683303313f0304b1e497"
@@ -7306,11 +7294,6 @@ compare-func@^2.0.0:
   dependencies:
     array-ify "^1.0.0"
     dot-prop "^5.1.0"
-
-compare-versions@^3.6.0:
-  version "3.6.0"
-  resolved "https://registry.npm.taobao.org/compare-versions/download/compare-versions-3.6.0.tgz#1a5689913685e5a87637b8d3ffca75514ec41d62"
-  integrity sha1-GlaJkTaF5ah2N7jT/8p1UU7EHWI=
 
 component-classes@^1.2.5:
   version "1.2.6"
@@ -7761,13 +7744,6 @@ crequire@1.8.1:
   version "1.8.1"
   resolved "https://registry.npm.taobao.org/crequire/download/crequire-1.8.1.tgz#ac81f204786b5f201194eb1698cf441b10a4b57d"
   integrity sha1-rIHyBHhrXyARlOsWmM9EGxCktX0=
-
-cross-env@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.npm.taobao.org/cross-env/download/cross-env-6.0.3.tgz#4256b71e49b3a40637a0ce70768a6ef5c72ae941"
-  integrity sha1-Qla3HkmzpAY3oM5wdopu9ccq6UE=
-  dependencies:
-    cross-spawn "^7.0.0"
 
 cross-env@^7.0.0:
   version "7.0.3"
@@ -11286,21 +11262,10 @@ humanize-url@^1.0.0:
     normalize-url "^1.0.0"
     strip-url-auth "^1.0.0"
 
-husky@^4.0.0:
-  version "4.3.8"
-  resolved "https://registry.npm.taobao.org/husky/download/husky-4.3.8.tgz#31144060be963fd6850e5cc8f019a1dfe194296d"
-  integrity sha1-MRRAYL6WP9aFDlzI8Bmh3+GUKW0=
-  dependencies:
-    chalk "^4.0.0"
-    ci-info "^2.0.0"
-    compare-versions "^3.6.0"
-    cosmiconfig "^7.0.0"
-    find-versions "^4.0.0"
-    opencollective-postinstall "^2.0.2"
-    pkg-dir "^5.0.0"
-    please-upgrade-node "^3.2.0"
-    slash "^3.0.0"
-    which-pm-runs "^1.0.0"
+husky@^5.1.3:
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-5.1.3.tgz#1a0645a4fe3ffc006c4d0d8bd0bcb4c98787cc9d"
+  integrity sha512-fbNJ+Gz5wx2LIBtMweJNY1D7Uc8p1XERi5KNRMccwfQA+rXlxWNSdUxswo0gT8XqxywTIw7Ywm/F4v/O35RdMg==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24:
   version "0.4.24"
@@ -15806,11 +15771,6 @@ onigasm@^2.2.5:
   dependencies:
     lru-cache "^5.1.1"
 
-opencollective-postinstall@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.npm.taobao.org/opencollective-postinstall/download/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
-  integrity sha1-eg//l49tv6TQBiOPusmO1BmMMlk=
-
 opener@^1.5.2:
   version "1.5.2"
   resolved "https://registry.npm.taobao.org/opener/download/opener-1.5.2.tgz#5d37e1f35077b9dcac4301372271afdeb2a13598"
@@ -16479,13 +16439,6 @@ pkg-dir@^4.1.0, pkg-dir@^4.2.0:
   integrity sha1-8JkTPfft5CLoHR2ESCcO6z5CYfM=
   dependencies:
     find-up "^4.0.0"
-
-pkg-dir@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npm.taobao.org/pkg-dir/download/pkg-dir-5.0.0.tgz?cache=0&sync_timestamp=1602859056682&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpkg-dir%2Fdownload%2Fpkg-dir-5.0.0.tgz#a02d6aebe6ba133a928f74aec20bafdfe6b8e760"
-  integrity sha1-oC1q6+a6EzqSj3Suwguv3+a452A=
-  dependencies:
-    find-up "^5.0.0"
 
 pkg-up@3.1.0, pkg-up@^3.1.0:
   version "3.1.0"
@@ -22593,11 +22546,6 @@ which-module@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/which-module/download/which-module-2.0.0.tgz#d9ef07dce77b9902b8a3a8fa4b31c3e3f7e6e87a"
   integrity sha1-2e8H3Od7mQK4o6j6SzHD4/fm6Ho=
-
-which-pm-runs@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/which-pm-runs/download/which-pm-runs-1.0.0.tgz#670b3afbc552e0b55df6b7780ca74615f23ad1cb"
-  integrity sha1-Zws6+8VS4LVd9rd4DKdGFfI60cs=
 
 which@^1.2.14, which@^1.2.9, which@^1.3.0, which@^1.3.1:
   version "1.3.1"
