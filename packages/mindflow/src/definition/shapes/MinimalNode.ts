@@ -1,6 +1,6 @@
 import { NodeView } from '@antv/x6';
 
-export class MinimaNode extends NodeView {
+export class MinimalNode extends NodeView {
   protected renderMarkup() {
     return this.renderJSONMarkup({
       tagName: 'rect',

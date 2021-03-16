@@ -1,22 +1,22 @@
 import type { FC } from 'react';
 import React from 'react';
 import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
-
-import type { ReactShape } from '@antv/x6-react-shape';
-import { mapColorToHex, mapTypeToColor } from '../../utils';
 import chorma from 'chroma-js';
+import type { ReactShape } from '@antv/x6-react-shape';
 
-import type { MindflowData } from '../../types';
+import { mapColorToHex, mapTypeToColor } from '../../utils';
 
-import './Node.less';
+import type { NodeData } from '../../types';
+
+import './MindNode.less';
 
 interface BaseNodeProps {
   node?: ReactShape;
 }
 
-export const Node: FC<BaseNodeProps> = ({ node }) => {
-  const data = node.getData<MindflowData>();
-  const { type, collapsed, hasChildren = true } = data;
+export const MindNode: FC<BaseNodeProps> = ({ node }) => {
+  const data = node.getData<NodeData>();
+  const { type, collapsed, hasChildren } = data;
   const baseColor = chorma(mapColorToHex(mapTypeToColor(type)));
 
   return (

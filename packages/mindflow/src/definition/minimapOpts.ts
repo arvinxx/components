@@ -1,4 +1,4 @@
-import { MinimaNode } from './shapes';
+import { MinimalNode } from './shapes';
 import type { MiniMapManager } from '@antv/x6/lib/graph/minimap';
 
 export const minimapOpts = (container): Partial<MiniMapManager.Options> => ({
@@ -13,7 +13,7 @@ export const minimapOpts = (container): Partial<MiniMapManager.Options> => ({
     // 用指定的 View 替换节点默认的 View
     getCellView(cell) {
       if (cell.isNode()) {
-        return MinimaNode;
+        return MinimalNode;
       }
     },
     // 在小地图中不渲染边

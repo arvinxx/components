@@ -1,2 +1,2 @@
-export * from './Node';
-export * from './MinimaNode';
+export * from './MindNode';
+export * from './MinimalNode';

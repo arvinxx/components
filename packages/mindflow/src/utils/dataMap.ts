@@ -55,7 +55,7 @@ export const preprocessData = (data: any) => {
     ...data,
     nodes: data.nodes.map((node) => ({
       ...node,
-      width: 160,
+      width: 180,
       height: 40,
       shape: 'react-shape',
       component: 'mind-node',

@@ -2,14 +2,14 @@ import React from 'react';
 import type { FC } from 'react';
 import { useGraph } from './hooks/useGraph';
 import ErrorBoundary from './components/ErrorBoundary';
-import type { GraphData } from './types';
+import type { GraphData, MindflowData } from './types';
 
 import './style.less';
 
 export * from './types';
 
 export interface MindflowProps {
-  data: GraphData;
+  data: GraphData<MindflowData>;
   /**
    * 宽度
    */
