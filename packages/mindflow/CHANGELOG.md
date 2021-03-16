@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.0.1...@arvinxu/mindflow@1.0.2) (2021-03-16)
+
+
+### 💄 样式
+
+* 优化 minimap 样式 ([5ccea6e](https://github.com/arvinxx/components/commit/5ccea6e))
+
 ## @arvinxu/mindflow [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.0.0...@arvinxu/mindflow@1.0.1) (2021-03-16)
 
 
