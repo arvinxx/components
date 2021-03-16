@@ -1,4 +1,4 @@
-import { mindFlowColors } from '../themes/color';
+import { mindFlowColors } from '../themes/nodeColor';
 
 /**
  * 从文本色值获得 hex
