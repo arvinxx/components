@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.0.4](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.0.3...@arvinxu/mindflow@1.0.4) (2021-03-16)
+
+
+### 🐛 修复
+
+* 修正节点注册逻辑 ([f42dde1](https://github.com/arvinxx/components/commit/f42dde1))
+
 ## @arvinxu/mindflow [1.0.3](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.0.2...@arvinxu/mindflow@1.0.3) (2021-03-16)
 
 
