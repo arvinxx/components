@@ -26,11 +26,11 @@ group:
 
 ### 全屏加载
 
-TODO
+<code src="./examples/PageLoading/Fullscreen" />
 
 ### 加载状态控制
 
-TODO
+<code src="./examples/PageLoading/LoadingState" />
 
 ###
 

@@ -16,9 +16,12 @@ const progressColor = (color) => `
   border-left-color: ${color};
 }`;
 
-export const useProgress = (container, color, enable = true) => {
+export const useProgress = (container, config) => {
+  const { color, enable = true, loading = true, fullscreen } = config;
   // 控制 Progress 显示
   useEffect(() => {
+    if (typeof loading === 'boolean' && !loading) return;
+
     // 如果传入 progress props 且为 false
     if (typeof enable === 'boolean' && !enable) return;
 
@@ -33,9 +36,14 @@ export const useProgress = (container, color, enable = true) => {
     np.inc();
 
     return () => {
-      np.done();
+      try {
+        np.done();
+        // eslint-disable-next-line no-empty
+      } catch (e) {
+        np.remove();
+      }
     };
-  }, [container, enable]);
+  }, [container, enable, loading, fullscreen]);
 
   // 控制 progress 颜色
   useEffect(() => {
