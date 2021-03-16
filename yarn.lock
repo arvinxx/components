@@ -1344,14 +1344,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.1", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.8.4":
-  version "7.12.13"
-  resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.12.13.tgz?cache=0&sync_timestamp=1612314635545&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.12.13.tgz#0a21452352b02542db0ffb928ac2d3ca7cb6d66d"
-  integrity sha1-CiFFI1KwJULbD/uSisLTyny21m0=
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.1", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.12.18"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.12.18.tgz?cache=0&sync_timestamp=1613665243059&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.12.18.tgz#af137bd7e7d9705a412b3caaf991fe6aaa97831b"
   integrity sha1-rxN71+fZcFpBKzyq+ZH+aqqXgxs=
@@ -3585,13 +3578,17 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react-hooks@^3.2.1":
-  version "3.7.0"
-  resolved "https://registry.npm.taobao.org/@testing-library/react-hooks/download/@testing-library/react-hooks-3.7.0.tgz#6d75c5255ef49bce39b6465bf6b49e2dac84919e"
-  integrity sha1-bXXFJV70m845tkZb9rSeLayEkZ4=
+"@testing-library/react-hooks@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-5.1.0.tgz#6014b7536d0e9427a1e73ce1d073c49a6af5fb3b"
+  integrity sha512-ChRyyA14e0CeVkWGp24v8q/IiWUqH+B8daRx4lGZme4dsudmMNWz+Qo2Q2NzbD2O5rAVXh2hSbS/KTKeqHYhkw==
   dependencies:
     "@babel/runtime" "^7.12.5"
-    "@types/testing-library__react-hooks" "^3.4.0"
+    "@types/react" ">=16.9.0"
+    "@types/react-dom" ">=16.9.0"
+    "@types/react-test-renderer" ">=16.9.0"
+    filter-console "^0.1.1"
+    react-error-boundary "^3.1.0"
 
 "@testing-library/react@^10.0.2":
   version "10.4.9"
@@ -4060,19 +4057,19 @@
   resolved "https://registry.npm.taobao.org/@types/range-parser/download/@types/range-parser-1.2.3.tgz?cache=0&sync_timestamp=1613379868458&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Frange-parser%2Fdownload%2F%40types%2Frange-parser-1.2.3.tgz#7ee330ba7caafb98090bece86a5ee44115904c2c"
   integrity sha1-fuMwunyq+5gJC+zoal7kQRWQTCw=
 
+"@types/react-dom@>=16.9.0", "@types/react-dom@^17.0.1":
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.2.tgz#35654cf6c49ae162d5bc90843d5437dc38008d43"
+  integrity sha512-Icd9KEgdnFfJs39KyRyr0jQ7EKhq8U6CcHRMGAS45fp5qgUvxL3ujUCfWFttUK2UErqZNj97t9gsVPNAqcwoCg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^16.9.8":
   version "16.9.11"
   resolved "https://registry.npm.taobao.org/@types/react-dom/download/@types/react-dom-16.9.11.tgz#752e223a1592a2c10f2668b215a0e0667f4faab1"
   integrity sha1-dS4iOhWSosEPJmiyFaDgZn9PqrE=
   dependencies:
     "@types/react" "^16"
-
-"@types/react-dom@^17.0.1":
-  version "17.0.1"
-  resolved "https://registry.npm.taobao.org/@types/react-dom/download/@types/react-dom-17.0.1.tgz#d92d77d020bfb083e07cc8e0ac9f933599a4d56a"
-  integrity sha1-2S130CC/sIPgfMjgrJ+TNZmk1Wo=
-  dependencies:
-    "@types/react" "*"
 
 "@types/react-helmet@^6.1.0":
   version "6.1.0"
@@ -4143,19 +4140,20 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react-test-renderer@*":
+"@types/react-test-renderer@>=16.9.0":
   version "17.0.1"
-  resolved "https://registry.npm.taobao.org/@types/react-test-renderer/download/@types/react-test-renderer-17.0.1.tgz#3120f7d1c157fba9df0118dae20cb0297ee0e06b"
-  integrity sha1-MSD30cFX+6nfARja4gywKX7g4Gs=
+  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-17.0.1.tgz#3120f7d1c157fba9df0118dae20cb0297ee0e06b"
+  integrity sha512-3Fi2O6Zzq/f3QR9dRnlnHso9bMl7weKCviFmfF6B4LS1Uat6Hkm15k0ZAQuDz+UBq6B3+g+NM6IT2nr5QgPzCw==
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^17.0.2":
-  version "17.0.2"
-  resolved "https://registry.npm.taobao.org/@types/react/download/@types/react-17.0.2.tgz#3de24c4efef902dd9795a49c75f760cbe4f7a5a8"
-  integrity sha1-PeJMTv75At2XlaScdfdgy+T3pag=
+"@types/react@*", "@types/react@>=16.9.0", "@types/react@^17.0.2":
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.3.tgz#ba6e215368501ac3826951eef2904574c262cc79"
+  integrity sha512-wYOUxIgs2HZZ0ACNiIayItyluADNbONl7kt8lkLjVK8IitMH5QMyAh75Fwhmo37r1m7L2JaFj03sIfxBVDvRAg==
   dependencies:
     "@types/prop-types" "*"
+    "@types/scheduler" "*"
     csstype "^3.0.2"
 
 "@types/react@^16", "@types/react@^16.9.43":
@@ -4192,6 +4190,11 @@
   integrity sha1-4CSL6Tbs55GoLbGlfz+198h+gXI=
   dependencies:
     "@types/node" "*"
+
+"@types/scheduler@*":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
+  integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
 
 "@types/semver@7.3.4":
   version "7.3.4"
@@ -4253,13 +4256,6 @@
   integrity sha1-W/Jcka0tezjyZLEideXJKmbYSbA=
   dependencies:
     "@types/jest" "*"
-
-"@types/testing-library__react-hooks@^3.4.0":
-  version "3.4.1"
-  resolved "https://registry.npm.taobao.org/@types/testing-library__react-hooks/download/@types/testing-library__react-hooks-3.4.1.tgz#b8d7311c6c1f7db3103e94095fe901f8fef6e433"
-  integrity sha1-uNcxHGwffbMQPpQJX+kB+P725DM=
-  dependencies:
-    "@types/react-test-renderer" "*"
 
 "@types/tough-cookie@*":
   version "4.0.0"
@@ -10193,6 +10189,11 @@ fill-range@^7.0.1:
   integrity sha1-GRmmp8df44ssfHflGYU12prN2kA=
   dependencies:
     to-regex-range "^5.0.1"
+
+filter-console@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/filter-console/-/filter-console-0.1.1.tgz#6242be28982bba7415bcc6db74a79f4a294fa67c"
+  integrity sha512-zrXoV1Uaz52DqPs+qEwNJWJFAWZpYJ47UNmpN9q4j+/EYsz85uV0DC9k8tRND5kYmoVzL0W+Y75q4Rg8sRJCdg==
 
 filter-obj@^1.1.0:
   version "1.1.0"
@@ -18693,6 +18694,13 @@ react-dom@16.x:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.19.1"
+
+react-error-boundary@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/react-error-boundary/-/react-error-boundary-3.1.1.tgz#932c5ca5cbab8ec4fe37fd7b415aa5c3a47597e7"
+  integrity sha512-W3xCd9zXnanqrTUeViceufD3mIW8Ut29BUD+S2f0eO2XCOU8b6UrJfY46RDGe5lxCJzfe4j0yvIfh0RbTZhKJw==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
 
 react-fast-compare@^3.1.1:
   version "3.2.0"
