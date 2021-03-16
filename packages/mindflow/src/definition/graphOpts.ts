@@ -11,6 +11,9 @@ export const graphOpts = (container, minimapCtn): Partial<Options.Manual> => ({
   background: {
     color: '#fafafa',
   },
+  interacting: {
+    nodeMovable: false,
+  },
   mousewheel: true,
   scroller: {
     enabled: true,

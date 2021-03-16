@@ -9,6 +9,10 @@ group:
 
 ## 基础节点
 
-<code src='./examples/Mindflow/index.tsx' />
+<code src='./examples/Mindflow/Basic.tsx' />
+
+## 带有连接的节点
+
+<code src='./examples/Mindflow/Connect.tsx' />
 
 <API src='../../../packages/mindflow/src/index.tsx'></API>

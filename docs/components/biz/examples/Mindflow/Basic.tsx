@@ -26,21 +26,22 @@ const data: GraphData<MindflowData> = {
     {
       id: 'node4',
       data: {
+        text: '这是一个 行动点 节点',
+        type: 'action',
+      },
+    },
+    {
+      id: 'node5',
+      data: {
         text:
           '这是一个超长文本节点: 永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修稧（禊）事也。',
         type: 'action',
       },
     },
   ],
-
-  edges: [
-    {
-      source: 'node1',
-      target: 'node2',
-    },
-  ],
+  edges: [],
 };
-const Simple = () => {
+const Basic = () => {
   return (
     <div>
       <Mindflow data={data} />
@@ -48,4 +49,4 @@ const Simple = () => {
   );
 };
 
-export default Simple;
+export default Basic;
