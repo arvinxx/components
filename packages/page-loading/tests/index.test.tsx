@@ -16,4 +16,18 @@ describe('PageLoading', () => {
     const { container } = render(<PageLoading fullscreen={true} />);
     expect(container).toMatchSnapshot();
   });
+  describe('加载态', () => {
+    it('加载完毕', () => {
+      const { container } = render(
+        <PageLoading loading={false}>加载完毕</PageLoading>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+    it('加载中', () => {
+      const { container } = render(
+        <PageLoading loading={true}>加载完毕</PageLoading>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+  });
 });

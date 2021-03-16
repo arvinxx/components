@@ -16,8 +16,16 @@ const progressColor = (color) => `
   border-left-color: ${color};
 }`;
 
-export const useProgress = (container, config) => {
+interface Config {
+  color: string;
+  enable: boolean;
+  loading: boolean;
+  fullscreen: boolean;
+}
+
+export const useProgress = (container, config: Config) => {
   const { color, enable = true, loading = true, fullscreen } = config;
+
   // 控制 Progress 显示
   useEffect(() => {
     if (typeof loading === 'boolean' && !loading) return;

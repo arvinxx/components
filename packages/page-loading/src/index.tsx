@@ -56,7 +56,7 @@ const PageLoading: FC<PageLoadingProps> = ({
   children,
 }) => {
   // 控制 Progress 显示
-  useProgress(id, { color, progress, loading, fullscreen });
+  useProgress(id, { color, enable: progress, loading, fullscreen });
 
   const colorStyle: CSSProperties = { background: color };
 
