@@ -1,27 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { Graph } from '@antv/x6';
+import { graphOpts } from '../definition/graphOpts';
 import { useGraphRegister } from './useRegister';
-import { layout } from '../utils/layout';
-
-/**
- * 对数据进行预处理
- * @param data
- */
-export const preprocessData = (data: any) => {
-  return {
-    ...data,
-    nodes: data.nodes.map((node) => ({
-      ...node,
-      width: 80,
-      height: 40,
-      shape: 'react-shape',
-      component: 'test-shape',
-    })),
-  };
-};
+import { layout, preprocessData } from '../utils';
 
 export const useGraph = (data) => {
   const container = useRef();
+  const minimapContainer = useRef();
   const [graph, setGraph] = useState<Graph>(null);
 
   useGraphRegister();
@@ -32,12 +17,7 @@ export const useGraph = (data) => {
     if (!graph) {
       // 初始化画布
       setGraph(
-        new Graph({
-          container: container.current,
-          background: {
-            color: '#fafafa',
-          },
-        }),
+        new Graph(graphOpts(container.current, minimapContainer.current)),
       );
     }
   }, [container, graph]);
@@ -53,5 +33,6 @@ export const useGraph = (data) => {
   return {
     container,
     graph,
+    minimapContainer,
   };
 };

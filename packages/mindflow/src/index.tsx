@@ -8,16 +8,28 @@ export * from './types';
 
 export interface MindflowProps {
   data: GraphData;
+  /**
+   * 宽度
+   */
+  width?: number | string;
+  /**
+   * 高度
+   */
+  height?: number;
 }
 
-const Mindflow: FC<MindflowProps> = ({ data }) => {
-  const { container, graph } = useGraph(data);
+const Mindflow: FC<MindflowProps> = ({ data, width, height }) => {
+  const { container, graph, minimapContainer } = useGraph(data);
 
   console.log(graph);
 
   return (
     <ErrorBoundary>
-      <div ref={container} style={{ width: '100%', height: 400 }} />
+      <div
+        ref={container}
+        style={{ width: width || '100%', height: height || 400 }}
+      />
+      <div ref={minimapContainer} />
     </ErrorBoundary>
   );
 };

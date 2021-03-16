@@ -15,4 +15,7 @@ export interface Edge {
 
 export interface MindflowData {
   text: string;
+  type?: string;
+  collapsed?: boolean;
+  hasChildren?: boolean;
 }

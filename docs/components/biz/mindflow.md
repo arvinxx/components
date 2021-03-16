@@ -5,7 +5,9 @@ group:
   title: 业务组件
 ---
 
-## Mindflow
+# Mindflow
+
+## 基础节点
 
 <code src='./examples/Mindflow/index.tsx' />
 

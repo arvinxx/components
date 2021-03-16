@@ -1,0 +1,36 @@
+.mind-node {
+  &-container {
+    position: relative;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-left-width: 4px;
+    border-radius: 4px;
+  }
+
+  &-title {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; // 以此类推，3行4行直接该数字就好啦
+  }
+
+  &-collapse {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transform: translateY(-50%);
+
+    &-icon {
+      font-size: 13px;
+    }
+  }
+}
