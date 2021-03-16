@@ -4151,11 +4151,12 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^17.0.2":
-  version "17.0.2"
-  resolved "https://registry.npm.taobao.org/@types/react/download/@types/react-17.0.2.tgz#3de24c4efef902dd9795a49c75f760cbe4f7a5a8"
-  integrity sha1-PeJMTv75At2XlaScdfdgy+T3pag=
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.3.tgz#ba6e215368501ac3826951eef2904574c262cc79"
+  integrity sha512-wYOUxIgs2HZZ0ACNiIayItyluADNbONl7kt8lkLjVK8IitMH5QMyAh75Fwhmo37r1m7L2JaFj03sIfxBVDvRAg==
   dependencies:
     "@types/prop-types" "*"
+    "@types/scheduler" "*"
     csstype "^3.0.2"
 
 "@types/react@^16", "@types/react@^16.9.43":
@@ -4192,6 +4193,11 @@
   integrity sha1-4CSL6Tbs55GoLbGlfz+198h+gXI=
   dependencies:
     "@types/node" "*"
+
+"@types/scheduler@*":
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
+  integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
 
 "@types/semver@7.3.4":
   version "7.3.4"
@@ -8272,12 +8278,7 @@ cssstyle@^2.0.0, cssstyle@^2.2.0:
   dependencies:
     cssom "~0.3.6"
 
-csstype@^3.0.2:
-  version "3.0.6"
-  resolved "https://registry.npm.taobao.org/csstype/download/csstype-3.0.6.tgz?cache=0&sync_timestamp=1610107098407&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-3.0.6.tgz#865d0b5833d7d8d40f4e5b8a6d76aea3de4725ef"
-  integrity sha1-hl0LWDPX2NQPTluKbXauo95HJe8=
-
-csstype@^3.0.3:
+csstype@^3.0.2, csstype@^3.0.3:
   version "3.0.7"
   resolved "https://registry.npm.taobao.org/csstype/download/csstype-3.0.7.tgz#2a5fb75e1015e84dd15692f71e89a1450290950b"
   integrity sha1-Kl+3XhAV6E3RVpL3HomhRQKQlQs=
