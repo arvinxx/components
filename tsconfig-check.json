@@ -5,5 +5,5 @@
     "skipLibCheck": true,
     "jsx": "react-jsx"
   },
-  "include": ["packages"]
+  "include": ["packages", "types"]
 }

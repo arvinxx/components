@@ -15,12 +15,14 @@ export default class Group extends Component<IGroupProps> {
   };
 
   changeLabel = (e, key) => {
+    console.log(e, key);
     // this.props.dispatch({
     //   type: 'label/changeLabelText',
     //   payload: { key, text: e.target.value },
     // });
   };
   deleteLabel = (key) => {
+    console.log(key);
     // this.props.dispatch({
     //   type: 'label/deleteLabel',
     //   payload: key,
@@ -30,6 +32,8 @@ export default class Group extends Component<IGroupProps> {
     if (e.key === 'Tab') {
       e.preventDefault();
       const key = e.target.id;
+      console.log(key);
+
       // this.props.dispatch({
       //   type: 'label/showTagInput',
       //   payload: key,
