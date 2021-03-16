@@ -52,10 +52,10 @@ footer: Open-source MIT Licensed | Copyright © 2021-present
 
 ## 组件看板
 
-| 组件                                    | 版本                                                                             | 说明                                   |
-| --------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------- |
-| float-label-input                       | [![NPM version][float-label-input-version-image]][float-label-input-version-url] | 标签会跟随 hover 状态浮动的 Input 组件 |
-| [PageLoading](/components/page-loading) | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 加载状态组件                           |
+| 组件                                           | 版本                                                                             | 说明                                   |
+| ---------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------- |
+| float-label-input                              | [![NPM version][float-label-input-version-image]][float-label-input-version-url] | 标签会跟随 hover 状态浮动的 Input 组件 |
+| [PageLoading](/components/common/page-loading) | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 加载状态组件                           |
 
 [float-label-input-version-image]: http://img.shields.io/npm/v/@arvinxu/float-label-input.svg?color=deepgreen&label=latest
 [float-label-input-version-url]: http://npmjs.org/package/@arvinxu/float-label-input
