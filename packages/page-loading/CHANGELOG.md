@@ -1,5 +1,17 @@
 # Changelog
 
+# @arvinxu/page-loading [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.4...@arvinxu/page-loading@1.2.0) (2021-03-16)
+
+
+### ✅ 测试
+
+* 补充测试用例 ([0c63557](https://github.com/arvinxx/components/commit/0c63557))
+
+
+### ✨ 新特性
+
+* 新增 loading 状态控制 props ([9911f15](https://github.com/arvinxx/components/commit/9911f15))
+
 ## @arvinxu/page-loading [1.1.4](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.3...@arvinxu/page-loading@1.1.4) (2021-03-03)
 
 
