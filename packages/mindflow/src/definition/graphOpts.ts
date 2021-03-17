@@ -18,6 +18,7 @@ export const graphOpts = (container, minimapCtn): Partial<Options.Manual> => ({
     edgeLabelMovable: false,
     edgeMovable: false,
   },
+  autoResize: true,
   mousewheel: true,
   scroller: {
     enabled: true,

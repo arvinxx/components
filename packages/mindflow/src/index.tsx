@@ -13,13 +13,23 @@ export * from './types';
 export interface MindflowProps {
   data: GraphData<MindflowData>;
   /**
-   * 宽度
+   * 画布宽度
    */
   width?: number | string;
   /**
-   * 高度
+   * 单个节点的宽度
+   */
+  nodeWidth?: number;
+  /**
+   * 画布高度
+   * @default 400
    */
   height?: number;
+  /**
+   * 点击节点操作
+   * @param node
+   */
+  onNodeClick?: (node) => void;
 }
 
 const Mindflow: FC<MindflowProps> = ({ data, width, height }) => {
@@ -30,7 +40,7 @@ const Mindflow: FC<MindflowProps> = ({ data, width, height }) => {
       <div className="mindflow-container">
         <div
           ref={container}
-          style={{ width: width || '100%', height: height || 400 }}
+          style={{ width: width || '100%', height: height || 400, flex: 1 }}
         />
         <div ref={minimapContainer} className="mindflow-minimap" />
       </div>

@@ -87,11 +87,11 @@ export const preprocessData = (
       const isLeaf = data.edges.findIndex((item) => item.source === id) < 0;
 
       return {
-        ...node,
-        width: 180,
+        width: 200,
         height: 40,
         shape: 'react-shape',
         component: 'mind-node',
+        ...node,
         data: {
           ...node.data,
           leaf: isLeaf,
