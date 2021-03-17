@@ -44,8 +44,8 @@ const data: GraphData<MindflowData> = {
     },
   ],
 };
-const Basic = () => {
+const Connect = () => {
   return <Mindflow data={data} />;
 };
 
-export default Basic;
+export default Connect;

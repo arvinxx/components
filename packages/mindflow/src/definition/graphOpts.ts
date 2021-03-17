@@ -1,5 +1,6 @@
 import type { Options } from '@antv/x6/lib/graph/options';
 import { minimapOpts } from './minimapOpts';
+import { port } from './port';
 
 /**
  * 生成图的配置项
@@ -21,4 +22,6 @@ export const graphOpts = (container, minimapCtn): Partial<Options.Manual> => ({
     autoResize: true,
   },
   minimap: minimapOpts(minimapCtn),
+  // @ts-ignore
+  onPortRendered: port,
 });

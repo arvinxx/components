@@ -21,9 +21,7 @@ export interface MindflowProps {
 }
 
 const Mindflow: FC<MindflowProps> = ({ data, width, height }) => {
-  const { container, graph, minimapContainer } = useGraph(data);
-
-  console.log(graph);
+  const { container, minimapContainer } = useGraph(data);
 
   return (
     <ErrorBoundary>

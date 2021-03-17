@@ -44,7 +44,7 @@ const data: GraphData<MindflowData> = {
 const Basic = () => {
   return (
     <div>
-      <Mindflow data={data} />
+      <Mindflow data={data} height={800} />
     </div>
   );
 };
