@@ -23,7 +23,10 @@ export const useGraph = (data) => {
         new Graph(graphOpts(container.current, minimapContainer.current)),
       );
     }
-  }, [container, graph]);
+    return () => {
+      setGraph(null);
+    };
+  }, [container]);
 
   // 更新数据
   useEffect(() => {
