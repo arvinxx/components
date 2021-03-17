@@ -86,7 +86,14 @@ const data: MindflowData = {
             title: '佐证资料 1',
             url:
               'https://www.yuque.com/arvinxx/tu0agc/b9cf8942370501a4b5c1c751c38c7860',
-            // type:''
+            type: 'rebuttal',
+          },
+          {
+            id: 'ref2',
+            title: '佐证资料 2',
+            url:
+              'https://www.yuque.com/arvinxx/tu0agc/15ddd39fd92b1a314f6981c5a4d3b321',
+            type: 'ground',
           },
         ],
       },

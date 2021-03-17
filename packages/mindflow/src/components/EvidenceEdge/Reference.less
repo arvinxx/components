@@ -1,0 +1,39 @@
+@import '../../themes/theme';
+
+.mind-edge-references {
+  color: @text-color-secondary;
+
+  &-dot {
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    margin-left: 8px;
+    background: @text-color-third;
+    border-radius: 100%;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: @text-color-secondary;
+    font-size: 14px;
+  }
+
+  &-tag {
+    margin-left: 4px;
+    padding: 0 4px;
+  }
+
+  &-foot {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.ant-popover {
+  z-index: 2000;
+  &-inner-content {
+    padding: 8px;
+    padding-top: 16px;
+  }
+}
