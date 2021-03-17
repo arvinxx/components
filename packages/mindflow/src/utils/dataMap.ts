@@ -1,5 +1,6 @@
 import { mindFlowColors } from '../themes/nodeColor';
 import type { GraphData, MindflowData, NodeData } from '../types';
+import type { BaseNode } from '../types';
 
 /**
  * 从文本色值获得 hex
@@ -48,15 +49,39 @@ export const mapTypeToColor = (type: string) => {
 };
 
 /**
+ * 找到不被折叠的节点
+ * @param data
+ * @param collapseList
+ */
+export const getUncollapsedNode = (
+  data: GraphData<MindflowData>,
+  collapseList: string[],
+): BaseNode<NodeData>[] => {
+  const targetList = collapseList
+    .map((cid) =>
+      data.edges.filter((e) => e.source === cid).map((e) => e.target),
+    )
+    .flat();
+
+  return data.nodes.filter((n) => !targetList.includes(n.id));
+};
+
+/**
  * 对数据进行预处理
  * @param data
+ * @param collapseList
  */
 export const preprocessData = (
   data: GraphData<MindflowData>,
+  collapseList: string[],
 ): GraphData<NodeData> => {
+  const displayNodes = getUncollapsedNode(data, collapseList);
   return {
     ...data,
-    nodes: data.nodes.map((node) => {
+    edges: data.edges.filter((e) => {
+      return !collapseList.includes(e.source);
+    }),
+    nodes: displayNodes.map((node) => {
       const { id } = node;
 
       const isLeaf = data.edges.findIndex((item) => item.source === id) < 0;
@@ -70,6 +95,7 @@ export const preprocessData = (
         data: {
           ...node.data,
           leaf: isLeaf,
+          collapsed: collapseList.includes(node.id),
         },
       };
     }),

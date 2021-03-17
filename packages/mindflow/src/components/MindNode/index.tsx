@@ -14,6 +14,7 @@ import { mapColorToHex, mapTypeToColor } from '../../utils';
 import type { NodeData } from '../../types';
 
 import './style.less';
+import { useMindflowService } from '../../store/useMindflowContext';
 
 interface BaseNodeProps {
   node?: ReactShape;
@@ -21,8 +22,12 @@ interface BaseNodeProps {
 
 const MindNode: FC<BaseNodeProps> = ({ node }) => {
   const data = node.getData<NodeData>();
+  const [isHovered, setHovered] = useState(false);
+
+  const { toggleNodeCollapsed } = useMindflowService();
 
   const { type, collapsed, leaf = true, title, description } = data;
+
   const baseColor = chorma(mapColorToHex(mapTypeToColor(type)));
 
   const [unfold, setUnfold] = useState(false);
@@ -34,7 +39,7 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
       className="mind-node-container"
       style={{
         background: baseColor.alpha(0.1).hex(),
-        borderColor: baseColor.alpha(0.3).hex(),
+        borderColor: baseColor.alpha(0.1).hex(),
         borderLeftColor: baseColor.hex(),
       }}
     >
@@ -68,19 +73,29 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
       {leaf ? null : (
         <div
           className="mind-node-collapse"
-          style={{ borderColor: baseColor.hex() }}
+          style={{
+            borderColor: baseColor.hex(),
+            background: isHovered ? baseColor.hex() : 'white',
+          }}
+          onMouseEnter={() => {
+            setHovered(true);
+          }}
+          onClick={() => {
+            toggleNodeCollapsed(node.id);
+          }}
         >
-          {collapsed ? (
-            <PlusOutlined
-              className="mind-node-collapse-icon"
-              style={{ color: baseColor.hex() }}
-            />
-          ) : (
-            <MinusOutlined
-              className="mind-node-collapse-icon"
-              style={{ color: baseColor.hex() }}
-            />
-          )}
+          <div
+            className="mind-node-collapse-icon"
+            style={{ color: isHovered ? '#fff' : baseColor.hex() }}
+            onMouseEnter={() => {
+              setHovered(true);
+            }}
+            onMouseLeave={() => {
+              setHovered(false);
+            }}
+          >
+            {collapsed ? <PlusOutlined /> : <MinusOutlined />}
+          </div>
         </div>
       )}
     </div>

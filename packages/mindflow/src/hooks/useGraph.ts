@@ -1,13 +1,16 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Graph } from '@antv/x6';
+
 import { graphOpts } from '../definition/graphOpts';
 import { layout, preprocessData } from '../utils';
 import { useGraphRegister } from './useRegister';
+import { useMindflowService } from '../store/useMindflowContext';
 
 export const useGraph = (data) => {
   const container = useRef();
   const minimapContainer = useRef();
-  const [graph, setGraph] = useState<Graph>(null);
+
+  const { collapseList, setGraph, graph } = useMindflowService();
 
   useGraphRegister();
 
@@ -26,13 +29,12 @@ export const useGraph = (data) => {
   useEffect(() => {
     if (!graph) return;
 
-    graph.fromJSON(preprocessData(data));
+    graph.fromJSON(preprocessData(data, collapseList));
     layout('LR', graph);
-  }, [graph, data]);
+  }, [graph, data, collapseList]);
 
   return {
     container,
-    graph,
     minimapContainer,
   };
 };

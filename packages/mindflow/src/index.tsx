@@ -1,11 +1,13 @@
 import React from 'react';
 import type { FC } from 'react';
+
 import { useGraph } from './hooks/useGraph';
 import ErrorBoundary from './components/ErrorBoundary';
 import type { GraphData, MindflowData } from './types';
 
 import './style.less';
 
+export { useMindflowService as useMindflowContext } from './store/useMindflowContext';
 export * from './types';
 
 export interface MindflowProps {

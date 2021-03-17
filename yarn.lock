@@ -50,61 +50,58 @@
     lodash "^4.17.15"
     resize-observer-polyfill "^1.5.0"
 
-"@antv/g-webgpu-core@^0.5.4-alpha.3":
-  version "0.5.4-alpha.3"
-  resolved "https://registry.npm.taobao.org/@antv/g-webgpu-core/download/@antv/g-webgpu-core-0.5.4-alpha.3.tgz#954d615b1b92d876e2261c8f312c46fc5eaad690"
-  integrity sha1-lU1hWxuS2HbiJhyPMSxG/F6q1pA=
+"@antv/g-webgpu-core@^0.5.5", "@antv/g-webgpu-core@^0.5.6":
+  version "0.5.6"
+  resolved "https://registry.npm.taobao.org/@antv/g-webgpu-core/download/@antv/g-webgpu-core-0.5.6.tgz#68cde0b5d0b44b5794371c2523682f4734da3c6c"
+  integrity sha1-aM3gtdC0S1eUNxwlI2gvRzTaPGw=
   dependencies:
     eventemitter3 "^4.0.0"
     gl-matrix "^3.1.0"
     inversify "^5.0.1"
     inversify-inject-decorators "^3.1.0"
-    lodash "^4.17.15"
     probe.gl "^3.1.1"
     reflect-metadata "^0.1.13"
 
-"@antv/g-webgpu-engine@^0.5.4-alpha.3":
-  version "0.5.4-alpha.3"
-  resolved "https://registry.npm.taobao.org/@antv/g-webgpu-engine/download/@antv/g-webgpu-engine-0.5.4-alpha.3.tgz#c9ea211853e4785f5e72acfd596b9f725dba5b19"
-  integrity sha1-yeohGFPkeF9ecqz9WWufcl26Wxk=
+"@antv/g-webgpu-engine@^0.5.5":
+  version "0.5.6"
+  resolved "https://registry.npm.taobao.org/@antv/g-webgpu-engine/download/@antv/g-webgpu-engine-0.5.6.tgz#be7c1bf8e4b1822d72a302d628034345e0577bbd"
+  integrity sha1-vnwb+OSxgi1yowLWKANDReBXe70=
   dependencies:
-    "@antv/g-webgpu-core" "^0.5.4-alpha.3"
+    "@antv/g-webgpu-core" "^0.5.6"
     "@webgpu/glslang" "^0.0.15"
     "@webgpu/types" "^0.0.31"
     gl-matrix "^3.1.0"
     hammerjs "^2.0.8"
     inversify "^5.0.1"
     inversify-inject-decorators "^3.1.0"
-    lodash "^4.17.15"
     probe.gl "^3.1.1"
     reflect-metadata "^0.1.13"
     regl "^1.3.11"
 
-"@antv/g-webgpu@0.5.4-alpha.3":
-  version "0.5.4-alpha.3"
-  resolved "https://registry.npm.taobao.org/@antv/g-webgpu/download/@antv/g-webgpu-0.5.4-alpha.3.tgz#b55bc95f1415d855deb1e4a8004859d5498b44da"
-  integrity sha1-tVvJXxQV2FXeseSoAEhZ1UmLRNo=
+"@antv/g-webgpu@0.5.5":
+  version "0.5.5"
+  resolved "https://registry.npm.taobao.org/@antv/g-webgpu/download/@antv/g-webgpu-0.5.5.tgz?cache=0&sync_timestamp=1615774605452&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fg-webgpu%2Fdownload%2F%40antv%2Fg-webgpu-0.5.5.tgz#003d411453ed03e7dd916bd6c6db26a2b53d1991"
+  integrity sha1-AD1BFFPtA+fdkWvWxtsmorU9GZE=
   dependencies:
-    "@antv/g-webgpu-core" "^0.5.4-alpha.3"
-    "@antv/g-webgpu-engine" "^0.5.4-alpha.3"
+    "@antv/g-webgpu-core" "^0.5.5"
+    "@antv/g-webgpu-engine" "^0.5.5"
     "@webgpu/types" "^0.0.31"
     gl-matrix "^3.1.0"
     gl-vec2 "^1.3.0"
     hammerjs "^2.0.8"
     inversify "^5.0.1"
     inversify-inject-decorators "^3.1.0"
-    lodash "^4.17.15"
     polyline-miter-util "^1.0.1"
     polyline-normals "^2.0.2"
     probe.gl "^3.1.1"
     reflect-metadata "^0.1.13"
 
 "@antv/layout@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.npm.taobao.org/@antv/layout/download/@antv/layout-0.1.6.tgz?cache=0&sync_timestamp=1614065221385&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Flayout%2Fdownload%2F%40antv%2Flayout-0.1.6.tgz#4dba83ecf6806e1c2da975e3865753d8d5233af9"
-  integrity sha1-TbqD7PaAbhwtqXXjhldT2NUjOvk=
+  version "0.1.10"
+  resolved "https://registry.npm.taobao.org/@antv/layout/download/@antv/layout-0.1.10.tgz#013ba0cf515c7ce77600ccdc02ba9c159a052bd6"
+  integrity sha1-ATugz1FcfOd2AMzcArqcFZoFK9Y=
   dependencies:
-    "@antv/g-webgpu" "0.5.4-alpha.3"
+    "@antv/g-webgpu" "0.5.5"
     d3-force "^2.0.1"
     dagre "^0.8.5"
     ml-matrix "^6.5.0"
@@ -115,9 +112,9 @@
   integrity sha1-vUEr3B5wJq1dCz2WtG1GxdWiAuQ=
 
 "@antv/x6@^1.13.1":
-  version "1.13.1"
-  resolved "https://registry.npm.taobao.org/@antv/x6/download/@antv/x6-1.13.1.tgz#596467fd09c8d0865232c71a9bc60674bf252a60"
-  integrity sha1-WWRn/QnI0IZSMscam8YGdL8lKmA=
+  version "1.17.3"
+  resolved "https://registry.npm.taobao.org/@antv/x6/download/@antv/x6-1.17.3.tgz#f2f9c51adb6ce4d4bed04cfa9d6eaca125a87f60"
+  integrity sha1-8vnFGtts5NS+0Ez6nW6soSWof2A=
   dependencies:
     csstype "^3.0.3"
     jquery "^3.5.1"
@@ -5707,6 +5704,54 @@ antd@^4.1.2, antd@^4.1.3:
     scroll-into-view-if-needed "^2.2.25"
     warning "^4.0.3"
 
+antd@^4.12.3, antd@^4.14.0:
+  version "4.14.0"
+  resolved "https://registry.npm.taobao.org/antd/download/antd-4.14.0.tgz#954c4554b33e764215dd09d378f61b81f5682558"
+  integrity sha1-lUxFVLM+dkIV3QnTePYbgfVoJVg=
+  dependencies:
+    "@ant-design/colors" "^6.0.0"
+    "@ant-design/icons" "^4.5.0"
+    "@ant-design/react-slick" "~0.28.1"
+    "@babel/runtime" "^7.12.5"
+    array-tree-filter "^2.1.0"
+    classnames "^2.2.6"
+    copy-to-clipboard "^3.2.0"
+    lodash "^4.17.20"
+    moment "^2.25.3"
+    rc-cascader "~1.4.0"
+    rc-checkbox "~2.3.0"
+    rc-collapse "~3.1.0"
+    rc-dialog "~8.5.1"
+    rc-drawer "~4.3.0"
+    rc-dropdown "~3.2.0"
+    rc-field-form "~1.20.0"
+    rc-image "~5.2.3"
+    rc-input-number "~7.0.1"
+    rc-mentions "~1.5.0"
+    rc-menu "~8.10.0"
+    rc-motion "^2.4.0"
+    rc-notification "~4.5.2"
+    rc-pagination "~3.1.6"
+    rc-picker "~2.5.10"
+    rc-progress "~3.1.0"
+    rc-rate "~2.9.0"
+    rc-resize-observer "^1.0.0"
+    rc-select "~12.1.6"
+    rc-slider "~9.7.1"
+    rc-steps "~4.1.0"
+    rc-switch "~3.2.0"
+    rc-table "~7.13.0"
+    rc-tabs "~11.7.0"
+    rc-textarea "~0.3.0"
+    rc-tooltip "~5.1.0"
+    rc-tree "~4.1.0"
+    rc-tree-select "~4.3.0"
+    rc-trigger "^5.2.1"
+    rc-upload "~4.2.0-alpha.0"
+    rc-util "^5.8.1"
+    scroll-into-view-if-needed "^2.2.25"
+    warning "^4.0.3"
+
 antd@^4.13.0:
   version "4.13.0"
   resolved "https://registry.npm.taobao.org/antd/download/antd-4.13.0.tgz?cache=0&sync_timestamp=1614500485270&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fantd%2Fdownload%2Fantd-4.13.0.tgz#3a3aab5cb35774de2194c3baf8a786a3627d9c5a"
@@ -5751,54 +5796,6 @@ antd@^4.13.0:
     rc-tree-select "~4.3.0"
     rc-trigger "^5.2.1"
     rc-upload "~4.0.0-alpha.6"
-    rc-util "^5.8.1"
-    scroll-into-view-if-needed "^2.2.25"
-    warning "^4.0.3"
-
-antd@^4.14.0:
-  version "4.14.0"
-  resolved "https://registry.npm.taobao.org/antd/download/antd-4.14.0.tgz#954c4554b33e764215dd09d378f61b81f5682558"
-  integrity sha1-lUxFVLM+dkIV3QnTePYbgfVoJVg=
-  dependencies:
-    "@ant-design/colors" "^6.0.0"
-    "@ant-design/icons" "^4.5.0"
-    "@ant-design/react-slick" "~0.28.1"
-    "@babel/runtime" "^7.12.5"
-    array-tree-filter "^2.1.0"
-    classnames "^2.2.6"
-    copy-to-clipboard "^3.2.0"
-    lodash "^4.17.20"
-    moment "^2.25.3"
-    rc-cascader "~1.4.0"
-    rc-checkbox "~2.3.0"
-    rc-collapse "~3.1.0"
-    rc-dialog "~8.5.1"
-    rc-drawer "~4.3.0"
-    rc-dropdown "~3.2.0"
-    rc-field-form "~1.20.0"
-    rc-image "~5.2.3"
-    rc-input-number "~7.0.1"
-    rc-mentions "~1.5.0"
-    rc-menu "~8.10.0"
-    rc-motion "^2.4.0"
-    rc-notification "~4.5.2"
-    rc-pagination "~3.1.6"
-    rc-picker "~2.5.10"
-    rc-progress "~3.1.0"
-    rc-rate "~2.9.0"
-    rc-resize-observer "^1.0.0"
-    rc-select "~12.1.6"
-    rc-slider "~9.7.1"
-    rc-steps "~4.1.0"
-    rc-switch "~3.2.0"
-    rc-table "~7.13.0"
-    rc-tabs "~11.7.0"
-    rc-textarea "~0.3.0"
-    rc-tooltip "~5.1.0"
-    rc-tree "~4.1.0"
-    rc-tree-select "~4.3.0"
-    rc-trigger "^5.2.1"
-    rc-upload "~4.2.0-alpha.0"
     rc-util "^5.8.1"
     scroll-into-view-if-needed "^2.2.25"
     warning "^4.0.3"
@@ -11692,6 +11689,11 @@ immer@^7.0.5:
   resolved "https://registry.npm.taobao.org/immer/download/immer-7.0.15.tgz#dc3bc6db87401659d2e737c67a21b227c484a4ad"
   integrity sha1-3DvG24dAFlnS5zfGeiGyJ8SEpK0=
 
+immer@^8.0.0, immer@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.npm.taobao.org/immer/download/immer-8.0.1.tgz?cache=0&sync_timestamp=1611143233118&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
+  integrity sha1-nHPbaD4rOXXEJPsFcq9YiYd65lY=
+
 immutable@^3.8.1:
   version "3.8.2"
   resolved "https://registry.npm.taobao.org/immutable/download/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
@@ -13430,9 +13432,9 @@ jquery-mousewheel@^3.1.13:
   integrity sha1-BvAzXxbjU6aV5yBr9QUDy1I6buU=
 
 jquery@^3.5.1:
-  version "3.5.1"
-  resolved "https://registry.npm.taobao.org/jquery/download/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
-  integrity sha1-17TQjhv9uGrS8aPQOeoXMEcXq7U=
+  version "3.6.0"
+  resolved "https://registry.npm.taobao.org/jquery/download/jquery-3.6.0.tgz?cache=0&sync_timestamp=1614706801583&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjquery%2Fdownload%2Fjquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha1-xyoJ8Vwb3OFC9J2/EXC9+K2sJHA=
 
 js-cookie@^2.2.1:
   version "2.2.1"
@@ -15261,6 +15263,11 @@ mississippi@^3.0.0:
     stream-each "^1.1.0"
     through2 "^2.0.0"
 
+mitt@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/mitt/download/mitt-2.1.0.tgz#f740577c23176c6205b121b2973514eade1b2230"
+  integrity sha1-90BXfCMXbGIFsSGylzUU6t4bIjA=
+
 mixin-deep@^1.2.0:
   version "1.3.2"
   resolved "https://registry.npm.taobao.org/mixin-deep/download/mixin-deep-1.3.2.tgz#1120b43dc359a785dce65b55b82e257ccf479566"
@@ -15296,33 +15303,33 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@^0.5.5, mkdirp@~0.5.0, mkdir
   dependencies:
     minimist "^1.2.5"
 
-ml-array-max@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npm.taobao.org/ml-array-max/download/ml-array-max-1.2.1.tgz?cache=0&sync_timestamp=1614083773972&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fml-array-max%2Fdownload%2Fml-array-max-1.2.1.tgz#e57739b9e36c08b098445b02b497e0ac2b553599"
-  integrity sha1-5Xc5ueNsCLCYRFsCtJfgrCtVNZk=
+ml-array-max@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npm.taobao.org/ml-array-max/download/ml-array-max-1.2.2.tgz#a60a87347f439c4dce3b8a9c7dd22349411c2a2d"
+  integrity sha1-pgqHNH9DnE3OO4qcfdIjSUEcKi0=
   dependencies:
     is-any-array "^0.1.0"
 
-ml-array-min@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/ml-array-min/download/ml-array-min-1.2.0.tgz#6880ea319250a99ec73bc2799ac005c10a0f0489"
-  integrity sha1-aIDqMZJQqZ7HO8J5msAFwQoPBIk=
+ml-array-min@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npm.taobao.org/ml-array-min/download/ml-array-min-1.2.1.tgz#9a9b44a4fd7543e1dffc7b8526595c843e6c71e2"
+  integrity sha1-mptEpP11Q+Hf/HuFJllchD5sceI=
   dependencies:
     is-any-array "^0.1.0"
 
 ml-array-rescale@^1.3.2:
-  version "1.3.3"
-  resolved "https://registry.npm.taobao.org/ml-array-rescale/download/ml-array-rescale-1.3.3.tgz?cache=0&sync_timestamp=1614083773899&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fml-array-rescale%2Fdownload%2Fml-array-rescale-1.3.3.tgz#bf57c777101b6a38facbb95b9dbffc9fafc2289c"
-  integrity sha1-v1fHdxAbajj6y7lbnb/8n6/CKJw=
+  version "1.3.4"
+  resolved "https://registry.npm.taobao.org/ml-array-rescale/download/ml-array-rescale-1.3.4.tgz#62aa50cb2dc30aacb86e2701792bec05a125218a"
+  integrity sha1-YqpQyy3DCqy4bicBeSvsBaElIYo=
   dependencies:
     is-any-array "^0.1.0"
-    ml-array-max "^1.2.1"
-    ml-array-min "^1.2.0"
+    ml-array-max "^1.2.2"
+    ml-array-min "^1.2.1"
 
 ml-matrix@^6.5.0:
-  version "6.6.0"
-  resolved "https://registry.npm.taobao.org/ml-matrix/download/ml-matrix-6.6.0.tgz#b46f60b80baece9c05d8b368b97a520c15785f22"
-  integrity sha1-tG9guAuuzpwF2LNouXpSDBV4XyI=
+  version "6.7.0"
+  resolved "https://registry.npm.taobao.org/ml-matrix/download/ml-matrix-6.7.0.tgz#5a00e3075d22fe510696782527e3a5367586f815"
+  integrity sha1-WgDjB10i/lEGlnglJ+OlNnWG+BU=
   dependencies:
     ml-array-rescale "^1.3.2"
 
@@ -20805,6 +20812,14 @@ stealthy-require@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/stealthy-require/download/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
+
+stook@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/stook/download/stook-1.0.0.tgz#b9cbf2c4d0ad17b2d655ae95c6dbffa2f6242fc4"
+  integrity sha1-ucvyxNCtF7LWVa6Vxtv/ovYkL8Q=
+  dependencies:
+    immer "^8.0.0"
+    mitt "^2.1.0"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
