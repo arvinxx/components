@@ -1,23 +1,21 @@
 import type { FC } from 'react';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
-  PlusOutlined,
-  MinusOutlined,
   CaretUpOutlined,
   CaretDownOutlined,
   EditOutlined,
 } from '@ant-design/icons';
 import { Divider } from 'antd';
-
 import chorma from 'chroma-js';
 import type { ReactShape } from '@antv/x6-react-shape';
 import cls from 'classnames';
 
 import { mapColorToHex, mapTypeToColor, rgba2hex } from '../../utils';
 import type { NodeData } from '../../types';
-import { useMindflowService } from '../../store/useMindflowContext';
+import CollapseIcon from './CollapseIcon';
 
 import './style.less';
+import { useFolded } from './useFolded';
 
 interface BaseNodeProps {
   node?: ReactShape;
@@ -25,10 +23,9 @@ interface BaseNodeProps {
 
 const MindNode: FC<BaseNodeProps> = ({ node }) => {
   const data = node.getData<NodeData>();
-  const [isHovered, setHovered] = useState(false);
   const ref = useRef();
 
-  const { toggleNodeCollapsed } = useMindflowService();
+  const { unfolded, toggleNodeUnfold, cantFold } = useFolded(node);
 
   const {
     type,
@@ -41,11 +38,12 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
 
   const baseColor = chorma(mapColorToHex(mapTypeToColor(type)));
 
-  const [unfolded, setUnfold] = useState(false);
-
-  const cantFold = !description && references.length === 0;
-
   const backgroundColor = rgba2hex(baseColor.alpha(0.1).rgba());
+
+  useEffect(() => {
+    // 展开的节点在前面显示
+    node.setZIndex(unfolded ? 1000 : 0);
+  }, [unfolded]);
 
   return (
     <div
@@ -62,9 +60,7 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
           <span
             className="mind-node-arrow"
             onClick={() => {
-              // 展开的节点放到前面
-              node.setZIndex(!unfolded ? 1000 : 0);
-              setUnfold(!unfolded);
+              toggleNodeUnfold(node.id);
             }}
           >
             {unfolded ? <CaretUpOutlined /> : <CaretDownOutlined />}
@@ -111,44 +107,11 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
         <EditOutlined />
       </div>
       {leaf ? null : (
-        <div
-          className="mind-node-collapse"
-          style={{
-            borderColor: baseColor.hex(),
-            background: isHovered ? baseColor.hex() : 'white',
-          }}
-          onMouseEnter={() => {
-            setHovered(true);
-          }}
-          onClick={() => {
-            toggleNodeCollapsed(node.id);
-          }}
-        >
-          <div
-            className="mind-node-collapse-icon"
-            style={{ color: isHovered ? '#fff' : baseColor.hex() }}
-            onMouseEnter={() => {
-              setHovered(true);
-            }}
-            onMouseLeave={() => {
-              setHovered(false);
-            }}
-          >
-            {collapsed ? (
-              <PlusOutlined
-                onMouseEnter={() => {
-                  setHovered(true);
-                }}
-              />
-            ) : (
-              <MinusOutlined
-                onMouseEnter={() => {
-                  setHovered(true);
-                }}
-              />
-            )}
-          </div>
-        </div>
+        <CollapseIcon
+          id={node.id}
+          color={baseColor.hex()}
+          collapsed={collapsed}
+        />
       )}
     </div>
   );
