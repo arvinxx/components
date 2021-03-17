@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import {
   PlusOutlined,
   MinusOutlined,
@@ -26,6 +26,7 @@ interface BaseNodeProps {
 const MindNode: FC<BaseNodeProps> = ({ node }) => {
   const data = node.getData<NodeData>();
   const [isHovered, setHovered] = useState(false);
+  const ref = useRef();
 
   const { toggleNodeCollapsed } = useMindflowService();
 
@@ -48,7 +49,8 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
 
   return (
     <div
-      className="mind-node-container"
+      ref={ref}
+      className={cls('mind-node-container', unfolded ? 'mind-node-shadow' : '')}
       style={{
         background: backgroundColor,
         borderColor: baseColor.alpha(0.1).hex(),
@@ -60,6 +62,8 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
           <span
             className="mind-node-arrow"
             onClick={() => {
+              // 展开的节点放到前面
+              node.setZIndex(!unfolded ? 1000 : 0);
               setUnfold(!unfolded);
             }}
           >

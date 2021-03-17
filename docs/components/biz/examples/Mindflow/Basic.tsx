@@ -67,6 +67,13 @@ const data: GraphData<MindflowData> = {
         type: 'action',
       },
     },
+    {
+      id: 'node8',
+      data: {
+        title: '又一个问题节点',
+        type: 'question',
+      },
+    },
   ],
   edges: [
     {
