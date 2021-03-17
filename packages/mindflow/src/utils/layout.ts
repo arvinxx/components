@@ -13,7 +13,7 @@ export const layout = (dir: 'LR' | 'RL' | 'TB' | 'BT', graph: Graph) => {
   g.setGraph({ rankdir: dir, nodesep: 16, ranksep: 16 });
   g.setDefaultEdgeLabel(() => ({}));
 
-  const width = 300;
+  const width = 330;
   const height = 90;
   nodes.forEach((node) => {
     g.setNode(node.id, { width, height });
