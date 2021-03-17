@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.4.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.4.0...@arvinxu/mindflow@1.4.1) (2021-03-17)
+
+
+### 💄 样式
+
+* 优化节点 hover 样式 ([82329ca](https://github.com/arvinxx/components/commit/82329ca))
+
 # @arvinxu/mindflow [1.4.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.3.0...@arvinxu/mindflow@1.4.0) (2021-03-17)
 
 
