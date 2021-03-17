@@ -1,5 +1,22 @@
 # Changelog
 
+# @arvinxu/mindflow [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.1.0...@arvinxu/mindflow@1.2.0) (2021-03-17)
+
+
+### ✅ 测试
+
+* 修正测试 ([7ad6cd2](https://github.com/arvinxx/components/commit/7ad6cd2))
+
+
+### ✨ 新特性
+
+* 添加父子节点折叠功能 ([cfa3379](https://github.com/arvinxx/components/commit/cfa3379))
+
+
+### 💄 样式
+
+* 优化展开节点的说明显示 ([54c5e8f](https://github.com/arvinxx/components/commit/54c5e8f))
+
 # @arvinxu/mindflow [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.0.5...@arvinxu/mindflow@1.1.0) (2021-03-17)
 
 
