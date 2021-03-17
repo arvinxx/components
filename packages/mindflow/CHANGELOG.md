@@ -1,5 +1,17 @@
 # Changelog
 
+# @arvinxu/mindflow [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.0.5...@arvinxu/mindflow@1.1.0) (2021-03-17)
+
+
+### ✨ 新特性
+
+* 添加节点折叠效果 ([7040807](https://github.com/arvinxx/components/commit/7040807))
+
+
+### 🎫 杂项
+
+* 调整组件位置 ([3edeaa4](https://github.com/arvinxx/components/commit/3edeaa4))
+
 ## @arvinxu/mindflow [1.0.5](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.0.4...@arvinxu/mindflow@1.0.5) (2021-03-17)
 
 
