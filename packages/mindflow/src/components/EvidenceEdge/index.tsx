@@ -35,7 +35,7 @@ const EvidenceEdge: FC<EvidenceProps> = ({ edge }) => {
           visible={visible}
           getTooltipContainer={ref.current}
           title={'📚 佐证资料'}
-          placement={'right'}
+          placement={'top'}
           content={
             <Reference references={data.references} setVisible={setVisible} />
           }
