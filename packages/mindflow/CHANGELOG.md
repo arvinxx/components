@@ -1,5 +1,36 @@
 # Changelog
 
+# @arvinxu/mindflow [1.5.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.4.1...@arvinxu/mindflow@1.5.0) (2021-03-17)
+
+
+### ♻ 重构
+
+* 优化代码 ([4e28bd6](https://github.com/arvinxx/components/commit/4e28bd6))
+* 重构折叠 icon ([bd5f0e6](https://github.com/arvinxx/components/commit/bd5f0e6))
+
+
+### ✨ 新特性
+
+* 添加依据面板 ([c0ee577](https://github.com/arvinxx/components/commit/c0ee577))
+* 添加边支撑组件 ([1e3cacf](https://github.com/arvinxx/components/commit/1e3cacf))
+
+
+### 🎫 杂项
+
+* 调整组件目录 ([c00f55b](https://github.com/arvinxx/components/commit/c00f55b))
+
+
+### 🐛 修复
+
+* 优化节点的 fold 状态保持逻辑 ([ef168dd](https://github.com/arvinxx/components/commit/ef168dd))
+
+
+### 💄 样式
+
+* 优化节点布局距离 ([21ccb0d](https://github.com/arvinxx/components/commit/21ccb0d))
+* 优化面板位置 ([4e6b1db](https://github.com/arvinxx/components/commit/4e6b1db))
+* 添加下钻按钮 ([de03821](https://github.com/arvinxx/components/commit/de03821))
+
 ## @arvinxu/mindflow [1.4.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.4.0...@arvinxu/mindflow@1.4.1) (2021-03-17)
 
 
