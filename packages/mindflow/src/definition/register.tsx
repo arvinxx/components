@@ -1,6 +1,6 @@
 import React from 'react';
 import { Graph } from '@antv/x6';
-import { MindNode } from './shapes';
+import { MindNode } from '../components';
 
 import '@antv/x6-react-shape';
 import './defaultConfig';

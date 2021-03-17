@@ -8,13 +8,13 @@ import { mapColorToHex, mapTypeToColor } from '../../utils';
 
 import type { NodeData } from '../../types';
 
-import './MindNode.less';
+import './style.less';
 
 interface BaseNodeProps {
   node?: ReactShape;
 }
 
-export const MindNode: FC<BaseNodeProps> = ({ node }) => {
+const MindNode: FC<BaseNodeProps> = ({ node }) => {
   const data = node.getData<NodeData>();
   const { type, collapsed, hasChildren } = data;
   const baseColor = chorma(mapColorToHex(mapTypeToColor(type)));
@@ -51,3 +51,5 @@ export const MindNode: FC<BaseNodeProps> = ({ node }) => {
     </div>
   );
 };
+
+export default MindNode;
