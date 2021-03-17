@@ -11,12 +11,12 @@ import chorma from 'chroma-js';
 import type { ReactShape } from '@antv/x6-react-shape';
 import cls from 'classnames';
 
+import CollapseIcon from '../CollapseIcon';
 import { mapColorToHex, mapTypeToColor, rgba2hex } from '../../utils';
 import type { NodeData } from '../../types';
-import CollapseIcon from './CollapseIcon';
+import { useFolded } from './useFolded';
 
 import './style.less';
-import { useFolded } from './useFolded';
 
 interface BaseNodeProps {
   node?: ReactShape;

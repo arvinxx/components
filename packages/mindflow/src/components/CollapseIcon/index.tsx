@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import { useState } from 'react';
 import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
 import { useMindflowService } from '../../store/useMindflowContext';
-import './CollapseIcon.less';
+import './style.less';
 
 interface CollapseIconProps {
   id: string;
