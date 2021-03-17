@@ -1,5 +1,22 @@
 # Changelog
 
+# @arvinxu/mindflow [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.2.0...@arvinxu/mindflow@1.3.0) (2021-03-17)
+
+
+### ✨ 新特性
+
+* 允许画布宽度自适应 ([f6b5b0d](https://github.com/arvinxx/components/commit/f6b5b0d))
+
+
+### 🐛 修复
+
+* 修正自动刷新时的 bug ([b6302e4](https://github.com/arvinxx/components/commit/b6302e4))
+
+
+### 📝 文档
+
+* 更新文档 ([d3a0162](https://github.com/arvinxx/components/commit/d3a0162))
+
 # @arvinxu/mindflow [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.1.0...@arvinxu/mindflow@1.2.0) (2021-03-17)
 
 
