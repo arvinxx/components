@@ -1,5 +1,5 @@
 import { mindFlowColors } from '../themes/nodeColor';
-import type { GraphData, MindflowData, NodeData } from '../types';
+import type { GraphData, MindflowNodeData, NodeData } from '../types';
 import type { BaseNode } from '../types';
 
 /**
@@ -56,7 +56,7 @@ export const mapTypeToColor = (type: string) => {
  * @param collapseList
  */
 export const getUncollapsedNode = (
-  data: GraphData<MindflowData>,
+  data: GraphData<MindflowNodeData>,
   collapseList: string[],
 ): BaseNode<NodeData>[] => {
   const targetList = collapseList
@@ -74,15 +74,19 @@ export const getUncollapsedNode = (
  * @param collapseList
  */
 export const preprocessData = (
-  data: GraphData<MindflowData>,
+  data: GraphData<MindflowNodeData>,
   collapseList: string[],
 ): GraphData<NodeData> => {
   const displayNodes = getUncollapsedNode(data, collapseList);
   return {
     ...data,
-    edges: data.edges.filter((e) => {
-      return !collapseList.includes(e.source);
-    }),
+    edges: data.edges
+      .filter((e) => {
+        return !collapseList.includes(e.source);
+      })
+      .map((e) => ({
+        ...e,
+      })),
     nodes: displayNodes.map((node) => {
       const { id } = node;
 

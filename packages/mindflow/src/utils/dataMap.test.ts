@@ -1,5 +1,5 @@
 import { mapColorToHex, getUncollapsedNode } from './dataMap';
-import { GraphData, MindflowData } from '@arvinxu/mindflow';
+import { MindflowData } from '@arvinxu/mindflow';
 
 describe('mapColorToHex', () => {
   it('返回红色', () => {
@@ -26,7 +26,7 @@ describe('mapColorToHex', () => {
 });
 
 describe('getUncollapsedNode', () => {
-  const data: GraphData<MindflowData> = {
+  const data: MindflowData = {
     nodes: [
       {
         id: 'node1',

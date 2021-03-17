@@ -1,0 +1,24 @@
+@import '../../themes/theme';
+
+.mind-edge {
+  &-container {
+    width: 30px;
+    height: 30px;
+  }
+
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: @text-color-third;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  &-empty {
+    background: white;
+    border: 1px solid @text-color-third;
+  }
+}

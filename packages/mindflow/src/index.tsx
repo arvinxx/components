@@ -3,7 +3,7 @@ import type { FC } from 'react';
 
 import { useGraph } from './hooks/useGraph';
 import ErrorBoundary from './components/ErrorBoundary';
-import type { GraphData, MindflowData } from './types';
+import type { MindflowData } from './types';
 
 import './style.less';
 
@@ -11,7 +11,10 @@ export { useMindflowService as useMindflowContext } from './store/useMindflowCon
 export * from './types';
 
 export interface MindflowProps {
-  data: GraphData<MindflowData>;
+  /**
+   * 待消费数据
+   */
+  data: MindflowData;
   /**
    * 画布宽度
    */
@@ -27,7 +30,6 @@ export interface MindflowProps {
   height?: number;
   /**
    * 点击节点操作
-   * @param node
    */
   onNodeClick?: (node) => void;
 }

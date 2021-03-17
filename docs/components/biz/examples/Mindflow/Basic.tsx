@@ -1,7 +1,7 @@
 import React from 'react';
-import Mindflow, { GraphData, MindflowData } from '@arvinxu/mindflow';
+import Mindflow, { MindflowData } from '@arvinxu/mindflow';
 
-const data: GraphData<MindflowData> = {
+const data: MindflowData = {
   nodes: [
     {
       id: 'node1',
@@ -79,6 +79,17 @@ const data: GraphData<MindflowData> = {
     {
       source: 'node1',
       target: 'node2',
+      data: {
+        references: [
+          {
+            id: 'ref1',
+            title: '佐证资料 1',
+            url:
+              'https://www.yuque.com/arvinxx/tu0agc/b9cf8942370501a4b5c1c751c38c7860',
+            // type:''
+          },
+        ],
+      },
     },
     {
       source: 'node1',
