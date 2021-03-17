@@ -8,7 +8,14 @@
     border: 1px solid transparent;
     border-left-width: 4px;
     border-radius: 4px;
+
+    &:hover {
+      .mind-node-edit {
+        opacity: 1;
+      }
+    }
   }
+
   &-header {
     display: flex;
   }
@@ -19,7 +26,7 @@
   }
 
   &-title {
-    margin-left: 4px;
+    margin: 0 4px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -31,10 +38,13 @@
     }
   }
 
+  &-unfolded {
+    margin-left: 4px;
+  }
+
   &-desc {
     display: -webkit-box;
     margin-top: 4px;
-    margin-left: 4px;
     overflow: hidden;
     color: @text-color-secondary;
     font-size: 12px;
@@ -43,9 +53,43 @@
     -webkit-line-clamp: 4;
   }
 
+  &-references {
+    margin-top: 8px;
+    color: @text-color-secondary;
+    font-size: 12px;
+
+    &-dot {
+      width: 4px;
+      height: 4px;
+      margin-right: 8px;
+      margin-left: 4px;
+      background: @text-color-third;
+      border-radius: 100%;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+      color: @text-color-secondary;
+    }
+  }
+
+  &-edit {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0;
+  }
+
   &-collapse {
     position: absolute;
-    top: 50%;
+    top: 10px;
     right: -10px;
     display: flex;
     align-items: center;
@@ -54,7 +98,6 @@
     height: 20px;
     border: 1px solid transparent;
     border-radius: 20px;
-    transform: translateY(-50%);
     cursor: pointer;
 
     &-icon {

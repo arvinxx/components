@@ -14,7 +14,7 @@ export const graphOpts = (container, minimapCtn): Partial<Options.Manual> => ({
     color: '#fafafa',
   },
   interacting: {
-    nodeMovable: false,
+    // nodeMovable: false,
     edgeLabelMovable: false,
     edgeMovable: false,
   },

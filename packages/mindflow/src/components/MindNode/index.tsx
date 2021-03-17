@@ -5,16 +5,19 @@ import {
   MinusOutlined,
   CaretUpOutlined,
   CaretDownOutlined,
+  EditOutlined,
 } from '@ant-design/icons';
+import { Divider } from 'antd';
+
 import chorma from 'chroma-js';
 import type { ReactShape } from '@antv/x6-react-shape';
 import cls from 'classnames';
 
-import { mapColorToHex, mapTypeToColor } from '../../utils';
+import { mapColorToHex, mapTypeToColor, rgba2hex } from '../../utils';
 import type { NodeData } from '../../types';
+import { useMindflowService } from '../../store/useMindflowContext';
 
 import './style.less';
-import { useMindflowService } from '../../store/useMindflowContext';
 
 interface BaseNodeProps {
   node?: ReactShape;
@@ -26,19 +29,28 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
 
   const { toggleNodeCollapsed } = useMindflowService();
 
-  const { type, collapsed, leaf = true, title, description } = data;
+  const {
+    type,
+    collapsed,
+    leaf = true,
+    title,
+    description,
+    references = [],
+  } = data;
 
   const baseColor = chorma(mapColorToHex(mapTypeToColor(type)));
 
-  const [unfold, setUnfold] = useState(false);
+  const [unfolded, setUnfold] = useState(false);
 
-  const cantFold = !description;
+  const cantFold = !description && references.length === 0;
+
+  const backgroundColor = rgba2hex(baseColor.alpha(0.1).rgba());
 
   return (
     <div
       className="mind-node-container"
       style={{
-        background: baseColor.alpha(0.1).hex(),
+        background: backgroundColor,
         borderColor: baseColor.alpha(0.1).hex(),
         borderLeftColor: baseColor.hex(),
       }}
@@ -48,28 +60,52 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
           <span
             className="mind-node-arrow"
             onClick={() => {
-              setUnfold(!unfold);
+              setUnfold(!unfolded);
             }}
           >
-            {unfold ? <CaretUpOutlined /> : <CaretDownOutlined />}
+            {unfolded ? <CaretUpOutlined /> : <CaretDownOutlined />}
           </span>
         )}
 
         <div
           className={cls(
             'mind-node-title',
-            unfold ? 'mind-node-title-expand' : '',
+            unfolded ? 'mind-node-title-expand' : '',
           )}
         >
           {title}
         </div>
       </div>
-      {unfold ? (
-        <div>
+      {unfolded ? (
+        <div className="mind-node-unfolded">
           <div className="mind-node-desc">{description}</div>
+
+          {references.length === 0 ? null : (
+            <div className="mind-node-references">
+              <Divider dashed style={{ margin: '4px 0 8px' }} />
+              <span>📚 相关资料</span>
+              {references.map((ref) => {
+                return (
+                  <a
+                    key={ref.id}
+                    href={ref.url}
+                    target={'_blank'}
+                    className="mind-node-references-item"
+                  >
+                    <div className="mind-node-references-dot" /> {ref.title}
+                  </a>
+                );
+              })}
+            </div>
+          )}
         </div>
       ) : null}
-
+      <div
+        className="mind-node-edit"
+        style={{ color: baseColor.hex(), background: backgroundColor }}
+      >
+        <EditOutlined />
+      </div>
       {leaf ? null : (
         <div
           className="mind-node-collapse"
@@ -94,7 +130,19 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
               setHovered(false);
             }}
           >
-            {collapsed ? <PlusOutlined /> : <MinusOutlined />}
+            {collapsed ? (
+              <PlusOutlined
+                onMouseEnter={() => {
+                  setHovered(true);
+                }}
+              />
+            ) : (
+              <MinusOutlined
+                onMouseEnter={() => {
+                  setHovered(true);
+                }}
+              />
+            )}
           </div>
         </div>
       )}

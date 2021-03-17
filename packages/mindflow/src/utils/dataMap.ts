@@ -43,6 +43,8 @@ export const mapTypeToColor = (type: string) => {
       return 'green';
     case 'idea':
       return 'yellow';
+    case 'subject':
+      return 'blue';
     default:
       return 'grey';
   }
@@ -87,7 +89,7 @@ export const preprocessData = (
       const isLeaf = data.edges.findIndex((item) => item.source === id) < 0;
 
       return {
-        width: 200,
+        width: 220,
         height: 40,
         shape: 'react-shape',
         component: 'mind-node',

@@ -18,8 +18,29 @@ export interface NodeData extends MindflowData {
   leaf?: boolean;
 }
 
+interface Reference {
+  /**
+   * 参考资料的 id
+   */
+  id: string;
+  /**
+   * 参考资料标题
+   */
+  title: string;
+  /**
+   * 相关参考资料的 Url
+   */
+  url?: string;
+}
+
+type NodeType = 'question' | 'action' | 'idea' | 'subject' | string;
+
 export interface MindflowData {
   title: string;
-  type?: string;
+  type?: NodeType;
+  /**
+   * 有关问题的详细描述
+   */
   description?: string;
+  references?: Reference[];
 }
