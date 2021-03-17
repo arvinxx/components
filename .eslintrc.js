@@ -20,6 +20,7 @@ module.exports = {
     'no-underscore-dangle': 0,
     '@typescript-eslint/consistent-type-definitions': 0,
     '@typescript-eslint/no-shadow': 0,
+    radix: 0,
   },
   ignorePatterns: ['*.js'],
 };
