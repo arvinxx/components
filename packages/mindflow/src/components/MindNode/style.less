@@ -20,22 +20,27 @@
 
   &-title {
     margin-left: 4px;
-    overflow: hidden; //超出的隐藏
-    white-space: nowrap; //强制一行显示
-    text-overflow: ellipsis; //省略号
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     &-expand {
       display: -webkit-box;
       white-space: normal;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2; // 以此类推，3行4行直接该数字就好啦
+      -webkit-line-clamp: 2;
     }
   }
 
   &-desc {
+    display: -webkit-box;
     margin-top: 4px;
     margin-left: 4px;
+    overflow: hidden;
     color: @text-color-secondary;
     font-size: 12px;
+    white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
   }
 
   &-collapse {
@@ -47,7 +52,6 @@
     justify-content: center;
     width: 20px;
     height: 20px;
-    background: white;
     border: 1px solid transparent;
     border-radius: 20px;
     transform: translateY(-50%);
