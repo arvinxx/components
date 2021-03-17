@@ -13,6 +13,12 @@ export const useMindflowService = () => {
     KEYS.collapseList,
     [],
   );
+
+  const [unfoldedList, setUnfoldedList] = useStore<string[]>(
+    KEYS.unfoldedList,
+    [],
+  );
+
   const [graph, setGraph] = useStore<Graph>(KEYS.graph, null);
 
   /**
@@ -27,10 +33,25 @@ export const useMindflowService = () => {
       else return list.filter((l) => l !== id);
     });
   };
+  /**
+   * 将某个节点插入 id
+   * @param id
+   */
+  const toggleNodeUnfold = (id: string) => {
+    setUnfoldedList((list) => {
+      // 没有的情况下新增
+      if (!list.includes(id)) list.push(id);
+      // 有的情况下去掉
+      else return list.filter((l) => l !== id);
+    });
+  };
 
   return {
     collapseList,
     toggleNodeCollapsed,
+    toggleNodeUnfold,
+    isNodeUnfolded: (id: string) =>
+      unfoldedList.findIndex((i) => i === id) > -1,
     graph,
     setGraph,
   };
