@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/mindflow [1.4.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.3.0...@arvinxu/mindflow@1.4.0) (2021-03-17)
+
+
+### ✨ 新特性
+
+* 添加参考资料与编辑按钮 ([740c66e](https://github.com/arvinxx/components/commit/740c66e))
+
 # @arvinxu/mindflow [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.2.0...@arvinxu/mindflow@1.3.0) (2021-03-17)
 
 
