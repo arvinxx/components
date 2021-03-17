@@ -4,8 +4,9 @@ import {
   CaretUpOutlined,
   CaretDownOutlined,
   EditOutlined,
+  AimOutlined,
 } from '@ant-design/icons';
-import { Divider } from 'antd';
+import { Divider, Tooltip } from 'antd';
 import chorma from 'chroma-js';
 import type { ReactShape } from '@antv/x6-react-shape';
 import cls from 'classnames';
@@ -104,7 +105,12 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
         className="mind-node-edit"
         style={{ color: baseColor.hex(), background: backgroundColor }}
       >
-        <EditOutlined />
+        <Tooltip title={'下钻'}>
+          <AimOutlined style={{ marginRight: 8 }} />
+        </Tooltip>
+        <Tooltip title={'编辑'}>
+          <EditOutlined />
+        </Tooltip>
       </div>
       {leaf ? null : (
         <CollapseIcon
