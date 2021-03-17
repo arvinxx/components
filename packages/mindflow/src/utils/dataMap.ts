@@ -1,4 +1,5 @@
 import { mindFlowColors } from '../themes/nodeColor';
+import type { GraphData, MindflowData, NodeData } from '../types';
 
 /**
  * 从文本色值获得 hex
@@ -50,15 +51,27 @@ export const mapTypeToColor = (type: string) => {
  * 对数据进行预处理
  * @param data
  */
-export const preprocessData = (data: any) => {
+export const preprocessData = (
+  data: GraphData<MindflowData>,
+): GraphData<NodeData> => {
   return {
     ...data,
-    nodes: data.nodes.map((node) => ({
-      ...node,
-      width: 180,
-      height: 40,
-      shape: 'react-shape',
-      component: 'mind-node',
-    })),
+    nodes: data.nodes.map((node) => {
+      const { id } = node;
+
+      const isLeaf = data.edges.findIndex((item) => item.source === id) < 0;
+
+      return {
+        ...node,
+        width: 180,
+        height: 40,
+        shape: 'react-shape',
+        component: 'mind-node',
+        data: {
+          ...node.data,
+          leaf: isLeaf,
+        },
+      };
+    }),
   };
 };

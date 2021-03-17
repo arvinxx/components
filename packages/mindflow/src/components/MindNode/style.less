@@ -1,18 +1,41 @@
+@import '../../themes/theme';
+
 .mind-node {
   &-container {
     position: relative;
     padding: 8px;
+    padding-left: 4px;
     border: 1px solid transparent;
     border-left-width: 4px;
     border-radius: 4px;
   }
+  &-header {
+    display: flex;
+  }
+
+  &-arrow {
+    color: @text-color-secondary;
+    cursor: pointer;
+  }
 
   &-title {
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2; // 以此类推，3行4行直接该数字就好啦
+    margin-left: 4px;
+    overflow: hidden; //超出的隐藏
+    white-space: nowrap; //强制一行显示
+    text-overflow: ellipsis; //省略号
+    &-expand {
+      display: -webkit-box;
+      white-space: normal;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; // 以此类推，3行4行直接该数字就好啦
+    }
+  }
+
+  &-desc {
+    margin-top: 4px;
+    margin-left: 4px;
+    color: @text-color-secondary;
+    font-size: 12px;
   }
 
   &-collapse {
@@ -28,6 +51,7 @@
     border: 1px solid transparent;
     border-radius: 20px;
     transform: translateY(-50%);
+    cursor: pointer;
 
     &-icon {
       font-size: 13px;

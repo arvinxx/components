@@ -1,11 +1,16 @@
 import type { FC } from 'react';
-import React from 'react';
-import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
+import React, { useState } from 'react';
+import {
+  PlusOutlined,
+  MinusOutlined,
+  CaretUpOutlined,
+  CaretDownOutlined,
+} from '@ant-design/icons';
 import chorma from 'chroma-js';
 import type { ReactShape } from '@antv/x6-react-shape';
+import cls from 'classnames';
 
 import { mapColorToHex, mapTypeToColor } from '../../utils';
-
 import type { NodeData } from '../../types';
 
 import './style.less';
@@ -16,8 +21,13 @@ interface BaseNodeProps {
 
 const MindNode: FC<BaseNodeProps> = ({ node }) => {
   const data = node.getData<NodeData>();
-  const { type, collapsed, hasChildren } = data;
+
+  const { type, collapsed, leaf = true, title, description } = data;
   const baseColor = chorma(mapColorToHex(mapTypeToColor(type)));
+
+  const [unfold, setUnfold] = useState(false);
+
+  const cantFold = !description;
 
   return (
     <div
@@ -28,9 +38,34 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
         borderLeftColor: baseColor.hex(),
       }}
     >
-      <div className="mind-node-title">{data.text}</div>
+      <div className="mind-node-header">
+        {cantFold ? null : (
+          <span
+            className="mind-node-arrow"
+            onClick={() => {
+              setUnfold(!unfold);
+            }}
+          >
+            {unfold ? <CaretUpOutlined /> : <CaretDownOutlined />}
+          </span>
+        )}
 
-      {hasChildren ? (
+        <div
+          className={cls(
+            'mind-node-title',
+            unfold ? 'mind-node-title-expand' : '',
+          )}
+        >
+          {title}
+        </div>
+      </div>
+      {unfold ? (
+        <div>
+          <div className="mind-node-desc">{description}</div>
+        </div>
+      ) : null}
+
+      {leaf ? null : (
         <div
           className="mind-node-collapse"
           style={{ borderColor: baseColor.hex() }}
@@ -47,7 +82,7 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
             />
           )}
         </div>
-      ) : null}
+      )}
     </div>
   );
 };

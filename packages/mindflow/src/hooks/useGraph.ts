@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { Graph } from '@antv/x6';
 import { graphOpts } from '../definition/graphOpts';
-import '../definition/register';
 import { layout, preprocessData } from '../utils';
+import { useGraphRegister } from './useRegister';
 
 export const useGraph = (data) => {
   const container = useRef();
   const minimapContainer = useRef();
   const [graph, setGraph] = useState<Graph>(null);
+
+  useGraphRegister();
 
   useEffect(() => {
     if (!container.current) return;

@@ -9,7 +9,7 @@ Shape.Edge.config({
       strokeWidth: 1,
       targetMarker: {
         tagName: 'path',
-        d: 'Z',
+        d: 'M0 0 Z',
       },
     },
   },

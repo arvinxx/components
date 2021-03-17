@@ -1,6 +1,7 @@
 import type { Options } from '@antv/x6/lib/graph/options';
 import { minimapOpts } from './minimapOpts';
 import { port } from './port';
+import './edge';
 
 /**
  * 生成图的配置项

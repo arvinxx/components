@@ -15,10 +15,11 @@ export interface Edge {
 
 export interface NodeData extends MindflowData {
   collapsed?: boolean;
-  hasChildren?: boolean;
+  leaf?: boolean;
 }
 
 export interface MindflowData {
-  text: string;
+  title: string;
   type?: string;
+  description?: string;
 }

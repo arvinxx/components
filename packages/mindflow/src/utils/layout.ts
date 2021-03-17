@@ -1,7 +1,11 @@
-// 自动布局
 import type { Graph, Node } from '@antv/x6';
 import dagre from 'dagre';
 
+/**
+ * 自动布局方法
+ * @param dir
+ * @param graph
+ */
 export const layout = (dir: 'LR' | 'RL' | 'TB' | 'BT', graph: Graph) => {
   const nodes = graph.getNodes();
   const edges = graph.getEdges();
@@ -42,8 +46,6 @@ export const layout = (dir: 'LR' | 'RL' | 'TB' | 'BT', graph: Graph) => {
     const target = edge.getTargetNode()!;
     const sourceBBox = source.getBBox();
     const targetBBox = target.getBBox();
-
-    console.log(sourceBBox, targetBBox);
 
     if ((dir === 'LR' || dir === 'RL') && sourceBBox.y !== targetBBox.y) {
       const gap =
