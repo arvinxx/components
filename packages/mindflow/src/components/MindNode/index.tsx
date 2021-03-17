@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React, { useEffect, useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import {
   CaretUpOutlined,
   CaretDownOutlined,
@@ -22,7 +22,7 @@ interface BaseNodeProps {
   node?: ReactShape;
 }
 
-const MindNode: FC<BaseNodeProps> = ({ node }) => {
+const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
   const data = node.getData<NodeData>();
   const ref = useRef();
 
@@ -40,11 +40,6 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
   const baseColor = chorma(mapColorToHex(mapTypeToColor(type)));
 
   const backgroundColor = rgba2hex(baseColor.alpha(0.1).rgba());
-
-  useEffect(() => {
-    // 展开的节点在前面显示
-    node.setZIndex(unfolded ? 1000 : 0);
-  }, [unfolded]);
 
   return (
     <div
@@ -121,6 +116,6 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
       )}
     </div>
   );
-};
+});
 
 export default MindNode;

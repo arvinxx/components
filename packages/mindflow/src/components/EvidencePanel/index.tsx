@@ -18,6 +18,7 @@ const EvidencePanel: FC<EvidencePanelProps> = ({ edge }) => {
 
   const isEmpty = !data || data.references.length === 0;
 
+  console.log(data);
   return (
     <div className="mind-edge-container">
       <Popover content={'123'}>

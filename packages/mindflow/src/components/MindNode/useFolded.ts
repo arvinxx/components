@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useMindflowService } from '../../store/useMindflowContext';
 import type { ReactShape } from '@antv/x6-react-shape';
-import { NodeData } from '@arvinxu/mindflow';
+import type { NodeData } from '../../types';
 
 export const useFolded = (node: ReactShape) => {
   const { isNodeUnfolded, toggleNodeUnfold } = useMindflowService();
@@ -13,8 +13,13 @@ export const useFolded = (node: ReactShape) => {
 
   useEffect(() => {
     // 展开的节点在前面显示
-    node.setZIndex(unfolded ? 1000 : 0);
-  }, [unfolded]);
+
+    if (unfolded) {
+      node.setZIndex(100);
+    } else {
+      node.removeZIndex();
+    }
+  }, [unfolded, node]);
 
   return { unfolded, cantFold, toggleNodeUnfold };
 };
