@@ -2,6 +2,8 @@
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
+构建逻辑地图的基础组件
+
 ## License
 
 [MIT](../../LICENSE) ® Arvin Xu
