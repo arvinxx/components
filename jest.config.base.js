@@ -10,6 +10,7 @@ module.exports = {
   ...defaultConfig,
   setupFiles: [...defaultConfig.setupFiles],
   moduleNameMapper: {
+    '@arvinxu/image-gallery': '<rootDir>/packages/image-gallery/src',
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
     '@arvinxu/page-loading': '<rootDir>/packages/page-loading/src',
     '@arvinxu/mindflow': '<rootDir>/packages/mindflow/src',

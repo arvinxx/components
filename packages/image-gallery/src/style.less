@@ -1,0 +1,34 @@
+#mountNode {
+  padding: 8px;
+}
+
+.masonry {
+  column-count: 4;
+  column-gap: 0;
+}
+
+@media (max-width: 400px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 1200px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+.item {
+  break-inside: avoid;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.link {
+  padding: 4px 0;
+}
+
+.ant-card-actions {
+  background: #fafafa;
+}

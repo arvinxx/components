@@ -18,6 +18,8 @@
     /* Alias 路径 */
     "baseUrl": ".",
     "paths": {
+      "@arvinxu/image-gallery": ["./packages/image-gallery/src"],
+      "@arvinxu/image-gallery/*": ["./packages/image-gallery/src/*"],
       "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
       "@arvinxu/page-loading": ["./packages/page-loading/src"],
       "@arvinxu/mindflow": ["./packages/mindflow/src"],
