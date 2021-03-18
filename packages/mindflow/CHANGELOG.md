@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/mindflow [1.5.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.5.0...@arvinxu/mindflow@1.5.1) (2021-03-18)
+
+
+### 👷 构建系统
+
+* 修正构建配置问题 ([4a7cdc8](https://github.com/arvinxx/components/commit/4a7cdc8))
+
+
+### 📝 文档
+
+* 更新文档 ([e556d26](https://github.com/arvinxx/components/commit/e556d26))
+
 # @arvinxu/mindflow [1.5.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.4.1...@arvinxu/mindflow@1.5.0) (2021-03-17)
 
 
