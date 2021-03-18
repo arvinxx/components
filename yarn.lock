@@ -3919,9 +3919,9 @@
   integrity sha1-8aHLNa/0e8XPsFywxEHKkekUwm8=
 
 "@types/jsdom@^16.2.3":
-  version "16.2.6"
-  resolved "https://registry.npm.taobao.org/@types/jsdom/download/@types/jsdom-16.2.6.tgz#9ddf0521e49be5365797e690c3ba63148e562c29"
-  integrity sha1-nd8FIeSb5TZXl+aQw7pjFI5WLCk=
+  version "16.2.7"
+  resolved "https://registry.yarnpkg.com/@types/jsdom/-/jsdom-16.2.7.tgz#27d2f77d655a3db15f7c3f104f1a6d15e3112938"
+  integrity sha512-jJ0QDvwZxAO+SninBaQdW6najEs1dCZ1uMsXFBTitwfAtz+0wfDZWd3GFEqkL4flD3IefB+VGBcrN9HbRdAdog==
   dependencies:
     "@types/node" "*"
     "@types/parse5" "*"
@@ -3994,10 +3994,10 @@
   resolved "https://registry.npm.taobao.org/@types/mustache/download/@types/mustache-4.1.0.tgz#b702b1e2879d9ff1f39ac89a4a7784a489aee947"
   integrity sha1-twKx4oedn/HzmsiaSneEpImu6Uc=
 
-"@types/node@*", "@types/node@^14.14.10":
-  version "14.14.28"
-  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.28.tgz?cache=0&sync_timestamp=1613331713665&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.14.28.tgz#cade4b64f8438f588951a6b35843ce536853f25b"
-  integrity sha1-yt5LZPhDj1iJUaazWEPOU2hT8ls=
+"@types/node@*", "@types/node@^14.14.10", "@types/node@^14.14.28":
+  version "14.14.35"
+  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.35.tgz?cache=0&sync_timestamp=1615834822695&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.14.35.tgz#42c953a4e2b18ab931f72477e7012172f4ffa313"
+  integrity sha1-QslTpOKxirkx9yR35wEhcvT/oxM=
 
 "@types/node@14.0.23":
   version "14.0.23"
@@ -4008,11 +4008,6 @@
   version "12.20.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.6.tgz#7b73cce37352936e628c5ba40326193443cfba25"
   integrity sha512-sRVq8d+ApGslmkE9e3i+D3gFGk7aZHAT+G4cIpIEdLJYPsWiSPwcAnJEjddLQQDqV3Ra2jOclX/Sv6YrvGYiWA==
-
-"@types/node@^14.14.28":
-  version "14.14.35"
-  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.35.tgz?cache=0&sync_timestamp=1615834822695&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.14.35.tgz#42c953a4e2b18ab931f72477e7012172f4ffa313"
-  integrity sha1-QslTpOKxirkx9yR35wEhcvT/oxM=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
