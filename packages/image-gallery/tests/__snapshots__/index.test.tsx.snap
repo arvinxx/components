@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageGallery 默认状态 1`] = `
+<div>
+  <div
+    class="avx-image-gallery-container avx-image-gallery-masonry"
+  >
+    <canvas
+      id="canvas"
+      style="display: none;"
+    />
+  </div>
+</div>
+`;

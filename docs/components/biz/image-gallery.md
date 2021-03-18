@@ -22,6 +22,7 @@ order: 2
 
 ## 演示
 
+组件库的 Logo 物料
 <code src='./examples/ImageGallery/Demo.tsx' />
 
 <API src='../../../packages/image-gallery/src/index.tsx'></API>
