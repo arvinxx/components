@@ -7,6 +7,8 @@ const argv = require('yargs').argv;
 const lernaConfig = require('../../lerna.json');
 
 const packagePath = path.join(__dirname, '../../packages');
+const tsconfigPath = path.join(__dirname, '../../tsconfig.json');
+const jestconfigPath = path.join(__dirname, '../../jest.config.base.js');
 
 /**
  * 检查是否已经存在模块
@@ -33,6 +35,31 @@ const checkTemplateFiles = (entries) => {
     );
     process.exit(1);
   }
+};
+
+/**
+ * 添加模块 alias 依赖
+ * @param pkg
+ */
+const addAlias = (pkg: string) => {
+  const tsconfigFile = fs.readFileSync(tsconfigPath, 'utf-8');
+
+  const tsconfig = tsconfigFile.replace(
+    '"@arvinxu/float-label-input"',
+    `"@arvinxu/${pkg}": ["./packages/${pkg}/src"],
+      "@arvinxu/${pkg}/*": ["./packages/${pkg}/src/*"],
+      "@arvinxu/float-label-input"`,
+  );
+
+  fs.writeFileSync(tsconfigPath, tsconfig);
+
+  const jestconfigFile = fs.readFileSync(jestconfigPath, 'utf-8');
+  const jestconfig = jestconfigFile.replace(
+    "'@arvinxu/float-label-input'",
+    `'@arvinxu/${pkg}': '<rootDir>/packages/${pkg}/src',
+    '@arvinxu/float-label-input'`,
+  );
+  fs.writeFileSync(jestconfigPath, jestconfig);
 };
 
 /**
@@ -81,6 +108,8 @@ const create = async () => {
   });
 
   await Promise.all(filesPromise);
+
+  addAlias(pkg);
 };
 
 create();
