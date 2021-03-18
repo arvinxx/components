@@ -250,7 +250,7 @@
     browserslist "^4.14.5"
     semver "^6.3.0"
 
-"@babel/helper-create-class-features-plugin@^7.12.1", "@babel/helper-create-class-features-plugin@^7.12.16":
+"@babel/helper-create-class-features-plugin@^7.12.1":
   version "7.12.16"
   resolved "https://registry.npm.taobao.org/@babel/helper-create-class-features-plugin/download/@babel/helper-create-class-features-plugin-7.12.16.tgz#955d5099fd093e5afb05542190f8022105082c61"
   integrity sha1-lV1Qmf0JPlr7BVQhkPgCIQUILGE=
@@ -428,7 +428,7 @@
   resolved "https://registry.npm.taobao.org/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.12.11.tgz#c9a1f021917dcb5ccf0d4e453e399022981fc9ed"
   integrity sha1-yaHwIZF9y1zPDU5FPjmQIpgfye0=
 
-"@babel/helper-validator-option@^7.12.1", "@babel/helper-validator-option@^7.12.16", "@babel/helper-validator-option@^7.12.17":
+"@babel/helper-validator-option@^7.12.1", "@babel/helper-validator-option@^7.12.17":
   version "7.12.17"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-option/-/helper-validator-option-7.12.17.tgz#d1fbf012e1a79b7eebbfdc6d270baaf8d9eb9831"
   integrity sha512-TopkMDmLzq8ngChwRlyjR6raKD6gMSae4JdYDB8bByKreQgG0RBTuKe9LRxW3wFtUnjxOPRKBDwEH6Mg5KeDfw==
@@ -1130,13 +1130,13 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/plugin-transform-typescript@^7.12.1", "@babel/plugin-transform-typescript@^7.12.16":
-  version "7.12.16"
-  resolved "https://registry.npm.taobao.org/@babel/plugin-transform-typescript/download/@babel/plugin-transform-typescript-7.12.16.tgz#3f30b829bdd15683f71c32fa31330c2af8c1b732"
-  integrity sha1-PzC4Kb3RVoP3HDL6MTMMKvjBtzI=
+"@babel/plugin-transform-typescript@^7.12.1", "@babel/plugin-transform-typescript@^7.13.0":
+  version "7.13.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.13.0.tgz#4a498e1f3600342d2a9e61f60131018f55774853"
+  integrity sha512-elQEwluzaU8R8dbVuW2Q2Y8Nznf7hnjM7+DSCd14Lo5fF63C9qNLbwZYbmZrtV9/ySpSUpkRpQXvJb6xyu4hCQ==
   dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.12.16"
-    "@babel/helper-plugin-utils" "^7.12.13"
+    "@babel/helper-create-class-features-plugin" "^7.13.0"
+    "@babel/helper-plugin-utils" "^7.13.0"
     "@babel/plugin-syntax-typescript" "^7.12.13"
 
 "@babel/plugin-transform-unicode-escapes@^7.12.1", "@babel/plugin-transform-unicode-escapes@^7.12.13":
@@ -1344,13 +1344,13 @@
     "@babel/plugin-transform-typescript" "^7.12.1"
 
 "@babel/preset-typescript@^7.12.7", "@babel/preset-typescript@^7.8.3":
-  version "7.12.16"
-  resolved "https://registry.npm.taobao.org/@babel/preset-typescript/download/@babel/preset-typescript-7.12.16.tgz#b2080ce20b7095c049db2a0410f1e39bc892f7ca"
-  integrity sha1-sggM4gtwlcBJ2yoEEPHjm8iS98o=
+  version "7.13.0"
+  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.13.0.tgz#ab107e5f050609d806fbb039bec553b33462c60a"
+  integrity sha512-LXJwxrHy0N3f6gIJlYbLta1D9BDtHpQeqwzM0LIfjDlr6UE/D5Mc7W4iDiQzaE+ks0sTjT26ArcHWnJVt0QiHw==
   dependencies:
-    "@babel/helper-plugin-utils" "^7.12.13"
-    "@babel/helper-validator-option" "^7.12.16"
-    "@babel/plugin-transform-typescript" "^7.12.16"
+    "@babel/helper-plugin-utils" "^7.13.0"
+    "@babel/helper-validator-option" "^7.12.17"
+    "@babel/plugin-transform-typescript" "^7.13.0"
 
 "@babel/register@7.12.1":
   version "7.12.1"
