@@ -10,4 +10,5 @@ module.exports = {
   roots: [root],
   name: packageName,
   displayName: packageName,
+  collectCoverageFrom: [`${root}/src/**/*.tsx`, `${root}/src/**/*.ts`],
 };

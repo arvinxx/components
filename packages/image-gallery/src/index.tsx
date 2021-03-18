@@ -2,9 +2,7 @@ import type { FC } from 'react';
 import React from 'react';
 import { Button, Card, Dropdown, Menu } from 'antd';
 import { EllipsisOutlined } from '@ant-design/icons';
-
-import { useCopy } from './useCopy';
-import { useDownload } from './useDownload';
+import { copySVG, copyPng, downloadSVG, downloadPng } from './utils';
 
 import './style.less';
 import type { ImageList } from './types';
@@ -29,9 +27,6 @@ export interface ImageGalleryProps {
 }
 
 const ImageGallery: FC<ImageGalleryProps> = ({ imageList, darkBackground }) => {
-  const { copyPng, copySVG } = useCopy();
-  const { downloadPng, downloadSVG } = useDownload();
-
   return (
     <div className="avx-image-gallery-container avx-image-gallery-masonry">
       {imageList.map((item, index) => {

@@ -18,8 +18,8 @@
     "webpack": "webpack",
     "test": "jest",
     "test:update": "jest -u",
-    "prepublishOnly": "yarn build",
     "cov": "jest --coverage",
+    "prepublishOnly": "yarn build",
     "clean": "rm -rf es lib dist build coverage .umi"
   }
 }
