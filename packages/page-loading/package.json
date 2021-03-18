@@ -24,7 +24,8 @@
     "@types/insert-css": "^2.0.0"
   },
   "scripts": {
-    "build": "father-build && webpack",
+    "build": "father-build && yarn webpack",
+    "webpack": "webpack",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "yarn build",
