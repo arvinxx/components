@@ -2,6 +2,12 @@
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
+一个为了方便物料分发而制作的图片画廊组件
+
+## 文档
+
+[演示 demo](https://components.arvinx.com/components/biz/image-gallery)
+
 ## License
 
 [MIT](../../LICENSE) ® Arvin Xu
