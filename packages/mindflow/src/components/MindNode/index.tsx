@@ -10,6 +10,7 @@ import { Divider, Tooltip } from 'antd';
 import chorma from 'chroma-js';
 import type { ReactShape } from '@antv/x6-react-shape';
 import cls from 'classnames';
+import { useOverflow } from 'use-overflow';
 
 import CollapseIcon from '../CollapseIcon';
 import { mapColorToHex, mapTypeToColor, rgba2hex } from '../../utils';
@@ -41,6 +42,9 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
 
   const backgroundColor = rgba2hex(baseColor.alpha(0.1).rgba());
 
+  const textRef = useRef(null);
+  const { refXOverflowing } = useOverflow(textRef);
+
   return (
     <div
       ref={ref}
@@ -64,12 +68,13 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
         )}
 
         <div
+          ref={textRef}
           className={cls(
             'mind-node-title',
             unfolded ? 'mind-node-title-expand' : '',
           )}
         >
-          {title}
+          {refXOverflowing ? <Tooltip title={title}>{title}</Tooltip> : title}
         </div>
       </div>
       {unfolded ? (

@@ -22717,6 +22717,11 @@ use-merge-value@^1.0.2:
   resolved "https://registry.npm.taobao.org/use-merge-value/download/use-merge-value-1.0.2.tgz#6da9de949a1ec9d08cbc2b43832fe2a214f502dc"
   integrity sha1-banelJoeydCMvCtDgy/iohT1Atw=
 
+use-overflow@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/use-overflow/download/use-overflow-1.1.0.tgz#1e7e0acd732cb4123f486cd9c97a535eb864026a"
+  integrity sha1-Hn4KzXMstBI/SGzZyXpTXrhkAmo=
+
 use-subscription@1.4.1:
   version "1.4.1"
   resolved "https://registry.npm.taobao.org/use-subscription/download/use-subscription-1.4.1.tgz#edcbcc220f1adb2dd4fa0b2f61b6cc308e620069"
