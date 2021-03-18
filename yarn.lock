@@ -505,6 +505,15 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/plugin-syntax-decorators" "^7.12.1"
 
+"@babel/plugin-proposal-decorators@^7.13.5":
+  version "7.13.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.13.5.tgz#d28071457a5ba8ee1394b23e38d5dcf32ea20ef7"
+  integrity sha512-i0GDfVNuoapwiheevUOuSW67mInqJ8qw7uWfpjNVeHMn143kXblEy/bmL9AdZ/0yf/4BMQeWXezK0tQIvNPqag==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.13.0"
+    "@babel/helper-plugin-utils" "^7.13.0"
+    "@babel/plugin-syntax-decorators" "^7.12.13"
+
 "@babel/plugin-proposal-do-expressions@7.12.1":
   version "7.12.1"
   resolved "https://registry.npm.taobao.org/@babel/plugin-proposal-do-expressions/download/@babel/plugin-proposal-do-expressions-7.12.1.tgz#8d7f1bc532d8168147555c26e3db922cc0dfd2f8"
@@ -683,7 +692,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/plugin-syntax-decorators@^7.12.1":
+"@babel/plugin-syntax-decorators@^7.12.1", "@babel/plugin-syntax-decorators@^7.12.13":
   version "7.12.13"
   resolved "https://registry.npm.taobao.org/@babel/plugin-syntax-decorators/download/@babel/plugin-syntax-decorators-7.12.13.tgz#fac829bf3c7ef4a1bc916257b403e58c6bdaf648"
   integrity sha1-+sgpvzx+9KG8kWJXtAPljGva9kg=
@@ -4693,13 +4702,14 @@
   integrity sha1-Ki3XtLzRGGnpaCZP89q6z6vouHQ=
 
 "@umijs/fabric@^2.2.2":
-  version "2.5.6"
-  resolved "https://registry.npm.taobao.org/@umijs/fabric/download/@umijs/fabric-2.5.6.tgz#5cef0a642768a35ffa11f1f4b80056e2971f0357"
-  integrity sha1-XO8KZCdoo1/6EfH0uABW4pcfA1c=
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.5.7.tgz#5d73b6110d240147669dea78789185ddcf81271b"
+  integrity sha512-s2daVngqVtawaFmJ19sGu8hOgrCCgFR9TI+WoMlUKfMpOlRcMLKGG8JxQIsX/AMlPNMbLB7/iDZFI4KLsWaCpw==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/eslint-parser" "^7.12.1"
-    "@babel/plugin-proposal-class-properties" "^7.12.1"
+    "@babel/plugin-proposal-class-properties" "^7.13.0"
+    "@babel/plugin-proposal-decorators" "^7.13.5"
     "@babel/preset-env" "^7.12.11"
     "@babel/preset-react" "^7.12.10"
     "@babel/preset-typescript" "^7.12.7"
