@@ -11685,9 +11685,9 @@ immer@^7.0.5:
   integrity sha1-3DvG24dAFlnS5zfGeiGyJ8SEpK0=
 
 immer@^8.0.0, immer@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.npm.taobao.org/immer/download/immer-8.0.1.tgz?cache=0&sync_timestamp=1611143233118&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
-  integrity sha1-nHPbaD4rOXXEJPsFcq9YiYd65lY=
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.2.tgz#16d01364b9b27fa1adebdbfbf69ec750b46701b8"
+  integrity sha512-PC9UlH8GYfBCoTbPbDEULuXhdmr21+tlv10IzA9Eycpi2Qrgas0j8pUt8Z2ZxVJ/OHIzQq4W8AWymMGkCJplBA==
 
 immutable@^3.8.1:
   version "3.8.2"
