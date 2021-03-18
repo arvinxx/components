@@ -1,5 +1,23 @@
 # Changelog
 
+# @arvinxu/mindflow [1.6.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.5.3...@arvinxu/mindflow@1.6.0) (2021-03-18)
+
+
+### ✨ 新特性
+
+* 针对过长文本以 tooltip 显示 ([93a80b0](https://github.com/arvinxx/components/commit/93a80b0))
+* 针对过长文本以 tooltip 显示 ([460ee8a](https://github.com/arvinxx/components/commit/460ee8a))
+
+
+### 🐛 修复
+
+* 修正没有 url 时仍可点击的 bug ([f8347d2](https://github.com/arvinxx/components/commit/f8347d2))
+
+
+### 💄 样式
+
+* 优化依据面板的样式 ([72cbf69](https://github.com/arvinxx/components/commit/72cbf69))
+
 ## @arvinxu/mindflow [1.5.3](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.5.2...@arvinxu/mindflow@1.5.3) (2021-03-18)
 
 
