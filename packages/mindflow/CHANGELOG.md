@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.5.3](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.5.2...@arvinxu/mindflow@1.5.3) (2021-03-18)
+
+
+### 👷 构建系统
+
+* 优化构建配置 ([eb177aa](https://github.com/arvinxx/components/commit/eb177aa))
+
 ## @arvinxu/mindflow [1.5.2](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.5.1...@arvinxu/mindflow@1.5.2) (2021-03-18)
 
 
