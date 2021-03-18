@@ -16,7 +16,6 @@ export interface ImageGalleryProps {
    * 图片清单
    */
   imageList: ImageList;
-
   /**
    * 暗色背景下默认的背景色
    * @default #1890ff
@@ -36,7 +35,8 @@ const ImageGallery: FC<ImageGalleryProps> = ({ imageList, darkBackground }) => {
   return (
     <div className="avx-image-gallery-container avx-image-gallery-masonry">
       {imageList.map((item, index) => {
-        const { padding } = item;
+        const { padding, url, title } = item;
+
         const backgroundColor =
           item.darkBackground || darkBackground || '#1890ff';
 
@@ -54,9 +54,9 @@ const ImageGallery: FC<ImageGalleryProps> = ({ imageList, darkBackground }) => {
                   <img
                     className="avx-image-gallery-image"
                     style={{ padding }}
-                    src={item.url}
-                    alt={item.title}
-                    onClick={() => window.open(item.url)}
+                    src={url}
+                    alt={title}
+                    onClick={() => window.open(url)}
                   />
                 </div>
               }
@@ -64,7 +64,7 @@ const ImageGallery: FC<ImageGalleryProps> = ({ imageList, darkBackground }) => {
                 <Button
                   type={'link'}
                   className="avx-image-gallery-link"
-                  onClick={() => copySVG(item.url)}
+                  onClick={() => copySVG(url)}
                 >
                   复制SVG
                 </Button>,
@@ -72,21 +72,17 @@ const ImageGallery: FC<ImageGalleryProps> = ({ imageList, darkBackground }) => {
                 <Button
                   type={'link'}
                   className="avx-image-gallery-link"
-                  onClick={() => copyPng(item.url)}
+                  onClick={() => copyPng(url)}
                 >
                   复制PNG
                 </Button>,
                 <Dropdown
                   overlay={
                     <Menu>
-                      <Menu.Item
-                        onClick={() => downloadPng(item.url, item.title)}
-                      >
+                      <Menu.Item onClick={() => downloadPng(url, title)}>
                         下载PNG
                       </Menu.Item>
-                      <Menu.Item
-                        onClick={() => downloadSVG(item.url, item.title)}
-                      >
+                      <Menu.Item onClick={() => downloadSVG(url, title)}>
                         下载SVG
                       </Menu.Item>
                     </Menu>
