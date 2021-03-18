@@ -1,3 +1,4 @@
+import React from 'react';
 import type { FC } from 'react';
 import { useState } from 'react';
 import { MinusOutlined, PlusOutlined } from '@ant-design/icons';

@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { Graph, Path } from '@antv/x6';
 
 Graph.registerConnector(

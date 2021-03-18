@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { Markup, Shape } from '@antv/x6';
 import './connector';
 

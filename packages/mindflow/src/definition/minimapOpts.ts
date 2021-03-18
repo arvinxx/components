@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { MinimalNode } from './shapes';
 import type { MiniMapManager } from '@antv/x6/lib/graph/minimap';
 

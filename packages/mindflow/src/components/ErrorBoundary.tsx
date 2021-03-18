@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import React, { Fragment } from 'react';
 
 class ErrorBoundary extends React.Component<{ errorTemplate?: any }> {
