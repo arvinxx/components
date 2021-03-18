@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.6.4](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.3...@arvinxu/mindflow@1.6.4) (2021-03-18)
+
+
+### 👷 构建系统
+
+* 忽略模块中的快照文件夹 ([ea91f4b](https://github.com/arvinxx/components/commit/ea91f4b))
+
 ## @arvinxu/mindflow [1.6.3](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.2...@arvinxu/mindflow@1.6.3) (2021-03-18)
 
 
