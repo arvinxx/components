@@ -21,22 +21,22 @@ const EvidencePanel: FC<EvidencePanelProps> = ({ references, setVisible }) => {
       case 'rebuttal':
         return 'purple';
       default:
-        return undefined;
+        return 'gray';
     }
   };
   const mapTypeToText = (type: EdgeReference['type']) => {
     switch (type) {
       case 'ground':
-        return '依据';
+        return '事实';
       case 'warrant':
-        return '理由';
+        return '推测';
 
       case 'backing':
         return '支援';
       case 'rebuttal':
         return '反驳';
       default:
-        return undefined;
+        return '未定';
     }
   };
 
@@ -50,13 +50,15 @@ const EvidencePanel: FC<EvidencePanelProps> = ({ references, setVisible }) => {
             target={'_blank'}
             className="mind-edge-references-item"
           >
-            <div className="mind-edge-references-dot" /> {ref.title}
-            <Tag
-              className="mind-edge-references-tag"
-              color={mapTypeToColor(ref.type)}
-            >
-              {mapTypeToText(ref.type)}
-            </Tag>
+            <div>
+              <Tag
+                className="mind-edge-references-tag"
+                color={mapTypeToColor(ref.type)}
+              >
+                {mapTypeToText(ref.type)}
+              </Tag>
+            </div>
+            <div className="mind-edge-references-text">{ref.title}</div>
           </a>
         );
       })}
