@@ -19236,7 +19236,7 @@ redux-saga@^0.16.0:
   resolved "https://registry.npm.taobao.org/redux-saga/download/redux-saga-0.16.2.tgz#993662e86bc945d8509ac2b8daba3a8c615cc971"
   integrity sha1-mTZi6GvJRdhQmsK42ro6jGFcyXE=
 
-redux@^4.0.0, redux@^4.0.1:
+redux@^4.0.0, redux@^4.0.1, redux@^4.0.5:
   version "4.0.5"
   resolved "https://registry.npm.taobao.org/redux/download/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"
   integrity sha1-TbXeWBbheJHeioDEJCMtBvBR2T8=
@@ -20954,6 +20954,13 @@ stealthy-require@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/stealthy-require/download/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
+
+stook-devtools@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/stook-devtools/download/stook-devtools-1.0.0.tgz#378bda2a383d830e993c423d15fc15cd01559684"
+  integrity sha1-N4vaKjg9gw6ZPEI9FfwVzQFVloQ=
+  dependencies:
+    redux "^4.0.5"
 
 stook@^1.0.0:
   version "1.0.0"
