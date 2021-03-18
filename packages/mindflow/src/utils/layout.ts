@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import type { Graph, Node } from '@antv/x6';
 import dagre from 'dagre';
 

@@ -6,10 +6,9 @@ const root = '<rootDir>/packages/mindflow';
 
 module.exports = {
   ...base,
-  // runner: 'jest-electron/runner',
-  // testEnvironment: 'jest-electron/environment',
   rootDir: '../..',
   roots: [root],
   name: packageName,
   displayName: packageName,
+  collectCoverageFrom: [`${root}/src/**/*.tsx`, `${root}/src/**/*.ts`],
 };
