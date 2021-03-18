@@ -1,7 +1,6 @@
-import React from 'react';
-import Mindflow, { MindflowData } from '@arvinxu/mindflow';
+import { MindflowData } from '@arvinxu/mindflow';
 
-const data: MindflowData = {
+export const demo: MindflowData = {
   nodes: [
     {
       id: 'node1',
@@ -112,12 +111,3 @@ const data: MindflowData = {
     },
   ],
 };
-const Basic = () => {
-  return (
-    <div>
-      <Mindflow data={data} height={600} />
-    </div>
-  );
-};
-
-export default Basic;

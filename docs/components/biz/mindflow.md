@@ -30,6 +30,6 @@ Mindflow 是基于 [溯因推理][reason] 与 [图尔敏推论模型][toulmin] �
 ## 演示
 
 PS: 暂不支持多实例
-<code src='./examples/Mindflow/Basic.tsx' />
+<code src='./examples/Mindflow/Demo.tsx' />
 
 <API src='../../../packages/mindflow/src/index.tsx'></API>
