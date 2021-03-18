@@ -1,5 +1,24 @@
 # Changelog
 
+## @arvinxu/mindflow [1.6.2](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.1...@arvinxu/mindflow@1.6.2) (2021-03-18)
+
+
+### ✅ 测试
+
+* 补充测试用例 ([3be0a9e](https://github.com/arvinxx/components/commit/3be0a9e))
+* 补充测试用例 ([e850fcb](https://github.com/arvinxx/components/commit/e850fcb))
+* 补充测试用例 ([758c864](https://github.com/arvinxx/components/commit/758c864))
+
+
+### 🎫 杂项
+
+* 补充开发依赖工具 ([30a164b](https://github.com/arvinxx/components/commit/30a164b))
+
+
+### 🐛 修复
+
+* 修复折叠的 bug ([9b7e5a4](https://github.com/arvinxx/components/commit/9b7e5a4))
+
 ## @arvinxu/mindflow [1.6.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.0...@arvinxu/mindflow@1.6.1) (2021-03-18)
 
 
