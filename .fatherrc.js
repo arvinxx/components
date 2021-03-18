@@ -9,7 +9,7 @@ module.exports = {
   extraBabelPlugins: [
     [
       'import',
-      { libraryName: 'antd', libraryDirectory: 'es', style: true },
+      { libraryName: 'antd', libraryDirectory: 'es', style: 'css' },
       'antd',
     ],
   ],

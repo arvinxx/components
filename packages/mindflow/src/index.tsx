@@ -29,7 +29,7 @@ export interface MindflowProps {
    */
   height?: number;
   /**
-   * 点击节点操作
+   * 节点的点击回调
    */
   onNodeClick?: (node) => void;
 }
