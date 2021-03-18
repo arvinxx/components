@@ -81,7 +81,11 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
               <Divider dashed style={{ margin: '4px 0 8px' }} />
               <span>📚 相关资料</span>
               {references.map((ref) => {
-                return (
+                return !ref.url ? (
+                  <span className="mind-node-references-item">
+                    <div className="mind-node-references-dot" /> {ref.title}
+                  </span>
+                ) : (
                   <a
                     key={ref.id}
                     href={ref.url}
