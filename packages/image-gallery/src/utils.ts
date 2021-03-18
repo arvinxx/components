@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { message } from 'antd';
 
 /**

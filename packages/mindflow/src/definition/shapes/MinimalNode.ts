@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import { NodeView } from '@antv/x6';
 
 export class MinimalNode extends NodeView {
