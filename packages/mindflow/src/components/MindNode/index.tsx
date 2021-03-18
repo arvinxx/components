@@ -13,7 +13,7 @@ import cls from 'classnames';
 import { useOverflow } from 'use-overflow';
 
 import CollapseIcon from '../CollapseIcon';
-import { mapColorToHex, mapTypeToColor, rgba2hex } from '../../utils';
+import { mapColorToHex, mapNodeTypeToColor, rgba2hex } from '../../utils';
 import type { NodeData } from '../../types';
 import { useFolded } from './useFolded';
 
@@ -38,7 +38,7 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
     references = [],
   } = data;
 
-  const baseColor = chorma(mapColorToHex(mapTypeToColor(type)));
+  const baseColor = chorma(mapColorToHex(mapNodeTypeToColor(type)));
 
   const backgroundColor = rgba2hex(baseColor.alpha(0.1).rgba());
 

@@ -1,29 +1,18 @@
 import type { FC } from 'react';
+import React from 'react';
+import { Button, Divider, Tag } from 'antd';
+
 import type { EdgeReference } from '../../types';
+import { mapReferenceTypeToColor } from '../../utils';
 
 import './Reference.less';
-import { Button, Divider, Tag } from 'antd';
 
 interface EvidencePanelProps {
   references: EdgeReference[];
   setVisible: (visible: boolean) => void;
 }
-const EvidencePanel: FC<EvidencePanelProps> = ({ references, setVisible }) => {
-  const mapTypeToColor = (type: EdgeReference['type']) => {
-    switch (type) {
-      case 'ground':
-        return 'green';
-      case 'warrant':
-        return 'blue';
 
-      case 'backing':
-        return 'yellow';
-      case 'rebuttal':
-        return 'purple';
-      default:
-        return 'gray';
-    }
-  };
+const EvidencePanel: FC<EvidencePanelProps> = ({ references, setVisible }) => {
   const mapTypeToText = (type: EdgeReference['type']) => {
     switch (type) {
       case 'ground':
@@ -40,20 +29,28 @@ const EvidencePanel: FC<EvidencePanelProps> = ({ references, setVisible }) => {
     }
   };
 
+  const Content: FC<{ reference: EdgeReference }> = ({ reference }) => {
+    return (
+      <>
+        <div>
+          <Tag
+            className="mind-edge-references-tag"
+            color={mapReferenceTypeToColor(reference.type)}
+          >
+            {mapTypeToText(reference.type)}
+          </Tag>
+        </div>
+        <div className="mind-edge-references-text">{reference.title}</div>
+      </>
+    );
+  };
+
   return (
     <div className="mind-edge-references">
       {references.map((ref) => {
         return !ref.url ? (
-          <div className="mind-edge-references-item">
-            <div>
-              <Tag
-                className="mind-edge-references-tag"
-                color={mapTypeToColor(ref.type)}
-              >
-                {mapTypeToText(ref.type)}
-              </Tag>
-            </div>
-            <div className="mind-edge-references-text">{ref.title}</div>
+          <div className="mind-edge-references-item" key={ref.id}>
+            <Content reference={ref} />
           </div>
         ) : (
           <a
@@ -62,15 +59,7 @@ const EvidencePanel: FC<EvidencePanelProps> = ({ references, setVisible }) => {
             target={'_blank'}
             className="mind-edge-references-item"
           >
-            <div>
-              <Tag
-                className="mind-edge-references-tag"
-                color={mapTypeToColor(ref.type)}
-              >
-                {mapTypeToText(ref.type)}
-              </Tag>
-            </div>
-            <div className="mind-edge-references-text">{ref.title}</div>
+            <Content reference={ref} />
           </a>
         );
       })}

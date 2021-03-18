@@ -1,49 +1,10 @@
 import type { BaseEdge, MindflowData } from '@arvinxu/mindflow';
 import {
-  mapColorToHex,
   getUncollapsedNode,
   getUncollapsedEdge,
   getUncollaspedData,
-  mapTypeToColor,
   preprocessData,
 } from './dataMap';
-
-describe('mapColorToHex', () => {
-  it('返回红色', () => {
-    expect(mapColorToHex('red')).toEqual('#ff4d4f');
-    expect(mapColorToHex('pink')).toEqual('#ff4d4f');
-  });
-
-  it('返回蓝色', () => {
-    expect(mapColorToHex('blue')).toEqual('#69c0ff');
-    expect(mapColorToHex('cyan')).toEqual('#69c0ff');
-  });
-  it('返回绿色', () => {
-    expect(mapColorToHex('green')).toEqual('#52c41a');
-  });
-  it('返回黄色', () => {
-    expect(mapColorToHex('yellow')).toEqual('#faad14');
-  });
-  it('返回青色', () => {
-    expect(mapColorToHex('teal')).toEqual('#5cdbd3');
-  });
-  it('返回紫色', () => {
-    expect(mapColorToHex('purple')).toEqual('#b37feb');
-  });
-  it('返回灰色', () => {
-    expect(mapColorToHex('gray')).toEqual('#8f8f8f');
-    expect(mapColorToHex('123')).toEqual('#8f8f8f');
-  });
-});
-
-test('mapTypeToColor', () => {
-  expect(mapTypeToColor('question')).toEqual('red');
-  expect(mapTypeToColor('action')).toEqual('green');
-  expect(mapTypeToColor('idea')).toEqual('yellow');
-  expect(mapTypeToColor('subject')).toEqual('blue');
-  expect(mapTypeToColor('subject')).toEqual('blue');
-  expect(mapTypeToColor('123')).toEqual('grey');
-});
 
 describe('getUncollapsedNode', () => {
   const data: MindflowData = {

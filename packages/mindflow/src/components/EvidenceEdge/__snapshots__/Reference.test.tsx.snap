@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reference 列表 1`] = `
+<div>
+  <div
+    class="mind-edge-references"
+  >
+    <div
+      class="mind-edge-references-item"
+    >
+      <div>
+        <span
+          class="ant-tag ant-tag-purple mind-edge-references-tag"
+        >
+          反驳
+        </span>
+      </div>
+      <div
+        class="mind-edge-references-text"
+      >
+        node1
+      </div>
+    </div>
+    <a
+      class="mind-edge-references-item"
+      href="https://url"
+      target="_blank"
+    >
+      <div>
+        <span
+          class="ant-tag ant-tag-has-color mind-edge-references-tag"
+          style="background-color: gray;"
+        >
+          未定
+        </span>
+      </div>
+      <div
+        class="mind-edge-references-text"
+      >
+        node2
+      </div>
+    </a>
+    <div
+      class="mind-edge-references-item"
+    >
+      <div>
+        <span
+          class="ant-tag ant-tag-yellow mind-edge-references-tag"
+        >
+          支援
+        </span>
+      </div>
+      <div
+        class="mind-edge-references-text"
+      >
+        node3
+      </div>
+    </div>
+    <div
+      class="mind-edge-references-item"
+    >
+      <div>
+        <span
+          class="ant-tag ant-tag-green mind-edge-references-tag"
+        >
+          事实
+        </span>
+      </div>
+      <div
+        class="mind-edge-references-text"
+      >
+        node4
+      </div>
+    </div>
+    <div
+      class="mind-edge-references-item"
+    >
+      <div>
+        <span
+          class="ant-tag ant-tag-blue mind-edge-references-tag"
+        >
+          推测
+        </span>
+      </div>
+      <div
+        class="mind-edge-references-text"
+      >
+        node5
+      </div>
+    </div>
+    <div
+      class="ant-divider ant-divider-horizontal ant-divider-dashed"
+      role="separator"
+      style="margin: 8px 0px;"
+    />
+    <div
+      class="mind-edge-references-foot"
+    >
+      <button
+        class="ant-btn ant-btn-sm"
+        type="button"
+      >
+        <span>
+          关 闭
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Reference 空档案 1`] = `
+<div>
+  <div
+    class="mind-edge-references"
+  >
+    <div
+      class="ant-divider ant-divider-horizontal ant-divider-dashed"
+      role="separator"
+      style="margin: 8px 0px;"
+    />
+    <div
+      class="mind-edge-references-foot"
+    >
+      <button
+        class="ant-btn ant-btn-sm"
+        type="button"
+      >
+        <span>
+          关 闭
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

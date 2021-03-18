@@ -9,6 +9,7 @@ interface CollapseIconProps {
   collapsed: boolean;
   color: string;
 }
+
 const CollapseIcon: FC<CollapseIconProps> = ({ id, collapsed, color }) => {
   const [isHovered, setHovered] = useState(false);
   const { toggleNodeCollapsed } = useMindflowService();

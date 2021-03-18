@@ -1,56 +1,12 @@
 import { unionBy } from 'lodash';
 
-import { mindFlowColors } from '../themes/nodeColor';
-import type { BaseEdge, GraphData, MindflowData, NodeData } from '../types';
-import type { BaseNode } from '../types';
-
-/**
- * 从文本色值获得 hex
- * @param color
- */
-export const mapColorToHex = (color: string) => {
-  switch (color) {
-    case 'blue':
-    case 'cyan':
-      return mindFlowColors.blue;
-    case 'teal':
-      return mindFlowColors.cyan;
-    case 'green':
-      return mindFlowColors.green;
-    case 'yellow':
-      return mindFlowColors.yellow;
-    case 'purple':
-      return mindFlowColors.purple;
-    case 'pink':
-    case 'red':
-    case 'orange':
-      return mindFlowColors.red;
-
-    case 'gray':
-      return mindFlowColors.gray;
-    default:
-      return mindFlowColors.gray;
-  }
-};
-
-/**
- * 类型
- * @param type
- */
-export const mapTypeToColor = (type: string) => {
-  switch (type) {
-    case 'question':
-      return 'red';
-    case 'action':
-      return 'green';
-    case 'idea':
-      return 'yellow';
-    case 'subject':
-      return 'blue';
-    default:
-      return 'grey';
-  }
-};
+import type {
+  BaseEdge,
+  BaseNode,
+  GraphData,
+  MindflowData,
+  NodeData,
+} from '../types';
 
 /**
  * 获取所有需要被折叠的边
