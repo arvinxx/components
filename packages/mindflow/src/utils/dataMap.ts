@@ -1,5 +1,7 @@
+import { unionBy } from 'lodash';
+
 import { mindFlowColors } from '../themes/nodeColor';
-import type { GraphData, MindflowData, NodeData } from '../types';
+import type { BaseEdge, GraphData, MindflowData, NodeData } from '../types';
 import type { BaseNode } from '../types';
 
 /**
@@ -51,6 +53,30 @@ export const mapTypeToColor = (type: string) => {
 };
 
 /**
+ * 获取所有需要被折叠的边
+ * @param baseEdges
+ * @param id
+ * @param result
+ */
+const filterEdgeById = (
+  baseEdges: BaseEdge<any>[],
+  id: string,
+  result: BaseEdge<any>[],
+) => {
+  const fromEdges = baseEdges.filter((e) => e.source === id);
+
+  if (fromEdges.length === 0) return;
+
+  fromEdges.forEach((e) => {
+    result.push(e);
+  });
+
+  fromEdges.forEach((e) => filterEdgeById(baseEdges, e.target, result));
+
+  return unionBy(result, 'target');
+};
+
+/**
  * 找到不被折叠的节点
  * @param data
  * @param collapseList
@@ -60,12 +86,33 @@ export const getUncollapsedNode = (
   collapseList: string[],
 ): BaseNode<NodeData>[] => {
   const targetList = collapseList
-    .map((cid) =>
-      data.edges.filter((e) => e.source === cid).map((e) => e.target),
-    )
+    .map((cid) => filterEdgeById(data.edges, cid, []).map((e) => e.target))
     .flat();
 
   return data.nodes.filter((n) => !targetList.includes(n.id));
+};
+
+export const getUncollapsedEdge = <T = any>(
+  edges: BaseEdge<T>[],
+  collapseList: string[],
+): BaseEdge<T>[] => {
+  const targetList = collapseList
+    .map((cid) => filterEdgeById(edges, cid, []).map((e) => e.target))
+    .flat();
+
+  return edges
+    .filter((e) => !targetList.includes(e.target))
+    .filter((e) => !collapseList.includes(e.source));
+};
+
+export const getUncollaspedData = (
+  data: MindflowData,
+  collapseList: string[],
+): MindflowData => {
+  return {
+    edges: getUncollapsedEdge(data.edges, collapseList),
+    nodes: getUncollapsedNode(data, collapseList),
+  };
 };
 
 /**
@@ -77,17 +124,10 @@ export const preprocessData = (
   data: MindflowData,
   collapseList: string[],
 ): GraphData<NodeData> => {
-  const displayNodes = getUncollapsedNode(data, collapseList);
+  const displayData = getUncollaspedData(data, collapseList);
   return {
-    ...data,
-    edges: data.edges
-      .filter((e) => {
-        return !collapseList.includes(e.source);
-      })
-      .map((e) => ({
-        ...e,
-      })),
-    nodes: displayNodes.map((node) => {
+    edges: displayData.edges,
+    nodes: displayData.nodes.map((node) => {
       const { id } = node;
 
       const isLeaf = data.edges.findIndex((item) => item.source === id) < 0;
