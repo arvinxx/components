@@ -74,7 +74,13 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
             unfolded ? 'mind-node-title-expand' : '',
           )}
         >
-          {refXOverflowing ? <Tooltip title={title}>{title}</Tooltip> : title}
+          {refXOverflowing ? (
+            <Tooltip placement={'topLeft'} title={title}>
+              {title}
+            </Tooltip>
+          ) : (
+            title
+          )}
         </div>
       </div>
       {unfolded ? (
