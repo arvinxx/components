@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.5.2](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.5.1...@arvinxu/mindflow@1.5.2) (2021-03-18)
+
+
+### 👷 构建系统
+
+* 修正 antd 组件样式丢失的问题 ([0c69c54](https://github.com/arvinxx/components/commit/0c69c54))
+
 ## @arvinxu/mindflow [1.5.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.5.0...@arvinxu/mindflow@1.5.1) (2021-03-18)
 
 
