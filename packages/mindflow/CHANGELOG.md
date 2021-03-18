@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/mindflow [1.6.3](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.2...@arvinxu/mindflow@1.6.3) (2021-03-18)
+
+
+### ✅ 测试
+
+* 修正测试覆盖率 ([09b15eb](https://github.com/arvinxx/components/commit/09b15eb))
+
+
+### 👷 构建系统
+
+* 忽略模块中的快照文件夹 ([3d9cd3c](https://github.com/arvinxx/components/commit/3d9cd3c))
+
 ## @arvinxu/mindflow [1.6.2](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.1...@arvinxu/mindflow@1.6.2) (2021-03-18)
 
 
