@@ -43,7 +43,19 @@ const EvidencePanel: FC<EvidencePanelProps> = ({ references, setVisible }) => {
   return (
     <div className="mind-edge-references">
       {references.map((ref) => {
-        return (
+        return !ref.url ? (
+          <div className="mind-edge-references-item">
+            <div>
+              <Tag
+                className="mind-edge-references-tag"
+                color={mapTypeToColor(ref.type)}
+              >
+                {mapTypeToText(ref.type)}
+              </Tag>
+            </div>
+            <div className="mind-edge-references-text">{ref.title}</div>
+          </div>
+        ) : (
           <a
             key={ref.id}
             href={ref.url}
