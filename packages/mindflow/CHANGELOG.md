@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.6.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.0...@arvinxu/mindflow@1.6.1) (2021-03-18)
+
+
+### 🐛 修复
+
+* 修正参考资料没有 url 时也是可点状态的 bug ([a751782](https://github.com/arvinxx/components/commit/a751782))
+
 # @arvinxu/mindflow [1.6.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.5.3...@arvinxu/mindflow@1.6.0) (2021-03-18)
 
 
