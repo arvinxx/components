@@ -111,3 +111,185 @@ export const demo: MindflowData = {
     },
   ],
 };
+
+export const museum: MindflowData = {
+  nodes: [
+    {
+      id: 'node1',
+      data: {
+        title: '如何解决墙面腐蚀很严重的问题?',
+        type: 'question',
+        description:
+          '博物馆的东边外墙面上有非常严重的腐蚀，需要经常涂刷新的油漆。',
+        references: [
+          {
+            id: 'ref1',
+            title: '清洁工小王于2021年3月21日刷了新油漆',
+          },
+          {
+            id: 'ref2',
+            title: '清洁工小李于2021年1月12日刷了新油漆(链接可点击)',
+            url: 'https://www.yuque.com/go/doc/33140357',
+          },
+        ],
+      },
+    },
+    {
+      id: 'node2',
+      data: {
+        title: '刷新的油漆',
+        type: 'action',
+      },
+    },
+    {
+      id: 'node3',
+      data: {
+        title: '换用低腐蚀度的清洁剂',
+        type: 'action',
+      },
+    },
+    {
+      id: 'node4',
+      data: {
+        title: '为什么要用高腐蚀度的清洁剂？',
+        type: 'question',
+      },
+    },
+    {
+      id: 'node5',
+      data: {
+        title: '为什么东边的墙上有很多鸟粪？',
+        type: 'question',
+      },
+    },
+    {
+      id: 'node6',
+      data: {
+        title: '为什么墙上有很多蜘蛛？',
+        type: 'question',
+      },
+    },
+    {
+      id: 'node7',
+      data: {
+        title: '为什么只有这边的墙上有很多小虫子，其他的墙没有呢？',
+        type: 'question',
+      },
+    },
+    {
+      id: 'node8',
+      data: {
+        title: '半晚时候不让光会从这里透出去就行',
+        type: 'idea',
+      },
+    },
+    {
+      id: 'node9',
+      data: {
+        title: '装上厚窗帘',
+        type: 'action',
+      },
+    },
+  ],
+  edges: [
+    { source: 'node1', target: 'node2' },
+    {
+      source: 'node1',
+      target: 'node3',
+      data: {
+        references: [
+          {
+            id: 'ref3',
+            title: '小王在洗墙的时候，用了一种高腐蚀度的清洁剂,导致墙面腐蚀',
+            type: 'ground',
+          },
+          {
+            id: 'ref4',
+            title: '换用低腐蚀度的清洁剂可能墙面就不腐蚀了',
+            type: 'warrant',
+          },
+          {
+            id: 'ref5',
+            title: '除非低腐蚀度的清洁剂洗不干净',
+            type: 'rebuttal',
+          },
+          {
+            id: 'ref6',
+            title: '东边的墙上经常有很多鸟粪,低腐蚀度的清洁剂洗不干净',
+            type: 'ground',
+          },
+        ],
+      },
+    },
+    {
+      source: 'node1',
+      target: 'node4',
+      data: {
+        references: [
+          {
+            id: 'ref3',
+            title: '小王在洗墙的时候，用了一种高腐蚀度的清洁剂,导致墙面腐蚀',
+            type: 'ground',
+          },
+        ],
+      },
+    },
+    {
+      source: 'node4',
+      target: 'node5',
+      data: {
+        references: [
+          {
+            id: 'ref6',
+            title: '东边的墙上经常有很多鸟粪',
+            type: 'ground',
+          },
+        ],
+      },
+    },
+    {
+      source: 'node5',
+      target: 'node6',
+      data: {
+        references: [
+          {
+            id: 'ref7',
+            title: '墙上有很多蜘蛛, 这些鸟以蜘蛛为食，所以经常在墙附近活动',
+            type: 'ground',
+          },
+        ],
+      },
+    },
+    {
+      source: 'node6',
+      target: 'node7',
+      data: {
+        references: [
+          {
+            id: 'ref8',
+            title: '因为墙上有很多小虫子，而蜘蛛以这些小虫子为食',
+            type: 'ground',
+          },
+        ],
+      },
+    },
+    {
+      source: 'node7',
+      target: 'node8',
+      data: {
+        references: [
+          {
+            id: 'ref9',
+            title:
+              '东面墙上有几扇窗子，半晚时候博物馆里的光会从这里透出去，而这些趋光性很强的虫子就被光吸引过来。',
+            type: 'ground',
+          },
+        ],
+      },
+    },
+    {
+      source: 'node8',
+      target: 'node9',
+    },
+  ],
+};
