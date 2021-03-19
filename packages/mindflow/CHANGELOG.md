@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.7.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.0...@arvinxu/mindflow@1.7.1) (2021-03-19)
+
+
+### 💄 样式
+
+* 优化右侧节点 ([648e837](https://github.com/arvinxx/components/commit/648e837))
+
 # @arvinxu/mindflow [1.7.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.5...@arvinxu/mindflow@1.7.0) (2021-03-19)
 
 
