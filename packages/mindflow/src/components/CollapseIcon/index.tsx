@@ -25,6 +25,9 @@ const CollapseIcon: FC<CollapseIconProps> = ({ id, collapsed, color }) => {
       onMouseEnter={() => {
         setHovered(true);
       }}
+      onMouseLeave={() => {
+        setHovered(false);
+      }}
       onClick={() => {
         toggleNodeCollapsed(id);
       }}
@@ -32,35 +35,8 @@ const CollapseIcon: FC<CollapseIconProps> = ({ id, collapsed, color }) => {
       <div
         className="mind-node-collapse-icon"
         style={{ color: isHovered ? '#fff' : color }}
-        onMouseEnter={() => {
-          setHovered(true);
-        }}
-        onMouseLeave={() => {
-          setHovered(false);
-        }}
-        onClick={() => {
-          console.log('icon');
-        }}
       >
-        {collapsed ? (
-          <PlusOutlined
-            onMouseEnter={() => {
-              setHovered(true);
-            }}
-            onClick={() => {
-              console.log('svg');
-            }}
-          />
-        ) : (
-          <MinusOutlined
-            onMouseEnter={() => {
-              setHovered(true);
-            }}
-            onClick={() => {
-              console.log('svg');
-            }}
-          />
-        )}
+        {collapsed ? <PlusOutlined /> : <MinusOutlined />}
       </div>
     </div>
   );

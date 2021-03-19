@@ -1,4 +1,4 @@
-import type { BaseEdge, MindflowData } from '@arvinxu/mindflow';
+import type { BaseEdge, PreMindflowData } from '@arvinxu/mindflow';
 import {
   getUncollapsedNode,
   getUncollapsedEdge,
@@ -7,7 +7,7 @@ import {
 } from './dataMap';
 
 describe('getUncollapsedNode', () => {
-  const data: MindflowData = {
+  const data: PreMindflowData = {
     nodes: [
       {
         id: 'node1',
@@ -88,7 +88,7 @@ describe('getUncollapsedNode', () => {
     ]);
   });
   it('多个节点', () => {
-    const data2: MindflowData = {
+    const data2: PreMindflowData = {
       nodes: [
         {
           id: '1',
@@ -371,67 +371,89 @@ describe('preprocessData', () => {
 
   it('折叠 node4', () => {
     const result = preprocessData(data, ['node4']);
-    expect(result).toEqual({
-      edges: [
-        {
-          source: 'node1',
-          target: 'node2',
+    expect(result.edges).toEqual([
+      {
+        source: {
+          cell: 'node1',
+          port: 'out',
         },
-        {
-          source: 'node1',
-          target: 'node3',
+        target: {
+          cell: 'node2',
+          port: 'in',
         },
-        {
-          source: 'node1',
-          target: 'node4',
+        zIndex: 0,
+      },
+      {
+        source: {
+          cell: 'node1',
+          port: 'out',
         },
-      ],
-      nodes: [
-        {
-          component: 'mind-node',
-          data: {
-            collapsed: false,
-            leaf: false,
-          },
-          height: 40,
-          id: 'node1',
-          shape: 'react-shape',
-          width: 220,
+        target: {
+          cell: 'node3',
+          port: 'in',
         },
-        {
-          component: 'mind-node',
-          data: {
-            collapsed: false,
-            leaf: true,
-          },
-          height: 40,
-          id: 'node2',
-          shape: 'react-shape',
-          width: 220,
+        zIndex: 0,
+      },
+      {
+        source: {
+          cell: 'node1',
+          port: 'out',
         },
-        {
-          component: 'mind-node',
-          data: {
-            collapsed: false,
-            leaf: true,
-          },
-          height: 40,
-          id: 'node3',
-          shape: 'react-shape',
-          width: 220,
+        target: {
+          cell: 'node4',
+          port: 'in',
         },
-        {
-          component: 'mind-node',
-          data: {
-            collapsed: true,
-            leaf: false,
-          },
-          height: 40,
-          id: 'node4',
-          shape: 'react-shape',
-          width: 220,
+        zIndex: 0,
+      },
+    ]);
+    expect(
+      // @ts-ignore
+      result.nodes.map(({ portMarkup, ports, ...res }) => res),
+    ).toEqual([
+      {
+        component: 'mind-node',
+        data: {
+          collapsed: false,
+          leaf: false,
         },
-      ],
-    });
+        height: 40,
+        id: 'node1',
+        shape: 'react-shape',
+        width: 220,
+      },
+      {
+        component: 'mind-node',
+        data: {
+          collapsed: false,
+          leaf: true,
+        },
+        height: 40,
+        id: 'node2',
+        shape: 'react-shape',
+        width: 220,
+      },
+      {
+        component: 'mind-node',
+        data: {
+          collapsed: false,
+          leaf: true,
+        },
+        height: 40,
+        id: 'node3',
+        shape: 'react-shape',
+        width: 220,
+      },
+      {
+        component: 'mind-node',
+        data: {
+          collapsed: true,
+          leaf: false,
+        },
+        height: 40,
+        id: 'node4',
+        shape: 'react-shape',
+        width: 220,
+      },
+    ]);
   });
 });

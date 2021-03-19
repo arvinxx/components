@@ -3,10 +3,11 @@ import { unionBy } from 'lodash';
 import type {
   BaseEdge,
   BaseNode,
-  GraphData,
   MindflowData,
   NodeData,
+  PreMindflowData,
 } from '../types';
+import { defaultNode } from '../definition/node';
 
 /**
  * 获取所有需要被折叠的边
@@ -38,7 +39,7 @@ const filterEdgeById = (
  * @param collapseList
  */
 export const getUncollapsedNode = (
-  data: MindflowData,
+  data: PreMindflowData,
   collapseList: string[],
 ): BaseNode<NodeData>[] => {
   const targetList = collapseList
@@ -62,9 +63,9 @@ export const getUncollapsedEdge = <T = any>(
 };
 
 export const getUncollaspedData = (
-  data: MindflowData,
+  data: PreMindflowData,
   collapseList: string[],
-): MindflowData => {
+): PreMindflowData => {
   return {
     edges: getUncollapsedEdge(data.edges, collapseList),
     nodes: getUncollapsedNode(data, collapseList),
@@ -77,26 +78,28 @@ export const getUncollaspedData = (
  * @param collapseList
  */
 export const preprocessData = (
-  data: MindflowData,
+  data: PreMindflowData,
   collapseList: string[],
-): GraphData<NodeData> => {
+): MindflowData => {
   const displayData = getUncollaspedData(data, collapseList);
+
   return {
-    edges: displayData.edges,
+    edges: displayData.edges.map((e) => {
+      return {
+        ...e,
+        source: { cell: e.source, port: 'out' },
+        target: { cell: e.target, port: 'in' },
+        zIndex: 0,
+      };
+    }),
     nodes: displayData.nodes.map((node) => {
       const { id } = node;
 
-      const isLeaf = data.edges.findIndex((item) => item.source === id) < 0;
-
       return {
-        width: 220,
-        height: 40,
-        shape: 'react-shape',
-        component: 'mind-node',
-        ...node,
+        ...defaultNode(node),
         data: {
           ...node.data,
-          leaf: isLeaf,
+          leaf: data.edges.findIndex((item) => item.source === id) < 0,
           collapsed: collapseList.includes(node.id),
         },
       };

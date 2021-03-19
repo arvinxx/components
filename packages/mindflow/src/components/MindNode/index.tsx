@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React, { memo, useRef } from 'react';
+import React, { useRef } from 'react';
 import {
   CaretUpOutlined,
   CaretDownOutlined,
@@ -7,13 +7,11 @@ import {
   AimOutlined,
 } from '@ant-design/icons';
 import { Divider, Tooltip } from 'antd';
-import chorma from 'chroma-js';
 import type { ReactShape } from '@antv/x6-react-shape';
 import cls from 'classnames';
 import { useOverflow } from 'use-overflow';
 
-import CollapseIcon from '../CollapseIcon';
-import { mapColorToHex, mapNodeTypeToColor, rgba2hex } from '../../utils';
+import { getColorByType, rgba2hex } from '../../utils';
 import type { NodeData } from '../../types';
 import { useFolded } from './useFolded';
 
@@ -23,22 +21,15 @@ interface BaseNodeProps {
   node?: ReactShape;
 }
 
-const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
-  const data = node.getData<NodeData>();
+const MindNode: FC<BaseNodeProps> = ({ node }) => {
   const ref = useRef();
-
   const { unfolded, toggleNodeUnfold, cantFold } = useFolded(node);
 
-  const {
-    type,
-    collapsed,
-    leaf = true,
-    title,
-    description,
-    references = [],
-  } = data;
+  const data = node.getData<NodeData>();
 
-  const baseColor = chorma(mapColorToHex(mapNodeTypeToColor(type)));
+  const { type, title, description, references = [] } = data;
+
+  const baseColor = getColorByType(type);
 
   const backgroundColor = rgba2hex(baseColor.alpha(0.1).rgba());
 
@@ -93,7 +84,7 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
               <span>📚 相关资料</span>
               {references.map((ref) => {
                 return !ref.url ? (
-                  <span className="mind-node-references-item">
+                  <span key={ref.id} className="mind-node-references-item">
                     <div className="mind-node-references-dot" /> {ref.title}
                   </span>
                 ) : (
@@ -122,15 +113,8 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
           <EditOutlined />
         </Tooltip>
       </div>
-      {leaf ? null : (
-        <CollapseIcon
-          id={node.id}
-          color={baseColor.hex()}
-          collapsed={collapsed}
-        />
-      )}
     </div>
   );
-});
+};
 
 export default MindNode;
