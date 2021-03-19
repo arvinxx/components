@@ -3,6 +3,7 @@ import {
   mapNodeTypeToColor,
   mapReferenceTypeToColor,
   mapColorToHex,
+  getColorByType,
 } from './color';
 
 describe('rgba2hex', () => {
@@ -55,4 +56,9 @@ test('mapReferenceTypeToColor', () => {
   expect(mapReferenceTypeToColor('ground')).toEqual('green');
   // @ts-ignore
   expect(mapReferenceTypeToColor('123')).toEqual('gray');
+});
+
+test('getColorByType', () => {
+  const color = getColorByType('action');
+  expect(color.hex()).toBe('#52c41a');
 });
