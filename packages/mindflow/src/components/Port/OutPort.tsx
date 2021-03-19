@@ -8,17 +8,16 @@ import CollapseIcon from '../CollapseIcon';
 interface OutPortProps {
   color: string;
   collapsed: boolean;
-  visible: boolean;
   id: string;
 }
 
 export const OutPort: FC<OutPortProps> = ({
   color,
   collapsed,
-  visible,
+
   id,
 }) => {
-  return !visible ? null : (
+  return (
     <div className="mind-port-out-port">
       <CollapseIcon id={id} color={color} collapsed={collapsed} />
     </div>

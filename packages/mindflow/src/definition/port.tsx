@@ -22,14 +22,9 @@ export const port = (args: Hook.OnPortRenderedArgs) => {
     ReactDOM.render(<InPort color={color} />, container as HTMLElement);
   }
 
-  if (port.id === 'out') {
+  if (port.id === 'out' && !leaf) {
     ReactDOM.render(
-      <OutPort
-        visible={!leaf}
-        color={color}
-        collapsed={collapsed}
-        id={node.id}
-      />,
+      <OutPort color={color} collapsed={collapsed} id={node.id} />,
       container as HTMLElement,
     );
   }
