@@ -16,12 +16,9 @@ export const defaultNode = <T>(node: BaseNode<T>) => {
 
     ports: {
       items: [
-        {
-          id: 'in',
-          group: 'in',
-        },
-
+        { id: 'in', group: 'in' },
         { id: 'out', group: 'out' },
+        { id: 'handle', group: 'handle' },
       ],
       groups: {
         in: {
@@ -45,10 +42,23 @@ export const defaultNode = <T>(node: BaseNode<T>) => {
               height: 18,
               x: -9,
               y: -9,
-              // magnet: 'true',
+              magnet: 'true',
             },
           },
           zIndex: 10,
+        },
+        handle: {
+          position: { name: 'right' },
+          attrs: {
+            fo: {
+              width: 12,
+              height: 12,
+              x: -6,
+              y: -6,
+              magnet: 'true',
+            },
+          },
+          zIndex: 1,
         },
       },
     },

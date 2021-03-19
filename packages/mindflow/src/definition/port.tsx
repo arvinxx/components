@@ -18,7 +18,7 @@ export const port = (args: Hook.OnPortRenderedArgs) => {
 
   const color = getColorByType(type).hex();
 
-  if (port.id === 'in') {
+  if (port.id === 'in' || port.id === 'handle') {
     ReactDOM.render(<InPort color={color} />, container as HTMLElement);
   }
 

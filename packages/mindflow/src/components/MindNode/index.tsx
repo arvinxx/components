@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import {
   CaretUpOutlined,
   CaretDownOutlined,
@@ -21,7 +21,7 @@ interface BaseNodeProps {
   node?: ReactShape;
 }
 
-const MindNode: FC<BaseNodeProps> = ({ node }) => {
+const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
   const ref = useRef();
   const { unfolded, toggleNodeUnfold, cantFold } = useFolded(node);
 
@@ -115,6 +115,6 @@ const MindNode: FC<BaseNodeProps> = ({ node }) => {
       </div>
     </div>
   );
-};
+});
 
 export default MindNode;
