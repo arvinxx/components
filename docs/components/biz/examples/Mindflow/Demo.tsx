@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import { Radio } from 'antd';
+import { devtools } from 'stook-devtools';
 
 import Mindflow from '@arvinxu/mindflow';
 import * as datasource from './data';
+
+// @ts-ignore
+if (process.env.NODE_ENV !== 'production') {
+  devtools.init();
+}
 
 const { Group } = Radio;
 

@@ -1,13 +1,8 @@
 import { useStore } from 'stook';
-import { devtools } from 'stook-devtools';
 import { KEYS } from './key';
 
 import type { Graph } from '@antv/x6';
 
-// @ts-ignore
-if (process.env.NODE_ENV !== 'production') {
-  devtools.init();
-}
 /**
  * Mindflow 全局共享状态
  */
