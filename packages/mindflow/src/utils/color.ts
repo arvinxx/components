@@ -1,5 +1,6 @@
 import type { EdgeReference } from '../types';
 import { mindFlowColors } from '../themes/nodeColor';
+import chorma from 'chroma-js';
 
 /**
  * 将 rgba 转为 hex
@@ -82,4 +83,12 @@ export const mapNodeTypeToColor = (type: string) => {
     default:
       return 'grey';
   }
+};
+
+/**
+ * 使用 chorma 得到颜色对象
+ * @param type
+ */
+export const getColorByType = (type: string) => {
+  return chorma(mapColorToHex(mapNodeTypeToColor(type)));
 };

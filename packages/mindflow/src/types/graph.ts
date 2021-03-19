@@ -1,8 +1,8 @@
 import type { MindflowEdge, MindflowNode } from './mindflow';
 
-export interface GraphData<Node = {}, Edge = {}> {
+export interface GraphData<Node = {}, Edge = {}, EdgeType = string> {
   nodes: BaseNode<Node>[];
-  edges: BaseEdge<Edge>[];
+  edges: BaseEdge<Edge, EdgeType>[];
 }
 
 export interface BaseNode<BizData> {
@@ -10,9 +10,14 @@ export interface BaseNode<BizData> {
   data?: BizData;
 }
 
-export interface BaseEdge<BizData> {
-  source: string;
-  target: string;
+export interface EdgePort {
+  cell: string;
+  port: string;
+}
+
+export interface BaseEdge<BizData, T = string> {
+  source: T;
+  target: T;
   data?: BizData;
 }
 
@@ -21,4 +26,5 @@ export interface NodeData extends MindflowNode {
   leaf?: boolean;
 }
 
-export type MindflowData = GraphData<MindflowNode, MindflowEdge>;
+export type PreMindflowData = GraphData<MindflowNode, MindflowEdge>;
+export type MindflowData = GraphData<MindflowNode, MindflowEdge, EdgePort>;
