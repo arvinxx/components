@@ -1,5 +1,22 @@
 # Changelog
 
+# @arvinxu/mindflow [1.7.0-beta.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.5...@arvinxu/mindflow@1.7.0-beta.1) (2021-03-19)
+
+
+### ✅ 测试
+
+* 修正测试 ([8d1bf9a](https://github.com/arvinxx/components/commit/8d1bf9a))
+
+
+### ✨ 新特性
+
+* 新增连接桩 ([01ed869](https://github.com/arvinxx/components/commit/01ed869))
+
+
+### 🎫 杂项
+
+* 优化注释 ([bd48a83](https://github.com/arvinxx/components/commit/bd48a83))
+
 ## @arvinxu/mindflow [1.6.5](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.4...@arvinxu/mindflow@1.6.5) (2021-03-19)
 
 
