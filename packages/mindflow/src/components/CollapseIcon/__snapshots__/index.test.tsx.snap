@@ -14,7 +14,6 @@ exports[`CollapseIcon 折叠状态 1`] = `
         aria-label="plus"
         class="anticon anticon-plus"
         role="img"
-        tabindex="-1"
       >
         <svg
           aria-hidden="true"
@@ -55,7 +54,6 @@ exports[`CollapseIcon 正常渲染 1`] = `
         aria-label="minus"
         class="anticon anticon-minus"
         role="img"
-        tabindex="-1"
       >
         <svg
           aria-hidden="true"
