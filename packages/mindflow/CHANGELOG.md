@@ -1,5 +1,35 @@
 # Changelog
 
+# @arvinxu/mindflow [1.7.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.5...@arvinxu/mindflow@1.7.0) (2021-03-19)
+
+
+### ♻ 重构
+
+* 优化 out 的节点逻辑 ([7a3c171](https://github.com/arvinxx/components/commit/7a3c171))
+
+
+### ✅ 测试
+
+* 修正测试 ([8d1bf9a](https://github.com/arvinxx/components/commit/8d1bf9a))
+* 添加测试 ([c0d79e4](https://github.com/arvinxx/components/commit/c0d79e4))
+
+
+### ✨ 新特性
+
+* 新增连接桩 ([01ed869](https://github.com/arvinxx/components/commit/01ed869))
+
+
+### 🎫 杂项
+
+* **自动发布**: @arvinxu/mindflow@1.7.0-beta.1 [skip ci] ([4e14640](https://github.com/arvinxx/components/commit/4e14640))
+* **自动发布**: @arvinxu/mindflow@1.7.0-beta.2 [skip ci] ([502230b](https://github.com/arvinxx/components/commit/502230b))
+* 优化注释 ([bd48a83](https://github.com/arvinxx/components/commit/bd48a83))
+
+
+### 🐛 修复
+
+* 修正增加连接桩导致的渲染错误 ([4dd098e](https://github.com/arvinxx/components/commit/4dd098e))
+
 # @arvinxu/mindflow [1.7.0-beta.2](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.0-beta.1...@arvinxu/mindflow@1.7.0-beta.2) (2021-03-19)
 
 
