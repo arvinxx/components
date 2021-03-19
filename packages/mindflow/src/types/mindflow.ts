@@ -16,12 +16,21 @@ export interface Reference {
 export type NodeType = 'question' | 'action' | 'idea' | 'subject' | string;
 
 export interface MindflowNode {
+  /**
+   * 节点标题
+   */
   title: string;
+  /**
+   * 节点的类型
+   */
   type?: NodeType;
   /**
    * 有关问题的详细描述
    */
   description?: string;
+  /**
+   * 参考资料
+   */
   references?: Reference[];
 }
 
@@ -47,11 +56,17 @@ type EdgeType =
   | 'rebuttal';
 
 export interface EdgeReference extends Reference {
+  /**
+   * 理论依据的类型
+   */
   type?: EdgeType;
 }
 /**
  * Mindflow Edge 结构
  */
 export interface MindflowEdge {
+  /**
+   * 依据资料
+   */
   references?: EdgeReference[];
 }
