@@ -1,5 +1,17 @@
 # Changelog
 
+# @arvinxu/mindflow [1.7.0-beta.2](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.0-beta.1...@arvinxu/mindflow@1.7.0-beta.2) (2021-03-19)
+
+
+### ♻ 重构
+
+* 优化 out 的节点逻辑 ([7a3c171](https://github.com/arvinxx/components/commit/7a3c171))
+
+
+### 🐛 修复
+
+* 修正增加连接桩导致的渲染错误 ([4dd098e](https://github.com/arvinxx/components/commit/4dd098e))
+
 # @arvinxu/mindflow [1.7.0-beta.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.5...@arvinxu/mindflow@1.7.0-beta.1) (2021-03-19)
 
 
