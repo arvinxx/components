@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.6.5](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.4...@arvinxu/mindflow@1.6.5) (2021-03-19)
+
+
+### 🐛 修复
+
+* 修正生产环境中多余的 devtools ([41cb361](https://github.com/arvinxx/components/commit/41cb361))
+
 ## @arvinxu/mindflow [1.6.4](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.6.3...@arvinxu/mindflow@1.6.4) (2021-03-18)
 
 
