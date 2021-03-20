@@ -30,4 +30,11 @@ describe('PageLoading', () => {
       expect(container).toMatchSnapshot();
     });
   });
+
+  it('自定义加载图形', () => {
+    const { container } = render(
+      <PageLoading loader={<div>loading...</div>} />,
+    );
+    expect(container).toMatchSnapshot();
+  });
 });

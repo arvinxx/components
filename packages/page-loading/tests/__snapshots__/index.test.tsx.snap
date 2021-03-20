@@ -8,24 +8,28 @@ exports[`PageLoading 不带加载条 1`] = `
     style="background: rgb(245, 245, 245);"
   >
     <div
-      class="avx-page-loading-content"
+      class="avx-page-loading-loader"
     >
       <div
-        class="avx-page-loading-item"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item avx-page-loading-animation-delay"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item avx-page-loading-animation-delay"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item"
-        style="background: rgb(24, 144, 255);"
-      />
+        class="avx-page-loading-content"
+      >
+        <div
+          class="avx-page-loading-item"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item avx-page-loading-animation-delay"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item avx-page-loading-animation-delay"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item"
+          style="background: rgb(24, 144, 255);"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -39,24 +43,28 @@ exports[`PageLoading 全屏 1`] = `
     style="background: rgb(245, 245, 245);"
   >
     <div
-      class="avx-page-loading-content"
+      class="avx-page-loading-loader"
     >
       <div
-        class="avx-page-loading-item"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item avx-page-loading-animation-delay"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item avx-page-loading-animation-delay"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item"
-        style="background: rgb(24, 144, 255);"
-      />
+        class="avx-page-loading-content"
+      >
+        <div
+          class="avx-page-loading-item"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item avx-page-loading-animation-delay"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item avx-page-loading-animation-delay"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item"
+          style="background: rgb(24, 144, 255);"
+        />
+      </div>
     </div>
     <div
       class="nprogress"
@@ -84,24 +92,28 @@ exports[`PageLoading 加载态 加载中 1`] = `
     style="background: rgb(245, 245, 245);"
   >
     <div
-      class="avx-page-loading-content"
+      class="avx-page-loading-loader"
     >
       <div
-        class="avx-page-loading-item"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item avx-page-loading-animation-delay"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item avx-page-loading-animation-delay"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item"
-        style="background: rgb(24, 144, 255);"
-      />
+        class="avx-page-loading-content"
+      >
+        <div
+          class="avx-page-loading-item"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item avx-page-loading-animation-delay"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item avx-page-loading-animation-delay"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item"
+          style="background: rgb(24, 144, 255);"
+        />
+      </div>
     </div>
     <div
       class="nprogress"
@@ -127,6 +139,38 @@ exports[`PageLoading 加载态 加载完毕 1`] = `
 </div>
 `;
 
+exports[`PageLoading 自定义加载图形 1`] = `
+<div>
+  <div
+    class="avx-page-loading-container nprogress-custom-parent"
+    id="avx-page-loading-container"
+    style="background: rgb(245, 245, 245);"
+  >
+    <div
+      class="avx-page-loading-loader"
+    >
+      <div>
+        loading...
+      </div>
+    </div>
+    <div
+      class="nprogress"
+      id="nprogress"
+    >
+      <div
+        class="bar"
+        role="bar"
+        style="transition: all 200ms linear; transform: translate3d(-100%,0,0); margin-left: -82%;"
+      >
+        <div
+          class="peg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`PageLoading 默认状态 1`] = `
 <div>
   <div
@@ -135,24 +179,28 @@ exports[`PageLoading 默认状态 1`] = `
     style="background: rgb(245, 245, 245);"
   >
     <div
-      class="avx-page-loading-content"
+      class="avx-page-loading-loader"
     >
       <div
-        class="avx-page-loading-item"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item avx-page-loading-animation-delay"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item avx-page-loading-animation-delay"
-        style="background: rgb(24, 144, 255);"
-      />
-      <div
-        class="avx-page-loading-item"
-        style="background: rgb(24, 144, 255);"
-      />
+        class="avx-page-loading-content"
+      >
+        <div
+          class="avx-page-loading-item"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item avx-page-loading-animation-delay"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item avx-page-loading-animation-delay"
+          style="background: rgb(24, 144, 255);"
+        />
+        <div
+          class="avx-page-loading-item"
+          style="background: rgb(24, 144, 255);"
+        />
+      </div>
     </div>
     <div
       class="nprogress"
