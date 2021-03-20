@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Preloader Square 1`] = `
+<div>
+  <div
+    class="avx-preloader-square-container"
+  >
+    <div
+      class="avx-preloader-square-item"
+      style="background: rgb(24, 144, 255);"
+    />
+    <div
+      class="avx-preloader-square-item avx-preloader-square-animation-delay"
+      style="background: rgb(24, 144, 255);"
+    />
+    <div
+      class="avx-preloader-square-item avx-preloader-square-animation-delay"
+      style="background: rgb(24, 144, 255);"
+    />
+    <div
+      class="avx-preloader-square-item"
+      style="background: rgb(24, 144, 255);"
+    />
+  </div>
+</div>
+`;
