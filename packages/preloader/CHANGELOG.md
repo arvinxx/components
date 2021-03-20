@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/preloader [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/preloader@1.0.1...@arvinxu/preloader@1.0.2) (2021-03-20)
+
+
+### 👷 构建系统
+
+* 修正构建配置问题 ([d232d17](https://github.com/arvinxx/components/commit/d232d17))
+
 ## @arvinxu/preloader [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/preloader@1.0.0...@arvinxu/preloader@1.0.1) (2021-03-20)
 
 
