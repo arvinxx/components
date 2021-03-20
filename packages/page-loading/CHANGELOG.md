@@ -1,5 +1,30 @@
 # Changelog
 
+## @arvinxu/page-loading [1.3.1](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.3.0...@arvinxu/page-loading@1.3.1) (2021-03-20)
+
+
+### ♻ 重构
+
+* 基于 preloader 组件重构 ([919004a](https://github.com/arvinxx/components/commit/919004a))
+
+
+### ✅ 测试
+
+* 修复测试 ([0204841](https://github.com/arvinxx/components/commit/0204841))
+
+
+### 👷 构建系统
+
+* 修正构建配置 ([3001d8c](https://github.com/arvinxx/components/commit/3001d8c))
+
+
+
+
+
+### Dependencies
+
+* **@arvinxu/preloader:** upgraded to 1.0.1
+
 # @arvinxu/page-loading [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.2.0...@arvinxu/page-loading@1.3.0) (2021-03-20)
 
 
