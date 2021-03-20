@@ -48,6 +48,7 @@ export const useProgress = (container, config: Config) => {
         np.done();
         // eslint-disable-next-line no-empty
       } catch (e) {
+        /* istanbul ignore next */
         np.remove();
       }
     };

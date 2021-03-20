@@ -11,22 +11,22 @@ exports[`PageLoading 不带加载条 1`] = `
       class="avx-page-loading-loader"
     >
       <div
-        class="avx-page-loading-content"
+        class="avx-preloader-square-container"
       >
         <div
-          class="avx-page-loading-item"
+          class="avx-preloader-square-item"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item avx-page-loading-animation-delay"
+          class="avx-preloader-square-item avx-preloader-square-animation-delay"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item avx-page-loading-animation-delay"
+          class="avx-preloader-square-item avx-preloader-square-animation-delay"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item"
+          class="avx-preloader-square-item"
           style="background: rgb(24, 144, 255);"
         />
       </div>
@@ -46,22 +46,22 @@ exports[`PageLoading 全屏 1`] = `
       class="avx-page-loading-loader"
     >
       <div
-        class="avx-page-loading-content"
+        class="avx-preloader-square-container"
       >
         <div
-          class="avx-page-loading-item"
+          class="avx-preloader-square-item"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item avx-page-loading-animation-delay"
+          class="avx-preloader-square-item avx-preloader-square-animation-delay"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item avx-page-loading-animation-delay"
+          class="avx-preloader-square-item avx-preloader-square-animation-delay"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item"
+          class="avx-preloader-square-item"
           style="background: rgb(24, 144, 255);"
         />
       </div>
@@ -95,22 +95,22 @@ exports[`PageLoading 加载态 加载中 1`] = `
       class="avx-page-loading-loader"
     >
       <div
-        class="avx-page-loading-content"
+        class="avx-preloader-square-container"
       >
         <div
-          class="avx-page-loading-item"
+          class="avx-preloader-square-item"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item avx-page-loading-animation-delay"
+          class="avx-preloader-square-item avx-preloader-square-animation-delay"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item avx-page-loading-animation-delay"
+          class="avx-preloader-square-item avx-preloader-square-animation-delay"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item"
+          class="avx-preloader-square-item"
           style="background: rgb(24, 144, 255);"
         />
       </div>
@@ -182,22 +182,22 @@ exports[`PageLoading 默认状态 1`] = `
       class="avx-page-loading-loader"
     >
       <div
-        class="avx-page-loading-content"
+        class="avx-preloader-square-container"
       >
         <div
-          class="avx-page-loading-item"
+          class="avx-preloader-square-item"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item avx-page-loading-animation-delay"
+          class="avx-preloader-square-item avx-preloader-square-animation-delay"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item avx-page-loading-animation-delay"
+          class="avx-preloader-square-item avx-preloader-square-animation-delay"
           style="background: rgb(24, 144, 255);"
         />
         <div
-          class="avx-page-loading-item"
+          class="avx-preloader-square-item"
           style="background: rgb(24, 144, 255);"
         />
       </div>
