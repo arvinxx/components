@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/image-gallery [1.0.5](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.0.4...@arvinxu/image-gallery@1.0.5) (2021-03-20)
+
+
+### ✅ 测试
+
+* 修复测试 ([10e6be8](https://github.com/arvinxx/components/commit/10e6be8))
+
+
+### 💄 样式
+
+* 优化组件文本 ([c8a02d9](https://github.com/arvinxx/components/commit/c8a02d9))
+
 ## @arvinxu/image-gallery [1.0.4](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.0.3...@arvinxu/image-gallery@1.0.4) (2021-03-20)
 
 
