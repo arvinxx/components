@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/page-loading [1.3.4](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.3.3...@arvinxu/page-loading@1.3.4) (2021-03-20)
+
+
+### 👷 构建系统
+
+* 修正构建配置问题 ([be70830](https://github.com/arvinxx/components/commit/be70830))
+
 ## @arvinxu/page-loading [1.3.3](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.3.2...@arvinxu/page-loading@1.3.3) (2021-03-20)
 
 
