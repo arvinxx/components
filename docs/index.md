@@ -55,13 +55,16 @@ footer: Open-source MIT Licensed | Copyright © 2021-present
 | 组件                                           | 版本                                                                             | 说明                                                           |
 | ---------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | float-label-input                              | [![NPM version][float-label-input-version-image]][float-label-input-version-url] | 标签会跟随 hover 状态浮动的 Input 组件                         |
-| [PageLoading](/components/common/page-loading) | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 加载状态组件                                                   |
+| [PageLoading](/components/common/page-loading) | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 页面状态加载                                                   |
+| [Preloader](/components/common/preloader)      | [![NPM version][preloader-version-image]][preloader-version-url]                 | 加载组件                                                       |
 | [MindFlow](/components/biz/mindflow)           | [![NPM version][mindflow-version-image]][mindflow-version-url]                   | 基于溯因推理与图尔敏推论模型为理论基础构建的开源思维推理组件。 |
 
 [float-label-input-version-image]: http://img.shields.io/npm/v/@arvinxu/float-label-input.svg?color=deepgreen&label=latest
 [float-label-input-version-url]: http://npmjs.org/package/@arvinxu/float-label-input
 [page-loading-version-image]: http://img.shields.io/npm/v/@arvinxu/page-loading.svg?color=deepgreen&label=latest
 [page-loading-version-url]: http://npmjs.org/package/@arvinxu/page-loading
+[preloader-version-image]: http://img.shields.io/npm/v/@arvinxu/preloader.svg?color=deepgreen&label=latest
+[preloader-version-url]: http://npmjs.org/package/@arvinxu/preloader
 [mindflow-version-image]: http://img.shields.io/npm/v/@arvinxu/mindflow.svg?color=deepgreen&label=latest
 [mindflow-version-url]: http://npmjs.org/package/@arvinxu/mindflow
 
