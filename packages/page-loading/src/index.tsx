@@ -1,6 +1,7 @@
-import type { CSSProperties, FC, ReactNode } from 'react';
+import type { FC, ReactNode } from 'react';
 import React from 'react';
 import classNames from 'classnames';
+import { Square } from '@arvinxu/preloader';
 
 import 'multi-nprogress/nprogress.css';
 
@@ -59,8 +60,6 @@ const PageLoading: FC<PageLoadingProps> = ({
   // 控制 Progress 显示
   useProgress(id, { color, enable: progress, loading, fullscreen });
 
-  const colorStyle: CSSProperties = { background: color };
-
   // 如果明确指定了 loading 为 false
   // 返回 children
   if (typeof loading === 'boolean' && !loading) return <>{children}</>;
@@ -75,23 +74,7 @@ const PageLoading: FC<PageLoadingProps> = ({
       style={{ background: backgroundColor }}
     >
       <div className="avx-page-loading-loader">
-        {loader || (
-          <div className="avx-page-loading-content">
-            <div className="avx-page-loading-item" style={colorStyle} />
-            <div
-              className="avx-page-loading-item avx-page-loading-animation-delay"
-              style={colorStyle}
-            />
-            <div
-              className={classNames(
-                'avx-page-loading-item',
-                'avx-page-loading-animation-delay',
-              )}
-              style={colorStyle}
-            />
-            <div className="avx-page-loading-item" style={colorStyle} />
-          </div>
-        )}
+        {loader || <Square color={color} />}
       </div>
     </div>
   );
