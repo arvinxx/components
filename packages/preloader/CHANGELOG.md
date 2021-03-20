@@ -1,0 +1,13 @@
+# Changelog
+
+# @arvinxu/preloader 1.0.0 (2021-03-20)
+
+
+### 🎫 杂项
+
+* 初始化 Preloader 组件 ([fa12d88](https://github.com/arvinxx/components/commit/fa12d88))
+
+
+### 👷 构建系统
+
+* 修改构建配置 ([5d6552e](https://github.com/arvinxx/components/commit/5d6552e))
