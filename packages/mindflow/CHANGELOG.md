@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.7.2](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.1...@arvinxu/mindflow@1.7.2) (2021-03-20)
+
+
+### 💄 样式
+
+* 修正右侧连接桩 hover 样式 ([9301650](https://github.com/arvinxx/components/commit/9301650))
+
 ## @arvinxu/mindflow [1.7.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.0...@arvinxu/mindflow@1.7.1) (2021-03-19)
 
 

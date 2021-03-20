@@ -1,6 +1,6 @@
 {
   "name": "@arvinxu/mindflow",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/mindflow#readme",
