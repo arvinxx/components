@@ -5,7 +5,7 @@ module.exports = {
   ...config,
   output: {
     ...config.output,
-    library: 'preloader',
+    library: 'Preloader',
     path: path.resolve(__dirname, 'dist'),
   },
 };
