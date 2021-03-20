@@ -61,7 +61,7 @@ const ImageGallery: FC<ImageGalleryProps> = ({ imageList, darkBackground }) => {
                   className="avx-image-gallery-link"
                   onClick={() => copySVG(url)}
                 >
-                  复制SVG
+                  SVG
                 </Button>,
 
                 <Button
@@ -69,7 +69,7 @@ const ImageGallery: FC<ImageGalleryProps> = ({ imageList, darkBackground }) => {
                   className="avx-image-gallery-link"
                   onClick={() => copyPng(url)}
                 >
-                  复制PNG
+                  PNG
                 </Button>,
                 <Dropdown
                   overlay={

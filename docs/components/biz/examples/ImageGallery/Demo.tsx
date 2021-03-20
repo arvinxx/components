@@ -8,7 +8,7 @@ const Demo = () => {
     <div
       style={{
         background: '#fafafa',
-        padding: 40,
+        padding: 24,
       }}
     >
       <ImageGallery imageList={images} darkBackground={'black'} />
