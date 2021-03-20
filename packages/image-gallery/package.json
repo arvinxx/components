@@ -21,5 +21,9 @@
     "cov": "jest --coverage",
     "prepublishOnly": "yarn build",
     "clean": "rm -rf es lib dist build coverage .umi"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "antd": "^4.14.0"
   }
 }
