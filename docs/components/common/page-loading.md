@@ -8,7 +8,18 @@ group:
 
 # PageLoading
 
-页面加载组件，特性：
+[![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
+
+<!-- npm url -->
+
+[version-image]: http://img.shields.io/npm/v/@arvinxu/page-loading.svg?color=deepgreen&label=latest
+[version-url]: http://npmjs.org/package/@arvinxu/page-loading
+[download-image]: https://img.shields.io/npm/dm/@arvinxu/page-loading.svg
+[download-url]: https://npmjs.org/package/@arvinxu/page-loading
+
+页面加载组件
+
+## 特性
 
 - 支持全屏；
 - 吸顶加载进度条；
