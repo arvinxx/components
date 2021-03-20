@@ -1,5 +1,22 @@
 # Changelog
 
+# @arvinxu/page-loading [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.2.0...@arvinxu/page-loading@1.3.0) (2021-03-20)
+
+
+### ✅ 测试
+
+* 补充测试 ([27b7337](https://github.com/arvinxx/components/commit/27b7337))
+
+
+### ✨ 新特性
+
+* 提供自定义加载图形接口 ([dd553cf](https://github.com/arvinxx/components/commit/dd553cf))
+
+
+### 🎫 杂项
+
+* 修正构建依赖 ([91fa665](https://github.com/arvinxx/components/commit/91fa665))
+
 # @arvinxu/page-loading [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/page-loading@1.1.4...@arvinxu/page-loading@1.2.0) (2021-03-16)
 
 
