@@ -1,4 +1,4 @@
-import type { CSSProperties, FC } from 'react';
+import type { CSSProperties, FC, ReactNode } from 'react';
 import React from 'react';
 import classNames from 'classnames';
 
@@ -7,15 +7,27 @@ import 'multi-nprogress/nprogress.css';
 import { useProgress } from './useProgress';
 import './style.less';
 
-const clsPrefix = 'avx-page-loading';
-
 export interface PageLoadingProps {
+  /**
+   * 进度条 id。(可选)
+   * 如果存在多个 PageLoading 组件，需要指定 id 以区分进度条
+   *
+   */
+  id?: string;
+
+  /**
+   * 加载状态
+   */
+  loading?: boolean;
+  /**
+   * 自定义加载图形
+   */
+  loader?: ReactNode;
   /**
    * 是否全屏(可选)
    * @default false
    */
   fullscreen?: boolean;
-
   /**
    * 显示加载进度条(可选)
    * @default true
@@ -32,18 +44,6 @@ export interface PageLoadingProps {
    * @default #f3f4f6
    */
   backgroundColor?: string;
-
-  /**
-   * 进度条 id。(可选)
-   * 如果存在多个 PageLoading 组件，需要指定 id 以区分进度条
-   *
-   */
-  id?: string;
-
-  /**
-   * 加载状态
-   */
-  loading?: boolean;
 }
 
 const PageLoading: FC<PageLoadingProps> = ({
@@ -54,6 +54,7 @@ const PageLoading: FC<PageLoadingProps> = ({
   backgroundColor = '#f5f5f5',
   loading = true,
   children,
+  loader,
 }) => {
   // 控制 Progress 显示
   useProgress(id, { color, enable: progress, loading, fullscreen });
@@ -68,28 +69,29 @@ const PageLoading: FC<PageLoadingProps> = ({
     <div
       id={id}
       className={classNames(
-        `${clsPrefix}-container`,
-        fullscreen ? `${clsPrefix}-fullscreen` : null,
+        'avx-page-loading-container',
+        fullscreen ? 'avx-page-loading-fullscreen' : '',
       )}
       style={{ background: backgroundColor }}
     >
-      <div className={`${clsPrefix}-content`}>
-        <div className={`${clsPrefix}-item`} style={colorStyle} />
-        <div
-          className={classNames(
-            `${clsPrefix}-item`,
-            `${clsPrefix}-animation-delay`,
-          )}
-          style={colorStyle}
-        />
-        <div
-          className={classNames(
-            `${clsPrefix}-item`,
-            `${clsPrefix}-animation-delay`,
-          )}
-          style={colorStyle}
-        />
-        <div className={`${clsPrefix}-item`} style={colorStyle} />
+      <div className="avx-page-loading-loader">
+        {loader || (
+          <div className="avx-page-loading-content">
+            <div className="avx-page-loading-item" style={colorStyle} />
+            <div
+              className="avx-page-loading-item avx-page-loading-animation-delay"
+              style={colorStyle}
+            />
+            <div
+              className={classNames(
+                'avx-page-loading-item',
+                'avx-page-loading-animation-delay',
+              )}
+              style={colorStyle}
+            />
+            <div className="avx-page-loading-item" style={colorStyle} />
+          </div>
+        )}
       </div>
     </div>
   );

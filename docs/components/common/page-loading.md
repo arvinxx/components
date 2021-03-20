@@ -9,10 +9,11 @@ group:
 # PageLoading
 
 页面加载组件，特性：
+
 - 支持全屏；
 - 吸顶加载进度条；
 - 自定义主色；
-- （TODO）自定义加载图形；
+- 自定义加载图形；
 
 ## 使用案例
 
@@ -35,6 +36,10 @@ group:
 ### 加载状态控制
 
 <code src="./examples/PageLoading/LoadingState" />
+
+### 自定义加载图形
+
+<code src="./examples/PageLoading/CustomLoader" />
 
 ###
 
