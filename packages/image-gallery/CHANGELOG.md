@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/image-gallery [1.0.4](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.0.3...@arvinxu/image-gallery@1.0.4) (2021-03-20)
+
+
+### 👷 构建系统
+
+* 修正构建配置问题 ([d232d17](https://github.com/arvinxx/components/commit/d232d17))
+
 ## @arvinxu/image-gallery [1.0.3](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.0.2...@arvinxu/image-gallery@1.0.3) (2021-03-20)
 
 
