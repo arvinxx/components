@@ -5,7 +5,7 @@ module.exports = {
     type: 'babel',
     importLibToEs: true,
   },
-  // lessInBabelMode: true,
+  lessInBabelMode: true,
   extraBabelPlugins: [
     [
       'import',
