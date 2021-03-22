@@ -42,7 +42,6 @@ export const defaultNode = <T>(node: BaseNode<T>) => {
               height: 18,
               x: -9,
               y: -9,
-              magnet: 'true',
             },
           },
           zIndex: 10,
