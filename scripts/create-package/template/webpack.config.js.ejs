@@ -5,7 +5,7 @@ module.exports = {
   ...config,
   output: {
     ...config.output,
-    library: '<%- pkg %>',
+    library: '<%- componentName %>',
     path: path.resolve(__dirname, 'dist'),
   },
 };
