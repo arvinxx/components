@@ -6,6 +6,41 @@ macOS 上的控制按钮
 
 ![](https://gw.alipayobjects.com/zos/antfincdn/o6BBRY4gaO/5d51620f-922e-4090-9546-8cc7d60b635b.png)
 
+## Install
+
+```shell
+yarn add @arvinxu/macos-traffic-light
+```
+
+## Usage
+
+```typescript jsx
+import React from 'react';
+import TrafficLight from '@arvinxu/macos-traffic-light';
+
+const Demo = () => {
+  return (
+    <TrafficLight
+      close={() => {
+        alert('Pressed closed');
+      }}
+      minimize={() => {
+        alert('Pressed minimize');
+      }}
+      maximize={() => {
+        alert('Pressed maximize');
+      }}
+    />
+  );
+};
+
+export default Demo;
+```
+
+## Demo
+
+[Demo](https://components.arvinx.com/components/common/macos-traffic-light)
+
 ## License
 
 [MIT](../../LICENSE) ® Arvin Xu
