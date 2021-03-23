@@ -1,5 +1,17 @@
 # Changelog
 
+# @arvinxu/macos-traffic-light [2.0.0](https://github.com/arvinxx/components/compare/@arvinxu/macos-traffic-light@1.0.0...@arvinxu/macos-traffic-light@2.0.0) (2021-03-23)
+
+
+### 🎫 杂项
+
+* 调整 Props 命名 ([45bbdaf](https://github.com/arvinxx/components/commit/45bbdaf))
+
+
+### 💥 BREAKING CHANGES
+
+* 调整接口命名
+
 # @arvinxu/macos-traffic-light 1.0.0 (2021-03-23)
 
 
