@@ -8,7 +8,7 @@ import MinimizeIcon from './MinimizeIcon';
 
 import { useTrafficLight } from './useTrafficLight';
 
-import styles from './style.less';
+import './style.less';
 
 interface TrafficLightProps {
   /**
@@ -25,15 +25,15 @@ interface TrafficLightProps {
   maximize?: (event: MouseEvent) => void;
 
   /**
-   * 显示最小化
+   * 允许最小化
    * @default true
    */
-  showMinimize?: boolean;
+  enableMinimize?: boolean;
   /**
    * 显示最大化
    * @default true
    */
-  showMaximize?: boolean;
+  enableMaximize?: boolean;
   /**
    * 禁用最大化
    * @default false
@@ -44,48 +44,52 @@ const TrafficLight: FC<TrafficLightProps> = ({
   close,
   minimize,
   maximize,
-  showMinimize = true,
-  showMaximize = true,
+  enableMinimize = true,
+  enableMaximize = true,
   disableMaximize,
 }) => {
   const { hover, isFocus, hoverOff, hoverOn } = useTrafficLight();
   return (
     <div
-      className={styles.container}
+      className="avx-traffic-light-container"
       onMouseEnter={hoverOn}
       onMouseLeave={hoverOff}
+      data-testid="container"
     >
       <div
         onClick={close}
         className={cls({
-          [styles.close]: true,
-          [styles.blur]: !isFocus,
+          'avx-traffic-light-close': true,
+          'avx-traffic-light-blur': !isFocus,
         })}
+        data-testid="close"
       >
         {hover ? <CloseIcon /> : null}
       </div>
-      {showMinimize ? (
+      {enableMinimize ? (
         <div
           onClick={minimize}
           className={cls({
-            [styles.minus]: true,
-            [styles.blur]: !isFocus,
+            'avx-traffic-light-minus': true,
+            'avx-traffic-light-blur': !isFocus,
           })}
+          data-testid="minimize"
         >
           {hover ? <MinimizeIcon /> : null}
         </div>
       ) : null}
-      {showMaximize ? (
+      {enableMaximize ? (
         <div
           onClick={(e) => {
             if (disableMaximize) return;
             maximize(e);
           }}
           className={cls({
-            [styles.max]: true,
-            [styles.blur]: !isFocus,
-            [styles.disable]: disableMaximize,
+            'avx-traffic-light-max': true,
+            'avx-traffic-light-blur': !isFocus,
+            'avx-traffic-light-disable': disableMaximize,
           })}
+          data-testid="maximize"
         >
           {!disableMaximize && hover ? <MaximizeIcon /> : null}
         </div>
