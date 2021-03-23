@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrafficLight 默认状态 1`] = `
+<div>
+  <div
+    class="avx-traffic-light-container"
+    data-testid="container"
+  >
+    <div
+      class="avx-traffic-light-close"
+      data-testid="close"
+    />
+    <div
+      class="avx-traffic-light-minus"
+      data-testid="minimize"
+    />
+    <div
+      class="avx-traffic-light-max"
+      data-testid="maximize"
+    />
+  </div>
+</div>
+`;
