@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/macos-traffic-light [2.0.2](https://github.com/arvinxx/components/compare/@arvinxu/macos-traffic-light@2.0.1...@arvinxu/macos-traffic-light@2.0.2) (2021-03-23)
+
+
+### 🐛 修复
+
+* 修正失焦时的状态 ([e2f549f](https://github.com/arvinxx/components/commit/e2f549f))
+
 ## @arvinxu/macos-traffic-light [2.0.1](https://github.com/arvinxx/components/compare/@arvinxu/macos-traffic-light@2.0.0...@arvinxu/macos-traffic-light@2.0.1) (2021-03-23)
 
 
