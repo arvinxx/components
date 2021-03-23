@@ -20,32 +20,32 @@ interface TrafficLightProps {
    */
   minimize?: (event: MouseEvent) => void;
   /**
-   * 最小大化事件
+   * 显示最小化图标
+   * @default true
+   */
+  showMinimize?: boolean;
+  /**
+   * 最大化事件
    */
   maximize?: (event: MouseEvent) => void;
-
   /**
-   * 允许最小化
+   * 显示最大化图标
    * @default true
    */
-  enableMinimize?: boolean;
+  showMaximize?: boolean;
   /**
-   * 显示最大化
-   * @default true
-   */
-  enableMaximize?: boolean;
-  /**
-   * 禁用最大化
+   * 禁用最大化交互
    * @default false
    */
   disableMaximize?: boolean;
 }
+
 const TrafficLight: FC<TrafficLightProps> = ({
   close,
   minimize,
   maximize,
-  enableMinimize = true,
-  enableMaximize = true,
+  showMinimize = true,
+  showMaximize = true,
   disableMaximize,
 }) => {
   const { hover, isFocus, hoverOff, hoverOn } = useTrafficLight();
@@ -66,7 +66,7 @@ const TrafficLight: FC<TrafficLightProps> = ({
       >
         {hover ? <CloseIcon /> : null}
       </div>
-      {enableMinimize ? (
+      {showMinimize ? (
         <div
           onClick={minimize}
           className={cls({
@@ -78,7 +78,7 @@ const TrafficLight: FC<TrafficLightProps> = ({
           {hover ? <MinimizeIcon /> : null}
         </div>
       ) : null}
-      {enableMaximize ? (
+      {showMaximize ? (
         <div
           onClick={(e) => {
             if (disableMaximize) return;

@@ -26,7 +26,7 @@ describe('TrafficLight', () => {
 
   it('关闭最大化和最小化', () => {
     const { queryByTestId } = render(
-      <TrafficLight enableMaximize={false} enableMinimize={false} />,
+      <TrafficLight showMaximize={false} showMinimize={false} />,
     );
     const ctn = queryByTestId('container');
 
