@@ -1,0 +1,70 @@
+@mac-control-icon-bg: #dddddd;
+@mac-control-icon-border: rgba(0, 0, 0, 0.18);
+@mac-control-icon-color: rgba(0, 0, 0, 0.65);
+@mac-control-icon-close: #ff6058;
+@mac-control-icon-close-pressed: #bf4740;
+@mac-control-icon-minus: #ffc02f;
+@mac-control-icon-minus-pressed: #bf9123;
+@mac-control-icon-max: #28c940;
+@mac-control-icon-max-pressed: #1f9a31;
+
+.container {
+  display: flex;
+  -webkit-app-region: no-drag;
+  > * {
+    margin-right: 8px;
+  }
+}
+
+.icon {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 1px solid @mac-control-icon-border;
+  border-radius: 100%;
+}
+
+.size {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: @mac-control-icon-color;
+  font-size: 6px;
+  transform: translate(-50%, -50%);
+}
+.close {
+  .icon;
+
+  background: @mac-control-icon-close;
+  &:active {
+    background: @mac-control-icon-close-pressed;
+  }
+}
+
+.minus {
+  .icon;
+
+  background: @mac-control-icon-minus;
+  &:active {
+    background: @mac-control-icon-minus-pressed;
+  }
+}
+.max {
+  .icon;
+
+  background: @mac-control-icon-max;
+  &:active {
+    background: @mac-control-icon-max-pressed;
+  }
+}
+
+.blur {
+  background: @mac-control-icon-bg;
+}
+
+.disable {
+  background: @mac-control-icon-bg;
+  &:active {
+    background: @mac-control-icon-bg;
+  }
+}
