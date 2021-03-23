@@ -13,6 +13,9 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
   "scripts": {
     "build": "father-build && yarn webpack",
     "webpack": "webpack",
