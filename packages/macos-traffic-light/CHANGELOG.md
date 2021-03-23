@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/macos-traffic-light [2.0.3](https://github.com/arvinxx/components/compare/@arvinxu/macos-traffic-light@2.0.2...@arvinxu/macos-traffic-light@2.0.3) (2021-03-23)
+
+
+### 🐛 修复
+
+* 修正失焦 hover 时的 icon 状态 ([b412b1a](https://github.com/arvinxx/components/commit/b412b1a))
+
+
+### 📝 文档
+
+* 更新说明文档 ([aa9aa7a](https://github.com/arvinxx/components/commit/aa9aa7a))
+
 ## @arvinxu/macos-traffic-light [2.0.2](https://github.com/arvinxx/components/compare/@arvinxu/macos-traffic-light@2.0.1...@arvinxu/macos-traffic-light@2.0.2) (2021-03-23)
 
 
