@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/mindflow [1.7.3](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.2...@arvinxu/mindflow@1.7.3) (2021-03-23)
+
+
+### 🐛 修复
+
+* 修正折叠节点可引出边线的 bug ([cb86dd0](https://github.com/arvinxx/components/commit/cb86dd0))
+
 ## @arvinxu/mindflow [1.7.2](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.1...@arvinxu/mindflow@1.7.2) (2021-03-20)
 
 
