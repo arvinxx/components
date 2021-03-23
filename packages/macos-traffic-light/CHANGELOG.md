@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/macos-traffic-light [2.0.1](https://github.com/arvinxx/components/compare/@arvinxu/macos-traffic-light@2.0.0...@arvinxu/macos-traffic-light@2.0.1) (2021-03-23)
+
+
+### 🐛 修复
+
+* 修正模块缺少依赖的问题 ([7e1e858](https://github.com/arvinxx/components/commit/7e1e858))
+
 # @arvinxu/macos-traffic-light [2.0.0](https://github.com/arvinxx/components/compare/@arvinxu/macos-traffic-light@1.0.0...@arvinxu/macos-traffic-light@2.0.0) (2021-03-23)
 
 
