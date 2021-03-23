@@ -49,6 +49,9 @@ const TrafficLight: FC<TrafficLightProps> = ({
   disableMaximize,
 }) => {
   const { hover, isFocus, hoverOff, hoverOn } = useTrafficLight();
+
+  // 当没有 hover 且没 focus 时为 blur 状态
+  const isBlur = !hover && !isFocus;
   return (
     <div
       className="avx-traffic-light-container"
@@ -60,7 +63,7 @@ const TrafficLight: FC<TrafficLightProps> = ({
         onClick={close}
         className={cls({
           'avx-traffic-light-close': true,
-          'avx-traffic-light-blur': !isFocus,
+          'avx-traffic-light-blur': isBlur,
         })}
         data-testid="close"
       >
@@ -71,7 +74,7 @@ const TrafficLight: FC<TrafficLightProps> = ({
           onClick={minimize}
           className={cls({
             'avx-traffic-light-minus': true,
-            'avx-traffic-light-blur': !isFocus,
+            'avx-traffic-light-blur': isBlur,
           })}
           data-testid="minimize"
         >
@@ -86,7 +89,7 @@ const TrafficLight: FC<TrafficLightProps> = ({
           }}
           className={cls({
             'avx-traffic-light-max': true,
-            'avx-traffic-light-blur': !isFocus,
+            'avx-traffic-light-blur': isBlur,
             'avx-traffic-light-disable': disableMaximize,
           })}
           data-testid="maximize"
