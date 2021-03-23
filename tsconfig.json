@@ -22,6 +22,10 @@
       "@arvinxu/image-gallery/*": ["./packages/image-gallery/src/*"],
       "@arvinxu/preloader": ["./packages/preloader/src"],
       "@arvinxu/preloader/*": ["./packages/preloader/src/*"],
+      "@arvinxu/macos-traffic-light": ["./packages/macos-traffic-light/src"],
+      "@arvinxu/macos-traffic-light/*": [
+        "./packages/macos-traffic-light/src/*"
+      ],
       "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
       "@arvinxu/page-loading": ["./packages/page-loading/src"],
       "@arvinxu/mindflow": ["./packages/mindflow/src"],
