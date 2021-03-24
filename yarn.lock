@@ -108,9 +108,9 @@
     reflect-metadata "^0.1.13"
 
 "@antv/layout@^0.1.6":
-  version "0.1.10"
-  resolved "https://registry.npm.taobao.org/@antv/layout/download/@antv/layout-0.1.10.tgz#013ba0cf515c7ce77600ccdc02ba9c159a052bd6"
-  integrity sha1-ATugz1FcfOd2AMzcArqcFZoFK9Y=
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@antv/layout/-/layout-0.1.11.tgz#2d845e336f1a7c61fbeae5b97e14a797c5066eb0"
+  integrity sha512-C8B44bKUiVVgvLz/ap4EjP+z/9vbWbQd91nl9kb1w0Q5MpK3gIhl/ec5uYq0dLepFwLFzwE4VwCCTtD2Hngwmw==
   dependencies:
     "@antv/g-webgpu" "0.5.5"
     d3-force "^2.0.1"
