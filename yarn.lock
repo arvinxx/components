@@ -118,9 +118,9 @@
     ml-matrix "^6.5.0"
 
 "@antv/x6-react-shape@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.npm.taobao.org/@antv/x6-react-shape/download/@antv/x6-react-shape-1.3.1.tgz#bd412bdc1e7026ad5d0b3d96b46d46c5d5a202e4"
-  integrity sha1-vUEr3B5wJq1dCz2WtG1GxdWiAuQ=
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@antv/x6-react-shape/-/x6-react-shape-1.3.3.tgz#5fdc8d1311699c563785084a871155aa88c01370"
+  integrity sha512-vUSntigaV2OnCswg7hUv5Ytj8cvk7mZy6q7kMzTN2HRIQEFoNZS+vXFZKOxxURp1R5n5Dae4sDHGm+mz8Se79A==
 
 "@antv/x6@^1.13.1":
   version "1.17.3"
