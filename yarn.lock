@@ -111,9 +111,9 @@
   integrity sha512-vUSntigaV2OnCswg7hUv5Ytj8cvk7mZy6q7kMzTN2HRIQEFoNZS+vXFZKOxxURp1R5n5Dae4sDHGm+mz8Se79A==
 
 "@antv/x6@^1.13.1":
-  version "1.17.3"
-  resolved "https://registry.npm.taobao.org/@antv/x6/download/@antv/x6-1.17.3.tgz#f2f9c51adb6ce4d4bed04cfa9d6eaca125a87f60"
-  integrity sha1-8vnFGtts5NS+0Ez6nW6soSWof2A=
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@antv/x6/-/x6-1.18.0.tgz#3305f414d957fc6a5dce0ededa7593a47748636f"
+  integrity sha512-PmBDmMtfpYA+1b++iUiEbbBj0C0V8U+iJbc4ADDvOK6HOkXuNDKhRiuvVjsu1kvuZCfFXxbK7ucgw3jLrEErCg==
   dependencies:
     csstype "^3.0.3"
     jquery "^3.5.1"
@@ -7121,12 +7121,7 @@ cssstyle@^2.2.0:
   dependencies:
     cssom "~0.3.6"
 
-csstype@^3.0.2:
-  version "3.0.6"
-  resolved "https://registry.npm.taobao.org/csstype/download/csstype-3.0.6.tgz?cache=0&sync_timestamp=1610107098407&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-3.0.6.tgz#865d0b5833d7d8d40f4e5b8a6d76aea3de4725ef"
-  integrity sha1-hl0LWDPX2NQPTluKbXauo95HJe8=
-
-csstype@^3.0.3:
+csstype@^3.0.2, csstype@^3.0.3:
   version "3.0.7"
   resolved "https://registry.npm.taobao.org/csstype/download/csstype-3.0.7.tgz#2a5fb75e1015e84dd15692f71e89a1450290950b"
   integrity sha1-Kl+3XhAV6E3RVpL3HomhRQKQlQs=
