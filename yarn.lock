@@ -111,9 +111,9 @@
   integrity sha512-8QRx34pRl1pQTI+H8Ao5zvYP/ENe4vQlltEDVVXQJJkQTIFgMaMpRiJrOarXPheBHYoN48Y2K86ctgGMT6S6cw==
 
 "@antv/x6@^1.13.1":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@antv/x6/-/x6-1.18.0.tgz#3305f414d957fc6a5dce0ededa7593a47748636f"
-  integrity sha512-PmBDmMtfpYA+1b++iUiEbbBj0C0V8U+iJbc4ADDvOK6HOkXuNDKhRiuvVjsu1kvuZCfFXxbK7ucgw3jLrEErCg==
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@antv/x6/-/x6-1.18.1.tgz#23316d6235f03b09b22c287830ff4af763f6f7fe"
+  integrity sha512-ZRDKBU1LJd0YjP2z0rOWE95RuraO6cNO9madRgGKRrGDd8MuHTGYe/MA6rh2McEV8dIvk2ZwYwrdbCa5Vs4Vug==
   dependencies:
     csstype "^3.0.3"
     jquery "^3.5.1"
