@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import React from 'react';
+import { blue } from '@ant-design/colors';
 
 import Stage from './Stage';
 import Actions from './Actions';
@@ -19,7 +20,7 @@ const Flow: FC = () => {
       </div>
       <div className="avx-journal-map-flow-content">
         {steps.map((step, index) => {
-          const color = step.color || '#e6f7ff';
+          const color = step.color || blue[0];
 
           return (
             <div key={step.id} style={{ width: `${100 / steps.length}%` }}>

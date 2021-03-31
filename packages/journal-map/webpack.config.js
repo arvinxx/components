@@ -8,5 +8,5 @@ module.exports = {
     library: 'JournalMap',
     path: path.resolve(__dirname, 'dist'),
   },
-  externals: [...config.externals, 'bizcharts'],
+  externals: [...config.externals, '@ant-design/charts'],
 };

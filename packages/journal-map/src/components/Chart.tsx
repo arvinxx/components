@@ -1,44 +1,101 @@
 import type { FC } from 'react';
 import React from 'react';
-import { Chart, LineAdvance } from 'bizcharts';
+import type { AreaConfig } from '@ant-design/charts/es/area';
+import { Area } from '@ant-design/charts';
+import { blue } from '@ant-design/colors';
 
 import Stage from './Stage';
 
 import { JournalMapStore } from '../useJournalMap';
 
-interface LineChartProps {
-  /**
-   * 符合 chart结构的数据
-   */
+interface ChartProps {
+  color?: string;
 }
-const LineChart: FC<LineChartProps> = () => {
+
+/**
+ * 更
+ * @param text
+ */
+const getFormattedEmotion = (text: string | number) => {
+  switch (text.toString()) {
+    case '-2':
+      return '极差';
+    case '-1':
+      return '差';
+    case '0':
+      return '一般';
+    case '1':
+      return '好';
+    case '2':
+      return '极好';
+    default:
+      return text;
+  }
+};
+
+const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
   const { actions } = JournalMapStore.useContainer();
 
-  const data = Object.values(actions)
-    .flat()
-    .map((item) => ({
-      x: item.title,
-      y: item.emotion,
-    }));
+  const data = Object.values(actions).flat();
 
+  const config: AreaConfig = {
+    data,
+    // padding: [24, 40],
+    tooltip: {
+      formatter: (datum) => {
+        const { emotion } = datum;
+
+        return { name: '情绪值', value: getFormattedEmotion(emotion) };
+      },
+    },
+    xField: 'title',
+    yField: 'emotion',
+    yAxis: {
+      alias: '情绪值',
+      label: {
+        formatter: getFormattedEmotion,
+      },
+      grid: {
+        line: null,
+      },
+    },
+    xAxis: {
+      label: null,
+      line: null,
+    },
+
+    annotations: [
+      {
+        type: 'line',
+        start: ['min', 'median'],
+        end: ['max', 'median'],
+        style: {
+          stroke: blue[2],
+          lineDash: [6, 4],
+        },
+      },
+    ],
+    autoFit: true,
+    smooth: true,
+    areaStyle: () => ({ fill: `l(270) 0:${blue[0]} 1:${blue[4]}` }),
+
+    line: {
+      color,
+    },
+
+    height: 300,
+    animation: { appear: { animation: 'fade-in' } },
+  };
   return (
     <div style={{ display: 'flex' }}>
       <div style={{ width: 40 }}>
         <Stage height={300}>体验情绪</Stage>
       </div>
       <div style={{ marginTop: 2, width: '100%' }}>
-        <Chart autoFit height={300} data={data || []}>
-          <LineAdvance
-            // label={{}}
-            shape="smooth"
-            point
-            area
-            position="x*y"
-          />
-        </Chart>
+        <Area {...config} />
       </div>
     </div>
   );
 };
 
-export default LineChart;
+export default Chart;

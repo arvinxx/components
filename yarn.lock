@@ -29,7 +29,7 @@
 
 "@ant-design/colors@^6.0.0":
   version "6.0.0"
-  resolved "https://registry.npm.taobao.org/@ant-design/colors/download/@ant-design/colors-6.0.0.tgz#9b9366257cffcc47db42b9d0203bb592c13c0298"
+  resolved "https://registry.npm.taobao.org/@ant-design/colors/download/@ant-design/colors-6.0.0.tgz?cache=0&sync_timestamp=1612935497491&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40ant-design%2Fcolors%2Fdownload%2F%40ant-design%2Fcolors-6.0.0.tgz#9b9366257cffcc47db42b9d0203bb592c13c0298"
   integrity sha1-m5NmJXz/zEfbQrnQIDu1ksE8Apg=
   dependencies:
     "@ctrl/tinycolor" "^3.4.0"
@@ -98,7 +98,7 @@
     "@antv/util" "^2.0.9"
     tslib "^2.0.3"
 
-"@antv/component@*", "@antv/component@^0.8.7":
+"@antv/component@^0.8.7":
   version "0.8.10"
   resolved "https://registry.npm.taobao.org/@antv/component/download/@antv/component-0.8.10.tgz#ed9b9d75e4dd71cf8396d5efd3c323b680d13621"
   integrity sha1-7ZuddeTdcc+DltXv08MjtoDRNiE=
@@ -228,27 +228,6 @@
     probe.gl "^3.1.1"
     reflect-metadata "^0.1.13"
 
-"@antv/g2@4.1.12":
-  version "4.1.12"
-  resolved "https://registry.npm.taobao.org/@antv/g2/download/@antv/g2-4.1.12.tgz#0048b9149830f1ccd6adc22d2e64d72e8dd2818b"
-  integrity sha1-AEi5FJgw8czWrcItLmTXLo3SgYs=
-  dependencies:
-    "@antv/adjust" "^0.2.1"
-    "@antv/attr" "^0.3.1"
-    "@antv/color-util" "^2.0.2"
-    "@antv/component" "^0.8.7"
-    "@antv/coord" "^0.3.0"
-    "@antv/dom-util" "^2.0.2"
-    "@antv/event-emitter" "~0.1.0"
-    "@antv/g-base" "^0.5.0"
-    "@antv/g-canvas" "^0.5.0"
-    "@antv/g-svg" "^0.5.0"
-    "@antv/matrix-util" "^3.1.0-beta.1"
-    "@antv/path-util" "^2.0.3"
-    "@antv/scale" "^0.3.7"
-    "@antv/util" "~2.0.5"
-    tslib "^2.0.0"
-
 "@antv/g2@^4.1.0":
   version "4.1.13"
   resolved "https://registry.npm.taobao.org/@antv/g2/download/@antv/g2-4.1.13.tgz#cde18dcb52217aadc2eed572e7237efabb3d3767"
@@ -269,19 +248,6 @@
     "@antv/scale" "^0.3.7"
     "@antv/util" "~2.0.5"
     tslib "^2.0.0"
-
-"@antv/g2plot@2.3.12":
-  version "2.3.12"
-  resolved "https://registry.npm.taobao.org/@antv/g2plot/download/@antv/g2plot-2.3.12.tgz?cache=0&sync_timestamp=1616593584020&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fg2plot%2Fdownload%2F%40antv%2Fg2plot-2.3.12.tgz#6662aa11e33d5be6b24651d76e44d4167010a6f2"
-  integrity sha1-ZmKqEeM9W+ayRlHXbkTUFnAQpvI=
-  dependencies:
-    "@antv/event-emitter" "^0.1.2"
-    "@antv/g2" "^4.1.0"
-    d3-hierarchy "^2.0.0"
-    d3-regression "^1.3.5"
-    d3-sankey "^0.12.3"
-    size-sensor "^1.0.1"
-    tslib "^2.0.3"
 
 "@antv/g2plot@^2.2.11":
   version "2.3.17"
@@ -423,7 +389,7 @@
     fecha "~4.2.0"
     tslib "^2.0.0"
 
-"@antv/util@*", "@antv/util@^2.0.13", "@antv/util@^2.0.7", "@antv/util@^2.0.9", "@antv/util@~2.0.0", "@antv/util@~2.0.12", "@antv/util@~2.0.3", "@antv/util@~2.0.5":
+"@antv/util@^2.0.13", "@antv/util@^2.0.7", "@antv/util@^2.0.9", "@antv/util@~2.0.0", "@antv/util@~2.0.12", "@antv/util@~2.0.3", "@antv/util@~2.0.5":
   version "2.0.13"
   resolved "https://registry.npm.taobao.org/@antv/util/download/@antv/util-2.0.13.tgz?cache=0&sync_timestamp=1614258217732&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Futil%2Fdownload%2F%40antv%2Futil-2.0.13.tgz#7c2e701d89527116ec17cf5a400413c5c6afcb4d"
   integrity sha1-fC5wHYlScRbsF89aQAQTxcavy00=
@@ -1400,18 +1366,6 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     resolve "^1.8.1"
     semver "^5.5.1"
-
-"@babel/plugin-transform-runtime@^7.12.10":
-  version "7.13.10"
-  resolved "https://registry.npm.taobao.org/@babel/plugin-transform-runtime/download/@babel/plugin-transform-runtime-7.13.10.tgz?cache=0&sync_timestamp=1615243223717&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-transform-runtime%2Fdownload%2F%40babel%2Fplugin-transform-runtime-7.13.10.tgz#a1e40d22e2bf570c591c9c7e5ab42d6bf1e419e1"
-  integrity sha1-oeQNIuK/VwxZHJx+WrQta/HkGeE=
-  dependencies:
-    "@babel/helper-module-imports" "^7.12.13"
-    "@babel/helper-plugin-utils" "^7.13.0"
-    babel-plugin-polyfill-corejs2 "^0.1.4"
-    babel-plugin-polyfill-corejs3 "^0.1.3"
-    babel-plugin-polyfill-regenerator "^0.1.2"
-    semver "^6.3.0"
 
 "@babel/plugin-transform-shorthand-properties@^7.12.1", "@babel/plugin-transform-shorthand-properties@^7.12.13":
   version "7.12.13"
@@ -5589,13 +5543,6 @@ babel-plugin-react-require@3.1.1:
   resolved "https://registry.npm.taobao.org/babel-plugin-react-require/download/babel-plugin-react-require-3.1.1.tgz#5c3d2564fa16b1e45212ed52519db147b1596106"
   integrity sha1-XD0lZPoWseRSEu1SUZ2xR7FZYQY=
 
-babel-plugin-transform-replace-object-assign@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/babel-plugin-transform-replace-object-assign/download/babel-plugin-transform-replace-object-assign-2.0.0.tgz#a5d538d0e5d1c78ef2058a2518ff96720a43b355"
-  integrity sha1-pdU40OXRx47yBYolGP+WcgpDs1U=
-  dependencies:
-    "@babel/helper-module-imports" "^7.0.0"
-
 babel-preset-current-node-syntax@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/babel-preset-current-node-syntax/download/babel-preset-current-node-syntax-1.0.1.tgz#b4399239b89b2a011f9ddbe3e4f401fc40cff73b"
@@ -5698,25 +5645,6 @@ bindings@^1.5.0:
   integrity sha1-EDU8npRTNLwFEabZCzj7x8nFBN8=
   dependencies:
     file-uri-to-path "1.0.0"
-
-bizcharts@^4.1.9:
-  version "4.1.9"
-  resolved "https://registry.npm.taobao.org/bizcharts/download/bizcharts-4.1.9.tgz?cache=0&sync_timestamp=1616492848340&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbizcharts%2Fdownload%2Fbizcharts-4.1.9.tgz#33d865f03395e5a7eb1d581c2da19ea6a8488b8a"
-  integrity sha1-M9hl8DOV5afrHVgcLaGepqhIi4o=
-  dependencies:
-    "@antv/component" "*"
-    "@antv/g2" "4.1.12"
-    "@antv/g2plot" "2.3.12"
-    "@antv/util" "*"
-    "@babel/plugin-transform-modules-commonjs" "^7.12.1"
-    "@babel/plugin-transform-runtime" "^7.12.10"
-    babel-plugin-transform-replace-object-assign "^2.0.0"
-    d3-color "^1.4.1"
-    react-error-boundary "3.0.2"
-    react-reconciler "^0.25.1"
-    resize-observer-polyfill "^1.5.1"
-    simple-statistics "^7.1.0"
-    warning "^4.0.3"
 
 bl@^4.0.3:
   version "4.1.0"
@@ -7537,14 +7465,7 @@ cyclist@^1.0.1:
   resolved "https://registry.npm.taobao.org/cyclist/download/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-"d3-array@1 - 2":
-  version "2.12.1"
-  resolved "https://registry.npm.taobao.org/d3-array/download/d3-array-2.12.1.tgz?cache=0&sync_timestamp=1616606696545&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fd3-array%2Fdownload%2Fd3-array-2.12.1.tgz#e20b41aafcdffdf5d50928004ececf815a465e81"
-  integrity sha1-4gtBqvzf/fXVCSgATs7PgVpGXoE=
-  dependencies:
-    internmap "^1.0.0"
-
-d3-color@1, d3-color@^1.4.1:
+d3-color@1:
   version "1.4.1"
   resolved "https://registry.npm.taobao.org/d3-color/download/d3-color-1.4.1.tgz#c52002bf8846ada4424d55d97982fef26eb3bc8a"
   integrity sha1-xSACv4hGraRCTVXZeYL+8m6zvIo=
@@ -7580,11 +7501,6 @@ d3-interpolate@^1.3.2:
   dependencies:
     d3-color "1"
 
-d3-path@1:
-  version "1.0.9"
-  resolved "https://registry.npm.taobao.org/d3-path/download/d3-path-1.0.9.tgz?cache=0&sync_timestamp=1597836945155&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fd3-path%2Fdownload%2Fd3-path-1.0.9.tgz#48c050bb1fe8c262493a8caf5524e3e9591701cf"
-  integrity sha1-SMBQux/owmJJOoyvVSTj6VkXAc8=
-
 "d3-quadtree@1 - 2":
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/d3-quadtree/download/d3-quadtree-2.0.0.tgz#edbad045cef88701f6fee3aee8e93fb332d30f9d"
@@ -7594,21 +7510,6 @@ d3-regression@^1.3.5:
   version "1.3.8"
   resolved "https://registry.npm.taobao.org/d3-regression/download/d3-regression-1.3.8.tgz?cache=0&sync_timestamp=1614617853492&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fd3-regression%2Fdownload%2Fd3-regression-1.3.8.tgz#bccf14dfd08c476c0202cd3d5354d0e51a8cc38c"
   integrity sha1-vM8U39CMR2wCAs09U1TQ5RqMw4w=
-
-d3-sankey@^0.12.3:
-  version "0.12.3"
-  resolved "https://registry.npm.taobao.org/d3-sankey/download/d3-sankey-0.12.3.tgz#b3c268627bd72e5d80336e8de6acbfec9d15d01d"
-  integrity sha1-s8JoYnvXLl2AM26N5qy/7J0V0B0=
-  dependencies:
-    d3-array "1 - 2"
-    d3-shape "^1.2.0"
-
-d3-shape@^1.2.0:
-  version "1.3.7"
-  resolved "https://registry.npm.taobao.org/d3-shape/download/d3-shape-1.3.7.tgz#df63801be07bc986bc54f63789b4fe502992b5d7"
-  integrity sha1-32OAG+B7yYa8VPY3ibT+UCmStdc=
-  dependencies:
-    d3-path "1"
 
 "d3-timer@1 - 2":
   version "2.0.0"
@@ -10803,11 +10704,6 @@ internal-slot@^1.0.2:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
-
-internmap@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/internmap/download/internmap-1.0.1.tgz#0017cc8a3b99605f0302f2b198d272e015e5df95"
-  integrity sha1-ABfMijuZYF8DAvKxmNJy4BXl35U=
 
 interpret@^1.0.0:
   version "1.4.0"
@@ -16988,13 +16884,6 @@ react-dom@16.x:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-react-error-boundary@3.0.2:
-  version "3.0.2"
-  resolved "https://registry.npm.taobao.org/react-error-boundary/download/react-error-boundary-3.0.2.tgz#74399a4d9a68bfede1f3f4261ea0aabfc65d9868"
-  integrity sha1-dDmaTZpov+3h8/QmHqCqv8ZdmGg=
-  dependencies:
-    "@babel/runtime" "^7.11.2"
-
 react-error-boundary@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/react-error-boundary/-/react-error-boundary-3.1.1.tgz#932c5ca5cbab8ec4fe37fd7b415aa5c3a47597e7"
@@ -17065,16 +16954,6 @@ react-native-swipeout@^2.2.2:
     create-react-class "^15.6.0"
     prop-types "^15.5.10"
     react-tween-state "^0.1.5"
-
-react-reconciler@^0.25.1:
-  version "0.25.1"
-  resolved "https://registry.npm.taobao.org/react-reconciler/download/react-reconciler-0.25.1.tgz?cache=0&sync_timestamp=1617035045155&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-reconciler%2Fdownload%2Freact-reconciler-0.25.1.tgz#f9814d59d115e1210762287ce987801529363aaa"
-  integrity sha1-+YFNWdEV4SEHYih86YeAFSk2Oqo=
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.19.1"
 
 react-redux@^7.1.0:
   version "7.2.2"
@@ -18649,11 +18528,6 @@ simple-get@^3.0.3:
     decompress-response "^4.2.0"
     once "^1.3.1"
     simple-concat "^1.0.0"
-
-simple-statistics@^7.1.0:
-  version "7.7.0"
-  resolved "https://registry.npm.taobao.org/simple-statistics/download/simple-statistics-7.7.0.tgz#cfef964473c940f2adfec85ffde8591a5a933a46"
-  integrity sha1-z++WRHPJQPKt/shf/ehZGlqTOkY=
 
 simple-swizzle@^0.2.2:
   version "0.2.2"

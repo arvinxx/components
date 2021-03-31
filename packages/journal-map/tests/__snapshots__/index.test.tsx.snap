@@ -64,18 +64,26 @@ exports[`JournalMap 默认状态 1`] = `
           style="margin-top: 2px; width: 100%;"
         >
           <div
-            class="bizcharts"
-            style="position: relative; height: 300px; width: 100%;"
+            data-chart-source-type="G2Plot"
+            size-sensor-id="1"
+            style="height: inherit;"
           >
             <div
               style="position:relative;"
             >
               <canvas
                 height="300"
-                style="width: 1px; height: 300px; display: inline-block; vertical-align: middle;"
-                width="1"
+                style="width: 400px; height: 300px; display: inline-block; vertical-align: middle;"
+                width="400"
               />
             </div>
+            <object
+              class="size-sensor-object"
+              data="about:blank"
+              style="display: block; position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1; opacity: 0;"
+              tabindex="-1"
+              type="text/html"
+            />
           </div>
         </div>
       </div>

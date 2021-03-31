@@ -11,6 +11,10 @@ module.exports = {
       'import',
       { libraryName: 'antd', libraryDirectory: 'es', style: 'css' },
       'antd',
+      {
+        libraryName: '@ant-design/charts',
+        libraryDirectory: 'lib',
+      },
     ],
   ],
 };
