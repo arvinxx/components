@@ -1,15 +1,17 @@
 import React from 'react';
 import JournalMap from '@arvinxu/journal-map';
 
+import { data } from './data';
+
 const Demo = () => {
   return (
     <div
       style={{
         background: '#fafafa',
-        padding: 24,
+        padding: 8,
       }}
     >
-      <JournalMap />
+      <JournalMap data={data} style={{ background: 'white', padding: 24 }} />
     </div>
   );
 };

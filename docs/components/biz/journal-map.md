@@ -14,8 +14,12 @@ order: 3
 
 展示用户旅程地图的组件
 
-## 演示
+## 默认
 
 <code src='./examples/JournalMap/Demo.tsx' />
+
+## 自定义颜色
+
+<code src='./examples/JournalMap/CustomColor.tsx' />
 
 <API src='../../../packages/journal-map/src/index.tsx'></API>
