@@ -16,7 +16,7 @@
     "start": "yarn docs:dev",
     "build": "father-build && yarn build:webpack",
     "build:webpack": "lerna run webpack",
-    "create-pkg": "ts-node scripts/create-package",
+    "c": "ts-node scripts/create-package",
     "---------": "",
     "release": "multi-semantic-release",
     "---------     ": "",

@@ -26,6 +26,8 @@
       "@arvinxu/macos-traffic-light/*": [
         "./packages/macos-traffic-light/src/*"
       ],
+      "@arvinxu/journal-map": ["./packages/journal-map/src"],
+      "@arvinxu/journal-map/*": ["./packages/journal-map/src/*"],
       "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
       "@arvinxu/page-loading": ["./packages/page-loading/src"],
       "@arvinxu/mindflow": ["./packages/mindflow/src"],

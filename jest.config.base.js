@@ -14,6 +14,7 @@ module.exports = {
     '@arvinxu/preloader': '<rootDir>/packages/preloader/src',
     '@arvinxu/macos-traffic-light':
       '<rootDir>/packages/macos-traffic-light/src',
+    '@arvinxu/journal-map': '<rootDir>/packages/journal-map/src',
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
     '@arvinxu/page-loading': '<rootDir>/packages/page-loading/src',
     '@arvinxu/mindflow': '<rootDir>/packages/mindflow/src',
