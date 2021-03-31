@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/journal-map [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.0.0...@arvinxu/journal-map@1.0.1) (2021-03-31)
+
+
+### 👷 构建系统
+
+* 优化打包配置 ([bc2dcb3](https://github.com/arvinxx/components/commit/bc2dcb3))
+
+
+### 💄 样式
+
+* 优化图表样式 ([9e97f07](https://github.com/arvinxx/components/commit/9e97f07))
+
 # @arvinxu/journal-map 1.0.0 (2021-03-31)
 
 
