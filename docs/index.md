@@ -50,15 +50,16 @@ footer: Open-source MIT Licensed | Copyright © 2021-present
 [coverage]: https://codecov.io/gh/arvinxx/components/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/arvinxx/components/branch/master
 
-## 组件看板
+## 看板
 
-| 组件                                                   | 版本                                                                             | 说明                                                     |
-| ------------------------------------------------------ | -------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| float-label-input                                      | [![NPM version][float-label-input-version-image]][float-label-input-version-url] | 标签会跟随 hover 状态浮动的 Input 组件                   |
-| [PageLoading](/components/common/page-loading)         | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 页面状态加载                                             |
-| [Preloader](/components/common/preloader)              | [![NPM version][preloader-version-image]][preloader-version-url]                 | 加载组件                                                 |
-| [TrafficLight](/components/common/macos-traffic-light) | [![NPM version][traffic-light-version-image]][traffic-light-version-url]         | macOS 右上角控制按钮                                     |
-| [MindFlow](/components/biz/mindflow)                   | [![NPM version][mindflow-version-image]][mindflow-version-url]                   | 基于溯因推理与图尔敏推论模型为理论基础构建的思维推理组件 |
+### 通用组件
+
+| 组件                                                   | 版本                                                                             | 说明                                   |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------- | -------------------------------------- |
+| float-label-input                                      | [![NPM version][float-label-input-version-image]][float-label-input-version-url] | 标签会跟随 hover 状态浮动的 Input 组件 |
+| [PageLoading](/components/common/page-loading)         | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 页面状态加载                           |
+| [Preloader](/components/common/preloader)              | [![NPM version][preloader-version-image]][preloader-version-url]                 | 加载组件                               |
+| [TrafficLight](/components/common/macos-traffic-light) | [![NPM version][traffic-light-version-image]][traffic-light-version-url]         | macOS 右上角控制按钮                   |
 
 [float-label-input-version-image]: http://img.shields.io/npm/v/@arvinxu/float-label-input.svg?color=deepgreen&label=latest
 [float-label-input-version-url]: http://npmjs.org/package/@arvinxu/float-label-input
@@ -68,5 +69,18 @@ footer: Open-source MIT Licensed | Copyright © 2021-present
 [preloader-version-url]: http://npmjs.org/package/@arvinxu/preloader
 [traffic-light-version-image]: http://img.shields.io/npm/v/@arvinxu/macos-traffic-light.svg?color=deepgreen&label=latest
 [traffic-light-version-url]: http://npmjs.org/package/@arvinxu/macos-traffic-light
+
+### 业务组件
+
+| 组件                                          | 版本                                                                     | 说明                                                     |
+| --------------------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------- |
+| [MindFlow](/components/biz/mindflow)          | [![NPM version][mindflow-version-image]][mindflow-version-url]           | 基于溯因推理与图尔敏推论模型为理论基础构建的思维推理组件 |
+| [ImageGallery](/components/biz/image-gallery) | [![NPM version][image-gallery-version-image]][image-gallery-version-url] | 方便物料分发的图片画廊组件                               |
+| [JournalMap](/components/biz/journal-map)     | [![NPM version][journal-map-version-image]][journal-map-version-url]     | 用户旅程地图组件                                         |
+
 [mindflow-version-image]: http://img.shields.io/npm/v/@arvinxu/mindflow.svg?color=deepgreen&label=latest
 [mindflow-version-url]: http://npmjs.org/package/@arvinxu/mindflow
+[image-gallery-version-image]: http://img.shields.io/npm/v/@arvinxu/image-gallery.svg?color=deepgreen&label=latest
+[image-gallery-version-url]: http://npmjs.org/package/@arvinxu/image-gallery
+[journal-map-version-image]: http://img.shields.io/npm/v/@arvinxu/journal-map.svg?color=deepgreen&label=latest
+[journal-map-version-url]: http://npmjs.org/package/@arvinxu/journal-map
