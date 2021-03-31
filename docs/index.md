@@ -66,7 +66,7 @@ footer: Open-source MIT Licensed | Copyright © 2021-present
 [page-loading-version-url]: http://npmjs.org/package/@arvinxu/page-loading
 [preloader-version-image]: http://img.shields.io/npm/v/@arvinxu/preloader.svg?color=deepgreen&label=latest
 [preloader-version-url]: http://npmjs.org/package/@arvinxu/preloader
-[traffic-light-version-image]: http://img.shields.io/npm/v/@arvinxu/traffic-light.svg?color=deepgreen&label=latest
-[traffic-light-version-url]: http://npmjs.org/package/@arvinxu/traffic-light
+[traffic-light-version-image]: http://img.shields.io/npm/v/@arvinxu/macos-traffic-light.svg?color=deepgreen&label=latest
+[traffic-light-version-url]: http://npmjs.org/package/@arvinxu/macos-traffic-light
 [mindflow-version-image]: http://img.shields.io/npm/v/@arvinxu/mindflow.svg?color=deepgreen&label=latest
 [mindflow-version-url]: http://npmjs.org/package/@arvinxu/mindflow
