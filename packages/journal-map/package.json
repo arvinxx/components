@@ -28,8 +28,5 @@
     "classnames": "^2.2.6",
     "unstated-next": "^1.1.0",
     "use-merge-value": "^1.0.2"
-  },
-  "devDependencies": {
-    "canvas": "^2.7.0"
   }
 }
