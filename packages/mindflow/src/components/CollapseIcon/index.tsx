@@ -18,6 +18,7 @@ const CollapseIcon: FC<CollapseIconProps> = ({ id, collapsed, color }) => {
   return (
     <div
       className="mind-node-collapse"
+      data-testid="icon"
       style={{
         borderColor: color,
         background: isHovered ? color : 'white',
@@ -29,6 +30,7 @@ const CollapseIcon: FC<CollapseIconProps> = ({ id, collapsed, color }) => {
         setHovered(false);
       }}
       onClick={() => {
+        /* istanbul ignore next */
         toggleNodeCollapsed(id);
       }}
     >

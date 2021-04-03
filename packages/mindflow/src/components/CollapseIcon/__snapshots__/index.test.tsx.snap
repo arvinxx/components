@@ -4,6 +4,7 @@ exports[`CollapseIcon 折叠状态 1`] = `
 <div>
   <div
     class="mind-node-collapse"
+    data-testid="icon"
     style="border-color: blue; background: white;"
   >
     <div
@@ -44,6 +45,7 @@ exports[`CollapseIcon 正常渲染 1`] = `
 <div>
   <div
     class="mind-node-collapse"
+    data-testid="icon"
     style="border-color: red; background: white;"
   >
     <div
