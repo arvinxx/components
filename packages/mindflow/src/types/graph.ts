@@ -27,4 +27,8 @@ export interface NodeData extends MindflowNode {
 }
 
 export type PreMindflowData = GraphData<MindflowNode, MindflowEdge>;
-export type MindflowData = GraphData<MindflowNode, MindflowEdge, EdgePort>;
+export type MindflowData = GraphData<
+  MindflowNode,
+  MindflowEdge,
+  EdgePort | string
+>;

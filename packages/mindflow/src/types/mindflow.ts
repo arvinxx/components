@@ -13,7 +13,16 @@ export interface Reference {
   url?: string;
 }
 
-export type NodeType = 'question' | 'action' | 'idea' | 'subject' | string;
+/**
+ * 节点类型
+ */
+export type NodeType =
+  | 'question' // 问题
+  | 'action' // 行动点
+  | 'idea' // 想法
+  | 'subject' // 主题
+  | 'information' // 信息
+  | string;
 
 export interface MindflowNode {
   /**
@@ -32,6 +41,10 @@ export interface MindflowNode {
    * 参考资料
    */
   references?: Reference[];
+  /**
+   * 信息的类型
+   */
+  infoType?: 'url' | 'image' | 'text';
 }
 
 /**

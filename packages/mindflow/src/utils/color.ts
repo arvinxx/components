@@ -79,6 +79,8 @@ export const mapNodeTypeToColor = (type: string) => {
     case 'idea':
       return 'yellow';
     case 'subject':
+      return 'purple';
+    case 'information':
       return 'blue';
     default:
       return 'grey';
