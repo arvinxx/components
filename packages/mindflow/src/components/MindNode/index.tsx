@@ -15,6 +15,9 @@ import { getColorByType, rgba2hex } from '../../utils';
 import type { NodeData } from '../../types';
 import { useFolded } from './useFolded';
 
+import UrlNode from './UrlNode';
+import ImageNode from './ImageNode';
+
 import './style.less';
 
 interface BaseNodeProps {
@@ -27,7 +30,7 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
 
   const data = node.getData<NodeData>();
 
-  const { type, title, description, references = [] } = data;
+  const { type, title, description, references = [], infoType } = data;
 
   const baseColor = getColorByType(type);
 
@@ -35,6 +38,29 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
 
   const textRef = useRef(null);
   const { refXOverflowing } = useOverflow(textRef);
+
+  const OverflowTitle: FC = () =>
+    refXOverflowing ? (
+      <Tooltip placement={'topLeft'} title={title}>
+        {title}
+      </Tooltip>
+    ) : (
+      <>{title}</>
+    );
+
+  const InfoNode = () => {
+    if (type !== 'information') return <OverflowTitle />;
+
+    switch (infoType) {
+      case 'image':
+        return <ImageNode src={title} />;
+      case 'url':
+        return <UrlNode link={title} />;
+      default:
+      case 'text':
+        return <OverflowTitle />;
+    }
+  };
 
   return (
     <div
@@ -65,13 +91,7 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
             unfolded ? 'mind-node-title-expand' : '',
           )}
         >
-          {refXOverflowing ? (
-            <Tooltip placement={'topLeft'} title={title}>
-              {title}
-            </Tooltip>
-          ) : (
-            title
-          )}
+          <InfoNode />
         </div>
       </div>
       {unfolded ? (
