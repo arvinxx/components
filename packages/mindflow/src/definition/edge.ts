@@ -27,6 +27,6 @@ Shape.Edge.config({
     },
   },
   label: {
-    position: 0.65,
+    position: 0.55,
   },
 });
