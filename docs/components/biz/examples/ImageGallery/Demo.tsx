@@ -1,3 +1,6 @@
+/**
+ * compact: true
+ */
 import React from 'react';
 import ImageGallery from '@arvinxu/image-gallery';
 

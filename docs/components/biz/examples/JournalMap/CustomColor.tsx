@@ -1,3 +1,6 @@
+/**
+ * compact: true
+ */
 import React from 'react';
 import JournalMap from '@arvinxu/journal-map';
 
@@ -8,7 +11,7 @@ const CustomColor = () => {
     <div
       style={{
         background: '#fafafa',
-        padding: 8,
+        padding: 24,
       }}
     >
       <JournalMap

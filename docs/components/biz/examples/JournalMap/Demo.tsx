@@ -1,3 +1,6 @@
+/**
+ * compact: true
+ */
 import React from 'react';
 import JournalMap from '@arvinxu/journal-map';
 
@@ -8,7 +11,7 @@ const Demo = () => {
     <div
       style={{
         background: '#fafafa',
-        padding: 8,
+        padding: 24,
       }}
     >
       <JournalMap data={data} style={{ background: 'white', padding: 24 }} />
