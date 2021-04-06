@@ -4,17 +4,15 @@
 import React from 'react';
 import JournalMap from '@arvinxu/journal-map';
 
-import { customColor } from './customColor';
-
-const CustomColor = () => {
+const YAML = () => {
   return (
     <div style={{ background: '#fafafa', padding: 24 }}>
       <JournalMap
-        data={customColor}
+        data="https://gw.alipayobjects.com/os/antfincdn/4pyctfdZvf/data.yml"
         style={{ background: 'white', padding: 24 }}
       />
     </div>
   );
 };
 
-export default CustomColor;
+export default YAML;

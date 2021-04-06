@@ -2,27 +2,32 @@ import { JournalMapData } from '@arvinxu/journal-map';
 
 type Steps = 'plan' | 'rent' | 'take' | 'play' | 'return';
 
-export const data: JournalMapData<Steps> = {
+export const customColor: JournalMapData<Steps> = {
   steps: [
     {
       id: 'plan',
       name: '计划租车',
+      color: '#d0f0fd',
     },
     {
       id: 'rent',
       name: '租车',
+      color: '#d1f7c4',
     },
     {
       id: 'take',
       name: '提车',
+      color: '#cfdfff',
     },
     {
       id: 'play',
       name: '游玩',
+      color: '#ffdaf6',
     },
     {
       id: 'return',
       name: '还车',
+      color: '#ede2fe',
     },
   ],
   actions: {

@@ -8,12 +8,7 @@ import { data } from './data';
 
 const Demo = () => {
   return (
-    <div
-      style={{
-        background: '#fafafa',
-        padding: 24,
-      }}
-    >
+    <div style={{ background: '#fafafa', padding: 24 }}>
       <JournalMap data={data} style={{ background: 'white', padding: 24 }} />
     </div>
   );
