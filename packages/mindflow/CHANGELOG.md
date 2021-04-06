@@ -1,5 +1,25 @@
 # Changelog
 
+# @arvinxu/mindflow [1.8.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.3...@arvinxu/mindflow@1.8.0) (2021-04-06)
+
+
+### ✅ 测试
+
+* 修正测试 ([56614d2](https://github.com/arvinxx/components/commit/56614d2))
+* 补充测试 ([7f9fe5d](https://github.com/arvinxx/components/commit/7f9fe5d))
+
+
+### ✨ 新特性
+
+* 信息节点添加图片和网页类型 ([debd5dc](https://github.com/arvinxx/components/commit/debd5dc))
+* 添加信息节点 ([23b9cd9](https://github.com/arvinxx/components/commit/23b9cd9))
+
+
+### 💄 样式
+
+* 优化图片节点样式 ([6562906](https://github.com/arvinxx/components/commit/6562906))
+* 优化边节点位置 ([f3fa0bb](https://github.com/arvinxx/components/commit/f3fa0bb))
+
 ## @arvinxu/mindflow [1.7.3](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.2...@arvinxu/mindflow@1.7.3) (2021-03-23)
 
 
