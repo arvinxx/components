@@ -25,7 +25,7 @@ exports[`JournalMap 默认状态 1`] = `
             </div>
           </div>
           <div
-            style="margin-top: 3px;"
+            style="margin-top: 24px;"
           >
             <div
               class="avx-journal-map-stage"
@@ -44,7 +44,7 @@ exports[`JournalMap 默认状态 1`] = `
         />
       </div>
       <div
-        style="display: flex;"
+        class="avx-journal-map-chart"
       >
         <div
           style="width: 40px;"
