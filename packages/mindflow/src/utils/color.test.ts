@@ -44,8 +44,7 @@ test('mapNodeTypeToColor', () => {
   expect(mapNodeTypeToColor('question')).toEqual('red');
   expect(mapNodeTypeToColor('action')).toEqual('green');
   expect(mapNodeTypeToColor('idea')).toEqual('yellow');
-  expect(mapNodeTypeToColor('subject')).toEqual('blue');
-  expect(mapNodeTypeToColor('subject')).toEqual('blue');
+  expect(mapNodeTypeToColor('subject')).toEqual('purple');
   expect(mapNodeTypeToColor('123')).toEqual('grey');
 });
 
