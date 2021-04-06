@@ -1,6 +1,7 @@
 import { createContainer } from 'unstated-next';
-import type { JournalMapData } from './type';
 import useMergeValue from 'use-merge-value';
+
+import type { JournalMapData } from './type';
 
 const useJournalMap = (data: JournalMapData) => {
   const [steps] = useMergeValue(data.steps);

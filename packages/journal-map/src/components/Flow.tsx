@@ -14,7 +14,7 @@ const Flow: FC = () => {
     <div className="avx-journal-map-flow-container">
       <div style={{ width: 40 }}>
         <Stage height={48}>阶段</Stage>
-        <div style={{ marginTop: 3 }}>
+        <div style={{ marginTop: 24 }}>
           <Stage height={120}>用户行为</Stage>
         </div>
       </div>

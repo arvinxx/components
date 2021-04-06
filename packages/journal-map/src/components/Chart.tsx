@@ -5,8 +5,8 @@ import { Area } from '@ant-design/charts';
 import { blue } from '@ant-design/colors';
 
 import Stage from './Stage';
-
 import { JournalMapStore } from '../useJournalMap';
+import './Chart.less';
 
 interface ChartProps {
   color?: string;
@@ -87,7 +87,7 @@ const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
     animation: { appear: { animation: 'fade-in' } },
   };
   return (
-    <div style={{ display: 'flex' }}>
+    <div className="avx-journal-map-chart">
       <div style={{ width: 40 }}>
         <Stage height={300}>体验情绪</Stage>
       </div>
