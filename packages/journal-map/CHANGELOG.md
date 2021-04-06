@@ -1,5 +1,18 @@
 # Changelog
 
+# @arvinxu/journal-map [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.0.3...@arvinxu/journal-map@1.1.0) (2021-04-06)
+
+
+### ♻ 重构
+
+* 重构 store ([3301889](https://github.com/arvinxx/components/commit/3301889))
+
+
+### ✨ 新特性
+
+* 添加 YML 解析支持 ([58dd437](https://github.com/arvinxx/components/commit/58dd437))
+* 添加回调方法 ([648ec6c](https://github.com/arvinxx/components/commit/648ec6c))
+
 ## @arvinxu/journal-map [1.0.3](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.0.2...@arvinxu/journal-map@1.0.3) (2021-04-06)
 
 
