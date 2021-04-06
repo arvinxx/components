@@ -1,5 +1,22 @@
 # Changelog
 
+## @arvinxu/journal-map [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.0.1...@arvinxu/journal-map@1.0.2) (2021-04-06)
+
+
+### ✅ 测试
+
+* 更新测试 ([ea1692c](https://github.com/arvinxx/components/commit/ea1692c))
+
+
+### 🎫 杂项
+
+* 调整画布模块 ([922aed7](https://github.com/arvinxx/components/commit/922aed7))
+
+
+### 💄 样式
+
+* 优化样式 ([cd45155](https://github.com/arvinxx/components/commit/cd45155))
+
 ## @arvinxu/journal-map [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.0.0...@arvinxu/journal-map@1.0.1) (2021-03-31)
 
 
