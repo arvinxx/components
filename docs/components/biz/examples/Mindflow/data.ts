@@ -112,6 +112,69 @@ export const demo: MindflowData = {
   ],
 };
 
+export const thinking: MindflowData = {
+  nodes: [
+    {
+      id: '1',
+      data: {
+        type: 'question',
+        title: '如何设计 Mindflow',
+      },
+    },
+    {
+      id: '2',
+      data: {
+        type: 'information',
+        title:
+          'https://www.yuque.com/arvinxx/tu0agc/583fa27a-05f6-410f-84a8-304500513d84',
+        infoType: 'url',
+      },
+    },
+    {
+      id: '3',
+      data: {
+        type: 'information',
+        title:
+          'https://gw.alipayobjects.com/zos/antfincdn/w%26UFkCsvSt/7d30e63e-607c-4889-810e-664d8c8ccb08.png',
+        infoType: 'image',
+      },
+    },
+    {
+      id: '4',
+      data: {
+        type: 'idea',
+        title: '信息节点的展开与折叠',
+        description: '发散与收敛交互',
+      },
+    },
+    {
+      id: '5',
+      data: {
+        type: 'idea',
+        title: '在边上展示依据',
+      },
+    },
+  ],
+  edges: [
+    {
+      source: '1',
+      target: '2',
+    },
+    {
+      source: '1',
+      target: '3',
+    },
+    {
+      source: '2',
+      target: '5',
+    },
+    {
+      source: '3',
+      target: '4',
+    },
+  ],
+};
+
 export const museum: MindflowData = {
   nodes: [
     {

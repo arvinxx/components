@@ -13,7 +13,7 @@ if (process.env.NODE_ENV !== 'production') {
 const { Group } = Radio;
 
 const MindflowDemo = () => {
-  const [type, setType] = useState<'demo' | 'museum'>('demo');
+  const [type, setType] = useState<'demo' | 'museum' | 'thinking'>('thinking');
 
   return (
     <div>
@@ -27,6 +27,7 @@ const MindflowDemo = () => {
         >
           <Radio value={'demo'}>demo</Radio>
           <Radio value={'museum'}>博物馆案例</Radio>
+          <Radio value={'thinking'}>思考案例</Radio>
         </Group>
       </div>
       <Mindflow data={datasource[type]} height={600} />
