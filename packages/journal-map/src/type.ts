@@ -50,3 +50,17 @@ export interface UserAction {
    */
   painSpot?: string[];
 }
+
+/**
+ * 解析后的 YML 数据
+ */
+export interface JournalMapYML<T extends string = string> {
+  /**
+   * 步骤
+   */
+  steps: Step<T>[];
+  /**
+   * 用户行为
+   */
+  actions: Record<T, Record<T, number>[]>;
+}

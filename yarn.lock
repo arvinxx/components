@@ -3763,6 +3763,11 @@
   resolved "https://registry.npm.taobao.org/@types/js-cookie/download/@types/js-cookie-2.2.6.tgz#f1a1cb35aff47bc5cfb05cb0c441ca91e914c26f"
   integrity sha1-8aHLNa/0e8XPsFywxEHKkekUwm8=
 
+"@types/js-yaml@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/@types/js-yaml/download/@types/js-yaml-4.0.0.tgz?cache=0&sync_timestamp=1613379027329&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjs-yaml%2Fdownload%2F%40types%2Fjs-yaml-4.0.0.tgz#d1a11688112091f2c711674df3a65ea2f47b5dfb"
+  integrity sha1-0aEWiBEgkfLHEWdN86ZeovR7Xfs=
+
 "@types/jsdom@^16.2.3":
   version "16.2.10"
   resolved "https://registry.yarnpkg.com/@types/jsdom/-/jsdom-16.2.10.tgz#c05ea94682d035943ae2453b79d56178496b6653"
@@ -5174,6 +5179,11 @@ argparse@^1.0.7:
   integrity sha1-vNZ5HqWuCXJeF+WtmIE0zUCz2RE=
   dependencies:
     sprintf-js "~1.0.2"
+
+argparse@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/argparse/download/argparse-2.0.1.tgz?cache=0&sync_timestamp=1598649397806&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fargparse%2Fdownload%2Fargparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
+  integrity sha1-JG9Q88p4oyQPbJl+ipvR6sSeSzg=
 
 argv-formatter@~1.0.0:
   version "1.0.0"
@@ -11939,6 +11949,13 @@ js-yaml@^3.13.1, js-yaml@^3.6.1:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+
+js-yaml@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/js-yaml/download/js-yaml-4.0.0.tgz?cache=0&sync_timestamp=1609680109116&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjs-yaml%2Fdownload%2Fjs-yaml-4.0.0.tgz#f426bc0ff4b4051926cd588c71113183409a121f"
+  integrity sha1-9Ca8D/S0BRkmzViMcRExg0CaEh8=
+  dependencies:
+    argparse "^2.0.1"
 
 jsbn@~0.1.0:
   version "0.1.1"
@@ -20607,11 +20624,6 @@ unset-value@^1.0.0:
   dependencies:
     has-value "^0.3.1"
     isobject "^3.0.0"
-
-unstated-next@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/unstated-next/download/unstated-next-1.1.0.tgz#7bb4911a12fdf3cc8ad3eb11a0b315e4a8685ea8"
-  integrity sha1-e7SRGhL988yK0+sRoLMV5KhoXqg=
 
 unzip-response@^2.0.1:
   version "2.0.1"

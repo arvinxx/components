@@ -1,13 +1,29 @@
-import { createContainer } from 'unstated-next';
-import useMergeValue from 'use-merge-value';
-
 import type { JournalMapData } from './type';
 
-const useJournalMap = (data: JournalMapData) => {
-  const [steps] = useMergeValue(data.steps);
-  const [actions] = useMergeValue(data.actions);
+import useMergeValue from 'use-merge-value';
+import { useEffect } from 'react';
 
-  return { steps, actions };
+import { fetchYMLToJSON, getServiceToken } from './utils';
+
+export const useJournalMap = (data: JournalMapData | string, onChange) => {
+  const defaultJournalMap = { steps: [], actions: {} };
+
+  const hook = useMergeValue<JournalMapData>(
+    typeof data === 'string' ? defaultJournalMap : data,
+    { onChange },
+  );
+
+  const [, setStore] = hook;
+
+  useEffect(() => {
+    if (typeof data === 'string' && data.startsWith('http')) {
+      fetchYMLToJSON(data).then((data) => {
+        setStore(data);
+      });
+    }
+  }, [data]);
+
+  return hook;
 };
 
-export const JournalMapStore = createContainer(useJournalMap);
+export const JournalMapStore = getServiceToken(useJournalMap);

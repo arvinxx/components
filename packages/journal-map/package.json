@@ -26,7 +26,10 @@
     "@ant-design/charts": "^1.1.1",
     "@ant-design/colors": "^6.0.0",
     "classnames": "^2.2.6",
-    "unstated-next": "^1.1.0",
+    "js-yaml": "^4.0.0",
     "use-merge-value": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.0"
   }
 }
