@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React from 'react';
+import React, { useContext } from 'react';
 import { blue } from '@ant-design/colors';
 
 import Stage from './Stage';
@@ -9,7 +9,9 @@ import { JournalMapStore } from '../useJournalMap';
 import './Flow.less';
 
 const Flow: FC = () => {
-  const { actions, steps } = JournalMapStore.useContainer();
+  const [store] = useContext(JournalMapStore);
+  const { actions, steps } = store;
+
   return (
     <div className="avx-journal-map-flow-container">
       <div style={{ width: 40 }}>

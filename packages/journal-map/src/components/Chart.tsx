@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React from 'react';
+import React, { useContext } from 'react';
 import type { AreaConfig } from '@ant-design/charts/es/area';
 import { Area } from '@ant-design/charts';
 import { blue } from '@ant-design/colors';
@@ -34,8 +34,8 @@ const getFormattedEmotion = (text: string | number) => {
 };
 
 const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
-  const { actions } = JournalMapStore.useContainer();
-
+  const [store] = useContext(JournalMapStore);
+  const { actions } = store;
   const data = Object.values(actions).flat();
 
   const config: AreaConfig = {
