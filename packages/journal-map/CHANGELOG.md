@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/journal-map [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.1.0...@arvinxu/journal-map@1.2.0) (2021-04-07)
+
+
+### ✨ 新特性
+
+* 添加 YML schema ([e9574c9](https://github.com/arvinxx/components/commit/e9574c9))
+
 # @arvinxu/journal-map [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.0.3...@arvinxu/journal-map@1.1.0) (2021-04-06)
 
 
