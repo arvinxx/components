@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/journal-map [1.2.1](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.2.0...@arvinxu/journal-map@1.2.1) (2021-04-07)
+
+
+### 👷 构建系统
+
+* 补充 schema 文件 ([dcbe257](https://github.com/arvinxx/components/commit/dcbe257))
+
 # @arvinxu/journal-map [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.1.0...@arvinxu/journal-map@1.2.0) (2021-04-07)
 
 
