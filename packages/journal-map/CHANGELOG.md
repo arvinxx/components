@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/journal-map [1.2.5](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.2.4...@arvinxu/journal-map@1.2.5) (2021-04-07)
+
+
+### 👷 构建系统
+
+* 补充 umd 模块 ([0e860d6](https://github.com/arvinxx/components/commit/0e860d6))
+
+
+### 💄 样式
+
+* 修正文本样式 ([7c09c2a](https://github.com/arvinxx/components/commit/7c09c2a))
+
 ## @arvinxu/journal-map [1.2.4](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.2.3...@arvinxu/journal-map@1.2.4) (2021-04-07)
 
 
