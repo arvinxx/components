@@ -3,7 +3,8 @@
   "version": "1.2.0",
   "files": [
     "lib",
-    "es"
+    "es",
+    "schema.json"
   ],
   "main": "lib/index.js",
   "module": "es/index.js",
