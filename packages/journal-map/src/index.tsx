@@ -6,6 +6,8 @@ import { Chart, Flow } from './components';
 import { JournalMapStore, useJournalMap } from './useJournalMap';
 import type { JournalMapData } from './type';
 
+import './styles.less';
+
 export interface JournalMapProps {
   /**
    * 待渲染数据 或网址
