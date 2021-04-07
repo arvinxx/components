@@ -1,0 +1,44 @@
+{
+  "$id": "user-journal-map-schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "Record<T,Record<T,number>[]>": {
+      "type": "object"
+    },
+    "Step<T>": {
+      "description": "阶段",
+      "properties": {
+        "color": {
+          "description": "该阶段的颜色",
+          "type": "string"
+        },
+        "id": {
+          "description": "阶段id",
+          "type": "string"
+        },
+        "name": {
+          "description": "阶段名称",
+          "type": "string"
+        }
+      },
+      "required": ["id", "name"],
+      "type": "object"
+    }
+  },
+  "description": "解析后的 YML 数据",
+  "properties": {
+    "actions": {
+      "$ref": "user-journal-map-schema#/definitions/Record<T,Record<T,number>[]>",
+      "description": "用户行为"
+    },
+    "steps": {
+      "description": "步骤",
+      "items": {
+        "$ref": "user-journal-map-schema#/definitions/Step<T>"
+      },
+      "type": "array"
+    }
+  },
+  "required": ["actions", "steps"],
+  "type": "object"
+}

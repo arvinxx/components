@@ -4,7 +4,7 @@
   "files": [
     "lib",
     "es",
-    "schema.json"
+    "schema"
   ],
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -17,7 +17,7 @@
   "scripts": {
     "build": "yarn schema && father-build && yarn webpack",
     "webpack": "webpack",
-    "schema": "typescript-json-schema src/type.ts JournalMapYML -o ./schema.json --id=user-journal-map-schema --required --ignoreErrors",
+    "schema": "typescript-json-schema src/type.ts JournalMapYML -o ./schema/journal-map.schema.json --id=user-journal-map-schema --required --ignoreErrors",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "yarn build",
