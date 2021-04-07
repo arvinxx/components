@@ -4,6 +4,7 @@
 export interface Step<T = string> {
   /**
    * 阶段id
+   * @TJS-type string
    */
   id: T;
   /**
@@ -11,7 +12,7 @@ export interface Step<T = string> {
    */
   name: string;
   /**
-   * 该步骤的颜色
+   * 该阶段的颜色
    */
   color?: string;
 }
