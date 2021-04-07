@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/journal-map [1.2.2](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.2.1...@arvinxu/journal-map@1.2.2) (2021-04-07)
+
+
+### 🐛 修复
+
+* 修正生成的 schema 类型问题 ([4feedc8](https://github.com/arvinxx/components/commit/4feedc8))
+
 ## @arvinxu/journal-map [1.2.1](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.2.0...@arvinxu/journal-map@1.2.1) (2021-04-07)
 
 
