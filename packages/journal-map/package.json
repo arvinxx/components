@@ -4,6 +4,7 @@
   "files": [
     "lib",
     "es",
+    "dist",
     "schema"
   ],
   "main": "lib/index.js",
