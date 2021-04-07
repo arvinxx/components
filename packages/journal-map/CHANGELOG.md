@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/journal-map [1.2.3](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.2.2...@arvinxu/journal-map@1.2.3) (2021-04-07)
+
+
+### 👷 构建系统
+
+* 调整 schema 位置 ([9db9f09](https://github.com/arvinxx/components/commit/9db9f09))
+
 ## @arvinxu/journal-map [1.2.2](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.2.1...@arvinxu/journal-map@1.2.2) (2021-04-07)
 
 
