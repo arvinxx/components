@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/journal-map [1.2.4](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.2.3...@arvinxu/journal-map@1.2.4) (2021-04-07)
+
+
+### 💄 样式
+
+* 修正文本样式 ([774fe12](https://github.com/arvinxx/components/commit/774fe12))
+
 ## @arvinxu/journal-map [1.2.3](https://github.com/arvinxx/components/compare/@arvinxu/journal-map@1.2.2...@arvinxu/journal-map@1.2.3) (2021-04-07)
 
 
