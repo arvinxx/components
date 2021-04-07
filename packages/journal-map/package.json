@@ -14,8 +14,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "father-build && yarn webpack",
+    "build": "yarn schema && father-build && yarn webpack",
     "webpack": "webpack",
+    "schema": "typescript-json-schema src/type.ts JournalMapYML -o ./schema.json --id=user-journal-map-schema --required --ignoreErrors",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "yarn build",
@@ -30,6 +31,7 @@
     "use-merge-value": "^1.0.2"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.0"
+    "@types/js-yaml": "^4.0.0",
+    "typescript-json-schema": "^0.50.0"
   }
 }

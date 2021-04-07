@@ -39,3 +39,4 @@ example/.temp/*
 .eslintcache
 
 apis
+packages/journal-map/**/schema.json

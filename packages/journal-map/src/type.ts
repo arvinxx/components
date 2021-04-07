@@ -2,7 +2,13 @@
  * 阶段
  */
 export interface Step<T = string> {
+  /**
+   * 阶段id
+   */
   id: T;
+  /**
+   * 阶段名称
+   */
   name: string;
   /**
    * 该步骤的颜色
