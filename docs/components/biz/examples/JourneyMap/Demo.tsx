@@ -7,11 +7,7 @@ import JourneyMap from '@arvinxu/journey-map';
 import { data } from './data';
 
 const Demo = () => {
-  return (
-    <div style={{ background: '#fafafa', padding: 24 }}>
-      <JourneyMap data={data} style={{ background: 'white', padding: 24 }} />
-    </div>
-  );
+  return <JourneyMap data={data} style={{ padding: 24 }} />;
 };
 
 export default Demo;
