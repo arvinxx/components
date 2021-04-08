@@ -48,7 +48,7 @@ export interface YMLJourneyMap {
    */
   title?: string;
   /**
-   * 配置项
+   * 配置参数
    */
   config?: Config;
   /**
