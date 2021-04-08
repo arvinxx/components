@@ -38,7 +38,11 @@ export interface UserAction {
   /**
    * 行为名称
    */
-  title: string;
+  name: string;
+  /**
+   * 情绪得分
+   */
+  emotion?: number;
   /**
    * 说明
    */
@@ -48,26 +52,9 @@ export interface UserAction {
    * 有关的想法
    */
   thoughts?: string[];
-  /**
-   * 情绪得分
-   */
-  emotion: number;
+
   /**
    * 痛点
    */
   painSpot?: string[];
-}
-
-/**
- * 解析后的 YML 数据
- */
-export interface JourneyMapYML<T extends string = string> {
-  /**
-   * 步骤
-   */
-  steps: Stage<T>[];
-  /**
-   * 用户行为
-   */
-  actions: Record<T, Record<T, number>[]>;
 }

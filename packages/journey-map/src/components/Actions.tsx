@@ -50,7 +50,7 @@ const Actions: FC<UserActionProps> = ({
 
         return (
           <div
-            key={action.title}
+            key={action.name}
             className="avx-journey-map-actions-action"
             style={{
               strokeLinecap: 'round',
@@ -65,7 +65,7 @@ const Actions: FC<UserActionProps> = ({
               style={{ background: color }}
             />
             <div className="avx-journey-map-actions-action-text">
-              {action.title}
+              {action.name}
             </div>
           </div>
         );

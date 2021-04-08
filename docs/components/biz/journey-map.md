@@ -24,52 +24,73 @@ order: 3
 
 ## 使用 YML
 
-该组件支持使用 YML 格式的数据
+支持使用 YML 格式的数据
 
 <code src='./examples/JourneyMap/YAML.tsx' />
 
-数据
+### 数据示例
 
 ```yaml
-steps:
-  - id: plan
-    name: 计划租车
-  - id: rent
-    name: 租车
-  - id: take
-    name: 提车
-  - id: play
-    name: 游玩
-  - id: return
-    name: 还车
+# 阶段步骤
+stages:
+  - name: 计划租车
+    actions:
+      - name: 找租车平台
+        emotion: -1
+      - name: 对比不同平台
+        emotion: -2
+      - name: 确定平台
+        emotion: 0
 
-actions:
-  plan:
-    - 找租车平台: -1
-    - 对比不同平台: -2
-    - 确定平台: 1
-  rent:
-    - 选择租车日期: -1
-    - 与同伴讨论车型: -1
-    - 选择租车类型: 0
-    - 支付费用: 1
-  take:
-    - 打车去提车点: 2
-    - 确认提车时间和地点: 2
-    - 确认车况: 2
-    - 确认还车注意事项: 1
-    - 取车离开: 2
-  play:
-    - 返回接同伴: 2
-    - 开车游玩一天: 0
-    - 车出了问题: -2
-    - 打电话给客服: -1
-    - 处理车况: 2
-  return:
-    - 加油站加油: -1
-    - 确认使用车况: -1
-    - 打车返回: 0
-    - 完成车辆交接: 1
+  - name: 租车
+    actions:
+      - name: 选择租车日期
+        emotion: -1
+      - name: 与同伴讨论车型
+        emotion: -1
+      - name: 选择租车类型
+        emotion: 0
+      - name: 支付费用
+        emotion: 1
+
+  - name: 提车
+    actions:
+      - name: 打车去提车点
+        emotion: 2
+      - name: 确认提车时间和地点
+        emotion: 2
+      - name: 确认车况
+        emotion: 1
+      - name: 确认还车注意事项
+        emotion: 1
+      - name: 取车离开
+        emotion: 2
+
+  - name: 游玩
+    actions:
+      - name: 返回接同伴
+        emotion: 2
+      - name: 开车游玩一天
+        emotion: 0
+      - name: 车出了问题
+        emotion: -2
+      - name: 打电话给客服
+        emotion: -1
+      - name: 处理车况
+        emotion: 0
+
+  - name: 还车
+    actions:
+      - name: 加油站加油
+        emotion: -1
+      - name: 确认使用车况
+        emotion: 0
+      - name: 完成车辆交接
+        emotion: 1
+      - name: 打车返回
+        emotion: 0
+      - name: 处理车况
+        emotion: 0
 ```
 
 <API src='../../../packages/journey-map/src/index.tsx'></API>

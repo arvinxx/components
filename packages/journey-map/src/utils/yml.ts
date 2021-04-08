@@ -1,27 +1,28 @@
 import { load } from 'js-yaml';
-import type { JourneyMapData, JourneyMapYML } from '../types/type';
+import type { JourneyMapData, YMLJourneyMap } from '../types';
 
+/**
+ * YML 转 JSON
+ * @param yml
+ * @constructor
+ */
 export const YMLToJSON = (yml: string): JourneyMapData => {
   try {
-    const json = load(yml) as JourneyMapYML;
+    const json = load(yml) as YMLJourneyMap;
 
-    const { actions, steps } = json;
+    const { stages } = json;
 
     const validAction = {};
 
-    // eslint-disable-next-line no-restricted-syntax,guard-for-in
-    for (const actionsKey in actions) {
-      validAction[actionsKey] = actions[actionsKey].map((entry) => {
-        const [title, emotion] = Object.entries(entry)[0];
-        return {
-          title,
-          emotion,
-        };
-      });
-    }
+    stages.forEach((stage) => {
+      validAction[stage.name] = stage.actions;
+    });
 
     return {
-      stages: steps,
+      stages: stages.map((stage) => {
+        const { actions, ...res } = stage;
+        return { id: stage.name, ...res };
+      }),
       actions: validAction,
     };
   } catch (e) {

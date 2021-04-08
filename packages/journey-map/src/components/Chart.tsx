@@ -40,7 +40,7 @@ const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
 
   const config: AreaConfig = {
     data,
-    // padding: [24, 40],
+    padding: [24, 0, 16, 0],
     tooltip: {
       formatter: (datum) => {
         const { emotion } = datum;
@@ -48,7 +48,7 @@ const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
         return { name: '情绪值', value: getFormattedEmotion(emotion) };
       },
     },
-    xField: 'title',
+    xField: 'name',
     yField: 'emotion',
     yAxis: {
       alias: '情绪值',
@@ -91,7 +91,7 @@ const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
       <div style={{ width: 40 }}>
         <Stage height={300}>体验情绪</Stage>
       </div>
-      <div style={{ marginTop: 2, width: '100%' }}>
+      <div style={{ width: '100%' }}>
         <Area {...config} />
       </div>
     </div>

@@ -2,18 +2,50 @@
   "$id": "journey-map-schema",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
-    "Record<T,Record<T,number>[]>": {
-      "type": "object"
-    },
-    "Step<T>": {
-      "description": "阶段",
+    "UserAction": {
+      "description": "用户行为",
       "properties": {
-        "color": {
-          "description": "该阶段的颜色",
+        "description": {
+          "description": "说明",
           "type": "string"
         },
-        "id": {
-          "description": "阶段id",
+        "emotion": {
+          "description": "情绪得分",
+          "type": "number"
+        },
+        "name": {
+          "description": "行为名称",
+          "type": "string"
+        },
+        "painSpot": {
+          "description": "痛点",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "thoughts": {
+          "description": "有关的想法",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": ["emotion", "name"],
+      "type": "object"
+    },
+    "YMLStage": {
+      "properties": {
+        "actions": {
+          "description": "该阶段所有用户行为",
+          "items": {
+            "$ref": "journey-map-schema#/definitions/UserAction"
+          },
+          "type": "array"
+        },
+        "color": {
+          "description": "该阶段的颜色",
           "type": "string"
         },
         "name": {
@@ -21,24 +53,23 @@
           "type": "string"
         }
       },
-      "required": ["id", "name"],
+      "required": ["actions", "name"],
       "type": "object"
     }
   },
   "description": "解析后的 YML 数据",
   "properties": {
-    "actions": {
-      "$ref": "journey-map-schema#/definitions/Record<T,Record<T,number>[]>",
-      "description": "用户行为"
+    "config": {
+      "description": "针对旅程图的配置项"
     },
-    "steps": {
+    "stages": {
       "description": "步骤",
       "items": {
-        "$ref": "journey-map-schema#/definitions/Step<T>"
+        "$ref": "journey-map-schema#/definitions/YMLStage"
       },
       "type": "array"
     }
   },
-  "required": ["actions", "steps"],
+  "required": ["stages"],
   "type": "object"
 }

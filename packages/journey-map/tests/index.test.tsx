@@ -6,7 +6,7 @@ import JourneyMap from '@arvinxu/journey-map';
 describe('JourneyMap', () => {
   it('默认状态', () => {
     const { container } = render(
-      <JourneyMap data={{ actions: {}, steps: [] }} />,
+      <JourneyMap data={{ actions: {}, stages: [] }} />,
     );
     expect(container).toMatchSnapshot();
   });
