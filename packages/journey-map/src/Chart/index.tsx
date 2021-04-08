@@ -29,7 +29,7 @@ const getFormattedEmotion = (text: string | number) => {
     case '2':
       return '极好';
     default:
-      return text;
+      return '无';
   }
 };
 
@@ -38,7 +38,7 @@ const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
 
   const config: AreaConfig = {
     data: actionList,
-    padding: [24, -24, 16, -24],
+    padding: [24, -10, 16, -10],
     tooltip: {
       formatter: (datum) => {
         const { emotion } = datum;

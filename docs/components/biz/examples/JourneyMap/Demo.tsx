@@ -7,7 +7,13 @@ import JourneyMap from '@arvinxu/journey-map';
 import { data } from './data';
 
 const Demo = () => {
-  return <JourneyMap data={data} style={{ padding: 24 }} />;
+  return (
+    <JourneyMap
+      data={data}
+      title={'租车用户旅程地图'}
+      style={{ padding: 24 }}
+    />
+  );
 };
 
 export default Demo;
