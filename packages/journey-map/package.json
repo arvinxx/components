@@ -28,9 +28,11 @@
   "dependencies": {
     "@ant-design/charts": "^1.1.1",
     "@ant-design/colors": "^6.0.0",
+    "antd": "^4.12.3",
     "classnames": "^2.2.6",
     "js-yaml": "^4.0.0",
-    "use-merge-value": "^1.0.2"
+    "use-merge-value": "^1.0.2",
+    "use-overflow": "^1.1.0"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.0",
