@@ -1,5 +1,13 @@
 # Changelog
 
+# @arvinxu/journey-map [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.1.0...@arvinxu/journey-map@1.2.0) (2021-04-08)
+
+
+### ✨ 新特性
+
+* 优化用户行为省略文本交互 ([de13e1a](https://github.com/arvinxx/components/commit/de13e1a))
+* 补充 schema 情绪得分限制 ([10092f0](https://github.com/arvinxx/components/commit/10092f0))
+
 # @arvinxu/journey-map [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.0.0...@arvinxu/journey-map@1.1.0) (2021-04-08)
 
 
