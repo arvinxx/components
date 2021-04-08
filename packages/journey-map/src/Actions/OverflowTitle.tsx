@@ -3,8 +3,6 @@ import React, { useRef } from 'react';
 import { Tooltip } from 'antd';
 import { useOverflow } from 'use-overflow';
 
-import './Actions.less';
-
 interface OverflowTitleProps {
   title: string;
 }

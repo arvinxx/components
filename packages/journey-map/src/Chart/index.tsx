@@ -4,9 +4,9 @@ import type { AreaConfig } from '@ant-design/charts/es/area';
 import { Area } from '@ant-design/charts';
 import { blue } from '@ant-design/colors';
 
-import Stage from './Stage';
+import { Section } from '../components';
 import { JourneyMapStore } from '../useJourneyMap';
-import './Chart.less';
+import './style.less';
 
 interface ChartProps {
   color?: string;
@@ -88,9 +88,7 @@ const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
   };
   return (
     <div className="avx-journey-map-chart">
-      <div style={{ width: 40 }}>
-        <Stage height={300}>体验情绪</Stage>
-      </div>
+      <Section height={300}>体验情绪</Section>
       <div style={{ width: '100%' }}>
         <Area {...config} />
       </div>

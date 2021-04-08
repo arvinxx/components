@@ -2,39 +2,29 @@ import type { FC } from 'react';
 import React, { useContext } from 'react';
 import { blue } from '@ant-design/colors';
 
-import Stage from './Stage';
-import Actions from './Actions';
+import { Section } from '../components';
+import Action from './Action';
 import { JourneyMapStore } from '../useJourneyMap';
 
-import './Flow.less';
+import './style.less';
 
-const Flow: FC = () => {
+const Actions: FC = () => {
   const [store] = useContext(JourneyMapStore);
   const { actions, stages } = store;
 
+  console.log(Object.values(actions).flat());
+  // const actionList = Object.values(actions).flat();
+
   return (
     <div className="avx-journey-map-flow-container">
-      <div style={{ width: 40 }}>
-        <Stage height={48}>阶段</Stage>
-        <div style={{ marginTop: 24 }}>
-          <Stage height={120}>用户行为</Stage>
-        </div>
-      </div>
+      <Section height={120}>用户行为</Section>
       <div className="avx-journey-map-flow-content">
         {stages.map((step, index) => {
           const color = step.color || blue[0];
 
           return (
             <div key={step.id} style={{ width: `${100 / stages.length}%` }}>
-              <div
-                className="avx-journey-map-flow-step"
-                style={{ background: color }}
-              >
-                <div className="avx-journey-map-flow-step-text">
-                  {step.name}
-                </div>
-              </div>
-              <Actions
+              <Action
                 actions={actions}
                 step={step}
                 stepIndex={index}
@@ -49,4 +39,4 @@ const Flow: FC = () => {
   );
 };
 
-export default Flow;
+export default Actions;

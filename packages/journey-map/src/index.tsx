@@ -2,7 +2,10 @@ import React from 'react';
 import type { FC, CSSProperties } from 'react';
 import cls from 'classnames';
 
-import { Chart, Flow } from './components';
+import Stage from './Stage';
+import Chart from './Chart';
+import Actions from './Actions';
+
 import { JourneyMapStore, useJourneyMap } from './useJourneyMap';
 import type { JourneyMapData } from './types';
 
@@ -39,7 +42,8 @@ const JourneyMap: FC<JourneyMapProps> = ({
         style={style}
       >
         <div className="avx-journey-map-content">
-          <Flow />
+          <Stage />
+          <Actions />
           <Chart />
         </div>
       </div>

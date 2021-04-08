@@ -9,34 +9,33 @@ exports[`JourneyMap 默认状态 1`] = `
       class="avx-journey-map-content"
     >
       <div
+        class="avx-journey-map-stage-container"
+      >
+        <div
+          class="avx-journey-map-section"
+          style="height: 48px;"
+        >
+          <div
+            class="avx-journey-map-section-text"
+          >
+            阶段
+          </div>
+        </div>
+        <div
+          class="avx-journey-map-stage-content"
+        />
+      </div>
+      <div
         class="avx-journey-map-flow-container"
       >
         <div
-          style="width: 40px;"
+          class="avx-journey-map-section"
+          style="height: 120px;"
         >
           <div
-            class="avx-journey-map-stage"
-            style="height: 48px;"
+            class="avx-journey-map-section-text"
           >
-            <div
-              class="avx-journey-map-stage-text"
-            >
-              阶段
-            </div>
-          </div>
-          <div
-            style="margin-top: 24px;"
-          >
-            <div
-              class="avx-journey-map-stage"
-              style="height: 120px;"
-            >
-              <div
-                class="avx-journey-map-stage-text"
-              >
-                用户行为
-              </div>
-            </div>
+            用户行为
           </div>
         </div>
         <div
@@ -47,17 +46,13 @@ exports[`JourneyMap 默认状态 1`] = `
         class="avx-journey-map-chart"
       >
         <div
-          style="width: 40px;"
+          class="avx-journey-map-section"
+          style="height: 300px;"
         >
           <div
-            class="avx-journey-map-stage"
-            style="height: 300px;"
+            class="avx-journey-map-section-text"
           >
-            <div
-              class="avx-journey-map-stage-text"
-            >
-              体验情绪
-            </div>
+            体验情绪
           </div>
         </div>
         <div

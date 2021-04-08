@@ -4,7 +4,7 @@ import React from 'react';
 import type { Stage, JourneyMapData } from '../types';
 
 import OverflowTitle from './OverflowTitle';
-import './Actions.less';
+import './Action.less';
 
 interface UserActionProps {
   step: Stage;
@@ -13,7 +13,7 @@ interface UserActionProps {
   actions: JourneyMapData['actions'];
   color: string;
 }
-const Actions: FC<UserActionProps> = ({
+const Action: FC<UserActionProps> = ({
   step,
   stepIndex,
   actions,
@@ -75,4 +75,4 @@ const Actions: FC<UserActionProps> = ({
   );
 };
 
-export default Actions;
+export default Action;
