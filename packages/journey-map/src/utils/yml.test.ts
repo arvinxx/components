@@ -3,7 +3,6 @@ import { YMLToJSON } from './yml';
 describe('YML 数据转换', () => {
   it('should 正常转换', () => {
     const yml = `
-# 阶段步骤
 stages:
   - name: 计划租车
     actions:
