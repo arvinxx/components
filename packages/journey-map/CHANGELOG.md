@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/journey-map [1.3.1](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.3.0...@arvinxu/journey-map@1.3.1) (2021-04-08)
+
+
+### 💄 样式
+
+* 优化阶段的展示效果 ([e3a6e0b](https://github.com/arvinxx/components/commit/e3a6e0b))
+
 # @arvinxu/journey-map [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.2.1...@arvinxu/journey-map@1.3.0) (2021-04-08)
 
 
