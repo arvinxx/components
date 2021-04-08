@@ -44,7 +44,7 @@ interface Config {
  */
 export interface YMLJourneyMapRawData {
   /**
-   * 旅程图名称
+   * 标题名
    */
   title?: string;
   /**

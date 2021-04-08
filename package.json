@@ -36,7 +36,7 @@
     "check:circular": "dpdm packages/**/*.ts  --warning false  --tree false  --exit-code circular:1  -T true",
     "check:types": "tsc -p tsconfig-check.json",
     "lint-eslint": "eslint --cache --ext .ts,.tsx --format=pretty ./packages",
-    "lint-staged": "lint-staged && lerna run lint-staged",
+    "lint-staged": "lint-staged",
     "lint-staged:ts": "eslint --cache --ext .ts,.tsx --format=pretty",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ",
     "---------    ": "",
