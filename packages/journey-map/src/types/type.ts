@@ -1,7 +1,7 @@
 /**
  * 阶段
  */
-export interface Step<T = string> {
+export interface Stage<T = string> {
   /**
    * 阶段id
    * @TJS-type string
@@ -24,7 +24,7 @@ export interface JourneyMapData<T extends string = string> {
   /**
    * 大的步骤
    */
-  steps: Step<T>[];
+  stages: Stage<T>[];
   /**
    * 用户行为
    */
@@ -65,7 +65,7 @@ export interface JourneyMapYML<T extends string = string> {
   /**
    * 步骤
    */
-  steps: Step<T>[];
+  steps: Stage<T>[];
   /**
    * 用户行为
    */

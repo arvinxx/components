@@ -4,9 +4,11 @@ import cls from 'classnames';
 
 import { Chart, Flow } from './components';
 import { JourneyMapStore, useJourneyMap } from './useJourneyMap';
-import type { JourneyMapData } from './type';
+import type { JourneyMapData } from './types';
 
 import './styles.less';
+
+export { JourneyMapData } from './types';
 
 export interface JourneyMapProps {
   /**
@@ -21,8 +23,6 @@ export interface JourneyMapProps {
   style?: CSSProperties;
   className?: string;
 }
-
-export { JourneyMapData } from './type';
 
 const JourneyMap: FC<JourneyMapProps> = ({
   data,

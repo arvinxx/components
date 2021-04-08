@@ -1,2 +1,2 @@
 export * from './getServiceToken';
-export * from './fetch';
+export * from './yml';

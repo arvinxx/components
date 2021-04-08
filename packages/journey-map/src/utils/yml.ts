@@ -1,14 +1,7 @@
 import { load } from 'js-yaml';
-import type { JourneyMapData, JourneyMapYML } from '../type';
+import type { JourneyMapData, JourneyMapYML } from '../types/type';
 
-/**
- * 从 YML URL 中解析 JSON
- * @param url
- */
-export const fetchYMLToJSON = async (url: string): Promise<JourneyMapData> => {
-  const res = await fetch(url);
-  const yml = await res.text();
-
+export const YMLToJSON = (yml: string): JourneyMapData => {
   try {
     const json = load(yml) as JourneyMapYML;
 
@@ -28,7 +21,7 @@ export const fetchYMLToJSON = async (url: string): Promise<JourneyMapData> => {
     }
 
     return {
-      steps,
+      stages: steps,
       actions: validAction,
     };
   } catch (e) {

@@ -10,7 +10,7 @@ import './Flow.less';
 
 const Flow: FC = () => {
   const [store] = useContext(JourneyMapStore);
-  const { actions, steps } = store;
+  const { actions, stages } = store;
 
   return (
     <div className="avx-journey-map-flow-container">
@@ -21,11 +21,11 @@ const Flow: FC = () => {
         </div>
       </div>
       <div className="avx-journey-map-flow-content">
-        {steps.map((step, index) => {
+        {stages.map((step, index) => {
           const color = step.color || blue[0];
 
           return (
-            <div key={step.id} style={{ width: `${100 / steps.length}%` }}>
+            <div key={step.id} style={{ width: `${100 / stages.length}%` }}>
               <div
                 className="avx-journey-map-flow-step"
                 style={{ background: color }}
@@ -38,7 +38,7 @@ const Flow: FC = () => {
                 actions={actions}
                 step={step}
                 stepIndex={index}
-                stepLength={steps.length}
+                stepLength={stages.length}
                 color={color}
               />
             </div>

@@ -1,12 +1,12 @@
 import type { FC } from 'react';
 import React from 'react';
 
-import type { Step, JourneyMapData } from '../type';
+import type { Stage, JourneyMapData } from '../types';
 
 import './Actions.less';
 
 interface UserActionProps {
-  step: Step;
+  step: Stage;
   stepIndex: number;
   stepLength: number;
   actions: JourneyMapData['actions'];
