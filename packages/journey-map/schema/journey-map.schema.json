@@ -2,6 +2,24 @@
   "$id": "journey-map-schema",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
+    "Config": {
+      "description": "图表配置",
+      "properties": {
+        "color": {
+          "description": "主色",
+          "type": "string"
+        },
+        "section": {
+          "description": "显示左侧区域",
+          "type": "boolean"
+        },
+        "title": {
+          "description": "显示旅程图标题",
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
     "UserAction": {
       "description": "用户行为",
       "properties": {
@@ -62,7 +80,8 @@
   "description": "解析后的 YML 数据",
   "properties": {
     "config": {
-      "description": "针对旅程图的配置项"
+      "$ref": "journey-map-schema#/definitions/Config",
+      "description": "配置项"
     },
     "stages": {
       "description": "步骤",
