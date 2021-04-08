@@ -36,13 +36,22 @@ export const useJourneyMap = ({
     return YMLToJSON(yml);
   };
 
+  const getJSONFromStr = async (str: string) => {
+    let result: YMLJourneyMapData;
+    if (str.startsWith('http')) {
+      result = await fetchYMLToJSON(str);
+    } else {
+      result = YMLToJSON(str);
+    }
+
+    const { stages, actions } = result;
+    setTitle(result.title);
+    setStore({ stages, actions });
+  };
+
   useEffect(() => {
-    if (typeof data === 'string' && data.startsWith('http')) {
-      fetchYMLToJSON(data).then((result) => {
-        const { stages, actions } = result;
-        setTitle(result.title);
-        setStore({ stages, actions });
-      });
+    if (typeof data === 'string') {
+      getJSONFromStr(data);
     }
   }, [data]);
 
