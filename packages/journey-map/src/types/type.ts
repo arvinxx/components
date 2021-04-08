@@ -32,7 +32,7 @@ export interface JourneyMapData<T extends string = string> {
 }
 
 /**
- * 用户行为
+ * 用户行为类型
  */
 export interface UserAction {
   /**
@@ -46,6 +46,7 @@ export interface UserAction {
    * @TJS-type integer
    */
   emotion?: number;
+
   /**
    * 说明
    */
