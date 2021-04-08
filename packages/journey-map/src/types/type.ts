@@ -52,7 +52,7 @@ export interface UserAction {
   description?: string;
 
   /**
-   * 有关的想法
+   * 想法
    */
   thoughts?: string[];
 
