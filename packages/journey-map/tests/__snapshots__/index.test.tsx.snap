@@ -61,7 +61,7 @@ exports[`JourneyMap 默认状态 1`] = `
           </div>
         </div>
         <div
-          style="margin-top: 2px; width: 100%;"
+          style="width: 100%;"
         >
           <div
             data-chart-source-type="G2Plot"
