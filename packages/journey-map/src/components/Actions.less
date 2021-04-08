@@ -1,0 +1,57 @@
+.avx-journey-map-actions {
+  &-container {
+    display: flex;
+    height: 120px;
+    margin-top: 24px;
+  }
+
+  &-action {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 8px;
+    border-top: 3px solid transparent;
+
+    &-point {
+      position: absolute;
+      top: -6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+    }
+
+    &-text {
+      margin: 0;
+      margin-top: 12px;
+      overflow: hidden;
+      color: rgba(0, 0, 0, 0.45);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      writing-mode: vertical-lr;
+    }
+  }
+}
+
+.avx-journey-map-flow-content {
+  > div:first-child {
+    .avx-journey-map-actions-container {
+      .avx-journey-map-actions-action {
+        &:first-child {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  > div:last-child {
+    .avx-journey-map-actions-container {
+      .avx-journey-map-actions-action {
+        &:last-child {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
