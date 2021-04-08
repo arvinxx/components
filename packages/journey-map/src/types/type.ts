@@ -41,6 +41,9 @@ export interface UserAction {
   name: string;
   /**
    * 情绪得分
+   * @minimum -2
+   * @maximum 2
+   * @TJS-type integer
    */
   emotion?: number;
   /**

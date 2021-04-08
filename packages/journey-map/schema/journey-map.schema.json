@@ -11,7 +11,9 @@
         },
         "emotion": {
           "description": "情绪得分",
-          "type": "number"
+          "maximum": 2,
+          "minimum": -2,
+          "type": "integer"
         },
         "name": {
           "description": "行为名称",
@@ -32,7 +34,7 @@
           "type": "array"
         }
       },
-      "required": ["emotion", "name"],
+      "required": ["name"],
       "type": "object"
     },
     "YMLStage": {

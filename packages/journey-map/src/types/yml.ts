@@ -23,7 +23,7 @@ export interface YMLStage {
  */
 export interface YMLJourneyMap {
   /**
-   * 针对旅程图的配置项
+   * 配置项
    */
   config?: any;
   /**
