@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/journey-map [1.2.1](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.2.0...@arvinxu/journey-map@1.2.1) (2021-04-08)
+
+
+### ✅ 测试
+
+* 更新测试 ([59d1d1a](https://github.com/arvinxx/components/commit/59d1d1a))
+
+
+### 👷 构建系统
+
+* 补充依赖 ([780a549](https://github.com/arvinxx/components/commit/780a549))
+
 # @arvinxu/journey-map [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.1.0...@arvinxu/journey-map@1.2.0) (2021-04-08)
 
 
