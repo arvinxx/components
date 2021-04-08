@@ -13,7 +13,6 @@ const Stage: FC<{ name: string; color: string }> = ({ name, color }) => {
   const ref = useRef();
   const { width } = useSize(ref);
 
-  console.log(width);
   return (
     <div
       ref={ref}
