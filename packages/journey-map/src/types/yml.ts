@@ -3,6 +3,9 @@
  */
 import type { JourneyMapData, UserAction } from './type';
 
+/**
+ * YML 的阶段说明
+ */
 interface YMLStage {
   /**
    * 阶段名称

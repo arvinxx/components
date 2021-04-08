@@ -25,6 +25,9 @@
     "cov": "jest --coverage",
     "clean": "rm -rf es lib dist build coverage .umi"
   },
+  "lint-staged": {
+    "yml.ts": "yarn schema"
+  },
   "dependencies": {
     "@ant-design/charts": "^1.1.1",
     "@ant-design/colors": "^6.0.0",
