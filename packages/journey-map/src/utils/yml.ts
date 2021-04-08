@@ -1,5 +1,5 @@
 import { load } from 'js-yaml';
-import type { YMLJourneyMap, YMLJourneyMapData } from '../types';
+import type { YMLJourneyMapRawData, YMLJourneyMapData } from '../types';
 
 /**
  * YML 转 JSON
@@ -8,7 +8,7 @@ import type { YMLJourneyMap, YMLJourneyMapData } from '../types';
  */
 export const YMLToJSON = (yml: string): YMLJourneyMapData => {
   try {
-    const json = load(yml) as YMLJourneyMap;
+    const json = load(yml) as YMLJourneyMapRawData;
 
     const { stages, title, config } = json;
 

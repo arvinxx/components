@@ -42,7 +42,7 @@ interface Config {
 /**
  * 解析后的 YML 数据
  */
-export interface YMLJourneyMap {
+export interface YMLJourneyMapRawData {
   /**
    * 旅程图名称
    */
@@ -59,7 +59,7 @@ export interface YMLJourneyMap {
 
 /**
  * 从 YML 转过来的数据
- * 包含有 title config 等其他参数项
+ * 包含有 title config 等其他参数
  */
 export interface YMLJourneyMapData extends JourneyMapData {
   title?: string;

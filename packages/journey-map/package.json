@@ -27,7 +27,7 @@
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "yml.ts": "yarn schema"
+    "**/types/yml.ts": "yarn schema"
   },
   "dependencies": {
     "@ant-design/charts": "^1.1.1",
