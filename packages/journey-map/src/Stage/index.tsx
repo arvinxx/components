@@ -1,6 +1,7 @@
 import type { FC } from 'react';
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import { blue } from '@ant-design/colors';
+import { useSize } from 'ahooks';
 
 import { OverflowTitle, Section } from '../components';
 import { JourneyMapStore } from '../useJourneyMap';
@@ -8,7 +9,28 @@ import { calcStageLength } from '../utils';
 
 import './style.less';
 
-const Flow: FC = () => {
+const Stage: FC<{ name: string; color: string }> = ({ name, color }) => {
+  const ref = useRef();
+  const { width } = useSize(ref);
+
+  console.log(width);
+  return (
+    <div
+      ref={ref}
+      className="avx-journey-map-stage-step"
+      style={{ background: color }}
+    >
+      <div
+        className="avx-journey-map-stage-step-text"
+        style={{ width: width ? width - 16 : 28 }}
+      >
+        <OverflowTitle direction={'x'} title={name} />
+      </div>
+    </div>
+  );
+};
+
+const Stages: FC = () => {
   const { store, actionLength } = useContext(JourneyMapStore);
   const { stages, actions } = store;
 
@@ -36,14 +58,7 @@ const Flow: FC = () => {
 
           return (
             <div key={stage.id} style={{ width: `${width}%`, ...getMargin() }}>
-              <div
-                className="avx-journey-map-stage-step"
-                style={{ background: color }}
-              >
-                <div className="avx-journey-map-stage-step-text">
-                  <OverflowTitle direction={'y'} title={stage.name} />
-                </div>
-              </div>
+              <Stage name={stage.name} color={color} />
             </div>
           );
         })}
@@ -52,4 +67,4 @@ const Flow: FC = () => {
   );
 };
 
-export default Flow;
+export default Stages;

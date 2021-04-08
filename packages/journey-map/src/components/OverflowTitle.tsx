@@ -11,6 +11,7 @@ const OverflowTitle: FC<OverflowTitleProps> = ({ title, direction = 'x' }) => {
   const textRef = useRef(null);
   const { refYOverflowing, refXOverflowing } = useOverflow(textRef);
   const judged = direction === 'x' ? refXOverflowing : refYOverflowing;
+
   return (
     <div
       ref={textRef}
