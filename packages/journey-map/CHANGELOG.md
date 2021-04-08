@@ -1,5 +1,28 @@
 # Changelog
 
+## @arvinxu/journey-map [1.4.1](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.4.0...@arvinxu/journey-map@1.4.1) (2021-04-08)
+
+
+### 🎫 杂项
+
+* 尝试添加 lint-staged ([f1d7008](https://github.com/arvinxx/components/commit/f1d7008))
+* 清理无用 console ([489429c](https://github.com/arvinxx/components/commit/489429c))
+* 配置 lint-staged ([42b1e79](https://github.com/arvinxx/components/commit/42b1e79))
+
+
+### 🐛 修复
+
+* 优化 schema 说明 ([e3649f9](https://github.com/arvinxx/components/commit/e3649f9))
+* 优化 schema 说明 ([8522b2e](https://github.com/arvinxx/components/commit/8522b2e))
+* 优化 schema 说明 ([1d03691](https://github.com/arvinxx/components/commit/1d03691))
+
+
+### 📝 文档
+
+* 更新 schema ([2284eb5](https://github.com/arvinxx/components/commit/2284eb5))
+* 更新 schema ([d5e135e](https://github.com/arvinxx/components/commit/d5e135e))
+* 更新 schema ([121d731](https://github.com/arvinxx/components/commit/121d731))
+
 # @arvinxu/journey-map [1.4.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.3.1...@arvinxu/journey-map@1.4.0) (2021-04-08)
 
 
