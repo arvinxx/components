@@ -1,5 +1,18 @@
 # Changelog
 
+# @arvinxu/journey-map [1.4.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.3.1...@arvinxu/journey-map@1.4.0) (2021-04-08)
+
+
+### ✨ 新特性
+
+* 支持加载 YML 字符串 ([ae4a1e3](https://github.com/arvinxx/components/commit/ae4a1e3))
+* 添加展示标题 ([c7dc013](https://github.com/arvinxx/components/commit/c7dc013))
+
+
+### 💄 样式
+
+* 优化图表的展示效果 ([ac0c0cb](https://github.com/arvinxx/components/commit/ac0c0cb))
+
 ## @arvinxu/journey-map [1.3.1](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.3.0...@arvinxu/journey-map@1.3.1) (2021-04-08)
 
 
