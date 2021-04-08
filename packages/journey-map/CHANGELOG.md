@@ -1,5 +1,23 @@
 # Changelog
 
+# @arvinxu/journey-map [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.2.1...@arvinxu/journey-map@1.3.0) (2021-04-08)
+
+
+### ♻ 重构
+
+* 重构组件组织结构 ([30a1c32](https://github.com/arvinxx/components/commit/30a1c32))
+
+
+### ✨ 新特性
+
+* 添加 schema 配置项 ([985d035](https://github.com/arvinxx/components/commit/985d035))
+
+
+### 💄 样式
+
+* 优化用户行为展示效果 ([f230157](https://github.com/arvinxx/components/commit/f230157))
+* 优化阶段的展示效果 ([21e143d](https://github.com/arvinxx/components/commit/21e143d))
+
 ## @arvinxu/journey-map [1.2.1](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.2.0...@arvinxu/journey-map@1.2.1) (2021-04-08)
 
 
