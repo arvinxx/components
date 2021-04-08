@@ -1,10 +1,9 @@
 import type { FC } from 'react';
-import React, { useRef } from 'react';
-import { Tooltip } from 'antd';
-import { useOverflow } from 'use-overflow';
+import React from 'react';
 
 import type { Stage, JourneyMapData } from '../types';
 
+import OverflowTitle from './OverflowTitle';
 import './Actions.less';
 
 interface UserActionProps {
@@ -27,14 +26,6 @@ const Actions: FC<UserActionProps> = ({
   const isLastStep = stepIndex === stepLength - 1;
 
   const isCenterStep = !isFirstStep && !isLastStep;
-  const textRef = useRef(null);
-
-  const { refYOverflowing } = useOverflow(textRef);
-
-  console.log(refYOverflowing);
-
-  const OverflowTitle: FC<{ title: string }> = ({ title }) =>
-    refYOverflowing ? <Tooltip title={title}>{title}</Tooltip> : <>{title}</>;
 
   return (
     <div className="avx-journey-map-actions-container">
@@ -74,7 +65,7 @@ const Actions: FC<UserActionProps> = ({
               className="avx-journey-map-actions-action-point"
               style={{ background: color }}
             />
-            <div ref={textRef} className="avx-journey-map-actions-action-text">
+            <div className="avx-journey-map-actions-action-text">
               <OverflowTitle title={action.name} />
             </div>
           </div>
