@@ -15,6 +15,10 @@ export { JourneyMapData } from './types';
 
 export interface JourneyMapProps {
   /**
+   * 标题
+   */
+  title?: string;
+  /**
    * 待渲染数据 或网址
    */
   data: JourneyMapData | string;
@@ -28,12 +32,13 @@ export interface JourneyMapProps {
 }
 
 const JourneyMap: FC<JourneyMapProps> = ({
+  title,
   data,
   style,
   className,
   onChange,
 }) => {
-  const store = useJourneyMap(data, onChange);
+  const store = useJourneyMap({ data, onChange, title });
 
   return (
     <JourneyMapStore.Provider value={store}>
@@ -41,6 +46,9 @@ const JourneyMap: FC<JourneyMapProps> = ({
         className={cls('avx-journey-map-container', className)}
         style={style}
       >
+        {store.title ? (
+          <div className="avx-journey-map-title">{store.title}</div>
+        ) : null}
         <div className="avx-journey-map-content">
           <Stage />
           <Actions />

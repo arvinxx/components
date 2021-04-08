@@ -1,16 +1,16 @@
 import { load } from 'js-yaml';
-import type { JourneyMapData, YMLJourneyMap } from '../types';
+import type { YMLJourneyMap, YMLJourneyMapData } from '../types';
 
 /**
  * YML 转 JSON
  * @param yml
  * @constructor
  */
-export const YMLToJSON = (yml: string): JourneyMapData => {
+export const YMLToJSON = (yml: string): YMLJourneyMapData => {
   try {
     const json = load(yml) as YMLJourneyMap;
 
-    const { stages } = json;
+    const { stages, title, config } = json;
 
     const validAction = {};
 
@@ -24,6 +24,8 @@ export const YMLToJSON = (yml: string): JourneyMapData => {
         return { id: stage.name, ...res };
       }),
       actions: validAction,
+      title,
+      config,
     };
   } catch (e) {
     throw Error(`YML 不符合规范: \n${e}`);

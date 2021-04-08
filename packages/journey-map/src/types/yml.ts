@@ -1,7 +1,7 @@
 /**
  * 阶段
  */
-import type { UserAction } from './type';
+import type { JourneyMapData, UserAction } from './type';
 
 interface YMLStage {
   /**
@@ -52,4 +52,13 @@ export interface YMLJourneyMap {
    * 步骤
    */
   stages: YMLStage[];
+}
+
+/**
+ * 从 YML 转过来的数据
+ * 包含有 title config 等其他参数项
+ */
+export interface YMLJourneyMapData extends JourneyMapData {
+  title?: string;
+  config?: Config;
 }
