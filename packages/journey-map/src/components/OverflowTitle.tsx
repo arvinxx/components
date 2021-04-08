@@ -5,10 +5,12 @@ import { useOverflow } from 'use-overflow';
 
 interface OverflowTitleProps {
   title: string;
+  direction: 'x' | 'y';
 }
-const OverflowTitle: FC<OverflowTitleProps> = ({ title }) => {
+const OverflowTitle: FC<OverflowTitleProps> = ({ title, direction = 'x' }) => {
   const textRef = useRef(null);
-  const { refYOverflowing } = useOverflow(textRef);
+  const { refYOverflowing, refXOverflowing } = useOverflow(textRef);
+  const judged = direction === 'x' ? refXOverflowing : refYOverflowing;
   return (
     <div
       ref={textRef}
@@ -18,11 +20,7 @@ const OverflowTitle: FC<OverflowTitleProps> = ({ title }) => {
         textOverflow: 'ellipsis',
       }}
     >
-      {refYOverflowing ? (
-        <Tooltip title={title}>{title}</Tooltip>
-      ) : (
-        <>{title}</>
-      )}
+      {judged ? <Tooltip title={title}>{title}</Tooltip> : <>{title}</>}
     </div>
   );
 };

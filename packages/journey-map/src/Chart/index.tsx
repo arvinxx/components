@@ -34,13 +34,11 @@ const getFormattedEmotion = (text: string | number) => {
 };
 
 const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
-  const [store] = useContext(JourneyMapStore);
-  const { actions } = store;
-  const data = Object.values(actions).flat();
+  const { actionList } = useContext(JourneyMapStore);
 
   const config: AreaConfig = {
-    data,
-    padding: [24, 0, 16, 0],
+    data: actionList,
+    padding: [24, -24, 16, -24],
     tooltip: {
       formatter: (datum) => {
         const { emotion } = datum;

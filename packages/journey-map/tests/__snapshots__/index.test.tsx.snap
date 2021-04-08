@@ -26,11 +26,12 @@ exports[`JourneyMap 默认状态 1`] = `
         />
       </div>
       <div
-        class="avx-journey-map-flow-container"
+        class="avx-journey-map-actions-container"
+        style="height: 140px;"
       >
         <div
           class="avx-journey-map-section"
-          style="height: 120px;"
+          style="height: 140px;"
         >
           <div
             class="avx-journey-map-section-text"
@@ -39,7 +40,7 @@ exports[`JourneyMap 默认状态 1`] = `
           </div>
         </div>
         <div
-          class="avx-journey-map-flow-content"
+          class="avx-journey-map-actions-content"
         />
       </div>
       <div

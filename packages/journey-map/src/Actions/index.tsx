@@ -2,18 +2,16 @@ import type { FC } from 'react';
 import React, { useContext } from 'react';
 import { blue } from '@ant-design/colors';
 
-import { Section } from '../components';
-import OverflowTitle from './OverflowTitle';
+import { Section, OverflowTitle } from '../components';
+
 import { JourneyMapStore } from '../useJourneyMap';
-import { calcLength } from '../utils';
+import { calcActionLength } from '../utils';
 
 import './style.less';
 
 const Actions: FC = () => {
-  const [store] = useContext(JourneyMapStore);
+  const { store, actionList } = useContext(JourneyMapStore);
   const { actions, stages } = store;
-
-  const actionList = Object.values(actions).flat();
 
   const getColor = (name: string) => {
     let color: string = blue[0];
@@ -41,7 +39,7 @@ const Actions: FC = () => {
               className="avx-journey-map-actions-action"
               style={{
                 strokeLinecap: 'round',
-                width: `${calcLength(actionList.length, index)}%`,
+                width: `${calcActionLength(actionList.length, index)}%`,
                 borderTopColor: color,
               }}
             >
@@ -50,7 +48,7 @@ const Actions: FC = () => {
                 style={{ background: color }}
               />
               <div className="avx-journey-map-actions-action-text">
-                <OverflowTitle title={action.name} />
+                <OverflowTitle direction={'y'} title={action.name} />
               </div>
             </div>
           );

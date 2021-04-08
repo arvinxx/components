@@ -13,7 +13,7 @@ export const useJourneyMap = (data: JourneyMapData | string, onChange) => {
     { onChange },
   );
 
-  const [, setStore] = hook;
+  const [store, setStore] = hook;
   /**
    * 从 YML URL 中解析 JSON
    * @param url
@@ -33,7 +33,9 @@ export const useJourneyMap = (data: JourneyMapData | string, onChange) => {
     }
   }, [data]);
 
-  return hook;
+  const actionList = Object.values(store.actions).flat();
+
+  return { store, actionList, actionLength: actionList.length };
 };
 
 export const JourneyMapStore = getServiceToken(useJourneyMap);
