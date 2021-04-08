@@ -1,4 +1,4 @@
-.avx-journey-map-flow {
+.avx-journey-map-actions {
   &-container {
     display: flex;
     flex: 1;
@@ -9,16 +9,39 @@
     flex: 1;
   }
 
-  &-step {
+  &-action {
+    position: relative;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
-    margin: 0 8px;
-    padding: 8px;
-    border-radius: 4px;
+    margin-top: 8px;
+    border-top: 3px solid transparent;
+
+    &:first-child {
+      justify-content: flex-start;
+      margin-left: 8px;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+      margin-right: 8px;
+    }
+
+    &-point {
+      position: absolute;
+      top: -6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+    }
 
     &-text {
-      height: 32px;
-      line-height: 32px;
+      margin: 0;
+      margin-top: 12px;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 12px;
+      cursor: pointer;
+      writing-mode: vertical-lr;
     }
   }
 }

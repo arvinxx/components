@@ -3,8 +3,9 @@ import React, { useContext } from 'react';
 import { blue } from '@ant-design/colors';
 
 import { Section } from '../components';
-import Action from './Action';
+import OverflowTitle from './OverflowTitle';
 import { JourneyMapStore } from '../useJourneyMap';
+import { calcLength } from '../utils';
 
 import './style.less';
 
@@ -12,25 +13,45 @@ const Actions: FC = () => {
   const [store] = useContext(JourneyMapStore);
   const { actions, stages } = store;
 
-  console.log(Object.values(actions).flat());
-  // const actionList = Object.values(actions).flat();
+  const actionList = Object.values(actions).flat();
+
+  const getColor = (name: string) => {
+    let color: string = blue[0];
+    stages.forEach((stage) => {
+      if (
+        stage.color &&
+        actions[stage.id].findIndex((a) => a.name === name) > -1
+      )
+        color = stage.color;
+    });
+
+    return color;
+  };
 
   return (
-    <div className="avx-journey-map-flow-container">
-      <Section height={120}>用户行为</Section>
-      <div className="avx-journey-map-flow-content">
-        {stages.map((step, index) => {
-          const color = step.color || blue[0];
+    <div className="avx-journey-map-actions-container" style={{ height: 140 }}>
+      <Section height={140}>用户行为</Section>
+      <div className="avx-journey-map-actions-content">
+        {actionList.map((action, index) => {
+          const color = getColor(action.name);
 
           return (
-            <div key={step.id} style={{ width: `${100 / stages.length}%` }}>
-              <Action
-                actions={actions}
-                step={step}
-                stepIndex={index}
-                stepLength={stages.length}
-                color={color}
+            <div
+              key={action.name}
+              className="avx-journey-map-actions-action"
+              style={{
+                strokeLinecap: 'round',
+                width: `${calcLength(actionList.length, index)}%`,
+                borderTopColor: color,
+              }}
+            >
+              <div
+                className="avx-journey-map-actions-action-point"
+                style={{ background: color }}
               />
+              <div className="avx-journey-map-actions-action-text">
+                <OverflowTitle title={action.name} />
+              </div>
             </div>
           );
         })}
