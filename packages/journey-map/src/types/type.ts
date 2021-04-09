@@ -94,7 +94,7 @@ export interface Config {
   /**
    * 每个部分的高度
    */
-  height?: Record<Partial<SectionType>, number>;
+  height?: Partial<Record<SectionType, number>>;
   /**
    * section 的排序
    */

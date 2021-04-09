@@ -5,9 +5,28 @@
     "Config": {
       "description": "图表配置",
       "properties": {
+        "arrange": {
+          "description": "section 的排序",
+          "items": {
+            "enum": [
+              "action",
+              "chance",
+              "emotion",
+              "painSpot",
+              "stage",
+              "thought"
+            ],
+            "type": "string"
+          },
+          "type": "array"
+        },
         "color": {
           "description": "主色",
           "type": "string"
+        },
+        "height": {
+          "$ref": "journey-map-schema#/definitions/Partial<Record<SectionType,number>>",
+          "description": "每个部分的高度"
         },
         "section": {
           "description": "显示左侧区域",
@@ -20,9 +39,36 @@
       },
       "type": "object"
     },
-    "UserAction": {
-      "description": "用户行为",
+    "Partial<Record<SectionType,number>>": {
       "properties": {
+        "action": {
+          "type": "number"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "emotion": {
+          "type": "number"
+        },
+        "painSpot": {
+          "type": "number"
+        },
+        "stage": {
+          "type": "number"
+        },
+        "thought": {
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "UserAction": {
+      "description": "用户行为类型",
+      "properties": {
+        "color": {
+          "description": "action 的颜色",
+          "type": "string"
+        },
         "description": {
           "description": "说明",
           "type": "string"
@@ -82,7 +128,7 @@
   "properties": {
     "config": {
       "$ref": "journey-map-schema#/definitions/Config",
-      "description": "配置项"
+      "description": "配置参数"
     },
     "stages": {
       "description": "步骤",
@@ -92,7 +138,7 @@
       "type": "array"
     },
     "title": {
-      "description": "旅程图名称",
+      "description": "标题名",
       "type": "string"
     }
   },
