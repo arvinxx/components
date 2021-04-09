@@ -67,7 +67,7 @@ export interface UserAction {
   painSpot?: string[];
 }
 
-type Section =
+export type SectionType =
   | 'stage'
   | 'action'
   | 'emotion'
@@ -94,9 +94,9 @@ export interface Config {
   /**
    * 每个部分的高度
    */
-  height?: Record<Partial<Section>, number>;
+  height?: Record<Partial<SectionType>, number>;
   /**
    * section 的排序
    */
-  arrange?: Partial<Section>[];
+  arrange?: Partial<SectionType>[];
 }

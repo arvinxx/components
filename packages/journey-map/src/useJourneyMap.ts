@@ -11,7 +11,7 @@ export const useJourneyMap = ({
   data,
   onChange,
   title: initTitle,
-  config: initConfig,
+  config: initConfig = {},
 }: StoreParams) => {
   const defaultJourneyMap: JourneyMapData = { stages: [], actions: {} };
 
@@ -21,7 +21,7 @@ export const useJourneyMap = ({
   );
 
   const [title, setTitle] = useState<string>(initTitle);
-  const [config, setConfig] = useState(initConfig || {});
+  const [config, setConfig] = useState(initConfig);
 
   const [store, setStore] = hook;
   /**
