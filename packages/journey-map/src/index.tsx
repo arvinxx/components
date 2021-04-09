@@ -1,5 +1,5 @@
 import React from 'react';
-import type { FC, CSSProperties, ReactNode } from 'react';
+import type { FC, CSSProperties } from 'react';
 import cls from 'classnames';
 
 import Stage from './Stages';
@@ -47,13 +47,13 @@ const JourneyMap: FC<JourneyMapProps> = ({
 }) => {
   const store = useJourneyMap({ data, onChange, title, config });
 
-  const sections: Record<SectionType, ReactNode> = {
-    action: <Actions />,
-    stage: <Stage />,
-    emotion: <Chart />,
-    thought: <Thoughts />,
-    chance: <div />,
-    painSpot: <div />,
+  const sections: Record<SectionType, FC> = {
+    action: Actions,
+    stage: Stage,
+    emotion: Chart,
+    thought: Thoughts,
+    chance: () => <div />,
+    painSpot: () => <div />,
   };
 
   const arrange = store.config?.arrange || [
@@ -73,7 +73,10 @@ const JourneyMap: FC<JourneyMapProps> = ({
           <div className="avx-journey-map-title">{store.title}</div>
         ) : null}
         <div className="avx-journey-map-content">
-          {arrange.map((a) => sections[a])}
+          {arrange.map((a) => {
+            const Section = sections[a];
+            return <Section key={a} />;
+          })}
         </div>
       </div>
     </JourneyMapStore.Provider>
