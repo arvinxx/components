@@ -1,5 +1,31 @@
 # Changelog
 
+# @arvinxu/journey-map [1.5.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.4.1...@arvinxu/journey-map@1.5.0) (2021-04-09)
+
+
+### ✅ 测试
+
+* 修正测试 ([d813ac6](https://github.com/arvinxx/components/commit/d813ac6))
+
+
+### ✨ 新特性
+
+* 添加想法模块 ([cf309ce](https://github.com/arvinxx/components/commit/cf309ce))
+* 添加自定义排序的能力 ([bb70bf4](https://github.com/arvinxx/components/commit/bb70bf4))
+* 给 action 提供自定义颜色的功能 ([600da76](https://github.com/arvinxx/components/commit/600da76))
+* 补充高度自定义的能力 ([49f257d](https://github.com/arvinxx/components/commit/49f257d))
+
+
+### 🎫 杂项
+
+* 更新 stages ([a62c568](https://github.com/arvinxx/components/commit/a62c568))
+
+
+### 🐛 修复
+
+* 修正 schema 类型 ([f688dcd](https://github.com/arvinxx/components/commit/f688dcd))
+* 修正索引问题 ([5b0e29c](https://github.com/arvinxx/components/commit/5b0e29c))
+
 ## @arvinxu/journey-map [1.4.1](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.4.0...@arvinxu/journey-map@1.4.1) (2021-04-08)
 
 
