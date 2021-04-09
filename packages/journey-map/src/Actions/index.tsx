@@ -8,13 +8,18 @@ import { JourneyMapStore } from '../useJourneyMap';
 import { calcActionLength } from '../utils';
 
 import './style.less';
+import { UserAction } from '../types';
 
 const Actions: FC = () => {
   const { store, actionList } = useContext(JourneyMapStore);
   const { actions, stages } = store;
 
-  const getColor = (name: string) => {
+  const getColor = (action: UserAction) => {
+    const { name } = action;
     let color: string = blue[0];
+
+    if (action.color) return action.color;
+
     stages.forEach((stage) => {
       if (
         stage.color &&
@@ -31,7 +36,7 @@ const Actions: FC = () => {
       <Section height={140}>用户行为</Section>
       <div className="avx-journey-map-actions-content">
         {actionList.map((action, index) => {
-          const color = getColor(action.name);
+          const color = getColor(action);
 
           return (
             <div

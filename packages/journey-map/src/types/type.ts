@@ -48,6 +48,10 @@ export interface UserAction {
   emotion?: number;
 
   /**
+   * action 的颜色
+   */
+  color?: string;
+  /**
    * 说明
    */
   description?: string;
