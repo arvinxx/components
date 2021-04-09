@@ -55,10 +55,11 @@ export const calcStageLength = ({
     width += baseWidth;
   }
 
-  return {
-    isFirst,
-    isLast,
-    baseWidth,
-    width,
+  const getMargin = () => {
+    if (isFirst) return { marginRight: `${baseWidth / 2}%` };
+    if (isLast) return { marginLeft: `${baseWidth / 2}%` };
+    return { margin: `0 ${baseWidth / 2}%` };
   };
+
+  return { width, margin: getMargin() };
 };

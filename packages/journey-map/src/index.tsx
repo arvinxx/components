@@ -2,7 +2,7 @@ import React from 'react';
 import type { FC, CSSProperties } from 'react';
 import cls from 'classnames';
 
-import Stage from './Stage';
+import Stage from './Stages';
 import Chart from './Chart';
 import Actions from './Actions';
 

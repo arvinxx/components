@@ -42,21 +42,15 @@ const Stages: FC = () => {
 
           const actionCount = actions[stage.id].length;
 
-          const { baseWidth, isLast, isFirst, width } = calcStageLength({
+          const { width, margin } = calcStageLength({
             actionCount,
             stageCount: stages.length,
             index,
             totalCount: actionLength,
           });
 
-          const getMargin = () => {
-            if (isFirst) return { marginRight: `${baseWidth / 2}%` };
-            if (isLast) return { marginLeft: `${baseWidth / 2}%` };
-            return { margin: `0 ${baseWidth / 2}%` };
-          };
-
           return (
-            <div key={stage.id} style={{ width: `${width}%`, ...getMargin() }}>
+            <div key={stage.id} style={{ width: `${width}%`, ...margin }}>
               <Stage name={stage.name} color={color} />
             </div>
           );
