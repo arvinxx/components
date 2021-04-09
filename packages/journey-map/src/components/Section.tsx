@@ -4,7 +4,7 @@ import React from 'react';
 import './Section.less';
 
 interface StageProps {
-  height: number;
+  height?: number;
 }
 const Section: FC<StageProps> = ({ children, height }) => {
   return (

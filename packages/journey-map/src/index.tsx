@@ -5,6 +5,7 @@ import cls from 'classnames';
 import Stage from './Stages';
 import Chart from './Chart';
 import Actions from './Actions';
+import Thoughts from './Thoughts';
 
 import { JourneyMapStore, useJourneyMap } from './useJourneyMap';
 import type { JourneyMapData } from './types';
@@ -53,6 +54,7 @@ const JourneyMap: FC<JourneyMapProps> = ({
           <Stage />
           <Actions />
           <Chart />
+          <Thoughts />
         </div>
       </div>
     </JourneyMapStore.Provider>
