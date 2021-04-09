@@ -3,17 +3,15 @@ import { useEffect, useState } from 'react';
 
 import { getServiceToken, YMLToJSON } from './utils';
 import type { YMLJourneyMapData, JourneyMapData } from './types';
+import type { JourneyMapProps } from './index';
 
-interface StoreParams {
-  data: JourneyMapData | string;
-  onChange?: (data: JourneyMapData) => void;
-  title?: string;
-}
+type StoreParams = Omit<JourneyMapProps, 'className' | 'style'>;
 
 export const useJourneyMap = ({
   data,
   onChange,
   title: initTitle,
+  config: initConfig,
 }: StoreParams) => {
   const defaultJourneyMap: JourneyMapData = { stages: [], actions: {} };
 
@@ -23,6 +21,7 @@ export const useJourneyMap = ({
   );
 
   const [title, setTitle] = useState<string>(initTitle);
+  const [config, setConfig] = useState(initConfig || {});
 
   const [store, setStore] = hook;
   /**
@@ -46,6 +45,7 @@ export const useJourneyMap = ({
 
     const { stages, actions } = result;
     setTitle(result.title);
+    setConfig(result.config);
     setStore({ stages, actions });
   };
 
@@ -57,7 +57,7 @@ export const useJourneyMap = ({
 
   const actionList = Object.values(store.actions).flat();
 
-  return { store, actionList, actionLength: actionList.length, title };
+  return { store, actionList, actionLength: actionList.length, title, config };
 };
 
 export const JourneyMapStore = getServiceToken(useJourneyMap);

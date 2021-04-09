@@ -66,3 +66,37 @@ export interface UserAction {
    */
   painSpot?: string[];
 }
+
+type Section =
+  | 'stage'
+  | 'action'
+  | 'emotion'
+  | 'thought'
+  | 'painSpot'
+  | 'chance';
+
+/**
+ * 图表配置
+ */
+export interface Config {
+  /**
+   * 显示左侧区域
+   */
+  section?: boolean;
+  /**
+   * 显示旅程图标题
+   */
+  title?: boolean;
+  /**
+   * 主色
+   */
+  color?: string;
+  /**
+   * 每个部分的高度
+   */
+  height?: Record<Partial<Section>, number>;
+  /**
+   * section 的排序
+   */
+  arrange?: Partial<Section>[];
+}

@@ -34,9 +34,11 @@ const getFormattedEmotion = (text: string | number) => {
 };
 
 const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
-  const { actionList } = useContext(JourneyMapStore);
+  const { actionList, config } = useContext(JourneyMapStore);
 
-  const config: AreaConfig = {
+  const height = config?.height?.emotion || 300;
+
+  const chartConfig: AreaConfig = {
     data: actionList,
     padding: [24, -10, 16, -10],
     tooltip: {
@@ -81,14 +83,13 @@ const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
       color,
     },
 
-    height: 300,
     animation: { appear: { animation: 'fade-in' } },
   };
   return (
     <div className="avx-journey-map-chart">
-      <Section height={300}>体验情绪</Section>
-      <div style={{ width: '100%' }}>
-        <Area {...config} />
+      <Section height={height}>体验情绪</Section>
+      <div style={{ width: '100%', height }}>
+        <Area {...chartConfig} />
       </div>
     </div>
   );

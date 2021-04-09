@@ -8,7 +8,7 @@ import Actions from './Actions';
 import Thoughts from './Thoughts';
 
 import { JourneyMapStore, useJourneyMap } from './useJourneyMap';
-import type { JourneyMapData } from './types';
+import type { Config, JourneyMapData } from './types';
 
 import './styles.less';
 
@@ -28,6 +28,11 @@ export interface JourneyMapProps {
    */
   onChange?: (data: JourneyMapData) => void;
 
+  /**
+   * 配置参数
+   */
+  config?: Config;
+
   style?: CSSProperties;
   className?: string;
 }
@@ -38,8 +43,9 @@ const JourneyMap: FC<JourneyMapProps> = ({
   style,
   className,
   onChange,
+  config,
 }) => {
-  const store = useJourneyMap({ data, onChange, title });
+  const store = useJourneyMap({ data, onChange, title, config });
 
   return (
     <JourneyMapStore.Provider value={store}>
