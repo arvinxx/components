@@ -5,7 +5,7 @@
       "description": "图表配置",
       "properties": {
         "color": {
-          "description": "主色",
+          "description": "旅程图主色风格",
           "type": "string"
         },
         "height": {

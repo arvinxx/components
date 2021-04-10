@@ -3,16 +3,16 @@ import React, { useContext } from 'react';
 import { blue } from '@ant-design/colors';
 
 import { Section, OverflowTitle } from '../components';
-
 import { JourneyMapStore } from '../useJourneyMap';
 import { calcActionLength } from '../utils';
+import type { UserAction } from '../types';
 
 import './style.less';
-import { UserAction } from '../types';
 
 const Actions: FC = () => {
-  const { store, actionList } = useContext(JourneyMapStore);
+  const { store, actionList, config } = useContext(JourneyMapStore);
   const { actions, stages } = store;
+  const height = config?.height?.action || 140;
 
   const getColor = (action: UserAction) => {
     const { name } = action;
@@ -32,8 +32,8 @@ const Actions: FC = () => {
   };
 
   return (
-    <div className="avx-journey-map-actions-container" style={{ height: 140 }}>
-      <Section height={140}>用户行为</Section>
+    <div className="avx-journey-map-actions-container" style={{ height }}>
+      <Section height={height}>用户行为</Section>
       <div className="avx-journey-map-actions-content">
         {actionList.map((action, index) => {
           const color = getColor(action);
