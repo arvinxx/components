@@ -3,12 +3,21 @@ export const data = `
 title: YML 字符串租车地图
 
 config:
+  # 支持使用 stage
+  arrange:
+    - stage
+    - action
+    - emotion
+    - thought
+
   height:
     emotion: 150
 
 # 阶段步骤
 stages:
   - name: 计划租车
+    # 去掉下方的 # ，即可为阶段和用户行为赋予自定义的背景颜色
+    # color: '#d0f0fd'
     actions:
       - name: 找租车平台
         emotion: -1
@@ -16,6 +25,7 @@ stages:
         emotion: -2
         thoughts:
           - 对比来对比去好麻烦
+          -
 
       - name: 确定平台
         emotion: 0
@@ -24,6 +34,8 @@ stages:
           - 神州好贵
 
   - name: 租车
+    # color 除了使用 hex 色值 也支持 rgb 和 hsl 的写法
+    # color: 'rgb(209,247,196)'
     actions:
       - name: 选择租车日期
         emotion: -1
@@ -39,6 +51,7 @@ stages:
         emotion: 1
 
   - name: 提车
+    # color: 'hsl(220,100%,91%)'
     actions:
       - name: 打车去提车点
         emotion: 2
@@ -52,7 +65,9 @@ stages:
           - 说了不少温馨提示还挺不错的
       - name: 取车离开
         emotion: 2
+
   - name: 游玩
+    # color: '#ffdaf6'
     actions:
       - name: 返回接同伴
         emotion: 2
@@ -74,6 +89,7 @@ stages:
           - 救援很专业
 
   - name: 还车
+    # color: '#ede2fe'
     actions:
       - name: 加油站加油
         emotion: -1
