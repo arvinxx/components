@@ -1,20 +1,17 @@
 /**
  * 阶段
  */
-import type { Config, JourneyMapData, UserAction } from './type';
+import type { CommonSection, Config, JourneyMapData, UserAction } from './type';
 
 /**
  * YML 的阶段类型
  */
-interface YMLStage {
+interface YMLStage extends CommonSection {
   /**
    * 阶段名称
    */
   name: string;
-  /**
-   * 该阶段的颜色
-   */
-  color?: string;
+
   /**
    * 该阶段所有用户行为
    */

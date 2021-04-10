@@ -12,7 +12,7 @@
               "action",
               "chance",
               "emotion",
-              "painSpot",
+              "painPoint",
               "stage",
               "thought"
             ],
@@ -50,7 +50,7 @@
         "emotion": {
           "type": "number"
         },
-        "painSpot": {
+        "painPoint": {
           "type": "number"
         },
         "stage": {
@@ -66,7 +66,7 @@
       "description": "用户行为类型",
       "properties": {
         "color": {
-          "description": "action 的颜色",
+          "description": "展示颜色",
           "type": "string"
         },
         "description": {
@@ -112,12 +112,26 @@
           "type": "array"
         },
         "color": {
-          "description": "该阶段的颜色",
+          "description": "展示颜色",
           "type": "string"
         },
         "name": {
           "description": "阶段名称",
           "type": "string"
+        },
+        "painPoints": {
+          "description": "痛点",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "thoughts": {
+          "description": "想法",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         }
       },
       "required": ["actions", "name"],

@@ -31,10 +31,25 @@ export interface JourneyMapData<T extends string = string> {
   actions: Record<T, UserAction[]>;
 }
 
+export interface CommonSection {
+  /**
+   * 展示颜色
+   */
+  color?: string;
+  /**
+   * 想法
+   */
+  thoughts?: string[];
+  /**
+   * 痛点
+   */
+  painPoints?: string[];
+}
+
 /**
  * 用户行为类型
  */
-export interface UserAction {
+export interface UserAction extends CommonSection {
   /**
    * 行为名称
    */
@@ -46,25 +61,10 @@ export interface UserAction {
    * @TJS-type integer
    */
   emotion?: number;
-
-  /**
-   * action 的颜色
-   */
-  color?: string;
   /**
    * 说明
    */
   description?: string;
-
-  /**
-   * 想法
-   */
-  thoughts?: string[];
-
-  /**
-   * 痛点
-   */
-  painPoints?: string[];
 }
 
 export type SectionType =
