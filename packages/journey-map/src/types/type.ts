@@ -80,15 +80,11 @@ export type SectionType =
  */
 export interface Config {
   /**
-   * 显示左侧区域
-   */
-  section?: boolean;
-  /**
    * 显示旅程图标题
    */
   title?: boolean;
   /**
-   * 主色
+   * 旅程图主色风格
    */
   color?: string;
   /**
@@ -96,7 +92,8 @@ export interface Config {
    */
   height?: Partial<Record<SectionType, number>>;
   /**
-   * section 的排序
+   * 待显示的区块
+   * 默认为: ['stage', 'action', 'emotion','thought']
    */
-  arrange?: Partial<SectionType>[];
+  sections?: Partial<SectionType>[];
 }

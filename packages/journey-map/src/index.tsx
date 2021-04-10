@@ -60,7 +60,7 @@ const JourneyMap: FC<JourneyMapProps> = ({
     chance: () => <div />,
   };
 
-  const arrange = store.config?.arrange || [
+  const list = store.config?.sections || [
     'stage',
     'action',
     'emotion',
@@ -78,7 +78,7 @@ const JourneyMap: FC<JourneyMapProps> = ({
             <div className="avx-journey-map-title">{store.title}</div>
           ) : null}
           <div className="avx-journey-map-content">
-            {arrange.map((a) => {
+            {list.map((a) => {
               const Section = sections[a];
               return <Section key={a} />;
             })}

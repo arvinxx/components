@@ -4,8 +4,16 @@
     "Config": {
       "description": "图表配置",
       "properties": {
-        "arrange": {
-          "description": "section 的排序",
+        "color": {
+          "description": "主色",
+          "type": "string"
+        },
+        "height": {
+          "$ref": "#/definitions/Partial<Record<SectionType,number>>",
+          "description": "每个部分的高度"
+        },
+        "sections": {
+          "description": "待显示的区块\n默认为: ['stage', 'action', 'emotion','thought']",
           "items": {
             "enum": [
               "action",
@@ -18,18 +26,6 @@
             "type": "string"
           },
           "type": "array"
-        },
-        "color": {
-          "description": "主色",
-          "type": "string"
-        },
-        "height": {
-          "$ref": "#/definitions/Partial<Record<SectionType,number>>",
-          "description": "每个部分的高度"
-        },
-        "section": {
-          "description": "显示左侧区域",
-          "type": "boolean"
         },
         "title": {
           "description": "显示旅程图标题",
