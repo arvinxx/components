@@ -1,5 +1,17 @@
 # Changelog
 
+# @arvinxu/journey-map [2.1.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@2.0.0...@arvinxu/journey-map@2.1.0) (2021-04-10)
+
+
+### ✅ 测试
+
+* 更新测试 ([bee6410](https://github.com/arvinxx/components/commit/bee6410))
+
+
+### ✨ 新特性
+
+* 给其他 section 添加高度控制 ([5fb07f0](https://github.com/arvinxx/components/commit/5fb07f0))
+
 # @arvinxu/journey-map [2.0.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.6.0...@arvinxu/journey-map@2.0.0) (2021-04-10)
 
 
