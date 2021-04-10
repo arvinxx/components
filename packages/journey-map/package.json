@@ -39,6 +39,7 @@
     "antd": "^4.12.3",
     "classnames": "^2.2.6",
     "js-yaml": "^4.0.0",
+    "react-error-boundary": "^3.1.1",
     "use-merge-value": "^1.0.2",
     "use-overflow": "^1.1.0"
   },

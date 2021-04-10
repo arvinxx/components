@@ -1,11 +1,13 @@
 import React from 'react';
 import type { FC, CSSProperties } from 'react';
 import cls from 'classnames';
+import { ErrorBoundary } from 'react-error-boundary';
 
 import Stage from './Stages';
 import Chart from './Chart';
 import Actions from './Actions';
 import Thoughts from './Thoughts';
+import { ErrorFallback } from './components';
 
 import { JourneyMapStore, useJourneyMap } from './useJourneyMap';
 import type { Config, JourneyMapData, SectionType } from './types';
@@ -64,22 +66,24 @@ const JourneyMap: FC<JourneyMapProps> = ({
   ];
 
   return (
-    <JourneyMapStore.Provider value={store}>
-      <div
-        className={cls('avx-journey-map-container', className)}
-        style={style}
-      >
-        {store.title ? (
-          <div className="avx-journey-map-title">{store.title}</div>
-        ) : null}
-        <div className="avx-journey-map-content">
-          {arrange.map((a) => {
-            const Section = sections[a];
-            return <Section key={a} />;
-          })}
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
+      <JourneyMapStore.Provider value={store}>
+        <div
+          className={cls('avx-journey-map-container', className)}
+          style={style}
+        >
+          {store.title ? (
+            <div className="avx-journey-map-title">{store.title}</div>
+          ) : null}
+          <div className="avx-journey-map-content">
+            {arrange.map((a) => {
+              const Section = sections[a];
+              return <Section key={a} />;
+            })}
+          </div>
         </div>
-      </div>
-    </JourneyMapStore.Provider>
+      </JourneyMapStore.Provider>
+    </ErrorBoundary>
   );
 };
 
