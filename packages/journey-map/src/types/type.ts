@@ -64,7 +64,7 @@ export interface UserAction {
   /**
    * 痛点
    */
-  painSpot?: string[];
+  painPoints?: string[];
 }
 
 export type SectionType =
