@@ -10,6 +10,7 @@ exports[`JourneyMap 默认状态 1`] = `
     >
       <div
         class="avx-journey-map-stage-container"
+        style="height: 48px;"
       >
         <div
           class="avx-journey-map-section"
