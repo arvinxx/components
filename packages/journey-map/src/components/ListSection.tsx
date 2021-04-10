@@ -7,26 +7,27 @@ import { JourneyMapStore } from '../useJourneyMap';
 import { calcStageLength } from '../utils';
 
 import './ListSection.less';
-import type { UserAction } from '../types';
+import type { CommonSection, Stage } from '../types';
 
 interface ListSectionProps {
   title: string;
-  sectionKey: keyof UserAction;
+  sectionKey: keyof CommonSection;
 }
 const ListSection: FC<ListSectionProps> = ({ title, sectionKey }) => {
   const { store, actionLength } = useContext(JourneyMapStore);
   const { stages, actions } = store;
 
-  const isEmpty =
-    stages
-      .map((s) => {
-        const actionsList = actions[s.id];
-        return actionsList
-          .map((a) => a[sectionKey])
-          .flat()
-          .filter((t) => t);
-      })
-      .flat().length === 0;
+  const getList = (stage: Stage) => {
+    const actionsList = actions[stage.id];
+
+    return actionsList
+      .map((a) => a[sectionKey])
+      .flat()
+      .concat(stage[sectionKey])
+      .filter((t) => t);
+  };
+
+  const isEmpty = stages.map(getList).flat().length === 0;
 
   return isEmpty ? null : (
     <div className="avx-journey-map-list-container">
@@ -35,21 +36,14 @@ const ListSection: FC<ListSectionProps> = ({ title, sectionKey }) => {
         {stages.map((stage, index) => {
           const color = stage.color || blue[1];
 
-          const actionsList = actions[stage.id];
-
-          const actionCount = actionsList.length;
-
           const { width, margin } = calcStageLength({
-            actionCount,
+            actionCount: actions[stage.id].length,
             stageCount: stages.length,
             index,
             totalCount: actionLength,
           });
 
-          const list = actionsList
-            .map((a) => a[sectionKey])
-            .flat()
-            .filter((t) => t);
+          const list = getList(stage);
 
           return list.length === 0 ? null : (
             <div

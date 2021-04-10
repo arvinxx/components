@@ -35,6 +35,8 @@ stages:
         thoughts:
           - 感觉一嗨好像还不错
           - 神州好贵
+    painPoints:
+      - 手机上操作效率太低了
 
   - name: 租车
     # color 除了使用 hex 色值 也支持 rgb 和 hsl 的写法
