@@ -3,8 +3,8 @@ export const data = `
 title: YML 字符串租车地图
 
 config:
-  # 目前支持 stage、emotion、action、thought painPoint 五层
-  # 可自行排序（上下切换 section 的位置即可）
+  # 目前支持 stage、emotion、action、thought painPoint 五个 section
+  # 可自行排序（在 arrange 中切换 section 的排序即可）
   arrange:
     - stage
     - action
