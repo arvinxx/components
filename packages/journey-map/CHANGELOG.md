@@ -1,5 +1,22 @@
 # Changelog
 
+# @arvinxu/journey-map [2.0.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.6.0...@arvinxu/journey-map@2.0.0) (2021-04-10)
+
+
+### ✨ 新特性
+
+* 优化配置结构 ([a780bcd](https://github.com/arvinxx/components/commit/a780bcd))
+
+
+### 📝 文档
+
+* 更新 schema ([6a160c4](https://github.com/arvinxx/components/commit/6a160c4))
+
+
+### 💥 BREAKING CHANGES
+
+* 配置中 `arrange` 字段 更名为 `sections`
+
 # @arvinxu/journey-map [1.6.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.5.0...@arvinxu/journey-map@1.6.0) (2021-04-10)
 
 
