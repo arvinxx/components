@@ -53,9 +53,9 @@ const Thoughts: FC = () => {
               style={{ width: `${width}%`, ...margin, borderColor: color }}
             >
               <ul>
-                {thoughts.map((t, index) => (
-                  <li key={index}>{t}</li>
-                ))}
+                {thoughts?.map((t, index) =>
+                  typeof t !== 'string' ? null : <li key={index}>{t}</li>,
+                )}
               </ul>
             </div>
           );
