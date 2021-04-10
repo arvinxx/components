@@ -3,8 +3,10 @@ export const data = `
 title: YML 字符串租车地图
 
 config:
-  # 目前支持 stage、emotion、action、thought painPoint 五个 section
-  # 可自行排序（在 arrange 中切换 section 的排序即可）
+  # 目前支持 stage（阶段）、emotion（情绪图）、action（用户行为）
+  # thought（想法） painPoint（痛点） 这五个 section
+  # 排序方法：在 arrange 中上下调整 section 即可（快捷键 alt + 上下方向键）
+  # 不需要的部分直接将其删除
   arrange:
     - stage
     - action
@@ -12,6 +14,7 @@ config:
     - thought
     - painPoint
 
+  # 可以通过该配置项控制某些 section 的高度
   height:
     emotion: 150
 
