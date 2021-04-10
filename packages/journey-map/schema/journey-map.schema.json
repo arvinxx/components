@@ -83,7 +83,7 @@
           "description": "行为名称",
           "type": "string"
         },
-        "painSpot": {
+        "painPoints": {
           "description": "痛点",
           "items": {
             "type": "string"
