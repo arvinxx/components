@@ -1,5 +1,4 @@
 {
-  "$id": "journey-map-schema",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
     "Config": {
@@ -25,7 +24,7 @@
           "type": "string"
         },
         "height": {
-          "$ref": "journey-map-schema#/definitions/Partial<Record<SectionType,number>>",
+          "$ref": "#/definitions/Partial<Record<SectionType,number>>",
           "description": "每个部分的高度"
         },
         "section": {
@@ -107,7 +106,7 @@
         "actions": {
           "description": "该阶段所有用户行为",
           "items": {
-            "$ref": "journey-map-schema#/definitions/UserAction"
+            "$ref": "#/definitions/UserAction"
           },
           "type": "array"
         },
@@ -141,13 +140,13 @@
   "description": "解析后的 YML 数据",
   "properties": {
     "config": {
-      "$ref": "journey-map-schema#/definitions/Config",
+      "$ref": "#/definitions/Config",
       "description": "配置参数"
     },
     "stages": {
       "description": "步骤",
       "items": {
-        "$ref": "journey-map-schema#/definitions/YMLStage"
+        "$ref": "#/definitions/YMLStage"
       },
       "type": "array"
     },
