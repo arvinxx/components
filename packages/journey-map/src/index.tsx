@@ -3,11 +3,13 @@ import type { FC, CSSProperties } from 'react';
 import cls from 'classnames';
 import { ErrorBoundary } from 'react-error-boundary';
 
+import { ErrorFallback } from './components';
+
 import Stage from './Stages';
 import Chart from './Chart';
 import Actions from './Actions';
 import Thoughts from './Thoughts';
-import { ErrorFallback } from './components';
+import PainPoints from './PainPoints';
 
 import { JourneyMapStore, useJourneyMap } from './useJourneyMap';
 import type { Config, JourneyMapData, SectionType } from './types';
@@ -54,8 +56,8 @@ const JourneyMap: FC<JourneyMapProps> = ({
     stage: Stage,
     emotion: Chart,
     thought: Thoughts,
+    painPoint: PainPoints,
     chance: () => <div />,
-    painSpot: () => <div />,
   };
 
   const arrange = store.config?.arrange || [

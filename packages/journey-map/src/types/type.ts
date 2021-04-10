@@ -72,7 +72,7 @@ export type SectionType =
   | 'action'
   | 'emotion'
   | 'thought'
-  | 'painSpot'
+  | 'painPoint'
   | 'chance';
 
 /**
