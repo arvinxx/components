@@ -1,5 +1,31 @@
 # Changelog
 
+# @arvinxu/journey-map [1.6.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.5.0...@arvinxu/journey-map@1.6.0) (2021-04-10)
+
+
+### ♻ 重构
+
+* 重构列表卡片 ([56b5355](https://github.com/arvinxx/components/commit/56b5355))
+
+
+### ✨ 新特性
+
+* 丰富 stage 的数据结构 ([79f247a](https://github.com/arvinxx/components/commit/79f247a))
+* 展示 stage 的想法和痛点 ([94bf590](https://github.com/arvinxx/components/commit/94bf590))
+* 添加痛点 section ([705e67f](https://github.com/arvinxx/components/commit/705e67f))
+* 添加错误捕捉组件 ([ea2a857](https://github.com/arvinxx/components/commit/ea2a857))
+
+
+### 🐛 修复
+
+* 修正 thoughts 的语法报错问题 ([5399d08](https://github.com/arvinxx/components/commit/5399d08))
+
+
+### 📝 文档
+
+* 优化接口类型 ([1a4ac5d](https://github.com/arvinxx/components/commit/1a4ac5d))
+* 更新 schema ([2cd30dd](https://github.com/arvinxx/components/commit/2cd30dd))
+
 # @arvinxu/journey-map [1.5.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@1.4.1...@arvinxu/journey-map@1.5.0) (2021-04-09)
 
 
