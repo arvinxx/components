@@ -7,7 +7,7 @@ config:
   # thought（想法） painPoint（痛点） 这五个 section
   # 排序方法：在 arrange 中上下调整 section 即可（快捷键 alt + 上下方向键）
   # 不需要的部分直接将其删除
-  arrange:
+  sections:
     - stage
     - action
     - emotion
@@ -57,6 +57,8 @@ stages:
         emotion: 0
       - name: 支付费用
         emotion: 1
+    painPoints:
+      - 需要方便地查看不同日期下的最低价格
 
   - name: 提车
     # color: 'hsl(220,100%,91%)'
@@ -73,6 +75,8 @@ stages:
           - 说了不少温馨提示还挺不错的
       - name: 取车离开
         emotion: 2
+    painPoints:
+      - 要交不少押金，如果能够凭借信用就好了
 
   - name: 游玩
     # color: '#ffdaf6'
@@ -95,6 +99,8 @@ stages:
         thoughts:
           - 没想到救援来的很及时
           - 救援很专业
+    painPoints:
+      - 出了意外无法快速查看救援信息
 
   - name: 还车
     # color: '#ede2fe'
@@ -111,4 +117,6 @@ stages:
           - 工作人员还挺专业的
       - name: 打车返回
         emotion: 0
+    painPoints:
+      - 无
 `;
