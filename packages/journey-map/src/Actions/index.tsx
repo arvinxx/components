@@ -10,7 +10,9 @@ import type { UserAction } from '../types';
 import './style.less';
 
 const Actions: FC = () => {
-  const { store, actionList, config } = useContext(JourneyMapStore);
+  const { store, actionList, config, emptyAction } = useContext(
+    JourneyMapStore,
+  );
   const { actions, stages } = store;
   const height = config?.height?.action || 140;
 
@@ -31,7 +33,7 @@ const Actions: FC = () => {
     return color;
   };
 
-  return (
+  return emptyAction ? null : (
     <div className="avx-journey-map-actions-container" style={{ height }}>
       <Section height={height}>用户行为</Section>
       <div className="avx-journey-map-actions-content">

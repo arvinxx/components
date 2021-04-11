@@ -55,9 +55,19 @@ export const useJourneyMap = ({
     }
   }, [data]);
 
-  const actionList = Object.values(store.actions).flat();
+  const actionList =
+    Object.values(store.actions)
+      .flat()
+      .filter((a) => a) || [];
 
-  return { store, actionList, actionLength: actionList.length, title, config };
+  return {
+    store,
+    actionList,
+    actionLength: actionList.length,
+    title,
+    config,
+    emptyAction: actionList.length === 0,
+  };
 };
 
 export const JourneyMapStore = getServiceToken(useJourneyMap);

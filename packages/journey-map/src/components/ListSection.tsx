@@ -19,7 +19,7 @@ const ListSection: FC<ListSectionProps> = ({ title, sectionKey, height }) => {
   const { stages, actions } = store;
 
   const getList = (stage: Stage) => {
-    const actionsList = actions[stage.id];
+    const actionsList = actions[stage.id] || [];
 
     return actionsList
       .map((a) => a[sectionKey])

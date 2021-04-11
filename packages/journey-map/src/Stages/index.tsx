@@ -44,7 +44,7 @@ const Stages: FC = () => {
         {stages.map((stage, index) => {
           const color = stage.color || blue[0];
 
-          const actionCount = actions[stage.id].length;
+          const actionCount = actions[stage.id]?.length || 0;
 
           const { width, margin } = calcStageLength({
             actionCount,

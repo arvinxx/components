@@ -43,6 +43,11 @@ export const calcStageLength = ({
   actionCount: number;
   index: number;
 }) => {
+  // 如果没有 action 时均分阶段
+  if (actionCount === 0) {
+    return { width: 100 / stageCount, margin: { margin: '0 0.5%' } };
+  }
+
   const baseWidth = 100 / (2 * (totalCount - 1));
 
   const isFirst = index === 0;
