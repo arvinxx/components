@@ -1,5 +1,23 @@
 # Changelog
 
+## @arvinxu/journey-map [2.1.1](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@2.1.0...@arvinxu/journey-map@2.1.1) (2021-04-11)
+
+
+### ✅ 测试
+
+* 更新测试 ([21225e9](https://github.com/arvinxx/components/commit/21225e9))
+
+
+### 🐛 修复
+
+* 修正只有 stage name 的渲染错误 ([9fb35d7](https://github.com/arvinxx/components/commit/9fb35d7))
+
+
+### 📝 文档
+
+* 更新说明 ([af46c70](https://github.com/arvinxx/components/commit/af46c70))
+* 更新说明 ([9d031bc](https://github.com/arvinxx/components/commit/9d031bc))
+
 # @arvinxu/journey-map [2.1.0](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@2.0.0...@arvinxu/journey-map@2.1.0) (2021-04-10)
 
 
