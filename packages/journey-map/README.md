@@ -4,7 +4,7 @@
 
 用户旅程地图
 
-[![Journey Map  YAML Template](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/journey-map-yaml-template-lmxez?fontsize=14&hidenavigation=1&theme=dark)
+[![Journey Map  YAML Template](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/journey-map-yaml-template-lmxez?file=/map.yml)
 
 ## License
 
