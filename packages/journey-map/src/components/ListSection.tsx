@@ -22,7 +22,7 @@ const ListSection: FC<ListSectionProps> = ({ title, sectionKey, height }) => {
     const actionsList = actions[stage.id] || [];
 
     return actionsList
-      .map((a) => a[sectionKey])
+      .map((a) => a?.[sectionKey])
       .flat()
       .concat(stage[sectionKey])
       .filter((t) => t);

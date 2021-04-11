@@ -20,6 +20,16 @@ const ErrorFallback = ({ error }) => (
             {error.message}
           </Text>
         </pre>
+        <Text className="avx-journey-error-desc">
+          若检查后无语法错误，请
+          <a
+            href="https://github.com/arvinxx/components/issues/new"
+            style={{ margin: '0 4px' }}
+          >
+            点击这里
+          </a>
+          提交 bug
+        </Text>
       </div>
     }
   />

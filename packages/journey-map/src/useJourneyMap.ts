@@ -60,6 +60,8 @@ export const useJourneyMap = ({
       .flat()
       .filter((a) => a) || [];
 
+  const emotionList = actionList.map((a) => a.emotion).filter((e) => e) || [];
+
   return {
     store,
     actionList,
@@ -67,6 +69,7 @@ export const useJourneyMap = ({
     title,
     config,
     emptyAction: actionList.length === 0,
+    emptyEmotion: emotionList.length === 0,
   };
 };
 
