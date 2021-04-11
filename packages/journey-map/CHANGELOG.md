@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/journey-map [2.1.2](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@2.1.1...@arvinxu/journey-map@2.1.2) (2021-04-11)
+
+
+### 🐛 修复
+
+* 修正只有 action 为空时的渲染错误 ([47ef071](https://github.com/arvinxx/components/commit/47ef071))
+
 ## @arvinxu/journey-map [2.1.1](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@2.1.0...@arvinxu/journey-map@2.1.1) (2021-04-11)
 
 
