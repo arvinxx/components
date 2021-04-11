@@ -43,9 +43,10 @@ const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
     padding: [24, -10, 16, -10],
     tooltip: {
       formatter: (datum) => {
-        if (!datum || !datum.emtion) return;
+        if (!datum) return;
 
         const { emotion } = datum;
+        if (typeof emotion === 'undefined') return;
 
         return { name: '情绪值', value: getFormattedEmotion(emotion) };
       },
