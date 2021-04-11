@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/journey-map [2.1.3](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@2.1.2...@arvinxu/journey-map@2.1.3) (2021-04-11)
+
+
+### 🐛 修复
+
+* 修正emotion为空时的渲染错误 ([8273499](https://github.com/arvinxx/components/commit/8273499))
+
+
+### 📝 文档
+
+* 补齐 demo ([0119bbf](https://github.com/arvinxx/components/commit/0119bbf))
+
 ## @arvinxu/journey-map [2.1.2](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@2.1.1...@arvinxu/journey-map@2.1.2) (2021-04-11)
 
 
