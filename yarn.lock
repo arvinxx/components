@@ -11,9 +11,9 @@
     lodash.throttle "^4.1.1"
 
 "@ant-design/charts@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npm.taobao.org/@ant-design/charts/download/@ant-design/charts-1.1.1.tgz#2cb63f3f4a8711a51591293a1320cf0df436345f"
-  integrity sha1-LLY/P0qHEaUVkSk6EyDPDfQ2NF8=
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@ant-design/charts/-/charts-1.1.2.tgz#008c169bf8e1e3fddb8da4a3fdb2eabaa588d3e3"
+  integrity sha512-WSUng7mj8Uxk5xBbFOkaYkm17xXNPiXiavbIOrQQaT+UFlPDms7wXoH3Ym5ZgAb0GYIIhdx9xGHcqL1L3lJ1VQ==
   dependencies:
     "@antv/g2plot" "^2.2.11"
     "@antv/g6" "^4.2.4"
