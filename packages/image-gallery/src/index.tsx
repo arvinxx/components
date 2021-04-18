@@ -26,9 +26,13 @@ export interface ImageGalleryProps {
   layout?: 'masonry' | 'grid';
 }
 
-const ImageGallery: FC<ImageGalleryProps> = ({ imageList, darkBackground }) => {
+const ImageGallery: FC<ImageGalleryProps> = ({
+  imageList,
+  darkBackground,
+  layout = 'masonry',
+}) => {
   return (
-    <div className="avx-image-gallery-container avx-image-gallery-masonry">
+    <div className={`avx-image-gallery-container avx-image-gallery-${layout}`}>
       {imageList.map((item, index) => {
         const { padding, url, title } = item;
 
