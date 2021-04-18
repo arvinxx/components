@@ -9,7 +9,6 @@ exports[`FloatLabelInput 正常渲染 1`] = `
     <input
       class="ant-input"
       data-testid="input"
-      label="test"
       type="text"
       value=""
     />
