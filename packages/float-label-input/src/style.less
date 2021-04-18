@@ -7,10 +7,16 @@
     position: absolute;
     z-index: 2;
     display: block;
-    color: fade(#000, 45%);
     font-size: 14px;
     transition: all 150ms ease-out;
     user-select: none;
     pointer-events: none;
+
+    &-required {
+      color: red;
+    }
+    &-hover {
+      color: fade(#000, 45%);
+    }
   }
 }
