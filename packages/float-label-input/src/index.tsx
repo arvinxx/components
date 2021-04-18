@@ -25,7 +25,7 @@ export interface FloatLabelInputProps {
 const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
   const [focused, setFocused] = useState(false);
 
-  const { label, hoverDistance, hoverClassName } = props;
+  const { label, hoverDistance, hoverClassName, required, ...res } = props;
 
   const [value, setValue] = useMergeValue(props.value, {
     onChange: props.onChange,
@@ -47,7 +47,7 @@ const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
       <Input
         ref={inputRef}
         className={cls(props.className)}
-        {...props}
+        {...res}
         value={value}
         onChange={(e) => {
           setValue(e.target.value);
@@ -77,11 +77,14 @@ const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
         className={cls(
           'avx-float-input-label',
           props.labelClassName,
-          shouldHover ? hoverClassName : null,
+          shouldHover ? ['avx-float-input-label-hover', hoverClassName] : null,
         )}
         data-testid="label"
       >
         {label}
+        {!required ? null : (
+          <span className="avx-float-input-label-required">*</span>
+        )}
       </label>
     </div>
   );
