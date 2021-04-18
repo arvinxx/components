@@ -1,5 +1,27 @@
 # Changelog
 
+# @arvinxu/float-label-input [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.0.3...@arvinxu/float-label-input@1.1.0) (2021-04-18)
+
+
+### ✅ 测试
+
+* 添加测试 ([2496ea3](https://github.com/arvinxx/components/commit/2496ea3))
+
+
+### ✨ 新特性
+
+* 添加受控状态 ([5d04bce](https://github.com/arvinxx/components/commit/5d04bce))
+
+
+### 🎫 杂项
+
+* 更新测试配置 ([a4e38d0](https://github.com/arvinxx/components/commit/a4e38d0))
+
+
+### 💄 样式
+
+* 调整样式 ([65e5877](https://github.com/arvinxx/components/commit/65e5877))
+
 ## @arvinxu/float-label-input [1.0.3](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.0.2...@arvinxu/float-label-input@1.0.3) (2021-03-03)
 
 
