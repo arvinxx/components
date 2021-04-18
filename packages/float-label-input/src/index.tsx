@@ -19,6 +19,7 @@ export interface FloatLabelInputProps {
   onFocus?: (e: FocusEvent<HTMLInputElement>) => void;
   className?: string;
   style?: CSSProperties;
+  required?: boolean;
 }
 
 const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
