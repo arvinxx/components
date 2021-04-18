@@ -1,16 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FloatLabelInput 1`] = `
+exports[`FloatLabelInput 正常渲染 1`] = `
 <div>
-  <div>
+  <div
+    class="avx-float-input-container"
+    data-testid="container"
+  >
     <input
       class="ant-input"
+      data-testid="input"
       label="test"
       type="text"
       value=""
     />
     <label
-      class=""
+      class="avx-float-input-label"
+      data-testid="label"
       style="margin-left: 8px; margin-top: -26px;"
     >
       test
