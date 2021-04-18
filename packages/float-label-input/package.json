@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "ahooks": "^2.9.6"
+    "ahooks": "^2.9.6",
+    "use-merge-value": "^1.0.2"
   },
   "peerDependencies": {
     "antd": "^4.12.3",

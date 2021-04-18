@@ -1,31 +1,38 @@
-import type { CSSProperties, FC } from 'react';
-import type { InputProps } from 'antd/lib/input/Input';
-
+import type { CSSProperties, FC, FocusEvent } from 'react';
 import React, { useState } from 'react';
 import { Input } from 'antd';
 import cls from 'classnames';
 
-import styles from './style.less';
+import useMergeValue from 'use-merge-value';
+
+import './style.less';
 import { useHover } from './useHover';
 
-export interface FloatLabelInputProps extends InputProps {
+export interface FloatLabelInputProps {
   label: string;
   labelClassName?: string;
   hoverClassName?: string;
-  error?: boolean;
-  errorMsg?: string;
   hoverDistance?: number;
+  value?: string;
+  onChange?: (value?: string) => void;
+  onBlur?: (e: FocusEvent<HTMLInputElement>) => void;
+  onFocus?: (e: FocusEvent<HTMLInputElement>) => void;
+  className?: string;
+  style?: CSSProperties;
 }
 
 const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
   const [focused, setFocused] = useState(false);
 
-  const { value, label, hoverDistance, hoverClassName } = props;
+  const { label, hoverDistance, hoverClassName } = props;
 
+  const [value, setValue] = useMergeValue(props.value, {
+    onChange: props.onChange,
+  });
   const { labelPosition, inputRef, labelRef } = useHover();
 
   const activeStyle: CSSProperties = {
-    transform: `translateY(-${hoverDistance || labelPosition}px)`,
+    transform: `translateY(-${(hoverDistance || labelPosition) + 2}px)`,
   };
 
   const style: CSSProperties = {
@@ -35,11 +42,15 @@ const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
 
   const shouldHover = focused || !!value;
   return (
-    <div>
+    <div className="avx-float-input-container" data-testid="container">
       <Input
         ref={inputRef}
         className={cls(props.className)}
         {...props}
+        value={value}
+        onChange={(e) => {
+          setValue(e.target.value);
+        }}
         onBlur={(e) => {
           setFocused(false);
 
@@ -54,6 +65,7 @@ const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
             props.onFocus(e);
           }
         }}
+        data-testid="input"
       />
       <label
         ref={labelRef}
@@ -62,10 +74,11 @@ const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
           ...(shouldHover ? activeStyle : {}),
         }}
         className={cls(
-          styles.label,
+          'avx-float-input-label',
           props.labelClassName,
           shouldHover ? hoverClassName : null,
         )}
+        data-testid="label"
       >
         {label}
       </label>
