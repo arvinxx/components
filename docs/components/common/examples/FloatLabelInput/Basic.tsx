@@ -8,6 +8,12 @@ const Basic = () => {
     <div>
       <FloatLabelInput label={'名称'} value={value} onChange={setValue} />
       <FloatLabelInput label={'地址'} value={value} onChange={setValue} />
+      <FloatLabelInput
+        label={'地址'}
+        value={value}
+        onChange={setValue}
+        required
+      />
     </div>
   );
 };
