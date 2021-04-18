@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/float-label-input [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.1.1...@arvinxu/float-label-input@1.2.0) (2021-04-18)
+
+
+### ✨ 新特性
+
+* 添加 required 接口 ([b4c42a5](https://github.com/arvinxx/components/commit/b4c42a5))
+
 ## @arvinxu/float-label-input [1.1.1](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.1.0...@arvinxu/float-label-input@1.1.1) (2021-04-18)
 
 
