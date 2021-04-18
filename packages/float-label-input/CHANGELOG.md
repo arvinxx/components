@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/float-label-input [1.1.1](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.1.0...@arvinxu/float-label-input@1.1.1) (2021-04-18)
+
+
+### 👷 构建系统
+
+* 修正 antd less 样式问题 ([0bcacc5](https://github.com/arvinxx/components/commit/0bcacc5))
+
 # @arvinxu/float-label-input [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.0.3...@arvinxu/float-label-input@1.1.0) (2021-04-18)
 
 
