@@ -13,7 +13,8 @@
     "types": ["../../types", "@types/jest"],
     "baseUrl": "../..",
     "paths": {
-      "@arvinxu/preloader": ["./packages/preloader/src"]
+      "@arvinxu/preloader": ["./packages/preloader/src"],
+      "@arvinxu/page-loading": ["./packages/page-loading/src"]
     }
   }
 }
