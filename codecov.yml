@@ -1,2 +1,2 @@
 fixes:
-  - '/home/runner/work/component/component/::' # 修正 github ci 路径问题
+  - '/home/runner/work/components/components/::' # 修正 github ci 路径问题
