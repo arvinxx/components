@@ -54,12 +54,12 @@ footer: Open-source MIT Licensed | Copyright © 2021-present
 
 ### 通用组件
 
-| 组件                                                   | 版本                                                                             | 说明                                   |
-| ------------------------------------------------------ | -------------------------------------------------------------------------------- | -------------------------------------- |
-| float-label-input                                      | [![NPM version][float-label-input-version-image]][float-label-input-version-url] | 标签会跟随 hover 状态浮动的 Input 组件 |
-| [PageLoading](/components/common/page-loading)         | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 页面状态加载                           |
-| [Preloader](/components/common/preloader)              | [![NPM version][preloader-version-image]][preloader-version-url]                 | 加载组件                               |
-| [TrafficLight](/components/common/macos-traffic-light) | [![NPM version][traffic-light-version-image]][traffic-light-version-url]         | macOS 右上角控制按钮                   |
+| 组件                                                    | 版本                                                                             | 说明                                   |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------- |
+| [FloatLabelInput](/components/common/float-label-input) | [![NPM version][float-label-input-version-image]][float-label-input-version-url] | 标签会跟随 hover 状态浮动的 Input 组件 |
+| [PageLoading](/components/common/page-loading)          | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 页面状态加载                           |
+| [Preloader](/components/common/preloader)               | [![NPM version][preloader-version-image]][preloader-version-url]                 | 加载组件                               |
+| [TrafficLight](/components/common/macos-traffic-light)  | [![NPM version][traffic-light-version-image]][traffic-light-version-url]         | macOS 右上角控制按钮                   |
 
 [float-label-input-version-image]: http://img.shields.io/npm/v/@arvinxu/float-label-input.svg?color=deepgreen&label=latest
 [float-label-input-version-url]: http://npmjs.org/package/@arvinxu/float-label-input
