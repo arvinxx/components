@@ -4842,9 +4842,9 @@ aggregate-error@^3.0.0:
     indent-string "^4.0.0"
 
 ahooks@^2.10.0, ahooks@^2.9.6:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.0.tgz#bec2c0b928115afd6d268e67770146988347675c"
-  integrity sha512-+aq+n+wTLuRZ4oD4iWQbQEYTnAqjhvUjYFWPs8xTxyD2k/mDAZuvAyLrgYOb7Qyn19Bl0Rdxh8M62oBYcBDckQ==
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.1.tgz#735e5bff0201332ff4930b092992e60981a62ebe"
+  integrity sha512-e93Z82rwASuBQskqq2hCRyoeUrQW57/e9FfWL+hd/cvd/PHBxbDT7dRlH2eFlsk74uRqc5+6BglRAQ5ebLrE2A==
   dependencies:
     "@ahooksjs/use-request" "^2.8.4"
     "@types/js-cookie" "^2.2.6"
