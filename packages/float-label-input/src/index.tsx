@@ -8,6 +8,8 @@ import useMergeValue from 'use-merge-value';
 import './style.less';
 import { useHover } from './useHover';
 
+const { TextArea } = Input;
+
 export interface FloatLabelInputProps {
   label: string;
   labelClassName?: string;
@@ -20,12 +22,20 @@ export interface FloatLabelInputProps {
   className?: string;
   style?: CSSProperties;
   required?: boolean;
+  textArea?: boolean;
 }
 
 const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
   const [focused, setFocused] = useState(false);
 
-  const { label, hoverDistance, hoverClassName, required, ...res } = props;
+  const {
+    label,
+    hoverDistance,
+    hoverClassName,
+    required,
+    textArea,
+    ...res
+  } = props;
 
   const [value, setValue] = useMergeValue(props.value, {
     onChange: props.onChange,
@@ -40,11 +50,12 @@ const FloatLabelInput: FC<FloatLabelInputProps> = (props) => {
     marginLeft: 8,
     marginTop: -labelPosition,
   };
+  const Component = textArea ? TextArea : Input;
 
   const shouldHover = focused || !!value;
   return (
     <div className="avx-float-input-container" data-testid="container">
-      <Input
+      <Component
         ref={inputRef}
         className={cls(props.className)}
         {...res}
