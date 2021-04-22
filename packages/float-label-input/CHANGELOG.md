@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/float-label-input [1.4.0](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.3.0...@arvinxu/float-label-input@1.4.0) (2021-04-22)
+
+
+### ✨ 新特性
+
+* 添加 textArea 属性 ([4e1deb4](https://github.com/arvinxx/components/commit/4e1deb4))
+
 # @arvinxu/float-label-input [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/float-label-input@1.2.0...@arvinxu/float-label-input@1.3.0) (2021-04-18)
 
 
