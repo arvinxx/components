@@ -1,5 +1,17 @@
 # Changelog
 
+# @arvinxu/image-gallery [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.0.5...@arvinxu/image-gallery@1.1.0) (2021-04-27)
+
+
+### ✨ 新特性
+
+* 支持复制正常的 png ([6567d59](https://github.com/arvinxx/components/commit/6567d59))
+
+
+### 🎫 杂项
+
+* 优化代码 ([92c9010](https://github.com/arvinxx/components/commit/92c9010))
+
 ## @arvinxu/image-gallery [1.0.5](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.0.4...@arvinxu/image-gallery@1.0.5) (2021-03-20)
 
 
