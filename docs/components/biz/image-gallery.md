@@ -17,7 +17,7 @@ order: 2
 ## 使用方式
 
 - `复制 SVG`：就可以直接复制出 Svg 粘贴到 Sketch 或 AI 中（暂不支持复制到 Keynote、PPT）；
-- `复制 PNG`：就可以直接复制出 Png 粘贴到 PPT、Keynote 当中（暂不支持复制到 Sketch 中）；
+- `复制 PNG`：就可以直接复制出 Png 粘贴到 PPT、Keynote 当中；
 - `省略号`：可以分别点击下载将另存为 `svg` 或 `png` 文件。
 
 ## 演示
