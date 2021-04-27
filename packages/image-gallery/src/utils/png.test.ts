@@ -1,4 +1,4 @@
-import { copyPngFromSvg } from './utils';
+import { copyPngFromSvg } from './png';
 
 describe('copyPng', () => {
   it('初始值', async () => {
