@@ -1,3 +1,4 @@
+import './matchMedia.mock'; // Must be imported before the tested file
 import React from 'react';
 import { render } from '@testing-library/react';
 
