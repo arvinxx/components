@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/image-gallery [1.1.1](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.1.0...@arvinxu/image-gallery@1.1.1) (2021-04-27)
+
+
+### 🐛 修复
+
+* 修正构建的 bug ([fa4a3ac](https://github.com/arvinxx/components/commit/fa4a3ac))
+
 # @arvinxu/image-gallery [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.0.5...@arvinxu/image-gallery@1.1.0) (2021-04-27)
 
 
