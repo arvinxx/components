@@ -4,7 +4,7 @@ import {
   MobileTwoTone,
   UserOutlined,
 } from '@ant-design/icons';
-import { Alert, message, Tabs } from 'antd';
+import { message, Tabs } from 'antd';
 import React, { useState } from 'react';
 import ProForm, {
   ProFormCaptcha,
@@ -12,6 +12,7 @@ import ProForm, {
   ProFormText,
 } from '@ant-design/pro-form';
 import type { StateType, LoginParamsType } from '../type';
+import LoginMessage from './LoginMessage';
 
 import styles from './index.less';
 import { useFormatMessage } from '../hooks';
@@ -22,19 +23,6 @@ export type LoginProps = {
   onClickCaptcha?: (mobile: string) => boolean;
   handleSubmit?: (values: LoginParamsType) => void;
 };
-
-const LoginMessage: React.FC<{
-  content: string;
-}> = ({ content }) => (
-  <Alert
-    style={{
-      marginBottom: 24,
-    }}
-    message={content}
-    type="error"
-    showIcon
-  />
-);
 
 const Login: React.FC<LoginProps> = (props) => {
   const { userLogin = {}, submitting, onClickCaptcha, handleSubmit } = props;
