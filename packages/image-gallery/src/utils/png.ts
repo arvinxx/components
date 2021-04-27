@@ -17,7 +17,7 @@ export const copyPngFromSvg = async (url: string) => {
   image.src = svgUrl;
 
   image.onload = async () => {
-    const result = await fetch(getImageBase64(image, 1));
+    const result = await fetch(getImageBase64(image));
     // 如果浏览器支持 navigator.clipboard 接口
     // 就使用 write 接口
     const isSuccess = await copyToClipboard('image/png', await result.blob());
@@ -25,7 +25,7 @@ export const copyPngFromSvg = async (url: string) => {
     if (!isSuccess) {
       // 创建 image 对象
       const img = document.createElement('img');
-      img.src = getImageBase64(image);
+      img.src = getImageBase64(image, 8);
       img.contentEditable = 'true';
       document.body.appendChild(img);
 
@@ -59,7 +59,7 @@ export const downloadPng = async (url: string, title: string) => {
   image.onload = () => {
     const a = document.createElement('a');
     a.download = `${title}.png`;
-    a.href = getImageBase64(image);
+    a.href = getImageBase64(image, 8);
     a.click();
   };
 };

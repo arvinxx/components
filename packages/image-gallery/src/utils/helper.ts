@@ -5,7 +5,7 @@
  * @param image
  * @param scale 缩放
  */
-export const getImageBase64 = (image: HTMLImageElement, scale = 8) => {
+export const getImageBase64 = (image: HTMLImageElement, scale = 1) => {
   const canvas = document.getElementById('canvas') as HTMLCanvasElement;
   canvas.width = image.width * scale;
   canvas.height = image.height * scale;
