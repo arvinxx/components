@@ -1,0 +1,30 @@
+{
+  "name": "@arvinxu/user-panel",
+  "version": "1.0.0",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "homepage": "https://github.com/arvinxx/components/tree/master/packages/user-panel#readme",
+  "repository": "git+https://github.com/arvinxx/components.git",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "scripts": {
+    "build": "father-build && yarn webpack",
+    "webpack": "webpack",
+    "test": "jest",
+    "test:update": "jest -u",
+    "prepublishOnly": "yarn build",
+    "cov": "jest --coverage",
+    "clean": "rm -rf es lib dist build coverage .umi"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-form": "^1.21.5",
+    "antd": "^4.15.3"
+  }
+}

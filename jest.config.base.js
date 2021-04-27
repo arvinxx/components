@@ -15,6 +15,7 @@ module.exports = {
     '@arvinxu/macos-traffic-light':
       '<rootDir>/packages/macos-traffic-light/src',
     '@arvinxu/journey-map': '<rootDir>/packages/journey-map/src',
+    '@arvinxu/user-panel': '<rootDir>/packages/user-panel/src',
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
     '@arvinxu/page-loading': '<rootDir>/packages/page-loading/src',
     '@arvinxu/mindflow': '<rootDir>/packages/mindflow/src',

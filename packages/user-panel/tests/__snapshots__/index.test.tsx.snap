@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserPanel 默认状态 1`] = `
+<div>
+  <div>
+    UserPanel
+  </div>
+</div>
+`;
