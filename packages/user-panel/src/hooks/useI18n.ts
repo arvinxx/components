@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
