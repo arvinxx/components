@@ -1,7 +1,7 @@
-import { copyPng } from './utils';
+import { copyPngFromSvg } from './utils';
 
 describe('copyPng', () => {
   it('初始值', async () => {
-    expect(typeof copyPng).toEqual('function');
+    expect(typeof copyPngFromSvg).toEqual('function');
   });
 });

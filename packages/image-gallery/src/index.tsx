@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import React from 'react';
 import { Button, Card, Dropdown, Menu } from 'antd';
 import { EllipsisOutlined } from '@ant-design/icons';
-import { copySVG, copyPng, downloadSVG, downloadPng } from './utils';
+import { copySVG, copyPngFromSvg, downloadSVG, downloadPng } from './utils';
 
 import './style.less';
 import type { ImageList } from './types';
@@ -71,7 +71,7 @@ const ImageGallery: FC<ImageGalleryProps> = ({
                 <Button
                   type={'link'}
                   className="avx-image-gallery-link"
-                  onClick={() => copyPng(url)}
+                  onClick={() => copyPngFromSvg(url)}
                 >
                   PNG
                 </Button>,

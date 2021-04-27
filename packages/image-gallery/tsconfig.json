@@ -11,6 +11,6 @@
     /* 模块导入配置项 */
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
-    "types": ["../../types", "@types/jest"]
+    "types": ["../../types", "@types/jest", "types"]
   }
 }

@@ -4,11 +4,12 @@ import { message } from 'antd';
 /**
  * 利用 Canvas 生成 png dataURL
  * @param image
+ * @param scale 缩放
  */
-const getImageBase64 = (image: HTMLImageElement) => {
+const getImageBase64 = (image: HTMLImageElement, scale = 8) => {
   const canvas = document.getElementById('canvas') as HTMLCanvasElement;
-  canvas.width = image.width * 8;
-  canvas.height = image.height * 8;
+  canvas.width = image.width * scale;
+  canvas.height = image.height * scale;
 
   const context = canvas.getContext('2d');
   context?.drawImage(image, 0, 0);
@@ -20,7 +21,7 @@ const getImageBase64 = (image: HTMLImageElement) => {
  * 复制 Png 到剪切板
  * @param url
  */
-export const copyPng = async (url: string) => {
+export const copyPngFromSvg = async (url: string) => {
   const res = await fetch(url);
   const svgBlob = await res.blob();
   const svgUrl = URL.createObjectURL(svgBlob);
@@ -28,21 +29,36 @@ export const copyPng = async (url: string) => {
   const image = new Image();
   image.src = svgUrl;
 
-  image.onload = () => {
-    // 创建 image 对象
-    const img = document.createElement('img');
-    img.src = getImageBase64(image);
-    img.contentEditable = 'true';
-    document.body.appendChild(img);
+  image.onload = async () => {
+    const { state } = await navigator.permissions.query({
+      name: 'clipboard-write',
+    });
 
-    // 复制
-    const selection = window.getSelection();
-    const range = document.createRange();
-    range.selectNode(img);
-    selection?.removeAllRanges();
-    selection?.addRange(range);
-    document.execCommand('Copy');
-    img.remove();
+    // 如果浏览器支持 navigator.clipboard 接口
+    // 就使用 write 接口
+    if (navigator.clipboard && state === 'granted') {
+      const result = await fetch(getImageBase64(image, 1));
+      await navigator.clipboard.write([
+        new ClipboardItem({ 'image/png': await result.blob() }),
+      ]);
+    }
+    // 不然就用降级方案
+    else {
+      // 创建 image 对象
+      const img = document.createElement('img');
+      img.src = getImageBase64(image);
+      img.contentEditable = 'true';
+      document.body.appendChild(img);
+
+      // 复制
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNode(img);
+      selection?.removeAllRanges();
+      selection?.addRange(range);
+      document.execCommand('Copy');
+      img.remove();
+    }
 
     message.success('🎉 复制成功!');
   };
