@@ -14,7 +14,11 @@ describe('UserPanel', () => {
             resolve(true);
           });
         }}
-        onLoginSubmit={() => {}}
+        onLoginSubmit={() => {
+          return new Promise((resolve) => {
+            resolve();
+          });
+        }}
       />,
     );
     const btn = await findByText('手机号登录');
