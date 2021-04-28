@@ -1,11 +1,14 @@
 import React from 'react';
-import type { FC } from 'react';
-import { IntlWrapper } from './components';
-import Login from './login';
 
+import { IntlWrapper, Header } from './components';
+import Login from './login';
+import './style.less';
+
+import type { FC } from 'react';
+import type { HeaderProps } from './components';
 import type { LoginParamsType } from './type';
 
-export interface UserPanelProps {
+export interface UserPanelProps extends HeaderProps {
   /**
    * 获取校验码方法
    */
@@ -16,10 +19,17 @@ export interface UserPanelProps {
   onLoginSubmit: (values: LoginParamsType) => Promise<void>;
 }
 
-const UserPanel: FC<UserPanelProps> = ({ onClickCaptcha, onLoginSubmit }) => {
+const UserPanel: FC<UserPanelProps> = ({
+  onClickCaptcha,
+  onLoginSubmit,
+  logo,
+}) => {
   return (
     <IntlWrapper>
-      <Login onClickCaptcha={onClickCaptcha} handleSubmit={onLoginSubmit} />
+      <div className="avx-user-panel-container">
+        <Header type={'login'} logo={logo} />
+        <Login onClickCaptcha={onClickCaptcha} handleSubmit={onLoginSubmit} />
+      </div>
     </IntlWrapper>
   );
 };
