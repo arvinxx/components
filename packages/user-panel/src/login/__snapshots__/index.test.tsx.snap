@@ -3,7 +3,7 @@
 exports[`Login 组件 获取验证码 1`] = `
 <div>
   <div
-    class="avx-user-panel-container"
+    class="avx-user-panel-login-container"
   >
     <form
       class="ant-form ant-form-vertical"
@@ -143,7 +143,7 @@ exports[`Login 组件 获取验证码 1`] = `
                 >
                   <span
                     aria-label="mobile"
-                    class="anticon anticon-mobile avx-user-panel-prefixIcon"
+                    class="anticon anticon-mobile avx-user-panel-login-prefixIcon"
                     role="img"
                   >
                     <svg
@@ -230,7 +230,7 @@ exports[`Login 组件 获取验证码 1`] = `
                   >
                     <span
                       aria-label="mail"
-                      class="anticon anticon-mail avx-user-panel-prefixIcon"
+                      class="anticon anticon-mail avx-user-panel-login-prefixIcon"
                       role="img"
                     >
                       <svg
@@ -316,7 +316,7 @@ exports[`Login 组件 获取验证码 1`] = `
         type="button"
       >
         <span>
-          提 交
+          登 录
         </span>
       </button>
     </form>
@@ -327,7 +327,7 @@ exports[`Login 组件 获取验证码 1`] = `
 exports[`Login 组件 默认状态 1`] = `
 <div>
   <div
-    class="avx-user-panel-container"
+    class="avx-user-panel-login-container"
   >
     <form
       class="ant-form ant-form-vertical"
@@ -465,7 +465,7 @@ exports[`Login 组件 默认状态 1`] = `
                 >
                   <span
                     aria-label="user"
-                    class="anticon anticon-user avx-user-panel-prefixIcon"
+                    class="anticon anticon-user avx-user-panel-login-prefixIcon"
                     role="img"
                   >
                     <svg
@@ -539,7 +539,7 @@ exports[`Login 组件 默认状态 1`] = `
                 >
                   <span
                     aria-label="lock"
-                    class="anticon anticon-lock avx-user-panel-prefixIcon"
+                    class="anticon anticon-lock avx-user-panel-login-prefixIcon"
                     role="img"
                   >
                     <svg
@@ -642,7 +642,7 @@ exports[`Login 组件 默认状态 1`] = `
         type="button"
       >
         <span>
-          提 交
+          登 录
         </span>
       </button>
     </form>

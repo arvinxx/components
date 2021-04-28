@@ -9,7 +9,7 @@ import './style.less';
 
 const { Title } = Typography;
 
-export interface HeaderProps {
+interface HeaderProps {
   type: 'login' | 'register' | 'forgot';
   logo?: string;
   url?: string;
