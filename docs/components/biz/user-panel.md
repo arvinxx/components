@@ -12,8 +12,12 @@ order: 4
 [download-image]: https://img.shields.io/npm/dm/@arvinxu/user-panel.svg
 [download-url]: https://github.com/arvinxx/components/tree/master/packages/user-panel
 
-## 演示
+## 基础演示
 
 <code src='./examples/UserPanel/Basic.tsx' />
+
+## 带 Logo
+
+<code src='./examples/UserPanel/WithLogo.tsx' />
 
 <API src='../../../packages/user-panel/src/index.tsx'></API>
