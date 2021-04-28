@@ -9,12 +9,6 @@ describe('UserPanel', () => {
     const { container } = render(<UserPanel />);
     expect(container).toMatchSnapshot();
   });
-  it('错误状态', async () => {
-    const { container, findByText } = render(<UserPanel />);
-    const btn = await findByText('提 交');
-    await fireEvent.click(btn);
-    expect(container).toMatchSnapshot();
-  });
 
   it('获取验证码', async () => {
     const { container, findByText } = render(<UserPanel />);
