@@ -38,7 +38,7 @@ const Login: React.FC<LoginProps> = (props) => {
   const f = useFormatMessage();
 
   return (
-    <div className="avx-user-panel-container">
+    <div className="avx-user-panel-login-container">
       <ProForm<LoginParamsType>
         initialValues={{
           autoLogin: true,
@@ -77,7 +77,9 @@ const Login: React.FC<LoginProps> = (props) => {
               name="userName"
               fieldProps={{
                 size: 'large',
-                prefix: <UserOutlined className="avx-user-panel-prefixIcon" />,
+                prefix: (
+                  <UserOutlined className="avx-user-panel-login-prefixIcon" />
+                ),
               }}
               placeholder={f('login.username.placeholder')}
               rules={[
@@ -91,7 +93,9 @@ const Login: React.FC<LoginProps> = (props) => {
               name="password"
               fieldProps={{
                 size: 'large',
-                prefix: <LockTwoTone className="avx-user-panel-prefixIcon" />,
+                prefix: (
+                  <LockTwoTone className="avx-user-panel-login-prefixIcon" />
+                ),
               }}
               placeholder={f('login.password.placeholder')}
               rules={[
@@ -112,7 +116,9 @@ const Login: React.FC<LoginProps> = (props) => {
             <ProFormText
               fieldProps={{
                 size: 'large',
-                prefix: <MobileTwoTone className="avx-user-panel-prefixIcon" />,
+                prefix: (
+                  <MobileTwoTone className="avx-user-panel-login-prefixIcon" />
+                ),
               }}
               name="mobile"
               placeholder={f('login.phoneNumber.placeholder')}
@@ -130,7 +136,9 @@ const Login: React.FC<LoginProps> = (props) => {
             <ProFormCaptcha
               fieldProps={{
                 size: 'large',
-                prefix: <MailTwoTone className="avx-user-panel-prefixIcon" />,
+                prefix: (
+                  <MailTwoTone className="avx-user-panel-login-prefixIcon" />
+                ),
               }}
               captchaProps={{
                 size: 'large',
