@@ -1,4 +1,5 @@
 export default {
+  'login.header': '立即登录',
   'login.accountLogin.tab': '账户密码登录',
   'login.phoneLogin.tab': '手机号登录',
   'login.accountLogin.errorMessage': '错误的用户名和密码',
@@ -17,7 +18,7 @@ export default {
   'pages.getCaptchaSecondText': '秒后重新获取',
   'login.rememberMe': '自动登录',
   'login.forgotPassword': '忘记密码 ?',
-  'login.submit': '提交',
+  'login.submit': '登录',
   'login.loginWith': '其他登录方式 :',
   'login.registerAccount': '注册账户',
 };
