@@ -30,6 +30,7 @@ const WechatLogin: FC<IWechatLoginProps> = ({ onClick }) => {
       onClick={handleWeChatClick}
       className="avx-user-panel-wechat"
       type="default"
+      data-testid={'wechat-btn'}
     >
       <WechatOutlined className="avx-user-panel-wechat-icon" />
       {f('login.wechat-login.btn')}

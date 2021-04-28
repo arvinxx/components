@@ -17,6 +17,7 @@ exports[`Footer 组件 登录页脚 1`] = `
     </div>
     <button
       class="ant-btn ant-btn-default ant-btn-lg avx-user-panel-wechat"
+      data-testid="wechat-btn"
       type="button"
     >
       <span
