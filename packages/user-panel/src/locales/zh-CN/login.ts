@@ -1,7 +1,7 @@
 export default {
   'login.accountLogin.tab': '账户密码登录',
   'login.phoneLogin.tab': '手机号登录',
-  'login.accountLogin.errorMessage': '错误的用户名和密码（admin/ant.design)',
+  'login.accountLogin.errorMessage': '错误的用户名和密码',
   'login.username.placeholder': '用户名',
   'login.username.required': '用户名是必填项！',
   'login.password.placeholder': '密码',
@@ -12,6 +12,7 @@ export default {
   'login.phoneNumber.invalid': '不合法的手机号！',
   'login.captcha.placeholder': '请输入验证码',
   'login.captcha.required': '验证码是必填项！',
+  'login.captcha.function.required': '获取验证码方法未实现，请检查代码！',
   'login.phoneLogin.getVerificationCode': '获取验证码',
   'pages.getCaptchaSecondText': '秒后重新获取',
   'login.rememberMe': '自动登录',

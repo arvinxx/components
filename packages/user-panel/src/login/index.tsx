@@ -14,25 +14,31 @@ import ProForm, {
 import type { StateType, LoginParamsType } from '../type';
 import LoginMessage from './LoginMessage';
 
-import styles from './index.less';
+import './index.less';
 import { useFormatMessage } from '../hooks';
 
 export type LoginProps = {
   userLogin?: StateType;
-  submitting?: boolean;
-  onClickCaptcha?: (mobile: string) => boolean;
-  handleSubmit?: (values: LoginParamsType) => void;
+  onClickCaptcha?: (mobile: string) => Promise<boolean>;
+  handleSubmit?: (values: LoginParamsType) => Promise<void>;
+  captchaCountDown?: number;
 };
 
 const Login: React.FC<LoginProps> = (props) => {
-  const { userLogin = {}, submitting, onClickCaptcha, handleSubmit } = props;
+  const {
+    userLogin = {},
+    onClickCaptcha,
+    handleSubmit,
+    captchaCountDown,
+  } = props;
   const { status, type: loginType } = userLogin;
   const [type, setType] = useState<string>('account');
+  const [submitting, setLoading] = useState(false);
 
   const f = useFormatMessage();
 
   return (
-    <div className={styles.main}>
+    <div className="avx-user-panel-container">
       <ProForm<LoginParamsType>
         initialValues={{
           autoLogin: true,
@@ -47,8 +53,10 @@ const Login: React.FC<LoginProps> = (props) => {
             },
           },
         }}
-        onFinish={(values) => {
-          handleSubmit(values);
+        onFinish={async (values) => {
+          setLoading(true);
+          await handleSubmit(values);
+          setLoading(false);
           return Promise.resolve();
         }}
       >
@@ -66,7 +74,7 @@ const Login: React.FC<LoginProps> = (props) => {
               name="userName"
               fieldProps={{
                 size: 'large',
-                prefix: <UserOutlined className={styles.prefixIcon} />,
+                prefix: <UserOutlined className="avx-user-panel-prefixIcon" />,
               }}
               placeholder={f('login.username.placeholder')}
               rules={[
@@ -80,7 +88,7 @@ const Login: React.FC<LoginProps> = (props) => {
               name="password"
               fieldProps={{
                 size: 'large',
-                prefix: <LockTwoTone className={styles.prefixIcon} />,
+                prefix: <LockTwoTone className="avx-user-panel-prefixIcon" />,
               }}
               placeholder={f('login.password.placeholder')}
               rules={[
@@ -101,7 +109,7 @@ const Login: React.FC<LoginProps> = (props) => {
             <ProFormText
               fieldProps={{
                 size: 'large',
-                prefix: <MobileTwoTone className={styles.prefixIcon} />,
+                prefix: <MobileTwoTone className="avx-user-panel-prefixIcon" />,
               }}
               name="mobile"
               placeholder={f('login.phoneNumber.placeholder')}
@@ -119,12 +127,13 @@ const Login: React.FC<LoginProps> = (props) => {
             <ProFormCaptcha
               fieldProps={{
                 size: 'large',
-                prefix: <MailTwoTone className={styles.prefixIcon} />,
+                prefix: <MailTwoTone className="avx-user-panel-prefixIcon" />,
               }}
               captchaProps={{
                 size: 'large',
               }}
               placeholder={f('login.captcha.placeholder')}
+              countDown={captchaCountDown}
               captchaTextRender={(timing, count) => {
                 if (timing) {
                   return `${count} ${f('pages.getCaptchaSecondText')}`;
@@ -140,13 +149,16 @@ const Login: React.FC<LoginProps> = (props) => {
               ]}
               onGetCaptcha={async (mobile) => {
                 if (!onClickCaptcha) {
-                  message.error(f('login.captcha.required'));
-                  return;
+                  message.error(f('login.captcha.function.required'));
+
+                  throw Error(f('login.captcha.function.required'));
                 }
                 const result = await onClickCaptcha(mobile);
+
                 if (result === false) {
                   return;
                 }
+
                 message.success('获取验证码成功！');
               }}
             />

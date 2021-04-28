@@ -1,17 +1,26 @@
 import React from 'react';
 import type { FC } from 'react';
-import { IntlProvider } from './components';
-import { useI18n } from './hooks';
+import { IntlWrapper } from './components';
 import Login from './login';
 
-export interface UserPanelProps {}
+import type { LoginParamsType } from './type';
 
-const UserPanel: FC<UserPanelProps> = () => {
-  const { locale, messages } = useI18n();
+export interface UserPanelProps {
+  /**
+   * 获取校验码方法
+   */
+  onClickCaptcha: (mobile: string) => Promise<boolean>;
+  /**
+   * 登录方法
+   */
+  onLoginSubmit: (values: LoginParamsType) => Promise<void>;
+}
+
+const UserPanel: FC<UserPanelProps> = ({ onClickCaptcha, onLoginSubmit }) => {
   return (
-    <IntlProvider defaultLocale={'zh-CN'} locale={locale} messages={messages}>
-      <Login />
-    </IntlProvider>
+    <IntlWrapper>
+      <Login onClickCaptcha={onClickCaptcha} handleSubmit={onLoginSubmit} />
+    </IntlWrapper>
   );
 };
 
