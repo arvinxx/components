@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IntlWrapper, Header } from './components';
+import { IntlWrapper, Header, Footer } from './components';
 import Login from './login';
 import './style.less';
 
@@ -33,11 +33,13 @@ const UserPanel: FC<UserPanelProps> = ({
   logo,
   logoUrl,
 }) => {
+  const type = 'login';
   return (
     <IntlWrapper>
       <div className="avx-user-panel-container">
-        <Header type={'login'} logo={logo} url={logoUrl} />
+        <Header type={type} logo={logo} url={logoUrl} />
         <Login onClickCaptcha={onClickCaptcha} handleSubmit={onLoginSubmit} />
+        <Footer type={type} />
       </div>
     </IntlWrapper>
   );

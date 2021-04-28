@@ -19,6 +19,10 @@ export default {
   'login.rememberMe': '自动登录',
   'login.forgotPassword': '忘记密码 ?',
   'login.submit': '登录',
-  'login.loginWith': '其他登录方式 :',
+  'login.or': '或',
   'login.registerAccount': '注册账户',
+  'login.wechat-login.btn': '微信登录',
+  'login.wechat-login.function.error': '微信登录方法未实现，请检查代码！',
+  'login.no-account': '没有账号？',
+  'login.signup': '创建账户',
 };

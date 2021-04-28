@@ -1,3 +1,4 @@
-import pages from './zh-CN/login';
+import login from './zh-CN/login';
+import register from './zh-CN/register';
 
-export default pages;
+export default { ...login, ...register };
