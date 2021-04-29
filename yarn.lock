@@ -50,14 +50,14 @@
     classnames "^2.2.6"
     rc-util "^5.9.4"
 
-"@ant-design/pro-field@1.15.4":
-  version "1.15.4"
-  resolved "https://registry.nlark.com/@ant-design/pro-field/download/@ant-design/pro-field-1.15.4.tgz#6c39e59f926576605c199241ae76f72734e74e64"
-  integrity sha1-bDnln5JldmBcGZJBrnb3JzTnTmQ=
+"@ant-design/pro-field@1.15.5":
+  version "1.15.5"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-field/-/pro-field-1.15.5.tgz#b2361fc560295ee20e106aaa027d1deff252a84c"
+  integrity sha512-dYXPDFMI2w5vqBojcDzXz5PqPCgS0LLANFUxqUAi+MTj8KzhVoe4uDXuR7Z9SzyZU0OwYZ9DKdgCWq7DVYbJlg==
   dependencies:
     "@ant-design/icons" "^4.2.1"
-    "@ant-design/pro-provider" "1.4.11"
-    "@ant-design/pro-utils" "1.16.3"
+    "@ant-design/pro-provider" "1.4.12"
+    "@ant-design/pro-utils" "1.16.4"
     classnames "^2.2.6"
     lodash.tonumber "^4.0.3"
     moment "^2.27.0"
@@ -67,14 +67,14 @@
     swr "^0.3.6"
 
 "@ant-design/pro-form@^1.21.5":
-  version "1.21.5"
-  resolved "https://registry.nlark.com/@ant-design/pro-form/download/@ant-design/pro-form-1.21.5.tgz?cache=0&sync_timestamp=1619078347600&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40ant-design%2Fpro-form%2Fdownload%2F%40ant-design%2Fpro-form-1.21.5.tgz#37ee5acdd85f681c8fe6572b72710bbc4c43a5a4"
-  integrity sha1-N+5azdhfaByP5lcrcnELvExDpaQ=
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-form/-/pro-form-1.22.0.tgz#cffd51e46e13c0828de5658fc8e6d7542dff7864"
+  integrity sha512-i6tkEw0KMvj4CdJ6K2D/RWEuxlM57sUSaG0zqn3Yx9eNSBEBvc1ZLR4/EN0Y1oA5a2MGj2X1Bf0KEL26F/hfZQ==
   dependencies:
     "@ant-design/icons" "^4.2.1"
-    "@ant-design/pro-field" "1.15.4"
-    "@ant-design/pro-provider" "1.4.11"
-    "@ant-design/pro-utils" "1.16.3"
+    "@ant-design/pro-field" "1.15.5"
+    "@ant-design/pro-provider" "1.4.12"
+    "@ant-design/pro-utils" "1.16.4"
     "@umijs/use-params" "^1.0.2"
     classnames "^2.2.6"
     omit.js "^2.0.2"
@@ -82,10 +82,10 @@
     rc-util "^5.0.6"
     use-media-antd-query "^1.0.6"
 
-"@ant-design/pro-provider@1.4.11":
-  version "1.4.11"
-  resolved "https://registry.nlark.com/@ant-design/pro-provider/download/@ant-design/pro-provider-1.4.11.tgz?cache=0&sync_timestamp=1618820677144&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40ant-design%2Fpro-provider%2Fdownload%2F%40ant-design%2Fpro-provider-1.4.11.tgz#97b544925494c522f1558ac6c3931ccf4a8a59a1"
-  integrity sha1-l7VEklSUxSLxVYrGw5Mcz0qKWaE=
+"@ant-design/pro-provider@1.4.12":
+  version "1.4.12"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-provider/-/pro-provider-1.4.12.tgz#392aab9253ee805a33c9b3eb3d078bc5bcabfb7d"
+  integrity sha512-KgdM8H1zQHKFrcWWLVCOU85PhbuyLvedhj6RX3iEtyHQsYrcP8vDNuxzzVW5o5Isqxrz4VxHG9kL0DdIKDp2Ng==
   dependencies:
     rc-util "^5.0.1"
 
@@ -96,13 +96,13 @@
   dependencies:
     use-media-antd-query "^1.0.6"
 
-"@ant-design/pro-utils@1.16.3":
-  version "1.16.3"
-  resolved "https://registry.nlark.com/@ant-design/pro-utils/download/@ant-design/pro-utils-1.16.3.tgz#7e440a9b425f085c7ac95c9eb603396755fe885b"
-  integrity sha1-fkQKm0JfCFx6yVyetgM5Z1X+iFs=
+"@ant-design/pro-utils@1.16.4":
+  version "1.16.4"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.16.4.tgz#e18b960a5672828592a99cbc968de1ae6e5e9b13"
+  integrity sha512-Pf4QLJw8IY7tni6X7N9d9rDH9ZdSpsO7F3jNPrvh4ZkmFSrRnrsHsM8J6+62ZYsS//gVKtTQFvV99Lu/AcyOgg==
   dependencies:
     "@ant-design/icons" "^4.3.0"
-    "@ant-design/pro-provider" "1.4.11"
+    "@ant-design/pro-provider" "1.4.12"
     classnames "^2.2.6"
     fast-deep-equal "^3.1.3"
     moment "^2.27.0"
