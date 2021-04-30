@@ -67,9 +67,9 @@
     swr "^0.3.6"
 
 "@ant-design/pro-form@^1.21.5":
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-form/-/pro-form-1.22.0.tgz#cffd51e46e13c0828de5658fc8e6d7542dff7864"
-  integrity sha512-i6tkEw0KMvj4CdJ6K2D/RWEuxlM57sUSaG0zqn3Yx9eNSBEBvc1ZLR4/EN0Y1oA5a2MGj2X1Bf0KEL26F/hfZQ==
+  version "1.22.1"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-form/-/pro-form-1.22.1.tgz#8a4a734ebfae90737f0d1f1a768184d3bc6a0c7e"
+  integrity sha512-qBmav0q77g67ZR1qZtA5b6VtXD4/gF6nKaW/6gnQUbmml1gC9UbrzFU+zR4B/g4jnFOOqU8a00QAmq0OFgtwRg==
   dependencies:
     "@ant-design/icons" "^4.2.1"
     "@ant-design/pro-field" "1.15.5"
