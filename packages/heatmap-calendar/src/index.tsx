@@ -1,10 +1,93 @@
 import React from 'react';
 import type { FC } from 'react';
+import { Heatmap } from '@ant-design/charts';
+import type { HeatmapConfig } from '@ant-design/charts/es/heatmap';
+import type { HeatmapCalendarData } from './type';
 
-export interface HeatmapCalendarProps {}
+import { useDarkTheme } from './hooks';
+import { mapDataCountToLevel } from './utils';
+import { registerShape } from './shape';
 
-const HeatmapCalendar: FC<HeatmapCalendarProps> = () => {
-  return <div>HeatmapCalendar</div>;
+const colorMap = ['#eaecef', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+const colorMapDark = ['#161b22', '#003820', '#00602d', '#1d9d47', '#26d545'];
+
+export * from './type';
+
+export interface HeatmapCalendarProps {
+  data: HeatmapCalendarData;
+}
+
+const HeatmapCalendar: FC<HeatmapCalendarProps> = ({ data }) => {
+  const { theme } = useDarkTheme();
+  registerShape(theme);
+
+  const config: HeatmapConfig = {
+    data,
+    height: 112,
+    padding: [0, 0, 0, 20],
+    xField: 'week',
+    yField: 'day',
+    colorField: 'total',
+    color: (total) => {
+      const level = mapDataCountToLevel(Number(total));
+      return theme === 'light' ? colorMap[level] : colorMapDark[level];
+    },
+    reflect: 'y',
+    shape: 'boundary-polygon',
+    meta: {
+      day: {
+        type: 'cat',
+        values: ['日', '一', '二', '三', '四', '五', '六'],
+      },
+      week: { type: 'cat' },
+      total: { sync: true, alias: '修改文档' },
+      date: { type: 'cat' },
+    },
+    limitInPlot: true,
+    yAxis: { grid: null },
+    tooltip: {
+      title: 'date',
+      fields: ['total'],
+      showMarkers: false,
+    },
+    interactions: [{ type: 'element-active' }],
+    xAxis: {
+      position: 'top',
+      tickLine: null,
+      line: null,
+      label: {
+        offset: 12,
+        style: {
+          fontSize: 12,
+          fill: '#666',
+          textBaseline: 'top',
+        },
+        formatter: function formatter(val) {
+          if (val === '2') {
+            return 'MAY';
+          }
+          if (val === '6') {
+            return 'JUN';
+          }
+          if (val === '10') {
+            return 'JUL';
+          }
+          if (val === '15') {
+            return 'AUG';
+          }
+          if (val === '19') {
+            return 'SEP';
+          }
+          if (val === '24') {
+            return 'OCT';
+          }
+          return '';
+        },
+      },
+    },
+  };
+
+  return <Heatmap {...config} />;
 };
 
 export default HeatmapCalendar;
