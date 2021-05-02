@@ -14,10 +14,24 @@ const colorMapDark = ['#161b22', '#003820', '#00602d', '#1d9d47', '#26d545'];
 export * from './type';
 
 export interface HeatmapCalendarProps {
+  /**
+   * 数据
+   */
   data: HeatmapCalendarData;
+  /**
+   *  tooltip
+   */
+  tooltip:
+    | {
+        /**
+         * 显示文本
+         */
+        alias: string;
+      }
+    | boolean;
 }
 
-const HeatmapCalendar: FC<HeatmapCalendarProps> = ({ data }) => {
+const HeatmapCalendar: FC<HeatmapCalendarProps> = ({ data, tooltip }) => {
   const { theme } = useDarkTheme();
   registerShape(theme);
 
@@ -40,16 +54,22 @@ const HeatmapCalendar: FC<HeatmapCalendarProps> = ({ data }) => {
         values: ['日', '一', '二', '三', '四', '五', '六'],
       },
       week: { type: 'cat' },
-      total: { sync: true, alias: '修改文档' },
+      total: {
+        sync: true,
+        alias: typeof tooltip === 'object' ? tooltip.alias || '总数' : '总数',
+      },
       date: { type: 'cat' },
     },
     limitInPlot: true,
     yAxis: { grid: null },
-    tooltip: {
-      title: 'date',
-      fields: ['total'],
-      showMarkers: false,
-    },
+    tooltip:
+      typeof tooltip === 'boolean'
+        ? false
+        : {
+            title: 'date',
+            fields: ['total'],
+            showMarkers: false,
+          },
     interactions: [{ type: 'element-active' }],
     xAxis: {
       position: 'top',
