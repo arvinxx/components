@@ -21,7 +21,7 @@ export interface HeatmapCalendarProps {
   /**
    *  tooltip
    */
-  tooltip:
+  tooltip?:
     | {
         /**
          * 显示文本
@@ -56,7 +56,7 @@ const HeatmapCalendar: FC<HeatmapCalendarProps> = ({ data, tooltip }) => {
       week: { type: 'cat' },
       total: {
         sync: true,
-        alias: typeof tooltip === 'object' ? tooltip.alias || '总数' : '总数',
+        alias: typeof tooltip !== 'boolean' ? tooltip?.alias || '总数' : '总数',
       },
       date: { type: 'cat' },
     },

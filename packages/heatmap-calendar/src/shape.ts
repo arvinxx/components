@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import { G2 } from '@ant-design/charts';
 
 export const registerShape = (theme: string) => {
