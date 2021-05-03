@@ -25,4 +25,8 @@ describe('HeatmapCalendar', () => {
     );
     expect(container).toMatchSnapshot();
   });
+  it('没有tooltip', () => {
+    const { container } = render(<HeatmapCalendar data={[]} tooltip={false} />);
+    expect(container).toMatchSnapshot();
+  });
 });
