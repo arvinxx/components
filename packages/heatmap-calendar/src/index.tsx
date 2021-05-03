@@ -5,7 +5,7 @@ import type { HeatmapConfig } from '@ant-design/charts/es/heatmap';
 import type { HeatmapCalendarData } from './type';
 
 import { useDarkTheme } from './hooks';
-import { mapDataCountToLevel } from './utils';
+import { mapDataCountToLevel, mapToMonth } from './utils';
 import { registerShape } from './shape';
 
 const colorMap = ['#eaecef', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
@@ -82,27 +82,7 @@ const HeatmapCalendar: FC<HeatmapCalendarProps> = ({ data, tooltip }) => {
           fill: '#666',
           textBaseline: 'top',
         },
-        formatter: function formatter(val) {
-          if (val === '2') {
-            return 'MAY';
-          }
-          if (val === '6') {
-            return 'JUN';
-          }
-          if (val === '10') {
-            return 'JUL';
-          }
-          if (val === '15') {
-            return 'AUG';
-          }
-          if (val === '19') {
-            return 'SEP';
-          }
-          if (val === '24') {
-            return 'OCT';
-          }
-          return '';
-        },
+        formatter: (val) => mapToMonth(parseInt(val)),
       },
     },
   };
