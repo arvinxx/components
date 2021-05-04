@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InPort 默认 1`] = `
+<div>
+  <div
+    class="mind-port-in-port"
+    style="border-color: red;"
+  />
+</div>
+`;
