@@ -6832,19 +6832,20 @@ commander@^7.0.0:
   integrity sha512-pRxBna3MJe6HKnBGsDyMv8ETbptw3axEdYHoqNh7gu5oDcew8fs0xnivZGm06Ogk8zGAJ9VX+OPEr2GXEQK4dg==
 
 commitlint-config-gitmoji@^2.2.1:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.2.4.tgz#ad4d5937bf17685c90e017cc543824b6111dc1bf"
-  integrity sha512-GT+gUdTQHd7PXvC9cXJStv4EyYtWf0GSW3mEzlNRhDmfbuPA5bwlQTOA9aqQOUm5zkAqp6PhdUf7fD+8TR8QjQ==
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.2.5.tgz#a0de3b5d2adde5f31fcb38edb872811dc5992857"
+  integrity sha512-2Es3QtiOzrNHNuYsonNHodNZIub17+F0/ZukDlVz4FdrRZvYi1f5B1bTr23QPL1QmlhgYcXkNxLOQhegKqaA/g==
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
     "@gitmoji/parser-opts" "1.3.0"
-    commitlint-plugin-gitmoji "2.1.1"
+    commitlint-plugin-gitmoji "2.2.0"
 
-commitlint-plugin-gitmoji@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/commitlint-plugin-gitmoji/-/commitlint-plugin-gitmoji-2.1.1.tgz#975d1852de696d6534cf00ff85d6ce2faf8a6a61"
-  integrity sha512-QYqAcUVedM2dyRayF57eWHZGi7m1/HEOwof6r4O/kwXdcO4xd8WFmF1/EzVtSdzGWVyjjuNtkda+8OHCKbguGw==
+commitlint-plugin-gitmoji@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/commitlint-plugin-gitmoji/-/commitlint-plugin-gitmoji-2.2.0.tgz#e8fd35f1fd9f5790d7382d2d00bc90452ff24e56"
+  integrity sha512-njFLibrctUTeYjJYqiG9EOnCUcX/OvHCf96bArYBIbH7IEV6fylslVTt6pQcCvaMfOPUBj3f+a3g1eYchggZVw==
   dependencies:
+    dotenv "^8.2.0"
     emoji-name-map "^1.2.9"
 
 commitlint@^12.0.1:
@@ -8150,6 +8151,11 @@ dotenv@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npm.taobao.org/dotenv/download/dotenv-5.0.1.tgz#a5317459bd3d79ab88cff6e44057a6a3fbb1fcef"
   integrity sha1-pTF0Wb09eauIz/bkQFemo/ux/O8=
+
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
 dpdm@^3.5.0:
   version "3.6.0"
