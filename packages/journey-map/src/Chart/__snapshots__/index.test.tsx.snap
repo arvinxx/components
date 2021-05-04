@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chart 默认状态 1`] = `
+<div>
+  <div
+    class="avx-journey-map-chart"
+  >
+    <div
+      class="avx-journey-map-section"
+      style="height: 300px;"
+    >
+      <div
+        class="avx-journey-map-section-text"
+      >
+        体验情绪
+      </div>
+    </div>
+    <div
+      style="width: 100%; height: 300px;"
+    >
+      <div
+        data-chart-source-type="G2Plot"
+        size-sensor-id="1"
+        style="height: inherit;"
+      >
+        <div
+          style="position:relative;"
+        >
+          <canvas
+            height="400"
+            style="width: 400px; height: 400px; display: inline-block; vertical-align: middle;"
+            width="400"
+          />
+        </div>
+        <object
+          class="size-sensor-object"
+          data="about:blank"
+          style="display: block; position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -1; opacity: 0;"
+          tabindex="-1"
+          type="text/html"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

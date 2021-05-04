@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OverflowTitle x 轴 1`] = `
+<div>
+  <div
+    style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+  >
+    hello
+  </div>
+</div>
+`;
+
+exports[`OverflowTitle x 轴 overflow 1`] = `
+<div>
+  <div
+    style="width: 1px;"
+  >
+    <div
+      style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+    >
+      hello
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OverflowTitle y 轴 1`] = `
+<div>
+  <div
+    style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+  >
+    hello
+  </div>
+</div>
+`;
