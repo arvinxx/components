@@ -16,7 +16,7 @@ module.exports = {
       'import',
       {
         libraryName: '@ant-design/charts',
-        libraryDirectory: 'lib',
+        libraryDirectory: 'es',
       },
     ],
   ],
