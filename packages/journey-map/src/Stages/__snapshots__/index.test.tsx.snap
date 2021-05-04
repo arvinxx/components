@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Actions 默认状态 1`] = `
+<div>
+  <div
+    class="avx-journey-map-stage-container"
+    style="height: 48px;"
+  >
+    <div
+      class="avx-journey-map-section"
+      style="height: 48px;"
+    >
+      <div
+        class="avx-journey-map-section-text"
+      >
+        阶段
+      </div>
+    </div>
+    <div
+      class="avx-journey-map-stage-content"
+    >
+      <div
+        style="width: 50%; margin: 0px 0.5%;"
+      >
+        <div
+          class="avx-journey-map-stage-step"
+          style="background: rgb(230, 247, 255);"
+        >
+          <div
+            class="avx-journey-map-stage-step-text"
+            style="width: 28px;"
+          >
+            <div
+              style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+            >
+              1
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="width: 50%; margin: 0px 0.5%;"
+      >
+        <div
+          class="avx-journey-map-stage-step"
+          style="background: blue;"
+        >
+          <div
+            class="avx-journey-map-stage-step-text"
+            style="width: 28px;"
+          >
+            <div
+              style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+            >
+              2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
