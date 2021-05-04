@@ -25,7 +25,7 @@ const Actions: FC = () => {
     stages.forEach((stage) => {
       if (
         stage.color &&
-        actions[stage.name].findIndex((a) => a.name === name) > -1
+        actions[stage.id].findIndex((a) => a.name === name) > -1
       )
         color = stage.color;
     });
