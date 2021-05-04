@@ -31,7 +31,7 @@ exports[`HeatmapCalendar 没有tooltip 1`] = `
 <div>
   <div
     data-chart-source-type="G2Plot"
-    size-sensor-id="1"
+    size-sensor-id="3"
     style="height: inherit;"
   >
     <div
