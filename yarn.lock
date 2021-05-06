@@ -6831,7 +6831,7 @@ commander@^7.0.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.1.0.tgz#f2eaecf131f10e36e07d894698226e36ae0eb5ff"
   integrity sha512-pRxBna3MJe6HKnBGsDyMv8ETbptw3axEdYHoqNh7gu5oDcew8fs0xnivZGm06Ogk8zGAJ9VX+OPEr2GXEQK4dg==
 
-commitlint-config-gitmoji@^2.2.1:
+commitlint-config-gitmoji@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/commitlint-config-gitmoji/-/commitlint-config-gitmoji-2.2.5.tgz#a0de3b5d2adde5f31fcb38edb872811dc5992857"
   integrity sha512-2Es3QtiOzrNHNuYsonNHodNZIub17+F0/ZukDlVz4FdrRZvYi1f5B1bTr23QPL1QmlhgYcXkNxLOQhegKqaA/g==
@@ -8153,9 +8153,9 @@ dotenv@^5.0.1:
   integrity sha1-pTF0Wb09eauIz/bkQFemo/ux/O8=
 
 dotenv@^8.2.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
-  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.6.0.tgz#061af664d19f7f4d8fc6e4ff9b584ce237adcb8b"
+  integrity sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
 
 dpdm@^3.5.0:
   version "3.6.0"
