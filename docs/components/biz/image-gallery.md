@@ -1,9 +1,9 @@
 ---
-title: ImageGallery
+title: ImageGallery 图片画廊
 order: 2
 ---
 
-# ImageGallery
+# ImageGallery 图片画廊
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
