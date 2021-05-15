@@ -32,6 +32,8 @@
       "@arvinxu/user-panel/*": ["./packages/user-panel/src/*"],
       "@arvinxu/heatmap-calendar": ["./packages/heatmap-calendar/src"],
       "@arvinxu/heatmap-calendar/*": ["./packages/heatmap-calendar/src/*"],
+      "@arvinxu/utils": ["./packages/utils/src"],
+      "@arvinxu/utils/*": ["./packages/utils/src/*"],
       "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
       "@arvinxu/page-loading": ["./packages/page-loading/src"],
       "@arvinxu/mindflow": ["./packages/mindflow/src"],
