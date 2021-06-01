@@ -455,9 +455,9 @@
   integrity sha512-Bbc7pIu6Qg295X0WqumF4hLIiXlpUQY3quo8rysCSaHTmOE8RSbgUy4ETsfDZjPeLM7NiU5FSSOSSypcj74Z0g==
 
 "@antv/x6@^1.13.1":
-  version "1.21.5"
-  resolved "https://registry.yarnpkg.com/@antv/x6/-/x6-1.21.5.tgz#fef6b11d81f85f3c9825fd7cc74314abdc9cd309"
-  integrity sha512-GgGxpmVc6FgYYu4DXE6awLbJ41mzCxTyA0idl6ggYyso2C7nMXRVD/jBDMk4uy0NcS5lX4Qv+EPoqGfmMxnE0Q==
+  version "1.22.1"
+  resolved "https://registry.yarnpkg.com/@antv/x6/-/x6-1.22.1.tgz#f96b4254d857825aea952a991799acd517af9389"
+  integrity sha512-N6tAYHDsiItQSfVtEx4WVKQ0SdFHkbSN9tfYP4RppRPZcoJn/QJXIQ6zBMKTUUUsYTh5hYaCBSTa4aRPJ7iPyA==
   dependencies:
     csstype "^3.0.3"
     jquery "^3.5.1"
