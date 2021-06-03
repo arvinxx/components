@@ -4367,9 +4367,9 @@
     prettier "2.2.1"
 
 "@umijs/fabric@^2.2.2":
-  version "2.5.13"
-  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.5.13.tgz#1bc52ea505d9e067dd8eb7b7df7bbec01af6b362"
-  integrity sha512-zG5/B/2IxR/SqZhMdW8BrYxyCd366OudEuOkd5i4ktGGUv8XzljDilx3go3P1fGi2KECBXG0ELZvd6h9twFIXA==
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.6.2.tgz#5c862cd7a8cf624a2a5beb6150bad3e8f03f484d"
+  integrity sha512-4If9WSKcmD3wTvmFPz7Dej5I6PgtIIkGhrhQG4b3s9FY8Zl/0oiyC9DleJRLagKmOy9fQ1xAwVs9mRrgerZ/uw==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/eslint-parser" "^7.12.1"
@@ -6870,7 +6870,7 @@ comma-separated-tokens@^1.0.0:
   resolved "https://registry.npm.taobao.org/comma-separated-tokens/download/comma-separated-tokens-1.0.8.tgz#632b80b6117867a158f1080ad498b2fbe7e3f5ea"
   integrity sha1-YyuAthF4Z6FY8QgK1Jiy++fj9eo=
 
-commander@>=7.0.0:
+commander@>=7.0.0, commander@^7.0.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
   integrity sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==
@@ -6884,11 +6884,6 @@ commander@^6.1.0, commander@^6.2.0:
   version "6.2.1"
   resolved "https://registry.npm.taobao.org/commander/download/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha1-B5LraC37wyWZm7K4T93duhEKxzw=
-
-commander@^7.0.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-7.1.0.tgz#f2eaecf131f10e36e07d894698226e36ae0eb5ff"
-  integrity sha512-pRxBna3MJe6HKnBGsDyMv8ETbptw3axEdYHoqNh7gu5oDcew8fs0xnivZGm06Ogk8zGAJ9VX+OPEr2GXEQK4dg==
 
 commitlint-config-gitmoji@^2.2.5:
   version "2.2.5"
@@ -9874,9 +9869,9 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 gh-pages@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npm.taobao.org/gh-pages/download/gh-pages-3.1.0.tgz#ec3ed0f6a6e3fc3d888758fa018f08191c96bd55"
-  integrity sha1-7D7Q9qbj/D2Ih1j6AY8IGRyWvVU=
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gh-pages/-/gh-pages-3.2.0.tgz#ac5f9f03dae7622740ff39613ee2cfeacabc680b"
+  integrity sha512-VQTwyRtxoaId0YmDXdC/G854dojpwTuOdpZUL3PGG6WQZvSoGVD8ggedKARZltixIREMezoDywE+g3g2paLxPw==
   dependencies:
     async "^2.6.1"
     commander "^2.18.0"
