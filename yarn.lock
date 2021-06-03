@@ -17820,13 +17820,12 @@ redux-saga@^0.16.0:
   resolved "https://registry.npm.taobao.org/redux-saga/download/redux-saga-0.16.2.tgz#993662e86bc945d8509ac2b8daba3a8c615cc971"
   integrity sha1-mTZi6GvJRdhQmsK42ro6jGFcyXE=
 
-redux@^4.0.0, redux@^4.0.1, redux@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.npm.taobao.org/redux/download/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"
-  integrity sha1-TbXeWBbheJHeioDEJCMtBvBR2T8=
+redux@^4.0.0, redux@^4.0.1, redux@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.1.0.tgz#eb049679f2f523c379f1aff345c8612f294c88d4"
+  integrity sha512-uI2dQN43zqLWCt6B/BMGRMY6db7TTY4qeHHfGeKb3EOhmOKjU3KdWvNLJyqaHRksv/ErdNH7cFZWg9jXtewy4g==
   dependencies:
-    loose-envify "^1.4.0"
-    symbol-observable "^1.2.0"
+    "@babel/runtime" "^7.9.2"
 
 reflect-metadata@^0.1.13:
   version "0.1.13"
@@ -19452,11 +19451,11 @@ stealthy-require@^1.1.1:
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
 stook-devtools@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/stook-devtools/download/stook-devtools-1.0.0.tgz#378bda2a383d830e993c423d15fc15cd01559684"
-  integrity sha1-N4vaKjg9gw6ZPEI9FfwVzQFVloQ=
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/stook-devtools/-/stook-devtools-1.1.1.tgz#fbd22b0b0d4036f74dd1761c6ee633d13e41c6f4"
+  integrity sha512-V4eKrOFioxPagTWaqsnZIc8U6cn7QRwd4GeKjqrsoeNYEAsvHj7lzBQLxPDdhI5m7vMyvJPfg0v2tvxX7rCKlg==
   dependencies:
-    redux "^4.0.5"
+    redux "^4.1.0"
 
 stook@^1.0.0:
   version "1.0.0"
@@ -20068,11 +20067,6 @@ swr@^0.3.6:
   integrity sha1-9/UO0mwGr+pCSUgs7FBHaKInJmQ=
   dependencies:
     dequal "2.0.2"
-
-symbol-observable@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/symbol-observable/download/symbol-observable-1.2.0.tgz?cache=0&sync_timestamp=1604337940566&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsymbol-observable%2Fdownload%2Fsymbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
-  integrity sha1-wiaIrtTqs83C3+rLtWFmBWCgCAQ=
 
 symbol-tree@^3.2.2, symbol-tree@^3.2.4:
   version "3.2.4"
