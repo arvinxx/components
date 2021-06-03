@@ -4,9 +4,9 @@
 import React from 'react';
 import ImageGallery from '@arvinxu/image-gallery';
 
-import { images } from './data';
+import { yml } from './yml';
 
-const Demo = () => {
+const YAMLDemo = () => {
   return (
     <div
       style={{
@@ -14,9 +14,9 @@ const Demo = () => {
         padding: 24,
       }}
     >
-      <ImageGallery data={images} darkBackground={'black'} />
+      <ImageGallery data={yml} darkBackground={'black'} />
     </div>
   );
 };
 
-export default Demo;
+export default YAMLDemo;

@@ -6,6 +6,7 @@ import { copySVG, copyPngFromSvg, downloadSVG, downloadPng } from './utils';
 
 import './style.less';
 import type { ImageList } from './types';
+import { YMLToJSON } from './utils/yml';
 
 export * from './types';
 
@@ -13,7 +14,7 @@ export interface ImageGalleryProps {
   /**
    * 图片清单
    */
-  imageList: ImageList;
+  data: ImageList | string;
   /**
    * 暗色背景下默认的背景色
    * @default #1890ff
@@ -27,10 +28,12 @@ export interface ImageGalleryProps {
 }
 
 const ImageGallery: FC<ImageGalleryProps> = ({
-  imageList,
+  data,
   darkBackground,
   layout = 'masonry',
 }) => {
+  const imageList = typeof data === 'string' ? YMLToJSON(data).data : data;
+
   return (
     <div className={`avx-image-gallery-container avx-image-gallery-${layout}`}>
       {imageList.map((item, index) => {
