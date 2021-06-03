@@ -15,7 +15,6 @@
   },
   "scripts": {
     "build": "father-build",
-    "webpack": "webpack",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "yarn build",
