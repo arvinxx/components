@@ -1,5 +1,17 @@
 # Changelog
 
+# @arvinxu/image-gallery [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.1.1...@arvinxu/image-gallery@1.2.0) (2021-06-03)
+
+
+### ✨ 新特性
+
+* 支持复制 Png 为高清图片 ([799008a](https://github.com/arvinxx/components/commit/799008a))
+
+
+### 🎫 杂项
+
+* 优化橱窗代码 ([39e4596](https://github.com/arvinxx/components/commit/39e4596))
+
 ## @arvinxu/image-gallery [1.1.1](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.1.0...@arvinxu/image-gallery@1.1.1) (2021-04-27)
 
 
