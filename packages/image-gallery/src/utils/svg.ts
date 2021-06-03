@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 
-// import { copyToClipboard } from './clipboard';
-import { message } from 'antd';
+import { copySuccess } from './helper';
+import { copyToClipboard } from './clipboard';
 
 /**
  * 复制 SVG
@@ -9,23 +9,25 @@ import { message } from 'antd';
  */
 export const copySVG = async (url: string) => {
   const res = await fetch(url);
-  // const svgBlob = await res.text();
-  // console.log(svgBlob);
+  const svgBlob = await res.clone().blob();
   // 如果浏览器支持 navigator.clipboard 接口
   // 就使用 write 接口
-  // const isSuccess = await copyToClipboard('text/plain', new Blob([svgBlob], { type: 'text/plain' }));
+  const isSuccess = await copyToClipboard(
+    'text/plain',
+    new Blob([svgBlob], { type: 'text/plain' }),
+  );
 
-  // if (!isSuccess) {
-  const svgString = await res.text();
-  const input = document.createElement('input');
-  document.body.appendChild(input);
-  input.setAttribute('value', svgString);
-  input.select();
-  document.execCommand('copy');
-  document.body.removeChild(input);
-  // }
+  if (!isSuccess) {
+    const svgString = await res.text();
+    const input = document.createElement('input');
+    document.body.appendChild(input);
+    input.setAttribute('value', svgString);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+  }
 
-  message.success('🎉 复制成功!');
+  copySuccess();
 };
 
 /**
