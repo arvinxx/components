@@ -15,6 +15,35 @@
 
 ### 🎫 杂项
 
+* 调整配置项 ([b6ff3d2](https://github.com/arvinxx/components/commit/b6ff3d2))
+* **自动发布**: @arvinxu/image-gallery@2.0.0 [skip ci] ([e488a3c](https://github.com/arvinxx/components/commit/e488a3c))
+* 调整配置项 ([852df33](https://github.com/arvinxx/components/commit/852df33))
+
+
+### 📝 文档
+
+* 更新文档 ([3f26e6a](https://github.com/arvinxx/components/commit/3f26e6a))
+
+
+### 💥 BREAKING CHANGES
+
+* 调整 props imageList 成 data, 并支持传入字符串
+
+# @arvinxu/image-gallery [2.0.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.2.0...@arvinxu/image-gallery@2.0.0) (2021-06-04)
+
+
+### ✅ 测试
+
+* 修正测试 ([afeb797](https://github.com/arvinxx/components/commit/afeb797))
+
+
+### ✨ 新特性
+
+* 支持解析 YAML 语法 ([f74b0a2](https://github.com/arvinxx/components/commit/f74b0a2))
+
+
+### 🎫 杂项
+
 * 调整配置项 ([852df33](https://github.com/arvinxx/components/commit/852df33))
 
 
