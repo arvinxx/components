@@ -22,6 +22,18 @@ order: 4
 
 <code src='./examples/UserPanel/LoginWithLogo.tsx' />
 
+### 显示忘记密码
+
+填入 忘记密码所在 url 或者实现方法
+
+<code src='./examples/UserPanel/LoginWithForgotUrl.tsx' />
+
+### 显示底部
+
+如果需要显示微信登录按钮, 需要实现 `wechatLogin` 方法. 否则默认不显示
+
+<code src='./examples/UserPanel/LoginWithFooter.tsx' />
+
 <API src='../../../packages/user-panel/src/UserLogin.tsx'></API>
 
 ## 注册面板

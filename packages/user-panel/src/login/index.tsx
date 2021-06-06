@@ -17,13 +17,19 @@ import LoginMessage from './LoginMessage';
 import './index.less';
 import { useFormatMessage } from '../hooks';
 
-export type LoginProps = {
+export interface LoginProps {
   userLogin?: StateType;
+  /**
+   * 获取校验码方法
+   */
   onClickCaptcha?: (mobile: string) => Promise<boolean>;
   handleSubmit?: (values: LoginParamsType) => Promise<void>;
   captchaCountDown?: number;
+  /**
+   * 忘记密码 url
+   */
   forgotUrl?: string;
-};
+}
 
 const Login: React.FC<LoginProps> = (props) => {
   const {

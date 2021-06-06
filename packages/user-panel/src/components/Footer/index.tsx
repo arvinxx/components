@@ -10,7 +10,7 @@ import type { PanelContentType } from '../../type';
 import './style.less';
 
 const { Text } = Typography;
-interface FooterProps {
+export interface FooterProps {
   /**
    * 类型
    */
@@ -18,12 +18,29 @@ interface FooterProps {
   /**
    * 微信登录方法
    */
-  wechatLogin?;
+  wechatLogin?: () => void;
+
+  /**
+   * 注册页面 Url
+   */
+  registerUrl?: string;
 }
 
-const Footer: FC<FooterProps> = ({ type, wechatLogin }) => {
+const Footer: FC<FooterProps> = ({ type, wechatLogin, registerUrl }) => {
   const f = useFormatMessage();
 
+  const getButtonUrl = () => {
+    switch (type) {
+      case 'login':
+        return registerUrl;
+      case 'register':
+        break;
+      case 'forgot':
+        break;
+      default:
+        return '';
+    }
+  };
   return (
     <div className="avx-user-panel-footer">
       <Divider dashed className="avx-user-panel-footer-divider">
@@ -35,7 +52,7 @@ const Footer: FC<FooterProps> = ({ type, wechatLogin }) => {
           {f(type === 'login' ? 'login.no-account' : 'register.have-account')}
         </Text>
         <div className="avx-user-panel-footer-register">
-          <a href={`/user/${type === 'login' ? 'register' : 'login'}`}>
+          <a href={getButtonUrl()}>
             {f(type === 'login' ? 'login.signup' : 'register.sign-in')}
           </a>
         </div>

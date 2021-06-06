@@ -1,30 +1,14 @@
 import React from 'react';
 import type { FC } from 'react';
+import type { FooterProps, HeaderProps } from '../components';
 import { IntlWrapper, Header, Footer } from '../components';
 import './style.less';
-import type { PanelContentType } from '../type';
 
-export interface LayoutProps {
-  /**
-   * 微信登录方法
-   */
-  wechatLogin?: () => void;
-  /**
-   * logo 链接
-   */
-  logo?: string;
-  /**
-   * 点击 logo 跳转的 URL
-   */
-  logoUrl?: string;
+export interface LayoutProps extends FooterProps, HeaderProps {
   /**
    * 显示底部
    */
   showFooter?: boolean;
-  /**
-   * 内容类型
-   */
-  type: PanelContentType;
 }
 
 const Layout: FC<LayoutProps> = ({
@@ -34,13 +18,20 @@ const Layout: FC<LayoutProps> = ({
   children,
   showFooter,
   type,
+  registerUrl,
 }) => {
   return (
     <IntlWrapper>
       <div className="avx-user-panel-container">
-        <Header type={type} logo={logo} url={logoUrl} />
+        <Header type={type} logo={logo} logoUrl={logoUrl} />
         {children}
-        {showFooter ? <Footer type={type} wechatLogin={wechatLogin} /> : null}
+        {showFooter ? (
+          <Footer
+            type={type}
+            wechatLogin={wechatLogin}
+            registerUrl={registerUrl}
+          />
+        ) : null}
       </div>
     </IntlWrapper>
   );

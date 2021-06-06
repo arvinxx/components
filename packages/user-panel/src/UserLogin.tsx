@@ -2,14 +2,14 @@ import React from 'react';
 import type { FC } from 'react';
 import type { LayoutProps } from './layout';
 import type { LoginParamsType } from './type';
+import type { LoginProps } from './login';
+
 import Layout from './layout';
 import Login from './login';
 
-export interface UserLoginProps extends Omit<LayoutProps, 'type'> {
-  /**
-   * 获取校验码方法
-   */
-  onClickCaptcha?: (mobile: string) => Promise<boolean>;
+export interface UserLoginProps
+  extends Omit<LayoutProps, 'type'>,
+    Pick<LoginProps, 'onClickCaptcha' | 'forgotUrl'> {
   /**
    * 登录方法
    */
@@ -23,16 +23,23 @@ const UserLogin: FC<UserLoginProps> = ({
   logoUrl,
   wechatLogin,
   showFooter,
+  forgotUrl,
+  registerUrl,
 }) => {
   return (
     <Layout
       logoUrl={logoUrl}
       logo={logo}
       showFooter={showFooter}
+      registerUrl={registerUrl}
       wechatLogin={wechatLogin}
       type={'login'}
     >
-      <Login onClickCaptcha={onClickCaptcha} handleSubmit={onLoginSubmit} />
+      <Login
+        onClickCaptcha={onClickCaptcha}
+        handleSubmit={onLoginSubmit}
+        forgotUrl={forgotUrl}
+      />
     </Layout>
   );
 };
