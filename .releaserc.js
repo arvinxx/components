@@ -1,4 +1,7 @@
 module.exports = {
   extends: ['semantic-release-config-gitmoji'],
-  branches: [{ name: 'user-panel', prerelease: 'beta' }],
+  branches: [
+    'master',
+    { name: 'user-panel', channel: 'beta', prerelease: 'beta' },
+  ],
 };
