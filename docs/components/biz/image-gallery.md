@@ -12,7 +12,9 @@ order: 2
 [download-image]: https://img.shields.io/npm/dm/@arvinxu/image-gallery.svg
 [download-url]: https://github.com/arvinxx/components/tree/master/packages/image-gallery
 
-一个为了方便物料分发而制作的图片画廊组件
+资产中心组件之图片画廊
+
+[![Edit Design Assets Gallery](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/damp-haze-djpd7?fontsize=14&hidenavigation=1&theme=dark)
 
 ## 使用方式
 

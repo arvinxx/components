@@ -2,11 +2,15 @@
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
-一个为了方便物料分发而制作的图片画廊组件
+资产中心组件之图片画廊
+
+[![Edit Design Assets Gallery](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/damp-haze-djpd7?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Demo
 
-[演示 demo](https://components.arvinx.com/components/biz/image-gallery)
+![](https://gw.alipayobjects.com/zos/antfincdn/talNQl3AjT/2c7629a0-e4ee-42a5-ab6d-bbdaa6de29c1.png)
+
+[线上 demo](https://components.arvinx.com/components/biz/image-gallery#使用-yml)
 
 ## License
 
