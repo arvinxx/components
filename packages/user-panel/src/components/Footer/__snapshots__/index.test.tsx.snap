@@ -26,9 +26,7 @@ exports[`Footer 组件 登录页脚 1`] = `
       <div
         class="avx-user-panel-footer-register"
       >
-        <a
-          href="/user/register"
-        >
+        <a>
           创建账户
         </a>
       </div>

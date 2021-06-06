@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserPanel 默认状态 1`] = `
+exports[`UserPanel 登录面板 1`] = `
 <div>
   <div
     class="avx-user-panel-container"
