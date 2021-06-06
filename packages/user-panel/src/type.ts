@@ -13,6 +13,8 @@ export type LoginParamsType = {
   captcha: string;
 };
 
+export type PanelContentType = 'login' | 'register' | 'forgot';
+
 export type LocalesType = 'en-US' | 'zh-CN';
 export type LocaleMessages = typeof messages;
 export type LocaleKey = keyof LocaleMessages;

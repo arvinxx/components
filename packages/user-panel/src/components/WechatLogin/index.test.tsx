@@ -18,7 +18,7 @@ describe('WechatLogin 组件', () => {
     const fn = jest.fn();
     const { findByTestId } = render(
       <IntlWrapper>
-        <WechatLogin onClick={fn} />
+        <WechatLogin login={fn} />
       </IntlWrapper>,
     );
     const btn = await findByTestId('wechat-btn');

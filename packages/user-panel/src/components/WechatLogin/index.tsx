@@ -9,13 +9,13 @@ import './style.less';
 
 interface IWechatLoginProps {
   disabled?: boolean;
-  onClick?: () => void;
+  login?: () => void;
 }
-const WechatLogin: FC<IWechatLoginProps> = ({ onClick }) => {
+const WechatLogin: FC<IWechatLoginProps> = ({ login }) => {
   const f = useFormatMessage();
   const handleWeChatClick = () => {
-    if (onClick) {
-      onClick();
+    if (login) {
+      login();
     } else {
       const errorMsg = f('login.wechat-login.function.error');
 

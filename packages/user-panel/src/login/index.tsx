@@ -22,6 +22,7 @@ export type LoginProps = {
   onClickCaptcha?: (mobile: string) => Promise<boolean>;
   handleSubmit?: (values: LoginParamsType) => Promise<void>;
   captchaCountDown?: number;
+  forgotUrl?: string;
 };
 
 const Login: React.FC<LoginProps> = (props) => {
@@ -30,6 +31,7 @@ const Login: React.FC<LoginProps> = (props) => {
     onClickCaptcha,
     handleSubmit,
     captchaCountDown,
+    forgotUrl,
   } = props;
   const { status, type: loginType } = userLogin;
   const [type, setType] = useState<string>('account');
@@ -183,13 +185,16 @@ const Login: React.FC<LoginProps> = (props) => {
           <ProFormCheckbox noStyle name="autoLogin">
             {f('login.rememberMe')}
           </ProFormCheckbox>
-          <a
-            style={{
-              float: 'right',
-            }}
-          >
-            {f('login.forgotPassword')}
-          </a>
+          {forgotUrl ? (
+            <a
+              style={{
+                float: 'right',
+              }}
+              href={forgotUrl}
+            >
+              {f('login.forgotPassword')}
+            </a>
+          ) : null}
         </div>
       </ProForm>
     </div>
