@@ -5,7 +5,7 @@ import React from 'react';
 
 import UserPanel from '@arvinxu/user-panel';
 
-const Basic = () => {
+const Login = () => {
   return (
     <div
       style={{
@@ -15,9 +15,9 @@ const Basic = () => {
         padding: 24,
       }}
     >
-      <UserPanel />
+      <UserPanel.Login />
     </div>
   );
 };
 
-export default Basic;
+export default Login;

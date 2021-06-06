@@ -5,7 +5,7 @@ import React from 'react';
 
 import UserPanel from '@arvinxu/user-panel';
 
-const WithLogo = () => {
+const LoginWithLogo = () => {
   return (
     <div
       style={{
@@ -15,13 +15,13 @@ const WithLogo = () => {
         padding: 24,
       }}
     >
-      <UserPanel
+      <UserPanel.Login
         logo={
-          'https://gw.alipayobjects.com/zos/antfincdn/upvrAjAPQX/Logo_Tech%252520UI.svg'
+          'https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg'
         }
       />
     </div>
   );
 };
 
-export default WithLogo;
+export default LoginWithLogo;
