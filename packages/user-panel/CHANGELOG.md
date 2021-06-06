@@ -1,0 +1,46 @@
+# Changelog
+
+# @arvinxu/user-panel 1.0.0-beta.1 (2021-06-06)
+
+
+### ♻ 重构
+
+* 优化类名 ([c5d3149](https://github.com/arvinxx/components/commit/c5d3149))
+
+
+### ✅ 测试
+
+* 优化测试 ([bb67f27](https://github.com/arvinxx/components/commit/bb67f27))
+* 忽略不必要文件的覆盖率 ([b2e92fd](https://github.com/arvinxx/components/commit/b2e92fd))
+* 更新测试快照 ([f5390b5](https://github.com/arvinxx/components/commit/f5390b5))
+* 更新测试快照 ([2bc9567](https://github.com/arvinxx/components/commit/2bc9567))
+* 更新测试快照 ([f6d012f](https://github.com/arvinxx/components/commit/f6d012f))
+* 补充测试 ([4fb0732](https://github.com/arvinxx/components/commit/4fb0732))
+* 补充测试 ([bfa60e1](https://github.com/arvinxx/components/commit/bfa60e1))
+* 补充测试 ([6a009d9](https://github.com/arvinxx/components/commit/6a009d9))
+
+
+### ✨ 新特性
+
+* 从 ant design pro 迁移 ([0209bd5](https://github.com/arvinxx/components/commit/0209bd5))
+* 完成用户登录组件 Props 设计 ([11d0762](https://github.com/arvinxx/components/commit/11d0762))
+* 添加组件头部 logo 和标题 ([fde5195](https://github.com/arvinxx/components/commit/fde5195))
+* 添加获取验证码和登录 props ([ffcd57b](https://github.com/arvinxx/components/commit/ffcd57b))
+* 添加页脚元素 ([66ecc8a](https://github.com/arvinxx/components/commit/66ecc8a))
+
+
+### 🎫 杂项
+
+* 优化组件架构 ([0d19251](https://github.com/arvinxx/components/commit/0d19251))
+* 修正 lint ([ce90e46](https://github.com/arvinxx/components/commit/ce90e46))
+* 初始化 user panel 组件 ([a466d35](https://github.com/arvinxx/components/commit/a466d35))
+
+
+### 🐛 修复
+
+* 优化文案 ([944cab4](https://github.com/arvinxx/components/commit/944cab4))
+
+
+### 💄 样式
+
+* 优化容器样式 ([188154c](https://github.com/arvinxx/components/commit/188154c))
