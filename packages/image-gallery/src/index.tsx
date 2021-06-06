@@ -7,6 +7,7 @@ import { copySVG, copyPngFromSvg, downloadSVG, downloadPng } from './utils';
 import './style.less';
 import type { ImageList } from './types';
 import { YMLToJSON } from './utils/yml';
+import CopyButton from './CopyButton';
 
 export * from './types';
 
@@ -42,6 +43,18 @@ const ImageGallery: FC<ImageGalleryProps> = ({
         const backgroundColor =
           item.darkBackground || darkBackground || '#1890ff';
 
+        const actionList = [
+          {
+            onClick: () => copySVG(url),
+            tooltip: '复制为 SVG',
+            content: 'Svg',
+          },
+          {
+            onClick: () => copyPngFromSvg(url),
+            tooltip: '复制为 Png',
+            content: 'Png',
+          },
+        ];
         return (
           <div key={index} className="avx-image-gallery-item">
             <Card
@@ -63,29 +76,21 @@ const ImageGallery: FC<ImageGalleryProps> = ({
                 </div>
               }
               actions={[
-                <Button
-                  type={'link'}
-                  className="avx-image-gallery-link"
-                  onClick={() => copySVG(url)}
-                >
-                  SVG
-                </Button>,
-
-                <Button
-                  type={'link'}
-                  className="avx-image-gallery-link"
-                  onClick={() => copyPngFromSvg(url)}
-                >
-                  PNG
-                </Button>,
+                ...actionList.map((action) => (
+                  <CopyButton
+                    onClick={action.onClick}
+                    content={action.content}
+                    tooltip={action.tooltip}
+                  />
+                )),
                 <Dropdown
                   overlay={
                     <Menu>
                       <Menu.Item onClick={() => downloadPng(url, title)}>
-                        下载PNG
+                        下载Png
                       </Menu.Item>
                       <Menu.Item onClick={() => downloadSVG(url, title)}>
-                        下载SVG
+                        下载Svg
                       </Menu.Item>
                     </Menu>
                   }
