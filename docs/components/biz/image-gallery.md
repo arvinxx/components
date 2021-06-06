@@ -1,9 +1,9 @@
 ---
-title: ImageGallery
+title: ImageGallery 图片画廊
 order: 2
 ---
 
-# ImageGallery
+# ImageGallery 图片画廊
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
@@ -22,7 +22,15 @@ order: 2
 
 ## 演示
 
+### 使用 JSON
+
 组件库的 Logo 物料
 <code src='./examples/ImageGallery/Demo.tsx' />
+
+### 使用 YML
+
+`v2.0.0` 开始支持使用 YAML 语法
+
+<code src='./examples/ImageGallery/YAMLDemo.tsx' />
 
 <API src='../../../packages/image-gallery/src/index.tsx'></API>

@@ -14,7 +14,7 @@ const Demo = () => {
         padding: 24,
       }}
     >
-      <ImageGallery imageList={images} darkBackground={'black'} />
+      <ImageGallery data={images} darkBackground={'black'} />
     </div>
   );
 };

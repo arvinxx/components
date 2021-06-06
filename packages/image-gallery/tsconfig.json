@@ -11,7 +11,10 @@
     /* 模块导入配置项 */
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
-    "baseUrl": ".",
+    "baseUrl": "../..",
+    "paths": {
+      "@arvinxu/image-gallery": ["./packages/image-gallery/src"]
+    },
     "types": ["../../types", "@types/jest", "./types"]
   }
 }

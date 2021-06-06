@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Actions 默认状态 1`] = `
+<div>
+  <div
+    class="avx-journey-map-list-container"
+  >
+    <div
+      class="avx-journey-map-section"
+    >
+      <div
+        class="avx-journey-map-section-text"
+      >
+        痛点
+      </div>
+    </div>
+    <div
+      class="avx-journey-map-list-content"
+    >
+      <div
+        class="avx-journey-map-list-card"
+        style="width: 25%; margin-right: 25%; border-color: #bae7ff;"
+      >
+        <ul>
+          <li>
+            1
+          </li>
+          <li>
+            2
+          </li>
+        </ul>
+      </div>
+      <div
+        class="avx-journey-map-list-card"
+        style="width: 25%; margin-left: 25%; border-color: blue;"
+      >
+        <ul>
+          <li>
+            2-1
+          </li>
+          <li>
+            2-2
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,85 @@
 # Changelog
 
+## @arvinxu/image-gallery [2.0.1](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@2.0.0...@arvinxu/image-gallery@2.0.1) (2021-06-06)
+
+
+### 🐛 修复
+
+* 修正下载的 png 图片渲染问题 ([5b4779b](https://github.com/arvinxx/components/commit/5b4779b))
+
+
+### 💄 样式
+
+* 优化操作区样式 ([386fd29](https://github.com/arvinxx/components/commit/386fd29))
+
+
+### 🔧 持续集成
+
+* 修正 ci ([8090f0d](https://github.com/arvinxx/components/commit/8090f0d))
+
+# @arvinxu/image-gallery [2.0.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.2.0...@arvinxu/image-gallery@2.0.0) (2021-06-04)
+
+
+### ✅ 测试
+
+* 修正测试 ([afeb797](https://github.com/arvinxx/components/commit/afeb797))
+
+
+### ✨ 新特性
+
+* 支持解析 YAML 语法 ([f74b0a2](https://github.com/arvinxx/components/commit/f74b0a2))
+
+
+### 🎫 杂项
+
+* 调整配置项 ([b6ff3d2](https://github.com/arvinxx/components/commit/b6ff3d2))
+* **自动发布**: @arvinxu/image-gallery@2.0.0 [skip ci] ([e488a3c](https://github.com/arvinxx/components/commit/e488a3c))
+* 调整配置项 ([852df33](https://github.com/arvinxx/components/commit/852df33))
+
+
+### 📝 文档
+
+* 更新文档 ([3f26e6a](https://github.com/arvinxx/components/commit/3f26e6a))
+
+
+### 💥 BREAKING CHANGES
+
+* 调整 props imageList 成 data, 并支持传入字符串
+
+# @arvinxu/image-gallery [2.0.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.2.0...@arvinxu/image-gallery@2.0.0) (2021-06-04)
+
+
+### ✅ 测试
+
+* 修正测试 ([afeb797](https://github.com/arvinxx/components/commit/afeb797))
+
+
+### ✨ 新特性
+
+* 支持解析 YAML 语法 ([f74b0a2](https://github.com/arvinxx/components/commit/f74b0a2))
+
+
+### 🎫 杂项
+
+* 调整配置项 ([852df33](https://github.com/arvinxx/components/commit/852df33))
+
+
+### 💥 BREAKING CHANGES
+
+* 调整 props imageList 成 data, 并支持传入字符串
+
+# @arvinxu/image-gallery [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.1.1...@arvinxu/image-gallery@1.2.0) (2021-06-03)
+
+
+### ✨ 新特性
+
+* 支持复制 Png 为高清图片 ([799008a](https://github.com/arvinxx/components/commit/799008a))
+
+
+### 🎫 杂项
+
+* 优化橱窗代码 ([39e4596](https://github.com/arvinxx/components/commit/39e4596))
+
 ## @arvinxu/image-gallery [1.1.1](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.1.0...@arvinxu/image-gallery@1.1.1) (2021-04-27)
 
 

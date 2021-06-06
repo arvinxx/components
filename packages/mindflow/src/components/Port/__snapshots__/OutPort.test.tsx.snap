@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OutPort 默认 1`] = `
+<div>
+  <div
+    class="mind-port-out-port"
+  >
+    <div
+      class="mind-node-collapse"
+      data-testid="icon"
+      style="border-color: red; background: white;"
+    >
+      <div
+        class="mind-node-collapse-icon"
+        style="color: red;"
+      >
+        <span
+          aria-label="minus"
+          class="anticon anticon-minus"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="minus"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

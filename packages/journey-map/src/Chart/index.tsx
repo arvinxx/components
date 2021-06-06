@@ -92,7 +92,7 @@ const Chart: FC<ChartProps> = ({ color = blue[2] }) => {
     <div className="avx-journey-map-chart">
       <Section height={height}>体验情绪</Section>
       <div style={{ width: '100%', height }}>
-        <Area {...chartConfig} />
+        <Area {...chartConfig} data-testid="area" />
       </div>
     </div>
   );

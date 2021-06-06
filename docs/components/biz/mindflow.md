@@ -1,11 +1,11 @@
 ---
-title: Mindflow
+title: Mindflow 思流
 order: 1
 group:
   title: 业务组件
 ---
 
-# Mindflow
+# Mindflow 思流
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
@@ -29,7 +29,16 @@ Mindflow 是基于 [溯因推理][reason] 与 [图尔敏推论模型][toulmin] �
 
 ## 演示
 
-PS: 暂不支持多实例
+### 基本 Demo
+
 <code src='./examples/Mindflow/Demo.tsx' />
+
+### 博物馆案例
+
+<code src='./examples/Mindflow/Museum.tsx' />
+
+### 思维结构
+
+<code src='./examples/Mindflow/Thinking.tsx' />
 
 <API src='../../../packages/mindflow/src/index.tsx'></API>
