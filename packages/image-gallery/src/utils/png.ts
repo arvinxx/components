@@ -57,16 +57,17 @@ export const copyPngFromSvg = async (url: string) => {
  */
 export const downloadPng = async (url: string, title: string) => {
   const res = await fetch(url);
+  const size = svgSize(await res.clone().text());
   const svgBlob = await res.blob();
   const svgUrl = URL.createObjectURL(svgBlob);
 
-  const image = new Image();
+  const image = new Image(size.width * SCALE, size.height * SCALE);
   image.src = svgUrl;
 
   image.onload = () => {
     const a = document.createElement('a');
     a.download = `${title}.png`;
-    a.href = getImageBase64(image, SCALE);
+    a.href = getImageBase64(image);
     a.click();
   };
 };
