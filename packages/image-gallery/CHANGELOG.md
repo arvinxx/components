@@ -1,5 +1,22 @@
 # Changelog
 
+## @arvinxu/image-gallery [2.0.1](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@2.0.0...@arvinxu/image-gallery@2.0.1) (2021-06-06)
+
+
+### 🐛 修复
+
+* 修正下载的 png 图片渲染问题 ([5b4779b](https://github.com/arvinxx/components/commit/5b4779b))
+
+
+### 💄 样式
+
+* 优化操作区样式 ([386fd29](https://github.com/arvinxx/components/commit/386fd29))
+
+
+### 🔧 持续集成
+
+* 修正 ci ([8090f0d](https://github.com/arvinxx/components/commit/8090f0d))
+
 # @arvinxu/image-gallery [2.0.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@1.2.0...@arvinxu/image-gallery@2.0.0) (2021-06-04)
 
 
