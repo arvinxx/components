@@ -59,7 +59,7 @@ exports[`ImageGallery 加载数据 1`] = `
                 type="button"
               >
                 <span>
-                  SVG
+                  Svg
                 </span>
               </button>
             </span>
@@ -73,7 +73,7 @@ exports[`ImageGallery 加载数据 1`] = `
                 type="button"
               >
                 <span>
-                  PNG
+                  Png
                 </span>
               </button>
             </span>
@@ -166,7 +166,7 @@ exports[`ImageGallery 加载数据 1`] = `
                 type="button"
               >
                 <span>
-                  SVG
+                  Svg
                 </span>
               </button>
             </span>
@@ -180,7 +180,7 @@ exports[`ImageGallery 加载数据 1`] = `
                 type="button"
               >
                 <span>
-                  PNG
+                  Png
                 </span>
               </button>
             </span>
