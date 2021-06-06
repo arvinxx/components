@@ -304,11 +304,6 @@ exports[`Login 组件 获取验证码 1`] = `
             自动登录
           </span>
         </label>
-        <a
-          style="float: right;"
-        >
-          忘记密码 ?
-        </a>
       </div>
       <button
         class="ant-btn ant-btn-primary ant-btn-lg"
@@ -630,11 +625,6 @@ exports[`Login 组件 默认状态 1`] = `
             自动登录
           </span>
         </label>
-        <a
-          style="float: right;"
-        >
-          忘记密码 ?
-        </a>
       </div>
       <button
         class="ant-btn ant-btn-primary ant-btn-lg"
