@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/image-gallery [2.0.2](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@2.0.1...@arvinxu/image-gallery@2.0.2) (2021-06-06)
+
+
+### 👷 构建系统
+
+* 补充项目依赖 ([8b57e7e](https://github.com/arvinxx/components/commit/8b57e7e))
+
+
+### 📝 文档
+
+* 更新文档 ([0c0312e](https://github.com/arvinxx/components/commit/0c0312e))
+
 ## @arvinxu/image-gallery [2.0.1](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@2.0.0...@arvinxu/image-gallery@2.0.1) (2021-06-06)
 
 
