@@ -50,10 +50,10 @@
     classnames "^2.2.6"
     rc-util "^5.9.4"
 
-"@ant-design/pro-field@1.18.3":
-  version "1.18.3"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-field/-/pro-field-1.18.3.tgz#dea6461e38975cb53fda35cb73ccf8a50c414212"
-  integrity sha512-YoMC5pos/JdOxNxOKy8UsgVRWW5B6Q11lvlaIwviRuoTXZQqrokds8C+KFvrD0WVlEl/zLy9D3GNgTUreypYhw==
+"@ant-design/pro-field@1.18.4":
+  version "1.18.4"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-field/-/pro-field-1.18.4.tgz#1454e53c0dc049ca3b089f3cedba31a54081dd80"
+  integrity sha512-LyFnxK1gyeooTJk6+H3fxR/Oay1We1ikkX/e+PVmFndOjHtV/dvK0PUFXyoEDrZHgW3yMOrxsLpiVlW2JoX2JQ==
   dependencies:
     "@ant-design/icons" "^4.2.1"
     "@ant-design/pro-provider" "1.4.13"
@@ -67,12 +67,12 @@
     swr "^0.5.6"
 
 "@ant-design/pro-form@^1.21.5":
-  version "1.28.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-form/-/pro-form-1.28.0.tgz#79e33da584d17b280fa4dfbc4eb59c7b276ab296"
-  integrity sha512-GtmbPtLEM68+ER0GdK8nLncAxOFn3VlF/y/xYHFJUj3Gi2iwWWC1RhadawoR2U3DYhJfDeV+wiDpnh1874ZUAg==
+  version "1.28.1"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-form/-/pro-form-1.28.1.tgz#9ba8d9546f361a1b4f2ddc852870af2c16187d4e"
+  integrity sha512-Z7YkkW6WY1Ujxl9+E/qQdJ6upzS2lKoA1g/eHTNPolJN+cdnkYKBVH6RUBC1/WcW8YA91vqGEslP/IYv+1nItA==
   dependencies:
     "@ant-design/icons" "^4.2.1"
-    "@ant-design/pro-field" "1.18.3"
+    "@ant-design/pro-field" "1.18.4"
     "@ant-design/pro-provider" "1.4.13"
     "@ant-design/pro-utils" "1.19.0"
     "@umijs/use-params" "^1.0.2"
