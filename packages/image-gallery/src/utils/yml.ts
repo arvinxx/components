@@ -8,10 +8,10 @@ import type { ImageGalleryData, ImageGalleryYML, ImageEntry } from '../types';
  */
 export const YMLToJSON = (yml: string): ImageGalleryData => {
   try {
-    const { 素材列表 } = load(yml) as ImageGalleryYML;
+    const data = load(yml) as ImageGalleryYML;
 
     return {
-      data: 素材列表.map(
+      data: data.map(
         (item): ImageEntry => ({
           title: item.标题,
           description: item.描述,

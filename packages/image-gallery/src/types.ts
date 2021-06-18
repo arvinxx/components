@@ -43,6 +43,4 @@ export interface ImageEntryYML {
    */
   padding?: number | string;
 }
-export interface ImageGalleryYML {
-  素材列表: ImageEntryYML[];
-}
+export type ImageGalleryYML = ImageEntryYML[];
