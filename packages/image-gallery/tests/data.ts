@@ -1,6 +1,6 @@
-import type { ImageList } from '@arvinxu/image-gallery';
+import type { AssetList } from '@arvinxu/image-gallery';
 
-export const images: ImageList = [
+export const images: AssetList = [
   {
     title: '渐变色 Logo',
     description: '渐变色',

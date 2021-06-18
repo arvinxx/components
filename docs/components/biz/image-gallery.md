@@ -22,7 +22,7 @@ order: 2
 - `复制 PNG`：就可以直接复制出 Png 粘贴到 PPT、Keynote 当中；
 - `省略号`：可以分别点击下载将另存为 `svg` 或 `png` 文件。
 
-## 演示
+## 图片素材
 
 ### 使用 JSON
 
@@ -39,6 +39,12 @@ order: 2
 
 图片源为 Png
 
-<code src='./examples/ImageGallery/Png.tsx' />
+<code src='./examples/ImageGallery/PngDemo.tsx' />
+
+## Sketch 素材
+
+复制 Sketch 文件, 使用 [sketch-json](https://github.com/arvinxx/sketch-json) 粘贴到 sketch 中
+
+<code src='./examples/ImageGallery/Sketch.tsx' />
 
 <API src='../../../packages/image-gallery/src/index.tsx'></API>

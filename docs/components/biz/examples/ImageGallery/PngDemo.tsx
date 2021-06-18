@@ -6,7 +6,7 @@ import ImageGallery from '@arvinxu/image-gallery';
 
 import { yml } from './png';
 
-const Demo = () => {
+const PngDemo = () => {
   return (
     <div
       style={{
@@ -19,4 +19,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default PngDemo;

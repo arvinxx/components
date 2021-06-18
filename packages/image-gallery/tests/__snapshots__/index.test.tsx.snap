@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ImageGallery 加载数据 1`] = `
+exports[`AssetGallery 加载数据 1`] = `
 <div>
   <div
-    class="avx-image-gallery-container avx-image-gallery-masonry"
+    class="avx-asset-gallery-container avx-asset-gallery-masonry"
   >
     <div
-      class="avx-image-gallery-item"
+      class="avx-asset-gallery-item"
     >
       <div
         class="ant-card ant-card-bordered"
@@ -15,12 +15,12 @@ exports[`ImageGallery 加载数据 1`] = `
           class="ant-card-cover"
         >
           <div
-            class="avx-image-gallery-image-ctn"
+            class="avx-asset-gallery-image-ctn"
             style="border-bottom: 1px solid #f3f3f3;"
           >
             <img
               alt="渐变色 Logo"
-              class="avx-image-gallery-image"
+              class="avx-asset-gallery-image"
               src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
             />
           </div>
@@ -55,7 +55,7 @@ exports[`ImageGallery 加载数据 1`] = `
           >
             <span>
               <button
-                class="ant-btn ant-btn-link avx-image-gallery-link"
+                class="ant-btn ant-btn-link avx-asset-gallery-link"
                 type="button"
               >
                 <span>
@@ -69,7 +69,7 @@ exports[`ImageGallery 加载数据 1`] = `
           >
             <span>
               <button
-                class="ant-btn ant-btn-link avx-image-gallery-link"
+                class="ant-btn ant-btn-link avx-asset-gallery-link"
                 type="button"
               >
                 <span>
@@ -83,7 +83,7 @@ exports[`ImageGallery 加载数据 1`] = `
           >
             <span>
               <button
-                class="ant-btn ant-btn-link ant-dropdown-trigger avx-image-gallery-link"
+                class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
                 type="button"
               >
                 <span
@@ -112,7 +112,7 @@ exports[`ImageGallery 加载数据 1`] = `
       </div>
     </div>
     <div
-      class="avx-image-gallery-item"
+      class="avx-asset-gallery-item"
     >
       <div
         class="ant-card ant-card-bordered"
@@ -121,12 +121,12 @@ exports[`ImageGallery 加载数据 1`] = `
           class="ant-card-cover"
         >
           <div
-            class="avx-image-gallery-image-ctn"
+            class="avx-asset-gallery-image-ctn"
             style="background: black;"
           >
             <img
               alt="白色 Logo"
-              class="avx-image-gallery-image"
+              class="avx-asset-gallery-image"
               src="https://gw.alipayobjects.com/zos/antfincdn/5qY87lPw9U/white-logo.svg"
               style="padding: 12px;"
             />
@@ -162,7 +162,7 @@ exports[`ImageGallery 加载数据 1`] = `
           >
             <span>
               <button
-                class="ant-btn ant-btn-link avx-image-gallery-link"
+                class="ant-btn ant-btn-link avx-asset-gallery-link"
                 type="button"
               >
                 <span>
@@ -176,7 +176,7 @@ exports[`ImageGallery 加载数据 1`] = `
           >
             <span>
               <button
-                class="ant-btn ant-btn-link avx-image-gallery-link"
+                class="ant-btn ant-btn-link avx-asset-gallery-link"
                 type="button"
               >
                 <span>
@@ -190,7 +190,7 @@ exports[`ImageGallery 加载数据 1`] = `
           >
             <span>
               <button
-                class="ant-btn ant-btn-link ant-dropdown-trigger avx-image-gallery-link"
+                class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
                 type="button"
               >
                 <span
@@ -226,10 +226,10 @@ exports[`ImageGallery 加载数据 1`] = `
 </div>
 `;
 
-exports[`ImageGallery 默认状态 1`] = `
+exports[`AssetGallery 默认状态 1`] = `
 <div>
   <div
-    class="avx-image-gallery-container avx-image-gallery-masonry"
+    class="avx-asset-gallery-container avx-asset-gallery-masonry"
   >
     <canvas
       id="canvas"
