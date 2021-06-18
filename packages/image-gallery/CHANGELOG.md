@@ -1,5 +1,29 @@
 # Changelog
 
+# @arvinxu/image-gallery [3.0.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@2.0.2...@arvinxu/image-gallery@3.0.0) (2021-06-18)
+
+
+### ✅ 测试
+
+* 补充测试用例 ([08bff68](https://github.com/arvinxx/components/commit/08bff68))
+
+
+### ✨ 新特性
+
+* 支持 grid 布局 ([3b1a4b9](https://github.com/arvinxx/components/commit/3b1a4b9))
+* 支持 PNG 图片的复制 ([9b9c5cb](https://github.com/arvinxx/components/commit/9b9c5cb))
+* 支持复制 sketch 组件 ([99e562c](https://github.com/arvinxx/components/commit/99e562c))
+
+
+### 🎫 杂项
+
+* 优化类型接口定义 ([e7dc6ed](https://github.com/arvinxx/components/commit/e7dc6ed))
+
+
+### 💥 BREAKING CHANGES
+
+* 取消素材列表的接口
+
 ## @arvinxu/image-gallery [2.0.2](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@2.0.1...@arvinxu/image-gallery@2.0.2) (2021-06-06)
 
 
