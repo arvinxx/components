@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import React from 'react';
-import useMergeValue from 'use-merge-value';
+import React, { useState } from 'react';
+// import useMergeValue from 'use-merge-value';
 
 import Layout from './Layout';
 
@@ -45,11 +45,11 @@ const AssetGallery: FC<AssetGalleryProps> = ({
   data,
   darkBackground,
   layout = 'masonry',
-  grid = { columns: 1, showSlider: true },
+  grid = { showSlider: true },
 }) => {
-  const imageList = typeof data === 'string' ? YMLToJSON(data).data : data;
+  const [columns, setColumn] = useState(1);
 
-  const [columns, setColumn] = useMergeValue(grid.columns);
+  const imageList = typeof data === 'string' ? YMLToJSON(data).data : data;
 
   return (
     <Layout
