@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout 瀑布流布局 1`] = `
+<div>
+  <div
+    class="avx-image-gallery-container avx-image-gallery-masonry"
+  />
+</div>
+`;

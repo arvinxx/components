@@ -1,6 +1,6 @@
-import type { ImageList } from '@arvinxu/image-gallery';
+import type { AssetList } from '@arvinxu/image-gallery';
 
-export const images: ImageList = [
+export const images: AssetList = [
   {
     title: '渐变色 Logo',
     description: '渐变色',
@@ -15,3 +15,13 @@ export const images: ImageList = [
     url: 'https://gw.alipayobjects.com/zos/antfincdn/5qY87lPw9U/white-logo.svg',
   },
 ];
+
+export const pngYML = `
+- 标题: 渐变色 Logo
+  描述: 渐变色
+  链接: https://gw.alipayobjects.com/zos/antfincdn/OuMB9liYZV/tupian%2525201.png
+
+- 标题: 黑色 Logo
+  描述: 亮色背景下使用
+  链接: https://gw.alipayobjects.com/zos/antfincdn/5vmPNr6Qqz/tupian%2525202.png
+`;

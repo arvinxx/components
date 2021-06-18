@@ -3,7 +3,6 @@ import { YMLToJSON } from './yml';
 describe('YML 数据转换', () => {
   it('正常转换', () => {
     const yml = `
-素材列表:
 - 标题: 渐变色 Logo
   描述: 渐变色
   链接: https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg
@@ -39,23 +38,27 @@ describe('YML 数据转换', () => {
         {
           description: '渐变色',
           title: '渐变色 Logo',
-          url: 'https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg',
+          url:
+            'https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg',
         },
         {
           description: '亮色背景下使用',
           title: '黑色 Logo',
-          url: 'https://gw.alipayobjects.com/zos/antfincdn/FEuGy%26pKf2/black-logo.svg',
+          url:
+            'https://gw.alipayobjects.com/zos/antfincdn/FEuGy%26pKf2/black-logo.svg',
         },
         {
           description: '亮色背景下使用',
           title: '黑色方形 Logo',
-          url: 'https://gw.alipayobjects.com/zos/antfincdn/iCZHoHFqZM/squre-black.svg',
+          url:
+            'https://gw.alipayobjects.com/zos/antfincdn/iCZHoHFqZM/squre-black.svg',
         },
         {
           dark: true,
           description: '亮色背景下使用',
           title: '白色方形 Logo',
-          url: 'https://gw.alipayobjects.com/zos/antfincdn/9IE%24pNh%26d3/squre-white.svg',
+          url:
+            'https://gw.alipayobjects.com/zos/antfincdn/9IE%24pNh%26d3/squre-white.svg',
         },
         {
           dark: true,
@@ -63,19 +66,22 @@ describe('YML 数据转换', () => {
           description: '暗色背景下使用',
           padding: 12,
           title: '白色 Logo',
-          url: 'https://gw.alipayobjects.com/zos/antfincdn/5qY87lPw9U/white-logo.svg',
+          url:
+            'https://gw.alipayobjects.com/zos/antfincdn/5qY87lPw9U/white-logo.svg',
         },
         {
           dark: true,
           darkBackground: '#1fadd3',
           description: '暗色背景下使用',
           title: '白色 Logo',
-          url: 'https://gw.alipayobjects.com/zos/antfincdn/3vXiuFe18O/black-white.svg',
+          url:
+            'https://gw.alipayobjects.com/zos/antfincdn/3vXiuFe18O/black-white.svg',
         },
         {
           description: '亮色背景下使用',
           title: '黑色 Logo',
-          url: 'https://gw.alipayobjects.com/zos/antfincdn/fmXECsJXUY/light.svg',
+          url:
+            'https://gw.alipayobjects.com/zos/antfincdn/fmXECsJXUY/light.svg',
         },
       ],
     });

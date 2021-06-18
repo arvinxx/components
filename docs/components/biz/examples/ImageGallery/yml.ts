@@ -1,5 +1,4 @@
 export const yml = `
-素材列表:
 - 标题: 渐变色 Logo
   描述: 渐变色
   链接: https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg

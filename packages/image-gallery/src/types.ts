@@ -1,4 +1,4 @@
-export interface ImageEntry {
+export interface Asset {
   title: string;
   /**
    * 图片 url
@@ -16,12 +16,16 @@ export interface ImageEntry {
    * 允许添加间距
    */
   padding?: number | string;
+  /**
+   * 如果有 sketch
+   */
+  sketch?: string;
 }
 
-export type ImageList = ImageEntry[];
+export type AssetList = Asset[];
 
-export interface ImageGalleryData {
-  data: ImageList;
+export interface AssetGalleryData {
+  data: AssetList;
 }
 
 export interface ImageEntryYML {
@@ -42,7 +46,10 @@ export interface ImageEntryYML {
    * 允许添加间距
    */
   padding?: number | string;
+
+  /**
+   * sketch 数据
+   */
+  sketch?: string;
 }
-export interface ImageGalleryYML {
-  素材列表: ImageEntryYML[];
-}
+export type AssetGalleryYML = ImageEntryYML[];

@@ -1,24 +1,25 @@
 import { load } from 'js-yaml';
-import type { ImageGalleryData, ImageGalleryYML, ImageEntry } from '../types';
+import type { AssetGalleryData, AssetGalleryYML, Asset } from '../types';
 
 /**
  * YML 转 JSON
  * @param yml
  * @constructor
  */
-export const YMLToJSON = (yml: string): ImageGalleryData => {
+export const YMLToJSON = (yml: string): AssetGalleryData => {
   try {
-    const { 素材列表 } = load(yml) as ImageGalleryYML;
+    const data = load(yml) as AssetGalleryYML;
 
     return {
-      data: 素材列表.map(
-        (item): ImageEntry => ({
+      data: data.map(
+        (item): Asset => ({
           title: item.标题,
           description: item.描述,
           dark: item.反色,
           padding: item.padding,
           url: item.链接,
           darkBackground: item.反色背景色,
+          sketch: item.sketch,
         }),
       ),
     };
