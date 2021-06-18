@@ -18,8 +18,8 @@
     /* Alias 路径 */
     "baseUrl": ".",
     "paths": {
-      "@arvinxu/image-gallery": ["./packages/image-gallery/src"],
-      "@arvinxu/image-gallery/*": ["./packages/image-gallery/src/*"],
+      "@arvinxu/asset-gallery": ["./packages/asset-gallery/src"],
+      "@arvinxu/asset-gallery/*": ["./packages/asset-gallery/src/*"],
       "@arvinxu/preloader": ["./packages/preloader/src"],
       "@arvinxu/preloader/*": ["./packages/preloader/src/*"],
       "@arvinxu/macos-traffic-light": ["./packages/macos-traffic-light/src"],

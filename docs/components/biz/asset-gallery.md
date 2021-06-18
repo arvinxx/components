@@ -1,18 +1,18 @@
 ---
-title: ImageGallery 图片画廊
+title: AssetGallery 资产画廊
 order: 2
 ---
 
-# ImageGallery 图片画廊
+# AssetGallery 资产画廊
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
-[version-image]: http://img.shields.io/npm/v/@arvinxu/image-gallery.svg?color=deepgreen&label=latest
-[version-url]: http://npmjs.org/package/@arvinxu/image-gallery
-[download-image]: https://img.shields.io/npm/dm/@arvinxu/image-gallery.svg
-[download-url]: https://github.com/arvinxx/components/tree/master/packages/image-gallery
+[version-image]: http://img.shields.io/npm/v/@arvinxu/asset-gallery.svg?color=deepgreen&label=latest
+[version-url]: http://npmjs.org/package/@arvinxu/asset-gallery
+[download-image]: https://img.shields.io/npm/dm/@arvinxu/asset-gallery.svg
+[download-url]: https://github.com/arvinxx/components/tree/master/packages/asset-gallery
 
-资产中心组件之图片画廊
+资产橱窗
 
 [![Edit Design Assets Gallery](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/damp-haze-djpd7?fontsize=14&hidenavigation=1&theme=dark)
 
@@ -27,24 +27,24 @@ order: 2
 ### 使用 JSON
 
 组件库的 Logo 物料
-<code src='./examples/ImageGallery/Demo.tsx' />
+<code src='./examples/AssetGallery/Demo.tsx' />
 
 ### 使用 YML
 
 `v2.0.0` 开始支持使用 YAML 语法
 
-<code src='./examples/ImageGallery/YAMLDemo.tsx' />
+<code src='./examples/AssetGallery/YAMLDemo.tsx' />
 
 ### Png 图片
 
 图片源为 Png
 
-<code src='./examples/ImageGallery/PngDemo.tsx' />
+<code src='./examples/AssetGallery/PngDemo.tsx' />
 
 ## Sketch 素材
 
 复制 Sketch 文件, 使用 [sketch-json](https://github.com/arvinxx/sketch-json) 粘贴到 sketch 中
 
-<code src='./examples/ImageGallery/SketchDemo.tsx' />
+<code src='./examples/AssetGallery/SketchDemo.tsx' />
 
-<API src='../../../packages/image-gallery/src/index.tsx'></API>
+<API src='../../../packages/asset-gallery/src/index.tsx'></API>

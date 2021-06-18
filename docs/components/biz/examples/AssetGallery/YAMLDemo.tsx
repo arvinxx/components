@@ -2,7 +2,7 @@
  * compact: true
  */
 import React from 'react';
-import ImageGallery from '@arvinxu/image-gallery';
+import AssetGallery from '@arvinxu/asset-gallery';
 
 import { yml } from './yml';
 
@@ -14,7 +14,7 @@ const YAMLDemo = () => {
         padding: 24,
       }}
     >
-      <ImageGallery data={yml} darkBackground={'black'} />
+      <AssetGallery data={yml} darkBackground={'black'} />
     </div>
   );
 };

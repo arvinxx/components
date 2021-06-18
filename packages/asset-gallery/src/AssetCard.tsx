@@ -55,18 +55,18 @@ const AssetCard: FC<Asset> = ({
       ].filter((a) => a);
 
   return (
-    <div className="avx-image-gallery-item">
+    <div className="avx-asset-gallery-item">
       <Card
         cover={
           <div
-            className="avx-image-gallery-image-ctn"
+            className="avx-asset-gallery-image-ctn"
             style={{
               background: dark ? backgroundColor : undefined,
               borderBottom: dark ? undefined : '1px solid #f3f3f3',
             }}
           >
             <img
-              className="avx-image-gallery-image"
+              className="avx-asset-gallery-image"
               style={{ padding }}
               src={url}
               alt={title}
@@ -97,7 +97,7 @@ const AssetCard: FC<Asset> = ({
                 </Menu>
               }
             >
-              <Button type={'link'} className="avx-image-gallery-link">
+              <Button type={'link'} className="avx-asset-gallery-link">
                 <EllipsisOutlined key="ellipsis" />
               </Button>
             </Dropdown>

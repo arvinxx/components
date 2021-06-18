@@ -5,7 +5,7 @@ module.exports = {
   ...config,
   output: {
     ...config.output,
-    library: 'ImageGallery',
+    library: 'AssetGallery',
     path: path.resolve(__dirname, 'dist'),
   },
 };
