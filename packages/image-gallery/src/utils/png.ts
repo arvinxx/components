@@ -7,20 +7,7 @@ import { svgSize } from './svg-size';
 // 放大 8 倍
 const SCALE = 8;
 
-/**
- * 复制 Png 到剪切板
- * @param url
- */
-export const copyPngFromSvg = async (url: string) => {
-  const res = await fetch(url);
-  const size = svgSize(await res.clone().text());
-
-  const svgBlob = await res.blob();
-  const svgUrl = URL.createObjectURL(svgBlob);
-
-  const image = new Image(size.width * SCALE, size.height * SCALE);
-  image.src = svgUrl;
-
+const copyImage = (image: HTMLImageElement) => {
   image.onload = async () => {
     const result = await fetch(getImageBase64(image));
 
@@ -48,6 +35,38 @@ export const copyPngFromSvg = async (url: string) => {
 
     copySuccess();
   };
+};
+
+/**
+ * 复制 Png 到剪切板
+ * @param url
+ */
+export const copyPngFromSvg = async (url: string) => {
+  const res = await fetch(url);
+  const size = svgSize(await res.clone().text());
+
+  const svgBlob = await res.blob();
+  const svgUrl = URL.createObjectURL(svgBlob);
+
+  const image = new Image(size.width * SCALE, size.height * SCALE);
+  image.src = svgUrl;
+
+  copyImage(image);
+};
+
+/**
+ * 纯复制 png
+ * @param url
+ */
+export const copyPng = async (url: string) => {
+  const image = new Image();
+  const res = await fetch(url);
+
+  const blob = await res.blob();
+
+  image.src = URL.createObjectURL(blob);
+
+  copyImage(image);
 };
 
 /**

@@ -35,4 +35,10 @@ order: 2
 
 <code src='./examples/ImageGallery/YAMLDemo.tsx' />
 
+### Png 图片
+
+图片源为 Png
+
+<code src='./examples/ImageGallery/Png.tsx' />
+
 <API src='../../../packages/image-gallery/src/index.tsx'></API>

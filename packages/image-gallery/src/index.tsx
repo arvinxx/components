@@ -2,7 +2,14 @@ import type { FC } from 'react';
 import React from 'react';
 import { Button, Card, Dropdown, Menu } from 'antd';
 import { EllipsisOutlined } from '@ant-design/icons';
-import { copySVG, copyPngFromSvg, downloadSVG, downloadPng } from './utils';
+import {
+  copySVG,
+  copyPngFromSvg,
+  downloadSVG,
+  downloadPng,
+  checkSvg,
+  copyPng,
+} from './utils';
 
 import './style.less';
 import type { ImageList } from './types';
@@ -40,21 +47,25 @@ const ImageGallery: FC<ImageGalleryProps> = ({
       {imageList.map((item, index) => {
         const { padding, url, title } = item;
 
+        const isPng = !checkSvg(url);
         const backgroundColor =
           item.darkBackground || darkBackground || '#1890ff';
 
         const actionList = [
+          isPng
+            ? undefined
+            : {
+                onClick: () => copySVG(url),
+                tooltip: '复制为 SVG',
+                content: 'Svg',
+              },
           {
-            onClick: () => copySVG(url),
-            tooltip: '复制为 SVG',
-            content: 'Svg',
-          },
-          {
-            onClick: () => copyPngFromSvg(url),
+            onClick: () => (isPng ? copyPng(url) : copyPngFromSvg(url)),
             tooltip: '复制为 Png',
             content: 'Png',
           },
-        ];
+        ].filter((a) => a);
+
         return (
           <div key={index} className="avx-image-gallery-item">
             <Card
@@ -89,9 +100,11 @@ const ImageGallery: FC<ImageGalleryProps> = ({
                       <Menu.Item onClick={() => downloadPng(url, title)}>
                         下载Png
                       </Menu.Item>
-                      <Menu.Item onClick={() => downloadSVG(url, title)}>
-                        下载Svg
-                      </Menu.Item>
+                      {isPng ? null : (
+                        <Menu.Item onClick={() => downloadSVG(url, title)}>
+                          下载Svg
+                        </Menu.Item>
+                      )}
                     </Menu>
                   }
                 >
