@@ -1,5 +1,17 @@
 # Changelog
 
+# @arvinxu/asset-gallery 1.0.0 (2021-06-18)
+
+
+### 🎫 杂项
+
+* ImageGallery 重命名为 AssetGallery ([dd352a6](https://github.com/arvinxx/components/commit/dd352a6))
+
+
+### 🐛 修复
+
+* 移除 use-merge-value 以修正 hooks bug ([9e72f6a](https://github.com/arvinxx/components/commit/9e72f6a))
+
 # @arvinxu/image-gallery [3.0.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@2.0.2...@arvinxu/image-gallery@3.0.0) (2021-06-18)
 
 ### ✅ 测试
