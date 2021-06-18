@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssetCard Sketch 测试 1`] = `
+<div>
+  <div
+    class="avx-image-gallery-item"
+  >
+    <div
+      class="ant-card ant-card-bordered"
+    >
+      <div
+        class="ant-card-cover"
+      >
+        <div
+          class="avx-image-gallery-image-ctn"
+          style="border-bottom: 1px solid #f3f3f3;"
+        >
+          <img
+            alt="Sketch 测试"
+            class="avx-image-gallery-image"
+            src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
+          />
+        </div>
+      </div>
+      <div
+        class="ant-card-body"
+      >
+        <div
+          class="ant-card-meta"
+        >
+          <div
+            class="ant-card-meta-detail"
+          >
+            <div
+              class="ant-card-meta-title"
+            >
+              Sketch 测试
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="ant-card-actions"
+      >
+        <li
+          style="width: 100%;"
+        >
+          <span>
+            <button
+              class="ant-btn ant-btn-link avx-image-gallery-link"
+              type="button"
+            >
+              <span>
+                复制 Sketch 组件
+              </span>
+            </button>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AssetCard 图片 Png 1`] = `
+<div>
+  <div
+    class="avx-image-gallery-item"
+  >
+    <div
+      class="ant-card ant-card-bordered"
+    >
+      <div
+        class="ant-card-cover"
+      >
+        <div
+          class="avx-image-gallery-image-ctn"
+          style="border-bottom: 1px solid #f3f3f3;"
+        >
+          <img
+            alt="测试"
+            class="avx-image-gallery-image"
+            src="https://gw.alipayobjects.com/zos/antfincdn/G5sZluNGGA/25c4fe16-7d52-4b32-904e-3eccb4a1ff47.png"
+          />
+        </div>
+      </div>
+      <div
+        class="ant-card-body"
+      >
+        <div
+          class="ant-card-meta"
+        >
+          <div
+            class="ant-card-meta-detail"
+          >
+            <div
+              class="ant-card-meta-title"
+            >
+              测试
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="ant-card-actions"
+      >
+        <li
+          style="width: 50%;"
+        >
+          <span>
+            <button
+              class="ant-btn ant-btn-link avx-image-gallery-link"
+              type="button"
+            >
+              <span>
+                Png
+              </span>
+            </button>
+          </span>
+        </li>
+        <li
+          style="width: 50%;"
+        >
+          <span>
+            <button
+              class="ant-btn ant-btn-link ant-dropdown-trigger avx-image-gallery-link"
+              type="button"
+            >
+              <span
+                aria-label="ellipsis"
+                class="anticon anticon-ellipsis"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="ellipsis"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AssetCard 图片 Svg 1`] = `
+<div>
+  <div
+    class="avx-image-gallery-item"
+  >
+    <div
+      class="ant-card ant-card-bordered"
+    >
+      <div
+        class="ant-card-cover"
+      >
+        <div
+          class="avx-image-gallery-image-ctn"
+          style="border-bottom: 1px solid #f3f3f3;"
+        >
+          <img
+            alt="Svg 测试"
+            class="avx-image-gallery-image"
+            src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
+          />
+        </div>
+      </div>
+      <div
+        class="ant-card-body"
+      >
+        <div
+          class="ant-card-meta"
+        >
+          <div
+            class="ant-card-meta-detail"
+          >
+            <div
+              class="ant-card-meta-title"
+            >
+              Svg 测试
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="ant-card-actions"
+      >
+        <li
+          style="width: 33.333333333333336%;"
+        >
+          <span>
+            <button
+              class="ant-btn ant-btn-link avx-image-gallery-link"
+              type="button"
+            >
+              <span>
+                Svg
+              </span>
+            </button>
+          </span>
+        </li>
+        <li
+          style="width: 33.333333333333336%;"
+        >
+          <span>
+            <button
+              class="ant-btn ant-btn-link avx-image-gallery-link"
+              type="button"
+            >
+              <span>
+                Png
+              </span>
+            </button>
+          </span>
+        </li>
+        <li
+          style="width: 33.333333333333336%;"
+        >
+          <span>
+            <button
+              class="ant-btn ant-btn-link ant-dropdown-trigger avx-image-gallery-link"
+              type="button"
+            >
+              <span
+                aria-label="ellipsis"
+                class="anticon anticon-ellipsis"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="ellipsis"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

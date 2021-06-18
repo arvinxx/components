@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import AssetGallery from '@arvinxu/asset-gallery';
+import AssetGallery from '@arvinxu/image-gallery';
 
 import { images, pngYML } from './data';
 

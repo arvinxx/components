@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import copy from 'copy-to-clipboard';
 import { copySuccess } from './helper';
 
