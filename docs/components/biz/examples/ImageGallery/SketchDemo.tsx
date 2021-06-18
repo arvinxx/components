@@ -6,7 +6,7 @@ import AssetGallery from '@arvinxu/image-gallery';
 
 import { sketch } from './sketch';
 
-const Sketch = () => {
+const SketchDemo = () => {
   return (
     <div
       style={{
@@ -14,9 +14,9 @@ const Sketch = () => {
         padding: 24,
       }}
     >
-      <AssetGallery data={sketch} darkBackground={'black'} />
+      <AssetGallery data={sketch} darkBackground={'black'} layout={'grid'} />
     </div>
   );
 };
 
-export default Sketch;
+export default SketchDemo;

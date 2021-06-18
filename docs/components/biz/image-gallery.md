@@ -45,6 +45,6 @@ order: 2
 
 复制 Sketch 文件, 使用 [sketch-json](https://github.com/arvinxx/sketch-json) 粘贴到 sketch 中
 
-<code src='./examples/ImageGallery/Sketch.tsx' />
+<code src='./examples/ImageGallery/SketchDemo.tsx' />
 
 <API src='../../../packages/image-gallery/src/index.tsx'></API>

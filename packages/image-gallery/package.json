@@ -24,8 +24,13 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
+    "@bedrock-layout/columns": "^2.1.11",
+    "@bedrock-layout/inline": "^2.0.15",
+    "@bedrock-layout/masonry-grid": "^2.0.14",
     "antd": "^4.14.0",
     "copy-to-clipboard": "^3.3.1",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "styled-components": "^5.3.0",
+    "use-merge-value": "^1.0.2"
   }
 }

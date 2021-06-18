@@ -14,12 +14,10 @@ import {
 import './style.less';
 
 import CopyButton from './CopyButton';
-import { Asset } from './types';
+import type { Asset } from './types';
 import { copySketch } from './utils/sketch';
 
 export * from './types';
-
-export interface AssetGalleryProps extends Asset {}
 
 const AssetCard: FC<Asset> = ({
   padding,
@@ -38,7 +36,7 @@ const AssetCard: FC<Asset> = ({
     ? [
         {
           onClick: () => copySketch(sketch),
-          content: '复制为 Sketch 组件',
+          content: '复制 Sketch 组件',
         },
       ]
     : [
