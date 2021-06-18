@@ -1,4 +1,4 @@
-# @arvinxu/image-gallery
+# @arvinxu/asset-gallery
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
@@ -10,7 +10,7 @@
 
 ![](https://gw.alipayobjects.com/zos/antfincdn/talNQl3AjT/2c7629a0-e4ee-42a5-ab6d-bbdaa6de29c1.png)
 
-[线上 demo](https://components.arvinx.com/components/biz/image-gallery#使用-yml)
+[线上 demo](https://components.arvinx.com/components/biz/asset-gallery#使用-yml)
 
 ## License
 
@@ -18,7 +18,7 @@
 
 <!-- npm url -->
 
-[version-image]: http://img.shields.io/npm/v/@arvinxu/image-gallery.svg?color=deepgreen&label=latest
-[version-url]: http://npmjs.org/package/@arvinxu/image-gallery
-[download-image]: https://img.shields.io/npm/dm/@arvinxu/image-gallery.svg
-[download-url]: https://npmjs.org/package/@arvinxu/image-gallery
+[version-image]: http://img.shields.io/npm/v/@arvinxu/asset-gallery.svg?color=deepgreen&label=latest
+[version-url]: http://npmjs.org/package/@arvinxu/asset-gallery
+[download-image]: https://img.shields.io/npm/dm/@arvinxu/asset-gallery.svg
+[download-url]: https://npmjs.org/package/@arvinxu/asset-gallery

@@ -35,7 +35,7 @@ const Layout: FC<LayoutProps> = ({ children, layout, grid }) => {
 
   if (layout === 'masonry')
     return (
-      <div className={'avx-image-gallery-container avx-image-gallery-masonry'}>
+      <div className={'avx-asset-gallery-container avx-asset-gallery-masonry'}>
         {children}
       </div>
     );

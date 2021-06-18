@@ -2,7 +2,7 @@
  * compact: true
  */
 import React from 'react';
-import AssetGallery from '@arvinxu/image-gallery';
+import AssetGallery from '@arvinxu/asset-gallery';
 
 import { sketch } from './sketch';
 

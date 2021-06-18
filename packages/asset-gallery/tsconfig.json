@@ -13,7 +13,7 @@
     "lib": ["ESNext", "DOM"],
     "baseUrl": "../..",
     "paths": {
-      "@arvinxu/image-gallery": ["./packages/image-gallery/src"]
+      "@arvinxu/asset-gallery": ["./packages/asset-gallery/src"]
     },
     "types": ["../../types", "@types/jest", "./types"]
   }

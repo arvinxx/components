@@ -1,4 +1,4 @@
-import type { AssetList } from '@arvinxu/image-gallery';
+import type { AssetList } from '@arvinxu/asset-gallery';
 
 export const images: AssetList = [
   {

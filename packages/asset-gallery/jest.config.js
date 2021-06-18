@@ -1,8 +1,8 @@
 const base = require('../../jest.config.base');
 
-const packageName = '@arvinxu/image-gallery';
+const packageName = '@arvinxu/asset-gallery';
 
-const root = '<rootDir>/packages/image-gallery';
+const root = '<rootDir>/packages/asset-gallery';
 
 module.exports = {
   ...base,

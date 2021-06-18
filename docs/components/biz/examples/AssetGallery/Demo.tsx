@@ -2,7 +2,7 @@
  * compact: true
  */
 import React from 'react';
-import ImageGallery from '@arvinxu/image-gallery';
+import AssetGallery from '@arvinxu/asset-gallery';
 
 import { images } from './data';
 
@@ -14,7 +14,7 @@ const Demo = () => {
         padding: 24,
       }}
     >
-      <ImageGallery data={images} darkBackground={'black'} />
+      <AssetGallery data={images} darkBackground={'black'} />
     </div>
   );
 };

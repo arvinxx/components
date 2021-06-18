@@ -10,7 +10,7 @@ module.exports = {
   ...defaultConfig,
   setupFiles: [...defaultConfig.setupFiles],
   moduleNameMapper: {
-    '@arvinxu/image-gallery': '<rootDir>/packages/image-gallery/src',
+    '@arvinxu/asset-gallery': '<rootDir>/packages/asset-gallery/src',
     '@arvinxu/preloader': '<rootDir>/packages/preloader/src',
     '@arvinxu/macos-traffic-light':
       '<rootDir>/packages/macos-traffic-light/src',

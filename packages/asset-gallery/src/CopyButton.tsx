@@ -6,7 +6,7 @@ const CopyButton = ({ onClick, tooltip, content }) => {
     <Tooltip title={tooltip}>
       <Button
         type={'link'}
-        className="avx-image-gallery-link"
+        className="avx-asset-gallery-link"
         onClick={onClick}
       >
         {content}

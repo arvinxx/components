@@ -3,7 +3,7 @@
 exports[`AssetCard Sketch 测试 1`] = `
 <div>
   <div
-    class="avx-image-gallery-item"
+    class="avx-asset-gallery-item"
   >
     <div
       class="ant-card ant-card-bordered"
@@ -12,12 +12,12 @@ exports[`AssetCard Sketch 测试 1`] = `
         class="ant-card-cover"
       >
         <div
-          class="avx-image-gallery-image-ctn"
+          class="avx-asset-gallery-image-ctn"
           style="border-bottom: 1px solid #f3f3f3;"
         >
           <img
             alt="Sketch 测试"
-            class="avx-image-gallery-image"
+            class="avx-asset-gallery-image"
             src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
           />
         </div>
@@ -47,7 +47,7 @@ exports[`AssetCard Sketch 测试 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link avx-image-gallery-link"
+              class="ant-btn ant-btn-link avx-asset-gallery-link"
               type="button"
             >
               <span>
@@ -65,7 +65,7 @@ exports[`AssetCard Sketch 测试 1`] = `
 exports[`AssetCard 图片 Png 1`] = `
 <div>
   <div
-    class="avx-image-gallery-item"
+    class="avx-asset-gallery-item"
   >
     <div
       class="ant-card ant-card-bordered"
@@ -74,12 +74,12 @@ exports[`AssetCard 图片 Png 1`] = `
         class="ant-card-cover"
       >
         <div
-          class="avx-image-gallery-image-ctn"
+          class="avx-asset-gallery-image-ctn"
           style="border-bottom: 1px solid #f3f3f3;"
         >
           <img
             alt="测试"
-            class="avx-image-gallery-image"
+            class="avx-asset-gallery-image"
             src="https://gw.alipayobjects.com/zos/antfincdn/G5sZluNGGA/25c4fe16-7d52-4b32-904e-3eccb4a1ff47.png"
           />
         </div>
@@ -109,7 +109,7 @@ exports[`AssetCard 图片 Png 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link avx-image-gallery-link"
+              class="ant-btn ant-btn-link avx-asset-gallery-link"
               type="button"
             >
               <span>
@@ -123,7 +123,7 @@ exports[`AssetCard 图片 Png 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link ant-dropdown-trigger avx-image-gallery-link"
+              class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
               type="button"
             >
               <span
@@ -157,7 +157,7 @@ exports[`AssetCard 图片 Png 1`] = `
 exports[`AssetCard 图片 Svg 1`] = `
 <div>
   <div
-    class="avx-image-gallery-item"
+    class="avx-asset-gallery-item"
   >
     <div
       class="ant-card ant-card-bordered"
@@ -166,12 +166,12 @@ exports[`AssetCard 图片 Svg 1`] = `
         class="ant-card-cover"
       >
         <div
-          class="avx-image-gallery-image-ctn"
+          class="avx-asset-gallery-image-ctn"
           style="border-bottom: 1px solid #f3f3f3;"
         >
           <img
             alt="Svg 测试"
-            class="avx-image-gallery-image"
+            class="avx-asset-gallery-image"
             src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
           />
         </div>
@@ -201,7 +201,7 @@ exports[`AssetCard 图片 Svg 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link avx-image-gallery-link"
+              class="ant-btn ant-btn-link avx-asset-gallery-link"
               type="button"
             >
               <span>
@@ -215,7 +215,7 @@ exports[`AssetCard 图片 Svg 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link avx-image-gallery-link"
+              class="ant-btn ant-btn-link avx-asset-gallery-link"
               type="button"
             >
               <span>
@@ -229,7 +229,7 @@ exports[`AssetCard 图片 Svg 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link ant-dropdown-trigger avx-image-gallery-link"
+              class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
               type="button"
             >
               <span
