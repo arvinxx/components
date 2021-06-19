@@ -1,6 +1,15 @@
 export namespace IUserLogin {
   export type LoginType = 'account' | 'mobile';
 
+  export interface LoginStatus {
+    status?: 'ok' | 'error';
+    type?: LoginType;
+    /**
+     * 登录的用户类型
+     */
+    currentAuthority?: 'user' | 'guest';
+  }
+
   export interface AccountLoginParams {
     userName: string;
     password: string;

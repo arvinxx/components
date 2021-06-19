@@ -15,10 +15,10 @@ import LoginMessage from './LoginMessage';
 
 import './index.less';
 import { useFormatMessage } from '../hooks';
-import type { StateType, IUserLogin } from '../types';
+import type { IUserLogin } from '../types';
 
 export interface LoginProps {
-  userLogin?: StateType;
+  loginStatus?: IUserLogin.LoginStatus;
   /**
    * 获取校验码方法
    */
@@ -33,13 +33,13 @@ export interface LoginProps {
 
 const Login: React.FC<LoginProps> = (props) => {
   const {
-    userLogin = {},
+    loginStatus = {},
     onClickCaptcha,
     handleSubmit,
     captchaCountDown,
     forgotUrl,
   } = props;
-  const { status, type: loginType } = userLogin;
+  const { status, type: loginType } = loginStatus;
   const [type, setType] = useState<IUserLogin.LoginType>('account');
   const [submitting, setLoading] = useState(false);
 
