@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.2](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.1...@arvinxu/user-panel@1.0.0-beta.2) (2021-06-19)
+
+
+### 👷 构建系统
+
+* 修复构建报错的问题 ([d0cb034](https://github.com/arvinxx/components/commit/d0cb034))
+
 # @arvinxu/user-panel 1.0.0-beta.1 (2021-06-06)
 
 
