@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.5](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.4...@arvinxu/user-panel@1.0.0-beta.5) (2021-06-19)
+
+
+### ✨ 新特性
+
+* 优化类型 ([6be12c1](https://github.com/arvinxx/components/commit/6be12c1))
+
 # @arvinxu/user-panel [1.0.0-beta.4](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.3...@arvinxu/user-panel@1.0.0-beta.4) (2021-06-19)
 
 
