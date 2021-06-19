@@ -1,11 +1,11 @@
 import React from 'react';
 import type { FC } from 'react';
 import type { LayoutProps } from './layout';
-import type { LoginParamsType } from './type';
 import type { LoginProps } from './login';
 
 import Layout from './layout';
 import Login from './login';
+import type { IUserLogin } from './types';
 
 export interface UserLoginProps
   extends Omit<LayoutProps, 'type'>,
@@ -13,7 +13,7 @@ export interface UserLoginProps
   /**
    * 登录方法
    */
-  onLoginSubmit?: (values: LoginParamsType) => Promise<void>;
+  onLoginSubmit?: IUserLogin.LoginSubmit;
 }
 
 const UserLogin: FC<UserLoginProps> = ({

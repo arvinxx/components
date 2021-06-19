@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
 import type { PrimitiveType } from 'intl-messageformat';
-import type { LocaleKey, LocaleMessages, LocalesType } from '../type';
+import type { LocaleKey, LocaleMessages, LocalesType } from '../types';
 
 import zh from '../locales/zh-CN';
 

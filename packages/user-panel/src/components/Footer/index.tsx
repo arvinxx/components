@@ -5,7 +5,7 @@ import { Typography, Divider } from 'antd';
 import WechatLogin from '../WechatLogin';
 
 import { useFormatMessage } from '../../hooks';
-import type { PanelContentType } from '../../type';
+import type { PanelContentType } from '../../types';
 
 import './style.less';
 

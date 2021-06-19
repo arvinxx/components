@@ -9,3 +9,5 @@ export default UserPanel;
 export const Login = UserLogin;
 
 export { UserLoginProps as LoginProps } from './UserLogin';
+
+export { IUserLogin } from './types';

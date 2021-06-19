@@ -11,11 +11,11 @@ import ProForm, {
   ProFormCheckbox,
   ProFormText,
 } from '@ant-design/pro-form';
-import type { StateType, LoginParamsType } from '../type';
 import LoginMessage from './LoginMessage';
 
 import './index.less';
 import { useFormatMessage } from '../hooks';
+import type { StateType, IUserLogin } from '../types';
 
 export interface LoginProps {
   userLogin?: StateType;
@@ -23,7 +23,7 @@ export interface LoginProps {
    * 获取校验码方法
    */
   onClickCaptcha?: (mobile: string) => Promise<boolean>;
-  handleSubmit?: (values: LoginParamsType) => Promise<void>;
+  handleSubmit?: IUserLogin.LoginSubmit;
   captchaCountDown?: number;
   /**
    * 忘记密码 url
@@ -40,14 +40,14 @@ const Login: React.FC<LoginProps> = (props) => {
     forgotUrl,
   } = props;
   const { status, type: loginType } = userLogin;
-  const [type, setType] = useState<string>('account');
+  const [type, setType] = useState<IUserLogin.LoginType>('account');
   const [submitting, setLoading] = useState(false);
 
   const f = useFormatMessage();
 
   return (
     <div className="avx-user-panel-login-container">
-      <ProForm<LoginParamsType>
+      <ProForm<IUserLogin.LoginParams>
         initialValues={{
           autoLogin: true,
         }}
@@ -66,12 +66,16 @@ const Login: React.FC<LoginProps> = (props) => {
         }}
         onFinish={async (values) => {
           setLoading(true);
-          await handleSubmit(values);
+          await handleSubmit({ ...values, type });
           setLoading(false);
           return Promise.resolve();
         }}
       >
-        <Tabs activeKey={type} type={'card'} onChange={setType}>
+        <Tabs
+          activeKey={type}
+          type={'card'}
+          onChange={(e) => setType(e as IUserLogin.LoginType)}
+        >
           <Tabs.TabPane key="account" tab={f('login.accountLogin.tab')} />
           <Tabs.TabPane key="mobile" tab={f('login.phoneLogin.tab')} />
         </Tabs>

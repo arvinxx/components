@@ -3,7 +3,7 @@ import type { FC } from 'react';
 import { Typography } from 'antd';
 
 import { useFormatMessage } from '../../hooks';
-import type { LocaleKey, PanelContentType } from '../../type';
+import type { LocaleKey, PanelContentType } from '../../types';
 
 import './style.less';
 
