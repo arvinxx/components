@@ -1,5 +1,22 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.3](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.2...@arvinxu/user-panel@1.0.0-beta.3) (2021-06-19)
+
+
+### ✅ 测试
+
+* 补充测试 ([4b4ddd3](https://github.com/arvinxx/components/commit/4b4ddd3))
+
+
+### ✨ 新特性
+
+* 暴露 Login 组件和类型 ([114fcbe](https://github.com/arvinxx/components/commit/114fcbe))
+
+
+### 🎫 杂项
+
+* 尝试修正样式引入 bug ([1d768de](https://github.com/arvinxx/components/commit/1d768de))
+
 # @arvinxu/user-panel [1.0.0-beta.2](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.1...@arvinxu/user-panel@1.0.0-beta.2) (2021-06-19)
 
 
