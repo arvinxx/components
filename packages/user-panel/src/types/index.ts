@@ -6,4 +6,4 @@ export type LocalesType = 'en-US' | 'zh-CN';
 export type LocaleMessages = typeof messages;
 export type LocaleKey = keyof LocaleMessages;
 
-export * from './IUserLogin';
+export * as IUserLogin from './IUserLogin';
