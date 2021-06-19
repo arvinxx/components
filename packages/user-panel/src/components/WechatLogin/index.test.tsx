@@ -3,6 +3,7 @@ import { render, fireEvent } from '@testing-library/react';
 
 import WechatLogin from './index';
 import IntlWrapper from '../IntlWrapper';
+import { act } from '@testing-library/react-hooks';
 
 describe('WechatLogin 组件', () => {
   it('默认状态', () => {
@@ -26,17 +27,17 @@ describe('WechatLogin 组件', () => {
 
     expect(fn).toBeCalledTimes(1);
   });
-  // it('没有实现方法时报错', async () => {
-  //   const { findByTestId } = render(
-  //     <IntlWrapper>
-  //       <WechatLogin />
-  //     </IntlWrapper>,
-  //   );
-  //
-  //   const btn = await findByTestId('wechat-btn');
-  //
-  //   await act(async () => {
-  //     fireEvent.click(btn);
-  //   });
-  // });
+  it('没有实现方法时报错', async () => {
+    const { findByTestId } = render(
+      <IntlWrapper>
+        <WechatLogin />
+      </IntlWrapper>,
+    );
+
+    const btn = await findByTestId('wechat-btn');
+
+    await act(async () => {
+      fireEvent.click(btn);
+    });
+  });
 });

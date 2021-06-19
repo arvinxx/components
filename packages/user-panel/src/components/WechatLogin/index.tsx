@@ -20,7 +20,6 @@ const WechatLogin: FC<IWechatLoginProps> = ({ login }) => {
       const errorMsg = f('login.wechat-login.function.error');
 
       message.error(errorMsg);
-      throw Error(errorMsg);
     }
   };
 
