@@ -5,3 +5,7 @@ const UserPanel = {
 };
 
 export default UserPanel;
+
+export const Login = UserLogin;
+
+export { UserLoginProps as LoginProps } from './UserLogin';
