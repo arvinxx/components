@@ -1,0 +1,38 @@
+.avx-asset-gallery {
+  &-masonry {
+    column-count: 4;
+    column-gap: 0;
+
+    @media (max-width: 400px) {
+      column-count: 2;
+    }
+
+    @media (max-width: 1200px) {
+      column-count: 3;
+    }
+  }
+
+  &-item {
+    break-inside: avoid;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+  &-image {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    &-ctn {
+      padding: 24px;
+    }
+  }
+
+  &-link {
+    padding: 4px 0;
+    color: rgba(0, 0, 0, 0.45);
+  }
+
+  .ant-card-actions {
+    background: #fafafa;
+  }
+}

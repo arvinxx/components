@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    /* babel 输出类型 */
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "module": "ESNext",
+    /* 模块导入配置项 */
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "baseUrl": "../..",
+    "paths": {
+      "@arvinxu/asset-gallery": ["./packages/asset-gallery/src"]
+    },
+    "types": ["../../types", "@types/jest", "./types"]
+  }
+}

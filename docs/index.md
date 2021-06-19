@@ -75,12 +75,12 @@ footer: Open-source MIT Licensed | Copyright © 2021-present
 | 组件                                          | 版本                                                                     | 说明                                                     |
 | --------------------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------- |
 | [MindFlow](/components/biz/mindflow)          | [![NPM version][mindflow-version-image]][mindflow-version-url]           | 基于溯因推理与图尔敏推论模型为理论基础构建的思维推理组件 |
-| [ImageGallery](/components/biz/image-gallery) | [![NPM version][image-gallery-version-image]][image-gallery-version-url] | 方便物料分发的图片画廊组件                               |
+| [AssetGallery](/components/biz/asset-gallery) | [![NPM version][asset-gallery-version-image]][asset-gallery-version-url] | 方便物料分发的图片画廊组件                               |
 | [JourneyMap](/components/biz/journey-map)     | [![NPM version][journey-map-version-image]][journey-map-version-url]     | 用户旅程地图组件                                         |
 
 [mindflow-version-image]: http://img.shields.io/npm/v/@arvinxu/mindflow.svg?color=deepgreen&label=latest
 [mindflow-version-url]: http://npmjs.org/package/@arvinxu/mindflow
-[image-gallery-version-image]: http://img.shields.io/npm/v/@arvinxu/image-gallery.svg?color=deepgreen&label=latest
-[image-gallery-version-url]: http://npmjs.org/package/@arvinxu/image-gallery
+[asset-gallery-version-image]: http://img.shields.io/npm/v/@arvinxu/asset-gallery.svg?color=deepgreen&label=latest
+[asset-gallery-version-url]: http://npmjs.org/package/@arvinxu/asset-gallery
 [journey-map-version-image]: http://img.shields.io/npm/v/@arvinxu/journey-map.svg?color=deepgreen&label=latest
 [journey-map-version-url]: http://npmjs.org/package/@arvinxu/journey-map
