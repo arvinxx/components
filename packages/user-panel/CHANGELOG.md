@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.7](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.6...@arvinxu/user-panel@1.0.0-beta.7) (2021-06-19)
+
+
+### 🐛 修复
+
+* 尝试修正类型定义 ([ef96618](https://github.com/arvinxx/components/commit/ef96618))
+
 # @arvinxu/user-panel [1.0.0-beta.6](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.5...@arvinxu/user-panel@1.0.0-beta.6) (2021-06-19)
 
 
