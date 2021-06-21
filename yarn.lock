@@ -401,9 +401,9 @@
     "@antv/util" "^2.0.7"
 
 "@antv/layout@^0.1.12", "@antv/layout@^0.1.6":
-  version "0.1.14"
-  resolved "https://registry.yarnpkg.com/@antv/layout/-/layout-0.1.14.tgz#3a05c5e8e1682f1186cbbd121bddd4a8e1227b82"
-  integrity sha512-w4jGWybLWBn1F+ilPnZkMwUywTRIoYZXJknEdCbxmP3MBF81wQ6K9zeVjDCPgjFgGJOI0aNVz86JLooWQtPVLA==
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/@antv/layout/-/layout-0.1.15.tgz#42ba47bd66630958eab40b2ed3f01e0b06bc199c"
+  integrity sha512-ANoMsTHPFcVE4Q25fCH00y8/ybNWCQbDt+B9Q1Kb2fPyiGkMYbv7KkI7B1fI+hciRFsu8VDaDLCrNYlv29NIvQ==
   dependencies:
     "@antv/g-webgpu" "0.5.5"
     d3-force "^2.0.1"
