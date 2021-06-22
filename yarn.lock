@@ -453,9 +453,9 @@
     tslib "^2.0.3"
 
 "@antv/x6-react-shape@^1.3.1":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@antv/x6-react-shape/-/x6-react-shape-1.4.4.tgz#ec2215724f400c4cf35fb39ea54d6609c7037d83"
-  integrity sha512-BLinkAvAaEs1NPbrQI6wueMH+xoDWNwiuaKeeBIZwr5XxFV6R6TQWhRFyKEo9xDdiUxF9VIZ7bALcFgq+JUujQ==
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@antv/x6-react-shape/-/x6-react-shape-1.4.5.tgz#3a5f50d5e88397d7c4d68521cfc3d201d0b1b2a8"
+  integrity sha512-nI7KCnAUzrltOeQJf+OPkIFqKotyqjjmnOll8ceCDiWY3Gerj0BTeJxVw2W+QxugAhP8lrRfIHuZe5yTdNJBFQ==
 
 "@antv/x6@^1.13.1":
   version "1.24.2"
