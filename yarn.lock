@@ -11043,7 +11043,7 @@ immer@^7.0.5:
   resolved "https://registry.npm.taobao.org/immer/download/immer-7.0.15.tgz#dc3bc6db87401659d2e737c67a21b227c484a4ad"
   integrity sha1-3DvG24dAFlnS5zfGeiGyJ8SEpK0=
 
-immer@^9.0.1, immer@^9.0.2:
+immer@^9.0.1, immer@^9.0.3:
   version "9.0.3"
   resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.3.tgz#146e2ba8b84d4b1b15378143c2345559915097f4"
   integrity sha512-mONgeNSMuyjIe0lkQPa9YhdmTv8P19IeHV0biYhcXhbd5dhdB9HSK93zBpyKjp6wersSUgT5QyU0skmejUVP2A==
@@ -14326,10 +14326,10 @@ mississippi@^3.0.0:
     stream-each "^1.1.0"
     through2 "^2.0.0"
 
-mitt@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npm.taobao.org/mitt/download/mitt-2.1.0.tgz#f740577c23176c6205b121b2973514eade1b2230"
-  integrity sha1-90BXfCMXbGIFsSGylzUU6t4bIjA=
+mitt@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/mitt/-/mitt-3.0.0.tgz#69ef9bd5c80ff6f57473e8d89326d01c414be0bd"
+  integrity sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==
 
 mixin-deep@^1.2.0:
   version "1.3.2"
@@ -19938,12 +19938,12 @@ stook-devtools@^1.0.0:
     redux "^4.1.0"
 
 stook@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/stook/-/stook-1.1.1.tgz#71b1fe1e660f06a419aa9fa74a8f9c022435a4ab"
-  integrity sha512-ePTZyFxd/5HOzISGElQ/La8wiBqXGaAUsZnYJTLBvrDpV2p0OVmLNy3Uz3DVp0f/YIpC2td32u+MUmoCAmyl4Q==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/stook/-/stook-1.2.0.tgz#072aa27efe2e3f3777b90a32570ae8d8261d5fb9"
+  integrity sha512-kNt6eLrVadpBOtciN7vrVlPzgfyuEy81P/QGI3WGA/JKmRh6IfH52eX+eStM5f2allRUU7nFwaqsfQyO/5ojOQ==
   dependencies:
-    immer "^9.0.2"
-    mitt "^2.1.0"
+    immer "^9.0.3"
+    mitt "^3.0.0"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
