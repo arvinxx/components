@@ -19931,9 +19931,9 @@ stealthy-require@^1.1.1:
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
 stook-devtools@^1.0.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/stook-devtools/-/stook-devtools-1.2.0.tgz#1321383578e2506b332826f0e8e22b11256a9915"
-  integrity sha512-sOXxO2Gbe5XsdlhhSKCmz0Y9VFg9KDQnUQj8zND9OofjbUfVE5eSW9sbYEx7NnG/a8kqjbu/wKmX7uRqK1auCg==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/stook-devtools/-/stook-devtools-1.2.1.tgz#7a1b7a7652ce0c3ee760765f67a52d25784abcec"
+  integrity sha512-hf2eWYPZCn5wGRKpdlLUaIS2YHGwLN3mz1/nA6bhm1dQyce1BL9dgypAxxBzWtT/iPzBmbh0LYUzpHVipoMfNQ==
   dependencies:
     redux "^4.1.0"
 
