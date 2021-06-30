@@ -4654,12 +4654,12 @@
     "@ahooksjs/use-request" "^2.0.0"
     umi-request "^1.2.14"
 
-"@umijs/plugin-test@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-test/download/@umijs/plugin-test-1.0.0.tgz#6438ab9619395b6dd4ffb9e3f546c6564a31dd31"
-  integrity sha1-ZDirlhk5W23U/7nj9UbGVkox3TE=
+"@umijs/plugin-test@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-test/-/plugin-test-1.0.1.tgz#a2555d78086ccbe4c497ad600543430aee9c6c80"
+  integrity sha512-0BTq+mZdQgxNypOQA/NiT924rQHydUOUKNyY/nucwpBQ7Z4yNG8/gORiLnXYGgn8u9kUKrWud7b6FY/OGfsalw==
   dependencies:
-    "@umijs/test" "^3.0.7"
+    "@umijs/test" "~3.4.25"
 
 "@umijs/preset-built-in@3.4.25":
   version "3.4.25"
@@ -4733,9 +4733,9 @@
     unist-util-visit-parents "^3.0.1"
 
 "@umijs/preset-react@1.x":
-  version "1.8.13"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.13.tgz#cc9e68abc6ee7a111a74a99ce7154e5984797446"
-  integrity sha512-kgw5sNjCYV1rsX/Htxodg1zqTSgQ+aXf+m1ZlrP8zyDCUPKAPPsGlBI/QeNxYyTEPo/+IuT955t+GrJsXXpFLA==
+  version "1.8.14"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.14.tgz#fbe06c0f922463e7fa83b9582b3086157893bdd7"
+  integrity sha512-U96lKcVZOAE4VV8fW8RpHpfk0MqdsD2ga6J9w+TC3/Jee3cIKae/dyEYc6PuATeMOOgv+p6TzRqJGY6j9g0mIA==
   dependencies:
     "@umijs/plugin-access" "2.4.2"
     "@umijs/plugin-analytics" "0.2.2"
@@ -4748,7 +4748,7 @@
     "@umijs/plugin-locale" "0.13.0"
     "@umijs/plugin-model" "2.6.1"
     "@umijs/plugin-request" "2.6.0"
-    "@umijs/plugin-test" "1.0.0"
+    "@umijs/plugin-test" "1.0.1"
 
 "@umijs/renderer-mpa@3.4.25":
   version "3.4.25"
@@ -4800,7 +4800,7 @@
     "@umijs/deps" "3.4.25"
     "@umijs/utils" "3.4.25"
 
-"@umijs/test@^3.0.7", "@umijs/test@^3.2.10":
+"@umijs/test@^3.2.10", "@umijs/test@~3.4.25":
   version "3.4.25"
   resolved "https://registry.yarnpkg.com/@umijs/test/-/test-3.4.25.tgz#9df95dc25cecaee9f45cdb62a227634defb5ae87"
   integrity sha512-VfaQyvF3vkHkHROS3LYQjRvx3dwk1Lv56gfgDIHGCX2n2ARSGyaFTbXsv/QafrKENDTDp3FTcTIUG6oY6mHH2g==
