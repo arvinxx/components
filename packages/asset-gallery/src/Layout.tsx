@@ -1,24 +1,38 @@
-import type { FC } from 'react';
+import type { FC, ReactNode } from 'react';
 import React from 'react';
 import { Columns } from '@bedrock-layout/columns';
-import { Inline } from '@bedrock-layout/inline';
 import { Slider } from 'antd';
 
-interface LayoutProps {
+export interface LayoutProps {
   layout?: 'grid' | 'masonry';
   grid?: {
     columns?: number;
     setColumn?: (value: number) => void;
     showSlider?: boolean;
   };
+  logo?: ReactNode | string;
 }
 
-const Layout: FC<LayoutProps> = ({ children, layout, grid }) => {
+const Layout: FC<LayoutProps> = ({ children, layout, grid, logo }) => {
   if (layout === 'grid') {
     const { columns, setColumn } = grid;
     return (
       <div>
-        <Inline justify={'end'} style={{ paddingRight: 8 }}>
+        <div
+          style={{
+            padding: '0 8px',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}
+        >
+          <div>
+            {typeof logo === 'string' ? (
+              <img src={logo} width={40} alt="logo" />
+            ) : (
+              logo
+            )}
+          </div>
           <Slider
             style={{ width: 100 }}
             value={-columns}
@@ -27,7 +41,7 @@ const Layout: FC<LayoutProps> = ({ children, layout, grid }) => {
             max={-1}
             min={-4}
           />
-        </Inline>
+        </div>
         <Columns columns={columns}>{children}</Columns>
       </div>
     );
