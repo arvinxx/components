@@ -68,7 +68,6 @@ const Login: React.FC<LoginProps> = (props) => {
           setLoading(true);
           await handleSubmit({ ...values, type });
           setLoading(false);
-          return Promise.resolve();
         }}
       >
         <Tabs
