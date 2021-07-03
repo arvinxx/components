@@ -6,4 +6,5 @@ module.exports = {
   },
   cjs: 'babel',
   extraBabelPlugins: [['import', { libraryName: 'antd', style: true }]],
+  pkgs: ['@arvinxu/i18n'],
 };
