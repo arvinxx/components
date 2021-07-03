@@ -1,60 +1,62 @@
-/**
- * 登录方式
- */
-export type LoginType =
+export namespace IUserLogin {
   /**
-   * 账号密码登录
+   * 登录方式
    */
-  | 'account'
-  /**
-   * 手机验证码登录
-   */
-  | 'mobile';
+  export type LoginType =
+    /**
+     * 账号密码登录
+     */
+    | 'account'
+    /**
+     * 手机验证码登录
+     */
+    | 'mobile';
 
-export interface LoginStatus {
+  export interface LoginStatus {
+    /**
+     * 登录状态
+     */
+    status?: 'ok' | 'error';
+    /**
+     * 用户登录方式
+     */
+    type?: LoginType;
+    /**
+     * 登录的用户类型
+     */
+    currentAuthority?: 'user' | 'guest';
+  }
+
   /**
-   * 登录状态
+   * 账号登录参数
    */
-  status?: 'ok' | 'error';
+  export interface AccountLoginParams {
+    userName: string;
+    password: string;
+  }
+
   /**
-   * 用户登录方式
+   * 验证码登录参数
    */
-  type?: LoginType;
+  export interface MobileLoginParams {
+    mobile: string;
+    captcha: string;
+  }
+
   /**
-   * 登录的用户类型
+   * 统一登录参数
    */
-  currentAuthority?: 'user' | 'guest';
+  export interface LoginParams extends AccountLoginParams, MobileLoginParams {}
+
+  /**
+   * 发送登录请求参数
+   */
+  export interface RequestParams extends Partial<LoginParams> {
+    type: LoginType;
+  }
+
+  /**
+   * 登录提交按钮方法
+   */
+  export type LoginSubmit = (values: RequestParams) => Promise<void>;
 }
-
-/**
- * 账号登录参数
- */
-export interface AccountLoginParams {
-  userName: string;
-  password: string;
-}
-
-/**
- * 验证码登录参数
- */
-export interface MobileLoginParams {
-  mobile: string;
-  captcha: string;
-}
-
-/**
- * 统一登录参数
- */
-export interface LoginParams extends AccountLoginParams, MobileLoginParams {}
-
-/**
- * 发送登录请求参数
- */
-export interface RequestParams extends Partial<LoginParams> {
-  type: LoginType;
-}
-
-/**
- * 登录提交按钮方法
- */
-export type LoginSubmit = (values: RequestParams) => Promise<void>;
