@@ -13,6 +13,9 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
+  "dependencies": {
+    "react-intl": "^5.20.4"
+  },
   "scripts": {
     "build": "father-build && yarn webpack",
     "webpack": "webpack",
