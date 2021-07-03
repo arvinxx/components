@@ -1,5 +1,18 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.8](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.7...@arvinxu/user-panel@1.0.0-beta.8) (2021-07-03)
+
+
+### ♻ 重构
+
+* 使用 @arvinxu/i18n 重构国际化 ([22d8aaf](https://github.com/arvinxx/components/commit/22d8aaf))
+
+
+### 👷 构建系统
+
+* 优化 pkg 配置 ([2df431f](https://github.com/arvinxx/components/commit/2df431f))
+* 用 namespace 组织类型 ([2e73423](https://github.com/arvinxx/components/commit/2e73423))
+
 # @arvinxu/user-panel [1.0.0-beta.7](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.6...@arvinxu/user-panel@1.0.0-beta.7) (2021-06-19)
 
 
