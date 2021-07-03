@@ -3,7 +3,7 @@ import type { FC } from 'react';
 import { Typography } from 'antd';
 
 import { useFormatMessage } from '../Intl';
-import type { LocaleKey, PanelContentType } from '../../types';
+import type { PanelContentType } from '../../types';
 
 import './style.less';
 
@@ -46,7 +46,7 @@ const Header: FC<HeaderProps> = ({ type, logo, logoUrl }) => {
           fontWeight: 'normal',
         }}
       >
-        {f(`${type}.header` as LocaleKey)}
+        {f(`${type}.header`)}
       </Title>
     </div>
   );
