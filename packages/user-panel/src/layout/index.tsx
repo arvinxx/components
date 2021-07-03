@@ -1,7 +1,7 @@
 import React from 'react';
 import type { FC } from 'react';
 import type { FooterProps, HeaderProps } from '../components';
-import { IntlWrapper, Header, Footer } from '../components';
+import { IntlProvider, Header, Footer } from '../components';
 import './style.less';
 
 export interface LayoutProps extends FooterProps, HeaderProps {
@@ -21,7 +21,7 @@ const Layout: FC<LayoutProps> = ({
   registerUrl,
 }) => {
   return (
-    <IntlWrapper>
+    <IntlProvider>
       <div className="avx-user-panel-container">
         <Header type={type} logo={logo} logoUrl={logoUrl} />
         {children}
@@ -33,7 +33,7 @@ const Layout: FC<LayoutProps> = ({
           />
         ) : null}
       </div>
-    </IntlWrapper>
+    </IntlProvider>
   );
 };
 

@@ -2,14 +2,14 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import Header from './index';
-import IntlWrapper from '../IntlWrapper';
+import { IntlProvider } from '../Intl';
 
 describe('Header 组件', () => {
   it('登录头部', () => {
     const { container } = render(
-      <IntlWrapper>
+      <IntlProvider>
         <Header type={'login'} />
-      </IntlWrapper>,
+      </IntlProvider>,
     );
     expect(container).toMatchSnapshot();
   });

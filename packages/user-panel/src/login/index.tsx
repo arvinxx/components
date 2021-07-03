@@ -14,7 +14,7 @@ import ProForm, {
 import LoginMessage from './LoginMessage';
 
 import './index.less';
-import { useFormatMessage } from '../hooks';
+import { useFormatMessage } from '../components';
 import type { IUserLogin } from '../types';
 
 export interface LoginProps {

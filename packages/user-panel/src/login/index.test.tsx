@@ -4,23 +4,23 @@ import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react';
 
 import Login from './index';
-import { IntlWrapper } from '../components';
+import { IntlProvider } from '../components';
 
 describe('Login 组件', () => {
   it('默认状态', () => {
     const { container } = render(
-      <IntlWrapper>
+      <IntlProvider>
         <Login />
-      </IntlWrapper>,
+      </IntlProvider>,
     );
     expect(container).toMatchSnapshot();
   });
 
   it('获取验证码', async () => {
     const { container, findByText } = render(
-      <IntlWrapper>
+      <IntlProvider>
         <Login />
-      </IntlWrapper>,
+      </IntlProvider>,
     );
     const btn = await findByText('手机号登录');
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { WechatOutlined } from '@ant-design/icons';
 import { Button, message } from 'antd';
 
-import { useFormatMessage } from '../../hooks';
+import { useFormatMessage } from '../Intl';
 
 import './style.less';
 

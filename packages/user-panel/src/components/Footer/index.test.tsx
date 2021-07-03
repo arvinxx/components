@@ -2,41 +2,41 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import Footer from './index';
-import IntlWrapper from '../IntlWrapper';
+import { IntlProvider } from '../Intl';
 
 describe('Footer 组件', () => {
   it('登录页脚', () => {
     const { container } = render(
-      <IntlWrapper>
+      <IntlProvider>
         <Footer type={'login'} />
-      </IntlWrapper>,
+      </IntlProvider>,
     );
     expect(container).toMatchSnapshot();
   });
   it('微信登陆页面', () => {
     const { container } = render(
-      <IntlWrapper>
+      <IntlProvider>
         <Footer type={'register'} wechatLogin={() => {}} />
-      </IntlWrapper>,
+      </IntlProvider>,
     );
     expect(container).toMatchSnapshot();
   });
   it('忘记密码', () => {
     const { container } = render(
-      <IntlWrapper>
+      <IntlProvider>
         <Footer type={'forgot'} />
-      </IntlWrapper>,
+      </IntlProvider>,
     );
     expect(container).toMatchSnapshot();
   });
   it('空', () => {
     const { container } = render(
-      <IntlWrapper>
+      <IntlProvider>
         <Footer
           // @ts-ignore
           type={''}
         />
-      </IntlWrapper>,
+      </IntlProvider>,
     );
     expect(container).toMatchSnapshot();
   });
