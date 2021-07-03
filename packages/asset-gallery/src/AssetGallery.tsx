@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import type { FC, ReactNode } from 'react';
 import React, { useState } from 'react';
 // import useMergeValue from 'use-merge-value';
 
@@ -25,6 +25,10 @@ export interface AssetGalleryProps {
    * @default masonry
    */
   layout?: 'masonry' | 'grid';
+  /**
+   * 显示logo
+   */
+  logo?: ReactNode;
 
   /**
    * 配置网格
@@ -46,6 +50,7 @@ const AssetGallery: FC<AssetGalleryProps> = ({
   darkBackground,
   layout = 'masonry',
   grid = { showSlider: true },
+  logo,
 }) => {
   const [columns, setColumn] = useState(1);
 
@@ -55,6 +60,7 @@ const AssetGallery: FC<AssetGalleryProps> = ({
     <Layout
       layout={layout}
       grid={{ columns, setColumn, showSlider: grid.showSlider }}
+      logo={logo}
     >
       {imageList.map((item, index) => {
         const { description, padding, url, title, dark, sketch } = item;

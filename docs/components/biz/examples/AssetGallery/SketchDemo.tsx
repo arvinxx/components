@@ -14,7 +14,14 @@ const SketchDemo = () => {
         padding: 24,
       }}
     >
-      <AssetGallery data={sketch} darkBackground={'black'} layout={'grid'} />
+      <AssetGallery
+        logo={
+          'https://gw.alipayobjects.com/zos/antfincdn/mj85r7V5aX/konggu.svg'
+        }
+        data={sketch}
+        darkBackground={'black'}
+        layout={'grid'}
+      />
     </div>
   );
 };

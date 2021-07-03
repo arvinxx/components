@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/asset-gallery [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.0.0...@arvinxu/asset-gallery@1.1.0) (2021-07-01)
+
+
+### ✨ 新特性
+
+* 增加 logo 配置项props ([1e2d394](https://github.com/arvinxx/components/commit/1e2d394))
+
 # @arvinxu/asset-gallery 1.0.0 (2021-06-18)
 
 
