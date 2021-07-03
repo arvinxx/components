@@ -1,7 +1,7 @@
 import React from 'react';
 import { Alert } from 'antd';
 
-const LoginMessage: React.FC<{
+const LoginErrorMessage: React.FC<{
   content: string;
 }> = ({ content }) => (
   <Alert
@@ -14,4 +14,4 @@ const LoginMessage: React.FC<{
   />
 );
 
-export default LoginMessage;
+export default LoginErrorMessage;

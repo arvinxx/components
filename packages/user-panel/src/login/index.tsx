@@ -11,14 +11,13 @@ import ProForm, {
   ProFormCheckbox,
   ProFormText,
 } from '@ant-design/pro-form';
-import LoginMessage from './LoginMessage';
+import LoginErrorMessage from './LoginErrorMessage';
 
 import './index.less';
 import { useFormatMessage } from '../components';
 import type { IUserLogin } from '../types';
 
 export interface LoginProps {
-  loginStatus?: IUserLogin.LoginStatus;
   /**
    * 获取校验码方法
    */
@@ -32,16 +31,13 @@ export interface LoginProps {
 }
 
 const Login: React.FC<LoginProps> = (props) => {
-  const {
-    loginStatus = {},
-    onClickCaptcha,
-    handleSubmit,
-    captchaCountDown,
-    forgotUrl,
-  } = props;
-  const { status, type: loginType } = loginStatus;
+  const { onClickCaptcha, handleSubmit, captchaCountDown, forgotUrl } = props;
+
   const [type, setType] = useState<IUserLogin.LoginType>('account');
   const [submitting, setLoading] = useState(false);
+
+  const [loginStatus, setLoginStatus] = useState<IUserLogin.LoginStatus>({});
+  const { status, type: loginType } = loginStatus;
 
   const f = useFormatMessage();
 
@@ -66,7 +62,8 @@ const Login: React.FC<LoginProps> = (props) => {
         }}
         onFinish={async (values) => {
           setLoading(true);
-          await handleSubmit({ ...values, type });
+          const result = await handleSubmit({ ...values, type });
+          setLoginStatus(result);
           setLoading(false);
         }}
       >
@@ -80,7 +77,7 @@ const Login: React.FC<LoginProps> = (props) => {
         </Tabs>
 
         {status === 'error' && loginType === 'account' && !submitting && (
-          <LoginMessage content={f('login.accountLogin.errorMessage')} />
+          <LoginErrorMessage content={f('login.accountLogin.errorMessage')} />
         )}
         {type === 'account' && (
           <>
@@ -120,7 +117,7 @@ const Login: React.FC<LoginProps> = (props) => {
         )}
 
         {status === 'error' && loginType === 'mobile' && !submitting && (
-          <LoginMessage content="验证码错误" />
+          <LoginErrorMessage content="验证码错误" />
         )}
         {type === 'mobile' && (
           <>

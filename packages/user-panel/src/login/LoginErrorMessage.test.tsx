@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import LoginMessage from './LoginMessage';
+import LoginErrorMessage from './LoginErrorMessage';
 
 describe('LoginMessage', () => {
   it('默认状态', () => {
-    const { container } = render(<LoginMessage content={'test'} />);
+    const { container } = render(<LoginErrorMessage content={'test'} />);
     expect(container).toMatchSnapshot();
   });
 });

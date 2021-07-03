@@ -57,4 +57,4 @@ export interface RequestParams extends Partial<LoginParams> {
 /**
  * 登录提交按钮方法
  */
-export type LoginSubmit = (values: RequestParams) => Promise<void>;
+export type LoginSubmit = (values: RequestParams) => Promise<LoginStatus>;

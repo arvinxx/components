@@ -9,7 +9,7 @@ import type { IUserLogin } from './types';
 
 export interface UserLoginProps
   extends Omit<LayoutProps, 'type'>,
-    Pick<LoginProps, 'onClickCaptcha' | 'forgotUrl' | 'loginStatus'> {
+    Pick<LoginProps, 'onClickCaptcha' | 'forgotUrl'> {
   /**
    * 登录方法
    */
@@ -25,7 +25,6 @@ const UserLogin: FC<UserLoginProps> = ({
   showFooter,
   forgotUrl,
   registerUrl,
-  loginStatus,
 }) => {
   return (
     <Layout
@@ -37,7 +36,6 @@ const UserLogin: FC<UserLoginProps> = ({
       type={'login'}
     >
       <Login
-        loginStatus={loginStatus}
         onClickCaptcha={onClickCaptcha}
         handleSubmit={onLoginSubmit}
         forgotUrl={forgotUrl}
