@@ -1,5 +1,15 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.10](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.9...@arvinxu/user-panel@1.0.0-beta.10) (2021-07-03)
+
+### 🎫 杂项
+
+- 清理代码 ([3bf7ae2](https://github.com/arvinxx/components/commit/3bf7ae2))
+
+### 🐛 修复
+
+- 修正类型错误 ([7ee4314](https://github.com/arvinxx/components/commit/7ee4314))
+
 # @arvinxu/user-panel [1.0.0-beta.9](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.8...@arvinxu/user-panel@1.0.0-beta.9) (2021-07-03)
 
 ### 🐛 修复
