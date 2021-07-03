@@ -18,6 +18,7 @@ module.exports = {
     '@arvinxu/user-panel': '<rootDir>/packages/user-panel/src',
     '@arvinxu/heatmap-calendar': '<rootDir>/packages/heatmap-calendar/src',
     '@arvinxu/utils': '<rootDir>/packages/utils/src',
+    '@arvinxu/i18n': '<rootDir>/packages/i18n/src',
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
     '@arvinxu/page-loading': '<rootDir>/packages/page-loading/src',
     '@arvinxu/mindflow': '<rootDir>/packages/mindflow/src',
