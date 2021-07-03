@@ -1,5 +1,15 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.11](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.10...@arvinxu/user-panel@1.0.0-beta.11) (2021-07-03)
+
+### ♻ 重构
+
+- 优化登录状态逻辑 ([a487a54](https://github.com/arvinxx/components/commit/a487a54))
+
+### 👷 构建系统
+
+- 触发构建 ([58086e0](https://github.com/arvinxx/components/commit/58086e0))
+
 # @arvinxu/user-panel [1.0.0-beta.10](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.9...@arvinxu/user-panel@1.0.0-beta.10) (2021-07-03)
 
 ### 🎫 杂项
