@@ -4,6 +4,7 @@ on:
     branches:
       - master
       - beta
+      - user-panel
 
 jobs:
   release:

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header 组件 登录头部 1`] = `
+<div>
+  <div
+    class="avx-user-panel-header"
+  >
+    <h2
+      class="ant-typography"
+      style="text-align: center; margin-bottom: 24px; font-weight: normal;"
+    >
+      立即登录
+    </h2>
+  </div>
+</div>
+`;
