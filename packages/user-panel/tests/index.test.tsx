@@ -15,7 +15,11 @@ describe('UserPanel', () => {
         }}
         onLoginSubmit={() => {
           return new Promise((resolve) => {
-            resolve();
+            resolve({
+              type: 'account',
+              status: 'ok',
+              currentAuthority: 'user',
+            });
           });
         }}
       />,
