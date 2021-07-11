@@ -166,6 +166,7 @@ const Login: React.FC<LoginProps> = (props) => {
                   message: f('login.captcha.required'),
                 },
               ]}
+              phoneName={'mobile'}
               onGetCaptcha={async (mobile) => {
                 if (!onClickCaptcha) {
                   message.error(f('login.captcha.function.required'));
