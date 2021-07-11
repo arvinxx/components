@@ -1,5 +1,16 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.12](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.11...@arvinxu/user-panel@1.0.0-beta.12) (2021-07-11)
+
+### ✅ 测试
+
+- 修正测试快照 ([b88d809](https://github.com/arvinxx/components/commit/b88d809))
+- 修正测试快照 ([c378456](https://github.com/arvinxx/components/commit/c378456))
+
+### 🐛 修复
+
+- 修正验证码方法收不到字段的 bug ([9248004](https://github.com/arvinxx/components/commit/9248004))
+
 # @arvinxu/user-panel [1.0.0-beta.11](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.10...@arvinxu/user-panel@1.0.0-beta.11) (2021-07-03)
 
 ### ♻ 重构
