@@ -137,7 +137,7 @@ exports[`UserPanel 登录面板 1`] = `
           </div>
         </div>
         <div
-          class="ant-row ant-form-item"
+          class="ant-row ant-form-item ant-form-item-with-help ant-form-item-has-error"
         >
           <div
             class="ant-col ant-form-item-control"
@@ -217,6 +217,15 @@ exports[`UserPanel 登录面板 1`] = `
                 </span>
               </div>
             </div>
+            <div
+              class="ant-form-item-explain ant-form-item-explain-error"
+            >
+              <div
+                role="alert"
+              >
+                手机号是必填项！
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -281,12 +290,11 @@ exports[`UserPanel 登录面板 1`] = `
                   <button
                     ant-click-animating-without-extra-node="true"
                     class="ant-btn ant-btn-lg"
-                    disabled=""
                     style="display: block;"
                     type="button"
                   >
                     <span>
-                      60 秒后重新获取
+                      获取验证码
                     </span>
                   </button>
                 </div>
