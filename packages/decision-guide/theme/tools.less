@@ -1,0 +1,18 @@
+@import '~antd/es/style/themes/default';
+
+.tool-clickable {
+  border: 1px solid @border-color-split;
+  border-radius: 8px;
+  transition: all 0.15s ease-out;
+  &:hover {
+    background: @background-color-base;
+  }
+}
+
+.tool-clickable-item {
+  .tool-clickable;
+
+  padding: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}

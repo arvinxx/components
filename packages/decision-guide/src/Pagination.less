@@ -1,0 +1,38 @@
+@import '../theme/theme';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > *:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.arrow {
+  .tool-clickable-item;
+
+  .center-content;
+
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  color: @text-color;
+  border-radius: 4px;
+}
+
+.step {
+  .tool-clickable-item;
+
+  width: 40px;
+  height: 6px;
+  padding: 0;
+}
+
+.active {
+  background: @primary-color;
+}
+
+.activeIcon {
+  color: @primary-color !important;
+}

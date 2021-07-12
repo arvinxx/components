@@ -8,7 +8,7 @@ const path = require('path');
 
 module.exports = {
   ...defaultConfig,
-  setupFiles: [...defaultConfig.setupFiles],
+  setupFiles: [...defaultConfig.setupFiles, '<rootDir>/tests/setup.ts'],
   moduleNameMapper: {
     '@arvinxu/asset-gallery': '<rootDir>/packages/asset-gallery/src',
     '@arvinxu/preloader': '<rootDir>/packages/preloader/src',
@@ -19,6 +19,7 @@ module.exports = {
     '@arvinxu/heatmap-calendar': '<rootDir>/packages/heatmap-calendar/src',
     '@arvinxu/utils': '<rootDir>/packages/utils/src',
     '@arvinxu/i18n': '<rootDir>/packages/i18n/src',
+    '@arvinxu/decision-guide': '<rootDir>/packages/decision-guide/src',
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
     '@arvinxu/page-loading': '<rootDir>/packages/page-loading/src',
     '@arvinxu/mindflow': '<rootDir>/packages/mindflow/src',

@@ -1,0 +1,86 @@
+@import '../theme/theme';
+
+.container {
+  .tool-clickable-item;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.item {
+  @apply flex items-center;
+
+  z-index: 10;
+}
+.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: @primary-color;
+  opacity: 0.1;
+}
+
+.itemActive {
+  border: 1px solid @primary-color;
+}
+
+@keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 5px;
+  }
+}
+@keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  30% {
+    height: 0;
+  }
+  100% {
+    height: 10px;
+  }
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid @border-color-split;
+  border-radius: 4px;
+}
+
+.checked {
+  position: relative;
+  border: 1px solid @primary-color;
+
+  &::before,
+  &::after {
+    position: absolute;
+    width: 2px;
+    border-radius: 2px;
+    transform-origin: left top;
+    transition: opacity ease 0.5s;
+    content: ' ';
+  }
+
+  &::after {
+    top: 10px;
+    left: 4px;
+    background: @primary-color;
+    transform: rotate(-45deg);
+    animation: dothabottomcheck 0.2s ease 0s forwards;
+  }
+
+  &::before {
+    top: 13px;
+    left: 8px;
+    background: @primary-color;
+    transform: rotate(-135deg);
+    animation: dothatopcheck 0.4s ease 0s forwards;
+  }
+}
