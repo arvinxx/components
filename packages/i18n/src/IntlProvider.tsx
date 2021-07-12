@@ -3,10 +3,8 @@ import React from 'react';
 
 import { IntlProvider as IntlProvider_ } from 'react-intl';
 
-import type { MessageObj } from './types';
-
 export const Intl: FC<
   Omit<ComponentProps<typeof IntlProvider_>, 'messages'> & {
-    messages: MessageObj;
+    messages: Record<string, string>;
   }
 > = (props) => <IntlProvider_ {...props} />;
