@@ -12,6 +12,6 @@ order: 5
 [download-image]: https://img.shields.io/npm/dm/@arvinxu/decision-guide.svg
 [download-url]: https://github.com/arvinxx/components/tree/master/packages/decision-guide
 
-<code src='./examples/DecisionGuide/demo.tsx' />
+<code src='./examples/DecisionGuide/Demo.tsx' />
 
 <API src='../../../packages/decision-guide/src/index.tsx'></API>
