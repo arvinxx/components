@@ -8,7 +8,7 @@ const path = require('path');
 
 module.exports = {
   ...defaultConfig,
-  setupFiles: [...defaultConfig.setupFiles],
+  setupFiles: [...defaultConfig.setupFiles, '<rootDir>/tests/setup.ts'],
   moduleNameMapper: {
     '@arvinxu/asset-gallery': '<rootDir>/packages/asset-gallery/src',
     '@arvinxu/preloader': '<rootDir>/packages/preloader/src',
