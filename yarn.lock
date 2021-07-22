@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ahooksjs/use-request@^2.0.0", "@ahooksjs/use-request@^2.8.7":
-  version "2.8.7"
-  resolved "https://registry.yarnpkg.com/@ahooksjs/use-request/-/use-request-2.8.7.tgz#35558494d6aadee023cda49477fc679b49f9ff2d"
-  integrity sha512-r4Ks+Gg2R48lXb780O8/NkkQ82HtHnBFzt8HrO12JRGP6AoTAejyEB90RgDQ8tpu1Lz10NKoNisAj2XA16gAtQ==
+"@ahooksjs/use-request@^2.0.0", "@ahooksjs/use-request@^2.8.10":
+  version "2.8.10"
+  resolved "https://registry.yarnpkg.com/@ahooksjs/use-request/-/use-request-2.8.10.tgz#643ea1a3c025fc7d0ff6a41621f11c03eed9ac22"
+  integrity sha512-wF+Lz1KQecXF3nfblUfQWfVUq5UU0G6uQ6b4bbeZAkAOhhUsso3//p44r8+i4/+Q+2TCcjPiOpN/LdE4MiOw3g==
   dependencies:
     lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
@@ -5218,11 +5218,11 @@ aggregate-error@^3.0.0:
     indent-string "^4.0.0"
 
 ahooks@^2.10.0, ahooks@^2.9.6:
-  version "2.10.6"
-  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.6.tgz#05fad82f77a308886c174a61b7e1232cb16516ac"
-  integrity sha512-E/eUaa7CrLMV2cNdgzh/YMLgJWCmyQQPf8i7xwzrI3d0i5EdzMl+lV+A9E1UbDV4yBuuYhWMfZkmkJOh+f5mXA==
+  version "2.10.9"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.9.tgz#531fa1c11bfa1a2aa2697a051ac499147a3a7e0a"
+  integrity sha512-TS6IQ5dfnOj6N5JktB5P2NTtPYA+IAsOP6AvfYMuD/HcgaNGI/5H5DXDQ1F6ev4/gx9kSrUEE3P9g8W75zftXQ==
   dependencies:
-    "@ahooksjs/use-request" "^2.8.7"
+    "@ahooksjs/use-request" "^2.8.10"
     "@types/js-cookie" "^2.2.6"
     dayjs "^1.9.1"
     intersection-observer "^0.7.0"
