@@ -4743,9 +4743,9 @@
     regenerator-runtime "0.13.5"
 
 "@umijs/preset-dumi@^1.1.9":
-  version "1.1.22"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-dumi/-/preset-dumi-1.1.22.tgz#1b5009018049fd0bf5f04dd53b80b83f4d611a85"
-  integrity sha512-UNezrtMRpwKGnQW3M6MVBqQjMADPIDz1+mF+6F3Skd2qbOKkhdg4uV59Wd8Lmd4t4MbC1q0JlVk8HjCAYpHYgw==
+  version "1.1.24"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-dumi/-/preset-dumi-1.1.24.tgz#386df38f69ab0ec7d479a88423b6558bde6c91d6"
+  integrity sha512-0V1T99VqM3Lmz6ZA5xXIeVaB31BrceGijpH2SFGk+rz0+r3aS7Rk34MpOwu0JX7eJDY+LaBDO09OLfthSf0mJA==
   dependencies:
     "@babel/core" "^7.7.2"
     "@babel/generator" "^7.7.2"
@@ -4761,7 +4761,7 @@
     copy-text-to-clipboard "^2.2.0"
     deepmerge "^4.2.2"
     dumi-assets-types "1.0.0"
-    dumi-theme-default "1.1.5"
+    dumi-theme-default "1.1.7"
     enhanced-resolve "^4.1.1"
     github-slugger "^1.3.0"
     hast-util-has-property "^1.0.4"
@@ -8572,10 +8572,10 @@ dumi-assets-types@1.0.0:
   resolved "https://registry.npm.taobao.org/dumi-assets-types/download/dumi-assets-types-1.0.0.tgz#d5368cb11045b203bf1ef1080e553b2287a2ec81"
   integrity sha1-1TaMsRBFsgO/HvEIDlU7Ioei7IE=
 
-dumi-theme-default@1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/dumi-theme-default/-/dumi-theme-default-1.1.5.tgz#8771f2660050db02d43bde4f231ca0fc4fd53966"
-  integrity sha512-k9g4jmG6uiL672vw6cdvhr9N+BR29/clxLJKlqscI6Erapq/rMzntwC1WqWUt6J3evL7+8tmucNK4huauLY+5A==
+dumi-theme-default@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/dumi-theme-default/-/dumi-theme-default-1.1.7.tgz#5cce82406ea78d622a2e12284807320ccb49042e"
+  integrity sha512-A0+vgOhlUB8tb9hVxea9xawjxLf1c6Z2PE0UKYBrDH2rvwh7Q0aV8dQTip7h/hRlIpYBK1gbpJLBFhYPn1lOQA==
   dependencies:
     prism-react-renderer "^1.1.1"
     prismjs "^1.21.0"
