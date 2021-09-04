@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header 有 logo 1`] = `
+<div>
+  <div
+    style="padding: 0px 8px; display: flex; justify-content: space-between; align-items: center;"
+  >
+    <div>
+      <img
+        alt="logo"
+        src="123"
+        width="40"
+      />
+    </div>
+    <div
+      class="ant-space ant-space-horizontal ant-space-align-center"
+    >
+      <div
+        class="ant-space-item"
+        style="margin-right: 8px;"
+      >
+        <div
+          class="ant-space ant-space-horizontal ant-space-align-center"
+        >
+          <div
+            class="ant-space-item"
+            style="margin-right: 0px;"
+          >
+            <button
+              class="ant-btn ant-btn-link ant-btn-icon-only"
+              data-testid="masonry-icon"
+              type="button"
+            >
+              <img
+                alt="瀑布流布局"
+                src="https://gw.alipayobjects.com/zos/antfincdn/Hj%26JKvBCCl/masonry-default.svg"
+                style="cursor: pointer;"
+              />
+            </button>
+          </div>
+          <div
+            class="ant-space-item"
+          >
+            <button
+              class="ant-btn ant-btn-link ant-btn-icon-only"
+              data-testid="grid-icon"
+              type="button"
+            >
+              <img
+                alt="网格布局"
+                src="https://gw.alipayobjects.com/zos/antfincdn/lr6NsCRih%24/grid-active.svg"
+                style="cursor: pointer;"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-space-item"
+      >
+        <div
+          class="ant-slider"
+          style="width: 100px;"
+        >
+          <div
+            class="ant-slider-rail"
+          />
+          <div
+            class="ant-slider-track"
+            style="left: 0%; width: 133.33333333333331%;"
+          />
+          <div
+            class="ant-slider-step"
+          />
+          <div
+            aria-disabled="false"
+            aria-valuemax="-1"
+            aria-valuemin="-4"
+            aria-valuenow="0"
+            class="ant-slider-handle"
+            role="slider"
+            style="left: 133.33333333333331%; transform: translateX(-50%);"
+            tabindex="0"
+          />
+          <div
+            class="ant-slider-mark"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Header 默认 1`] = `
+<div>
+  <div
+    style="padding: 0px 8px; display: flex; justify-content: space-between; align-items: center;"
+  >
+    <div />
+    <div
+      class="ant-space ant-space-horizontal ant-space-align-center"
+    >
+      <div
+        class="ant-space-item"
+      >
+        <div
+          class="ant-space ant-space-horizontal ant-space-align-center"
+        >
+          <div
+            class="ant-space-item"
+            style="margin-right: 0px;"
+          >
+            <button
+              class="ant-btn ant-btn-link ant-btn-icon-only"
+              data-testid="masonry-icon"
+              type="button"
+            >
+              <img
+                alt="瀑布流布局"
+                src="https://gw.alipayobjects.com/zos/antfincdn/Hj%26JKvBCCl/masonry-default.svg"
+                style="cursor: pointer;"
+              />
+            </button>
+          </div>
+          <div
+            class="ant-space-item"
+          >
+            <button
+              class="ant-btn ant-btn-link ant-btn-icon-only"
+              data-testid="grid-icon"
+              type="button"
+            >
+              <img
+                alt="网格布局"
+                src="https://gw.alipayobjects.com/zos/antfincdn/lr6NsCRih%24/grid-active.svg"
+                style="cursor: pointer;"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

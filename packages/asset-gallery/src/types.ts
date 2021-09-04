@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export interface Asset {
   title: string;
   /**
@@ -28,28 +30,58 @@ export interface AssetGalleryData {
   data: AssetList;
 }
 
-export interface ImageEntryYML {
+export interface ImageEntryYML extends Omit<Asset, 'url' | 'title'> {
   标题: string;
+  title?: string;
   描述?: string;
-
   反色?: boolean;
-  /**
-   * 如果需要反色的话
-   * 可以设置反色的颜色
-   */
   反色背景色?: string;
-  /**
-   * 图片 url
-   */
   链接: string;
+  url?: string;
+}
+
+export type AssetGalleryYML = ImageEntryYML[];
+
+export type LayoutType = 'grid' | 'masonry';
+
+export interface AssetGalleryProps {
   /**
-   * 允许添加间距
+   * 数据清单
    */
-  padding?: number | string;
+  data: AssetList | string;
+  /**
+   * 暗色背景下默认的背景色
+   * @default #1890ff
+   */
+  darkBackground?: string;
+  /**
+   * 使用的布局方式: 瀑布流与网格
+   * @default masonry
+   */
+  layout?: LayoutType;
+  /**
+   * 布局切换时的回调
+   * @param layout
+   */
+  onLayoutChange?: (layout: LayoutType) => void;
 
   /**
-   * sketch 数据
+   * 显示logo
    */
-  sketch?: string;
+  logo?: ReactNode;
+
+  /**
+   * 列数
+   */
+  columns?: number;
+  /**
+   * 列数改变时的回调
+   * @param columns
+   */
+  onColumnsChange?: (columns: number) => void;
+
+  /**
+   * 显示滑杆
+   */
+  showSlider?: boolean;
 }
-export type AssetGalleryYML = ImageEntryYML[];
