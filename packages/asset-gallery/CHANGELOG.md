@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/asset-gallery [1.2.1](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.0...@arvinxu/asset-gallery@1.2.1) (2021-09-04)
+
+
+### 💄 样式
+
+* 更新样式 ([4ed6d6f](https://github.com/arvinxx/components/commit/4ed6d6f))
+
 # @arvinxu/asset-gallery [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.1.0...@arvinxu/asset-gallery@1.2.0) (2021-09-04)
 
 
