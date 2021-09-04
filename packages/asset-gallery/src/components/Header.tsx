@@ -44,7 +44,7 @@ const Header: FC<HeaderProps> = ({
           <LayoutButton
             icon={{
               default:
-                'https://gw.alipayobjects.com/zos/antfincdn/Hj%26JKvBCCl/masonry-default.svg',
+                'https://gw.alipayobjects.com/zos/antfincdn/a72YnCXMKW/masonry-default.svg',
               active:
                 'https://gw.alipayobjects.com/zos/antfincdn/gACoIFWH4G/masonry.svg',
             }}

@@ -33,7 +33,7 @@ exports[`Header 有 logo 1`] = `
             >
               <img
                 alt="瀑布流布局"
-                src="https://gw.alipayobjects.com/zos/antfincdn/Hj%26JKvBCCl/masonry-default.svg"
+                src="https://gw.alipayobjects.com/zos/antfincdn/a72YnCXMKW/masonry-default.svg"
                 style="cursor: pointer;"
               />
             </button>
@@ -118,7 +118,7 @@ exports[`Header 默认 1`] = `
             >
               <img
                 alt="瀑布流布局"
-                src="https://gw.alipayobjects.com/zos/antfincdn/Hj%26JKvBCCl/masonry-default.svg"
+                src="https://gw.alipayobjects.com/zos/antfincdn/a72YnCXMKW/masonry-default.svg"
                 style="cursor: pointer;"
               />
             </button>
