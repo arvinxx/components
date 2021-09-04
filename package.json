@@ -2,7 +2,7 @@
   "name": "@arvinxu/components",
   "private": true,
   "author": "arvinxx(arvinx@foxmail.com)",
-  "description": "personal components",
+  "description": "空谷的组件库",
   "workspaces": [
     "packages/*"
   ],
