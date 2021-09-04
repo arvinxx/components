@@ -18,6 +18,7 @@ const AssetGallery: FC<AssetGalleryProps> = ({
   logo,
   showSlider = true,
   columns: columnsProps,
+  style,
 }) => {
   const [columns, setColumn] = useMergeValue(4, { defaultValue: columnsProps });
   const [layout, setLayout] = useMergeValue('masonry', {
@@ -28,6 +29,7 @@ const AssetGallery: FC<AssetGalleryProps> = ({
 
   return (
     <Layout
+      style={style}
       layout={layout}
       onLayoutChange={setLayout}
       logo={logo}

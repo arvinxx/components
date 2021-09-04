@@ -13,6 +13,7 @@ type LayoutProps = Pick<
   | 'logo'
   | 'onColumnsChange'
   | 'onLayoutChange'
+  | 'style'
 >;
 
 const Layout: FC<LayoutProps> = ({
@@ -23,9 +24,10 @@ const Layout: FC<LayoutProps> = ({
   columns,
   onLayoutChange,
   showSlider,
+  style,
 }) => {
   return (
-    <div>
+    <div style={style}>
       <Header
         layout={layout}
         onColumnsChange={onColumnsChange}

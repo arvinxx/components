@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ReactNode, CSSProperties } from 'react';
 
 export interface Asset {
   title: string;
@@ -84,4 +84,9 @@ export interface AssetGalleryProps {
    * 显示滑杆
    */
   showSlider?: boolean;
+
+  /**
+   * 样式
+   */
+  style?: CSSProperties;
 }
