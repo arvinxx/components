@@ -1,6 +1,6 @@
 {
   "name": "@arvinxu/asset-gallery",
-  "version": "1.1.0",
+  "version": "1.2.0-beta.1",
   "files": [
     "lib",
     "es"
@@ -30,6 +30,7 @@
     "antd": "^4.14.0",
     "copy-to-clipboard": "^3.3.1",
     "js-yaml": "^4.1.0",
+    "use-merge-value": "^1.0.2",
     "styled-components": "^5.3.0"
   }
 }

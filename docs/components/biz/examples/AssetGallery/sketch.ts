@@ -1,6 +1,5 @@
 export const sketch = `
-- 标题: 矩形
-  sketch: https://gw.alipayobjects.com/os/kitchen/oLQZFZVkmdvqpKRQDCuU.json
+- sketch: https://gw.alipayobjects.com/os/kitchen/oLQZFZVkmdvqpKRQDCuU.json
   链接: https://gw.alipayobjects.com/zos/antfincdn/G5sZluNGGA/25c4fe16-7d52-4b32-904e-3eccb4a1ff47.png
 
 - 标题: 卡片组件

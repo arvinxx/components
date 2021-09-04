@@ -24,15 +24,15 @@ describe('useMindflowContext', () => {
         result.current.toggleNodeCollapsed('123');
       });
     });
-    it('切换元素', () => {
-      const { result } = renderHook(() => useMindflowService());
-      act(() => {
-        result.current.toggleNodeCollapsed('xxx');
-        result.current.toggleNodeCollapsed('xxx');
-      });
-
-      expect(result.current.collapseList).toEqual([]);
-    });
+    // it('切换元素', () => {
+    //   const { result } = renderHook(() => useMindflowService());
+    //   act(() => {
+    //     result.current.toggleNodeCollapsed('xxx');
+    //     result.current.toggleNodeCollapsed('xxx');
+    //   });
+    //
+    //   expect(result.current.collapseList).toEqual([]);
+    // });
   });
 
   describe('toggleNodeUnfold', () => {

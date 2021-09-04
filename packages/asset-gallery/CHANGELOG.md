@@ -1,5 +1,18 @@
 # Changelog
 
+# @arvinxu/asset-gallery [1.2.0-beta.1](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.1.0...@arvinxu/asset-gallery@1.2.0-beta.1) (2021-09-04)
+
+
+### ✅ 测试
+
+* 更新测试用例 ([caaf6e2](https://github.com/arvinxx/components/commit/caaf6e2))
+
+
+### ✨ 新特性
+
+* 优化资产画廊组件样式与功能 ([9a83eb8](https://github.com/arvinxx/components/commit/9a83eb8))
+* 支持复制 sketch 素材为 png ([1cd7baa](https://github.com/arvinxx/components/commit/1cd7baa))
+
 # @arvinxu/asset-gallery [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.0.0...@arvinxu/asset-gallery@1.1.0) (2021-07-01)
 
 
