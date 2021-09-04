@@ -30,11 +30,11 @@ const AssetCard: FC<Asset> = ({
   const isSvg = !isSketch && checkSvg(url);
 
   // eslint-disable-next-line no-nested-ternary
-  const type = isSketch ? 'sketch' : isSvg ? 'svg' : 'img';
+  const assetType = isSketch ? 'sketch' : isSvg ? 'svg' : 'img';
 
   const backgroundColor = darkBackground;
 
-  const getActionList = () => {
+  const getActionList = (type: 'sketch' | 'svg' | 'img') => {
     switch (type) {
       case 'sketch':
         return [
@@ -42,9 +42,12 @@ const AssetCard: FC<Asset> = ({
             onClick:
               /* istanbul ignore next */
               () => copySketch(sketch),
-            content: '复制 Sketch',
-            icon: 'https://gw.alipayobjects.com/zos/antfincdn/2fdoJuzsZ4/sketch.svg',
+            content: 'Sketch',
+            tooltip: '复制为 Sketch 组件',
+            // icon: 'https://gw.alipayobjects.com/zos/antfincdn/2fdoJuzsZ4/sketch.svg',
           },
+
+          ...getActionList(checkSvg(url) ? 'svg' : 'img'),
         ];
 
       case 'img':
@@ -80,10 +83,10 @@ const AssetCard: FC<Asset> = ({
     }
   };
 
-  const actionList = getActionList();
+  const actionList = getActionList(assetType);
 
   const typeImage = () => {
-    switch (type) {
+    switch (assetType) {
       case 'sketch':
         return 'https://gw.alipayobjects.com/zos/antfincdn/cMiSSL1I2m/sketch.svg';
       /* istanbul ignore next */
@@ -94,6 +97,8 @@ const AssetCard: FC<Asset> = ({
         return 'https://gw.alipayobjects.com/zos/antfincdn/lBMmJ5U0Pr/svg.svg';
     }
   };
+
+  const noBody = !(title || description);
 
   return (
     <div className="avx-asset-gallery-item">
@@ -162,8 +167,11 @@ const AssetCard: FC<Asset> = ({
             </Dropdown>
           ),
         ].filter((a) => a)}
+        bodyStyle={{
+          padding: noBody ? 0 : undefined,
+        }}
       >
-        <Card.Meta title={title} description={description} />
+        {noBody ? null : <Card.Meta title={title} description={description} />}
       </Card>
     </div>
   );
