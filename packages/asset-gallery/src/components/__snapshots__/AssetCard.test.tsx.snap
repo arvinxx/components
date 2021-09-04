@@ -52,19 +52,43 @@ exports[`AssetCard Sketch 测试 1`] = `
         class="ant-card-actions"
       >
         <li
-          style="width: 100%;"
+          style="width: 33.333333333333336%;"
         >
           <span>
             <button
               class="ant-btn ant-btn-link avx-asset-gallery-link"
               type="button"
             >
-              <img
-                alt="复制 Sketch"
-                src="https://gw.alipayobjects.com/zos/antfincdn/2fdoJuzsZ4/sketch.svg"
-              />
               <span>
-                复制 Sketch
+                Sketch
+              </span>
+            </button>
+          </span>
+        </li>
+        <li
+          style="width: 33.333333333333336%;"
+        >
+          <span>
+            <button
+              class="ant-btn ant-btn-link avx-asset-gallery-link"
+              type="button"
+            >
+              <span>
+                Svg
+              </span>
+            </button>
+          </span>
+        </li>
+        <li
+          style="width: 33.333333333333336%;"
+        >
+          <span>
+            <button
+              class="ant-btn ant-btn-link avx-asset-gallery-link"
+              type="button"
+            >
+              <span>
+                Png
               </span>
             </button>
           </span>
