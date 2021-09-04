@@ -10,6 +10,10 @@
     "module": "ESNext",
     /* 模块导入配置项 */
     "esModuleInterop": true,
-    "types": ["../../types", "@types/jest"]
+    "types": ["../../types", "@types/jest"],
+    "baseUrl": "../..",
+    "paths": {
+      "@arvinxu/preloader": ["./packages/preloader/src"]
+    }
   }
 }
