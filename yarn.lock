@@ -21756,10 +21756,10 @@ tough-cookie@^4.0.0:
     punycode "^2.1.1"
     universalify "^0.1.2"
 
-tplant@^2.3.6:
-  version "2.3.6"
-  resolved "https://registry.npm.taobao.org/tplant/download/tplant-2.3.6.tgz#5f623b21df5286e206d70ebcbd485e593e2a62ed"
-  integrity sha1-X2I7Id9ShuIG1w68vUheWT4qYu0=
+tplant@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/tplant/-/tplant-3.1.0.tgz#4f31bf703cb056f96e121a335b5c223ca79acfad"
+  integrity sha512-2UJ2MXKvsdik0Xv/5ZVj+UmEngLLV/1TMId3L9WWEeLQg71kH9F3xEgtl/i3ttyusgueDTdsLioOpm7b0GMSUA==
   dependencies:
     commander "^6.1.0"
     glob "^7.1.6"
