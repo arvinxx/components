@@ -4133,9 +4133,9 @@
   integrity sha1-mQG7Aq84eYdkZ03xfWawcylwVjI=
 
 "@types/dagre@^0.7.44":
-  version "0.7.44"
-  resolved "https://registry.npm.taobao.org/@types/dagre/download/@types/dagre-0.7.44.tgz#8f4b796b118ca29c132da7068fbc0d0351ee5851"
-  integrity sha1-j0t5axGMopwTLacGj7wNA1HuWFE=
+  version "0.7.46"
+  resolved "https://registry.yarnpkg.com/@types/dagre/-/dagre-0.7.46.tgz#c51ffcc62ca8a9affa07f5e06842acd840d3d442"
+  integrity sha512-ku3y+F8sPqmiB5Ugl22NpukI2dLAViJiWwdtueXLeuF4fxZozl+bytPSFVlLu/gDgaKiwobu3LBXXRWktIMiIA==
 
 "@types/eslint-scope@^3.7.0":
   version "3.7.0"
