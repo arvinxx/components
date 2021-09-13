@@ -17,12 +17,18 @@ const AssetGallery: FC<AssetGalleryProps> = ({
   layout: layoutProps,
   logo,
   showSlider = true,
+  onLayoutChange,
   columns: columnsProps,
+  onColumnsChange,
   style,
 }) => {
-  const [columns, setColumn] = useMergeValue(4, { defaultValue: columnsProps });
+  const [columns, setColumn] = useMergeValue(4, {
+    value: columnsProps,
+    onChange: onColumnsChange,
+  });
   const [layout, setLayout] = useMergeValue('masonry', {
-    defaultValue: layoutProps,
+    value: layoutProps,
+    onChange: onLayoutChange,
   });
 
   const imageList = typeof data === 'string' ? YMLToJSON(data).data : data;
