@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/asset-gallery [1.2.2](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.1...@arvinxu/asset-gallery@1.2.2) (2021-09-13)
+
+
+### 🎫 杂项
+
+* fix lint ([1d1d8e3](https://github.com/arvinxx/components/commit/1d1d8e3))
+
+
+### 🐛 修复
+
+* 修正layout和columns不受控的 bug ([90f9265](https://github.com/arvinxx/components/commit/90f9265))
+
 ## @arvinxu/asset-gallery [1.2.1](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.0...@arvinxu/asset-gallery@1.2.1) (2021-09-04)
 
 
