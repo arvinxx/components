@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/asset-gallery [1.2.4](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.3...@arvinxu/asset-gallery@1.2.4) (2021-09-16)
+
+
+### 🎫 杂项
+
+* 优化类型定义 ([61347d9](https://github.com/arvinxx/components/commit/61347d9))
+
+
+### 👷 构建系统
+
+* 优化类型定义 ([640d0f9](https://github.com/arvinxx/components/commit/640d0f9))
+
 ## @arvinxu/asset-gallery [1.2.3](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.2...@arvinxu/asset-gallery@1.2.3) (2021-09-16)
 
 
