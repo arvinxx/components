@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/asset-gallery [1.2.3](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.2...@arvinxu/asset-gallery@1.2.3) (2021-09-16)
+
+
+### 🎫 杂项
+
+* fix lint ([555de46](https://github.com/arvinxx/components/commit/555de46))
+
+
+### 🐛 修复
+
+* 修正 sketch 的复制能力 ([f32f5e3](https://github.com/arvinxx/components/commit/f32f5e3))
+
 ## @arvinxu/asset-gallery [1.2.2](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.1...@arvinxu/asset-gallery@1.2.2) (2021-09-13)
 
 
