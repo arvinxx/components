@@ -1,25 +1,35 @@
 import type { ReactNode, CSSProperties } from 'react';
 
 export interface Asset {
+  /**
+   * @title 标题
+   */
   title: string;
   /**
-   * 图片 url
+   * @title 描述
+   */
+  description?: string;
+  /**
+   * @title 图片地址
    */
   url: string;
-  description?: string;
-
+  /**
+   * @title 是否反色
+   */
   dark?: boolean;
   /**
-   * 如果需要反色的话
-   * 可以设置反色的颜色
+   * @title 反色颜色
+   * @description 如果需要反色的话 可以设置反色的颜色
    */
   darkBackground?: string;
   /**
+   * @title 间距
    * 允许添加间距
    */
   padding?: number | string;
   /**
-   * 如果有 sketch
+   * @title sketch 地址
+   * sketch 的json 文件地址
    */
   sketch?: string;
 }
@@ -46,42 +56,48 @@ export type LayoutType = 'grid' | 'masonry';
 
 export interface AssetGalleryProps {
   /**
-   * 数据清单
+   * @title 内容
+   * @default []
    */
   data: AssetList | string;
   /**
-   * 暗色背景下默认的背景色
+   * @title 暗色默认背景色
+   * @description 暗色背景下默认的背景色
    * @default #1890ff
    */
   darkBackground?: string;
   /**
-   * 使用的布局方式: 瀑布流与网格
-   * @default masonry
+   * @title 布局方式
+   * @enum ['grid','masonry']
+   * @enumOptions  [{ label: '网格', value: 'grid' }, { label: '瀑布流', value: 'masonry' }]
+   * @default grid
    */
   layout?: LayoutType;
   /**
    * 布局切换时的回调
-   * @param layout
+   * @ignore
    */
   onLayoutChange?: (layout: LayoutType) => void;
-
   /**
-   * 显示logo
+   * @title 显示logo
    */
   logo?: ReactNode;
-
   /**
-   * 列数
+   * @title 列数
+   * @default 1
    */
   columns?: number;
   /**
    * 列数改变时的回调
    * @param columns
+   * @ignore
    */
   onColumnsChange?: (columns: number) => void;
-
   /**
-   * 显示滑杆
+   * @title 缩放滑竿
+   * @renderType radioGroup
+   * @default true
+   *  @enumOptions  [{ label: '显示', value: true }, { label: '隐藏', value: false }]
    */
   showSlider?: boolean;
 

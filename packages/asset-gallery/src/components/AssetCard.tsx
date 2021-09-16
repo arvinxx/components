@@ -44,9 +44,7 @@ const AssetCard: FC<Asset> = ({
               () => copySketch(sketch),
             content: 'Sketch',
             tooltip: '复制为 Sketch 组件',
-            // icon: 'https://gw.alipayobjects.com/zos/antfincdn/2fdoJuzsZ4/sketch.svg',
           },
-          // ...getActionList(checkSvg(url) ? 'svg' : 'img'),
         ];
 
       case 'img':
