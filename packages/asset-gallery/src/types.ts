@@ -57,7 +57,7 @@ export type LayoutType = 'grid' | 'masonry';
 export interface AssetGalleryProps {
   /**
    * @title 内容
-   * @default []
+   * @default ""
    */
   data: AssetList | string;
   /**
