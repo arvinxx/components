@@ -1,6 +1,6 @@
 {
   "name": "@arvinxu/user-panel",
-  "version": "1.0.0-beta.16",
+  "version": "1.0.0-beta.17",
   "files": [
     "lib",
     "es"
@@ -29,7 +29,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.x",
     "@ant-design/pro-form": "^1.x",
-    "@arvinxu/i18n": "^1.0.1",
+    "@arvinxu/i18n": "1.0.1",
     "antd": "^4.x",
     "classnames": "^2.3.1",
     "react-router": "*"

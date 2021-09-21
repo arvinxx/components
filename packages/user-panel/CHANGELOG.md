@@ -1,5 +1,11 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.17](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.16...@arvinxu/user-panel@1.0.0-beta.17) (2021-09-21)
+
+### 👷 构建系统
+
+- 修正构建问题 ([4bb1168](https://github.com/arvinxx/components/commit/4bb1168))
+
 # @arvinxu/user-panel [1.0.0-beta.16](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.15...@arvinxu/user-panel@1.0.0-beta.16) (2021-09-21)
 
 ### 💄 样式
