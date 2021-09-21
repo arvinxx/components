@@ -1,5 +1,19 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.14](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.13...@arvinxu/user-panel@1.0.0-beta.14) (2021-09-21)
+
+### ✨ 新特性
+
+- 优化样式 & 新增 props ([d6fe164](https://github.com/arvinxx/components/commit/d6fe164))
+
+### 👷 构建系统
+
+- 修正依赖版本 ([a18eb9b](https://github.com/arvinxx/components/commit/a18eb9b))
+
+### 💥 BREAKING CHANGES
+
+- 调整了 register 和 forgot 的接口用法
+
 # @arvinxu/user-panel [1.0.0-beta.13](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.12...@arvinxu/user-panel@1.0.0-beta.13) (2021-09-21)
 
 ### 👷 构建系统
