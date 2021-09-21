@@ -18,10 +18,12 @@ const LoginWithFooter = () => {
     >
       <UserPanel.Login
         showFooter
-        wechatLogin={() => {
+        onWechatLoginClick={() => {
           message.info('微信登录实现方法');
         }}
-        registerUrl="/components/biz/user-panel#显示底部"
+        onRegisterClick={(history) => {
+          history.push('/components/biz/user-panel#显示底部');
+        }}
       />
     </div>
   );

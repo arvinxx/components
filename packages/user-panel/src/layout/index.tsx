@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import type { FC } from 'react';
 import type { FooterProps, HeaderProps } from '../components';
 import { IntlProvider, Header, Footer } from '../components';
@@ -9,27 +9,29 @@ export interface LayoutProps extends FooterProps, HeaderProps {
    * 显示底部
    */
   showFooter?: boolean;
+  style?: CSSProperties;
 }
 
 const Layout: FC<LayoutProps> = ({
   logo,
   logoUrl,
-  wechatLogin,
+  onWechatLoginClick,
   children,
   showFooter,
   type,
-  registerUrl,
+  onRegisterClick,
+  style,
 }) => {
   return (
     <IntlProvider>
-      <div className="avx-user-panel-container">
+      <div className="avx-user-panel-container" style={style}>
         <Header type={type} logo={logo} logoUrl={logoUrl} />
         {children}
-        {showFooter ? (
+        {(onWechatLoginClick || onRegisterClick) && showFooter ? (
           <Footer
             type={type}
-            wechatLogin={wechatLogin}
-            registerUrl={registerUrl}
+            onWechatLoginClick={onWechatLoginClick}
+            onRegisterClick={onRegisterClick}
           />
         ) : null}
       </div>

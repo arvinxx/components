@@ -9,39 +9,39 @@ import type { IUserLogin } from './types';
 
 export interface UserLoginProps
   extends Omit<LayoutProps, 'type'>,
-    Pick<LoginProps, 'onClickCaptcha' | 'forgotUrl'> {
+    Pick<LoginProps, 'onCaptchaClick' | 'onForgotClick'> {
   /**
    * 登录方法
    */
   onLoginSubmit?: IUserLogin.LoginSubmit;
 }
 
-const UserLogin: FC<UserLoginProps> = ({
-  onClickCaptcha,
+export const UserLogin: FC<UserLoginProps> = ({
+  onCaptchaClick,
   onLoginSubmit,
   logo,
   logoUrl,
-  wechatLogin,
+  onWechatLoginClick,
   showFooter,
-  forgotUrl,
-  registerUrl,
+  onForgotClick,
+  onRegisterClick,
+  style,
 }) => {
   return (
     <Layout
       logoUrl={logoUrl}
       logo={logo}
       showFooter={showFooter}
-      registerUrl={registerUrl}
-      wechatLogin={wechatLogin}
+      onRegisterClick={onRegisterClick}
+      onWechatLoginClick={onWechatLoginClick}
       type={'login'}
+      style={style}
     >
       <Login
-        onClickCaptcha={onClickCaptcha}
-        handleSubmit={onLoginSubmit}
-        forgotUrl={forgotUrl}
+        onCaptchaClick={onCaptchaClick}
+        onSubmit={onLoginSubmit}
+        onForgotClick={onForgotClick}
       />
     </Layout>
   );
 };
-
-export default UserLogin;

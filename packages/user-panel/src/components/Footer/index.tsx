@@ -1,5 +1,7 @@
 import React from 'react';
 import type { FC } from 'react';
+import type * as H from 'history';
+import { useHistory } from 'react-router';
 import { Typography, Divider } from 'antd';
 
 import WechatLogin from '../WechatLogin';
@@ -10,29 +12,37 @@ import type { PanelContentType } from '../../types';
 import './style.less';
 
 const { Text } = Typography;
+
 export interface FooterProps {
   /**
    * 类型
    */
   type: PanelContentType;
   /**
-   * 微信登录方法
+   * @title 微信登录方法
    */
-  wechatLogin?: () => void;
+  onWechatLoginClick?: () => void;
 
   /**
-   * 注册页面 Url
+   * @title 注册页面 Url
    */
-  registerUrl?: string;
+  onRegisterClick?: (history: H.History) => void;
 }
 
-const Footer: FC<FooterProps> = ({ type, wechatLogin, registerUrl }) => {
+export const Footer: FC<FooterProps> = ({
+  type,
+  onWechatLoginClick,
+  onRegisterClick,
+}) => {
   const f = useFormatMessage();
 
-  const getButtonUrl = () => {
+  const history = useHistory();
+
+  const onClick = () => {
     switch (type) {
       case 'login':
-        return registerUrl;
+        onRegisterClick?.(history);
+        break;
       case 'register':
         break;
       case 'forgot':
@@ -46,13 +56,13 @@ const Footer: FC<FooterProps> = ({ type, wechatLogin, registerUrl }) => {
       <Divider dashed className="avx-user-panel-footer-divider">
         {f('login.or')}
       </Divider>
-      {wechatLogin ? <WechatLogin login={wechatLogin} /> : null}
+      {onWechatLoginClick ? <WechatLogin login={onWechatLoginClick} /> : null}
       <div className="avx-user-panel-footer-other">
         <Text>
           {f(type === 'login' ? 'login.no-account' : 'register.have-account')}
         </Text>
         <div className="avx-user-panel-footer-register">
-          <a href={getButtonUrl()}>
+          <a onClick={() => onClick()}>
             {f(type === 'login' ? 'login.signup' : 'register.sign-in')}
           </a>
         </div>
@@ -60,5 +70,3 @@ const Footer: FC<FooterProps> = ({ type, wechatLogin, registerUrl }) => {
     </div>
   );
 };
-
-export default Footer;

@@ -30,7 +30,7 @@ order: 4
 
 ### 显示底部
 
-如果需要显示微信登录按钮, 需要实现 `wechatLogin` 方法. 否则默认不显示
+如果需要显示微信登录按钮, 需要实现 `onWechatLoginClick` 方法. 否则默认不显示
 
 <code src='./examples/UserPanel/LoginWithFooter.tsx' />
 

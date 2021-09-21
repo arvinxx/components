@@ -1,7 +1,7 @@
 import {
-  LockTwoTone,
-  MailTwoTone,
-  MobileTwoTone,
+  LockOutlined,
+  MailOutlined,
+  MobileOutlined,
   UserOutlined,
 } from '@ant-design/icons';
 import { message, Tabs } from 'antd';
@@ -16,22 +16,30 @@ import LoginErrorMessage from './LoginErrorMessage';
 import './index.less';
 import { useFormatMessage } from '../components';
 import type { IUserLogin } from '../types';
+import * as H from 'history';
+import { useHistory } from 'react-router';
 
 export interface LoginProps {
   /**
    * 获取校验码方法
    */
-  onClickCaptcha?: (mobile: string) => Promise<boolean>;
-  handleSubmit?: IUserLogin.LoginSubmit;
+  onCaptchaClick?: (mobile: string) => Promise<boolean>;
+  /**
+   * 提价
+   */
+  onSubmit?: IUserLogin.LoginSubmit;
+  /**
+   * 验证码倒数
+   */
   captchaCountDown?: number;
   /**
    * 忘记密码 url
    */
-  forgotUrl?: string;
+  onForgotClick?: (history: H.History) => void;
 }
 
 const Login: React.FC<LoginProps> = (props) => {
-  const { onClickCaptcha, handleSubmit, captchaCountDown, forgotUrl } = props;
+  const { onCaptchaClick, onSubmit, captchaCountDown, onForgotClick } = props;
 
   const [type, setType] = useState<IUserLogin.LoginType>('account');
   const [submitting, setLoading] = useState(false);
@@ -40,6 +48,7 @@ const Login: React.FC<LoginProps> = (props) => {
   const { status, type: loginType } = loginStatus;
 
   const f = useFormatMessage();
+  const history = useHistory();
 
   return (
     <div className="avx-user-panel-login-container">
@@ -62,7 +71,7 @@ const Login: React.FC<LoginProps> = (props) => {
         }}
         onFinish={async (values) => {
           setLoading(true);
-          const result = await handleSubmit({ ...values, type });
+          const result = await onSubmit({ ...values, type });
           setLoginStatus(result);
           setLoading(false);
         }}
@@ -102,7 +111,7 @@ const Login: React.FC<LoginProps> = (props) => {
               fieldProps={{
                 size: 'large',
                 prefix: (
-                  <LockTwoTone className="avx-user-panel-login-prefixIcon" />
+                  <LockOutlined className="avx-user-panel-login-prefixIcon" />
                 ),
               }}
               placeholder={f('login.password.placeholder')}
@@ -125,7 +134,7 @@ const Login: React.FC<LoginProps> = (props) => {
               fieldProps={{
                 size: 'large',
                 prefix: (
-                  <MobileTwoTone className="avx-user-panel-login-prefixIcon" />
+                  <MobileOutlined className="avx-user-panel-login-prefixIcon" />
                 ),
               }}
               name="mobile"
@@ -145,7 +154,7 @@ const Login: React.FC<LoginProps> = (props) => {
               fieldProps={{
                 size: 'large',
                 prefix: (
-                  <MailTwoTone className="avx-user-panel-login-prefixIcon" />
+                  <MailOutlined className="avx-user-panel-login-prefixIcon" />
                 ),
               }}
               captchaProps={{
@@ -168,12 +177,12 @@ const Login: React.FC<LoginProps> = (props) => {
               ]}
               phoneName={'mobile'}
               onGetCaptcha={async (mobile) => {
-                if (!onClickCaptcha) {
+                if (!onCaptchaClick) {
                   message.error(f('login.captcha.function.required'));
 
                   throw Error(f('login.captcha.function.required'));
                 }
-                const result = await onClickCaptcha(mobile);
+                const result = await onCaptchaClick(mobile);
 
                 if (result === false) {
                   return;
@@ -192,12 +201,14 @@ const Login: React.FC<LoginProps> = (props) => {
           <ProFormCheckbox noStyle name="autoLogin">
             {f('login.rememberMe')}
           </ProFormCheckbox>
-          {forgotUrl ? (
+          {onForgotClick ? (
             <a
               style={{
                 float: 'right',
               }}
-              href={forgotUrl}
+              onClick={() => {
+                onForgotClick(history);
+              }}
             >
               {f('login.forgotPassword')}
             </a>

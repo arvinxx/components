@@ -159,9 +159,7 @@ exports[`Footer 组件 空 1`] = `
       <div
         class="avx-user-panel-footer-register"
       >
-        <a
-          href=""
-        >
+        <a>
           登录
         </a>
       </div>

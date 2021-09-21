@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Footer from './index';
+import { Footer } from './index';
 import { IntlProvider } from '../Intl';
 
 describe('Footer 组件', () => {
@@ -16,7 +16,7 @@ describe('Footer 组件', () => {
   it('微信登陆页面', () => {
     const { container } = render(
       <IntlProvider>
-        <Footer type={'register'} wechatLogin={() => {}} />
+        <Footer type={'register'} onWechatLoginClick={() => {}} />
       </IntlProvider>,
     );
     expect(container).toMatchSnapshot();

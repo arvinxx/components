@@ -15,7 +15,11 @@ const LoginWithLogo = () => {
         padding: 24,
       }}
     >
-      <UserPanel.Login forgotUrl={'/components/biz/user-panel'} />
+      <UserPanel.Login
+        onForgotClick={(history) => {
+          history.push('/components/biz/user-panel');
+        }}
+      />
     </div>
   );
 };

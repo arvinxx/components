@@ -7,7 +7,7 @@ describe('UserPanel', () => {
   it('登录面板', async () => {
     const { container, findByText } = render(
       <UserPanel.Login
-        onClickCaptcha={(mobile) => {
+        onCaptchaClick={(mobile) => {
           console.log(mobile);
           return new Promise((resolve) => {
             resolve(true);

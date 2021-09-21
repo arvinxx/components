@@ -25,7 +25,7 @@ export interface HeaderProps {
   logoUrl?: string;
 }
 
-const Header: FC<HeaderProps> = ({ type, logo, logoUrl }) => {
+export const Header: FC<HeaderProps> = ({ type, logo, logoUrl }) => {
   const f = useFormatMessage();
 
   return (
@@ -51,5 +51,3 @@ const Header: FC<HeaderProps> = ({ type, logo, logoUrl }) => {
     </div>
   );
 };
-
-export default Header;
