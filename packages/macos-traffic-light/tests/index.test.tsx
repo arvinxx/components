@@ -26,7 +26,7 @@ describe('TrafficLight', () => {
 
   it('关闭最大化和最小化', () => {
     const { queryByTestId } = render(
-      <TrafficLight showMaximize={false} showMinimize={false} />,
+      <TrafficLight maximizable={false} minimizable={false} />,
     );
     const ctn = queryByTestId('container');
 
@@ -39,7 +39,7 @@ describe('TrafficLight', () => {
 
   it('测试最大化方法', () => {
     const maximize = jest.fn();
-    const { queryByTestId } = render(<TrafficLight maximize={maximize} />);
+    const { queryByTestId } = render(<TrafficLight onMaximize={maximize} />);
     const maxEl = queryByTestId('maximize');
     userEvent.click(maxEl);
     expect(maximize).toBeCalledTimes(1);
@@ -48,7 +48,7 @@ describe('TrafficLight', () => {
   it('测试禁用最大化方法', () => {
     const maximize = jest.fn();
     const { queryByTestId } = render(
-      <TrafficLight disableMaximize maximize={maximize} />,
+      <TrafficLight disableMaximize onMaximize={maximize} />,
     );
     const maxEl = queryByTestId('maximize');
     userEvent.click(maxEl);

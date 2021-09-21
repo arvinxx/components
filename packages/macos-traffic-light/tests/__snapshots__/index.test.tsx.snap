@@ -8,15 +8,15 @@ exports[`TrafficLight 默认状态 1`] = `
   >
     <div
       class="avx-traffic-light-close"
-      data-testid="close"
+      data-testid="onClose"
     />
     <div
       class="avx-traffic-light-minus"
-      data-testid="minimize"
+      data-testid="onMinimize"
     />
     <div
       class="avx-traffic-light-max"
-      data-testid="maximize"
+      data-testid="onMaximize"
     />
   </div>
 </div>
