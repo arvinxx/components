@@ -1830,12 +1830,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-transform-typescript@^7.12.1", "@babel/plugin-transform-typescript@^7.14.5":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.14.5.tgz#5b41b59072f765bd1ec1d0b694e08c7df0f6f8a0"
-  integrity sha512-cFD5PKp4b8/KkwQ7h71FdPXFvz1RgwTFF9akRZwFldb9G0AHf7CgoPx96c4Q/ZVjh6V81tqQwW5YiHws16OzPg==
+"@babel/plugin-transform-typescript@^7.12.1", "@babel/plugin-transform-typescript@^7.15.0":
+  version "7.15.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.15.4.tgz#db7a062dcf8be5fc096bc0eeb40a13fbfa1fa251"
+  integrity sha512-sM1/FEjwYjXvMwu1PJStH11kJ154zd/lpY56NQJ5qH2D0mabMv1CAy/kdvS9RP4Xgfj9fBBA3JiSLdDHgXdzOA==
   dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.14.5"
+    "@babel/helper-create-class-features-plugin" "^7.15.4"
     "@babel/helper-plugin-utils" "^7.14.5"
     "@babel/plugin-syntax-typescript" "^7.14.5"
 
@@ -2129,13 +2129,13 @@
     "@babel/plugin-transform-typescript" "^7.12.1"
 
 "@babel/preset-typescript@^7.12.7", "@babel/preset-typescript@^7.8.3":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.14.5.tgz#aa98de119cf9852b79511f19e7f44a2d379bcce0"
-  integrity sha512-u4zO6CdbRKbS9TypMqrlGH7sd2TAJppZwn3c/ZRLeO/wGsbddxgbPDUZVNrie3JWYLQ9vpineKlsrWFvO6Pwkw==
+  version "7.15.0"
+  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.15.0.tgz#e8fca638a1a0f64f14e1119f7fe4500277840945"
+  integrity sha512-lt0Y/8V3y06Wq/8H/u0WakrqciZ7Fz7mwPDHWUJAXlABL5hiUG42BNlRXiELNjeWjO5rWmnNKlx+yzJvxezHow==
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
     "@babel/helper-validator-option" "^7.14.5"
-    "@babel/plugin-transform-typescript" "^7.14.5"
+    "@babel/plugin-transform-typescript" "^7.15.0"
 
 "@babel/register@7.12.1":
   version "7.12.1"
@@ -2250,12 +2250,12 @@
     "@bedrock-layout/use-container-query" "^1.2.5"
     "@bedrock-layout/use-forwarded-ref" "^1.1.8"
 
-"@bedrock-layout/grid@^2.0.12":
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/grid/-/grid-2.0.12.tgz#1711b6070c626f41237ebd490a6ff964f1d6fc19"
-  integrity sha512-bnUQ95k2q1PtaAgCxZ9YCQKb+QHQCZbEqND5upt88fs87yUQu+I40AUGD0JJf2eyCZmvrXxl3wJjsk3qXhJFRQ==
+"@bedrock-layout/grid@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/grid/-/grid-2.1.6.tgz#cfe281da88a461dcd02b38e53f5e6844d54e1951"
+  integrity sha512-Povle85wqIJPn3LIJXWdvGOinMFy/cldwIfALhnbaC+OhGX1w+wCdY4W+olI9lsRoHUlMJHJ4LWpstnATAEMsQ==
   dependencies:
-    "@bedrock-layout/spacing-constants" "^2.2.5"
+    "@bedrock-layout/spacing-constants" "^2.4.2"
 
 "@bedrock-layout/inline-cluster@^2.0.12":
   version "2.0.12"
@@ -2273,17 +2273,17 @@
     "@bedrock-layout/spacing-constants" "^2.2.5"
 
 "@bedrock-layout/masonry-grid@^2.0.14":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/masonry-grid/-/masonry-grid-2.0.14.tgz#7e95058b17ab4f5081cc9b79519eff3f3c4a05dc"
-  integrity sha512-Euox9/AnoyXQ2wP1FIu/rHGRRwEOu1LSK8LDtblA6bVwHE5718yxOJihYiWRrGB+BnDEehyPucHRDob/uhMBcw==
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/masonry-grid/-/masonry-grid-2.1.7.tgz#1be2b9df56b16ed6726e4a4d03deb917f8b45b8a"
+  integrity sha512-09eL3qOGs91O+iT7FvREQVhC45FlyTHRrh59SqOTlRJXUcj43xEESuE5O5iU4iYSOW09DmQA5EsHCKCdDj9SRg==
   dependencies:
-    "@bedrock-layout/grid" "^2.0.12"
-    "@bedrock-layout/spacing-constants" "^2.2.5"
+    "@bedrock-layout/grid" "^2.1.6"
+    "@bedrock-layout/spacing-constants" "^2.4.2"
 
-"@bedrock-layout/spacing-constants@^2.2.5":
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/spacing-constants/-/spacing-constants-2.2.5.tgz#65b271e81341910890d0345f40af3338edf758ae"
-  integrity sha512-KXYnYIUyJODRwudHheCQ4/mfE19dGI47Xxzrtt3PXEYrlJmRrzza9jFbd1lo1DMyfzb846dRXfxvfl0j+Qjs+A==
+"@bedrock-layout/spacing-constants@^2.2.5", "@bedrock-layout/spacing-constants@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/spacing-constants/-/spacing-constants-2.4.2.tgz#60c6954298932bcb29f2b58e94f89fb98a3e484e"
+  integrity sha512-Wj9eI10uMJr1GA0rJjI/c3fPgYO7t+IelNo5fP6kCN2+WAoDkZGQdQGYzfDUMsNaXT/WYr0nP82+Of8MoG3cLQ==
 
 "@bedrock-layout/stack@^2.1.5":
   version "2.1.5"
