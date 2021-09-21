@@ -33,14 +33,14 @@ describe('TrafficLight', () => {
     fireEvent.mouseEnter(ctn);
 
     expect(queryByTestId('close-icon')).not.toBeNull();
-    expect(queryByTestId('maximize')).toBeNull();
-    expect(queryByTestId('minimize')).toBeNull();
+    expect(queryByTestId('onMaximize')).toBeNull();
+    expect(queryByTestId('onMinimize')).toBeNull();
   });
 
   it('测试最大化方法', () => {
     const maximize = jest.fn();
     const { queryByTestId } = render(<TrafficLight onMaximize={maximize} />);
-    const maxEl = queryByTestId('maximize');
+    const maxEl = queryByTestId('onMaximize');
     userEvent.click(maxEl);
     expect(maximize).toBeCalledTimes(1);
   });
@@ -50,7 +50,7 @@ describe('TrafficLight', () => {
     const { queryByTestId } = render(
       <TrafficLight disableMaximize onMaximize={maximize} />,
     );
-    const maxEl = queryByTestId('maximize');
+    const maxEl = queryByTestId('onMaximize');
     userEvent.click(maxEl);
     expect(maximize).toBeCalledTimes(0);
   });
