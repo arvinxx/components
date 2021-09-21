@@ -401,9 +401,9 @@
     "@antv/util" "^2.0.7"
 
 "@antv/layout@^0.1.12", "@antv/layout@^0.1.6":
-  version "0.1.15"
-  resolved "https://registry.yarnpkg.com/@antv/layout/-/layout-0.1.15.tgz#42ba47bd66630958eab40b2ed3f01e0b06bc199c"
-  integrity sha512-ANoMsTHPFcVE4Q25fCH00y8/ybNWCQbDt+B9Q1Kb2fPyiGkMYbv7KkI7B1fI+hciRFsu8VDaDLCrNYlv29NIvQ==
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/@antv/layout/-/layout-0.1.18.tgz#f1e23510fb3035f05fbc2978205efeec3fb878ed"
+  integrity sha512-mnuVtZLVnUzy09TpqlwsM5vKCMYFbHhZ/Un87gIFRkIFHwg7Uw5dlaRBpFviQ5rVBwuncKMXR7xPOGdlt3OnRg==
   dependencies:
     "@antv/g-webgpu" "0.5.5"
     d3-force "^2.0.1"
@@ -1830,12 +1830,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-transform-typescript@^7.12.1", "@babel/plugin-transform-typescript@^7.14.5":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.14.5.tgz#5b41b59072f765bd1ec1d0b694e08c7df0f6f8a0"
-  integrity sha512-cFD5PKp4b8/KkwQ7h71FdPXFvz1RgwTFF9akRZwFldb9G0AHf7CgoPx96c4Q/ZVjh6V81tqQwW5YiHws16OzPg==
+"@babel/plugin-transform-typescript@^7.12.1", "@babel/plugin-transform-typescript@^7.15.0":
+  version "7.15.4"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.15.4.tgz#db7a062dcf8be5fc096bc0eeb40a13fbfa1fa251"
+  integrity sha512-sM1/FEjwYjXvMwu1PJStH11kJ154zd/lpY56NQJ5qH2D0mabMv1CAy/kdvS9RP4Xgfj9fBBA3JiSLdDHgXdzOA==
   dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.14.5"
+    "@babel/helper-create-class-features-plugin" "^7.15.4"
     "@babel/helper-plugin-utils" "^7.14.5"
     "@babel/plugin-syntax-typescript" "^7.14.5"
 
@@ -2129,13 +2129,13 @@
     "@babel/plugin-transform-typescript" "^7.12.1"
 
 "@babel/preset-typescript@^7.12.7", "@babel/preset-typescript@^7.8.3":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.14.5.tgz#aa98de119cf9852b79511f19e7f44a2d379bcce0"
-  integrity sha512-u4zO6CdbRKbS9TypMqrlGH7sd2TAJppZwn3c/ZRLeO/wGsbddxgbPDUZVNrie3JWYLQ9vpineKlsrWFvO6Pwkw==
+  version "7.15.0"
+  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.15.0.tgz#e8fca638a1a0f64f14e1119f7fe4500277840945"
+  integrity sha512-lt0Y/8V3y06Wq/8H/u0WakrqciZ7Fz7mwPDHWUJAXlABL5hiUG42BNlRXiELNjeWjO5rWmnNKlx+yzJvxezHow==
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
     "@babel/helper-validator-option" "^7.14.5"
-    "@babel/plugin-transform-typescript" "^7.14.5"
+    "@babel/plugin-transform-typescript" "^7.15.0"
 
 "@babel/register@7.12.1":
   version "7.12.1"
