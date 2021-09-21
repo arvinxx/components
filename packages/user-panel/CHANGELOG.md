@@ -1,5 +1,11 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.16](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.15...@arvinxu/user-panel@1.0.0-beta.16) (2021-09-21)
+
+### 💄 样式
+
+- 优化 footer 样式 ([c0f1e25](https://github.com/arvinxx/components/commit/c0f1e25))
+
 # @arvinxu/user-panel [1.0.0-beta.15](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.14...@arvinxu/user-panel@1.0.0-beta.15) (2021-09-21)
 
 ### ✨ 新特性
