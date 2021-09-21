@@ -27,11 +27,9 @@
     "clean": "rm -rf es lib dist build coverage .umi"
   },
   "dependencies": {
-    "@arvinxu/i18n": "1.0.1"
-  },
-  "peerDependencies": {
     "@ant-design/icons": "^4.x",
     "@ant-design/pro-form": "^1.x",
-    "antd": "^4.x"
+    "antd": "^4.x",
+    "@arvinxu/i18n": "1.0.1"
   }
 }
