@@ -21,6 +21,7 @@ const SketchDemo = () => {
         data={sketch}
         darkBackground={'black'}
         layout={'grid'}
+        columns={2}
       />
     </div>
   );

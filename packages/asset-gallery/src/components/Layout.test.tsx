@@ -9,9 +9,7 @@ describe('Layout', () => {
     expect(container).toMatchSnapshot();
   });
   // it('Grid 布局', () => {
-  //   const { container } = render(
-  //     <Layout layout={'grid'} grid={{ columns: 1 }} />,
-  //   );
+  //   const { container } = render(<Layout layout={'grid'} />);
   //   expect(container).toMatchSnapshot();
   // });
 });

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout 瀑布流布局 1`] = `
+<div>
+  <div>
+    <div
+      style="padding: 0px 8px; display: flex; justify-content: space-between; align-items: center;"
+    >
+      <div />
+      <div
+        class="ant-space ant-space-horizontal ant-space-align-center"
+      >
+        <div
+          class="ant-space-item"
+        >
+          <div
+            class="ant-space ant-space-horizontal ant-space-align-center"
+          >
+            <div
+              class="ant-space-item"
+              style="margin-right: 0px;"
+            >
+              <button
+                class="ant-btn ant-btn-link ant-btn-icon-only"
+                data-testid="masonry-icon"
+                type="button"
+              >
+                <img
+                  alt="瀑布流布局"
+                  src="https://gw.alipayobjects.com/zos/antfincdn/gACoIFWH4G/masonry.svg"
+                  style="cursor: pointer;"
+                />
+              </button>
+            </div>
+            <div
+              class="ant-space-item"
+            >
+              <button
+                class="ant-btn ant-btn-link ant-btn-icon-only"
+                data-testid="grid-icon"
+                type="button"
+              >
+                <img
+                  alt="网格布局"
+                  src="https://gw.alipayobjects.com/zos/antfincdn/sLiHETRbAt/grid.svg"
+                  style="cursor: pointer;"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="avx-asset-gallery-container avx-asset-gallery-masonry"
+    />
+  </div>
+</div>
+`;

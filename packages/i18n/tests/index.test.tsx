@@ -3,15 +3,16 @@ import { act, findByTestId, render } from '@testing-library/react';
 import { renderHook } from '@testing-library/react-hooks';
 
 import createI18n from '@arvinxu/i18n';
-import type { LocaleMessageMaps } from '@arvinxu/i18n';
 
 const zhCN = {
   hello: '你好',
+  good: '好',
 };
 const en = {
   hello: 'hello',
+  good: 'good',
 };
-const locales: LocaleMessageMaps = {
+const locales = {
   'zh-CN': zhCN,
   'en-US': en,
 };

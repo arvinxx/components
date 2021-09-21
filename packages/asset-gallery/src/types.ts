@@ -1,23 +1,35 @@
+import type { ReactNode, CSSProperties } from 'react';
+
 export interface Asset {
+  /**
+   * @title 标题
+   */
   title: string;
   /**
-   * 图片 url
+   * @title 描述
+   */
+  description?: string;
+  /**
+   * @title 图片地址
    */
   url: string;
-  description?: string;
-
+  /**
+   * @title 是否反色
+   */
   dark?: boolean;
   /**
-   * 如果需要反色的话
-   * 可以设置反色的颜色
+   * @title 反色颜色
+   * @description 如果需要反色的话 可以设置反色的颜色
    */
   darkBackground?: string;
   /**
+   * @title 间距
    * 允许添加间距
    */
   padding?: number | string;
   /**
-   * 如果有 sketch
+   * @title sketch 地址
+   * sketch 的json 文件地址
    */
   sketch?: string;
 }
@@ -28,28 +40,69 @@ export interface AssetGalleryData {
   data: AssetList;
 }
 
-export interface ImageEntryYML {
+export interface ImageEntryYML extends Omit<Asset, 'url' | 'title'> {
   标题: string;
+  title?: string;
   描述?: string;
-
   反色?: boolean;
-  /**
-   * 如果需要反色的话
-   * 可以设置反色的颜色
-   */
   反色背景色?: string;
-  /**
-   * 图片 url
-   */
   链接: string;
+  url?: string;
+}
+
+export type AssetGalleryYML = ImageEntryYML[];
+
+export type LayoutType = 'grid' | 'masonry';
+
+export interface AssetGalleryProps {
   /**
-   * 允许添加间距
+   * @title 内容
+   * @default ""
    */
-  padding?: number | string;
+  data: AssetList | string;
+  /**
+   * @title 暗色默认背景色
+   * @description 暗色背景下默认的背景色
+   * @default #1890ff
+   */
+  darkBackground?: string;
+  /**
+   * @title 布局方式
+   * @enum ['grid','masonry']
+   * @enumOptions  [{ label: '网格', value: 'grid' }, { label: '瀑布流', value: 'masonry' }]
+   * @default grid
+   */
+  layout?: LayoutType;
+  /**
+   * 布局切换时的回调
+   * @ignore
+   */
+  onLayoutChange?: (layout: LayoutType) => void;
+  /**
+   * @title 显示logo
+   */
+  logo?: ReactNode;
+  /**
+   * @title 列数
+   * @default 1
+   */
+  columns?: number;
+  /**
+   * 列数改变时的回调
+   * @param columns
+   * @ignore
+   */
+  onColumnsChange?: (columns: number) => void;
+  /**
+   * @title 缩放滑竿
+   * @renderType radioGroup
+   * @default true
+   *  @enumOptions  [{ label: '显示', value: true }, { label: '隐藏', value: false }]
+   */
+  showSlider?: boolean;
 
   /**
-   * sketch 数据
+   * 样式
    */
-  sketch?: string;
+  style?: CSSProperties;
 }
-export type AssetGalleryYML = ImageEntryYML[];

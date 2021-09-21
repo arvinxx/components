@@ -20,4 +20,18 @@ module.exports = {
       },
     ],
   ],
+  pkgs: [
+    'utils',
+    'preloader',
+    'page-loading',
+    'asset-gallery',
+    'float-label-input',
+    'heatmap-calendar',
+    'i18n',
+    'journey-map',
+    'macos-traffic-light',
+    'mindflow',
+    'tag-selector',
+    'user-panel',
+  ],
 };

@@ -11,7 +11,9 @@ import type { LocaleMessageMaps, PrimitiveType } from './types';
 /**
  *
  */
-const createI18n = (messageObj: LocaleMessageMaps) => {
+const createI18n = <T extends Record<string, string>>(
+  messageObj: LocaleMessageMaps<T>,
+) => {
   const IntlProvider: FC = ({ children }) => {
     const { locale, messages } = useLocaleMessages(messageObj);
     return (
@@ -22,7 +24,7 @@ const createI18n = (messageObj: LocaleMessageMaps) => {
   };
 
   const useFormatMessage = (): ((
-    id: keyof LocaleMessageMaps['zh-CN'],
+    id: keyof T,
     values?: Record<string, PrimitiveType>,
   ) => string) => {
     const intl = useIntl();

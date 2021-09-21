@@ -8,14 +8,14 @@ import { images } from './data';
 
 const Demo = () => {
   return (
-    <div
+    <AssetGallery
       style={{
         background: '#fafafa',
         padding: 24,
       }}
-    >
-      <AssetGallery data={images} darkBackground={'black'} />
-    </div>
+      data={images}
+      darkBackground={'black'}
+    />
   );
 };
 
