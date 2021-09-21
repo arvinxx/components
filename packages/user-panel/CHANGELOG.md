@@ -1,5 +1,11 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.13](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.12...@arvinxu/user-panel@1.0.0-beta.13) (2021-09-21)
+
+### 👷 构建系统
+
+- 修正依赖构建方式 ([6213e75](https://github.com/arvinxx/components/commit/6213e75))
+
 # @arvinxu/user-panel [1.0.0-beta.12](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.11...@arvinxu/user-panel@1.0.0-beta.12) (2021-07-11)
 
 ### ✅ 测试

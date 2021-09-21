@@ -1,6 +1,6 @@
 {
   "name": "@arvinxu/user-panel",
-  "version": "1.0.0-beta.12",
+  "version": "1.0.0-beta.13",
   "files": [
     "lib",
     "es"
@@ -27,7 +27,7 @@
     "clean": "rm -rf es lib dist build coverage .umi"
   },
   "dependencies": {
-    "@arvinxu/i18n": "^1.0.1"
+    "@arvinxu/i18n": "1.0.1"
   },
   "peerDependencies": {
     "@ant-design/icons": "^4.x",
