@@ -5,13 +5,13 @@ const Basic = () => {
   return (
     <div>
       <TrafficLight
-        close={() => {
+        onClose={() => {
           alert('Pressed closed');
         }}
-        minimize={() => {
+        onMinimize={() => {
           alert('Pressed minimize');
         }}
-        maximize={() => {
+        onMaximize={() => {
           alert('Pressed maximize');
         }}
       />

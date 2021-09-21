@@ -21,14 +21,14 @@ import TrafficLight from '@arvinxu/macos-traffic-light';
 const Demo = () => {
   return (
     <TrafficLight
-      close={() => {
+      onClose={() => {
         alert('Pressed closed');
       }}
-      minimize={() => {
-        alert('Pressed minimize');
+      onMinimize={() => {
+        alert('Pressed onMinimize');
       }}
-      maximize={() => {
-        alert('Pressed maximize');
+      onMaximize={() => {
+        alert('Pressed onMaximize');
       }}
     />
   );

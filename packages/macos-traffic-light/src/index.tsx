@@ -14,25 +14,25 @@ interface TrafficLightProps {
   /**
    * 关闭事件
    */
-  close?: (event: MouseEvent) => void;
+  onClose?: (event: MouseEvent) => void;
   /**
    * 最小化事件
    */
-  minimize?: (event: MouseEvent) => void;
+  onMinimize?: (event: MouseEvent) => void;
   /**
    * 显示最小化图标
    * @default true
    */
-  showMinimize?: boolean;
+  minimizable?: boolean;
   /**
    * 最大化事件
    */
-  maximize?: (event: MouseEvent) => void;
+  onMaximize?: (event: MouseEvent) => void;
   /**
    * 显示最大化图标
    * @default true
    */
-  showMaximize?: boolean;
+  maximizable?: boolean;
   /**
    * 禁用最大化交互
    * @default false
@@ -41,11 +41,11 @@ interface TrafficLightProps {
 }
 
 const TrafficLight: FC<TrafficLightProps> = ({
-  close,
-  minimize,
-  maximize,
-  showMinimize = true,
-  showMaximize = true,
+  onClose,
+  onMinimize,
+  onMaximize,
+  minimizable = true,
+  maximizable = true,
   disableMaximize,
 }) => {
   const { hover, isFocus, hoverOff, hoverOn } = useTrafficLight();
@@ -60,39 +60,39 @@ const TrafficLight: FC<TrafficLightProps> = ({
       data-testid="container"
     >
       <div
-        onClick={close}
+        onClick={onClose}
         className={cls({
           'avx-traffic-light-close': true,
           'avx-traffic-light-blur': isBlur,
         })}
-        data-testid="close"
+        data-testid="onClose"
       >
         {hover ? <CloseIcon /> : null}
       </div>
-      {showMinimize ? (
+      {minimizable ? (
         <div
-          onClick={minimize}
+          onClick={onMinimize}
           className={cls({
             'avx-traffic-light-minus': true,
             'avx-traffic-light-blur': isBlur,
           })}
-          data-testid="minimize"
+          data-testid="onMinimize"
         >
           {hover ? <MinimizeIcon /> : null}
         </div>
       ) : null}
-      {showMaximize ? (
+      {maximizable ? (
         <div
           onClick={(e) => {
             if (disableMaximize) return;
-            maximize(e);
+            onMaximize?.(e);
           }}
           className={cls({
             'avx-traffic-light-max': true,
             'avx-traffic-light-blur': isBlur,
             'avx-traffic-light-disable': disableMaximize,
           })}
-          data-testid="maximize"
+          data-testid="onMaximize"
         >
           {!disableMaximize && hover ? <MaximizeIcon /> : null}
         </div>

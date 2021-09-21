@@ -27,13 +27,13 @@ const DisableMaximize = () => {
         <TrafficLight {...props} disableMaximize />
       </Block>
       <Block title={'移除最大化:'}>
-        <TrafficLight {...props} showMaximize={false} />
+        <TrafficLight {...props} maximizable={false} />
       </Block>
       <Block title={'移除最小化:'}>
-        <TrafficLight {...props} showMinimize={false} />
+        <TrafficLight {...props} minimizable={false} />
       </Block>
       <Block title={'移除最小与最大化:'}>
-        <TrafficLight {...props} showMinimize={false} showMaximize={false} />
+        <TrafficLight {...props} minimizable={false} maximizable={false} />
       </Block>
     </div>
   );
