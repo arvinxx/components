@@ -2143,12 +2143,12 @@
     "@bedrock-layout/use-container-query" "^1.2.5"
     "@bedrock-layout/use-forwarded-ref" "^1.1.8"
 
-"@bedrock-layout/grid@^2.0.12":
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/grid/-/grid-2.0.12.tgz#1711b6070c626f41237ebd490a6ff964f1d6fc19"
-  integrity sha512-bnUQ95k2q1PtaAgCxZ9YCQKb+QHQCZbEqND5upt88fs87yUQu+I40AUGD0JJf2eyCZmvrXxl3wJjsk3qXhJFRQ==
+"@bedrock-layout/grid@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/grid/-/grid-2.1.6.tgz#cfe281da88a461dcd02b38e53f5e6844d54e1951"
+  integrity sha512-Povle85wqIJPn3LIJXWdvGOinMFy/cldwIfALhnbaC+OhGX1w+wCdY4W+olI9lsRoHUlMJHJ4LWpstnATAEMsQ==
   dependencies:
-    "@bedrock-layout/spacing-constants" "^2.2.5"
+    "@bedrock-layout/spacing-constants" "^2.4.2"
 
 "@bedrock-layout/inline-cluster@^2.0.12":
   version "2.0.12"
@@ -2166,17 +2166,17 @@
     "@bedrock-layout/spacing-constants" "^2.2.5"
 
 "@bedrock-layout/masonry-grid@^2.0.14":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/masonry-grid/-/masonry-grid-2.0.14.tgz#7e95058b17ab4f5081cc9b79519eff3f3c4a05dc"
-  integrity sha512-Euox9/AnoyXQ2wP1FIu/rHGRRwEOu1LSK8LDtblA6bVwHE5718yxOJihYiWRrGB+BnDEehyPucHRDob/uhMBcw==
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/masonry-grid/-/masonry-grid-2.1.7.tgz#1be2b9df56b16ed6726e4a4d03deb917f8b45b8a"
+  integrity sha512-09eL3qOGs91O+iT7FvREQVhC45FlyTHRrh59SqOTlRJXUcj43xEESuE5O5iU4iYSOW09DmQA5EsHCKCdDj9SRg==
   dependencies:
-    "@bedrock-layout/grid" "^2.0.12"
-    "@bedrock-layout/spacing-constants" "^2.2.5"
+    "@bedrock-layout/grid" "^2.1.6"
+    "@bedrock-layout/spacing-constants" "^2.4.2"
 
-"@bedrock-layout/spacing-constants@^2.2.5":
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/spacing-constants/-/spacing-constants-2.2.5.tgz#65b271e81341910890d0345f40af3338edf758ae"
-  integrity sha512-KXYnYIUyJODRwudHheCQ4/mfE19dGI47Xxzrtt3PXEYrlJmRrzza9jFbd1lo1DMyfzb846dRXfxvfl0j+Qjs+A==
+"@bedrock-layout/spacing-constants@^2.2.5", "@bedrock-layout/spacing-constants@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/spacing-constants/-/spacing-constants-2.4.2.tgz#60c6954298932bcb29f2b58e94f89fb98a3e484e"
+  integrity sha512-Wj9eI10uMJr1GA0rJjI/c3fPgYO7t+IelNo5fP6kCN2+WAoDkZGQdQGYzfDUMsNaXT/WYr0nP82+Of8MoG3cLQ==
 
 "@bedrock-layout/stack@^2.1.5":
   version "2.1.5"
