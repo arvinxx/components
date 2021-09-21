@@ -1,6 +1,6 @@
 {
   "name": "@arvinxu/macos-traffic-light",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "files": [
     "lib",
     "es"
