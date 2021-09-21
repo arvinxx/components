@@ -1,5 +1,7 @@
 import React, { CSSProperties } from 'react';
 import type { FC } from 'react';
+import cls from 'classnames';
+
 import type { FooterProps, HeaderProps } from '../components';
 import { IntlProvider, Header, Footer } from '../components';
 import './style.less';
@@ -10,6 +12,7 @@ export interface LayoutProps extends FooterProps, HeaderProps {
    */
   showFooter?: boolean;
   style?: CSSProperties;
+  className?: string;
 }
 
 const Layout: FC<LayoutProps> = ({
@@ -21,10 +24,11 @@ const Layout: FC<LayoutProps> = ({
   type,
   onRegisterClick,
   style,
+  className,
 }) => {
   return (
     <IntlProvider>
-      <div className="avx-user-panel-container" style={style}>
+      <div className={cls('avx-user-panel-container', className)} style={style}>
         <Header type={type} logo={logo} logoUrl={logoUrl} />
         {children}
         {(onWechatLoginClick || onRegisterClick) && showFooter ? (
