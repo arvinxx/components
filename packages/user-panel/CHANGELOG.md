@@ -1,5 +1,11 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.18](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.17...@arvinxu/user-panel@1.0.0-beta.18) (2021-09-22)
+
+### ✨ 新特性
+
+- 增加 classname props ([7e222ec](https://github.com/arvinxx/components/commit/7e222ec))
+
 # @arvinxu/user-panel [1.0.0-beta.17](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.16...@arvinxu/user-panel@1.0.0-beta.17) (2021-09-21)
 
 ### 👷 构建系统
