@@ -26,6 +26,7 @@ export const UserLogin: FC<UserLoginProps> = ({
   onForgotClick,
   onRegisterClick,
   style,
+  className,
 }) => {
   return (
     <Layout
@@ -36,6 +37,7 @@ export const UserLogin: FC<UserLoginProps> = ({
       onWechatLoginClick={onWechatLoginClick}
       type={'login'}
       style={style}
+      className={className}
     >
       <Login
         onCaptchaClick={onCaptchaClick}
