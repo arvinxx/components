@@ -1,5 +1,11 @@
 # Changelog
 
+# @arvinxu/user-panel [1.0.0-beta.19](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.18...@arvinxu/user-panel@1.0.0-beta.19) (2021-09-25)
+
+### 👷 构建系统
+
+- 去除重复依赖 ([c00d120](https://github.com/arvinxx/components/commit/c00d120))
+
 # @arvinxu/user-panel [1.0.0-beta.18](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0-beta.17...@arvinxu/user-panel@1.0.0-beta.18) (2021-09-22)
 
 ### ✨ 新特性
