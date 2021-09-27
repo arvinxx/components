@@ -2108,20 +2108,20 @@
   dependencies:
     "@bedrock-layout/spacing-constants" "^2.4.2"
 
-"@bedrock-layout/inline-cluster@^2.0.12":
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/inline-cluster/-/inline-cluster-2.0.12.tgz#4699d9f1f4c7c056c9edb6dad0498b184b672924"
-  integrity sha512-6inXl5OwtyPbSgJPts5jKGiG31WfolpPRlmeK1E1oOaXIHtKOv7R/fYiNLRH18Qgp+GEbcgg1HBDhwyIDmAcSw==
+"@bedrock-layout/inline-cluster@^2.0.19":
+  version "2.0.19"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/inline-cluster/-/inline-cluster-2.0.19.tgz#29296b1d5c9b355c71dc6fb43d3ef46df0ab8794"
+  integrity sha512-1s5TptL8BC2Bs6y2mWxZgcmJ16S8hB8H8CTus0s1WNkt24qZTuptZu9hIK+oLFZYi4aCjgtlIZO2l3Z6F0zBLA==
   dependencies:
-    "@bedrock-layout/spacing-constants" "^2.2.5"
+    "@bedrock-layout/spacing-constants" "^2.4.2"
 
 "@bedrock-layout/inline@^2.0.15":
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/inline/-/inline-2.0.15.tgz#893bf9b4ebf8bec710fa3dea54fdd0c3bfd9ee37"
-  integrity sha512-OHjlqe6VuLFSRM7ms6ahnfpekTpj3uwEGLD0/jTYahjderSzRrEkU83x5qH14Jm7J8mbCDPgUpM0U3q7ESlONg==
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/inline/-/inline-2.0.23.tgz#4486965fb89359b033b97c137101b65eed448c22"
+  integrity sha512-Bd7rRFbYz+n/bA2qz8SypMdqzth/NmFs+jtJ04zLR+gMyf94n3hMQx8/Fd91az1CpFURznbkCDWytnbqg++5GQ==
   dependencies:
-    "@bedrock-layout/inline-cluster" "^2.0.12"
-    "@bedrock-layout/spacing-constants" "^2.2.5"
+    "@bedrock-layout/inline-cluster" "^2.0.19"
+    "@bedrock-layout/spacing-constants" "^2.4.2"
 
 "@bedrock-layout/masonry-grid@^2.0.14":
   version "2.1.7"
