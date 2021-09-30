@@ -11397,6 +11397,11 @@ interpret@^2.2.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-2.2.0.tgz#1a78a0b5965c40a5416d007ad6f50ad27c417df9"
   integrity sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==
 
+intersection-observer@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npm.taobao.org/intersection-observer/download/intersection-observer-0.5.1.tgz#e340fc56ce74290fe2b2394d1ce88c4353ac6dfa"
+  integrity sha1-40D8Vs50KQ/isjlNHOiMQ1Osbfo=
+
 intersection-observer@^0.7.0:
   version "0.7.0"
   resolved "https://registry.npm.taobao.org/intersection-observer/download/intersection-observer-0.7.0.tgz?cache=0&sync_timestamp=1607914497037&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fintersection-observer%2Fdownload%2Fintersection-observer-0.7.0.tgz#ee16bee978db53516ead2f0a8154b09b400bbdc9"
@@ -18356,6 +18361,13 @@ react-side-effect@^2.1.0:
   version "2.1.1"
   resolved "https://registry.npm.taobao.org/react-side-effect/download/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha1-ZsVwHD51YKtIIqTuJ0Le4hXXLrM=
+
+react-simple-img@^2.3.9:
+  version "2.3.9"
+  resolved "https://registry.nlark.com/react-simple-img/download/react-simple-img-2.3.9.tgz#d7cb230b4ace1928ab7b0b2f3ec9b23c03339c2e"
+  integrity sha1-18sjC0rOGSirewsvPsmyPAMznC4=
+  dependencies:
+    intersection-observer "^0.5.1"
 
 react-tween-state@^0.1.5:
   version "0.1.5"
