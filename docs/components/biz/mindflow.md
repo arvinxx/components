@@ -1,8 +1,6 @@
 ---
 title: Mindflow 思流
 order: 1
-group:
-  title: 业务组件
 ---
 
 # Mindflow 思流

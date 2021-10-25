@@ -1,9 +1,6 @@
 ---
 title: PageLoading
 order: 1
-group:
-  title: 通用组件
-  order: 2
 ---
 
 # PageLoading
