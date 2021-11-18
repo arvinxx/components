@@ -401,13 +401,13 @@
     "@antv/util" "^2.0.7"
 
 "@antv/layout@^0.1.12", "@antv/layout@^0.1.6":
-  version "0.1.15"
-  resolved "https://registry.yarnpkg.com/@antv/layout/-/layout-0.1.15.tgz#42ba47bd66630958eab40b2ed3f01e0b06bc199c"
-  integrity sha512-ANoMsTHPFcVE4Q25fCH00y8/ybNWCQbDt+B9Q1Kb2fPyiGkMYbv7KkI7B1fI+hciRFsu8VDaDLCrNYlv29NIvQ==
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/@antv/layout/-/layout-0.1.19.tgz#b3135a7d02f4bf5c237327590d4c8602d264bbe3"
+  integrity sha512-bFuVoCfa0e32MUncBy61IhMW4dOgB6f1WWbn5z/qINjX10BSygikzsj1Cm9gOn/Lu3Uho7MSYAvITy0v47yyrQ==
   dependencies:
     "@antv/g-webgpu" "0.5.5"
     d3-force "^2.0.1"
-    dagre "^0.8.5"
+    dagrejs "^0.2.1"
     ml-matrix "^6.5.0"
 
 "@antv/matrix-util@^3.0.4":
@@ -8322,6 +8322,14 @@ dagre@^0.8.5:
   dependencies:
     graphlib "^2.1.8"
     lodash "^4.17.15"
+
+dagrejs@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/dagrejs/-/dagrejs-0.2.1.tgz#1d5738c17fe7989ff90983ce845c74599bae6786"
+  integrity sha512-4bb1y+4aM1xtkK7ieP0V7Xn/34GQfnCapl0yubrOMX8Qb/PIwM1Dii2uUBv/KtuzrQtxPliSP4r5MQBsnP6gNg==
+  dependencies:
+    graphlib "^2.1.8"
+    lodash "^4.17.19"
 
 dargs@^7.0.0:
   version "7.0.0"
