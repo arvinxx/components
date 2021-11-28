@@ -16,8 +16,8 @@ const LoginWithLogo = () => {
       }}
     >
       <UserPanel.Login
-        onForgotClick={(history) => {
-          history.push('/components/biz/user-panel');
+        onForgotClick={(navigate) => {
+          navigate('/components/biz/user-panel');
         }}
       />
     </div>
