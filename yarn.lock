@@ -3992,26 +3992,7 @@
     semver "^7.1.2"
     tempy "^1.0.0"
 
-"@semantic-release/npm@^7.1.3":
-  version "7.1.3"
-  resolved "https://registry.nlark.com/@semantic-release/npm/download/@semantic-release/npm-7.1.3.tgz#1d64c41ff31b100299029c766ecc4d1f03aa5f5b"
-  integrity sha1-HWTEH/MbEAKZApx2bsxNHwOqX1s=
-  dependencies:
-    "@semantic-release/error" "^2.2.0"
-    aggregate-error "^3.0.0"
-    execa "^5.0.0"
-    fs-extra "^10.0.0"
-    lodash "^4.17.15"
-    nerf-dart "^1.0.0"
-    normalize-url "^6.0.0"
-    npm "^7.0.0"
-    rc "^1.2.8"
-    read-pkg "^5.0.0"
-    registry-auth-token "^4.0.0"
-    semver "^7.1.2"
-    tempy "^1.0.0"
-
-"@semantic-release/npm@^8.0.0":
+"@semantic-release/npm@^8.0.0", "@semantic-release/npm@^8.0.3":
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-8.0.3.tgz#69378ce529bbd263aa8fc899b2d0f874114e0302"
   integrity sha512-Qbg7x/O1t3sJqsv2+U0AL4Utgi/ymlCiUdt67Ftz9HL9N8aDML4t2tE0T9MBaYdqwD976hz57DqHHXKVppUBoA==
@@ -15294,15 +15275,10 @@ normalize-url@^5.0.0:
   resolved "https://registry.npm.taobao.org/normalize-url/download/normalize-url-5.3.0.tgz?cache=0&sync_timestamp=1602432879767&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnormalize-url%2Fdownload%2Fnormalize-url-5.3.0.tgz#8959b3cdaa295b61592c1f245dded34b117618dd"
   integrity sha1-iVmzzaopW2FZLB8kXd7TSxF2GN0=
 
-normalize-url@^6.0.0:
+normalize-url@^6.0.0, normalize-url@^6.0.1:
   version "6.1.0"
   resolved "https://registry.nlark.com/normalize-url/download/normalize-url-6.1.0.tgz?cache=0&sync_timestamp=1628689122508&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fnormalize-url%2Fdownload%2Fnormalize-url-6.1.0.tgz#40d0885b535deffe3f3147bec877d05fe4c5668a"
   integrity sha1-QNCIW1Nd7/4/MUe+yHfQX+TFZoo=
-
-normalize-url@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-6.0.1.tgz#a4f27f58cf8c7b287b440b8a8201f42d0b00d256"
-  integrity sha512-VU4pzAuh7Kip71XEmO9aNREYAdMHFGTVj/i+CaTImS8x0i1d3jUZkXhqluy/PRgjPLMgsLQulYY3PJ/aSbSjpQ==
 
 normalize.css@^7.0.0:
   version "7.0.0"
