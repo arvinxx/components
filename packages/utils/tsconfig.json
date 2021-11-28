@@ -2,7 +2,6 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "declaration": true,
-    "jsx": "react-jsx",
     "skipLibCheck": true,
     /* babel 输出类型 */
     "moduleResolution": "Node",

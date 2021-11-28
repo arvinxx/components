@@ -33,14 +33,14 @@ Mindflow 是基于 [溯因推理][reason] 与 [图尔敏推论模型][toulmin] �
 
 ### 基本 Demo
 
-<code src='./_demos/Demo.tsx' />
+<code src='../demos/Demo.tsx' />
 
 ### 博物馆案例
 
-<code src='./_demos/Museum.tsx' />
+<code src='../demos/Museum.tsx' />
 
 ### 思维结构
 
-<code src='./_demos/Thinking.tsx' />
+<code src='../demos/Thinking.tsx' />
 
 <API src='./index.tsx'></API>

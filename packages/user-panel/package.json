@@ -19,7 +19,6 @@
   },
   "scripts": {
     "build": "father-build",
-    "webpack": "webpack",
     "test": "jest",
     "test:update": "jest -u",
     "cov": "jest --coverage",

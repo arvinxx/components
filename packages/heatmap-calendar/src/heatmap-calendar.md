@@ -48,6 +48,6 @@ interface Item {
 
 ## 演示
 
-<code src='./_demos/Demo.tsx' />
+<code src='../demos/Demo.tsx' />
 
 <API src='./index.tsx'></API>

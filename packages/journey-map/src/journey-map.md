@@ -21,11 +21,11 @@ nav:
 
 ## 默认
 
-<code src='./_demos/Demo.tsx' />
+<code src='../demos/Demo.tsx' />
 
 ## 自定义颜色
 
-<code src='./_demos/CustomColor.tsx' />
+<code src='../demos/CustomColor.tsx' />
 
 ## 使用 YML
 
@@ -98,10 +98,10 @@ stages:
 
 ### 加载字符串
 
-<code src='./_demos/YAMLWithString.tsx' />
+<code src='../demos/YAMLWithString.tsx' />
 
 ### 加载网址
 
-<code src='./_demos/YAMLWithURL.tsx' />
+<code src='../demos/YAMLWithURL.tsx' />
 
 <API src='./index.tsx'></API>
