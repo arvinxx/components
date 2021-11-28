@@ -2,6 +2,19 @@
 
 ## @arvinxu/utils [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/utils@1.0.1...@arvinxu/utils@1.0.2) (2021-11-28)
 
+
+### 🎫 杂项
+
+* 修正构建问题 ([8e21e60](https://github.com/arvinxx/components/commit/8e21e60))
+* **自动发布**: @arvinxu/utils@1.0.2 [skip ci] ([213a3a9](https://github.com/arvinxx/components/commit/213a3a9))
+
+
+### 👷 构建系统
+
+* 修正构建配置 ([d901be1](https://github.com/arvinxx/components/commit/d901be1))
+
+## @arvinxu/utils [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/utils@1.0.1...@arvinxu/utils@1.0.2) (2021-11-28)
+
 ### 🎫 杂项
 
 - 修正构建问题 ([8e21e60](https://github.com/arvinxx/components/commit/8e21e60))
