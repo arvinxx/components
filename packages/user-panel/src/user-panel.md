@@ -16,25 +16,25 @@ order: 4
 
 ## 登录面板
 
-<code src='./examples/UserPanel/Login.tsx' />
+<code src='../demos/Login.tsx' />
 
 ### 带 Logo
 
-<code src='./examples/UserPanel/LoginWithLogo.tsx' />
+<code src='../demos/LoginWithLogo.tsx' />
 
 ### 显示忘记密码
 
 填入 忘记密码所在 url 或者实现方法
 
-<code src='./examples/UserPanel/LoginWithForgotUrl.tsx' />
+<code src='../demos/LoginWithForgotUrl.tsx' />
 
 ### 显示底部
 
 如果需要显示微信登录按钮, 需要实现 `onWechatLoginClick` 方法. 否则默认不显示
 
-<code src='./examples/UserPanel/LoginWithFooter.tsx' />
+<code src='../demos/LoginWithFooter.tsx' />
 
-<API src='../../../packages/user-panel/src/UserLogin.tsx'></API>
+<API src='./UserLogin.tsx'></API>
 
 ## 注册面板
 

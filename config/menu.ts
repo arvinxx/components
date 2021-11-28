@@ -20,6 +20,7 @@ export const menus = {
         'journey-map',
         'mindflow',
         'heatmap-calendar',
+        'user-panel',
       ],
     },
     {
