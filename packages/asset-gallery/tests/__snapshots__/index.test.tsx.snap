@@ -114,6 +114,7 @@ exports[`AssetGallery 加载数据 1`] = `
                 alt="渐变色 Logo"
                 class="avx-asset-gallery-image"
                 src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
+                style="padding: 12px;"
               />
             </div>
           </div>
@@ -443,6 +444,7 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
                 alt="渐变色 Logo"
                 class="avx-asset-gallery-image"
                 src="https://gw.alipayobjects.com/zos/antfincdn/OuMB9liYZV/tupian%2525201.png"
+                style="padding: 12px;"
               />
             </div>
           </div>
@@ -544,6 +546,7 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
                 alt="黑色 Logo"
                 class="avx-asset-gallery-image"
                 src="https://gw.alipayobjects.com/zos/antfincdn/5vmPNr6Qqz/tupian%2525202.png"
+                style="padding: 12px;"
               />
             </div>
           </div>

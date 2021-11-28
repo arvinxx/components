@@ -28,6 +28,7 @@ exports[`AssetCard Sketch 测试 1`] = `
             alt="Sketch 测试"
             class="avx-asset-gallery-image"
             src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
+            style="padding: 12px;"
           />
         </div>
       </div>
@@ -99,6 +100,7 @@ exports[`AssetCard 图片 Png 1`] = `
             alt="测试"
             class="avx-asset-gallery-image"
             src="https://gw.alipayobjects.com/zos/antfincdn/G5sZluNGGA/25c4fe16-7d52-4b32-904e-3eccb4a1ff47.png"
+            style="padding: 12px;"
           />
         </div>
       </div>
@@ -200,6 +202,7 @@ exports[`AssetCard 图片 Svg 1`] = `
             alt="Svg 测试"
             class="avx-asset-gallery-image"
             src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
+            style="padding: 12px;"
           />
         </div>
       </div>
