@@ -4300,16 +4300,15 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react-hooks@^5.1.0":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-5.1.2.tgz#36e359d992bb652a9885c6fa9aa394639cbe8dd3"
-  integrity sha512-jwhtDYZ5gQUIX8cmVCVdtwNvuF5EiCOWjokRlTV+o/V0GdtRZDykUllL1OXq5PS4+J33wGLNQeeWzEHcWrH7tg==
+"@testing-library/react-hooks@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-hooks/-/react-hooks-7.0.2.tgz#3388d07f562d91e7f2431a4a21b5186062ecfee0"
+  integrity sha512-dYxpz8u9m4q1TuzfcUApqi8iFfR6R0FaMbr2hjZJy1uC8z+bO/K4v8Gs9eogGKYQop7QsrBTFkv/BCF7MzD2Cg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@types/react" ">=16.9.0"
     "@types/react-dom" ">=16.9.0"
     "@types/react-test-renderer" ">=16.9.0"
-    filter-console "^0.1.1"
     react-error-boundary "^3.1.0"
 
 "@testing-library/react@^11.2.5":
@@ -10192,11 +10191,6 @@ fill-range@^7.0.1:
   integrity sha1-GRmmp8df44ssfHflGYU12prN2kA=
   dependencies:
     to-regex-range "^5.0.1"
-
-filter-console@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/filter-console/-/filter-console-0.1.1.tgz#6242be28982bba7415bcc6db74a79f4a294fa67c"
-  integrity sha512-zrXoV1Uaz52DqPs+qEwNJWJFAWZpYJ47UNmpN9q4j+/EYsz85uV0DC9k8tRND5kYmoVzL0W+Y75q4Rg8sRJCdg==
 
 filter-obj@^1.1.0:
   version "1.1.0"
