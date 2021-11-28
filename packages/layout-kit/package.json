@@ -1,5 +1,5 @@
 {
-  "name": "@arvinxu/layout-toolkit",
+  "name": "@arvinxu/layout-kit",
   "version": "1.0.0",
   "files": [
     "lib",
@@ -7,11 +7,18 @@
   ],
   "main": "lib/index.js",
   "module": "es/index.js",
-  "homepage": "https://github.com/arvinxx/components/tree/master/packages/layout-toolkit#readme",
+  "homepage": "https://github.com/arvinxx/components/tree/master/packages/layout-kit#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
+  },
+  "peerDependencies": {
+    "styled-components": ">5"
+  },
+  "devDependencies": {
+    "styled-components": "^5.3.3",
+    "@types/styled-components": "^5.1.15"
   },
   "scripts": {
     "build": "father-build && yarn webpack",

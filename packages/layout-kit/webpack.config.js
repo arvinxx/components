@@ -5,7 +5,7 @@ module.exports = {
   ...config,
   output: {
     ...config.output,
-    library: 'LayoutToolkit',
+    library: 'LayoutKit',
     path: path.resolve(__dirname, 'dist'),
   },
 };

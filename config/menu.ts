@@ -25,7 +25,7 @@ export const menus = {
     },
     {
       title: 'LayoutToolkit 布局工具库',
-      children: ['layout-toolkit'],
+      children: ['layout-kit'],
     },
   ],
   '/guide': [

@@ -1,8 +1,8 @@
 const base = require('../../jest.config.base');
 
-const packageName = '@arvinxu/layout-toolkit';
+const packageName = '@arvinxu/layout-kit';
 
-const root = '<rootDir>/packages/layout-toolkit';
+const root = '<rootDir>/packages/layout-kit';
 
 module.exports = {
   ...base,
