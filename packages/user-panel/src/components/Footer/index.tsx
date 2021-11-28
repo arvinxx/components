@@ -1,8 +1,7 @@
 import React from 'react';
 import type { FC } from 'react';
-import type { NavigateFunction } from 'react-router';
-import { useNavigate } from 'react-router';
-
+import type * as H from 'history';
+import { useHistory } from 'react-router';
 import { Typography, Divider } from 'antd';
 
 import WechatLogin from '../WechatLogin';
@@ -27,7 +26,7 @@ export interface FooterProps {
   /**
    * @title 注册页面 Url
    */
-  onRegisterClick?: (navigate: NavigateFunction) => void;
+  onRegisterClick?: (history: H.History) => void;
 }
 
 export const Footer: FC<FooterProps> = ({
@@ -37,12 +36,12 @@ export const Footer: FC<FooterProps> = ({
 }) => {
   const f = useFormatMessage();
 
-  const navigate = useNavigate();
+  const history = useHistory();
 
   const onClick = () => {
     switch (type) {
       case 'login':
-        onRegisterClick?.(navigate);
+        onRegisterClick?.(history);
         break;
       case 'register':
         break;

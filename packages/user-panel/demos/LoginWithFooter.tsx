@@ -21,8 +21,8 @@ const LoginWithFooter = () => {
         onWechatLoginClick={() => {
           message.info('微信登录实现方法');
         }}
-        onRegisterClick={(navigate) => {
-          navigate('/components/biz/user-panel#显示底部');
+        onRegisterClick={(history) => {
+          history.push('/components/biz/user-panel#显示底部');
         }}
       />
     </div>

@@ -11,14 +11,13 @@ import ProForm, {
   ProFormCheckbox,
   ProFormText,
 } from '@ant-design/pro-form';
-import type { NavigateFunction } from 'react-router';
-import { useNavigate } from 'react-router';
-
 import LoginErrorMessage from './LoginErrorMessage';
 
-import type { IUserLogin } from '../types';
-import { useFormatMessage } from '../components';
 import './index.less';
+import { useFormatMessage } from '../components';
+import type { IUserLogin } from '../types';
+import * as H from 'history';
+import { useHistory } from 'react-router';
 
 export interface LoginProps {
   /**
@@ -36,7 +35,7 @@ export interface LoginProps {
   /**
    * 忘记密码 url
    */
-  onForgotClick?: (navigate: NavigateFunction) => void;
+  onForgotClick?: (history: H.History) => void;
 }
 
 const Login: React.FC<LoginProps> = (props) => {
@@ -49,7 +48,7 @@ const Login: React.FC<LoginProps> = (props) => {
   const { status, type: loginType } = loginStatus;
 
   const f = useFormatMessage();
-  const navigate = useNavigate();
+  const history = useHistory();
 
   return (
     <div className="avx-user-panel-login-container">
@@ -208,7 +207,7 @@ const Login: React.FC<LoginProps> = (props) => {
                 float: 'right',
               }}
               onClick={() => {
-                onForgotClick(navigate);
+                onForgotClick(history);
               }}
             >
               {f('login.forgotPassword')}

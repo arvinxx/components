@@ -1,12 +1,12 @@
 ---
-title: LayoutToolkit 布局工具库
+title: LayoutKit 布局工具库
 group:
   path: /
 nav:
   path: /components
 ---
 
-# LayoutToolkit 布局工具库
+# LayoutKit 布局工具库
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
