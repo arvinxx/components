@@ -8,14 +8,15 @@ import { yml } from './yml';
 
 const YAMLDemo = () => {
   return (
-    <div
+    <AssetGallery
+      data={yml}
+      darkBackground={'black'}
+      coverPadding={24}
       style={{
         background: '#fafafa',
         padding: 24,
       }}
-    >
-      <AssetGallery data={yml} darkBackground={'black'} />
-    </div>
+    />
   );
 };
 

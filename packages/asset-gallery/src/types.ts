@@ -112,9 +112,12 @@ export interface AssetGalleryProps {
    *  @enumOptions  [{ label: '显示', value: true }, { label: '隐藏', value: false }]
    */
   showSlider?: boolean;
-
   /**
-   * 样式
+   * @title 全局图片的内边距
+   */
+  coverPadding?: number | string;
+  /**
+   * @title 样式
    */
   style?: CSSProperties;
 }

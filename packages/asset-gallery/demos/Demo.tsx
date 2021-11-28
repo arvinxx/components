@@ -15,6 +15,7 @@ const Demo = () => {
       }}
       data={images}
       darkBackground={'black'}
+      coverPadding={24}
     />
   );
 };

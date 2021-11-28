@@ -18,7 +18,7 @@ import type { Asset } from '../types';
 import { copySketch } from '../utils/sketch';
 
 const AssetCard: FC<Asset> = ({
-  padding,
+  padding = 12,
   url,
   title,
   darkBackground,

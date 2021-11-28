@@ -23,6 +23,7 @@ const AssetGallery: FC<AssetGalleryProps> = ({
   defaultColumns,
   onColumnsChange,
   style,
+  coverPadding,
 }) => {
   const [columns, setColumn] = useMergeValue(4, {
     value: columnsProps,
@@ -56,7 +57,7 @@ const AssetGallery: FC<AssetGalleryProps> = ({
         return (
           <AssetCard
             key={index}
-            padding={padding}
+            padding={padding || coverPadding}
             url={url}
             dark={dark}
             darkBackground={backgroundColor}
