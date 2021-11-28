@@ -120,7 +120,7 @@
     "semantic-release": "^18.0.1",
     "semantic-release-config-gitmoji": "^1.2.4",
     "serve": "^12.0.0",
-    "style-loader": "^2.0.0",
+    "style-loader": "^3.3.1",
     "stylelint": "^13.0.0",
     "terser-webpack-plugin": "^5.1.1",
     "tplant": "^2.3.6",
