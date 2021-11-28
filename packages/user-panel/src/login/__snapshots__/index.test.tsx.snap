@@ -6,7 +6,6 @@ exports[`Login 组件 获取验证码 1`] = `
     class="avx-user-panel-login-container"
   >
     <form
-      autocomplete="off"
       class="ant-form ant-form-vertical"
     >
       <input
@@ -317,7 +316,6 @@ exports[`Login 组件 默认状态 1`] = `
     class="avx-user-panel-login-container"
   >
     <form
-      autocomplete="off"
       class="ant-form ant-form-vertical"
     >
       <input

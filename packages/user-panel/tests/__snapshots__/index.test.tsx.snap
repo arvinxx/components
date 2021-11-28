@@ -19,7 +19,6 @@ exports[`UserPanel 登录面板 1`] = `
       class="avx-user-panel-login-container"
     >
       <form
-        autocomplete="off"
         class="ant-form ant-form-vertical"
       >
         <input
