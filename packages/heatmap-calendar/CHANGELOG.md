@@ -1,5 +1,29 @@
 # Changelog
 
+## @arvinxu/heatmap-calendar [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/heatmap-calendar@1.0.0...@arvinxu/heatmap-calendar@1.0.1) (2021-11-28)
+
+
+### ✅ 测试
+
+* 提升测试覆盖率 ([386653b](https://github.com/arvinxx/components/commit/386653b))
+* 提升测试覆盖率 ([f88fb85](https://github.com/arvinxx/components/commit/f88fb85))
+
+
+### 🎫 杂项
+
+* 优化依赖 ([04ed5f3](https://github.com/arvinxx/components/commit/04ed5f3))
+* 调整组件库文档架构 ([1f69dfd](https://github.com/arvinxx/components/commit/1f69dfd))
+
+
+### 👷 构建系统
+
+* 修正构建配置 ([d901be1](https://github.com/arvinxx/components/commit/d901be1))
+
+
+### 🔧 持续集成
+
+* 修正 ci 测试 ([622ed7c](https://github.com/arvinxx/components/commit/622ed7c))
+
 # @arvinxu/heatmap-calendar 1.0.0 (2021-05-03)
 
 
