@@ -74,6 +74,13 @@ export interface AssetGalleryProps {
    */
   layout?: LayoutType;
   /**
+   * @title 布局方式
+   * @enum ['grid','masonry']
+   * @enumOptions  [{ label: '网格', value: 'grid' }, { label: '瀑布流', value: 'masonry' }]
+   * @default grid
+   */
+  defaultLayout?: LayoutType;
+  /**
    * 布局切换时的回调
    * @ignore
    */
@@ -87,6 +94,11 @@ export interface AssetGalleryProps {
    * @default 1
    */
   columns?: number;
+  /**
+   * @title 初始列数
+   * @default 1
+   */
+  defaultColumns?: number;
   /**
    * 列数改变时的回调
    * @param columns

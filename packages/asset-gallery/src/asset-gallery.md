@@ -30,24 +30,25 @@ nav:
 ### 使用 JSON
 
 组件库的 Logo 物料
-<code src='./demos/Demo.tsx' />
+
+<code src='../demos/Demo.tsx' />
 
 ### 使用 YML
 
 `v2.0.0` 开始支持使用 YAML 语法
 
-<code src='./demos/YAMLDemo.tsx' />
+<code src='../demos/YAMLDemo.tsx' />
 
 ### Png 图片
 
 图片源为 Png
 
-<code src='./demos/PngDemo.tsx' />
+<code src='../demos/PngDemo.tsx' />
 
 ## Sketch 素材
 
 复制 Sketch 文件, 使用 [sketch-json](https://github.com/arvinxx/sketch-json) 粘贴到 sketch 中
 
-<code src='./demos/SketchDemo.tsx' />
+<code src='../demos/SketchDemo.tsx' />
 
 <API src='./index.tsx'></API>
