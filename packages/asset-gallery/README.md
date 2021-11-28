@@ -2,8 +2,6 @@
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
-资产画廊
-
 [![Edit Design Assets Gallery](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/damp-haze-djpd7?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Demo
