@@ -11,4 +11,5 @@ module.exports = {
   name: packageName,
   displayName: packageName,
   collectCoverageFrom: [`${root}/src/**/*.tsx`, `${root}/src/**/*.ts`],
+  setupFiles: [...base.setupFiles, `${root}/tests/setup.ts`],
 };

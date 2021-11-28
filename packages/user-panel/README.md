@@ -2,6 +2,8 @@
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
+用户登录注册面板
+
 ## License
 
 [MIT](../../LICENSE) ® Arvin Xu

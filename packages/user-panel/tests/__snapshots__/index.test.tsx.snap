@@ -1,9 +1,326 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserPanel 默认状态 1`] = `
+exports[`UserPanel 登录面板 1`] = `
 <div>
-  <div>
-    UserPanel
+  <div
+    class="avx-user-panel-container"
+  >
+    <div
+      class="avx-user-panel-header"
+    >
+      <h2
+        class="ant-typography"
+        style="text-align: center; margin-bottom: 24px; font-weight: normal;"
+      >
+        立即登录
+      </h2>
+    </div>
+    <div
+      class="avx-user-panel-login-container"
+    >
+      <form
+        autocomplete="off"
+        class="ant-form ant-form-vertical"
+      >
+        <input
+          style="display: none;"
+          type="text"
+        />
+        <div
+          class="ant-tabs ant-tabs-top ant-tabs-card"
+        >
+          <div
+            class="ant-tabs-nav"
+            role="tablist"
+          >
+            <div
+              class="ant-tabs-nav-wrap"
+            >
+              <div
+                class="ant-tabs-nav-list"
+                style="transform: translate(0px, 0px);"
+              >
+                <div
+                  class="ant-tabs-tab"
+                >
+                  <div
+                    aria-controls="rc-tabs-test-panel-account"
+                    aria-selected="false"
+                    class="ant-tabs-tab-btn"
+                    id="rc-tabs-test-tab-account"
+                    role="tab"
+                    tabindex="0"
+                  >
+                    账户密码登录
+                  </div>
+                </div>
+                <div
+                  class="ant-tabs-tab ant-tabs-tab-active"
+                >
+                  <div
+                    aria-controls="rc-tabs-test-panel-mobile"
+                    aria-selected="true"
+                    class="ant-tabs-tab-btn"
+                    id="rc-tabs-test-tab-mobile"
+                    role="tab"
+                    tabindex="0"
+                  >
+                    手机号登录
+                  </div>
+                </div>
+                <div
+                  class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
+                  style="left: 0px; width: 0px;"
+                />
+              </div>
+            </div>
+            <div
+              class="ant-tabs-nav-operations ant-tabs-nav-operations-hidden"
+            >
+              <button
+                aria-controls="rc-tabs-test-more-popup"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-hidden="true"
+                class="ant-tabs-nav-more"
+                id="rc-tabs-test-more"
+                style="visibility: hidden; order: 1;"
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  aria-label="ellipsis"
+                  class="anticon anticon-ellipsis"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    data-icon="ellipsis"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="ant-tabs-content-holder"
+          >
+            <div
+              class="ant-tabs-content ant-tabs-content-top"
+            >
+              <div
+                aria-hidden="true"
+                aria-labelledby="rc-tabs-test-tab-account"
+                class="ant-tabs-tabpane"
+                id="rc-tabs-test-panel-account"
+                role="tabpanel"
+                style="display: none;"
+                tabindex="-1"
+              />
+              <div
+                aria-hidden="false"
+                aria-labelledby="rc-tabs-test-tab-mobile"
+                class="ant-tabs-tabpane ant-tabs-tabpane-active"
+                id="rc-tabs-test-panel-mobile"
+                role="tabpanel"
+                style=""
+                tabindex="0"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="ant-row ant-form-item ant-form-item-with-help ant-form-item-has-error"
+        >
+          <div
+            class="ant-col ant-form-item-control"
+          >
+            <div
+              class="ant-form-item-control-input"
+            >
+              <div
+                class="ant-form-item-control-input-content"
+              >
+                <span
+                  class="ant-input-affix-wrapper ant-input-affix-wrapper-lg"
+                >
+                  <span
+                    class="ant-input-prefix"
+                  >
+                    <span
+                      aria-label="mobile"
+                      class="anticon anticon-mobile avx-user-panel-login-prefixIcon"
+                      role="img"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        data-icon="mobile"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M744 62H280c-35.3 0-64 28.7-64 64v768c0 35.3 28.7 64 64 64h464c35.3 0 64-28.7 64-64V126c0-35.3-28.7-64-64-64zm-8 824H288V134h448v752zM472 784a40 40 0 1080 0 40 40 0 10-80 0z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <input
+                    class="ant-input ant-input-lg"
+                    id="mobile"
+                    placeholder="请输入手机号"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    class="ant-input-suffix"
+                  >
+                    <span
+                      aria-label="close-circle"
+                      class="anticon anticon-close-circle ant-input-clear-icon-hidden ant-input-clear-icon"
+                      role="button"
+                      tabindex="-1"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        data-icon="close-circle"
+                        fill="currentColor"
+                        focusable="false"
+                        height="1em"
+                        viewBox="64 64 896 896"
+                        width="1em"
+                      >
+                        <path
+                          d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 01-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div
+              class="ant-form-item-explain ant-form-item-explain-error"
+            >
+              <div
+                role="alert"
+              >
+                手机号是必填项！
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ant-row ant-form-item"
+        >
+          <div
+            class="ant-col ant-form-item-control"
+          >
+            <div
+              class="ant-form-item-control-input"
+            >
+              <div
+                class="ant-form-item-control-input-content"
+              >
+                <div
+                  style="display: flex; align-items: center;"
+                >
+                  <span
+                    class="ant-input-affix-wrapper ant-input-affix-wrapper-lg"
+                    style="flex: 1; transition: width .3s; margin-right: 8px;"
+                  >
+                    <span
+                      class="ant-input-prefix"
+                    >
+                      <span
+                        aria-label="mail"
+                        class="anticon anticon-mail avx-user-panel-login-prefixIcon"
+                        role="img"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          data-icon="mail"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0068.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"
+                          />
+                        </svg>
+                      </span>
+                    </span>
+                    <input
+                      class="ant-input ant-input-lg"
+                      id="captcha"
+                      placeholder="请输入验证码"
+                      type="text"
+                      value=""
+                    />
+                  </span>
+                  <button
+                    ant-click-animating-without-extra-node="true"
+                    class="ant-btn ant-btn-lg"
+                    style="display: block;"
+                    type="button"
+                  >
+                    <span>
+                      获取验证码
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="margin-bottom: 24px;"
+        >
+          <label
+            class="ant-checkbox-wrapper ant-checkbox-wrapper-checked"
+          >
+            <span
+              class="ant-checkbox ant-checkbox-checked"
+            >
+              <input
+                checked=""
+                class="ant-checkbox-input"
+                id="autoLogin"
+                type="checkbox"
+                value=""
+              />
+              <span
+                class="ant-checkbox-inner"
+              />
+            </span>
+            <span>
+              自动登录
+            </span>
+          </label>
+        </div>
+        <button
+          class="ant-btn ant-btn-primary ant-btn-lg"
+          style="width: 100%;"
+          type="button"
+        >
+          <span>
+            登 录
+          </span>
+        </button>
+      </form>
+    </div>
   </div>
 </div>
 `;

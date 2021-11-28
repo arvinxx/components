@@ -1,5 +1,10 @@
-const base = require('../../.fatherrc');
-
 module.exports = {
-  ...base,
+  entry: 'src/index.ts',
+  esm: {
+    type: 'babel',
+    importLibToEs: true,
+  },
+  cjs: 'babel',
+  extraBabelPlugins: [['import', { libraryName: 'antd', style: true }]],
+  pkgs: ['@arvinxu/i18n'],
 };

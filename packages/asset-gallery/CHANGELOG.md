@@ -2,103 +2,87 @@
 
 ## @arvinxu/asset-gallery [1.2.4](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.3...@arvinxu/asset-gallery@1.2.4) (2021-09-16)
 
-
 ### 🎫 杂项
 
-* 优化类型定义 ([61347d9](https://github.com/arvinxx/components/commit/61347d9))
-
+- 优化类型定义 ([61347d9](https://github.com/arvinxx/components/commit/61347d9))
 
 ### 👷 构建系统
 
-* 优化类型定义 ([640d0f9](https://github.com/arvinxx/components/commit/640d0f9))
+- 优化类型定义 ([640d0f9](https://github.com/arvinxx/components/commit/640d0f9))
 
 ## @arvinxu/asset-gallery [1.2.3](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.2...@arvinxu/asset-gallery@1.2.3) (2021-09-16)
 
-
 ### 🎫 杂项
 
-* fix lint ([555de46](https://github.com/arvinxx/components/commit/555de46))
-
+- fix lint ([555de46](https://github.com/arvinxx/components/commit/555de46))
 
 ### 🐛 修复
 
-* 修正 sketch 的复制能力 ([f32f5e3](https://github.com/arvinxx/components/commit/f32f5e3))
+- 修正 sketch 的复制能力 ([f32f5e3](https://github.com/arvinxx/components/commit/f32f5e3))
 
 ## @arvinxu/asset-gallery [1.2.2](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.1...@arvinxu/asset-gallery@1.2.2) (2021-09-13)
 
-
 ### 🎫 杂项
 
-* fix lint ([1d1d8e3](https://github.com/arvinxx/components/commit/1d1d8e3))
-
+- fix lint ([1d1d8e3](https://github.com/arvinxx/components/commit/1d1d8e3))
 
 ### 🐛 修复
 
-* 修正layout和columns不受控的 bug ([90f9265](https://github.com/arvinxx/components/commit/90f9265))
+- 修正 layout 和 columns 不受控的 bug ([90f9265](https://github.com/arvinxx/components/commit/90f9265))
 
 ## @arvinxu/asset-gallery [1.2.1](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.0...@arvinxu/asset-gallery@1.2.1) (2021-09-04)
 
-
 ### 💄 样式
 
-* 更新样式 ([4ed6d6f](https://github.com/arvinxx/components/commit/4ed6d6f))
+- 更新样式 ([4ed6d6f](https://github.com/arvinxx/components/commit/4ed6d6f))
 
 # @arvinxu/asset-gallery [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.1.0...@arvinxu/asset-gallery@1.2.0) (2021-09-04)
 
-
 ### ✅ 测试
 
-* 更新测试用例 ([caaf6e2](https://github.com/arvinxx/components/commit/caaf6e2))
-
+- 更新测试用例 ([caaf6e2](https://github.com/arvinxx/components/commit/caaf6e2))
 
 ### ✨ 新特性
 
-* 优化资产画廊组件样式与功能 ([9a83eb8](https://github.com/arvinxx/components/commit/9a83eb8))
-* 支持复制 sketch 素材为 png ([1cd7baa](https://github.com/arvinxx/components/commit/1cd7baa))
-* 补充 style 样式属性 ([0347a17](https://github.com/arvinxx/components/commit/0347a17))
-
+- 优化资产画廊组件样式与功能 ([9a83eb8](https://github.com/arvinxx/components/commit/9a83eb8))
+- 支持复制 sketch 素材为 png ([1cd7baa](https://github.com/arvinxx/components/commit/1cd7baa))
+- 补充 style 样式属性 ([0347a17](https://github.com/arvinxx/components/commit/0347a17))
 
 ### 🎫 杂项
 
-* 补充依赖 ([d57fc77](https://github.com/arvinxx/components/commit/d57fc77))
-* **自动发布**: @arvinxu/asset-gallery@1.2.0-beta.1 [skip ci] ([691e30e](https://github.com/arvinxx/components/commit/691e30e))
-
+- 补充依赖 ([d57fc77](https://github.com/arvinxx/components/commit/d57fc77))
+- **自动发布**: @arvinxu/asset-gallery@1.2.0-beta.1 [skip ci] ([691e30e](https://github.com/arvinxx/components/commit/691e30e))
 
 ### 💄 样式
 
-* 优化图标样式 ([7eab317](https://github.com/arvinxx/components/commit/7eab317))
+- 优化图标样式 ([7eab317](https://github.com/arvinxx/components/commit/7eab317))
 
 # @arvinxu/asset-gallery [1.2.0-beta.1](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.1.0...@arvinxu/asset-gallery@1.2.0-beta.1) (2021-09-04)
 
-
 ### ✅ 测试
 
-* 更新测试用例 ([caaf6e2](https://github.com/arvinxx/components/commit/caaf6e2))
-
+- 更新测试用例 ([caaf6e2](https://github.com/arvinxx/components/commit/caaf6e2))
 
 ### ✨ 新特性
 
-* 优化资产画廊组件样式与功能 ([9a83eb8](https://github.com/arvinxx/components/commit/9a83eb8))
-* 支持复制 sketch 素材为 png ([1cd7baa](https://github.com/arvinxx/components/commit/1cd7baa))
+- 优化资产画廊组件样式与功能 ([9a83eb8](https://github.com/arvinxx/components/commit/9a83eb8))
+- 支持复制 sketch 素材为 png ([1cd7baa](https://github.com/arvinxx/components/commit/1cd7baa))
 
 # @arvinxu/asset-gallery [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.0.0...@arvinxu/asset-gallery@1.1.0) (2021-07-01)
 
-
 ### ✨ 新特性
 
-* 增加 logo 配置项props ([1e2d394](https://github.com/arvinxx/components/commit/1e2d394))
+- 增加 logo 配置项 props ([1e2d394](https://github.com/arvinxx/components/commit/1e2d394))
 
 # @arvinxu/asset-gallery 1.0.0 (2021-06-18)
 
-
 ### 🎫 杂项
 
-* ImageGallery 重命名为 AssetGallery ([dd352a6](https://github.com/arvinxx/components/commit/dd352a6))
-
+- ImageGallery 重命名为 AssetGallery ([dd352a6](https://github.com/arvinxx/components/commit/dd352a6))
 
 ### 🐛 修复
 
-* 移除 use-merge-value 以修正 hooks bug ([9e72f6a](https://github.com/arvinxx/components/commit/9e72f6a))
+- 移除 use-merge-value 以修正 hooks bug ([9e72f6a](https://github.com/arvinxx/components/commit/9e72f6a))
 
 # @arvinxu/image-gallery [3.0.0](https://github.com/arvinxx/components/compare/@arvinxu/image-gallery@2.0.2...@arvinxu/image-gallery@3.0.0) (2021-06-18)
 
