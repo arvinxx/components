@@ -22,6 +22,10 @@ export const menus = {
         'heatmap-calendar',
       ],
     },
+    {
+      title: 'LayoutToolkit 布局工具库',
+      children: ['layout-toolkit'],
+    },
   ],
   '/guide': [
     {
