@@ -8,7 +8,7 @@ import type {
   FlexDirection,
 } from './type';
 
-type CommonSpaceNumber = 2 | 4 | 8 | 12 | 16 | 24;
+export type CommonSpaceNumber = 2 | 4 | 8 | 12 | 16 | 24;
 
 export interface IFlexbox {
   direction?: FlexDirection;
@@ -19,6 +19,7 @@ export interface IFlexbox {
   height?: number | string;
   padding?: string | number | CommonSpaceNumber;
 }
+
 export type FlexboxProps = IFlexbox &
   DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 

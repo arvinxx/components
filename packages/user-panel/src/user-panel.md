@@ -1,6 +1,9 @@
 ---
 title: UserPanel 用户面板
-order: 4
+group:
+  path: /
+nav:
+  path: /components
 ---
 
 # UserPanel 用户面板
