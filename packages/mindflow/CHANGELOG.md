@@ -1,5 +1,23 @@
 # Changelog
 
+## @arvinxu/mindflow [1.8.1](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.8.0...@arvinxu/mindflow@1.8.1) (2021-11-28)
+
+
+### ✅ 测试
+
+* 修复测试 ([e900dbe](https://github.com/arvinxx/components/commit/e900dbe))
+* 补充测试 ([83d1400](https://github.com/arvinxx/components/commit/83d1400))
+
+
+### 🎫 杂项
+
+* 调整组件库文档架构 ([1f69dfd](https://github.com/arvinxx/components/commit/1f69dfd))
+
+
+### 👷 构建系统
+
+* 修正构建配置 ([d901be1](https://github.com/arvinxx/components/commit/d901be1))
+
 # @arvinxu/mindflow [1.8.0](https://github.com/arvinxx/components/compare/@arvinxu/mindflow@1.7.3...@arvinxu/mindflow@1.8.0) (2021-04-06)
 
 
