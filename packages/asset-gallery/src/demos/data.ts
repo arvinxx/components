@@ -9,21 +9,18 @@ export const images: AssetList = [
   {
     title: '黑色 Logo',
     description: '亮色背景下使用',
-    url:
-      'https://gw.alipayobjects.com/zos/antfincdn/FEuGy%26pKf2/black-logo.svg',
+    url: 'https://gw.alipayobjects.com/zos/antfincdn/FEuGy%26pKf2/black-logo.svg',
   },
   {
     title: '黑色方形 Logo',
     description: '亮色背景下使用',
-    url:
-      'https://gw.alipayobjects.com/zos/antfincdn/iCZHoHFqZM/squre-black.svg',
+    url: 'https://gw.alipayobjects.com/zos/antfincdn/iCZHoHFqZM/squre-black.svg',
   },
   {
     title: '白色方形 Logo',
     description: '亮色背景下使用',
     dark: true,
-    url:
-      'https://gw.alipayobjects.com/zos/antfincdn/9IE%24pNh%26d3/squre-white.svg',
+    url: 'https://gw.alipayobjects.com/zos/antfincdn/9IE%24pNh%26d3/squre-white.svg',
   },
   {
     title: '白色 Logo',
@@ -38,8 +35,7 @@ export const images: AssetList = [
     description: '暗色背景下使用',
     dark: true,
     darkBackground: '#1fadd3',
-    url:
-      'https://gw.alipayobjects.com/zos/antfincdn/3vXiuFe18O/black-white.svg',
+    url: 'https://gw.alipayobjects.com/zos/antfincdn/3vXiuFe18O/black-white.svg',
   },
   {
     title: '黑色 Logo',

@@ -1,6 +1,9 @@
 ---
 title: JourneyMap 用户旅程地图
-order: 3
+group:
+  path: /
+nav:
+  path: /components
 ---
 
 # Journey Map 用户旅程地图
@@ -18,11 +21,11 @@ order: 3
 
 ## 默认
 
-<code src='./examples/JourneyMap/Demo.tsx' />
+<code src='./_demos/Demo.tsx' />
 
 ## 自定义颜色
 
-<code src='./examples/JourneyMap/CustomColor.tsx' />
+<code src='./_demos/CustomColor.tsx' />
 
 ## 使用 YML
 
@@ -95,10 +98,10 @@ stages:
 
 ### 加载字符串
 
-<code src='./examples/JourneyMap/YAMLWithString.tsx' />
+<code src='./_demos/YAMLWithString.tsx' />
 
 ### 加载网址
 
-<code src='./examples/JourneyMap/YAMLWithURL.tsx' />
+<code src='./_demos/YAMLWithURL.tsx' />
 
-<API src='../../../packages/journey-map/src/index.tsx'></API>
+<API src='./index.tsx'></API>

@@ -2,7 +2,9 @@
 title: Mindflow 思流
 order: 1
 group:
-  title: 业务组件
+  path: /
+nav:
+  path: /components
 ---
 
 # Mindflow 思流
@@ -31,14 +33,14 @@ Mindflow 是基于 [溯因推理][reason] 与 [图尔敏推论模型][toulmin] �
 
 ### 基本 Demo
 
-<code src='./examples/Mindflow/Demo.tsx' />
+<code src='./_demos/Demo.tsx' />
 
 ### 博物馆案例
 
-<code src='./examples/Mindflow/Museum.tsx' />
+<code src='./_demos/Museum.tsx' />
 
 ### 思维结构
 
-<code src='./examples/Mindflow/Thinking.tsx' />
+<code src='./_demos/Thinking.tsx' />
 
-<API src='../../../packages/mindflow/src/index.tsx'></API>
+<API src='./index.tsx'></API>

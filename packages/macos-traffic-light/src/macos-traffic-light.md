@@ -1,6 +1,9 @@
 ---
 title: macOS TrafficLight
-order: 4
+group:
+  path: /
+nav:
+  path: /components
 ---
 
 ## Traffic Light
@@ -22,10 +25,10 @@ macOS 上的 Traffic Light 控制按钮
 
 包含三个红绿灯,点击有事件反馈
 
-<code src='./examples/TrafficLight/Basic.tsx' />
+<code src='./demos/Basic.tsx' />
 
 ## 其他配置
 
-<code src='./examples/TrafficLight/DisableMax.tsx' />
+<code src='./demos/DisableMax.tsx' />
 
-<API src='../../../packages/macos-traffic-light/src/index.tsx'></API>
+<API src='./index.tsx'></API>

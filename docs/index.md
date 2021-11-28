@@ -2,7 +2,7 @@
 title: 空谷的组件库
 hero:
   title: 空谷的组件库
-  desc: 🌈 九土之台 起于累土
+  desc: 🌈 九层之台 起于累土
   actions:
     - text: 说明
       link: /guide
@@ -54,12 +54,12 @@ footer: Open-source MIT Licensed | Copyright © 2021-present
 
 ### 通用组件
 
-| 组件                                                    | 版本                                                                             | 说明                                   |
-| ------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------- |
-| [FloatLabelInput](/components/common/float-label-input) | [![NPM version][float-label-input-version-image]][float-label-input-version-url] | 标签会跟随 hover 状态浮动的 Input 组件 |
-| [PageLoading](/components/common/page-loading)          | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 页面状态加载                           |
-| [Preloader](/components/common/preloader)               | [![NPM version][preloader-version-image]][preloader-version-url]                 | 加载组件                               |
-| [TrafficLight](/components/common/macos-traffic-light)  | [![NPM version][traffic-light-version-image]][traffic-light-version-url]         | macOS 右上角控制按钮                   |
+| 组件                                                                     | 版本                                                                             | 说明                                   |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------- | -------------------------------------- |
+| [FloatLabelInput](/packages/float-label-input/src/float-label-input.md)  | [![NPM version][float-label-input-version-image]][float-label-input-version-url] | 标签会跟随 hover 状态浮动的 Input 组件 |
+| [PageLoading](/components/common/page-loading)                           | [![NPM version][page-loading-version-image]][page-loading-version-url]           | 页面状态加载                           |
+| [Preloader](/components/common/preloader)                                | [![NPM version][preloader-version-image]][preloader-version-url]                 | 加载组件                               |
+| [TrafficLight](/packages/macos-traffic-light/src/macos-traffic-light.md) | [![NPM version][traffic-light-version-image]][traffic-light-version-url]         | macOS 右上角控制按钮                   |
 
 [float-label-input-version-image]: http://img.shields.io/npm/v/@arvinxu/float-label-input.svg?color=deepgreen&label=latest
 [float-label-input-version-url]: http://npmjs.org/package/@arvinxu/float-label-input
@@ -72,11 +72,11 @@ footer: Open-source MIT Licensed | Copyright © 2021-present
 
 ### 业务组件
 
-| 组件                                          | 版本                                                                     | 说明                                                     |
-| --------------------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------- |
-| [MindFlow](/components/biz/mindflow)          | [![NPM version][mindflow-version-image]][mindflow-version-url]           | 基于溯因推理与图尔敏推论模型为理论基础构建的思维推理组件 |
-| [AssetGallery](/components/biz/asset-gallery) | [![NPM version][asset-gallery-version-image]][asset-gallery-version-url] | 方便物料分发的图片画廊组件                               |
-| [JourneyMap](/components/biz/journey-map)     | [![NPM version][journey-map-version-image]][journey-map-version-url]     | 用户旅程地图组件                                         |
+| 组件                                                         | 版本                                                                     | 说明                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------ | -------------------------------------------------------- |
+| [MindFlow](/packages/mindflow/src/mindflow.md)               | [![NPM version][mindflow-version-image]][mindflow-version-url]           | 基于溯因推理与图尔敏推论模型为理论基础构建的思维推理组件 |
+| [AssetGallery](/packages/asset-gallery/src/asset-gallery.md) | [![NPM version][asset-gallery-version-image]][asset-gallery-version-url] | 方便物料分发的图片画廊组件                               |
+| [JourneyMap](/packages/journey-map/src/journey-map.md)       | [![NPM version][journey-map-version-image]][journey-map-version-url]     | 用户旅程地图组件                                         |
 
 [mindflow-version-image]: http://img.shields.io/npm/v/@arvinxu/mindflow.svg?color=deepgreen&label=latest
 [mindflow-version-url]: http://npmjs.org/package/@arvinxu/mindflow
