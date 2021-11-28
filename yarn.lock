@@ -11108,10 +11108,10 @@ immer@^7.0.5:
   resolved "https://registry.npm.taobao.org/immer/download/immer-7.0.15.tgz#dc3bc6db87401659d2e737c67a21b227c484a4ad"
   integrity sha1-3DvG24dAFlnS5zfGeiGyJ8SEpK0=
 
-immer@^9.0.1, immer@^9.0.2:
-  version "9.0.6"
-  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.6.tgz#7a96bf2674d06c8143e327cbf73539388ddf1a73"
-  integrity sha512-G95ivKpy+EvVAnAab4fVa4YGYn24J1SpEktnJX7JJ45Bd7xqME/SCplFzYFmTbrkwZbQ4xJK1xMTUYBkN6pWsQ==
+immer@^9.0.1, immer@^9.0.5:
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.7.tgz#b6156bd7db55db7abc73fd2fdadf4e579a701075"
+  integrity sha512-KGllzpbamZDvOIxnmJ0jI840g7Oikx58lBPWV0hUh7dtAyZpFqqrBZdKka5GlTwMTZ1Tjc/bKKW4VSFAt6BqMA==
 
 immutable@^3.8.1:
   version "3.8.2"
@@ -14176,10 +14176,10 @@ minizlib@^2.0.0, minizlib@^2.1.1:
     minipass "^3.0.0"
     yallist "^4.0.0"
 
-mitt@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npm.taobao.org/mitt/download/mitt-2.1.0.tgz#f740577c23176c6205b121b2973514eade1b2230"
-  integrity sha1-90BXfCMXbGIFsSGylzUU6t4bIjA=
+mitt@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/mitt/-/mitt-3.0.0.tgz#69ef9bd5c80ff6f57473e8d89326d01c414be0bd"
+  integrity sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==
 
 mixin-deep@^1.2.0:
   version "1.3.2"
@@ -19498,12 +19498,12 @@ stook-devtools@^1.0.0:
     redux "^4.1.0"
 
 stook@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/stook/-/stook-1.1.1.tgz#71b1fe1e660f06a419aa9fa74a8f9c022435a4ab"
-  integrity sha512-ePTZyFxd/5HOzISGElQ/La8wiBqXGaAUsZnYJTLBvrDpV2p0OVmLNy3Uz3DVp0f/YIpC2td32u+MUmoCAmyl4Q==
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/stook/-/stook-1.10.0.tgz#9b94538f5550c8d5e9b335022b0c37009c29c99b"
+  integrity sha512-wnS3eCqYBAkCymu6zNZ6o3UssegVpoKzmA+o8ml5xBRajBh4Ohs0qkHA4uaS2BWLegL2v5h0Yn/eQnAo48TGxA==
   dependencies:
-    immer "^9.0.2"
-    mitt "^2.1.0"
+    immer "^9.0.5"
+    mitt "^3.0.0"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
