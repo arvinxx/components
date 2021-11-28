@@ -6,6 +6,7 @@ exports[`Login 组件 获取验证码 1`] = `
     class="avx-user-panel-login-container"
   >
     <form
+      autocomplete="off"
       class="ant-form ant-form-vertical"
     >
       <input
@@ -56,7 +57,6 @@ exports[`Login 组件 获取验证码 1`] = `
               </div>
               <div
                 class="ant-tabs-ink-bar ant-tabs-ink-bar-animated"
-                style="left: 0px; width: 0px;"
               />
             </div>
           </div>
@@ -124,7 +124,7 @@ exports[`Login 组件 获取验证码 1`] = `
         </div>
       </div>
       <div
-        class="ant-row ant-form-item ant-form-item-with-help ant-form-item-has-error"
+        class="ant-row ant-form-item ant-form-item-is-validating"
       >
         <div
           class="ant-col ant-form-item-control"
@@ -195,15 +195,6 @@ exports[`Login 组件 获取验证码 1`] = `
               </span>
             </div>
           </div>
-          <div
-            class="ant-form-item-explain ant-form-item-explain-error"
-          >
-            <div
-              role="alert"
-            >
-              手机号是必填项！
-            </div>
-          </div>
         </div>
       </div>
       <div
@@ -257,7 +248,7 @@ exports[`Login 组件 获取验证码 1`] = `
                   />
                 </span>
                 <button
-                  ant-click-animating-without-extra-node="true"
+                  ant-click-animating-without-extra-node="false"
                   class="ant-btn ant-btn-lg"
                   style="display: block;"
                   type="button"
@@ -316,6 +307,7 @@ exports[`Login 组件 默认状态 1`] = `
     class="avx-user-panel-login-container"
   >
     <form
+      autocomplete="off"
       class="ant-form ant-form-vertical"
     >
       <input

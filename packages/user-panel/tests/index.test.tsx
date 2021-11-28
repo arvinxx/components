@@ -30,8 +30,7 @@ describe('UserPanel', () => {
       fireEvent.click(btn);
       const captcha = await findByText('获取验证码');
       await fireEvent.click(captcha);
+      expect(container).toMatchSnapshot();
     });
-
-    expect(container).toMatchSnapshot();
   });
 });
