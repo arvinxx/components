@@ -28,7 +28,7 @@
   "dependencies": {
     "@arvinxu/i18n": "1.0.1",
     "classnames": "^2.3.1",
-    "react-router": "^5.2.1"
+    "react-router": "^6.0.2"
   },
   "peerDependencies": {
     "@ant-design/icons": "^4.x",
