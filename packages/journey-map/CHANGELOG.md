@@ -1,5 +1,26 @@
 # Changelog
 
+## @arvinxu/journey-map [2.1.5](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@2.1.4...@arvinxu/journey-map@2.1.5) (2021-11-28)
+
+
+### ✅ 测试
+
+* 更新测试快照 ([87732c6](https://github.com/arvinxx/components/commit/87732c6))
+* 补充测试 ([167e2c1](https://github.com/arvinxx/components/commit/167e2c1))
+* 补充测试 ([72db066](https://github.com/arvinxx/components/commit/72db066))
+* 补充测试 ([b668ed3](https://github.com/arvinxx/components/commit/b668ed3))
+
+
+### 🎫 杂项
+
+* 修正代码 ([afb2532](https://github.com/arvinxx/components/commit/afb2532))
+* 调整组件库文档架构 ([1f69dfd](https://github.com/arvinxx/components/commit/1f69dfd))
+
+
+### 👷 构建系统
+
+* 修正构建配置 ([d901be1](https://github.com/arvinxx/components/commit/d901be1))
+
 ## @arvinxu/journey-map [2.1.4](https://github.com/arvinxx/components/compare/@arvinxu/journey-map@2.1.3...@arvinxu/journey-map@2.1.4) (2021-04-11)
 
 
