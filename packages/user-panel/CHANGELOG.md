@@ -1,5 +1,30 @@
 # Changelog
 
+## @arvinxu/user-panel [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0...@arvinxu/user-panel@1.0.1) (2021-11-28)
+
+
+### ✅ 测试
+
+* fix test ([20629c2](https://github.com/arvinxx/components/commit/20629c2))
+* 修正测试 ([030ef34](https://github.com/arvinxx/components/commit/030ef34))
+* 修正测试 ([f3241bf](https://github.com/arvinxx/components/commit/f3241bf))
+* 修正测试 ([74e0652](https://github.com/arvinxx/components/commit/74e0652))
+
+
+### 🎫 杂项
+
+* 锁定 react-router 版本 ([e913677](https://github.com/arvinxx/components/commit/e913677))
+
+
+### 👷 构建系统
+
+* 修正构建配置 ([d901be1](https://github.com/arvinxx/components/commit/d901be1))
+
+
+### 📝 文档
+
+* 更新文档 ([cca4137](https://github.com/arvinxx/components/commit/cca4137))
+
 # @arvinxu/user-panel 1.0.0 (2021-11-28)
 
 ### ♻ 重构
