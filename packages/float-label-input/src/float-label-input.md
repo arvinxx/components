@@ -1,6 +1,10 @@
 ---
 title: FloatLabelInput
 order: 5
+group:
+  path: /
+nav:
+  path: /components
 ---
 
 # FloatLabelInput
@@ -18,10 +22,10 @@ order: 5
 
 ### 默认
 
-<code src="./examples/FloatLabelInput/Basic" />
+<code src="./demos/Basic" />
 
 ### 高度
 
-<code src="./examples/FloatLabelInput/Height" />
+<code src="./demos/Height" />
 
-<API src='../../../packages/float-label-input/src/index.tsx'></API>
+<API src='./index.tsx'/></API>

@@ -1,6 +1,9 @@
 ---
 title: HeatmapCalendar 活跃日历
-order: 4
+group:
+  path: /
+nav:
+  path: /components
 ---
 
 # HeatmapCalendar 活跃日历
@@ -45,6 +48,6 @@ interface Item {
 
 ## 演示
 
-<code src='./examples/HeatmapCalendar/Demo.tsx' />
+<code src='./_demos/Demo.tsx' />
 
-<API src='../../../packages/heatmap-calendar/src/index.tsx'></API>
+<API src='./index.tsx'></API>

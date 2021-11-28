@@ -1,4 +1,5 @@
 import { defineConfig } from 'umi';
+import { menus } from './menu';
 
 export default defineConfig({
   title: '空谷的组件库',
@@ -24,6 +25,7 @@ export default defineConfig({
   theme: {
     '@c-primary': '#6CB7C7',
   },
+  menus,
   dynamicImport: {
     loading: '@ant-design/pro-skeleton',
   },

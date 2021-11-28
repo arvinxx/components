@@ -12,14 +12,12 @@ export const demo: MindflowData = {
           {
             id: 'a 场景',
             title: '在 a 场景下会遇到这个问题',
-            url:
-              'https://www.yuque.com/arvinxx/tu0agc/f4991c0b743f068e3c5595adbe530a5e',
+            url: 'https://www.yuque.com/arvinxx/tu0agc/f4991c0b743f068e3c5595adbe530a5e',
           },
           {
             id: 'b 场景',
             title: '在 b 场景下比较可用',
-            url:
-              'https://www.yuque.com/arvinxx/tu0agc/15ddd39fd92b1a314f6981c5a4d3b321',
+            url: 'https://www.yuque.com/arvinxx/tu0agc/15ddd39fd92b1a314f6981c5a4d3b321',
           },
         ],
       },
@@ -83,15 +81,13 @@ export const demo: MindflowData = {
           {
             id: 'ref1',
             title: '佐证资料 1',
-            url:
-              'https://www.yuque.com/arvinxx/tu0agc/b9cf8942370501a4b5c1c751c38c7860',
+            url: 'https://www.yuque.com/arvinxx/tu0agc/b9cf8942370501a4b5c1c751c38c7860',
             type: 'rebuttal',
           },
           {
             id: 'ref2',
             title: '佐证资料 2',
-            url:
-              'https://www.yuque.com/arvinxx/tu0agc/15ddd39fd92b1a314f6981c5a4d3b321',
+            url: 'https://www.yuque.com/arvinxx/tu0agc/15ddd39fd92b1a314f6981c5a4d3b321',
             type: 'ground',
           },
         ],

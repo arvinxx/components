@@ -1,6 +1,10 @@
 ---
 title: Preloader
 order: 2
+group:
+  path: /
+nav:
+  path: /components
 ---
 
 # Preloader
@@ -18,4 +22,4 @@ order: 2
 
 ### Square
 
-<code src="./examples/Preloader/Square" />
+<code src="./demos/Square" />

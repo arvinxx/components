@@ -2,8 +2,9 @@
 title: PageLoading
 order: 1
 group:
-  title: 通用组件
-  order: 2
+  path: /
+nav:
+  path: /components
 ---
 
 # PageLoading
@@ -30,28 +31,28 @@ group:
 
 ### 默认用法
 
-<code src="./examples/PageLoading/Basic" />
+<code src="./demos/Basic" />
 
 ### 不带进度条
 
-<code src="./examples/PageLoading/WithoutProgress" />
+<code src="./demos/WithoutProgress" />
 
 ### 自定义颜色
 
-<code src="./examples/PageLoading/CustomColor" />
+<code src="./demos/CustomColor" />
 
 ### 全屏加载
 
-<code src="./examples/PageLoading/Fullscreen" />
+<code src="./demos/Fullscreen" />
 
 ### 加载状态控制
 
-<code src="./examples/PageLoading/LoadingState" />
+<code src="./demos/LoadingState" />
 
 ### 自定义加载图形
 
-<code src="./examples/PageLoading/CustomLoader" />
+<code src="./demos/CustomLoader" />
 
 ###
 
-<API src="../../../packages/page-loading/src/index.tsx"></API>
+<API src="./index.tsx"></API>

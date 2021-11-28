@@ -36,6 +36,8 @@
       "@arvinxu/utils/*": ["./packages/utils/src/*"],
       "@arvinxu/i18n": ["./packages/i18n/src"],
       "@arvinxu/i18n/*": ["./packages/i18n/src/*"],
+      "@arvinxu/layout-toolkit": ["./packages/layout-toolkit/src"],
+      "@arvinxu/layout-toolkit/*": ["./packages/layout-toolkit/src/*"],
       "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
       "@arvinxu/page-loading": ["./packages/page-loading/src"],
       "@arvinxu/mindflow": ["./packages/mindflow/src"],
