@@ -10,7 +10,7 @@ import type {
 
 type CommonSpaceNumber = 2 | 4 | 8 | 12 | 16 | 24;
 
-interface IFlexbox {
+export interface IFlexbox {
   direction?: FlexDirection;
   distribution?: ContentDistribution;
   align?: ContentPosition;
