@@ -100,7 +100,7 @@
     "dpdm": "^3.5.0",
     "ejs": "^3.1.6",
     "enzyme-to-json": "^3.4.3",
-    "eslint": "^7.7.0",
+    "eslint": "^8.4.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-typescript": "^2.2.1",
     "father-build": "^1.20.0",
