@@ -399,13 +399,13 @@
     "@antv/util" "^2.0.7"
 
 "@antv/layout@^0.1.12", "@antv/layout@^0.1.6":
-  version "0.1.15"
-  resolved "https://registry.yarnpkg.com/@antv/layout/-/layout-0.1.15.tgz#42ba47bd66630958eab40b2ed3f01e0b06bc199c"
-  integrity sha512-ANoMsTHPFcVE4Q25fCH00y8/ybNWCQbDt+B9Q1Kb2fPyiGkMYbv7KkI7B1fI+hciRFsu8VDaDLCrNYlv29NIvQ==
+  version "0.1.24"
+  resolved "https://registry.yarnpkg.com/@antv/layout/-/layout-0.1.24.tgz#326d66ebe3a70846b8881aa3664738dec4d8d69f"
+  integrity sha512-Uihq18tFMZZ8iFwYIX2+3nZtn1FK3sI/bxxQ4ChzOFPNXc70pmAVCh/8DTxmforSbq6iuvBRnpuyXWiF2c/jEg==
   dependencies:
     "@antv/g-webgpu" "0.5.5"
+    "@dagrejs/graphlib" "2.1.4"
     d3-force "^2.0.1"
-    dagre "^0.8.5"
     ml-matrix "^6.5.0"
 
 "@antv/matrix-util@^3.0.4":
@@ -2342,6 +2342,13 @@
   version "3.4.0"
   resolved "https://registry.npm.taobao.org/@ctrl/tinycolor/download/@ctrl/tinycolor-3.4.0.tgz#c3c5ae543c897caa9c2a68630bed355be5f9990f"
   integrity sha1-w8WuVDyJfKqcKmhjC+01W+X5mQ8=
+
+"@dagrejs/graphlib@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@dagrejs/graphlib/-/graphlib-2.1.4.tgz#86c70e4f073844a2f4ada254c8c7b88a6bdacdb1"
+  integrity sha512-QCg9sL4uhjn468FDEsb/S9hS2xUZSrv/+dApb1Ze5VKO96pTXKNJZ6MGhIpgWkc1TVhbVGH9/7rq/Mf8/jWicw==
+  dependencies:
+    lodash "^4.11.1"
 
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.2"
@@ -13389,7 +13396,7 @@ lodash.zip@^4.2.0:
   resolved "https://registry.npm.taobao.org/lodash.zip/download/lodash.zip-4.2.0.tgz#ec6662e4896408ed4ab6c542a3990b72cc080020"
   integrity sha1-7GZi5IlkCO1KtsVCo5kLcswIACA=
 
-lodash@4.17.21, lodash@^4.0.1, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.7.0:
+lodash@4.17.21, lodash@^4.0.1, lodash@^4.11.1, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
