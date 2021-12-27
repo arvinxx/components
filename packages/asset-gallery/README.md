@@ -1,4 +1,4 @@
-# @arvinxu/asset-gallery
+# @arvinxu/asset-gallery 素材展示
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
