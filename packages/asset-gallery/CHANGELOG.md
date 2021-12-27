@@ -1,5 +1,12 @@
 # Changelog
 
+## @arvinxu/asset-gallery [1.3.1](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.3.0...@arvinxu/asset-gallery@1.3.1) (2021-12-27)
+
+
+### 👷 构建系统
+
+* 发起构建 ([deb4f6f](https://github.com/arvinxx/components/commit/deb4f6f))
+
 # @arvinxu/asset-gallery [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.4...@arvinxu/asset-gallery@1.3.0) (2021-11-28)
 
 
