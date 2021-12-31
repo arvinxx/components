@@ -5103,25 +5103,7 @@
     "@umijs/deps" "3.5.20"
     "@umijs/utils" "3.5.20"
 
-"@umijs/test@^3.2.10":
-  version "3.4.25"
-  resolved "https://registry.yarnpkg.com/@umijs/test/-/test-3.4.25.tgz#9df95dc25cecaee9f45cdb62a227634defb5ae87"
-  integrity sha512-VfaQyvF3vkHkHROS3LYQjRvx3dwk1Lv56gfgDIHGCX2n2ARSGyaFTbXsv/QafrKENDTDp3FTcTIUG6oY6mHH2g==
-  dependencies:
-    "@babel/core" "7.12.10"
-    "@umijs/babel-preset-umi" "3.4.25"
-    "@umijs/utils" "3.4.25"
-    babel-core "7.0.0-bridge.0"
-    babel-jest "^26.6.3"
-    core-js "3.8.2"
-    identity-obj-proxy "3.0.0"
-    jest "^26.6.3"
-    jest-cli "^26.6.3"
-    jest-environment-jsdom-fourteen "1.0.1"
-    regenerator-runtime "^0.13.7"
-    whatwg-fetch "^3.5.0"
-
-"@umijs/test@~3.5.14":
+"@umijs/test@^3.2.10", "@umijs/test@~3.5.14":
   version "3.5.20"
   resolved "https://registry.yarnpkg.com/@umijs/test/-/test-3.5.20.tgz#124ee8dd614b56b7774afa3f5dd8df5167de3d8a"
   integrity sha512-nxDdKDJYPMgYCEugvbyXbFjwNF/RL+TOLsBUmWzmciiz6PWVghJXrkSkDu2Ii5XO88G7l4xPo4cmReCWBw5I3A==
