@@ -4402,9 +4402,9 @@
     hoist-non-react-statics "^3.3.0"
 
 "@types/insert-css@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/@types/insert-css/download/@types/insert-css-2.0.0.tgz#f323e1e1940c388e80fcf1e1b93de4b6dcefd431"
-  integrity sha1-8yPh4ZQMOI6A/PHhuT3kttzv1DE=
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@types/insert-css/-/insert-css-2.0.1.tgz#742574b45c0e90615e56bc83ac7976ee21a6b3fc"
+  integrity sha512-slUriXg8Y0JvpQoZlQ96bzzi86AU0DvtstKmGtBWpzJilFnpMUDbREi28Gpa+ZaIrTTCQUfvpDS7z7F1uwlYjQ==
 
 "@types/invariant@^2.2.31":
   version "2.2.34"
