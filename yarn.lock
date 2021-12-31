@@ -2027,37 +2027,37 @@
     "@bedrock-layout/use-container-query" "^1.2.5"
     "@bedrock-layout/use-forwarded-ref" "^1.1.8"
 
-"@bedrock-layout/grid@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/grid/-/grid-2.2.2.tgz#ed4ecdbea46e4e2ce14b6b56f18eed6fb9eb8023"
-  integrity sha512-IyEQN0juPwD5+5o9nU5wwu0OLw/XA05Ph5rrPgCoXJDGuefKXpX+paqq+U8U3rvVjg2J3AtCi9+N9P/YR8TSow==
+"@bedrock-layout/grid@^2.2.5":
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/grid/-/grid-2.2.5.tgz#36b622481c5d8b3bfb5a0fd76e5e0986ed69b098"
+  integrity sha512-5HteSi7BEWU7RTEBG9dRanqsKxf18aOcFj0V12S1muGki6Xc1yxw1V4O/GH/wGppvU1NH5ICxGuUBBqmXMPoyQ==
   dependencies:
     "@bedrock-layout/spacing-constants" "^2.5.1"
 
-"@bedrock-layout/inline-cluster@^2.0.19":
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/inline-cluster/-/inline-cluster-2.0.19.tgz#29296b1d5c9b355c71dc6fb43d3ef46df0ab8794"
-  integrity sha512-1s5TptL8BC2Bs6y2mWxZgcmJ16S8hB8H8CTus0s1WNkt24qZTuptZu9hIK+oLFZYi4aCjgtlIZO2l3Z6F0zBLA==
+"@bedrock-layout/inline-cluster@^2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/inline-cluster/-/inline-cluster-2.4.3.tgz#942dc554547f6daf00655a1d346f9df0b309a906"
+  integrity sha512-QBvOXQI+n77NmwpLjmi7JSx7KDjZXJK4C73MosNvMLwn6VUv1Qhe1Yf3/lBD/zjRNlobhwSv3ROC4b+TUT2lJA==
   dependencies:
-    "@bedrock-layout/spacing-constants" "^2.4.2"
+    "@bedrock-layout/spacing-constants" "^2.5.1"
 
 "@bedrock-layout/inline@^2.0.15":
-  version "2.0.23"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/inline/-/inline-2.0.23.tgz#4486965fb89359b033b97c137101b65eed448c22"
-  integrity sha512-Bd7rRFbYz+n/bA2qz8SypMdqzth/NmFs+jtJ04zLR+gMyf94n3hMQx8/Fd91az1CpFURznbkCDWytnbqg++5GQ==
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/inline/-/inline-2.3.4.tgz#3574fb35529e7d10902e26ddd3f3ef51ef05916b"
+  integrity sha512-vEskmDZRgGpBfXWtsdEAIUnGeiG3AG/hSh9hjJSVDCJmfjl9eC0cwHPob9H5enrU1ANVzyLclLn7lGMb9nzZdw==
   dependencies:
-    "@bedrock-layout/inline-cluster" "^2.0.19"
-    "@bedrock-layout/spacing-constants" "^2.4.2"
-
-"@bedrock-layout/masonry-grid@^2.0.14":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@bedrock-layout/masonry-grid/-/masonry-grid-2.2.2.tgz#3c35e9f6ccc2596717a61bfaa5fc253af763f5ee"
-  integrity sha512-xsSL+5Ojp0KAoV88UI7wNsQs9HEipjH5TCy2dZas9+1Izb+hN4OHAJOL7zdyRpS6rhjbQFOwJPN7kavqxZmtGw==
-  dependencies:
-    "@bedrock-layout/grid" "^2.2.2"
+    "@bedrock-layout/inline-cluster" "^2.4.3"
     "@bedrock-layout/spacing-constants" "^2.5.1"
 
-"@bedrock-layout/spacing-constants@^2.2.5", "@bedrock-layout/spacing-constants@^2.4.2", "@bedrock-layout/spacing-constants@^2.5.1":
+"@bedrock-layout/masonry-grid@^2.0.14":
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/@bedrock-layout/masonry-grid/-/masonry-grid-2.2.5.tgz#3fdffe4af2a832d3f2d9c07dfafacb54bc58ad1e"
+  integrity sha512-HfOT8uu2t72Imu7XWmfV+UqRNGzTEtOWKpta+BQZTn6WLQVR1R//Qva+7e0Eze2XWuoExrGIxjpIr4+igLZimg==
+  dependencies:
+    "@bedrock-layout/grid" "^2.2.5"
+    "@bedrock-layout/spacing-constants" "^2.5.1"
+
+"@bedrock-layout/spacing-constants@^2.2.5", "@bedrock-layout/spacing-constants@^2.5.1":
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/@bedrock-layout/spacing-constants/-/spacing-constants-2.5.1.tgz#935f552df2e741d5e1ee561ba53da17b022d94b3"
   integrity sha512-bGpNIwFCaVu5mrJCakwawJfjuRZWJLWDgQUBlt5o2ZyOxT6Ytr+U2DszDm3DyadelTGxJAsYWGX64xSXPcUWzw==
@@ -4299,9 +4299,9 @@
   integrity sha1-4Xfmme4bjCLSMXTKqnQiZEOJUJ8=
 
 "@types/fs-extra@^9.0.1", "@types/fs-extra@^9.0.12":
-  version "9.0.12"
-  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.12.tgz#9b8f27973df8a7a3920e8461517ebf8a7d4fdfaf"
-  integrity sha512-I+bsBr67CurCGnSenZZ7v94gd3tc3+Aj2taxMT4yu4ABLuOgOjeFxX3dokG24ztSRg5tnT00sL8BszO7gSMoIw==
+  version "9.0.13"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.13.tgz#7594fbae04fe7f1918ce8b3d213f74ff44ac1f45"
+  integrity sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==
   dependencies:
     "@types/node" "*"
 
