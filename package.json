@@ -70,7 +70,7 @@
     "@babel/preset-typescript": "^7.8.3",
     "@semantic-release/npm": "^8.0.3",
     "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
+    "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
     "@testing-library/user-event": "^13.0.8",
     "@types/classnames": "^2.2.7",
