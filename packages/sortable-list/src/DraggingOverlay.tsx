@@ -1,25 +1,9 @@
 import React from 'react';
 import { DragOverlay } from '@dnd-kit/core';
-import { Item } from './components';
+import { Item } from './BaseItem';
 import type { FC } from 'react';
 
-import type { SortableItem, SortableProps } from './types';
-
-interface DraggingOverlayProps
-  extends Pick<
-    SortableProps,
-    | 'adjustScale'
-    | 'dropAnimation'
-    | 'renderItem'
-    | 'handle'
-    | 'wrapperStyle'
-    | 'getItemStyles'
-  > {
-  dragging: boolean;
-  item: SortableItem;
-  activeIndex: number;
-  activeId: string;
-}
+import type { DraggingOverlayProps } from './types';
 
 const DraggingOverlay: FC<DraggingOverlayProps> = ({
   dragging,
@@ -29,7 +13,7 @@ const DraggingOverlay: FC<DraggingOverlayProps> = ({
   renderItem,
   handle,
   getItemStyles,
-  wrapperStyle,
+  getWrapperStyle,
   activeIndex,
   activeId,
 }) => {
@@ -37,10 +21,10 @@ const DraggingOverlay: FC<DraggingOverlayProps> = ({
     <DragOverlay adjustScale={adjustScale} dropAnimation={dropAnimation}>
       {dragging ? (
         <Item
-          value={item.id}
+          item={item}
           handle={handle}
           renderItem={renderItem}
-          wrapperStyle={wrapperStyle({
+          wrapperStyle={getWrapperStyle?.({
             index: activeIndex,
             isDragging: true,
             id: item.id,

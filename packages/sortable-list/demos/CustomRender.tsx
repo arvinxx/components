@@ -1,0 +1,81 @@
+import React, { useState } from 'react';
+import { Badge, Button } from 'antd';
+
+import SortableList from '@arvinxu/sortable-list';
+import { Flexbox } from '@arvinxu/layout-kit';
+
+interface Item {
+  id: string;
+  text: string;
+}
+
+const Demo = () => {
+  const [list, setList] = useState<Item[]>([
+    { id: '1', text: '关关雎鸠' },
+    { id: '2', text: '在河之洲' },
+    { id: '3', text: '窈窕淑女' },
+    { id: '4', text: '君子好逑' },
+  ]);
+
+  return (
+    <SortableList<Item[]>
+      dataSource={list}
+      onChange={setList}
+      getItemStyles={() => ({ padding: '16px' })}
+      renderItem={(item: Item, { onRemove, onAddItem, index }) => {
+        return (
+          <Flexbox
+            horizontal
+            width={'100%'}
+            distribution={'space-between'}
+            gap={12}
+          >
+            <Flexbox horizontal gap={8}>
+              <div>
+                <Badge count={item.id} />
+              </div>
+              <div>{item.text}</div>
+            </Flexbox>
+            <Flexbox
+              horizontal // 由于拖拽事件是通过监听 onMouseDown 来识别用户动作
+              // 因此针对相关用户操作，需要终止 onMouseDown 的冒泡行为
+              onMouseDown={(e) => {
+                e.stopPropagation();
+              }}
+            >
+              <Button
+                size={'small'}
+                type={'link'}
+                onClick={() => {
+                  onAddItem(index, {
+                    id: Math.ceil(Math.random() * 100000).toString(16),
+                    text: 'new',
+                  });
+                }}
+              >
+                上方
+              </Button>
+              <Button
+                size={'small'}
+                type={'link'}
+                onClick={() => {
+                  onAddItem(index + 1, {
+                    id: Math.ceil(Math.random() * 1000).toString(16),
+                    text: 'new',
+                  });
+                }}
+              >
+                下方
+              </Button>
+              <Button size={'small'} danger type={'text'} onClick={onRemove}>
+                删除
+              </Button>
+            </Flexbox>
+          </Flexbox>
+        );
+      }}
+    />
+  );
+};
+
+export default Demo;

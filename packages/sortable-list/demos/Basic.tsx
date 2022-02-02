@@ -3,12 +3,11 @@ import React, { useState } from 'react';
 import SortableList from '@arvinxu/sortable-list';
 
 const Demo = () => {
-  const [list, setList] = useState([
-    { text: 'hello', id: 'hello' },
-    { text: 'world', id: 'world' },
-  ]);
+  const [list, setList] = useState([{ id: 'hello' }, { id: 'world' }]);
 
-  return <SortableList value={list} onChange={setList} />;
+  return (
+    <SortableList dataSource={list} onChange={(value) => setList(value)} />
+  );
 };
 
 export default Demo;

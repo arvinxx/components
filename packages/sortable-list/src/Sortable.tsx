@@ -1,6 +1,8 @@
-import type { FC } from 'react';
+import type { CSSProperties, FC } from 'react';
 import React from 'react';
 import { createPortal } from 'react-dom';
+
+import cls from 'classnames';
 
 import {
   closestCenter,
@@ -16,8 +18,7 @@ import {
   SortableContext,
   sortableKeyboardCoordinates,
 } from '@dnd-kit/sortable';
-
-import { Wrapper } from './components';
+import { Flexbox } from '@arvinxu/layout-kit';
 
 import SortableItem from './SortableItem';
 import DraggingOverlay from './DraggingOverlay';
@@ -28,30 +29,49 @@ import { useSortableList } from './hooks/useSortableList';
 import { useActiveItem } from './hooks/useActiveItem';
 import { getIndexOfActiveItem } from './utils';
 
+const Wrapper: FC<{
+  style?: CSSProperties;
+  className?: string;
+  gap?: number;
+}> = ({ children, style, className, gap = 8 }) => (
+  <Flexbox
+    className={cls('avx-sortable-list', className)}
+    style={style}
+    gap={gap}
+  >
+    {children}
+  </Flexbox>
+);
+
 export const Sortable: FC<SortableProps> = ({
+  //数据
+  items: controlledItems,
+  onItemChange,
+  // 方法
+  strategy,
+  renderItem,
+  Container = Wrapper,
   activationConstraint,
   animateLayoutChanges,
-  adjustScale = false,
-  Container = Wrapper,
   collisionDetection = closestCenter,
   coordinateGetter = sortableKeyboardCoordinates,
-  dropAnimation,
-  getItemStyles = () => ({}),
   getNewIndex,
+  modifiers,
+  // 状态
   handle = false,
-  items: controlledItems,
-  defaultItems,
-  onItemChange,
   isDisabled = () => false,
   measuring,
-  modifiers,
-  removable,
-  renderItem,
-  strategy,
-  style,
-  useDragOverlay = true,
-  wrapperStyle = () => ({}),
+  removable = true,
+  //样式
+  adjustScale = false,
   direction,
+  dropAnimation,
+  useDragOverlay = true,
+  getWrapperStyle,
+  getItemStyles = () => ({}),
+  style,
+  className,
+  gap,
 }) => {
   const sensors = useSensors(
     useSensor(MouseSensor, {
@@ -67,7 +87,6 @@ export const Sortable: FC<SortableProps> = ({
 
   const { items, dispatchSortable } = useSortableList({
     value: controlledItems,
-    defaultValue: defaultItems,
     onChange: onItemChange,
   });
 
@@ -82,7 +101,11 @@ export const Sortable: FC<SortableProps> = ({
     dispatchSortable({ type: 'removeItem', id });
   };
 
+  const handleAddItem = (index: number, item: any) => {
+    dispatchSortable({ type: 'addItem', item, addIndex: index });
+  };
   return (
+    // 最外层的 DndContext
     <DndContext
       sensors={sensors}
       collisionDetection={collisionDetection}
@@ -107,18 +130,27 @@ export const Sortable: FC<SortableProps> = ({
       measuring={measuring}
       modifiers={modifiers}
     >
+      {/* 排序 Context 和 SortableItem */}
       <SortableContext items={items} strategy={strategy}>
-        <Container style={style}>
+        <Container
+          style={style}
+          direction={direction}
+          className={className}
+          gap={gap}
+        >
           {items.map((value, index) => (
             <SortableItem
               key={value.id}
               id={value.id}
-              handle={handle}
               index={index}
-              style={getItemStyles}
-              wrapperStyle={wrapperStyle}
+              item={value}
+              handle={handle}
+              getItemStyles={getItemStyles}
+              getWrapperStyle={getWrapperStyle}
               disabled={isDisabled(value.id)}
               renderItem={renderItem}
+              removable={removable}
+              onAddItem={handleAddItem}
               onRemove={handleRemove}
               animateLayoutChanges={animateLayoutChanges}
               useDragOverlay={useDragOverlay}
@@ -127,23 +159,27 @@ export const Sortable: FC<SortableProps> = ({
           ))}
         </Container>
       </SortableContext>
-      {useDragOverlay
-        ? createPortal(
-            <DraggingOverlay
-              adjustScale={adjustScale}
-              dropAnimation={dropAnimation}
-              dragging={isDragging}
-              activeId={activeId}
-              activeIndex={activeIndex}
-              item={items[activeIndex]}
-              getItemStyles={getItemStyles}
-              wrapperStyle={wrapperStyle}
-              handle={handle}
-              renderItem={renderItem}
-            />,
-            document.body,
-          )
-        : null}
+
+      {
+        // 展示拖拽时的样式
+        useDragOverlay
+          ? createPortal(
+              <DraggingOverlay
+                adjustScale={adjustScale}
+                dropAnimation={dropAnimation}
+                dragging={isDragging}
+                activeId={activeId}
+                activeIndex={activeIndex}
+                item={items[activeIndex]}
+                getItemStyles={getItemStyles}
+                getWrapperStyle={getWrapperStyle}
+                handle={handle}
+                renderItem={renderItem}
+              />,
+              document.body,
+            )
+          : null
+      }
     </DndContext>
   );
 };

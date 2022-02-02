@@ -1,45 +1,30 @@
 import type { FC } from 'react';
 import React from 'react';
 
-import type { AnimateLayoutChanges, NewIndexGetter } from '@dnd-kit/sortable';
 import { useSortable } from '@dnd-kit/sortable';
 
-import { Item } from './components';
-
-interface SortableItemProps {
-  animateLayoutChanges?: AnimateLayoutChanges;
-  disabled?: boolean;
-  getNewIndex?: NewIndexGetter;
-  id: string;
-  index: number;
-  handle: boolean;
-  useDragOverlay?: boolean;
-  onRemove?: (id: string) => void;
-  style: (values: any) => React.CSSProperties;
-  renderItem?: (args: any) => React.ReactElement;
-  wrapperStyle: ({
-    index,
-    isDragging,
-    id,
-  }: {
-    index: number;
-    isDragging: boolean;
-    id: string;
-  }) => React.CSSProperties;
-}
+import { Item } from './BaseItem';
+import type { SortableItemProps } from './types';
 
 const SortableItem: FC<SortableItemProps> = ({
-  disabled,
-  animateLayoutChanges,
-  getNewIndex,
-  handle,
+  //数据
+  item,
   id,
   index,
-  onRemove,
-  style,
   renderItem,
+  // 方法
+  getNewIndex,
+  onRemove,
+  onAddItem,
+  // 状态
+  disabled,
+  handle,
+  removable,
+  // 样式
+  animateLayoutChanges,
+  getItemStyles,
   useDragOverlay,
-  wrapperStyle,
+  getWrapperStyle,
 }) => {
   const {
     attributes,
@@ -59,29 +44,35 @@ const SortableItem: FC<SortableItemProps> = ({
 
   return (
     <Item
+      data-index={index}
+      data-id={id}
       ref={setNodeRef}
-      value={id}
+      renderItem={renderItem}
+      // 数据
+      item={item}
+      index={index}
       disabled={disabled}
       dragging={isDragging}
       sorting={isSorting}
+      removable={removable}
       handle={handle}
-      renderItem={renderItem}
-      index={index}
-      style={style({
+      dragOverlay={!useDragOverlay && isDragging}
+      // 样式
+      style={getItemStyles({
         index,
         id,
         isDragging,
         isSorting,
         overIndex,
+        isDragOverlay: false,
       })}
-      onRemove={onRemove ? () => onRemove(id) : undefined}
+      wrapperStyle={getWrapperStyle?.({ index, isDragging, id })}
       transform={transform}
       transition={transition}
-      wrapperStyle={wrapperStyle({ index, isDragging, id })}
+      //
       listeners={listeners}
-      data-index={index}
-      data-id={id}
-      dragOverlay={!useDragOverlay && isDragging}
+      onRemove={() => onRemove(id)}
+      onAddItem={onAddItem}
       {...attributes}
     />
   );

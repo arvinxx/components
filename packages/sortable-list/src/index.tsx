@@ -1,6 +1,9 @@
+import type { ReactElement } from 'react';
 import React, { useCallback, useMemo } from 'react';
-import type { FC } from 'react';
+
 import type { Modifier, DropAnimation } from '@dnd-kit/core';
+
+import { defaultDropAnimation } from '@dnd-kit/core';
 import {
   verticalListSortingStrategy,
   horizontalListSortingStrategy,
@@ -12,44 +15,26 @@ import {
 } from '@dnd-kit/modifiers';
 
 import { Sortable } from './Sortable';
-import type { SortableItemList } from './types';
-import { defaultDropAnimation } from '@dnd-kit/core';
-
-export interface SortableListProps<T = SortableItemList> {
-  /**
-   * 数据源
-   */
-  value?: T;
-  defaultValue?: T;
-  /**
-   * 变更值
-   * @param value
-   */
-  onChange: (value: T) => void;
-  direction?: 'vertical' | 'horizontal';
-  /**
-   * 是否限制拖拽轴
-   */
-  restrictAxis?: boolean;
-  /**
-   * 是否限制边界
-   */
-  restrictEdge?: boolean;
-}
+import type { SortableItemList, SortableListProps } from './types';
 
 const defaultDropAnimationConfig: DropAnimation = {
   ...defaultDropAnimation,
   dragSourceOpacity: 0.5,
 };
 
-const SortableList: FC<SortableListProps> = ({
-  value,
-  defaultValue,
+function SortableList<T extends SortableItemList = SortableItemList>({
+  dataSource,
   onChange,
   direction,
   restrictAxis = true,
   restrictEdge = true,
-}) => {
+  renderItem,
+  removable,
+  style,
+  getItemStyles,
+  className,
+  gap,
+}: SortableListProps<T>): ReactElement {
   /**
    * 获取修改器
    */
@@ -92,13 +77,24 @@ const SortableList: FC<SortableListProps> = ({
   return (
     <Sortable
       direction={direction}
-      items={value}
-      defaultItems={defaultValue}
+      items={dataSource}
       onItemChange={onChange}
       dropAnimation={defaultDropAnimationConfig}
+      renderItem={renderItem}
+      removable={removable}
       {...config}
+      style={style}
+      getItemStyles={getItemStyles}
+      className={className}
+      gap={gap}
     />
   );
-};
+}
 
 export default SortableList;
+
+export type {
+  SortableBaseItem,
+  SortableItemList,
+  SortableListProps,
+} from './types';
