@@ -4,7 +4,7 @@ on:
     branches:
       - master
       - beta
-      - user-panel
+      - feat/*
 
 jobs:
   release:
@@ -12,21 +12,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          node-version: '14'
+          version: 6
 
-      - uses: c-hive/gha-yarn-cache@v1
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'pnpm'
 
-      - name: install
-        run: yarn
+      - name: Install deps
+        run: pnpm install
 
-      - name: Test
-        run: yarn test
+      - name: test
+        run: pnpm run cov
 
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn release
+        run: pnpm run release
