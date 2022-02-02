@@ -75,7 +75,7 @@
     "@testing-library/user-event": "^13.0.8",
     "@types/classnames": "^2.2.7",
     "@types/fs-extra": "^9.0.1",
-    "@types/jest": "^26.0.20",
+    "@types/jest": "^27.4.0",
     "@types/jsdom": "^16.2.3",
     "@types/node": "^15.0.0",
     "@types/react": "^17.0.2",
