@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/asset-gallery [1.3.3](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.3.2...@arvinxu/asset-gallery@1.3.3) (2022-02-02)
+
+
+### 🎫 杂项
+
+* **自动发布**: @arvinxu/asset-gallery@1.3.3-beta.1 [skip ci] ([5c2fb72](https://github.com/arvinxx/components/commit/5c2fb72))
+
+
+### 🐛 修复
+
+* 修正 grid 布局问题 ([a80939d](https://github.com/arvinxx/components/commit/a80939d))
+
 ## @arvinxu/asset-gallery [1.3.3-beta.1](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.3.2...@arvinxu/asset-gallery@1.3.3-beta.1) (2022-02-02)
 
 ### 🐛 修复
