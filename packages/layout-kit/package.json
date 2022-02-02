@@ -13,8 +13,8 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
-  "peerDependencies": {
-    "styled-components": ">5"
+  "dependencies": {
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "styled-components": "^5.3.3",

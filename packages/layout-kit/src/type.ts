@@ -4,7 +4,8 @@ export type ContentPosition =
   | 'flex-end'
   | 'flex-start'
   | 'start'
-  | 'stretch';
+  | 'stretch'
+  | 'baseline';
 
 export type ContentDistribution =
   | 'center'
