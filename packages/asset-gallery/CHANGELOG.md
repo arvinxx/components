@@ -1,41 +1,41 @@
 # Changelog
 
-## @arvinxu/asset-gallery [1.3.2](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.3.1...@arvinxu/asset-gallery@1.3.2) (2021-12-27)
+## @arvinxu/asset-gallery [1.3.3-beta.1](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.3.2...@arvinxu/asset-gallery@1.3.3-beta.1) (2022-02-02)
 
+### 🐛 修复
+
+- 修正 grid 布局问题 ([a80939d](https://github.com/arvinxx/components/commit/a80939d))
+
+## @arvinxu/asset-gallery [1.3.2](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.3.1...@arvinxu/asset-gallery@1.3.2) (2021-12-27)
 
 ### 👷 构建系统
 
-* 发起构建 ([2bec945](https://github.com/arvinxx/components/commit/2bec945))
+- 发起构建 ([2bec945](https://github.com/arvinxx/components/commit/2bec945))
 
 ## @arvinxu/asset-gallery [1.3.1](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.3.0...@arvinxu/asset-gallery@1.3.1) (2021-12-27)
 
-
 ### 👷 构建系统
 
-* 发起构建 ([deb4f6f](https://github.com/arvinxx/components/commit/deb4f6f))
+- 发起构建 ([deb4f6f](https://github.com/arvinxx/components/commit/deb4f6f))
 
 # @arvinxu/asset-gallery [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.4...@arvinxu/asset-gallery@1.3.0) (2021-11-28)
 
-
 ### ✅ 测试
 
-* 修正测试 ([c51e303](https://github.com/arvinxx/components/commit/c51e303))
-
+- 修正测试 ([c51e303](https://github.com/arvinxx/components/commit/c51e303))
 
 ### ✨ 新特性
 
-* 新增 default Props ([e674058](https://github.com/arvinxx/components/commit/e674058))
-* 新增全局控制 padding props ([7f9ad2e](https://github.com/arvinxx/components/commit/7f9ad2e))
-
+- 新增 default Props ([e674058](https://github.com/arvinxx/components/commit/e674058))
+- 新增全局控制 padding props ([7f9ad2e](https://github.com/arvinxx/components/commit/7f9ad2e))
 
 ### 🎫 杂项
 
-* 调整组件库文档架构 ([1f69dfd](https://github.com/arvinxx/components/commit/1f69dfd))
-
+- 调整组件库文档架构 ([1f69dfd](https://github.com/arvinxx/components/commit/1f69dfd))
 
 ### 👷 构建系统
 
-* 触发构建 ([4a66c7e](https://github.com/arvinxx/components/commit/4a66c7e))
+- 触发构建 ([4a66c7e](https://github.com/arvinxx/components/commit/4a66c7e))
 
 ## @arvinxu/asset-gallery [1.2.4](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.2.3...@arvinxu/asset-gallery@1.2.4) (2021-09-16)
 

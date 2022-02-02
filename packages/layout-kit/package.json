@@ -1,6 +1,6 @@
 {
   "name": "@arvinxu/layout-kit",
-  "version": "1.0.0",
+  "version": "1.1.0-beta.1",
   "files": [
     "lib",
     "es"
@@ -13,8 +13,8 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
-  "peerDependencies": {
-    "styled-components": ">5"
+  "dependencies": {
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "styled-components": "^5.3.3",

@@ -35,9 +35,6 @@ exports[`LoginMessage 默认状态 1`] = `
       >
         test
       </div>
-      <div
-        class="ant-alert-description"
-      />
     </div>
   </div>
 </div>
