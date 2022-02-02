@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/sortable-list [1.0.0-beta.2](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.0-beta.1...@arvinxu/sortable-list@1.0.0-beta.2) (2022-02-02)
+
+
+### 👷 构建系统
+
+* 补充 layout-kit 依赖 ([cac614f](https://github.com/arvinxx/components/commit/cac614f))
+
 # @arvinxu/sortable-list 1.0.0-beta.1 (2022-02-02)
 
 ### ♻ 重构
