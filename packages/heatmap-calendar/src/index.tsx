@@ -1,7 +1,7 @@
 import React from 'react';
 import type { FC } from 'react';
 import { Heatmap } from '@ant-design/charts';
-import type { HeatmapConfig } from '@ant-design/charts/es/heatmap';
+import type { HeatmapConfig } from '@ant-design/charts';
 import type { HeatmapCalendarData } from './type';
 
 import { useDarkTheme } from './hooks';

@@ -125,7 +125,7 @@ export interface SortableListProps<T>
    * 变更值
    * @param value
    */
-  onChange: (value: T) => void;
+  onChange?: (value: T) => void;
   /**
    * 是否限制拖拽轴
    */
