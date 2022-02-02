@@ -34,7 +34,7 @@ importers:
       babel-plugin-add-module-exports: ^1.0.4
       babel-plugin-import: ^1.12.2
       babel-plugin-module-resolver: ^4.1.0
-      canvas: ^2.9.0
+      canvas: 2.6.1
       commitlint: ^12.0.1
       commitlint-config-gitmoji: ^2.2.5
       concurrently: ^6.0.0
@@ -102,15 +102,15 @@ importers:
       '@types/react-dom': 17.0.11
       '@types/uuid': 8.3.4
       '@umijs/fabric': 2.10.1
-      '@umijs/preset-dumi': 1.1.38_09c872762ea919190e983a644e7db1ce
-      '@umijs/preset-react': 1.8.30_0369df422e2a53e88b8b7bee944282b4
-      '@umijs/test': 3.5.20_canvas@2.9.0+ts-node@10.4.0
+      '@umijs/preset-dumi': 1.1.38_112e59e4a02608fe5d3f6437d5ec9d80
+      '@umijs/preset-react': 1.8.30_d4a8db22fd61f2c4f8b56504ce7b95a3
+      '@umijs/test': 3.5.20_canvas@2.6.1+ts-node@10.4.0
       antd: 4.18.5
       babel-loader: 8.2.3_98f66c8858fdf744c6027fec1502e530
       babel-plugin-add-module-exports: 1.0.4
       babel-plugin-import: 1.13.3
       babel-plugin-module-resolver: 4.1.0
-      canvas: 2.9.0
+      canvas: 2.6.1
       commitlint: 12.1.4
       commitlint-config-gitmoji: 2.2.5_commitlint@12.1.4
       concurrently: 6.5.1
@@ -127,7 +127,7 @@ importers:
       fs-extra: 10.0.0
       gh-pages: 3.2.3
       husky: 4.3.8
-      jest: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       lerna: 4.0.0
       less-loader: 6.2.0_webpack@5.68.0
       lint-staged: 11.2.6
@@ -4138,7 +4138,7 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /@jest/core/26.6.3_canvas@2.9.0+ts-node@10.4.0:
+  /@jest/core/26.6.3_canvas@2.6.1+ts-node@10.4.0:
     resolution: {integrity: sha512-xvV1kKbhfUqFVuZ8Cyo+JPpipAHHAV3kcDBftiduK8EICXmTFddryy3P7NfZt8Pv37rA9nEJBKCCkglCPt/Xjw==}
     engines: {node: '>= 10.14.2'}
     dependencies:
@@ -4153,14 +4153,14 @@ packages:
       exit: 0.1.2
       graceful-fs: 4.2.9
       jest-changed-files: 26.6.2
-      jest-config: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-config: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-haste-map: 26.6.2
       jest-message-util: 26.6.2
       jest-regex-util: 26.0.0
       jest-resolve: 26.6.2
       jest-resolve-dependencies: 26.6.3
-      jest-runner: 26.6.3_canvas@2.9.0+ts-node@10.4.0
-      jest-runtime: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-runner: 26.6.3_canvas@2.6.1+ts-node@10.4.0
+      jest-runtime: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-snapshot: 26.6.2
       jest-util: 26.6.2
       jest-validate: 26.6.2
@@ -4301,15 +4301,15 @@ packages:
       collect-v8-coverage: 1.0.1
     dev: true
 
-  /@jest/test-sequencer/26.6.3_canvas@2.9.0+ts-node@10.4.0:
+  /@jest/test-sequencer/26.6.3_canvas@2.6.1+ts-node@10.4.0:
     resolution: {integrity: sha512-YHlVIjP5nfEyjlrSr8t/YdNfU/1XEt7c5b4OxcXCjyRhjzLYu/rO69/WHPuYcbCWkz8kAeZVZp2N2+IOLLEPGw==}
     engines: {node: '>= 10.14.2'}
     dependencies:
       '@jest/test-result': 26.6.2
       graceful-fs: 4.2.9
       jest-haste-map: 26.6.2
-      jest-runner: 26.6.3_canvas@2.9.0+ts-node@10.4.0
-      jest-runtime: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-runner: 26.6.3_canvas@2.6.1+ts-node@10.4.0
+      jest-runtime: 26.6.3_canvas@2.6.1+ts-node@10.4.0
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -5161,24 +5161,6 @@ packages:
   /@mapbox/martini/0.2.0:
     resolution: {integrity: sha512-7hFhtkb0KTLEls+TRw/rWayq5EeHtTaErgm/NskVoXmtgAQu/9D299aeyj6mzAR/6XUnYRp2lU+4IcrYRFjVsQ==}
     dev: false
-
-  /@mapbox/node-pre-gyp/1.0.8:
-    resolution: {integrity: sha512-CMGKi28CF+qlbXh26hDe6NxCd7amqeAzEqnS6IHeO6LoaKyM/n+Xw3HT1COdq8cuioOdlKdqn/hCmqPUOMOywg==}
-    hasBin: true
-    dependencies:
-      detect-libc: 1.0.3
-      https-proxy-agent: 5.0.0
-      make-dir: 3.1.0
-      node-fetch: 2.6.7
-      nopt: 5.0.0
-      npmlog: 5.0.1
-      rimraf: 3.0.2
-      semver: 7.3.5
-      tar: 6.1.11
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-    dev: true
 
   /@mapbox/point-geometry/0.1.0:
     resolution: {integrity: sha512-6j56HdLTwWGO0fJPlrZtdU/B13q8Uwmo18Ck2GnGgN9PCFyKTZ3UbXeEdRFh18i9XQ92eH2VdtpJHpBD3aripQ==}
@@ -7006,12 +6988,12 @@ packages:
       - react
     dev: true
 
-  /@umijs/plugin-test/1.0.2_2b541461eba2a39aa7b4a14ea1a7b796:
+  /@umijs/plugin-test/1.0.2_bc331a39e9cf33c80ef187b197a837d8:
     resolution: {integrity: sha1-32fHtuMb9N9OKFfQShAwRuVXFD0=, tarball: '@umijs/plugin-test/download/@umijs/plugin-test-1.0.2.tgz'}
     peerDependencies:
       umi: 3.x
     dependencies:
-      '@umijs/test': 3.5.20_canvas@2.9.0+ts-node@10.4.0
+      '@umijs/test': 3.5.20_canvas@2.6.1+ts-node@10.4.0
       umi: 3.5.20
     transitivePeerDependencies:
       - bufferutil
@@ -7056,7 +7038,7 @@ packages:
       - react-dom
     dev: true
 
-  /@umijs/preset-dumi/1.1.38_09c872762ea919190e983a644e7db1ce:
+  /@umijs/preset-dumi/1.1.38_112e59e4a02608fe5d3f6437d5ec9d80:
     resolution: {integrity: sha512-3pOU3+aJqfvIZ8KcUpGf8HyO6+SMQuuFuY8AcAYM+LQBme0RfxBAGDPSvIo5vO2ayK80glKhpGxPGXRWck2syw==}
     peerDependencies:
       umi: 3.x
@@ -7090,7 +7072,7 @@ packages:
       lz-string: 1.4.4
       react-docgen-typescript-dumi-tmp: 1.22.1-0_typescript@4.5.5
       rehype-autolink-headings: 4.0.0
-      rehype-mathjax: 3.1.0_canvas@2.9.0
+      rehype-mathjax: 3.1.0_canvas@2.6.1
       rehype-remove-comments: 4.0.2
       rehype-stringify: 8.0.0
       remark-frontmatter: 3.0.0
@@ -7118,7 +7100,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@umijs/preset-react/1.8.30_0369df422e2a53e88b8b7bee944282b4:
+  /@umijs/preset-react/1.8.30_d4a8db22fd61f2c4f8b56504ce7b95a3:
     resolution: {integrity: sha512-l+l5r+x9cyqNxbtmUNqoibfV9UK/daiD2HjFiTql3wyKzR6cEIq+h8RQ+ehO9DmzU8Tu5LPRimT97MuOsMciOQ==}
     peerDependencies:
       umi: 3.x
@@ -7134,7 +7116,7 @@ packages:
       '@umijs/plugin-locale': 0.15.1_umi@3.5.20
       '@umijs/plugin-model': 2.6.2_umi@3.5.20
       '@umijs/plugin-request': 2.8.0_umi@3.5.20
-      '@umijs/plugin-test': 1.0.2_2b541461eba2a39aa7b4a14ea1a7b796
+      '@umijs/plugin-test': 1.0.2_bc331a39e9cf33c80ef187b197a837d8
       umi: 3.5.20
     transitivePeerDependencies:
       - '@ant-design/icons'
@@ -7257,7 +7239,7 @@ packages:
       '@umijs/utils': 3.5.20
     dev: true
 
-  /@umijs/test/3.5.20_canvas@2.9.0+ts-node@10.4.0:
+  /@umijs/test/3.5.20_canvas@2.6.1+ts-node@10.4.0:
     resolution: {integrity: sha512-nxDdKDJYPMgYCEugvbyXbFjwNF/RL+TOLsBUmWzmciiz6PWVghJXrkSkDu2Ii5XO88G7l4xPo4cmReCWBw5I3A==}
     hasBin: true
     dependencies:
@@ -7268,8 +7250,8 @@ packages:
       babel-jest: 26.6.3_@babel+core@7.12.10
       core-js: 3.8.2
       identity-obj-proxy: 3.0.0
-      jest: 26.6.3_canvas@2.9.0+ts-node@10.4.0
-      jest-cli: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest: 26.6.3_canvas@2.6.1+ts-node@10.4.0
+      jest-cli: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-environment-jsdom-fourteen: 1.0.1
       regenerator-runtime: 0.13.9
       whatwg-fetch: 3.6.2
@@ -7958,14 +7940,6 @@ packages:
     dependencies:
       delegates: 1.0.0
       readable-stream: 2.3.7
-    dev: true
-
-  /are-we-there-yet/2.0.0:
-    resolution: {integrity: sha512-Ci/qENmwHnsYo9xKIcUJN5LeDKdJ6R1Z1j9V/J5wyq8nh/mYPEpIKJbBZXtZjG04HiK7zV/p6Vs9952MrMeUIw==}
-    engines: {node: '>=10'}
-    dependencies:
-      delegates: 1.0.0
-      readable-stream: 3.6.0
     dev: true
 
   /arg/2.0.0:
@@ -8890,17 +8864,14 @@ packages:
     resolution: {integrity: sha512-bdsfZd6K6ap87AGqSHJP/s1V+U6Z5lyrcbBu3ovbCCf8cSYpwTtGrCBObMpJqwxfTbLW6YTIdbb1jEeTelcpYQ==}
     dev: true
 
-  /canvas/2.9.0:
-    resolution: {integrity: sha512-0l93g7uxp7rMyr7H+XRQ28A3ud0dKIUTIEkUe1Dxh4rjUYN7B93+SjC3r1PDKA18xcQN87OFGgUnyw7LSgNLSQ==}
+  /canvas/2.6.1:
+    resolution: {integrity: sha512-S98rKsPcuhfTcYbtF53UIJhcbgIAK533d1kJKMwsMwAIFgfd58MOyxRud3kktlzWiEkFliaJtvyZCBtud/XVEA==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
-      '@mapbox/node-pre-gyp': 1.0.8
       nan: 2.15.0
+      node-pre-gyp: 0.11.0
       simple-get: 3.1.1
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
     dev: true
 
   /capture-exit/2.0.0:
@@ -10343,6 +10314,12 @@ packages:
       ms: 2.0.0
     dev: true
 
+  /debug/3.2.7:
+    resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    dependencies:
+      ms: 2.1.3
+    dev: true
+
   /debug/4.3.3:
     resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
     engines: {node: '>=6.0'}
@@ -10744,7 +10721,7 @@ packages:
       '@umijs/preset-dumi': 1.x
       react: ^16.13.1 || ^17.0.0
     dependencies:
-      '@umijs/preset-dumi': 1.1.38_09c872762ea919190e983a644e7db1ce
+      '@umijs/preset-dumi': 1.1.38_112e59e4a02608fe5d3f6437d5ec9d80
       lodash.throttle: 4.1.1
       prism-react-renderer: 1.2.1
       prismjs: 1.26.0
@@ -12093,21 +12070,6 @@ packages:
       signal-exit: 3.0.6
       string-width: 1.0.2
       strip-ansi: 3.0.1
-      wide-align: 1.1.5
-    dev: true
-
-  /gauge/3.0.2:
-    resolution: {integrity: sha512-+5J6MS/5XksCuXq++uFRsnUd7Ovu1XenbeuIuNRJxYWjgQbPuFhT14lAvsWfqfAmnwluf1OwMjz39HjfLPci0Q==}
-    engines: {node: '>=10'}
-    dependencies:
-      aproba: 2.0.0
-      color-support: 1.1.3
-      console-control-strings: 1.1.0
-      has-unicode: 2.0.1
-      object-assign: 4.1.1
-      signal-exit: 3.0.6
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
       wide-align: 1.1.5
     dev: true
 
@@ -13900,12 +13862,12 @@ packages:
       throat: 5.0.0
     dev: true
 
-  /jest-cli/26.6.3_canvas@2.9.0+ts-node@10.4.0:
+  /jest-cli/26.6.3_canvas@2.6.1+ts-node@10.4.0:
     resolution: {integrity: sha512-GF9noBSa9t08pSyl3CY4frMrqp+aQXFGFkf5hEPbh/pIUFYWMK6ZLTfbmadxJVcJrdRoChlWQsA2VkJcDFK8hg==}
     engines: {node: '>= 10.14.2'}
     hasBin: true
     dependencies:
-      '@jest/core': 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      '@jest/core': 26.6.3_canvas@2.6.1+ts-node@10.4.0
       '@jest/test-result': 26.6.2
       '@jest/types': 26.6.2
       chalk: 4.1.2
@@ -13913,7 +13875,7 @@ packages:
       graceful-fs: 4.2.9
       import-local: 3.1.0
       is-ci: 2.0.0
-      jest-config: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-config: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-util: 26.6.2
       jest-validate: 26.6.2
       prompts: 2.4.2
@@ -13926,7 +13888,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /jest-config/26.6.3_canvas@2.9.0+ts-node@10.4.0:
+  /jest-config/26.6.3_canvas@2.6.1+ts-node@10.4.0:
     resolution: {integrity: sha512-t5qdIj/bCj2j7NFVHb2nFB4aUdfucDn3JRKgrZnplb8nieAirAzRSHP8uDEd+qV6ygzg9Pz4YG7UTJf94LPSyg==}
     engines: {node: '>= 10.14.2'}
     peerDependencies:
@@ -13936,17 +13898,17 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.16.12
-      '@jest/test-sequencer': 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      '@jest/test-sequencer': 26.6.3_canvas@2.6.1+ts-node@10.4.0
       '@jest/types': 26.6.2
       babel-jest: 26.6.3_@babel+core@7.16.12
       chalk: 4.1.2
       deepmerge: 4.2.2
       glob: 7.2.0
       graceful-fs: 4.2.9
-      jest-environment-jsdom: 26.6.2_canvas@2.9.0
+      jest-environment-jsdom: 26.6.2_canvas@2.6.1
       jest-environment-node: 26.6.2
       jest-get-type: 26.3.0
-      jest-jasmine2: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-jasmine2: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-regex-util: 26.0.0
       jest-resolve: 26.6.2
       jest-util: 26.6.2
@@ -14002,7 +13964,7 @@ packages:
       - supports-color
     dev: true
 
-  /jest-environment-jsdom/26.6.2_canvas@2.9.0:
+  /jest-environment-jsdom/26.6.2_canvas@2.6.1:
     resolution: {integrity: sha512-jgPqCruTlt3Kwqg5/WVFyHIOJHsiAvhcp2qiR2QQstuG9yWox5+iHpU3ZrcBxW14T4fe5Z68jAfLRh7joCSP2Q==}
     engines: {node: '>= 10.14.2'}
     dependencies:
@@ -14012,7 +13974,7 @@ packages:
       '@types/node': 15.14.9
       jest-mock: 26.6.2
       jest-util: 26.6.2
-      jsdom: 16.7.0_canvas@2.9.0
+      jsdom: 16.7.0_canvas@2.6.1
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -14077,7 +14039,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /jest-jasmine2/26.6.3_canvas@2.9.0+ts-node@10.4.0:
+  /jest-jasmine2/26.6.3_canvas@2.6.1+ts-node@10.4.0:
     resolution: {integrity: sha512-kPKUrQtc8aYwBV7CqBg5pu+tmYXlvFlSFYn18ev4gPFtrRzB15N2gW/Roew3187q2w2eHuu0MU9TJz6w0/nPEg==}
     engines: {node: '>= 10.14.2'}
     dependencies:
@@ -14094,7 +14056,7 @@ packages:
       jest-each: 26.6.2
       jest-matcher-utils: 26.6.2
       jest-message-util: 26.6.2
-      jest-runtime: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-runtime: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-snapshot: 26.6.2
       jest-util: 26.6.2
       pretty-format: 26.6.2
@@ -14214,7 +14176,7 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /jest-runner/26.6.3_canvas@2.9.0+ts-node@10.4.0:
+  /jest-runner/26.6.3_canvas@2.6.1+ts-node@10.4.0:
     resolution: {integrity: sha512-atgKpRHnaA2OvByG/HpGA4g6CSPS/1LK0jK3gATJAoptC1ojltpmVlYC3TYgdmGp+GLuhzpH30Gvs36szSL2JQ==}
     engines: {node: '>= 10.14.2'}
     dependencies:
@@ -14227,13 +14189,13 @@ packages:
       emittery: 0.7.2
       exit: 0.1.2
       graceful-fs: 4.2.9
-      jest-config: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-config: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-docblock: 26.0.0
       jest-haste-map: 26.6.2
       jest-leak-detector: 26.6.2
       jest-message-util: 26.6.2
       jest-resolve: 26.6.2
-      jest-runtime: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-runtime: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-util: 26.6.2
       jest-worker: 26.6.2
       source-map-support: 0.5.21
@@ -14246,7 +14208,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /jest-runtime/26.6.3_canvas@2.9.0+ts-node@10.4.0:
+  /jest-runtime/26.6.3_canvas@2.6.1+ts-node@10.4.0:
     resolution: {integrity: sha512-lrzyR3N8sacTAMeonbqpnSka1dHNux2uk0qqDXVkMv2c/A3wYnvQ4EXuI013Y6+gSKSCxdaczvf4HF0mVXHRdw==}
     engines: {node: '>= 10.14.2'}
     hasBin: true
@@ -14266,7 +14228,7 @@ packages:
       exit: 0.1.2
       glob: 7.2.0
       graceful-fs: 4.2.9
-      jest-config: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-config: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-haste-map: 26.6.2
       jest-message-util: 26.6.2
       jest-mock: 26.6.2
@@ -14414,14 +14376,14 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /jest/26.6.3_canvas@2.9.0+ts-node@10.4.0:
+  /jest/26.6.3_canvas@2.6.1+ts-node@10.4.0:
     resolution: {integrity: sha512-lGS5PXGAzR4RF7V5+XObhqz2KZIDUA1yD0DG6pBVmy10eh0ZIXQImRuzocsI/N2XZ1GrLFwTS27In2i2jlpq1Q==}
     engines: {node: '>= 10.14.2'}
     hasBin: true
     dependencies:
-      '@jest/core': 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      '@jest/core': 26.6.3_canvas@2.6.1+ts-node@10.4.0
       import-local: 3.1.0
-      jest-cli: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest-cli: 26.6.3_canvas@2.6.1+ts-node@10.4.0
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -14496,7 +14458,7 @@ packages:
       xml-name-validator: 3.0.0
     dev: true
 
-  /jsdom/16.7.0_canvas@2.9.0:
+  /jsdom/16.7.0_canvas@2.6.1:
     resolution: {integrity: sha512-u9Smc2G1USStM+s/x1ru5Sxrl6mPYCbByG1U/hUmqaVsm4tbNyS7CicOSRyuGQYZhTu0h84qkZZQ/I+dzizSVw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -14508,7 +14470,7 @@ packages:
       abab: 2.0.5
       acorn: 8.7.0
       acorn-globals: 6.0.0
-      canvas: 2.9.0
+      canvas: 2.6.1
       cssom: 0.4.4
       cssstyle: 2.3.0
       data-urls: 2.0.0
@@ -16183,6 +16145,16 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
+  /needle/2.9.1:
+    resolution: {integrity: sha512-6R9fqJ5Zcmf+uYaFgdIHmLwNldn5HbK8L5ybn7Uz+ylX/rnOsSp1AHcvQSrCaFN+qNM1wpymHqD7mVasEOlHGQ==}
+    engines: {node: '>= 4.4.x'}
+    hasBin: true
+    dependencies:
+      debug: 3.2.7
+      iconv-lite: 0.4.24
+      sax: 1.2.4
+    dev: true
+
   /negotiator/0.6.2:
     resolution: {integrity: sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==}
     engines: {node: '>= 0.6'}
@@ -16309,6 +16281,23 @@ packages:
       which: 2.0.2
     dev: true
     optional: true
+
+  /node-pre-gyp/0.11.0:
+    resolution: {integrity: sha512-TwWAOZb0j7e9eGaf9esRx3ZcLaE5tQ2lvYy1pb5IAaG1a2e2Kv5Lms1Y4hpj+ciXJRofIxxlt5haeQ/2ANeE0Q==}
+    deprecated: 'Please upgrade to @mapbox/node-pre-gyp: the non-scoped node-pre-gyp package is deprecated and only the @mapbox scoped package will recieve updates in the future'
+    hasBin: true
+    dependencies:
+      detect-libc: 1.0.3
+      mkdirp: 0.5.5
+      needle: 2.9.1
+      nopt: 4.0.3
+      npm-packlist: 1.4.8
+      npmlog: 4.1.2
+      rc: 1.2.8
+      rimraf: 2.7.1
+      semver: 5.7.1
+      tar: 4.4.19
+    dev: true
 
   /node-releases/2.0.1:
     resolution: {integrity: sha512-CqyzN6z7Q6aMeF/ktcMVTzhAHCEpf8SOarwpzpf8pNBY2k5/oM34UHldUwp8VKI7uxct2HxSRdJjBaZeESzcxA==}
@@ -16443,6 +16432,14 @@ packages:
       hosted-git-info: 4.1.0
       semver: 7.3.5
       validate-npm-package-name: 3.0.0
+    dev: true
+
+  /npm-packlist/1.4.8:
+    resolution: {integrity: sha512-5+AZgwru5IevF5ZdnFglB5wNlHG1AOOuw28WhUq8/8emhBmLv6jX5by4WJCh7lW0uSYZYS6DXqIsyZVIXRZU9A==}
+    dependencies:
+      ignore-walk: 3.0.4
+      npm-bundled: 1.1.2
+      npm-normalize-package-bin: 1.0.1
     dev: true
 
   /npm-packlist/2.2.2:
@@ -16670,15 +16667,6 @@ packages:
       are-we-there-yet: 1.1.7
       console-control-strings: 1.1.0
       gauge: 2.7.4
-      set-blocking: 2.0.0
-    dev: true
-
-  /npmlog/5.0.1:
-    resolution: {integrity: sha512-AqZtDUWOMKs1G/8lwylVjrdYgqA4d9nu8hc+0gzRxlDb1I10+FHBGMXs6aiQHFdCUUlqH99MUMuLfzWDNDtfxw==}
-    dependencies:
-      are-we-there-yet: 2.0.0
-      console-control-strings: 1.1.0
-      gauge: 3.0.2
       set-blocking: 2.0.0
     dev: true
 
@@ -20031,13 +20019,13 @@ packages:
       unist-util-visit: 2.0.3
     dev: true
 
-  /rehype-mathjax/3.1.0_canvas@2.9.0:
+  /rehype-mathjax/3.1.0_canvas@2.6.1:
     resolution: {integrity: sha512-Pmz92Y56lBFmDjFc9nIdrKu1xzKSBYevcwKiKiG7b5JJg74q1E62nRSbPEm37vXaXn7Bn25iRsWcP39bJKkMxg==}
     dependencies:
       '@types/mathjax': 0.0.36
       hast-util-from-dom: 3.0.0
       hast-util-to-text: 2.0.1
-      jsdom: 16.7.0_canvas@2.9.0
+      jsdom: 16.7.0_canvas@2.6.1
       mathjax-full: 3.2.0
       unist-util-visit: 2.0.3
     transitivePeerDependencies:
@@ -22479,7 +22467,7 @@ packages:
       '@types/jest': 26.0.24
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
-      jest: 26.6.3_canvas@2.9.0+ts-node@10.4.0
+      jest: 26.6.3_canvas@2.6.1+ts-node@10.4.0
       jest-util: 27.4.2
       json5: 2.2.0
       lodash.memoize: 4.1.2
