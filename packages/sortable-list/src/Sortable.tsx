@@ -1,10 +1,9 @@
 import type { FC } from 'react';
-import React, { useCallback, useState } from 'react';
+import React from 'react';
 import { createPortal } from 'react-dom';
 
 import {
   closestCenter,
-  DragOverlay,
   DndContext,
   KeyboardSensor,
   MouseSensor,
@@ -14,16 +13,20 @@ import {
 } from '@dnd-kit/core';
 
 import {
-  arrayMove,
   SortableContext,
   sortableKeyboardCoordinates,
 } from '@dnd-kit/sortable';
-import useMergeState from 'use-merge-value';
 
-import { Item } from './Item';
-import { Wrapper } from './Wrapper';
+import { Wrapper } from './components';
+
 import SortableItem from './SortableItem';
-import type { SortableItemList, SortableProps } from './types';
+import DraggingOverlay from './DraggingOverlay';
+
+import type { SortableProps } from './types';
+
+import { useSortableList } from './hooks/useSortableList';
+import { useActiveItem } from './hooks/useActiveItem';
+import { getIndexOfActiveItem } from './utils';
 
 export const Sortable: FC<SortableProps> = ({
   activationConstraint,
@@ -44,20 +47,12 @@ export const Sortable: FC<SortableProps> = ({
   modifiers,
   removable,
   renderItem,
-  reorderItems = arrayMove,
   strategy,
   style,
   useDragOverlay = true,
   wrapperStyle = () => ({}),
+  direction,
 }) => {
-  const [items, setItems] = useMergeState<SortableItemList>([], {
-    value: controlledItems,
-    defaultValue: defaultItems,
-    onChange: onItemChange,
-  });
-
-  const [activeId, setActiveId] = useState<string | null>(null);
-
   const sensors = useSensors(
     useSensor(MouseSensor, {
       activationConstraint,
@@ -70,96 +65,82 @@ export const Sortable: FC<SortableProps> = ({
     }),
   );
 
-  const getIndex = items.indexOf.bind(items);
-  const activeIndex = activeId ? getIndex(activeId) : -1;
+  const { items, dispatchSortable } = useSortableList({
+    value: controlledItems,
+    defaultValue: defaultItems,
+    onChange: onItemChange,
+  });
 
-  const handleRemove = useCallback(
-    (id: string) => {
-      if (!removable) return;
+  const { deactivateItem, activateItem, activeId, isDragging } =
+    useActiveItem();
 
-      const newItem = items.filter((item) => item.id !== id);
-      setItems(newItem);
-    },
-    [removable, items],
-  );
+  const activeIndex = getIndexOfActiveItem(items, activeId);
+
+  const handleRemove = (id: string) => {
+    if (!removable) return;
+
+    dispatchSortable({ type: 'removeItem', id });
+  };
 
   return (
     <DndContext
       sensors={sensors}
       collisionDetection={collisionDetection}
       onDragStart={({ active }) => {
-        if (!active) {
-          return;
-        }
+        if (!active) return;
 
-        setActiveId(active.id);
+        activateItem(active.id);
       }}
       onDragEnd={({ over }) => {
-        setActiveId(null);
-
         if (over) {
-          const overIndex = getIndex(over.id);
-          if (activeIndex !== overIndex) {
-            const newItems = reorderItems(items, activeIndex, overIndex);
+          const endIndex = getIndexOfActiveItem(items, over.id);
 
-            setItems(newItems);
-          }
+          dispatchSortable({
+            type: 'reorder',
+            startIndex: activeIndex,
+            endIndex,
+          });
         }
+        deactivateItem();
       }}
-      onDragCancel={() => setActiveId(null)}
+      onDragCancel={() => deactivateItem()}
       measuring={measuring}
       modifiers={modifiers}
     >
-      <Wrapper style={style}>
-        <SortableContext items={items} strategy={strategy}>
-          <Container>
-            {items.map((value, index) => (
-              <SortableItem
-                key={value.id}
-                id={value.id}
-                handle={handle}
-                index={index}
-                style={getItemStyles}
-                wrapperStyle={wrapperStyle}
-                disabled={isDisabled(value.id)}
-                renderItem={renderItem}
-                onRemove={handleRemove}
-                animateLayoutChanges={animateLayoutChanges}
-                useDragOverlay={useDragOverlay}
-                getNewIndex={getNewIndex}
-              />
-            ))}
-          </Container>
-        </SortableContext>
-      </Wrapper>
+      <SortableContext items={items} strategy={strategy}>
+        <Container style={style}>
+          {items.map((value, index) => (
+            <SortableItem
+              key={value.id}
+              id={value.id}
+              handle={handle}
+              index={index}
+              style={getItemStyles}
+              wrapperStyle={wrapperStyle}
+              disabled={isDisabled(value.id)}
+              renderItem={renderItem}
+              onRemove={handleRemove}
+              animateLayoutChanges={animateLayoutChanges}
+              useDragOverlay={useDragOverlay}
+              getNewIndex={getNewIndex}
+            />
+          ))}
+        </Container>
+      </SortableContext>
       {useDragOverlay
         ? createPortal(
-            <DragOverlay
+            <DraggingOverlay
               adjustScale={adjustScale}
               dropAnimation={dropAnimation}
-            >
-              {activeId ? (
-                <Item
-                  value={items[activeIndex]}
-                  handle={handle}
-                  renderItem={renderItem}
-                  wrapperStyle={wrapperStyle({
-                    index: activeIndex,
-                    isDragging: true,
-                    id: items[activeIndex].id,
-                  })}
-                  style={getItemStyles({
-                    id: items[activeIndex].id,
-                    index: activeIndex,
-                    isSorting: activeId !== null,
-                    isDragging: true,
-                    overIndex: -1,
-                    isDragOverlay: true,
-                  })}
-                  dragOverlay
-                />
-              ) : null}
-            </DragOverlay>,
+              dragging={isDragging}
+              activeId={activeId}
+              activeIndex={activeIndex}
+              item={items[activeIndex]}
+              getItemStyles={getItemStyles}
+              wrapperStyle={wrapperStyle}
+              handle={handle}
+              renderItem={renderItem}
+            />,
             document.body,
           )
         : null}

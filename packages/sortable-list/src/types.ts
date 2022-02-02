@@ -22,6 +22,7 @@ export interface SortableItem {
 export type SortableItemList = SortableItem[];
 
 export interface SortableProps {
+  direction?: 'vertical' | 'horizontal';
   activationConstraint?: PointerActivationConstraint;
   animateLayoutChanges?: AnimateLayoutChanges;
   adjustScale?: boolean;

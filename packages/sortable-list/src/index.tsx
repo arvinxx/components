@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 import type { FC } from 'react';
-import type { Modifier } from '@dnd-kit/core';
+import type { Modifier, DropAnimation } from '@dnd-kit/core';
 import {
   verticalListSortingStrategy,
   horizontalListSortingStrategy,
@@ -13,13 +13,14 @@ import {
 
 import { Sortable } from './Sortable';
 import type { SortableItemList } from './types';
-import { defaultDropAnimation, DropAnimation } from '@dnd-kit/core';
+import { defaultDropAnimation } from '@dnd-kit/core';
 
 export interface SortableListProps<T = SortableItemList> {
   /**
    * 数据源
    */
-  value: T;
+  value?: T;
+  defaultValue?: T;
   /**
    * 变更值
    * @param value
@@ -43,6 +44,7 @@ const defaultDropAnimationConfig: DropAnimation = {
 
 const SortableList: FC<SortableListProps> = ({
   value,
+  defaultValue,
   onChange,
   direction,
   restrictAxis = true,
@@ -89,7 +91,9 @@ const SortableList: FC<SortableListProps> = ({
 
   return (
     <Sortable
+      direction={direction}
       items={value}
+      defaultItems={defaultValue}
       onItemChange={onChange}
       dropAnimation={defaultDropAnimationConfig}
       {...config}

@@ -3,7 +3,8 @@ import classNames from 'classnames';
 import type { DraggableSyntheticListeners } from '@dnd-kit/core';
 import type { Transform } from '@dnd-kit/utilities';
 
-import { Handle, Remove } from './components';
+import { Handle } from '../Handle';
+import { Remove } from '../Remove';
 
 import styles from './index.less';
 
@@ -76,6 +77,7 @@ export const Item = React.memo(
         };
       }, [dragOverlay]);
 
+      // @ts-ignore
       return renderItem ? (
         renderItem({
           dragOverlay: Boolean(dragOverlay),

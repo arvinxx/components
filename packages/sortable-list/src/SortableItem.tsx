@@ -4,7 +4,7 @@ import React from 'react';
 import type { AnimateLayoutChanges, NewIndexGetter } from '@dnd-kit/sortable';
 import { useSortable } from '@dnd-kit/sortable';
 
-import { Item } from './Item';
+import { Item } from './components';
 
 interface SortableItemProps {
   animateLayoutChanges?: AnimateLayoutChanges;
