@@ -13,16 +13,16 @@
   "repository": "git+https://github.com/arvinxx/components.git",
   "license": "MIT",
   "scripts": {
-    "start": "yarn docs:dev",
-    "prebuild": "npm run clean",
-    "build": "father-build && yarn build:webpack",
+    "start": "pnpm run docs:dev",
+    "prebuild": "pnpm run clean",
+    "build": "father-build && pnpm run build:webpack",
     "build:webpack": "lerna run webpack",
     "c": "ts-node scripts/create-package",
     "---------": "",
     "release": "multi-semantic-release",
     "release:local": "multi-semantic-release --no-ci",
     "---------     ": "",
-    "api:dev": "concurrently \"yarn api:watch\" \"yarn api:server\"",
+    "api:dev": "concurrently \"pnpm run api:watch\" \"pnpm run api:server\"",
     "api:build": "typedoc",
     "api:watch": "onchange 'packages/**/src/**/*.ts' -- npx typedoc",
     "api:server": "serve apis",
@@ -35,8 +35,8 @@
     "test:update": "jest -u",
     "cov": "jest --coverage",
     "---------   ": "",
-    "check": "yarn check:lint && yarn check:circular && yarn check:types",
-    "check:lint": "yarn lint-eslint",
+    "check": "pnpm run check:lint && pnpm run check:circular && pnpm run check:types",
+    "check:lint": "pnpm run lint-eslint",
     "check:circular": "dpdm packages/**/*.ts  --warning false  --tree false  --exit-code circular:1  -T true",
     "check:types": "tsc -p tsconfig-check.json",
     "lint-eslint": "eslint --cache --ext .ts,.tsx --format=pretty ./packages",
@@ -45,8 +45,8 @@
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ",
     "---------    ": "",
     "clean": "lerna run clean && rm -rf es lib dist build coverage .umi .eslintcache apis",
-    "reinstall": "yarn clean && lerna clean &&  rm -rf node_modules && yarn",
-    "prepublishOnly": "yarn build",
+    "reinstall": "pnpm run clean && lerna clean &&  rm -rf node_modules && pnpm run",
+    "prepublishOnly": "pnpm run build",
     "prettier": "prettier -c --write \"**/**\"",
     "n": "ts-node"
   },
@@ -55,7 +55,7 @@
       "prettier --write",
       "git add"
     ],
-    "**/*.{ts,tsx}": "npm run lint-staged:ts"
+    "**/*.{ts,tsx}": "pnpm run lint-staged:ts"
   },
   "devDependencies": {
     "@ant-design/icons": "^4.x",
