@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import React from 'react';
-import { Columns } from '@bedrock-layout/columns';
+import cls from 'classnames';
+
 import Header from './Header';
 
 import type { AssetGalleryProps } from '../types';
@@ -36,18 +37,21 @@ const Layout: FC<LayoutProps> = ({
         onLayoutChange={onLayoutChange}
         showSlider={showSlider}
       />
-      {layout === 'grid' ? (
-        <Columns gutter={''} columns={columns}>
-          {children}
-        </Columns>
-      ) : (
+      {
         <div
-          className={'avx-asset-gallery-container avx-asset-gallery-masonry'}
-          style={{ columnCount: columns }}
+          className={cls(
+            'avx-asset-gallery-container',
+            `avx-asset-gallery-${layout}`,
+          )}
+          style={{
+            columnCount: layout === 'masonry' ? columns : undefined,
+            gridTemplateColumns:
+              layout === 'grid' ? `repeat(${columns}, 1fr)` : undefined,
+          }}
         >
           {children}
         </div>
-      )}
+      }
     </div>
   );
 };
