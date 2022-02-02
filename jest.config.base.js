@@ -20,6 +20,7 @@ module.exports = {
     '@arvinxu/utils': '<rootDir>/packages/utils/src',
     '@arvinxu/i18n': '<rootDir>/packages/i18n/src',
     '@arvinxu/layout-kit': '<rootDir>/packages/layout-kit/src',
+    '@arvinxu/sortable-list': '<rootDir>/packages/sortable-list/src',
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
     '@arvinxu/page-loading': '<rootDir>/packages/page-loading/src',
     '@arvinxu/mindflow': '<rootDir>/packages/mindflow/src',

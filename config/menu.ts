@@ -11,6 +11,7 @@ export const menus = {
         'page-loading',
         'float-label-input',
         'macos-traffic-light',
+        'sortable-list',
       ],
     },
     {

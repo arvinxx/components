@@ -38,6 +38,8 @@
       "@arvinxu/i18n/*": ["./packages/i18n/src/*"],
       "@arvinxu/layout-kit": ["./packages/layout-kit/src"],
       "@arvinxu/layout-kit/*": ["./packages/layout-kit/src/*"],
+      "@arvinxu/sortable-list": ["./packages/sortable-list/src"],
+      "@arvinxu/sortable-list/*": ["./packages/sortable-list/src/*"],
       "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
       "@arvinxu/page-loading": ["./packages/page-loading/src"],
       "@arvinxu/mindflow": ["./packages/mindflow/src"],
