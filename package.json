@@ -115,7 +115,7 @@
     "optimize-css-assets-webpack-plugin": "^6.0.0",
     "prettier": "^2.1.2",
     "progress-bar-webpack-plugin": "^2.1.0",
-    "semantic-release": "^18.0.1",
+    "semantic-release": "^19.0.2",
     "semantic-release-config-gitmoji": "^1.2.4",
     "serve": "^12.0.0",
     "style-loader": "^2.0.0",
@@ -133,9 +133,6 @@
     "webpack": "^5.26.1",
     "webpack-bundle-analyzer": "^4.1.0",
     "webpack-cli": "^4.5.0"
-  },
-  "resolutions": {
-    "semantic-release": "18.0.1"
   },
   "engines": {
     "node": ">=14"
