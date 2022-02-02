@@ -26,6 +26,7 @@
     "@dnd-kit/core": "^5.0.1",
     "@dnd-kit/sortable": "^6.0.0",
     "@dnd-kit/modifiers": "^5.0.0",
+    "@arvinxu/layout-kit": "1.1.0-beta.1",
     "use-merge-value": "^1.0.2"
   }
 }
