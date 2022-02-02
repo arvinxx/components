@@ -7,18 +7,22 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
         with:
-          node-version: '14'
+          node-version: '16'
+          cache: 'pnpm'
 
-      - uses: c-hive/gha-yarn-cache@v1
-
-      - name: install
-        run: yarn
+      - name: Install deps
+        run: pnpm install
 
       - name: test
-        run: yarn cov
+        run: pnpm run cov
 
       - name: Generate coverage
         run: bash <(curl -s https://codecov.io/bash)

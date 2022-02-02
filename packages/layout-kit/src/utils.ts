@@ -1,6 +1,11 @@
 import type { FlexDirection } from './type';
 
-export const getFlexDirection = (direction: FlexDirection) => {
+export const getFlexDirection = (
+  direction: FlexDirection,
+  isHorizontal: boolean,
+) => {
+  if (isHorizontal) return 'row';
+
   switch (direction) {
     case 'horizontal':
       return 'row';

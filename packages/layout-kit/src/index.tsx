@@ -11,6 +11,7 @@ import type {
 export type CommonSpaceNumber = 2 | 4 | 8 | 12 | 16 | 24;
 
 export interface IFlexbox {
+  horizontal?: boolean;
   direction?: FlexDirection;
   distribution?: ContentDistribution;
   align?: ContentPosition;
@@ -28,7 +29,7 @@ export const Flexbox: FC<FlexboxProps> = styled.div.attrs(() => ({
 }))<IFlexbox>`
   display: flex;
   flex-direction: ${(props) => {
-    return getFlexDirection(props.direction);
+    return getFlexDirection(props.direction, props.horizontal);
   }};
   justify-content: ${(props) => props.distribution};
   align-items: ${(props) => props.align};
@@ -40,8 +41,10 @@ export const Flexbox: FC<FlexboxProps> = styled.div.attrs(() => ({
 
   > *:not(:last-child) {
     margin-right: ${(props) =>
-      getFlexDirection(props.direction) === 'row' && calcValue(props.gap)};
+      getFlexDirection(props.direction, props.horizontal) === 'row' &&
+      calcValue(props.gap)};
     margin-bottom: ${(props) =>
-      getFlexDirection(props.direction) === 'column' && calcValue(props.gap)};
+      getFlexDirection(props.direction, props.horizontal) === 'column' &&
+      calcValue(props.gap)};
   }
 `;

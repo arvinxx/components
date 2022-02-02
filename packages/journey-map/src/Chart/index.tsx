@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import React, { useContext } from 'react';
-import type { AreaConfig } from '@ant-design/charts/es/area';
+import type { AreaConfig } from '@ant-design/charts';
 import { Area } from '@ant-design/charts';
 import { blue } from '@ant-design/colors';
 
