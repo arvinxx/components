@@ -18,6 +18,9 @@ jobs:
           node-version: '16'
           cache: 'pnpm'
 
+      - name: Install deps
+        run: pnpm install
+
       - name: test
         run: pnpm run cov
 
