@@ -23,6 +23,7 @@
     "clean": "rm -rf es lib dist build coverage .umi"
   },
   "dependencies": {
+    "lodash.isequal": "^4.5.0",
     "@dnd-kit/core": "^5.0.1",
     "@dnd-kit/sortable": "^6.0.0",
     "@dnd-kit/modifiers": "^5.0.0",

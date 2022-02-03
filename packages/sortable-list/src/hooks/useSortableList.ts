@@ -1,9 +1,14 @@
 import { useEffect, useReducer } from 'react';
 import { arrayMove } from '@dnd-kit/sortable';
 import produce from 'immer';
+import isEqual from 'lodash.isequal';
 
 import type { SortableItem, SortableItemList } from '../types';
 
+interface SortSyncOutSource {
+  type: 'syncOutSource';
+  state: SortableItem[];
+}
 interface SortAddItem {
   type: 'addItem';
   item: SortableItem;
@@ -19,7 +24,11 @@ interface SortReorderItem {
   startIndex: number;
 }
 
-type ReducerDispatch = SortRemoveItem | SortReorderItem | SortAddItem;
+type ReducerDispatch =
+  | SortRemoveItem
+  | SortReorderItem
+  | SortAddItem
+  | SortSyncOutSource;
 
 export const useSortableList = (
   options: {
@@ -36,6 +45,10 @@ export const useSortableList = (
 
     switch (payload.type) {
       // 移除对象
+      case 'syncOutSource':
+        if (isEqual(payload.state, innerState)) return innerState;
+
+        return payload.state;
       case 'removeItem':
         return state.filter((item) => item.id !== payload.id);
       // 重新排序
@@ -66,6 +79,16 @@ export const useSortableList = (
 
     options.onChange(items);
   }, [items]);
+
+  // 同步外部数据
+  useEffect(() => {
+    if (!options.value) return;
+
+    dispatchSortable({
+      type: 'syncOutSource',
+      state: options.value,
+    });
+  }, [options.value]);
 
   return {
     items,

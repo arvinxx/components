@@ -107,7 +107,7 @@ describe('useSortableList', () => {
       expect(result.current.value).toEqual([{ id: '1' }]);
     });
 
-    it.skip('外部控制 value', () => {
+    it('外部控制 value', () => {
       const controlledValue: SortableItemList = [
         { id: '1' },
         { id: '2' },
