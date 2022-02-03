@@ -30,6 +30,9 @@ jobs:
       - name: test
         run: pnpm run cov
 
+      - name: Build lib
+        run: pnpm run build:lib
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

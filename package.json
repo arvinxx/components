@@ -15,8 +15,9 @@
   "scripts": {
     "start": "pnpm run docs:dev",
     "prebuild": "pnpm run clean",
-    "build": "father-build && pnpm run build:webpack",
-    "build:webpack": "lerna run webpack",
+    "build": "pnpm run build:lib && pnpm run build:umd",
+    "build:lib": "father-build",
+    "build:umd": "lerna run webpack",
     "c": "ts-node scripts/create-package",
     "---------": "",
     "release": "multi-semantic-release",
