@@ -24,6 +24,10 @@ export interface IFlexbox {
   width?: number | string;
   height?: number | string;
   padding?: string | number | CommonSpaceNumber;
+  /**
+   * 是否隐藏内容
+   */
+  hidden?: boolean;
 }
 
 export type FlexboxProps = IFlexbox &
@@ -32,7 +36,9 @@ export type FlexboxProps = IFlexbox &
 export const Flexbox: FC<FlexboxProps> = styled.div.attrs(() => ({
   className: 'layoutkit-flexbox',
 }))<IFlexbox>`
-  display: flex;
+  // 是否显示
+  display: ${(props) => (props.hidden ? 'none' : 'flex')};
+
   flex-direction: ${(props) => {
     return getFlexDirection(props.direction, props.horizontal);
   }};
