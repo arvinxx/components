@@ -29,5 +29,7 @@ module.exports = {
     'mindflow',
     'tag-selector',
     'user-panel',
+    'layout-kit',
+    'sortable-list',
   ],
 };
