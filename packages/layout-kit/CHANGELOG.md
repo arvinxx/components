@@ -1,5 +1,12 @@
 # Changelog
 
+# @arvinxu/layout-kit [1.2.0](https://github.com/arvinxx/components/compare/@arvinxu/layout-kit@1.1.0...@arvinxu/layout-kit@1.2.0) (2022-02-03)
+
+
+### ✨ 新特性
+
+* 针对横向的 flexbox，默认将宽度撑满 ([e41c6a2](https://github.com/arvinxx/components/commit/e41c6a2))
+
 # @arvinxu/layout-kit [1.1.0](https://github.com/arvinxx/components/compare/@arvinxu/layout-kit@1.0.0...@arvinxu/layout-kit@1.1.0) (2022-02-02)
 
 
