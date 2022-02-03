@@ -1,5 +1,25 @@
 # Changelog
 
+## @arvinxu/sortable-list [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.0...@arvinxu/sortable-list@1.0.1) (2022-02-03)
+
+
+### 🐛 修复
+
+* 修正受控模式外部无法更改值的问题 ([14162ea](https://github.com/arvinxx/components/commit/14162ea))
+
+
+### 👷 构建系统
+
+* 补全缺失的 classnames 依赖 ([6e31544](https://github.com/arvinxx/components/commit/6e31544))
+
+
+
+
+
+### Dependencies
+
+* **@arvinxu/layout-kit:** upgraded to 1.2.0
+
 # @arvinxu/sortable-list 1.0.0 (2022-02-02)
 
 
