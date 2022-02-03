@@ -22,7 +22,7 @@
     "test": "jest",
     "test:update": "jest -u",
     "cov": "jest --coverage",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "pnpm run build",
     "clean": "rm -rf es lib dist build coverage .umi"
   },
   "dependencies": {

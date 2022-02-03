@@ -29,7 +29,7 @@
     "webpack": "webpack",
     "test": "jest",
     "test:update": "jest -u",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "pnpm run build",
     "cov": "jest --coverage",
     "clean": "rm -rf es lib dist build coverage .umi"
   }

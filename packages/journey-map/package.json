@@ -21,7 +21,7 @@
     "schema": "typescript-json-schema src/types/yml.ts YMLJourneyMapRawData -o ./schema/journey-map.schema.json --required --ignoreErrors",
     "test": "jest",
     "test:update": "jest -u",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "pnpm run build",
     "cov": "jest --coverage",
     "clean": "rm -rf es lib dist build coverage .umi",
     "lint-staged": "lint-staged"
