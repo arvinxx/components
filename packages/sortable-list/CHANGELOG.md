@@ -1,5 +1,11 @@
 # Changelog
 
+## @arvinxu/sortable-list [1.0.3](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.2...@arvinxu/sortable-list@1.0.3) (2022-02-03)
+
+### 👷 构建系统
+
+- 发布新版 ([4c208b3](https://github.com/arvinxx/components/commit/4c208b3))
+
 ## @arvinxu/sortable-list [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.1...@arvinxu/sortable-list@1.0.2) (2022-02-03)
 
 ### 🎫 杂项
