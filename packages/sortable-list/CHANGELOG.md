@@ -1,5 +1,11 @@
 # Changelog
 
+## @arvinxu/sortable-list [1.0.4](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.3...@arvinxu/sortable-list@1.0.4) (2022-02-03)
+
+### Dependencies
+
+- **@arvinxu/layout-kit:** upgraded to 1.2.1
+
 ## @arvinxu/sortable-list [1.0.3](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.2...@arvinxu/sortable-list@1.0.3) (2022-02-03)
 
 ### 👷 构建系统
