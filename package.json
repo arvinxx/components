@@ -21,7 +21,7 @@
     "c": "ts-node scripts/create-package",
     "---------": "",
     "release": "multi-semantic-release",
-    "release:local": "multi-semantic-release --no-ci",
+    "release:local": "pnpm run build:lib && multi-semantic-release --no-ci",
     "---------     ": "",
     "api:dev": "concurrently \"pnpm run api:watch\" \"pnpm run api:server\"",
     "api:build": "typedoc",
