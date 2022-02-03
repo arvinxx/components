@@ -1,5 +1,20 @@
 # Changelog
 
+## @arvinxu/sortable-list [1.0.5](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.4...@arvinxu/sortable-list@1.0.5) (2022-02-03)
+
+
+### ✅ 测试
+
+* 修正测试 ([6fae205](https://github.com/arvinxx/components/commit/6fae205))
+
+
+
+
+
+### Dependencies
+
+* **@arvinxu/layout-kit:** upgraded to 1.3.0
+
 ## @arvinxu/sortable-list [1.0.4](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.3...@arvinxu/sortable-list@1.0.4) (2022-02-03)
 
 ### Dependencies
