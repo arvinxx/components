@@ -1,12 +1,12 @@
 ---
-title: LayoutKit 布局工具库
+title: Flexbox 一维布局
 group:
   path: /
 nav:
   path: /components
 ---
 
-# LayoutKit 布局工具库
+# Flexbox 弹性盒组件
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
@@ -17,4 +17,4 @@ nav:
 [download-image]: https://img.shields.io/npm/dm/@arvinxu/layout-kit.svg
 [download-url]: https://npmjs.org/package/@arvinxu/layout-kit
 
-<API src='./index.tsx'></API>
+<API src='./index.tsx' hideTitle></API>

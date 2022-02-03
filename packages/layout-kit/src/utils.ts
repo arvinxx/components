@@ -19,5 +19,11 @@ export const getFlexDirection = (
   }
 };
 
-export const calcValue = (value: string | number) =>
+export const isHorizontal = (direction: FlexDirection, isHorizontal: boolean) =>
+  getFlexDirection(direction, isHorizontal) === 'row';
+
+export const isVertical = (direction: FlexDirection, isHorizontal: boolean) =>
+  getFlexDirection(direction, isHorizontal) === 'column';
+
+export const getCssValue = (value: string | number) =>
   typeof value === 'number' ? `${value}px` : value;
