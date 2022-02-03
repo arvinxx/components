@@ -3,7 +3,7 @@
 exports[`SortableList 默认状态 1`] = `
 <div>
   <div
-    class="sc-bdvvtL bKCXKR avx-sortable-list layoutkit-flexbox"
+    class="sc-bdvvtL jXutGz avx-sortable-list layoutkit-flexbox"
   />
 </div>
 `;
