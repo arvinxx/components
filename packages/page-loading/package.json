@@ -21,8 +21,8 @@
     "@arvinxu/preloader": "1.0.2"
   },
   "devDependencies": {
-    "@types/nprogress": "^0.2.0",
-    "@types/insert-css": "^2.0.0"
+    "@types/nprogress": "0.2.0",
+    "@types/insert-css": "2.0.1"
   },
   "scripts": {
     "build": "father-build && yarn webpack",
