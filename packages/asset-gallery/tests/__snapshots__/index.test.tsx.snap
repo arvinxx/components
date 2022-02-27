@@ -89,19 +89,19 @@ exports[`AssetGallery 加载数据 1`] = `
       style="column-count: 4;"
     >
       <div
-        class="avx-asset-gallery-item"
+        class="avx-asset-card-wrapper"
       >
         <div
-          class="ant-card avx-asset-gallery-card"
+          class="ant-card avx-asset-card-item"
         >
           <div
             class="ant-card-cover"
           >
             <div
-              class="avx-asset-gallery-image-ctn"
+              class="avx-asset-card-image-ctn"
             >
               <div
-                class="avx-asset-gallery-image-type"
+                class="avx-asset-card-image-type"
               >
                 <img
                   alt="sketch"
@@ -112,7 +112,7 @@ exports[`AssetGallery 加载数据 1`] = `
               </div>
               <img
                 alt="渐变色 Logo"
-                class="avx-asset-gallery-image"
+                class="avx-asset-card-image"
                 src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
                 style="padding: 12px;"
               />
@@ -148,7 +148,7 @@ exports[`AssetGallery 加载数据 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link avx-asset-card-link"
                   type="button"
                 >
                   <span>
@@ -162,7 +162,7 @@ exports[`AssetGallery 加载数据 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link avx-asset-card-link"
                   type="button"
                 >
                   <span>
@@ -176,7 +176,7 @@ exports[`AssetGallery 加载数据 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-card-link"
                   type="button"
                 >
                   <span
@@ -205,20 +205,20 @@ exports[`AssetGallery 加载数据 1`] = `
         </div>
       </div>
       <div
-        class="avx-asset-gallery-item"
+        class="avx-asset-card-wrapper"
       >
         <div
-          class="ant-card avx-asset-gallery-card"
+          class="ant-card avx-asset-card-item"
         >
           <div
             class="ant-card-cover"
           >
             <div
-              class="avx-asset-gallery-image-ctn"
+              class="avx-asset-card-image-ctn"
               style="background: black;"
             >
               <div
-                class="avx-asset-gallery-image-type"
+                class="avx-asset-card-image-type"
               >
                 <img
                   alt="sketch"
@@ -229,7 +229,7 @@ exports[`AssetGallery 加载数据 1`] = `
               </div>
               <img
                 alt="白色 Logo"
-                class="avx-asset-gallery-image"
+                class="avx-asset-card-image"
                 src="https://gw.alipayobjects.com/zos/antfincdn/5qY87lPw9U/white-logo.svg"
                 style="padding: 12px;"
               />
@@ -265,7 +265,7 @@ exports[`AssetGallery 加载数据 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link avx-asset-card-link"
                   type="button"
                 >
                   <span>
@@ -279,7 +279,7 @@ exports[`AssetGallery 加载数据 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link avx-asset-card-link"
                   type="button"
                 >
                   <span>
@@ -293,7 +293,7 @@ exports[`AssetGallery 加载数据 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-card-link"
                   type="button"
                 >
                   <span
@@ -419,19 +419,19 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
       style="column-count: 4;"
     >
       <div
-        class="avx-asset-gallery-item"
+        class="avx-asset-card-wrapper"
       >
         <div
-          class="ant-card avx-asset-gallery-card"
+          class="ant-card avx-asset-card-item"
         >
           <div
             class="ant-card-cover"
           >
             <div
-              class="avx-asset-gallery-image-ctn"
+              class="avx-asset-card-image-ctn"
             >
               <div
-                class="avx-asset-gallery-image-type"
+                class="avx-asset-card-image-type"
               >
                 <img
                   alt="sketch"
@@ -442,7 +442,7 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
               </div>
               <img
                 alt="渐变色 Logo"
-                class="avx-asset-gallery-image"
+                class="avx-asset-card-image"
                 src="https://gw.alipayobjects.com/zos/antfincdn/OuMB9liYZV/tupian%2525201.png"
                 style="padding: 12px;"
               />
@@ -478,7 +478,7 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link avx-asset-card-link"
                   type="button"
                 >
                   <span>
@@ -492,7 +492,7 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-card-link"
                   type="button"
                 >
                   <span
@@ -521,19 +521,19 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
         </div>
       </div>
       <div
-        class="avx-asset-gallery-item"
+        class="avx-asset-card-wrapper"
       >
         <div
-          class="ant-card avx-asset-gallery-card"
+          class="ant-card avx-asset-card-item"
         >
           <div
             class="ant-card-cover"
           >
             <div
-              class="avx-asset-gallery-image-ctn"
+              class="avx-asset-card-image-ctn"
             >
               <div
-                class="avx-asset-gallery-image-type"
+                class="avx-asset-card-image-type"
               >
                 <img
                   alt="sketch"
@@ -544,7 +544,7 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
               </div>
               <img
                 alt="黑色 Logo"
-                class="avx-asset-gallery-image"
+                class="avx-asset-card-image"
                 src="https://gw.alipayobjects.com/zos/antfincdn/5vmPNr6Qqz/tupian%2525202.png"
                 style="padding: 12px;"
               />
@@ -580,7 +580,7 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link avx-asset-card-link"
                   type="button"
                 >
                   <span>
@@ -594,7 +594,7 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
             >
               <span>
                 <button
-                  class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
+                  class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-card-link"
                   type="button"
                 >
                   <span

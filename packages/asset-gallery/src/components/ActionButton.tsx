@@ -1,5 +1,7 @@
-import React, { FC } from 'react';
-import { Button, ButtonProps, Tooltip } from 'antd';
+import type { FC } from 'react';
+import React from 'react';
+import type { ButtonProps } from 'antd';
+import { Button, Tooltip } from 'antd';
 
 export interface ActionButtonProps {
   onClick: ButtonProps['onClick'];
@@ -18,7 +20,7 @@ const ActionButton: FC<ActionButtonProps> = ({
     <Tooltip title={tooltip}>
       <Button
         type={'link'}
-        className="avx-asset-gallery-link"
+        className="avx-asset-card-link"
         onClick={onClick}
         icon={icon ? <img src={icon} alt={content} /> : undefined}
       >

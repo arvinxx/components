@@ -1,31 +1,14 @@
-.avx-asset-gallery {
-  &-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  &-masonry {
-    column-count: 4;
-    column-gap: 0;
-
-    @media (max-width: 400px) {
-      column-count: 2;
-    }
-
-    @media (max-width: 1200px) {
-      column-count: 3;
-    }
-  }
-
-  &-card {
-    overflow: hidden;
-    border-radius: 4px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
-  }
-
-  &-item {
+.avx-asset-card {
+  &-wrapper {
     box-sizing: border-box;
     padding: 8px;
     break-inside: avoid;
+  }
+
+  &-item {
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
   }
 
   &-image {
@@ -37,9 +20,15 @@
       position: relative;
     }
 
+    &-ctn:hover &-type {
+      opacity: 1;
+    }
+
     &-type {
       position: absolute;
       top: 8px;
+      opacity: 0;
+      z-index: 100;
       left: 8px;
       display: flex;
       align-items: center;
@@ -55,9 +44,5 @@
   &-link {
     padding: 4px 0;
     color: rgba(0, 0, 0, 0.45);
-  }
-
-  .ant-card-actions {
-    background: #fafafa;
   }
 }

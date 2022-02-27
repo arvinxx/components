@@ -3,13 +3,12 @@ import React from 'react';
 import useMergeValue from 'use-merge-value';
 
 import Layout from './components/Layout';
-
 import AssetCard from './components/AssetCard';
 
 import { YMLToJSON } from './utils/yml';
 import type { AssetGalleryProps } from './types';
 
-import './style.less';
+import './AssetGallery.less';
 
 const AssetGallery: FC<AssetGalleryProps> = ({
   data,

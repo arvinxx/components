@@ -3,19 +3,19 @@
 exports[`AssetCard Sketch 测试 1`] = `
 <div>
   <div
-    class="avx-asset-gallery-item"
+    class="avx-asset-card-wrapper"
   >
     <div
-      class="ant-card avx-asset-gallery-card"
+      class="ant-card avx-asset-card-item"
     >
       <div
         class="ant-card-cover"
       >
         <div
-          class="avx-asset-gallery-image-ctn"
+          class="avx-asset-card-image-ctn"
         >
           <div
-            class="avx-asset-gallery-image-type"
+            class="avx-asset-card-image-type"
           >
             <img
               alt="sketch"
@@ -26,7 +26,7 @@ exports[`AssetCard Sketch 测试 1`] = `
           </div>
           <img
             alt="Sketch 测试"
-            class="avx-asset-gallery-image"
+            class="avx-asset-card-image"
             src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
             style="padding: 12px;"
           />
@@ -53,15 +53,29 @@ exports[`AssetCard Sketch 测试 1`] = `
         class="ant-card-actions"
       >
         <li
-          style="width: 100%;"
+          style="width: 50%;"
         >
           <span>
             <button
-              class="ant-btn ant-btn-link avx-asset-gallery-link"
+              class="ant-btn ant-btn-link avx-asset-card-link"
               type="button"
             >
               <span>
                 Sketch
+              </span>
+            </button>
+          </span>
+        </li>
+        <li
+          style="width: 50%;"
+        >
+          <span>
+            <button
+              class="ant-btn ant-btn-link avx-asset-card-link"
+              type="button"
+            >
+              <span>
+                Png
               </span>
             </button>
           </span>
@@ -75,19 +89,19 @@ exports[`AssetCard Sketch 测试 1`] = `
 exports[`AssetCard 图片 Png 1`] = `
 <div>
   <div
-    class="avx-asset-gallery-item"
+    class="avx-asset-card-wrapper"
   >
     <div
-      class="ant-card avx-asset-gallery-card"
+      class="ant-card avx-asset-card-item"
     >
       <div
         class="ant-card-cover"
       >
         <div
-          class="avx-asset-gallery-image-ctn"
+          class="avx-asset-card-image-ctn"
         >
           <div
-            class="avx-asset-gallery-image-type"
+            class="avx-asset-card-image-type"
           >
             <img
               alt="sketch"
@@ -98,7 +112,7 @@ exports[`AssetCard 图片 Png 1`] = `
           </div>
           <img
             alt="测试"
-            class="avx-asset-gallery-image"
+            class="avx-asset-card-image"
             src="https://gw.alipayobjects.com/zos/antfincdn/G5sZluNGGA/25c4fe16-7d52-4b32-904e-3eccb4a1ff47.png"
             style="padding: 12px;"
           />
@@ -129,7 +143,7 @@ exports[`AssetCard 图片 Png 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link avx-asset-gallery-link"
+              class="ant-btn ant-btn-link avx-asset-card-link"
               type="button"
             >
               <span>
@@ -143,7 +157,7 @@ exports[`AssetCard 图片 Png 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
+              class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-card-link"
               type="button"
             >
               <span
@@ -177,19 +191,19 @@ exports[`AssetCard 图片 Png 1`] = `
 exports[`AssetCard 图片 Svg 1`] = `
 <div>
   <div
-    class="avx-asset-gallery-item"
+    class="avx-asset-card-wrapper"
   >
     <div
-      class="ant-card avx-asset-gallery-card"
+      class="ant-card avx-asset-card-item"
     >
       <div
         class="ant-card-cover"
       >
         <div
-          class="avx-asset-gallery-image-ctn"
+          class="avx-asset-card-image-ctn"
         >
           <div
-            class="avx-asset-gallery-image-type"
+            class="avx-asset-card-image-type"
           >
             <img
               alt="sketch"
@@ -200,7 +214,7 @@ exports[`AssetCard 图片 Svg 1`] = `
           </div>
           <img
             alt="Svg 测试"
-            class="avx-asset-gallery-image"
+            class="avx-asset-card-image"
             src="https://gw.alipayobjects.com/zos/antfincdn/LFmaI3%26OJh/logo.svg"
             style="padding: 12px;"
           />
@@ -231,7 +245,7 @@ exports[`AssetCard 图片 Svg 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link avx-asset-gallery-link"
+              class="ant-btn ant-btn-link avx-asset-card-link"
               type="button"
             >
               <span>
@@ -245,7 +259,7 @@ exports[`AssetCard 图片 Svg 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link avx-asset-gallery-link"
+              class="ant-btn ant-btn-link avx-asset-card-link"
               type="button"
             >
               <span>
@@ -259,7 +273,7 @@ exports[`AssetCard 图片 Svg 1`] = `
         >
           <span>
             <button
-              class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-gallery-link"
+              class="ant-btn ant-btn-link ant-dropdown-trigger avx-asset-card-link"
               type="button"
             >
               <span

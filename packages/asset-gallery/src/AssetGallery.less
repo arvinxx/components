@@ -1,0 +1,18 @@
+.avx-asset-gallery {
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &-masonry {
+    column-count: 4;
+    column-gap: 0;
+
+    @media (max-width: 400px) {
+      column-count: 2;
+    }
+
+    @media (max-width: 1200px) {
+      column-count: 3;
+    }
+  }
+}

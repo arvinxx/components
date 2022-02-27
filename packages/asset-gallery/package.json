@@ -14,7 +14,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "father-build && yarn webpack",
+    "build": "father-build && pnpm run webpack",
     "webpack": "webpack",
     "test": "jest",
     "test:update": "jest -u",

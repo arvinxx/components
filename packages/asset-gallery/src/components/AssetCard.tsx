@@ -11,7 +11,7 @@ import {
   copyPng,
 } from '../utils';
 
-import '../style.less';
+import './AssetCard.less';
 
 import ActionButton from './ActionButton';
 import type { Asset } from '../types';
@@ -44,6 +44,13 @@ const AssetCard: FC<Asset> = ({
               () => copySketch(sketch),
             content: 'Sketch',
             tooltip: '复制为 Sketch 组件',
+          },
+          {
+            onClick:
+              /* istanbul ignore next */
+              () => copyPng(url),
+            tooltip: '复制为 Png',
+            content: 'Png',
           },
         ];
 
@@ -98,21 +105,21 @@ const AssetCard: FC<Asset> = ({
   const noBody = !(title || description);
 
   return (
-    <div className="avx-asset-gallery-item">
+    <div className="avx-asset-card-wrapper">
       <Card
-        className="avx-asset-gallery-card"
+        className="avx-asset-card-item"
         cover={
           <div
-            className="avx-asset-gallery-image-ctn"
+            className="avx-asset-card-image-ctn"
             style={{
               background: dark ? backgroundColor : undefined,
             }}
           >
-            <div className="avx-asset-gallery-image-type">
+            <div className="avx-asset-card-image-type">
               <img src={typeImage()} alt="sketch" width={18} height={18} />
             </div>
             <img
-              className="avx-asset-gallery-image"
+              className="avx-asset-card-image"
               style={{ padding }}
               src={url}
               alt={title}
@@ -158,7 +165,7 @@ const AssetCard: FC<Asset> = ({
                 </Menu>
               }
             >
-              <Button type={'link'} className="avx-asset-gallery-link">
+              <Button type={'link'} className="avx-asset-card-link">
                 <EllipsisOutlined key="ellipsis" />
               </Button>
             </Dropdown>
