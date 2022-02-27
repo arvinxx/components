@@ -1,5 +1,17 @@
 # Changelog
 
+## @arvinxu/asset-gallery [1.3.4](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.3.3...@arvinxu/asset-gallery@1.3.4) (2022-02-27)
+
+
+### 🎫 杂项
+
+* 从 yarn 迁移到 pnpm ([38bb09b](https://github.com/arvinxx/components/commit/38bb09b))
+
+
+### 💄 样式
+
+* 优化组件样式 ([0005421](https://github.com/arvinxx/components/commit/0005421))
+
 ## @arvinxu/asset-gallery [1.3.3](https://github.com/arvinxx/components/compare/@arvinxu/asset-gallery@1.3.2...@arvinxu/asset-gallery@1.3.3) (2022-02-02)
 
 
