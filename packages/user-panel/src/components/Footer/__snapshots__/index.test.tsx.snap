@@ -16,7 +16,7 @@ exports[`Footer 组件 微信登陆页面 1`] = `
       </span>
     </div>
     <button
-      class="ant-btn ant-btn-lg avx-user-panel-wechat"
+      class="ant-btn ant-btn-default ant-btn-lg avx-user-panel-wechat"
       data-testid="wechat-btn"
       type="button"
     >

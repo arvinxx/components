@@ -3,7 +3,7 @@
 exports[`WechatLogin 组件 默认状态 1`] = `
 <div>
   <button
-    class="ant-btn ant-btn-lg avx-user-panel-wechat"
+    class="ant-btn ant-btn-default ant-btn-lg avx-user-panel-wechat"
     data-testid="wechat-btn"
     type="button"
   >
