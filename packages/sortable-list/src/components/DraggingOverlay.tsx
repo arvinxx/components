@@ -3,7 +3,7 @@ import { DragOverlay } from '@dnd-kit/core';
 import { Item } from './BaseItem';
 import type { FC } from 'react';
 
-import type { DraggingOverlayProps } from './types';
+import type { DraggingOverlayProps } from '../types';
 
 const DraggingOverlay: FC<DraggingOverlayProps> = ({
   dragging,

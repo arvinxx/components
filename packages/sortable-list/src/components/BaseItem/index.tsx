@@ -2,9 +2,10 @@ import type { CSSProperties } from 'react';
 import React, { forwardRef, memo, useEffect } from 'react';
 import classNames from 'classnames';
 
-import { Handle, Remove } from '../components';
+import { Handle } from '../Handle';
+import { Remove } from '../Remove';
 
-import type { BaseItemProps } from '../types';
+import type { BaseItemProps } from '../../types';
 
 import './index.less';
 

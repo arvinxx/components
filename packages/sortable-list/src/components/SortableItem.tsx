@@ -4,7 +4,7 @@ import React from 'react';
 import { useSortable } from '@dnd-kit/sortable';
 
 import { Item } from './BaseItem';
-import type { SortableItemProps } from './types';
+import type { SortableItemProps } from '../types';
 
 const SortableItem: FC<SortableItemProps> = ({
   //数据
