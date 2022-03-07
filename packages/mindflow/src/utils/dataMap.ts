@@ -1,13 +1,6 @@
 import { unionBy } from 'lodash';
 
-import type {
-  BaseEdge,
-  BaseNode,
-  MindflowData,
-  NodeData,
-  PreMindflowData,
-} from '../types';
-import { defaultNode } from '../definition/node';
+import type { BaseNode, MindflowData, NodeData, BaseEdge } from '../types';
 
 /**
  * 获取所有需要被折叠的边
@@ -16,9 +9,9 @@ import { defaultNode } from '../definition/node';
  * @param result
  */
 const filterEdgeById = (
-  baseEdges: BaseEdge<any>[],
+  baseEdges: BaseEdge[],
   id: string,
-  result: BaseEdge<any>[],
+  result: BaseEdge[],
 ) => {
   const fromEdges = baseEdges.filter((e) => e.source === id);
 
@@ -39,7 +32,7 @@ const filterEdgeById = (
  * @param collapseList
  */
 export const getUncollapsedNode = (
-  data: PreMindflowData,
+  data,
   collapseList: string[],
 ): BaseNode<NodeData>[] => {
   const targetList = collapseList
@@ -62,10 +55,7 @@ export const getUncollapsedEdge = <T = any>(
     .filter((e) => !collapseList.includes(e.source));
 };
 
-export const getUncollaspedData = (
-  data: PreMindflowData,
-  collapseList: string[],
-): PreMindflowData => {
+export const getUncollaspedData = (data, collapseList: string[]) => {
   return {
     edges: getUncollapsedEdge(data.edges, collapseList),
     nodes: getUncollapsedNode(data, collapseList),
@@ -77,26 +67,19 @@ export const getUncollaspedData = (
  * @param data
  * @param collapseList
  */
-export const preprocessData = (
-  data: PreMindflowData,
-  collapseList: string[],
-): MindflowData => {
+export const preprocessData = (data, collapseList: string[]): MindflowData => {
   const displayData = getUncollaspedData(data, collapseList);
 
   return {
     edges: displayData.edges.map((e) => {
-      return {
-        ...e,
-        source: { cell: e.source, port: 'out' },
-        target: { cell: e.target, port: 'in' },
-        zIndex: 0,
-      };
+      return e;
     }),
     nodes: displayData.nodes.map((node) => {
       const { id } = node;
 
       return {
-        ...defaultNode(node),
+        ...node,
+        type: 'basic',
         data: {
           ...node.data,
           leaf: data.edges.findIndex((item) => item.source === id) < 0,

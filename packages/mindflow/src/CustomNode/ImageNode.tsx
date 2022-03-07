@@ -3,12 +3,12 @@ import React from 'react';
 
 import './ImageNode.less';
 
-interface ImageNodeProps {
+export interface ImageNodeProps {
   src?: string;
 }
 
 const ImageNode: FC<ImageNodeProps> = ({ src }) => {
-  return <img src={src} className="mind-node-image" />;
+  return <img src={src} className="avx-mindflow-node-image" />;
 };
 
 export default ImageNode;

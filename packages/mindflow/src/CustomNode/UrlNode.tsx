@@ -1,9 +1,7 @@
 import type { FC } from 'react';
 import React from 'react';
 
-import './style.less';
-
-interface LinkProps {
+export interface LinkProps {
   link?: string;
 }
 

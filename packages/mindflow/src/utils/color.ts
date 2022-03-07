@@ -1,6 +1,6 @@
-import type { EdgeReference } from '../types';
-import { mindFlowColors } from '../themes/nodeColor';
 import chorma from 'chroma-js';
+import type { ReferenceType } from '../types';
+import { mindFlowColors } from '../themes/nodeColor';
 
 /**
  * 将 rgba 转为 hex
@@ -51,7 +51,7 @@ export const mapColorToHex = (color: string) => {
  * 参考类型隐射到颜色
  * @param type
  */
-export const mapReferenceTypeToColor = (type: EdgeReference['type']) => {
+export const mapReferenceTypeToColor = (type: ReferenceType) => {
   switch (type) {
     case 'ground':
       return 'green';

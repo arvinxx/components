@@ -2,22 +2,15 @@ import type { FC } from 'react';
 import { Popover, Tooltip } from 'antd';
 import { useRef, useState } from 'react';
 
-import type { Edge } from '@antv/x6/lib/model/edge';
-
 import Reference from './Reference';
 
-import type { MindflowEdge } from '../../types';
+import type { BaseEdge } from '../../types';
 
 import './style.less';
 
-interface EvidenceProps {
-  edge: Edge;
-  label: Edge.Label;
-}
+interface EvidenceEdgeProps extends BaseEdge {}
 
-const EvidenceEdge: FC<EvidenceProps> = ({ edge }) => {
-  const data = edge.getData<MindflowEdge>();
-
+const EvidenceEdge: FC<EvidenceEdgeProps> = ({ data }) => {
   const ref = useRef();
   const [visible, setVisible] = useState(false);
 

@@ -1,34 +1,33 @@
 import type { FC } from 'react';
 import React, { memo, useRef } from 'react';
-import {
-  CaretUpOutlined,
-  CaretDownOutlined,
-  EditOutlined,
-  AimOutlined,
-} from '@ant-design/icons';
+import { Handle, Position } from 'react-flow-renderer';
+
 import { Divider, Tooltip } from 'antd';
-import type { ReactShape } from '@antv/x6-react-shape';
+import {
+  AimOutlined,
+  CaretDownOutlined,
+  CaretUpOutlined,
+  EditOutlined,
+} from '@ant-design/icons';
 import cls from 'classnames';
 import { useOverflow } from 'use-overflow';
 
-import { getColorByType, rgba2hex } from '../../utils';
-import type { NodeData } from '../../types';
+import { getColorByType, rgba2hex } from '../utils';
+import type { BaseNode, NodeMindData } from '../types';
 import { useFolded } from './useFolded';
 
 import UrlNode from './UrlNode';
 import ImageNode from './ImageNode';
 
-import './style.less';
+import './BasicNode.less';
 
-interface BaseNodeProps {
-  node?: ReactShape;
+export interface BasicNodeProps extends BaseNode<NodeMindData> {
+  isConnectable?: boolean;
 }
 
-const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
+const BasicNode: FC<BasicNodeProps> = memo(({ data, id }) => {
   const ref = useRef();
-  const { unfolded, toggleNodeUnfold, cantFold } = useFolded(node);
-
-  const data = node.getData<NodeData>();
+  const { isUnFolded, toggleNodeUnfold, cantFold } = useFolded(id, data);
 
   const { type, title, description, references = [], infoType } = data;
 
@@ -65,56 +64,70 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
   return (
     <div
       ref={ref}
-      className={cls('mind-node-container', unfolded ? 'mind-node-shadow' : '')}
+      className={cls(
+        'avx-mindflow-node-container',
+        isUnFolded ? 'avx-mindflow-node-shadow' : '',
+      )}
       style={{
-        background: backgroundColor,
-        borderColor: baseColor.alpha(0.1).hex(),
+        borderColor: baseColor.hex(),
         borderLeftColor: baseColor.hex(),
       }}
     >
-      <div className="mind-node-header">
-        {cantFold ? null : (
+      <Handle type={'source'} position={Position.Right} id={id} />
+      <Handle type={'target'} position={Position.Left} id={id} />
+      <div
+        className={'avx-mindflow-node-flag'}
+        style={{ background: baseColor.hex() }}
+      />
+      <div className="avx-mindflow-node-header">
+        {cantFold ? (
           <span
-            className="mind-node-arrow"
+            className="avx-mindflow-node-arrow"
             onClick={() => {
-              toggleNodeUnfold(node.id);
+              toggleNodeUnfold(id);
             }}
           >
-            {unfolded ? <CaretUpOutlined /> : <CaretDownOutlined />}
+            {isUnFolded ? <CaretUpOutlined /> : <CaretDownOutlined />}
           </span>
-        )}
+        ) : null}
 
         <div
           ref={textRef}
           className={cls(
-            'mind-node-title',
-            unfolded ? 'mind-node-title-expand' : '',
+            'avx-mindflow-node-title',
+            isUnFolded ? 'avx-mindflow-node-title-expand' : '',
           )}
         >
           <InfoNode />
         </div>
       </div>
-      {unfolded ? (
-        <div className="mind-node-unfolded">
-          <div className="mind-node-desc">{description}</div>
+      {isUnFolded ? (
+        <div className="avx-mindflow-node-unfolded">
+          <div className="avx-mindflow-node-desc">{description}</div>
 
           {references.length === 0 ? null : (
-            <div className="mind-node-references">
+            <div className="avx-mindflow-node-references">
               <Divider dashed style={{ margin: '4px 0 8px' }} />
               <span>📚 相关资料</span>
               {references.map((ref) => {
                 return !ref.url ? (
-                  <span key={ref.id} className="mind-node-references-item">
-                    <div className="mind-node-references-dot" /> {ref.title}
+                  <span
+                    key={ref.title}
+                    className="avx-mindflow-node-references-item"
+                  >
+                    <div className="avx-mindflow-node-references-dot" />{' '}
+                    {ref.title}
                   </span>
                 ) : (
                   <a
-                    key={ref.id}
+                    key={ref.url}
                     href={ref.url}
                     target={'_blank'}
-                    className="mind-node-references-item"
+                    className="avx-mindflow-node-references-item"
+                    rel="noreferrer"
                   >
-                    <div className="mind-node-references-dot" /> {ref.title}
+                    <div className="avx-mindflow-node-references-dot" />{' '}
+                    {ref.title}
                   </a>
                 );
               })}
@@ -123,7 +136,7 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
         </div>
       ) : null}
       <div
-        className="mind-node-edit"
+        className="avx-mindflow-node-edit"
         style={{ color: baseColor.hex(), background: backgroundColor }}
       >
         <Tooltip title={'下钻'}>
@@ -137,4 +150,4 @@ const MindNode: FC<BaseNodeProps> = memo(({ node }) => {
   );
 });
 
-export default MindNode;
+export default BasicNode;

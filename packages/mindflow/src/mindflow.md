@@ -1,13 +1,12 @@
 ---
-title: Mindflow 思流
-order: 1
+title: Mindflow 心流
 group:
   path: /
 nav:
   path: /components
 ---
 
-# Mindflow 思流
+# Mindflow 心流
 
 [![NPM version][version-image]][version-url] [![NPM downloads][download-image]][download-url]
 
@@ -43,4 +42,4 @@ Mindflow 是基于 [溯因推理][reason] 与 [图尔敏推论模型][toulmin] �
 
 <code src='../demos/Thinking.tsx' />
 
-<API src='./index.tsx'></API>
+<API src='./App.tsx'></API>

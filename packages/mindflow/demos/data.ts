@@ -1,4 +1,4 @@
-import { MindflowData } from '@arvinxu/mindflow';
+import type { MindflowData } from '@arvinxu/mindflow';
 
 export const demo: MindflowData = {
   nodes: [
@@ -10,12 +10,10 @@ export const demo: MindflowData = {
         description: '有关问题的详细描述',
         references: [
           {
-            id: 'a 场景',
             title: '在 a 场景下会遇到这个问题',
             url: 'https://www.yuque.com/arvinxx/tu0agc/f4991c0b743f068e3c5595adbe530a5e',
           },
           {
-            id: 'b 场景',
             title: '在 b 场景下比较可用',
             url: 'https://www.yuque.com/arvinxx/tu0agc/15ddd39fd92b1a314f6981c5a4d3b321',
           },
@@ -74,6 +72,7 @@ export const demo: MindflowData = {
   ],
   edges: [
     {
+      id: 'edge-1',
       source: 'node1',
       target: 'node2',
       data: {
@@ -94,14 +93,17 @@ export const demo: MindflowData = {
       },
     },
     {
+      id: 'edge-2',
       source: 'node1',
       target: 'node3',
     },
     {
+      id: 'edge-3',
       source: 'node5',
       target: 'node6',
     },
     {
+      id: 'edge-4',
       source: 'node5',
       target: 'node7',
     },
@@ -153,18 +155,22 @@ export const thinking: MindflowData = {
   ],
   edges: [
     {
+      id: 'edge-1',
       source: '1',
       target: '2',
     },
     {
+      id: 'edge-2',
       source: '1',
       target: '3',
     },
     {
+      id: 'edge-3',
       source: '2',
       target: '5',
     },
     {
+      id: 'edge-4',
       source: '3',
       target: '4',
     },
@@ -182,11 +188,9 @@ export const museum: MindflowData = {
           '博物馆的东边外墙面上有非常严重的腐蚀，需要经常涂刷新的油漆。',
         references: [
           {
-            id: 'ref1',
             title: '清洁工小王于2021年3月21日刷了新油漆',
           },
           {
-            id: 'ref2',
             title: '清洁工小李于2021年1月12日刷了新油漆(链接可点击)',
             url: 'https://www.yuque.com/go/doc/33140357',
           },
@@ -251,8 +255,9 @@ export const museum: MindflowData = {
     },
   ],
   edges: [
-    { source: 'node1', target: 'node2' },
+    { id: 'edge-1', source: 'node1', target: 'node2' },
     {
+      id: 'edge-2',
       source: 'node1',
       target: 'node3',
       data: {
@@ -281,6 +286,7 @@ export const museum: MindflowData = {
       },
     },
     {
+      id: 'edge-3',
       source: 'node1',
       target: 'node4',
       data: {
@@ -294,6 +300,7 @@ export const museum: MindflowData = {
       },
     },
     {
+      id: 'edge-4',
       source: 'node4',
       target: 'node5',
       data: {
@@ -307,6 +314,7 @@ export const museum: MindflowData = {
       },
     },
     {
+      id: 'edge-5',
       source: 'node5',
       target: 'node6',
       data: {
@@ -320,6 +328,7 @@ export const museum: MindflowData = {
       },
     },
     {
+      id: 'edge-6',
       source: 'node6',
       target: 'node7',
       data: {
@@ -333,6 +342,7 @@ export const museum: MindflowData = {
       },
     },
     {
+      id: 'edge-7',
       source: 'node7',
       target: 'node8',
       data: {
@@ -347,6 +357,7 @@ export const museum: MindflowData = {
       },
     },
     {
+      id: 'edge-8',
       source: 'node8',
       target: 'node9',
     },

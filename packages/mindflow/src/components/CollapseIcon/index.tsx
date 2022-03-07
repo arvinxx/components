@@ -2,7 +2,7 @@ import React from 'react';
 import type { FC } from 'react';
 import { useState } from 'react';
 import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
-import { useMindflowService } from '../../store/useMindflowContext';
+import { useUnfoldedList } from '../../store/globalStore';
 import './style.less';
 
 interface CollapseIconProps {
@@ -13,7 +13,7 @@ interface CollapseIconProps {
 
 const CollapseIcon: FC<CollapseIconProps> = ({ id, collapsed, color }) => {
   const [isHovered, setHovered] = useState(false);
-  const { toggleNodeCollapsed } = useMindflowService();
+  const toggleNodeCollapsed = useUnfoldedList((state) => state.toggleItem);
 
   return (
     <div

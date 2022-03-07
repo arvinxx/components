@@ -1,85 +1,35 @@
-export interface Reference {
-  /**
-   * 参考资料的 id
-   */
-  id: string;
-  /**
-   * 参考资料标题
-   */
-  title: string;
-  /**
-   * 相关参考资料的 Url
-   */
-  url?: string;
-}
+import type {
+  OnEdgesChange,
+  OnNodesChange,
+} from 'react-flow-renderer/dist/types';
 
-/**
- * 节点类型
- */
-export type NodeType =
-  | 'question' // 问题
-  | 'action' // 行动点
-  | 'idea' // 想法
-  | 'subject' // 主题
-  | 'information' // 信息
-  | string;
+import type { NodeMindData } from './nodes';
+import type { FlowData } from './flow';
 
-export interface MindflowNode {
-  /**
-   * 节点标题
-   */
-  title: string;
-  /**
-   * 节点的类型
-   */
-  type?: NodeType;
-  /**
-   * 有关问题的详细描述
-   */
-  description?: string;
-  /**
-   * 参考资料
-   */
-  references?: Reference[];
-  /**
-   * 信息的类型
-   */
-  infoType?: 'url' | 'image' | 'text';
-}
+export type MindflowData = FlowData<NodeMindData, any>;
 
-/**
- * 作为支撑的类型
- */
-type EdgeType =
+export interface MindflowProps {
   /**
-   * 依据
+   * 待消费数据
    */
-  | 'ground'
+  data: MindflowData;
   /**
-   * 正当理由
+   * 画布宽度
    */
-  | 'warrant'
+  width?: number | string;
   /**
-   * 支援
+   * 单个节点的宽度
    */
-  | 'backing'
+  nodeWidth?: number;
   /**
-   * 反驳
+   * 画布高度
+   * @default 400
    */
-  | 'rebuttal';
-
-export interface EdgeReference extends Reference {
+  height?: number;
   /**
-   * 理论依据的类型
+   * 节点的点击回调
    */
-  type?: EdgeType;
-}
-/**
- * Mindflow Edge 结构
- */
-export interface MindflowEdge {
-  /**
-   * 依据资料
-   */
-  references?: EdgeReference[];
+  onNodeClick?: (node) => void;
+  onNodesChange?: OnNodesChange;
+  onEdgesChange?: OnEdgesChange;
 }
