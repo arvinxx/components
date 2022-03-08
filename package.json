@@ -80,7 +80,7 @@
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.2",
     "@types/uuid": "^8.3.0",
-    "@umijs/fabric": "^2.2.2",
+    "@umijs/fabric": "~2.8.0",
     "@umijs/preset-dumi": "^1.1.33",
     "@umijs/preset-react": "^1.8.30",
     "@umijs/test": "^3.2.10",
@@ -114,14 +114,13 @@
     "multi-semantic-release": "^2.11.1",
     "onchange": "^7.1.0",
     "optimize-css-assets-webpack-plugin": "^6.0.0",
-    "prettier": "^2.1.2",
-    "progress-bar-webpack-plugin": "^2.1.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-style-order": "^0.2.2",
     "semantic-release-config-gitmoji": "^1.2.4",
     "serve": "^12.0.0",
     "style-loader": "^2.0.0",
     "stylelint": "^13.0.0",
     "terser-webpack-plugin": "^5.1.1",
-    "tplant": "^2.3.6",
     "ts-jest": "^27.0.2",
     "ts-node": "^10.0.0",
     "tslint": "^6.1.3",
@@ -133,9 +132,6 @@
     "webpack": "^5.26.1",
     "webpack-bundle-analyzer": "^4.1.0",
     "webpack-cli": "^4.5.0"
-  },
-  "resolutions": {
-    "semantic-release": "^19.0.2"
   },
   "engines": {
     "node": ">=12"
