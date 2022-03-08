@@ -26,8 +26,8 @@ const createStore = () =>
       }
     },
 
-    syncOutsideData: (data) => {
-      set({ data });
+    syncOutsideProps: (props) => {
+      set({ onDataChange: props.onDataChange, data: props.data ?? get().data });
     },
 
     // 重新排序

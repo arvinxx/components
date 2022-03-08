@@ -14,7 +14,7 @@ import type { SortingStrategy } from '@dnd-kit/sortable';
 import type { Transform } from '@dnd-kit/utilities';
 
 import type { GetItemStyles, GetWrapperStyle, RenderItem } from './common';
-import type { SortableItem, SortableItemList } from './store';
+import type { SortableItem } from './store';
 
 export interface BaseItemProps
   extends Pick<
@@ -83,8 +83,6 @@ export interface SortableProps {
   dropAnimation?: DropAnimation;
   getNewIndex?: NewIndexGetter;
   handle?: boolean;
-  items?: SortableItemList;
-  onItemChange?: (item: SortableItemList) => void;
   measuring?: MeasuringConfiguration;
   modifiers?: Modifiers;
   /**

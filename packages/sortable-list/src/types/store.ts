@@ -27,7 +27,7 @@ export interface SortableListAction {
   /**
    * 同步外部数据源
    */
-  syncOutsideData: (data: SortableItemList) => void;
+  syncOutsideProps: (props: StoreUpdaterProps) => void;
   internalUpdateData: (data: SortableItemList) => void;
   removeItem: (id: string) => void;
   reorder: (startIndex: number, endIndex: number) => void;
@@ -40,9 +40,10 @@ export interface SortableListAction {
 
 export type SortableListStore = SortableListState & SortableListAction;
 
-// 外部值更新
+export type OnDataChange = (data: SortableItemList) => void;
 
+// 外部值更新
 export interface StoreUpdaterProps {
-  data: SortableItemList;
-  onDataChange?: (data: SortableItemList) => void;
+  data?: SortableItemList;
+  onDataChange?: OnDataChange;
 }

@@ -15,7 +15,6 @@ const DraggingOverlay: FC<DraggingOverlayProps> = ({
   getItemStyles,
   getWrapperStyle,
   activeIndex,
-  activeId,
 }) => {
   return (
     <DragOverlay adjustScale={adjustScale} dropAnimation={dropAnimation}>
@@ -32,7 +31,7 @@ const DraggingOverlay: FC<DraggingOverlayProps> = ({
           style={getItemStyles({
             id: item.id,
             index: activeIndex,
-            isSorting: activeId !== null,
+            isSorting: true,
             isDragging: true,
             overIndex: -1,
             isDragOverlay: true,

@@ -1,9 +1,9 @@
-import type { FC } from 'react';
 import React from 'react';
+import type { FC } from 'react';
 
 import { Provider, createStore, useStoreApi } from '../store';
 
-const Wrapper: FC = ({ children }) => {
+const SortableListWrapper: FC = ({ children }) => {
   let isWrapped = true;
 
   try {
@@ -21,6 +21,4 @@ const Wrapper: FC = ({ children }) => {
   return <Provider createStore={createStore}>{children}</Provider>;
 };
 
-Wrapper.displayName = 'ExcelTableWrapper';
-
-export default Wrapper;
+export default SortableListWrapper;
