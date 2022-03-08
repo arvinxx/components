@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 import type { FC } from 'react';
 import React from 'react';
 

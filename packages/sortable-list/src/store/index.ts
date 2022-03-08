@@ -2,10 +2,10 @@ import create from 'zustand';
 import createContext from 'zustand/context';
 
 import { arrayMove } from '@dnd-kit/sortable';
+import isEqual from 'lodash.isequal';
 import produce from 'immer';
 import initialState from './initialState';
 import type { SortableListStore } from '../types';
-
 const createStore = () =>
   create<SortableListStore>((set, get) => ({
     // 内部值
@@ -26,8 +26,14 @@ const createStore = () =>
       }
     },
 
-    syncOutsideProps: (props) => {
-      set({ onDataChange: props.onDataChange, data: props.data ?? get().data });
+    syncOnDataChange: (onDataChange) => {
+      set({ onDataChange });
+    },
+
+    syncOutsideData: (data) => {
+      if (isEqual(get().data, data)) return;
+
+      set({ data });
     },
 
     // 重新排序

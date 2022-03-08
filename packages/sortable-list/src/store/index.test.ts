@@ -74,4 +74,31 @@ describe('useStore', () => {
       { id: '2' },
     ]);
   });
+
+  it('激活/取消激活 item', () => {
+    const { result } = renderHook(() => useStore());
+
+    expect(result.current.activeId).toBeNull();
+
+    // 设置
+    act(() => {
+      result.current.internalUpdateData([
+        { id: '1' },
+        { id: '2' },
+        { id: '3' },
+      ]);
+    });
+    // 激活
+    act(() => {
+      result.current.activateItem('2');
+    });
+    expect(result.current.activeId).toEqual('2');
+
+    //  取消激活
+
+    act(() => {
+      result.current.deactivateItem();
+    });
+    expect(result.current.activeId).toEqual(null);
+  });
 });
