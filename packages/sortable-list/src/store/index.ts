@@ -50,9 +50,9 @@ const createStore = () =>
         if (typeof addIndex !== 'number') {
           // 如果没有提供添加位的 index 值,默认添加在最后
           state.push(item);
+        } else {
+          state.splice(addIndex, 0, item);
         }
-
-        state.splice(addIndex, 0, item);
       });
 
       internalUpdateData(nextData);
