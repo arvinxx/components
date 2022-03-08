@@ -1,19 +1,36 @@
 # Changelog
 
-## @arvinxu/sortable-list [1.0.5](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.4...@arvinxu/sortable-list@1.0.5) (2022-02-03)
+## @arvinxu/sortable-list [1.0.6](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.5...@arvinxu/sortable-list@1.0.6) (2022-03-08)
 
+### ♻ 重构
+
+- 基于 StoreUpdater 重构受控模式代码 ([337168e](https://github.com/arvinxx/components/commit/337168e))
+- 完成组件功能迁移 ([44ddeed](https://github.com/arvinxx/components/commit/44ddeed))
+- 重构 store ([5563979](https://github.com/arvinxx/components/commit/5563979))
 
 ### ✅ 测试
 
-* 修正测试 ([6fae205](https://github.com/arvinxx/components/commit/6fae205))
+- 修正单测 ([89307f0](https://github.com/arvinxx/components/commit/89307f0))
+- 添加单测 ([2e812bc](https://github.com/arvinxx/components/commit/2e812bc))
 
+### 🎫 杂项
 
+- 修正构架配置 ([fda5d6e](https://github.com/arvinxx/components/commit/fda5d6e))
+- 移动组件目录 ([490e16d](https://github.com/arvinxx/components/commit/490e16d))
 
+### 👷 构建系统
 
+- 构建发版 ([f617f9a](https://github.com/arvinxx/components/commit/f617f9a))
+
+## @arvinxu/sortable-list [1.0.5](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.4...@arvinxu/sortable-list@1.0.5) (2022-02-03)
+
+### ✅ 测试
+
+- 修正测试 ([6fae205](https://github.com/arvinxx/components/commit/6fae205))
 
 ### Dependencies
 
-* **@arvinxu/layout-kit:** upgraded to 1.3.0
+- **@arvinxu/layout-kit:** upgraded to 1.3.0
 
 ## @arvinxu/sortable-list [1.0.4](https://github.com/arvinxx/components/compare/@arvinxu/sortable-list@1.0.3...@arvinxu/sortable-list@1.0.4) (2022-02-03)
 
