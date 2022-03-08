@@ -14,8 +14,10 @@ import {
   restrictToWindowEdges,
 } from '@dnd-kit/modifiers';
 
-import { Sortable } from './Sortable';
-import type { SortableItemList, SortableListProps } from './types';
+import { Sortable } from './App';
+import type { SortableItemList, SortableListProps } from '../types';
+import StoreWrapper from './Wrapper';
+import StoreUpdater from './StoreUpdater';
 
 const defaultDropAnimationConfig: DropAnimation = {
   ...defaultDropAnimation,
@@ -75,26 +77,21 @@ function SortableList<T extends SortableItemList = SortableItemList>({
   }, [direction, getModifiers]);
 
   return (
-    <Sortable
-      direction={direction}
-      items={dataSource}
-      onItemChange={onChange}
-      dropAnimation={defaultDropAnimationConfig}
-      renderItem={renderItem}
-      removable={removable}
-      {...config}
-      style={style}
-      getItemStyles={getItemStyles}
-      className={className}
-      gap={gap}
-    />
+    <StoreWrapper>
+      <Sortable
+        direction={direction}
+        dropAnimation={defaultDropAnimationConfig}
+        renderItem={renderItem}
+        removable={removable}
+        {...config}
+        style={style}
+        getItemStyles={getItemStyles}
+        className={className}
+        gap={gap}
+      />
+      <StoreUpdater onDataChange={onChange} data={dataSource} />
+    </StoreWrapper>
   );
 }
 
 export default SortableList;
-
-export type {
-  SortableBaseItem,
-  SortableItemList,
-  SortableListProps,
-} from './types';

@@ -20,14 +20,28 @@ import {
 } from '@dnd-kit/sortable';
 import { Flexbox } from '@arvinxu/layout-kit';
 
-import SortableItem from './SortableItem';
-import DraggingOverlay from './DraggingOverlay';
+import SortableItem from '../components/SortableItem';
+import DraggingOverlay from '../components/DraggingOverlay';
 
-import type { SortableProps } from './types';
+import type { SortableProps, SortableListStore } from '../types';
 
-import { useSortableList } from './hooks/useSortableList';
-import { useActiveItem } from './hooks/useActiveItem';
-import { getIndexOfActiveItem } from './utils';
+import { useStore } from '../store';
+import { getIndexOfActiveItem } from '../store/utils';
+
+const dataSelector = (s: SortableListStore) => s.data;
+
+const activeSelector = (s: SortableListStore) => ({
+  isDragging: s.activeId !== null,
+  activeIndex: getIndexOfActiveItem(s.data, s.activeId),
+});
+
+const actionSelector = (s: SortableListStore) => ({
+  deactivateItem: s.deactivateItem,
+  activateItem: s.activateItem,
+  reorder: s.reorder,
+  removeItem: s.removeItem,
+  addItem: s.addItem,
+});
 
 const Wrapper: FC<{
   style?: CSSProperties;
@@ -44,9 +58,6 @@ const Wrapper: FC<{
 );
 
 export const Sortable: FC<SortableProps> = ({
-  //数据
-  items: controlledItems,
-  onItemChange,
   // 方法
   strategy,
   renderItem,
@@ -85,24 +96,19 @@ export const Sortable: FC<SortableProps> = ({
     }),
   );
 
-  const { items, dispatchSortable } = useSortableList({
-    value: controlledItems,
-    onChange: onItemChange,
-  });
-
-  const { deactivateItem, activateItem, activeId, isDragging } =
-    useActiveItem();
-
-  const activeIndex = getIndexOfActiveItem(items, activeId);
+  const items = useStore(dataSelector);
+  const { activeIndex, isDragging } = useStore(activeSelector);
+  const { deactivateItem, activateItem, reorder, addItem, removeItem } =
+    useStore(actionSelector);
 
   const handleRemove = (id: string) => {
     if (!removable) return;
 
-    dispatchSortable({ type: 'removeItem', id });
+    removeItem(id);
   };
 
   const handleAddItem = (index: number, item: any) => {
-    dispatchSortable({ type: 'addItem', item, addIndex: index });
+    addItem(item, index);
   };
   return (
     // 最外层的 DndContext
@@ -118,11 +124,7 @@ export const Sortable: FC<SortableProps> = ({
         if (over) {
           const endIndex = getIndexOfActiveItem(items, over.id);
 
-          dispatchSortable({
-            type: 'reorder',
-            startIndex: activeIndex,
-            endIndex,
-          });
+          reorder(activeIndex, endIndex);
         }
         deactivateItem();
       }}
@@ -168,7 +170,6 @@ export const Sortable: FC<SortableProps> = ({
                 adjustScale={adjustScale}
                 dropAnimation={dropAnimation}
                 dragging={isDragging}
-                activeId={activeId}
                 activeIndex={activeIndex}
                 item={items[activeIndex]}
                 getItemStyles={getItemStyles}
