@@ -3,7 +3,7 @@ import type {
   UniqueIdentifier,
 } from '@dnd-kit/core';
 import type { CSSProperties, ReactElement, Ref } from 'react';
-import type { SortableItem } from './data';
+import type { SortableItem } from './store';
 
 export type RenderItem<T = SortableItem> = (
   item: T,

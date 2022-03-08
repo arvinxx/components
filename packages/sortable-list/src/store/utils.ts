@@ -1,4 +1,4 @@
-import type { SortableItemList } from './types';
+import type { SortableItemList } from '../types';
 
 export const getIndexOfActiveItem = <
   T extends SortableItemList = SortableItemList,
