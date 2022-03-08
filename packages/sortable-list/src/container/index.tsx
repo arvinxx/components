@@ -16,7 +16,7 @@ import {
 
 import { Sortable } from './App';
 import type { SortableItemList, SortableListProps } from '../types';
-import SortableListWrapper from './Wrapper';
+import StoreWrapper from './Wrapper';
 import StoreUpdater from './StoreUpdater';
 
 const defaultDropAnimationConfig: DropAnimation = {
@@ -77,7 +77,7 @@ function SortableList<T extends SortableItemList = SortableItemList>({
   }, [direction, getModifiers]);
 
   return (
-    <SortableListWrapper>
+    <StoreWrapper>
       <Sortable
         direction={direction}
         dropAnimation={defaultDropAnimationConfig}
@@ -90,7 +90,7 @@ function SortableList<T extends SortableItemList = SortableItemList>({
         gap={gap}
       />
       <StoreUpdater onDataChange={onChange} data={dataSource} />
-    </SortableListWrapper>
+    </StoreWrapper>
   );
 }
 

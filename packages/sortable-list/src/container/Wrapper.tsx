@@ -3,7 +3,7 @@ import type { FC } from 'react';
 
 import { Provider, createStore, useStoreApi } from '../store';
 
-const SortableListWrapper: FC = ({ children }) => {
+const StoreWrapper: FC = ({ children }) => {
   let isWrapped = true;
 
   try {
@@ -21,4 +21,4 @@ const SortableListWrapper: FC = ({ children }) => {
   return <Provider createStore={createStore}>{children}</Provider>;
 };
 
-export default SortableListWrapper;
+export default StoreWrapper;
