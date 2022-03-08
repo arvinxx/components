@@ -1,17 +1,17 @@
 .Action {
   display: flex;
-  width: 12px;
-  padding: 15px;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;
-  touch-action: none;
-  cursor: var(--cursor, pointer);
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  appearance: none;
+  width: 12px;
+  padding: 15px;
   background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: var(--cursor, pointer);
+  appearance: none;
+  touch-action: none;
   -webkit-tap-highlight-color: transparent;
 
   @media (hover: hover) {
@@ -26,8 +26,8 @@
 
   svg {
     flex: 0 0 auto;
-    margin: auto;
     height: 100%;
+    margin: auto;
     overflow: visible;
     fill: #919eab;
   }
