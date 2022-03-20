@@ -4,7 +4,7 @@ order: 1
 group:
   path: /
 nav:
-  path: /components
+  path: /biz-components
 ---
 
 # Mindflow 思流

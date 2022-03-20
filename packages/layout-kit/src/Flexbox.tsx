@@ -1,22 +1,24 @@
 import type { DetailedHTMLProps, FC, HTMLAttributes } from 'react';
 import styled from 'styled-components';
 
-import {
-  getCssValue,
-  getFlexDirection,
-  isHorizontal,
-  isVertical,
-} from './utils';
-import type {
-  ContentDistribution,
-  ContentPosition,
-  FlexDirection,
-} from './type';
+import { getCssValue, getFlexDirection, isHorizontal, isVertical } from './utils';
+import type { ContentDistribution, ContentPosition, FlexDirection } from './type';
 
 export type CommonSpaceNumber = 2 | 4 | 8 | 12 | 16 | 24;
 
 export interface IFlexbox {
+  // 语法糖 api
+  /**
+   * 是否横向
+   */
   horizontal?: boolean;
+  /**
+   * 横向居中
+   */
+  horizontalCenter?: boolean;
+
+  // 基础 api
+
   direction?: FlexDirection;
   distribution?: ContentDistribution;
   align?: ContentPosition;
@@ -49,9 +51,7 @@ export const Flexbox: FC<FlexboxProps> = styled.div.attrs(() => ({
     if (
       isHorizontal(props.direction, props.horizontal) &&
       !props.width &&
-      ['space-between', 'space-around', 'space-evenly'].includes(
-        props.distribution,
-      )
+      ['space-between', 'space-around', 'space-evenly'].includes(props.distribution)
     )
       return '100%';
 
@@ -63,8 +63,7 @@ export const Flexbox: FC<FlexboxProps> = styled.div.attrs(() => ({
 
   > *:not(:last-child) {
     margin-right: ${(props) =>
-      isHorizontal(props.direction, props.horizontal) &&
-      getCssValue(props.gap)};
+      isHorizontal(props.direction, props.horizontal) && getCssValue(props.gap)};
     margin-bottom: ${(props) =>
       isVertical(props.direction, props.horizontal) && getCssValue(props.gap)};
   }

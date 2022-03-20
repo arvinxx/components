@@ -3,7 +3,7 @@ title: AssetGallery 资产画廊
 group:
   path: /
 nav:
-  path: /components
+  path: /biz-components
 ---
 
 # AssetGallery 资产画廊

@@ -3,7 +3,7 @@ title: HeatmapCalendar 活跃日历
 group:
   path: /
 nav:
-  path: /components
+  path: /biz-components
 ---
 
 # HeatmapCalendar 活跃日历

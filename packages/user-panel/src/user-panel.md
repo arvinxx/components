@@ -3,7 +3,7 @@ title: UserPanel 用户面板
 group:
   path: /
 nav:
-  path: /components
+  path: /biz-components
 ---
 
 # UserPanel 用户面板

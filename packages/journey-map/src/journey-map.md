@@ -3,7 +3,7 @@ title: JourneyMap 用户旅程地图
 group:
   path: /
 nav:
-  path: /components
+  path: /biz-components
 ---
 
 # Journey Map 用户旅程地图
