@@ -1,10 +1,9 @@
 export default {
   'login.accountLogin.tab': 'Account Login',
-  'login.accountLogin.errorMessage':
-    'Incorrect username/password（admin/ant.design)',
-  'login.username.placeholder': 'Username: admin or user',
+  'login.accountLogin.errorMessage': 'Incorrect username/password',
+  'login.username.placeholder': 'Username',
   'login.username.required': 'Please input your username!',
-  'login.password.placeholder': 'Password: ant.design',
+  'login.password.placeholder': 'Password',
   'login.password.required': 'Please input your password!',
   'login.phoneLogin.tab': 'Phone Login',
   'login.phoneLogin.errorMessage': 'Verification Code Error',

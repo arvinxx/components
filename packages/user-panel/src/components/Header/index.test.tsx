@@ -2,15 +2,11 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { Header } from './index';
-import { IntlProvider } from '../Intl';
+import '../../locales';
 
 describe('Header 组件', () => {
   it('登录头部', () => {
-    const { container } = render(
-      <IntlProvider>
-        <Header type={'login'} />
-      </IntlProvider>,
-    );
+    const { container } = render(<Header type={'login'} />);
     expect(container).toMatchSnapshot();
   });
 });

@@ -4,6 +4,10 @@ import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react';
 
 import Login from './index';
+import '../locales';
+import i18n from '../locales';
+
+i18n.changeLanguage('zh-CN');
 
 describe('Login 组件', () => {
   it('默认状态', () => {
