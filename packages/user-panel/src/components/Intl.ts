@@ -1,4 +1,7 @@
-import createI18n from '@arvinxu/i18n';
-import localeMessageMaps from '../locales';
+import { useTranslation } from 'react-i18next';
 
-export const { IntlProvider, useFormatMessage } = createI18n(localeMessageMaps);
+export const useFormatMessage = () => {
+  const { t } = useTranslation();
+
+  return (id, values?) => t(id, values);
+};

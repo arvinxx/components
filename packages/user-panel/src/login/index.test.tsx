@@ -4,15 +4,14 @@ import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react';
 
 import Login from './index';
-import { IntlProvider } from '../components';
+import '../locales';
+import i18n from '../locales';
+
+i18n.changeLanguage('zh-CN');
 
 describe('Login 组件', () => {
   it('默认状态', () => {
-    const { container } = render(
-      <IntlProvider>
-        <Login />
-      </IntlProvider>,
-    );
+    const { container } = render(<Login />);
     expect(container).toMatchSnapshot();
   });
 
@@ -20,11 +19,7 @@ describe('Login 组件', () => {
     const {
       // container,
       findByText,
-    } = render(
-      <IntlProvider>
-        <Login />
-      </IntlProvider>,
-    );
+    } = render(<Login />);
     const btn = await findByText('手机号登录');
 
     await act(async () => {
@@ -32,6 +27,5 @@ describe('Login 组件', () => {
       const captcha = await findByText('获取验证码');
       fireEvent.click(captcha);
     });
-    // expect(container).toMatchSnapshot();
   });
 });

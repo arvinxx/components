@@ -2,6 +2,9 @@ import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react';
 
 import UserPanel from '@arvinxu/user-panel';
+import i18n from '../src/locales';
+
+i18n.changeLanguage('zh-CN');
 
 describe('UserPanel', () => {
   it('登录面板', async () => {
