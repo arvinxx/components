@@ -1,29 +1,43 @@
 # Changelog
 
-## @arvinxu/user-panel [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0...@arvinxu/user-panel@1.0.1) (2021-11-28)
-
+## @arvinxu/user-panel [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.1...@arvinxu/user-panel@1.0.2) (2022-03-26)
 
 ### ✅ 测试
 
-* fix test ([20629c2](https://github.com/arvinxx/components/commit/20629c2))
-* 修正测试 ([030ef34](https://github.com/arvinxx/components/commit/030ef34))
-* 修正测试 ([f3241bf](https://github.com/arvinxx/components/commit/f3241bf))
-* 修正测试 ([74e0652](https://github.com/arvinxx/components/commit/74e0652))
-
+- 修正单测 ([cd68ab2](https://github.com/arvinxx/components/commit/cd68ab2))
+- 升级依赖并修正单测 ([355a28c](https://github.com/arvinxx/components/commit/355a28c))
+- 更新 antd 升级后的快照 ([8434793](https://github.com/arvinxx/components/commit/8434793))
 
 ### 🎫 杂项
 
-* 锁定 react-router 版本 ([e913677](https://github.com/arvinxx/components/commit/e913677))
-
+- **user-panel**: 调整组件库依赖位置 ([7354e5a](https://github.com/arvinxx/components/commit/7354e5a))
+- 从 yarn 迁移到 pnpm ([38bb09b](https://github.com/arvinxx/components/commit/38bb09b))
+- 优化目录结构 ([0534903](https://github.com/arvinxx/components/commit/0534903))
 
 ### 👷 构建系统
 
-* 修正构建配置 ([d901be1](https://github.com/arvinxx/components/commit/d901be1))
+- 基于 react-i18next 重构国际化实现 ([567bd21](https://github.com/arvinxx/components/commit/567bd21))
 
+## @arvinxu/user-panel [1.0.1](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.0...@arvinxu/user-panel@1.0.1) (2021-11-28)
+
+### ✅ 测试
+
+- fix test ([20629c2](https://github.com/arvinxx/components/commit/20629c2))
+- 修正测试 ([030ef34](https://github.com/arvinxx/components/commit/030ef34))
+- 修正测试 ([f3241bf](https://github.com/arvinxx/components/commit/f3241bf))
+- 修正测试 ([74e0652](https://github.com/arvinxx/components/commit/74e0652))
+
+### 🎫 杂项
+
+- 锁定 react-router 版本 ([e913677](https://github.com/arvinxx/components/commit/e913677))
+
+### 👷 构建系统
+
+- 修正构建配置 ([d901be1](https://github.com/arvinxx/components/commit/d901be1))
 
 ### 📝 文档
 
-* 更新文档 ([cca4137](https://github.com/arvinxx/components/commit/cca4137))
+- 更新文档 ([cca4137](https://github.com/arvinxx/components/commit/cca4137))
 
 # @arvinxu/user-panel 1.0.0 (2021-11-28)
 
