@@ -1,6 +1,4 @@
-const {
-  default: umiConfig,
-} = require('@umijs/test/lib/createDefaultConfig/createDefaultConfig');
+const { default: umiConfig } = require('@umijs/test/lib/createDefaultConfig/createDefaultConfig');
 
 const defaultConfig = umiConfig(process.cwd(), {});
 
@@ -12,8 +10,7 @@ module.exports = {
   moduleNameMapper: {
     '@arvinxu/asset-gallery': '<rootDir>/packages/asset-gallery/src',
     '@arvinxu/preloader': '<rootDir>/packages/preloader/src',
-    '@arvinxu/macos-traffic-light':
-      '<rootDir>/packages/macos-traffic-light/src',
+    '@arvinxu/macos-traffic-light': '<rootDir>/packages/macos-traffic-light/src',
     '@arvinxu/journey-map': '<rootDir>/packages/journey-map/src',
     '@arvinxu/user-panel': '<rootDir>/packages/user-panel/src',
     '@arvinxu/heatmap-calendar': '<rootDir>/packages/heatmap-calendar/src',
@@ -21,6 +18,7 @@ module.exports = {
     '@arvinxu/i18n': '<rootDir>/packages/i18n/src',
     '@arvinxu/layout-kit': '<rootDir>/packages/layout-kit/src',
     '@arvinxu/sortable-list': '<rootDir>/packages/sortable-list/src',
+    '@arvinxu/color-picker': '<rootDir>/packages/color-picker/src',
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
     '@arvinxu/page-loading': '<rootDir>/packages/page-loading/src',
     '@arvinxu/mindflow': '<rootDir>/packages/mindflow/src',

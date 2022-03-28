@@ -23,9 +23,7 @@
       "@arvinxu/preloader": ["./packages/preloader/src"],
       "@arvinxu/preloader/*": ["./packages/preloader/src/*"],
       "@arvinxu/macos-traffic-light": ["./packages/macos-traffic-light/src"],
-      "@arvinxu/macos-traffic-light/*": [
-        "./packages/macos-traffic-light/src/*"
-      ],
+      "@arvinxu/macos-traffic-light/*": ["./packages/macos-traffic-light/src/*"],
       "@arvinxu/journey-map": ["./packages/journey-map/src"],
       "@arvinxu/journey-map/*": ["./packages/journey-map/src/*"],
       "@arvinxu/user-panel": ["./packages/user-panel/src"],
@@ -40,6 +38,8 @@
       "@arvinxu/layout-kit/*": ["./packages/layout-kit/src/*"],
       "@arvinxu/sortable-list": ["./packages/sortable-list/src"],
       "@arvinxu/sortable-list/*": ["./packages/sortable-list/src/*"],
+      "@arvinxu/color-picker": ["./packages/color-picker/src"],
+      "@arvinxu/color-picker/*": ["./packages/color-picker/src/*"],
       "@arvinxu/float-label-input": ["./packages/float-label-input/src"],
       "@arvinxu/page-loading": ["./packages/page-loading/src"],
       "@arvinxu/mindflow": ["./packages/mindflow/src"],
