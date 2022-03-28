@@ -1,5 +1,15 @@
 # Changelog
 
+## @arvinxu/user-panel [1.0.3](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.2...@arvinxu/user-panel@1.0.3) (2022-03-28)
+
+### ✅ 测试
+
+- 修正单测 ([de94cfc](https://github.com/arvinxx/components/commit/de94cfc))
+
+### 💄 样式
+
+- 补齐 user-panel 的国际化文案 ([ce4cada](https://github.com/arvinxx/components/commit/ce4cada))
+
 ## @arvinxu/user-panel [1.0.2](https://github.com/arvinxx/components/compare/@arvinxu/user-panel@1.0.1...@arvinxu/user-panel@1.0.2) (2022-03-26)
 
 ### ✅ 测试
