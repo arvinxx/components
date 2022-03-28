@@ -1,16 +1,25 @@
 # Changelog
 
-# @arvinxu/layout-kit [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/layout-kit@1.2.1...@arvinxu/layout-kit@1.3.0) (2022-02-03)
-
-
-### ✅ 测试
-
-* 修正测试 ([6fae205](https://github.com/arvinxx/components/commit/6fae205))
-
+# @arvinxu/layout-kit [1.4.0](https://github.com/arvinxx/components/compare/@arvinxu/layout-kit@1.3.0...@arvinxu/layout-kit@1.4.0) (2022-03-28)
 
 ### ✨ 新特性
 
-* 新增 hidden api ([406366c](https://github.com/arvinxx/components/commit/406366c))
+- 新增 Center 组件 ([c1bddbe](https://github.com/arvinxx/components/commit/c1bddbe))
+- 新增 flex api ([363da8a](https://github.com/arvinxx/components/commit/363da8a))
+
+### 🎫 杂项
+
+- 优化目录结构 ([0534903](https://github.com/arvinxx/components/commit/0534903))
+
+# @arvinxu/layout-kit [1.3.0](https://github.com/arvinxx/components/compare/@arvinxu/layout-kit@1.2.1...@arvinxu/layout-kit@1.3.0) (2022-02-03)
+
+### ✅ 测试
+
+- 修正测试 ([6fae205](https://github.com/arvinxx/components/commit/6fae205))
+
+### ✨ 新特性
+
+- 新增 hidden api ([406366c](https://github.com/arvinxx/components/commit/406366c))
 
 ## @arvinxu/layout-kit [1.2.1](https://github.com/arvinxx/components/compare/@arvinxu/layout-kit@1.2.0...@arvinxu/layout-kit@1.2.1) (2022-02-03)
 
