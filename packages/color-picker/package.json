@@ -21,5 +21,10 @@
     "prepublishOnly": "pnpm run build",
     "cov": "jest --coverage",
     "clean": "rm -rf es lib dist build coverage .umi"
+  },
+  "dependencies": {
+    "reactcss": "^1.2.3",
+    "lodash": "^4.17.21",
+    "tinycolor2": "^1.4.2"
   }
 }
