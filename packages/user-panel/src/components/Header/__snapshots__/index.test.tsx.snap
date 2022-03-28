@@ -9,7 +9,7 @@ exports[`Header 组件 登录头部 1`] = `
       class="ant-typography"
       style="text-align: center; margin-bottom: 24px; font-weight: normal;"
     >
-      立即登录
+      Login
     </h2>
   </div>
 </div>

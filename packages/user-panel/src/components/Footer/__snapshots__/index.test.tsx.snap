@@ -12,7 +12,7 @@ exports[`Footer 组件 微信登陆页面 1`] = `
       <span
         class="ant-divider-inner-text"
       >
-        或
+        Or
       </span>
     </div>
     <button
@@ -40,7 +40,7 @@ exports[`Footer 组件 微信登陆页面 1`] = `
         </svg>
       </span>
       <span>
-        微信登录
+        Login by Wechat
       </span>
     </button>
     <div
@@ -75,7 +75,7 @@ exports[`Footer 组件 忘记密码 1`] = `
       <span
         class="ant-divider-inner-text"
       >
-        或
+        Or
       </span>
     </div>
     <div
@@ -110,7 +110,7 @@ exports[`Footer 组件 登录页脚 1`] = `
       <span
         class="ant-divider-inner-text"
       >
-        或
+        Or
       </span>
     </div>
     <div
@@ -119,13 +119,13 @@ exports[`Footer 组件 登录页脚 1`] = `
       <span
         class="ant-typography"
       >
-        没有账号？
+        Don't have an account？
       </span>
       <div
         class="avx-user-panel-footer-register"
       >
         <a>
-          创建账户
+          Signup now
         </a>
       </div>
     </div>
@@ -145,7 +145,7 @@ exports[`Footer 组件 空 1`] = `
       <span
         class="ant-divider-inner-text"
       >
-        或
+        Or
       </span>
     </div>
     <div

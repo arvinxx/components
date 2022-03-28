@@ -27,7 +27,7 @@ exports[`WechatLogin 组件 默认状态 1`] = `
       </svg>
     </span>
     <span>
-      微信登录
+      Login by Wechat
     </span>
   </button>
 </div>
