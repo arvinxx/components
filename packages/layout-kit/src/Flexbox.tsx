@@ -26,6 +26,7 @@ export interface IFlexbox {
   width?: number | string;
   height?: number | string;
   padding?: string | number | CommonSpaceNumber;
+  flex?: number | string;
   /**
    * 是否隐藏内容
    */
@@ -40,6 +41,8 @@ export const Flexbox: FC<FlexboxProps> = styled.div.attrs(() => ({
 }))<IFlexbox>`
   // 是否显示
   display: ${(props) => (props.hidden ? 'none' : 'flex')};
+
+  flex: ${(props) => props.flex};
 
   flex-direction: ${(props) => {
     return getFlexDirection(props.direction, props.horizontal);
