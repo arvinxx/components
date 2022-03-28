@@ -29,11 +29,7 @@ export interface FooterProps {
   onRegisterClick?: (history: H.History) => void;
 }
 
-export const Footer: FC<FooterProps> = ({
-  type,
-  onWechatLoginClick,
-  onRegisterClick,
-}) => {
+export const Footer: FC<FooterProps> = ({ type, onWechatLoginClick, onRegisterClick }) => {
   const f = useFormatMessage();
 
   const history = useHistory();
@@ -58,9 +54,7 @@ export const Footer: FC<FooterProps> = ({
       </Divider>
       {onWechatLoginClick ? <WechatLogin login={onWechatLoginClick} /> : null}
       <div className="avx-user-panel-footer-other">
-        <Text>
-          {f(type === 'login' ? 'login.no-account' : 'register.have-account')}
-        </Text>
+        <Text>{f(type === 'login' ? 'login.no-account' : 'register.have-account')}</Text>
         <div className="avx-user-panel-footer-register">
           <a onClick={() => onClick()}>
             {f(type === 'login' ? 'login.signup' : 'register.sign-in')}

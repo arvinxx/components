@@ -1,16 +1,7 @@
-import {
-  LockOutlined,
-  MailOutlined,
-  MobileOutlined,
-  UserOutlined,
-} from '@ant-design/icons';
+import { LockOutlined, MailOutlined, MobileOutlined, UserOutlined } from '@ant-design/icons';
 import { message, Tabs } from 'antd';
 import React, { useState } from 'react';
-import ProForm, {
-  ProFormCaptcha,
-  ProFormCheckbox,
-  ProFormText,
-} from '@ant-design/pro-form';
+import ProForm, { ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-form';
 import LoginErrorMessage from './LoginErrorMessage';
 
 import './index.less';
@@ -76,11 +67,7 @@ const Login: React.FC<LoginProps> = (props) => {
           setLoading(false);
         }}
       >
-        <Tabs
-          activeKey={type}
-          type={'card'}
-          onChange={(e) => setType(e as IUserLogin.LoginType)}
-        >
+        <Tabs activeKey={type} type={'card'} onChange={(e) => setType(e as IUserLogin.LoginType)}>
           <Tabs.TabPane key="account" tab={f('login.accountLogin.tab')} />
           <Tabs.TabPane key="mobile" tab={f('login.phoneLogin.tab')} />
         </Tabs>
@@ -94,9 +81,7 @@ const Login: React.FC<LoginProps> = (props) => {
               name="userName"
               fieldProps={{
                 size: 'large',
-                prefix: (
-                  <UserOutlined className="avx-user-panel-login-prefixIcon" />
-                ),
+                prefix: <UserOutlined className="avx-user-panel-login-prefixIcon" />,
               }}
               placeholder={f('login.username.placeholder')}
               rules={[
@@ -110,9 +95,7 @@ const Login: React.FC<LoginProps> = (props) => {
               name="password"
               fieldProps={{
                 size: 'large',
-                prefix: (
-                  <LockOutlined className="avx-user-panel-login-prefixIcon" />
-                ),
+                prefix: <LockOutlined className="avx-user-panel-login-prefixIcon" />,
               }}
               placeholder={f('login.password.placeholder')}
               rules={[
@@ -126,16 +109,14 @@ const Login: React.FC<LoginProps> = (props) => {
         )}
 
         {status === 'error' && loginType === 'mobile' && !submitting && (
-          <LoginErrorMessage content="验证码错误" />
+          <LoginErrorMessage content={f('login.phoneLogin.errorMessage')} />
         )}
         {type === 'mobile' && (
           <>
             <ProFormText
               fieldProps={{
                 size: 'large',
-                prefix: (
-                  <MobileOutlined className="avx-user-panel-login-prefixIcon" />
-                ),
+                prefix: <MobileOutlined className="avx-user-panel-login-prefixIcon" />,
               }}
               name="mobile"
               placeholder={f('login.phoneNumber.placeholder')}
@@ -153,9 +134,7 @@ const Login: React.FC<LoginProps> = (props) => {
             <ProFormCaptcha
               fieldProps={{
                 size: 'large',
-                prefix: (
-                  <MailOutlined className="avx-user-panel-login-prefixIcon" />
-                ),
+                prefix: <MailOutlined className="avx-user-panel-login-prefixIcon" />,
               }}
               captchaProps={{
                 size: 'large',
@@ -188,7 +167,7 @@ const Login: React.FC<LoginProps> = (props) => {
                   return;
                 }
 
-                message.success('获取验证码成功！');
+                message.success(f('login.captcha.fetch.success'));
               }}
             />
           </>

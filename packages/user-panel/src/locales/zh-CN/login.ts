@@ -14,6 +14,7 @@ export default {
   'login.captcha.placeholder': '请输入验证码',
   'login.captcha.required': '验证码是必填项！',
   'login.captcha.function.required': '获取验证码方法未实现，请检查代码！',
+  'login.captcha.fetch.success': '获取验证码成功！',
   'login.phoneLogin.getVerificationCode': '获取验证码',
   'pages.getCaptchaSecondText': '秒后重新获取',
   'login.rememberMe': '自动登录',

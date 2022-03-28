@@ -29,7 +29,15 @@ export const menus = {
     },
     {
       title: '业务组件',
-      children: ['asset-gallery', 'journey-map', 'mindflow', 'heatmap-calendar', 'user-panel'],
+      children: ['asset-gallery', 'journey-map', 'heatmap-calendar'],
+    },
+    {
+      title: 'Mindflow',
+      children: ['mindflow'],
+    },
+    {
+      title: '登录/注册面板',
+      children: ['user-panel', 'login', 'register'],
     },
   ],
   '/guide': [

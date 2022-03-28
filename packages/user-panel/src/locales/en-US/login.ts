@@ -19,4 +19,11 @@ export default {
   'login.submit': 'Submit',
   'login.loginWith': 'Login with :',
   'login.registerAccount': 'Register Account',
+
+  'login.header': 'Login',
+  'login.captcha.fetch.success': 'Fetch captcha successfully!',
+  'login.or': 'Or',
+  'login.wechat-login.btn': 'Login by Wechat',
+  'login.no-account': "Don't have an account？",
+  'login.signup': 'Signup now',
 };
