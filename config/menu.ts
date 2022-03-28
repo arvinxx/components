@@ -29,7 +29,7 @@ export const menus = {
     },
     {
       title: '业务组件',
-      children: ['asset-gallery', 'journey-map', 'heatmap-calendar'],
+      children: ['asset-gallery', 'ColorPicker', 'journey-map', 'heatmap-calendar'],
     },
     {
       title: 'Mindflow',
