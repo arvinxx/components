@@ -23,8 +23,14 @@
     "clean": "rm -rf es lib dist build coverage .umi"
   },
   "dependencies": {
-    "reactcss": "^1.2.3",
+    "chroma-js": "^2.1.1",
+    "classnames": "^2.3.1",
     "lodash": "^4.17.21",
-    "tinycolor2": "^1.4.2"
+    "reactcss": "^1.2.3",
+    "tinycolor2": "^1.4.2",
+    "zustand": "^3.7.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.181"
   }
 }

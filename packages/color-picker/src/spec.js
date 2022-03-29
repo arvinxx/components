@@ -3,13 +3,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
-import * as color from '../../helpers/color';
+import * as color from './helpers/color';
 // import canvas from 'canvas'
 
-import Sketch from './Sketch';
-import SketchFields from './SketchFields';
-import SketchPresetColors from './SketchPresetColors';
-import { Swatch } from '../common';
+import Sketch from './container/Sketch';
+import SketchFields from './components/SketchFields';
+import SketchPresetColors from './components/SketchPresetColors';
+import { Swatch } from './components/common';
 
 test('Sketch renders correctly', () => {
   const tree = renderer.create(<Sketch {...color.red} />).toJSON();

@@ -1,7 +1,8 @@
-import React, { ChangeEvent } from 'react';
+import type { ChangeEvent } from 'react';
+import React from 'react';
 
-import { Swatch } from '../common';
-import { ColorChangeHandler, ColorResult, PresetColor } from './Sketch';
+import type { ColorChangeHandler, ColorResult, PresetColor } from '../types';
+import { Swatch } from './common';
 
 export const SketchPresetColors: React.FC<{
   colors?: PresetColor[] | undefined;
