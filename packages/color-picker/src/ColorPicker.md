@@ -1,5 +1,5 @@
 ---
-title: ColorPicker
+title: ColorPicker 取色器
 order: 2
 group:
   path: /
@@ -7,7 +7,7 @@ nav:
   path: /components
 ---
 
-# ColorPicker
+# ColorPicker 取色器
 
 一个更好用的取色器
 

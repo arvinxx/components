@@ -1,7 +1,6 @@
-import type { SketchPickerProps } from './components/sketch/Sketch';
-import { SketchPicker } from './components/sketch/Sketch';
+import SketchPicker from './container';
 
-export type { SketchPickerProps };
+export type { ColorPickerProps } from './types';
 
 export { SketchPicker };
 

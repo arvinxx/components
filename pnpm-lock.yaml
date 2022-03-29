@@ -168,13 +168,22 @@ importers:
 
   packages/color-picker:
     specifiers:
+      '@types/lodash': ^4.14.181
+      chroma-js: ^2.1.1
+      classnames: ^2.3.1
       lodash: ^4.17.21
       reactcss: ^1.2.3
       tinycolor2: ^1.4.2
+      zustand: ^3.7.1
     dependencies:
+      chroma-js: 2.4.2
+      classnames: 2.3.1
       lodash: 4.17.21
       reactcss: 1.2.3
       tinycolor2: 1.4.2
+      zustand: 3.7.1
+    devDependencies:
+      '@types/lodash': 4.14.181
 
   packages/float-label-input:
     specifiers:
@@ -6304,6 +6313,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/lodash/4.14.181:
+    resolution: {integrity: sha512-n3tyKthHJbkiWhDZs3DkhkCzt2MexYHXlX0td5iMplyfwketaOeKboEVBqzceH7juqvEg3q5oUoBFxSLu7zFag==}
     dev: true
 
   /@types/mapbox-gl/1.13.2:

@@ -2,21 +2,18 @@
 
 import React from 'react';
 import reactCSS from 'reactcss';
-import * as color from '../../helpers/color';
+import * as color from '../helpers/color';
 
-import { EditableInput } from '../common';
-import type { HSLColor, RGBColor } from './Sketch';
+import { EditableInput } from './common';
+import { colorSelector, useStore } from '@arvinxu/color-picker/store';
+import isEqual from 'lodash/isEqual';
 
 export const SketchFields: React.FC<{
-  hex?: string;
-  hsl?: HSLColor;
-  rgb?: RGBColor;
-  hsv?: RGBColor;
-  renderers?: any;
-  width?: any;
   onChange?: (color: any, e: React.ChangeEvent<HTMLInputElement>) => void | undefined;
   disableAlpha?: boolean;
-}> = ({ onChange, rgb, hsl, hex, disableAlpha }) => {
+}> = ({ onChange, disableAlpha }) => {
+  const { rgb, hsl, hex } = useStore(colorSelector, isEqual);
+
   const styles = reactCSS(
     {
       default: {
