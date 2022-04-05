@@ -39,10 +39,6 @@ export class EditableInput extends (PureComponent || Component) {
     }
   }
 
-  componentWillUnmount() {
-    this.unbindEventListeners();
-  }
-
   getValueObjectWithLabel(value) {
     return {
       [this.props.label]: value,
@@ -83,57 +79,22 @@ export class EditableInput extends (PureComponent || Component) {
     this.setState({ value });
   }
 
-  handleDrag = (e) => {
-    if (this.props.dragLabel) {
-      const newValue = Math.round(this.props.value + e.movementX);
-      if (newValue >= 0 && newValue <= this.props.dragMax) {
-        this.props.onChange && this.props.onChange(this.getValueObjectWithLabel(newValue), e);
-      }
-    }
-  };
-
-  handleMouseDown = (e) => {
-    if (this.props.dragLabel) {
-      e.preventDefault();
-      this.handleDrag(e);
-      window.addEventListener('mousemove', this.handleDrag);
-      window.addEventListener('mouseup', this.handleMouseUp);
-    }
-  };
-
-  handleMouseUp = () => {
-    this.unbindEventListeners();
-  };
-
-  unbindEventListeners = () => {
-    window.removeEventListener('mousemove', this.handleDrag);
-    window.removeEventListener('mouseup', this.handleMouseUp);
-  };
-
   render() {
-    const styles = reactCSS(
-      {
-        default: {
-          wrap: {
-            position: 'relative',
-          },
+    const styles = reactCSS({
+      default: {
+        wrap: {
+          position: 'relative',
         },
-        'user-override': {
-          wrap: this.props.style && this.props.style.wrap ? this.props.style.wrap : {},
-          input: this.props.style && this.props.style.input ? this.props.style.input : {},
-          label: this.props.style && this.props.style.label ? this.props.style.label : {},
-        },
-        'dragLabel-true': {
-          label: {
-            cursor: 'ew-resize',
-          },
+        input: {
+          width: '100%',
+          padding: '2px 3px',
+          border: 'none',
+          borderRadius: '4px',
+          boxShadow: 'inset 0 0 0 1px #ccc',
+          fontSize: '12px',
         },
       },
-      {
-        'user-override': true,
-      },
-      this.props,
-    );
+    });
 
     return (
       <div style={styles.wrap}>
@@ -148,11 +109,6 @@ export class EditableInput extends (PureComponent || Component) {
           placeholder={this.props.placeholder}
           spellCheck="false"
         />
-        {this.props.label && !this.props.hideLabel ? (
-          <label htmlFor={this.inputId} style={styles.label} onMouseDown={this.handleMouseDown}>
-            {this.props.label}
-          </label>
-        ) : null}
       </div>
     );
   }

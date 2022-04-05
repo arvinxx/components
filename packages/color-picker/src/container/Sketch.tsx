@@ -1,5 +1,5 @@
 import type { FC } from 'react';
-import React from 'react';
+import React, { memo } from 'react';
 import reactCSS from 'reactcss';
 import merge from 'lodash/merge';
 import isEqual from 'lodash/isEqual';
@@ -12,10 +12,9 @@ import SketchPresetColors from '../components/SketchPresetColors';
 import { colorSelector, useStore } from '../store';
 import type { ColorPickerProps } from '../types';
 
-export const Sketch: FC<ColorPickerProps> = ({ onSwatchHover, className }) => {
+export const Sketch: FC<ColorPickerProps> = memo(({ onSwatchHover, className }) => {
   const {
     presetColors,
-    onChange,
     styles: passedStyles,
     width,
     disableAlpha,
@@ -25,7 +24,7 @@ export const Sketch: FC<ColorPickerProps> = ({ onSwatchHover, className }) => {
     updateByHsv,
   } = useStore();
 
-  const { rgb, hsl, hsv, hex } = useStore(colorSelector, isEqual);
+  const { rgb, hsl, hsv } = useStore(colorSelector, isEqual);
 
   const styles: any = reactCSS(
     //@ts-ignore
@@ -122,7 +121,7 @@ export const Sketch: FC<ColorPickerProps> = ({ onSwatchHover, className }) => {
           radius={6}
         />
       </div>
-      <div style={styles.controls} className="flexbox-fix">
+      <div style={styles.controls}>
         <div style={styles.sliders}>
           <div style={styles.hue}>
             <Hue
@@ -140,7 +139,7 @@ export const Sketch: FC<ColorPickerProps> = ({ onSwatchHover, className }) => {
               rgb={rgb}
               hsl={hsl}
               onChange={({ a }) => {
-                updateAlpha(a);
+                updateAlpha(a * 100);
               }}
               radius={4}
             />
@@ -152,7 +151,7 @@ export const Sketch: FC<ColorPickerProps> = ({ onSwatchHover, className }) => {
         </div>
       </div>
 
-      <SketchFields rgb={rgb} hsl={hsl} hex={hex} onChange={onChange} disableAlpha={disableAlpha} />
+      <SketchFields />
       <SketchPresetColors
         colors={presetColors}
         onClick={(e) => {
@@ -162,6 +161,6 @@ export const Sketch: FC<ColorPickerProps> = ({ onSwatchHover, className }) => {
       />
     </div>
   );
-};
+});
 
 export default Sketch;

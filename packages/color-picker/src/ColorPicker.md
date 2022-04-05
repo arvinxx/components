@@ -4,7 +4,7 @@ order: 2
 group:
   path: /
 nav:
-  path: /components
+  path: /biz-components
 ---
 
 # ColorPicker 取色器
