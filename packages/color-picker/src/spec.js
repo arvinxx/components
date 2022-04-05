@@ -7,7 +7,7 @@ import * as color from './helpers/color';
 // import canvas from 'canvas'
 
 import Sketch from './container/Sketch';
-import SketchFields from './components/SketchFields';
+import SketchFields from './components/SketchFields/SketchFields';
 import SketchPresetColors from './components/SketchPresetColors';
 import { Swatch } from './components/common';
 
