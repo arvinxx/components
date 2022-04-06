@@ -1,17 +1,17 @@
 import type { FC } from 'react';
 import React, { memo, useEffect, useMemo, useRef } from 'react';
 
-import isEqual from 'lodash/isEqual';
 import { concatMap, map, takeUntil } from 'rxjs/operators';
 
 import Checkboard from '../common/Checkboard';
-import { colorSelector, useStore } from '../../store';
+import { useStore } from '../../store';
 
 import styles from './style.less';
 import { fromEvent, Subject } from 'rxjs';
 
 const Alpha: FC = memo(() => {
-  const { rgb } = useStore(colorSelector, isEqual);
+  const rgb = useStore((s) => s.colorModel.rgb());
+  const alpha = useStore((s) => s.colorModel.alpha());
   const updateAlpha = useStore((s) => s.updateAlpha);
 
   const ctnRef = useRef(null);
@@ -48,8 +48,8 @@ const Alpha: FC = memo(() => {
       <div
         className={styles.background}
         style={{
-          background: `linear-gradient(to right, rgba(${rgb.r},${rgb.g},${rgb.b}, 0) 0%,
-           rgba(${rgb.r},${rgb.g},${rgb.b}, 1) 100%)`,
+          background: `linear-gradient(to right, rgba(${rgb.join(',')}, 0) 0%,
+           rgba(${rgb.join(',')}, 1) 100%)`,
         }}
       />
       <div
@@ -62,7 +62,7 @@ const Alpha: FC = memo(() => {
         <div
           style={{
             position: 'absolute',
-            left: `${rgb.a * 100}%`,
+            left: `${alpha * 100}%`,
           }}
         >
           <div className={styles.slider} />
