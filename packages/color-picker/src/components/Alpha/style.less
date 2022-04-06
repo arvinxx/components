@@ -1,0 +1,39 @@
+.abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  .abs;
+  border-radius: 2px;
+}
+
+.checkboard {
+  .abs;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.background {
+  .abs;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  margin: 0 3px;
+}
+
+.slider {
+  width: 4px;
+  height: 8px;
+  margin-top: 1px;
+  background: #fff;
+  border-radius: 1px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  transform: translateX(-2px);
+}
