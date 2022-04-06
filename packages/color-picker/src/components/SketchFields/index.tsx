@@ -1,12 +1,12 @@
 import type { FC } from 'react';
-import React, { memo } from 'react';
+import React, { memo, useMemo } from 'react';
 import isEqual from 'lodash/isEqual';
 import { Flexbox } from '@arvinxu/layout-kit';
 import cls from 'classnames';
 import copy from 'copy-to-clipboard';
 import shallow from 'zustand/shallow';
 
-import type { ColorMode, ColorObj, ColorPickerStore } from '../../store';
+import type { ColorMode, ColorPickerStore, SpaceColor } from '../../store';
 import { colorSpaceSelector, useStore } from '../../store';
 import { isValidHex } from '../../helpers/color';
 import DraggableLabel from '../DraggableLabel';
@@ -27,7 +27,7 @@ export const SketchFields: FC = memo(() => {
   const hex = useStore((s) => s.colorModel.hex('rgb'));
   const alpha = useStore((s) => Math.round(s.colorModel.alpha() * 100));
 
-  const modeValue = useStore(colorSpaceSelector, isEqual) as ColorObj;
+  const modeValue = useStore(colorSpaceSelector, isEqual) as SpaceColor;
 
   const { updateAlpha, updateByHex, updateColorMode, updateByColorSpace } = useStore(
     selector,
@@ -35,6 +35,38 @@ export const SketchFields: FC = memo(() => {
   );
 
   const prefixCls = 'avx-color-fields';
+
+  const inputGroup = useMemo(
+    () =>
+      mode.split('').map((dim) => {
+        return (
+          <div key={dim}>
+            <EditableInput
+              value={Math.round(modeValue?.[dim] || 0)}
+              onChange={(value) => {
+                updateByColorSpace(dim, value);
+              }}
+            />
+          </div>
+        );
+      }),
+    [mode, modeValue, updateByColorSpace],
+  );
+
+  const labelGroup = useMemo(
+    () =>
+      mode.split('').map((dim, index) => (
+        <DraggableLabel
+          key={`${dim}-${index}`}
+          text={dim}
+          value={modeValue[dim]}
+          onChange={(value) => {
+            updateByColorSpace(dim, value);
+          }}
+        />
+      )),
+    [mode, modeValue, updateByColorSpace],
+  );
 
   return (
     <Flexbox gap={2} style={{ margin: '4px 0' }}>
@@ -50,19 +82,7 @@ export const SketchFields: FC = memo(() => {
             style={{ width: 56, fontFamily: 'monospace' }}
           />
         </div>
-        {mode.split('').map((dim) => {
-          return (
-            <div key={dim}>
-              <EditableInput
-                value={Math.round(modeValue?.[dim] || 0)}
-                onChange={(value) => {
-                  updateByColorSpace(dim, value);
-                }}
-              />
-            </div>
-          );
-        })}
-
+        {inputGroup}
         <div>
           <EditableInput value={alpha} onChange={updateAlpha} />
         </div>
@@ -94,20 +114,11 @@ export const SketchFields: FC = memo(() => {
               value={mode}
             >
               <option value="rgb">RGB</option>
-              <option value="hsl">HSL</option>
+              {/*<option value="hsl">HSL</option>*/}
               <option value="hsv">HSV</option>
             </select>
           </div>
-          {mode.split('').map((dim, index) => (
-            <DraggableLabel
-              key={`${dim}-${index}`}
-              text={dim}
-              value={modeValue[dim]}
-              onChange={(value) => {
-                updateByColorSpace(dim, value);
-              }}
-            />
-          ))}
+          {labelGroup}
         </Flexbox>
         <DraggableLabel
           className={`${prefixCls}-label-alpha`}

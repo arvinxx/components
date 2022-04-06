@@ -2,21 +2,18 @@ import type { CSSProperties } from 'react';
 import type React from 'react';
 
 export interface HSLColor {
-  a?: number | undefined;
   h: number;
   l: number;
   s: number;
 }
 
 export interface HSVColor {
-  a?: number | undefined;
   h: number;
   s: number;
   v: number;
 }
 
 export interface RGBColor {
-  a?: number | undefined;
   b: number;
   g: number;
   r: number;

@@ -1,12 +1,12 @@
 import type { FC } from 'react';
-import React, { useEffect, useMemo, useRef } from 'react';
+import React, { memo, useEffect, useMemo, useRef } from 'react';
 import reactCSS from 'reactcss';
 
 import { fromEvent, Subject } from 'rxjs';
 import { concatMap, map, takeUntil, throttleTime } from 'rxjs/operators';
 import { useStore } from '../../store';
 
-export const Saturation: FC = () => {
+export const Saturation: FC = memo(() => {
   const hue = useStore((s) => s.hue);
   const saturation = useStore((s) => s.saturation);
   const brightness = useStore((s) => s.brightness);
@@ -127,6 +127,6 @@ export const Saturation: FC = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Saturation;

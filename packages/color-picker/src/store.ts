@@ -9,16 +9,22 @@ import type { HSLColor, HSVColor, RGBColor } from './types';
 
 export type ColorMode = 'rgb' | 'hsl' | 'hsv';
 
+type OnColorChange = ({ hex, color }: { hex: string; color: Color }) => void;
 interface ColorPickerState {
-  colorMode: ColorMode;
+  // 外部预设值
   presetColors: string[];
-  onSwatchHover?: any;
-  onChange?: ({ hex, color }: { hex: string; color: Color }) => void;
+  // 回调方法
+  onSwatchHover?: OnColorChange;
+  onChange?: OnColorChange;
+
   colorModel: Color;
+  colorMode: ColorMode;
+
   hue: number;
   saturation: number;
   brightness: number;
 }
+
 interface ColorPickerAction {
   internalUpdateColor: (color: Color) => void;
   updateAlpha: (a: number) => void;
@@ -183,10 +189,10 @@ const createStore = () => {
         },
 
         updateByRgb: (rgb) => {
-          const { r, g, b, a } = rgb;
-          const { internalUpdateColor } = get();
+          const { r, g, b } = rgb;
+          const { internalUpdateColor, colorModel } = get();
 
-          internalUpdateColor(chroma([r, g, b, a], 'rgb'));
+          internalUpdateColor(chroma([r, g, b, colorModel.alpha()], 'rgb'));
         },
       }),
       { name: 'ColorPicker' },
@@ -208,28 +214,23 @@ const { Provider, useStore } = createContext<ColorPickerStore>();
 
 export { Provider, useStore, createStore };
 
-export interface ColorObj {
-  rgb: RGBColor;
-  hsl: HSLColor;
-  hsv: HSVColor;
-  hex: string;
-}
+// ============ Selector =========== //
 
 export type SpaceColor = RGBColor | HSLColor | HSVColor;
 
 export const colorSpaceSelector = (s: ColorPickerState): SpaceColor => {
-  const [r, g, b, a] = s.colorModel.rgba();
+  const [r, g, b] = s.colorModel.rgba();
   const hsl = s.colorModel.hsl();
 
   switch (s.colorMode) {
     case 'rgb': {
-      return { r, g, b, a };
+      return { r, g, b };
     }
     case 'hsv': {
-      return { h: s.hue, s: s.saturation, v: s.brightness, a };
+      return { h: s.hue, s: s.saturation, v: s.brightness };
     }
     case 'hsl': {
-      return { h: s.hue, s: hsl[1] * 100, l: hsl[2] * 100, a };
+      return { h: s.hue, s: hsl[1] * 100, l: hsl[2] * 100 };
     }
   }
 };
