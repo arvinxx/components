@@ -4,14 +4,14 @@ import reactCSS from 'reactcss';
 
 import { fromEvent, Subject } from 'rxjs';
 import { concatMap, map, takeUntil, throttleTime } from 'rxjs/operators';
-import { colorSelector, useStore } from '@arvinxu/color-picker/store';
+import { useStore } from '../../store';
 
 export const Saturation: FC = () => {
   const hue = useStore((s) => s.hue);
+  const saturation = useStore((s) => s.saturation);
+  const brightness = useStore((s) => s.brightness);
 
   const updateBySV = useStore((s) => s.updateBySV);
-
-  const { hsv } = useStore(colorSelector);
 
   const ctnRef = useRef(null);
 
@@ -82,8 +82,8 @@ export const Saturation: FC = () => {
       },
       pointer: {
         position: 'absolute',
-        top: `${-(hsv.v * 100) + 100}%`,
-        left: `${hsv.s * 100}%`,
+        top: `${100 - brightness}%`,
+        left: `${saturation}%`,
         cursor: 'default',
       },
       circle: {

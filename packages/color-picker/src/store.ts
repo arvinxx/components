@@ -16,6 +16,8 @@ interface ColorPickerState {
   onChange?: ({ hex, color }: { hex: string; color: Color }) => void;
   colorModel: Color;
   hue: number;
+  saturation: number;
+  brightness: number;
 }
 interface ColorPickerAction {
   internalUpdateColor: (color: Color) => void;
@@ -26,6 +28,7 @@ interface ColorPickerAction {
   updateByHex: (hex: string) => void;
   updateBySV: (saturation: number, value: number) => void;
   updateByRgb: (rgb: RGBColor) => void;
+  getColorModelByHSV: (h?: number, s?: number, v?: number) => Color;
 }
 
 export type ColorPickerStore = ColorPickerState & ColorPickerAction;
@@ -65,6 +68,8 @@ const initialState: ColorPickerState = {
   // 这会破坏基础的预期
   // 取色器中
   hue: 250,
+  brightness: 30,
+  saturation: 68,
 };
 
 const createStore = () => {
@@ -73,11 +78,26 @@ const createStore = () => {
       (set, get) => ({
         ...initialState,
 
+        getColorModelByHSV: (h, s, v) => {
+          const { hue, saturation, brightness, colorModel } = get();
+          return chroma(
+            h ?? hue,
+            s ?? saturation / 100,
+            v ?? brightness / 100,
+            colorModel.alpha(),
+            'hsv',
+          );
+        },
         updateColorMode: (mode) => {
           set({ colorMode: mode });
         },
 
         internalUpdateColor: (color) => {
+          // 如果 color 的 h s v 都是 NaN，那么就要用保存值来替换
+          if (color.hsv().every((x) => isNaN(x))) {
+            color = get().getColorModelByHSV();
+          }
+
           set({ colorModel: color });
 
           if (get().onChange) {
@@ -99,17 +119,24 @@ const createStore = () => {
 
         updateHue: (h) => {
           const { colorModel, internalUpdateColor } = get();
+          set({ hue: h });
           internalUpdateColor(colorModel.set('hsl.h', h));
         },
 
         updateByColorSpace: (key, value) => {
-          const { colorModel, internalUpdateColor, colorMode } = get();
+          const { colorModel, updateHue, internalUpdateColor, colorMode } = get();
           let v;
 
           // 将值限定在相应的最大区间内
           v = value > maxValueMap[key] ? maxValueMap[key] : value;
           // 且确保 v 最小值为 0
           if (value < 0) v = 0;
+
+          // 如果是 hue 的更新
+          if (key === 'h') {
+            updateHue(value);
+            return;
+          }
 
           // 如果是 s v l 三个维度值，将其转换为百分比
 
@@ -118,6 +145,17 @@ const createStore = () => {
           }
 
           internalUpdateColor(colorModel.set(`${colorMode}.${key}`, v));
+
+          if (colorMode === 'hsv') {
+            switch (key) {
+              case 's':
+                set({ saturation: v * 100 });
+                break;
+              case 'v':
+                set({ brightness: v * 100 });
+                break;
+            }
+          }
         },
 
         updateByHex: (hex) => {
@@ -127,7 +165,7 @@ const createStore = () => {
         },
 
         updateBySV: (saturation, value) => {
-          const { internalUpdateColor, colorModel, hue } = get();
+          const { internalUpdateColor, hue } = get();
 
           if (saturation < 0) saturation = 0;
           if (saturation > 1) saturation = 1;
@@ -136,7 +174,12 @@ const createStore = () => {
 
           if (value > 1) value = 1;
 
-          internalUpdateColor(chroma([hue, saturation, value, colorModel.alpha()], 'hsv'));
+          internalUpdateColor(chroma([hue, saturation, value], 'hsv'));
+
+          set({
+            saturation: saturation * 100,
+            brightness: value * 100,
+          });
         },
 
         updateByRgb: (rgb) => {
@@ -151,11 +194,14 @@ const createStore = () => {
   );
 
   store.subscribe((state) => {
-    const newHue = state.colorModel.hsv()[0];
+    const [newHue, newSaturation, newBrightness] = state.colorModel.hsv();
     if (isNaN(newHue)) return;
 
     state.hue = newHue;
+    state.saturation = Math.ceil(newSaturation * 100);
+    state.brightness = Math.ceil(newBrightness * 100);
   });
+
   return store;
 };
 const { Provider, useStore } = createContext<ColorPickerStore>();
@@ -169,24 +215,10 @@ export interface ColorObj {
   hex: string;
 }
 
-export const colorSelector = (s: ColorPickerState): ColorObj => {
-  const [r, g, b, a] = s.colorModel.rgba();
-  const hsv = s.colorModel.hsv();
-  const hsl = s.colorModel.hsl();
-
-  return {
-    rgb: { r, g, b, a },
-    hsv: { h: hsv[0], s: hsv[1], v: hsv[2], a },
-    hsl: { h: hsl[0], s: hsl[1], l: hsl[2], a },
-    hex: s.colorModel.hex(),
-  };
-};
-
 export type SpaceColor = RGBColor | HSLColor | HSVColor;
 
 export const colorSpaceSelector = (s: ColorPickerState): SpaceColor => {
   const [r, g, b, a] = s.colorModel.rgba();
-  const hsv = s.colorModel.hsv();
   const hsl = s.colorModel.hsl();
 
   switch (s.colorMode) {
@@ -194,7 +226,7 @@ export const colorSpaceSelector = (s: ColorPickerState): SpaceColor => {
       return { r, g, b, a };
     }
     case 'hsv': {
-      return { h: s.hue, s: hsv[1] * 100, v: hsv[2] * 100, a };
+      return { h: s.hue, s: s.saturation, v: s.brightness, a };
     }
     case 'hsl': {
       return { h: s.hue, s: hsl[1] * 100, l: hsl[2] * 100, a };
