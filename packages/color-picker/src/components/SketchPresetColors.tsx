@@ -1,14 +1,18 @@
-import type { ChangeEvent } from 'react';
-import React from 'react';
+import type { FC } from 'react';
+import React, { memo } from 'react';
+import shallow from 'zustand/shallow';
 
-import type { ColorChangeHandler, ColorResult, PresetColor } from '../types';
 import { Swatch } from './common';
+import type { ColorPickerStore } from '../store';
+import { useStore } from '../store';
 
-export const SketchPresetColors: React.FC<{
-  colors?: PresetColor[] | undefined;
-  onClick?: ColorChangeHandler | undefined;
-  onSwatchHover?: (color: ColorResult, event: MouseEvent) => void;
-}> = ({ colors, onClick = () => {}, onSwatchHover }) => {
+const selector = (s: ColorPickerStore) => ({
+  presetColors: s.presetColors,
+  updateByHex: s.updateByHex,
+  onSwatchHover: s.onSwatchHover,
+});
+
+export const SketchPresetColors: FC = memo(() => {
   const styles = {
     colors: {
       margin: '0 -10px',
@@ -33,15 +37,7 @@ export const SketchPresetColors: React.FC<{
     },
   } as const;
 
-  const handleClick = (hex: string, e: ChangeEvent<HTMLInputElement>) => {
-    onClick?.(
-      {
-        hex,
-        source: 'hex',
-      } as any,
-      e,
-    );
-  };
+  const { presetColors: colors, updateByHex, onSwatchHover } = useStore(selector, shallow);
 
   return (
     <div style={styles.colors} className="flexbox-fix">
@@ -56,7 +52,9 @@ export const SketchPresetColors: React.FC<{
             <Swatch
               {...c}
               style={styles.swatch}
-              onClick={handleClick}
+              onClick={(hex) => {
+                updateByHex(hex);
+              }}
               onHover={onSwatchHover}
               focusStyle={{
                 boxShadow: `inset 0 0 0 1px rgba(0,0,0,.15), 0 0 4px ${c.color}`,
@@ -67,6 +65,6 @@ export const SketchPresetColors: React.FC<{
       })}
     </div>
   );
-};
+});
 
 export default SketchPresetColors;

@@ -3,14 +3,23 @@ import React, { memo } from 'react';
 import isEqual from 'lodash/isEqual';
 import { Flexbox } from '@arvinxu/layout-kit';
 import cls from 'classnames';
+import copy from 'copy-to-clipboard';
+import shallow from 'zustand/shallow';
 
-import type { ColorMode, ColorObj } from '../../store';
+import type { ColorMode, ColorObj, ColorPickerStore } from '../../store';
 import { colorSpaceSelector, useStore } from '../../store';
 import { isValidHex } from '../../helpers/color';
 import DraggableLabel from '../DraggableLabel';
 import EditableInput from '../EditableInput';
 
 import './index.less';
+
+const selector = (s: ColorPickerStore) => ({
+  updateAlpha: s.updateAlpha,
+  updateByHex: s.updateByHex,
+  updateColorMode: s.updateColorMode,
+  updateByColorSpace: s.updateByColorSpace,
+});
 
 export const SketchFields: FC = memo(() => {
   const mode: ColorMode = useStore((s) => s.colorMode);
@@ -20,8 +29,10 @@ export const SketchFields: FC = memo(() => {
 
   const modeValue = useStore(colorSpaceSelector, isEqual) as ColorObj;
 
-  const { updateAlpha, updateByHex, disableAlpha, updateColorMode, updateByColorSpace } =
-    useStore();
+  const { updateAlpha, updateByHex, updateColorMode, updateByColorSpace } = useStore(
+    selector,
+    shallow,
+  );
 
   const prefixCls = 'avx-color-fields';
 
@@ -30,20 +41,20 @@ export const SketchFields: FC = memo(() => {
       <Flexbox horizontal className={prefixCls} gap={5}>
         <div className={`${prefixCls}-hex`}>
           <EditableInput
-            value={hex?.replace('#', '')}
+            value={hex?.replace('#', '').toUpperCase()}
             onChange={(str) => {
               if (isValidHex(str)) {
                 updateByHex(str);
               }
             }}
-            style={{ width: 56 }}
+            style={{ width: 56, fontFamily: 'monospace' }}
           />
         </div>
         {mode.split('').map((dim) => {
           return (
             <div key={dim}>
               <EditableInput
-                value={Math.round(modeValue?.[dim])}
+                value={Math.round(modeValue?.[dim] || 0)}
                 onChange={(value) => {
                   updateByColorSpace(dim, value);
                 }}
@@ -58,8 +69,12 @@ export const SketchFields: FC = memo(() => {
       </Flexbox>
       <Flexbox horizontal className={`${prefixCls}-label-ctn`}>
         <div
+          title={'点击复制'}
           className={cls('avx-color-fields-label', `${prefixCls}-label-hex`)}
-          style={{ cursor: 'default' }}
+          style={{ cursor: 'pointer' }}
+          onClick={() => {
+            copy(hex);
+          }}
         >
           hex
         </div>
@@ -76,6 +91,7 @@ export const SketchFields: FC = memo(() => {
               onChange={(e) => {
                 updateColorMode(e.target.value as ColorMode);
               }}
+              value={mode}
             >
               <option value="rgb">RGB</option>
               <option value="hsl">HSL</option>
@@ -97,7 +113,7 @@ export const SketchFields: FC = memo(() => {
           className={`${prefixCls}-label-alpha`}
           text={'Alpha'}
           value={alpha}
-          style={{ display: disableAlpha ? 'none' : undefined, marginLeft: 4 }}
+          style={{ marginLeft: 4 }}
           onChange={updateAlpha}
         />
       </Flexbox>
