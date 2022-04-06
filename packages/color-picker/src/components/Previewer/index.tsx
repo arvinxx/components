@@ -2,6 +2,7 @@ import type { FC } from 'react';
 import React, { memo } from 'react';
 import reactCSS from 'reactcss';
 import isEqual from 'lodash/isEqual';
+import copy from 'copy-to-clipboard';
 
 import { Checkboard } from '../common';
 
@@ -10,6 +11,7 @@ import type { ColorPickerProps } from '../../types';
 
 export const Previewer: FC<ColorPickerProps> = memo(() => {
   const rgba = useStore((s) => s.colorModel.rgba(), isEqual);
+  const hex = useStore((s) => s.colorModel.hex());
 
   const styles: any = reactCSS({
     default: {
@@ -21,6 +23,7 @@ export const Previewer: FC<ColorPickerProps> = memo(() => {
         marginLeft: '4px',
         borderRadius: 12,
         overflow: 'hidden',
+        cursor: 'pointer',
       },
       activeColor: {
         borderRadius: 12,
@@ -32,7 +35,12 @@ export const Previewer: FC<ColorPickerProps> = memo(() => {
   });
 
   return (
-    <div style={styles.color}>
+    <div
+      style={styles.color}
+      onClick={() => {
+        copy(hex);
+      }}
+    >
       <Checkboard />
       <div style={styles.activeColor} />
     </div>
