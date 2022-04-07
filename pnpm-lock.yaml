@@ -170,6 +170,7 @@ importers:
 
   packages/color-picker:
     specifiers:
+      '@arvinxu/layout-kit': workspace:1.4.0
       '@types/lodash': ^4.14.181
       '@types/reactcss': ^1.2.6
       chroma-js: ^2.1.1
@@ -181,6 +182,7 @@ importers:
       tinycolor2: ^1.4.2
       zustand: ^3.7.1
     dependencies:
+      '@arvinxu/layout-kit': link:../layout-kit
       chroma-js: 2.4.2
       classnames: 2.3.1
       copy-to-clipboard: 3.3.1
