@@ -2,11 +2,14 @@
   "name": "@arvinxu/color-picker",
   "version": "1.0.0",
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "*.less"
+  ],
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/color-picker#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {
@@ -14,8 +17,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "father-build && pnpm run webpack",
-    "webpack": "webpack",
+    "build": "father build",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "pnpm run build",
@@ -23,6 +25,7 @@
     "clean": "rm -rf es lib dist build coverage .umi"
   },
   "dependencies": {
+    "@arvinxu/layout-kit": "^1.4.0",
     "chroma-js": "^2.1.1",
     "classnames": "^2.3.1",
     "copy-to-clipboard": "^3.3.1",

@@ -2,7 +2,7 @@
 
 [![Coverage][coverage]][codecov-url] [![Gitmoji][gitmoji]][gitmoji-url] [![semantic-release][semantic-release]][semantic-release-repo] ![][license-url]
 
-[![ docs by dumi][dumi-url]](https://d.umijs.org/) [![Build With father][father-url]](https://github.com/umijs/father/) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)][lerna-url] [![typedoc](https://img.shields.io/badge/API%20by-typedoc-9600ff.svg)](https://typedoc.org/)
+[![ docs by dumi][dumi-url]](https://d.umijs.org/) [![Build With father][father-url]](https://github.com/umijs/father/) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)][lerna-url]
 
 🌈 九层之台 起于累土
 
