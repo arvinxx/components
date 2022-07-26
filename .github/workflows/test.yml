@@ -13,7 +13,7 @@ jobs:
           version: 6
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v3.4.1
         with:
           node-version: '14'
           cache: 'pnpm'
