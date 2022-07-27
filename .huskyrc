@@ -1,6 +1,0 @@
-{
-  "hooks": {
-    "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-    "pre-commit": "lint-staged && lerna run --concurrency 1 --stream lint-staged --since HEAD --exclude-dependents"
-  }
-}

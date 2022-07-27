@@ -3,7 +3,7 @@
 exports[`SortableList 有数据 1`] = `
 <div>
   <div
-    class="sc-bdvvtL jXutGz avx-sortable-list layoutkit-flexbox"
+    class="sc-bdvvtL erVQef avx-sortable-list layoutkit-flexbox"
   >
     <li
       class="avx-sortable-item-container"
@@ -78,7 +78,7 @@ exports[`SortableList 有数据 1`] = `
 exports[`SortableList 默认状态 1`] = `
 <div>
   <div
-    class="sc-bdvvtL jXutGz avx-sortable-list layoutkit-flexbox"
+    class="sc-bdvvtL erVQef avx-sortable-list layoutkit-flexbox"
   />
 </div>
 `;

@@ -39,6 +39,16 @@
 
 [组件库](https://components.arvinx.com/components)
 
+## 安装
+
+### node-canvas 报错
+
+执行
+
+```shell
+brew install pkg-config cairo pango libpng jpeg giflib librsvg
+```
+
 ## License
 
 [MIT](./LICENSE) ® Arvin Xu
