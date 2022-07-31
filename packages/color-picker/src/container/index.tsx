@@ -3,12 +3,12 @@ import type { FC } from 'react';
 import type { ColorPickerProps } from '../types';
 
 import Sketch from './Sketch';
-import Wrapper from './Provider';
+import { createStore, Provider } from '../store';
 
 const SketchPicker: FC<ColorPickerProps> = (props) => (
-  <Wrapper>
+  <Provider createStore={createStore}>
     <Sketch {...props} />
-  </Wrapper>
+  </Provider>
 );
 
 export default SketchPicker;

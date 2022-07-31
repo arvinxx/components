@@ -1,9 +1,9 @@
 import type { FC } from 'react';
-import { createStore, Provider } from '../store';
 import React from 'react';
+import { createStore, Provider } from '../store';
 
-const Wrapper: FC = ({ children }) => {
+const StoreUpdater: FC = ({ children }) => {
   return <Provider createStore={createStore}>{children}</Provider>;
 };
 
-export default Wrapper;
+export default StoreUpdater;

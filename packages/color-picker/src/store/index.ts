@@ -1,43 +1,10 @@
 import create from 'zustand';
 import createContext from 'zustand/context';
 import { devtools } from 'zustand/middleware';
-
-import type { Color } from 'chroma-js';
 import chroma from 'chroma-js';
 
-import type { HSLColor, HSVColor, RGBColor } from './types';
-
-export type ColorMode = 'rgb' | 'hsl' | 'hsv';
-
-type OnColorChange = ({ hex, color }: { hex: string; color: Color }) => void;
-interface ColorPickerState {
-  // 外部预设值
-  presetColors: string[];
-  // 回调方法
-  onSwatchHover?: OnColorChange;
-  onChange?: OnColorChange;
-
-  colorModel: Color;
-  colorMode: ColorMode;
-
-  hue: number;
-  saturation: number;
-  brightness: number;
-}
-
-interface ColorPickerAction {
-  internalUpdateColor: (color: Color) => void;
-  updateAlpha: (a: number) => void;
-  updateHue: (hue: number) => void;
-  updateColorMode: (mode: ColorMode) => void;
-  updateByColorSpace: (key: string, value: number) => void;
-  updateByHex: (hex: string) => void;
-  updateBySV: (saturation: number, value: number) => void;
-  updateByRgb: (rgb: RGBColor) => void;
-  getColorModelByHSV: (h?: number, s?: number, v?: number) => Color;
-}
-
-export type ColorPickerStore = ColorPickerState & ColorPickerAction;
+import type { ColorPickerState, ColorPickerStore, SpaceColor } from '../types';
+import initialState from './initialState';
 
 const maxValueMap = {
   h: 359,
@@ -48,34 +15,6 @@ const maxValueMap = {
   r: 255,
   g: 255,
   b: 255,
-};
-
-const initialState: ColorPickerState = {
-  colorMode: 'hsv',
-  presetColors: [
-    '#D0021B',
-    '#F5A623',
-    '#F8E71C',
-    '#8B572A',
-    '#7ED321',
-    '#417505',
-    '#BD10E0',
-    '#9013FE',
-    '#4A90E2',
-    '#50E3C2',
-    '#B8E986',
-    '#000000',
-    '#4A4A4A',
-    '#9B9B9B',
-    '#FFFFFF',
-  ],
-  colorModel: chroma('#22194D'),
-  // 由于在 chroma 中，saturation 为 0 时，hue 会自动改成 NaN
-  // 这会破坏基础的预期
-  // 取色器中
-  hue: 250,
-  brightness: 30,
-  saturation: 68,
 };
 
 const createStore = () => {
@@ -215,8 +154,6 @@ const { Provider, useStore } = createContext<ColorPickerStore>();
 export { Provider, useStore, createStore };
 
 // ============ Selector =========== //
-
-export type SpaceColor = RGBColor | HSLColor | HSVColor;
 
 export const colorSpaceSelector = (s: ColorPickerState): SpaceColor => {
   const [r, g, b] = s.colorModel.rgba();

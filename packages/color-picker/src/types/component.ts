@@ -1,42 +1,10 @@
+import type { Color, ColorChangeHandler, ColorResult } from './store';
 import type { CSSProperties } from 'react';
-import type React from 'react';
-
-export interface HSLColor {
-  h: number;
-  l: number;
-  s: number;
-}
-
-export interface HSVColor {
-  h: number;
-  s: number;
-  v: number;
-}
-
-export interface RGBColor {
-  b: number;
-  g: number;
-  r: number;
-}
 
 interface Classes<T> {
   default: Partial<T>;
   [scope: string]: Partial<T>;
 }
-
-export type Color = string | HSLColor | RGBColor;
-
-export interface ColorResult {
-  hex: string;
-  hsl: HSLColor;
-  rgb: RGBColor;
-  source?: string;
-}
-
-export type ColorChangeHandler = (
-  color: ColorResult,
-  event: React.ChangeEvent<HTMLInputElement>,
-) => void;
 
 export interface SketchPickerStylesProps {
   picker: CSSProperties;
