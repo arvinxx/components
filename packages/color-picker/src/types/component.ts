@@ -1,4 +1,4 @@
-import type { Color, ColorChangeHandler, ColorResult } from './store';
+import type { Color, ColorChangeHandler, ColorResult, StoreUpdaterState } from './store';
 import type { CSSProperties } from 'react';
 
 interface Classes<T> {
@@ -22,16 +22,20 @@ export interface SketchPickerStylesProps {
 
 export type PresetColor = { color: string; title: string } | string;
 
+export interface StoreUpdaterProps extends StoreUpdaterState {
+  color?: Color | undefined;
+}
+
 export interface ColorPickerProps {
   color?: Color | undefined;
   className?: string | undefined;
 
   onChange?: ColorChangeHandler;
   onChangeComplete?: ColorChangeHandler | undefined;
+  onSwatchHover?: (color: ColorResult, event: MouseEvent) => void;
 
   disableAlpha?: boolean | undefined;
   presetColors?: PresetColor[] | undefined;
   width?: string | undefined;
   styles?: Partial<Classes<SketchPickerStylesProps>> | undefined;
-  onSwatchHover?: (color: ColorResult, event: MouseEvent) => void;
 }

@@ -23,3 +23,9 @@ nav:
 ## 基本用法
 
 <code src="../demos/Basic" />
+
+## 受控模式
+
+<code src="../demos/Controlled" />
+
+<API src="./index.ts" />

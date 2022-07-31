@@ -149,9 +149,9 @@ const createStore = () => {
 
   return store;
 };
-const { Provider, useStore } = createContext<ColorPickerStore>();
+const { Provider, useStore, useStoreApi } = createContext<ColorPickerStore>();
 
-export { Provider, useStore, createStore };
+export { Provider, useStore, useStoreApi, createStore };
 
 // ============ Selector =========== //
 

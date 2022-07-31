@@ -6,13 +6,13 @@ import { mount } from 'enzyme';
 import * as color from './helpers/color';
 // import canvas from 'canvas'
 
-import Sketch from './container/Sketch';
+import App from './container/App';
 import SketchFields from './components/SketchFields/SketchFields';
 import SketchPresetColors from './components/SketchPresetColors';
 import { Swatch } from './components/common';
 
 test('Sketch renders correctly', () => {
-  const tree = renderer.create(<Sketch {...color.red} />).toJSON();
+  const tree = renderer.create(<App {...color.red} />).toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -27,7 +27,7 @@ test('Sketch onChange events correctly', () => {
   const changeSpy = jest.fn((data) => {
     expect(color.simpleCheckForValidColor(data)).toBeTruthy();
   });
-  const tree = mount(<Sketch onChange={changeSpy} />);
+  const tree = mount(<App onChange={changeSpy} />);
   expect(changeSpy).toHaveBeenCalledTimes(0);
   const swatches = tree.find(Swatch);
   swatches.at(0).childAt(0).simulate('click');
@@ -39,7 +39,7 @@ test('Sketch with onSwatchHover events correctly', () => {
   const hoverSpy = jest.fn((data) => {
     expect(color.simpleCheckForValidColor(data)).toBeTruthy();
   });
-  const tree = mount(<Sketch onSwatchHover={hoverSpy} />);
+  const tree = mount(<App onSwatchHover={hoverSpy} />);
   expect(hoverSpy).toHaveBeenCalledTimes(0);
   const swatches = tree.find(Swatch);
   swatches.at(0).childAt(0).simulate('mouseOver');
@@ -49,7 +49,7 @@ test('Sketch with onSwatchHover events correctly', () => {
 
 test('Sketch renders custom styles correctly', () => {
   const tree = renderer
-    .create(<Sketch styles={{ default: { picker: { boxShadow: 'none' } } }} />)
+    .create(<App styles={{ default: { picker: { boxShadow: 'none' } } }} />)
     .toJSON();
   expect(tree.props.style.boxShadow).toBe('none');
 });

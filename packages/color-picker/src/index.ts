@@ -1,7 +1,5 @@
-import SketchPicker from './container';
+import ColorPicker from './container';
 
 export type { ColorPickerProps } from './types';
 
-export { SketchPicker };
-
-export default SketchPicker;
+export default ColorPicker;

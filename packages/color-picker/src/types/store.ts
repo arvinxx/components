@@ -14,15 +14,15 @@ export interface ColorResult {
 }
 export type ColorChangeHandler = (color: ColorResult, event: ChangeEvent<HTMLInputElement>) => void;
 
-type OnColorChange = ({ hex, color }: { hex: string; color: ColorModel }) => void;
-
-export interface ColorPickerState {
+export interface StoreUpdaterState {
   // 外部预设值
   presetColors: string[];
-  // 回调方法
-  onSwatchHover?: OnColorChange;
-  onChange?: OnColorChange;
+  onChange?: ColorChangeHandler;
+  onChangeComplete?: ColorChangeHandler | undefined;
+  onSwatchHover?: (color: ColorResult, event: MouseEvent) => void;
+}
 
+export interface ColorPickerState extends StoreUpdaterState {
   colorModel: ColorModel;
   colorMode: ColorMode;
 

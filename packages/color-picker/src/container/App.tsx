@@ -12,7 +12,7 @@ import SketchPresetColors from '../components/SketchPresetColors';
 
 import type { ColorPickerProps } from '../types';
 
-export const Sketch: FC<ColorPickerProps> = memo(({ className }) => {
+export const App: FC<ColorPickerProps> = memo(({ className }) => {
   const styles: any = reactCSS({
     default: {
       picker: {
@@ -76,4 +76,4 @@ export const Sketch: FC<ColorPickerProps> = memo(({ className }) => {
   );
 });
 
-export default Sketch;
+export default App;
