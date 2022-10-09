@@ -26,7 +26,6 @@ jobs:
       - name: 🗳 安装依赖
         run: pnpm install
 
-
       - name: 📦 构建 npm 包
         run: pnpm run build
 
@@ -34,4 +33,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm run release
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc && pnpm run release
