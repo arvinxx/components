@@ -7,6 +7,7 @@ exports[`SortableList 有数据 1`] = `
   >
     <li
       class="avx-sortable-item-container"
+      style="--index: 0;"
     >
       <div
         aria-describedby="DndDescribedBy-1"
@@ -23,6 +24,7 @@ exports[`SortableList 有数据 1`] = `
         >
           <button
             class="avx-sortable-action-remove"
+            style="--fill: rgba(255, 70, 70, 0.95); --background: rgba(255, 70, 70, 0.1);"
             tabindex="0"
           >
             <svg
@@ -40,6 +42,7 @@ exports[`SortableList 有数据 1`] = `
     </li>
     <li
       class="avx-sortable-item-container"
+      style="--index: 1;"
     >
       <div
         aria-describedby="DndDescribedBy-1"
@@ -56,6 +59,7 @@ exports[`SortableList 有数据 1`] = `
         >
           <button
             class="avx-sortable-action-remove"
+            style="--fill: rgba(255, 70, 70, 0.95); --background: rgba(255, 70, 70, 0.1);"
             tabindex="0"
           >
             <svg
