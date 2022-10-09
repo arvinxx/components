@@ -54,7 +54,7 @@ exports[`AssetGallery 加载数据 1`] = `
           class="ant-space-item"
         >
           <div
-            class="ant-slider"
+            class="ant-slider ant-slider-horizontal"
             style="width: 100px;"
           >
             <div
@@ -76,9 +76,6 @@ exports[`AssetGallery 加载数据 1`] = `
               role="slider"
               style="left: 0%; transform: translateX(-50%);"
               tabindex="0"
-            />
-            <div
-              class="ant-slider-mark"
             />
           </div>
         </div>
@@ -384,7 +381,7 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
           class="ant-space-item"
         >
           <div
-            class="ant-slider"
+            class="ant-slider ant-slider-horizontal"
             style="width: 100px;"
           >
             <div
@@ -406,9 +403,6 @@ exports[`AssetGallery 图片源为 PNG 1`] = `
               role="slider"
               style="left: 0%; transform: translateX(-50%);"
               tabindex="0"
-            />
-            <div
-              class="ant-slider-mark"
             />
           </div>
         </div>
@@ -685,7 +679,7 @@ exports[`AssetGallery 默认状态 1`] = `
           class="ant-space-item"
         >
           <div
-            class="ant-slider"
+            class="ant-slider ant-slider-horizontal"
             style="width: 100px;"
           >
             <div
@@ -707,9 +701,6 @@ exports[`AssetGallery 默认状态 1`] = `
               role="slider"
               style="left: 0%; transform: translateX(-50%);"
               tabindex="0"
-            />
-            <div
-              class="ant-slider-mark"
             />
           </div>
         </div>
