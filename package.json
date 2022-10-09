@@ -112,7 +112,7 @@
     "less-loader": "^6.2.0",
     "lint-staged": "^11.2.6",
     "mini-css-extract-plugin": "^1.6.2",
-    "multi-semantic-release": "^2.13.0",
+    "multi-semantic-release": "^3.0.1",
     "onchange": "^7.1.0",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "prettier": "^2.7.1",
