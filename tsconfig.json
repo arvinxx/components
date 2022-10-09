@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
-    "noEmit": true,
-
+    /* 生成能力 */
+    "declaration": true,
     /* 模块导入配置项 */
     "moduleResolution": "Node",
     "esModuleInterop": true,
 
-    "jsx": "react",
+    "jsx": "react-jsx",
     /* 模块依赖 */
     // 这些选项对 babel 编译 TypeScript 没有作用
     // 但是可以让编辑器正确提示错误
     "target": "es5",
-    "module": "CommonJS",
+    "module": "ESNext",
     "sourceMap": true,
     "lib": ["DOM", "ES2020"],
     //
@@ -23,9 +23,7 @@
       "@arvinxu/preloader": ["./packages/preloader/src"],
       "@arvinxu/preloader/*": ["./packages/preloader/src/*"],
       "@arvinxu/macos-traffic-light": ["./packages/macos-traffic-light/src"],
-      "@arvinxu/macos-traffic-light/*": [
-        "./packages/macos-traffic-light/src/*"
-      ],
+      "@arvinxu/macos-traffic-light/*": ["./packages/macos-traffic-light/src/*"],
       "@arvinxu/journey-map": ["./packages/journey-map/src"],
       "@arvinxu/journey-map/*": ["./packages/journey-map/src/*"],
       "@arvinxu/user-panel": ["./packages/user-panel/src"],

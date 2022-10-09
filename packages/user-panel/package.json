@@ -2,15 +2,14 @@
   "name": "@arvinxu/user-panel",
   "version": "1.0.3",
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "sideEffects": [
     "*.less"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "types": "lib/index.d.ts",
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/user-panel#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {
@@ -18,12 +17,12 @@
     "access": "public"
   },
   "scripts": {
-    "build": "father-build",
+    "build": "father build",
     "test": "jest",
     "test:update": "jest -u",
     "cov": "jest --coverage",
     "prepublishOnly": "pnpm run build",
-    "clean": "rm -rf es lib dist build coverage .umi"
+    "clean": "rm -rf dist build coverage .umi"
   },
   "dependencies": {
     "@ant-design/icons": "^4.x",

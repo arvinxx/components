@@ -1,13 +1,11 @@
 import { useRef } from 'react';
-import type { Input } from 'antd';
 import { useSize } from 'ahooks';
+import type { InputRef } from 'antd';
 
 export const useHover = () => {
-  const inputRef = useRef<Input>(null);
+  const inputRef = useRef<InputRef>(null);
   const labelRef = useRef<HTMLLabelElement>(null);
-  const { height: inputHeight } = useSize(
-    inputRef.current && inputRef.current.input,
-  );
+  const { height: inputHeight } = useSize(inputRef.current && inputRef.current.input);
 
   let baseGap = 8;
   const { height: labelHeight } = useSize(labelRef);

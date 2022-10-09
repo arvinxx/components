@@ -2,11 +2,14 @@
   "name": "@arvinxu/heatmap-calendar",
   "version": "1.0.1",
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "*.less"
+  ],
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/heatmap-calendar#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {
@@ -14,13 +17,12 @@
     "access": "public"
   },
   "scripts": {
-    "build": "father-build && yarn webpack",
-    "webpack": "webpack",
+    "build": "father build",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "pnpm run build",
     "cov": "jest --coverage",
-    "clean": "rm -rf es lib dist build coverage .umi"
+    "clean": "rm -rf dist build coverage .umi"
   },
   "dependencies": {
     "@ant-design/charts": "^1.1.3"
