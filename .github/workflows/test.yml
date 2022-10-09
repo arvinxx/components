@@ -21,7 +21,7 @@ jobs:
         run: pnpm install
 
       - name: test
-        run: pnpm run cov
+        run: pnpm run test:cov
 
       - name: Generate coverage
         run: bash <(curl -s https://codecov.io/bash)

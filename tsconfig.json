@@ -6,7 +6,7 @@
     "moduleResolution": "Node",
     "esModuleInterop": true,
 
-    "jsx": "react",
+    "jsx": "react-jsx",
     /* 模块依赖 */
     // 这些选项对 babel 编译 TypeScript 没有作用
     // 但是可以让编辑器正确提示错误
