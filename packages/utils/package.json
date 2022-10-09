@@ -2,11 +2,11 @@
   "name": "@arvinxu/utils",
   "version": "1.0.0",
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/utils#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {
@@ -19,6 +19,6 @@
     "test:update": "jest -u",
     "prepublishOnly": "pnpm run build",
     "cov": "jest --coverage",
-    "clean": "rm -rf es lib dist build coverage .umi"
+    "clean": "rm -rf dist build coverage .umi"
   }
 }
