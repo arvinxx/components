@@ -2,11 +2,11 @@
   "name": "@arvinxu/layout-kit",
   "version": "1.4.0",
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/layout-kit#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {
@@ -21,8 +21,7 @@
     "@types/styled-components": "^5.1.15"
   },
   "scripts": {
-    "build": "father-build && yarn webpack",
-    "webpack": "webpack",
+    "build": "father build",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "pnpm run build",
