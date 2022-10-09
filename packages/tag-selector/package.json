@@ -2,11 +2,14 @@
   "name": "@arvinxu/tag-selector",
   "version": "1.0.0",
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "*.less"
+  ],
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/tag-selector#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {
@@ -14,18 +17,19 @@
     "access": "public"
   },
   "dependencies": {
-    "antd": "^4.18.5",
     "react-hotkeys": "^2.0.0",
-    "@ant-design/icons": "^4.5.0",
     "use-merge-value": "^1.0.2"
   },
+  "peerDependencies": {
+    "@ant-design/icons": ">=4.5.0",
+    "antd": ">=4"
+  },
   "scripts": {
-    "build": "father-build && yarn webpack",
-    "webpack": "webpack",
+    "build": "father build",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "pnpm run build",
     "cov": "jest --coverage",
-    "clean": "rm -rf es lib dist build coverage .umi"
+    "clean": "rm -rf dist build coverage .umi"
   }
 }

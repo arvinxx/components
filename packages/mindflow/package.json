@@ -10,8 +10,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "father-build && yarn webpack",
-    "webpack": "webpack",
+    "build": "father build",
     "test": "jest",
     "test:debug": "DEBUG_MODE=1 jest",
     "test:update": "jest -u",

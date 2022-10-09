@@ -15,9 +15,7 @@
   "scripts": {
     "start": "pnpm run docs:dev",
     "prebuild": "pnpm run clean",
-    "build": "pnpm run build:lib && pnpm run build:umd",
-    "build:lib": "lerna run build:lib --parallel",
-    "build:umd": "lerna run webpack",
+    "build": "lerna run build  --parallel",
     "c": "ts-node scripts/create-package",
     "---------": "",
     "release": "multi-semantic-release",

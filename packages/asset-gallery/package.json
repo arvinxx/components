@@ -6,6 +6,7 @@
   ],
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/asset-gallery#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {

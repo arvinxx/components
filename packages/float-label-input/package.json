@@ -2,11 +2,14 @@
   "name": "@arvinxu/float-label-input",
   "version": "1.4.0",
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "*.less"
+  ],
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/float-label-input#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {
@@ -24,7 +27,7 @@
     "react-dom": "^17.0.1"
   },
   "scripts": {
-    "build": "father-build && webpack",
+    "build": "father build",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "pnpm run build",

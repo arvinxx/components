@@ -1,12 +1,4 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["src"],
-  "compilerOptions": {
-    "baseUrl": "../..",
-    "declaration": true,
-    "paths": {
-      "@arvinxu/asset-gallery": ["./packages/asset-gallery/src"]
-    },
-    "types": ["../../types", "@types/jest", "./types"]
-  }
+  "include": ["src"]
 }

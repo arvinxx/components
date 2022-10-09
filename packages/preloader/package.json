@@ -2,11 +2,14 @@
   "name": "@arvinxu/preloader",
   "version": "1.0.2",
   "files": [
-    "lib",
-    "es"
+    "dist"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "*.less"
+  ],
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/preloader#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "publishConfig": {
@@ -14,8 +17,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "father-build && yarn webpack",
-    "webpack": "webpack",
+    "build": "father build",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "pnpm run build",
