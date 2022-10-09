@@ -26,8 +26,6 @@ jobs:
       - name: 🗳 安装依赖
         run: pnpm install
 
-      - name: ✅ 测试检查
-        run: pnpm run test:cov
 
       - name: 📦 构建 npm 包
         run: pnpm run build
