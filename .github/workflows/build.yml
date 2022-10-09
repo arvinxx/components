@@ -7,21 +7,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install pnpm
+      - name: ⚙ 设置 pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: latest
 
-      - name: Setup Node.js environment
+      - name: 🏗 准备 Node.js 环境
         uses: actions/setup-node@v3
         with:
           node-version: '16'
 
-      - name: Install deps
+      - name: 🗳 安装依赖
         run: pnpm install
 
-      - name: Build Package
+      - name: 📦 构建 npm 包
         run: pnpm run build
 
-      - name: Build Website
+      - name: 🌐 构建网站
         run: pnpm run docs:build
