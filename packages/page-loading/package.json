@@ -28,12 +28,11 @@
     "@types/insert-css": "^2.0.0"
   },
   "scripts": {
-    "build": "father-build && yarn webpack",
-    "webpack": "webpack",
+    "build": "father build",
     "test": "jest",
     "test:update": "jest -u",
     "prepublishOnly": "pnpm run build",
     "cov": "jest --coverage",
-    "clean": "rm -rf es lib dist build coverage .umi"
+    "clean": "rm -rf dist coverage .umi"
   }
 }

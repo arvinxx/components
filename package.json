@@ -14,8 +14,8 @@
   "license": "MIT",
   "scripts": {
     "start": "pnpm run docs:dev",
-    "prebuild": "pnpm run clean",
     "build": "lerna run build  --parallel",
+    "prebuild": "pnpm run clean",
     "c": "ts-node scripts/create-package",
     "---------": "",
     "release": "multi-semantic-release",
@@ -43,7 +43,7 @@
     "lint-staged:ts": "eslint --cache --ext .ts,.tsx --format=pretty",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ",
     "---------    ": "",
-    "clean": "lerna run clean && rm -rf es lib dist build coverage .umi .eslintcache apis",
+    "clean": "lerna run clean  --parallel && rm -rf es lib dist build coverage .umi .eslintcache apis",
     "reinstall": "pnpm run clean && lerna clean &&  rm -rf node_modules",
     "prepublishOnly": "pnpm run build",
     "prettier": "prettier -c --write \"**/**\"",
