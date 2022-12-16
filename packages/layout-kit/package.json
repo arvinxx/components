@@ -1,6 +1,7 @@
 {
   "name": "@arvinxu/layout-kit",
   "version": "1.4.0",
+  "license": "MIT",
   "files": [
     "dist"
   ],
