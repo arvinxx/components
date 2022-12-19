@@ -30,9 +30,7 @@ jobs:
         run: pnpm run build
 
       - name: 🚀 npm 包发布
+        run: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
-          pnpm run release
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
