@@ -1,9 +1,9 @@
 ---
 title: 说明
-order: 1
+order: 0
 nav:
   title: 高阶组件
-  order: 2
+  order: 3
 ---
 
 ## 高阶组件

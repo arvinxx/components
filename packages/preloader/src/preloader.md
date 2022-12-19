@@ -1,10 +1,7 @@
 ---
 title: Preloader
-order: 2
-group:
-  path: /
-nav:
-  path: /components
+order: 1
+group: 信息展示
 ---
 
 # Preloader
@@ -22,4 +19,4 @@ nav:
 
 ### Square
 
-<code src="./demos/Square" />
+<code src="./demos/Square" ></code>

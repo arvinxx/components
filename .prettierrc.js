@@ -1,6 +1,3 @@
-const fabric = require('@umijs/fabric');
+const config = require('@umijs/max/prettier');
 
-module.exports = {
-  ...fabric.prettier,
-  plugins: ['prettier-plugin-style-order'],
-};
+module.exports =config
