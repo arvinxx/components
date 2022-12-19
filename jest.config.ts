@@ -1,8 +1,9 @@
-const baseConfig = require('./jest.config.base');
+import baseConfig from './jest.config.base';
+import { Config } from '@umijs/test';
 
-module.exports = {
+const config: Config.InitialOptions = {
   ...baseConfig,
-  projects: ['<rootDir>/packages/*/jest.config.js'],
+  projects: ['<rootDir>/packages/*/jest.config.ts'],
   moduleDirectories: ['node_modules'],
   collectCoverageFrom: [
     '<rootDir>/packages/*/src/**/*.ts',
@@ -10,3 +11,5 @@ module.exports = {
   ],
   coverageDirectory: '<rootDir>/coverage/',
 };
+
+export default config;
