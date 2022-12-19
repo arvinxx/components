@@ -1,5 +1,5 @@
 import { defineConfig } from 'dumi';
-import { menus } from './config/menu';
+import path from 'path';
 
 const basicComponents = [
   'preloader',
@@ -8,10 +8,7 @@ const basicComponents = [
   'page-loading',
   'sortable-list',
   'color-picker',
-].map((c) => ({
-  type: 'component',
-  dir: `packages/${c}/src`,
-}));
+];
 
 const bizComponents = [
   'asset-gallery',
@@ -19,10 +16,14 @@ const bizComponents = [
   'heatmap-calendar',
   'mindflow',
   'user-panel',
-].map((c) => ({
-  type: 'biz-component',
-  dir: `packages/${c}/src`,
-}));
+];
+
+const alias = Object.fromEntries(
+  [...basicComponents, ...bizComponents].map((name) => [
+    `@arvinxu/${name}`,
+    path.join(__dirname, `./packages/${name}/src`),
+  ]),
+);
 
 export default defineConfig({
   themeConfig: {
@@ -34,6 +35,22 @@ export default defineConfig({
     '@c-primary': '#6CB7C7',
   },
   resolve: {
-    atomDirs: [...basicComponents, ...bizComponents],
+    atomDirs: [
+      ...basicComponents.map((c) => ({
+        type: 'component',
+        dir: `packages/${c}/src`,
+      })),
+      ...bizComponents.map((c) => ({
+        type: 'biz-component',
+        dir: `packages/${c}/src`,
+      })),
+    ],
+  },
+
+  alias,
+
+  monorepoRedirect: {},
+  chainWebpack: (memo) => {
+    console.log(memo.resolve.alias);
   },
 });

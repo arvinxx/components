@@ -15,7 +15,14 @@
         "sections": {
           "description": "待显示的区块\n默认为: ['stage', 'action', 'emotion','thought']",
           "items": {
-            "enum": ["action", "chance", "emotion", "painPoint", "stage", "thought"],
+            "enum": [
+              "action",
+              "chance",
+              "emotion",
+              "painPoint",
+              "stage",
+              "thought"
+            ],
             "type": "string"
           },
           "type": "array"
