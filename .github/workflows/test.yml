@@ -23,5 +23,5 @@ jobs:
       - name: ✅ 测试检查
         run: pnpm run test:cov
 
-      - name: Generate coverage
-        run: bash <(curl -s https://codecov.io/bash)
+      - name: ⬆️上传至 Codecov
+        uses: codecov/codecov-action@v3

@@ -1,22 +1,26 @@
-const { default: umiConfig } = require('@umijs/test/lib/createDefaultConfig/createDefaultConfig');
+import { createConfig, Config } from '@umijs/test';
+import path from 'path';
 
-const defaultConfig = umiConfig(process.cwd(), {});
+const config: Config.InitialOptions = createConfig({
+  jsTransformer: 'esbuild',
+  target: 'browser',
+});
 
-const path = require('path');
-
-module.exports = {
-  ...defaultConfig,
+export default {
+  ...config,
   setupFiles: [
-    ...defaultConfig.setupFiles,
+    ...config.setupFiles,
     // 为了解决 @antv/g2 等 npm 包使用 worker 造成的 Worker is not defined 报错
     // 添加  jsdom-worker 作为 jsdom 环境下 worker 的 polyfill ref: https://www.npmjs.com/package/jsdom-worker
     'jsdom-worker',
     './tests/setup.ts',
   ],
   moduleNameMapper: {
+    ...config.moduleNameMapper,
     '@arvinxu/asset-gallery': '<rootDir>/packages/asset-gallery/src',
     '@arvinxu/preloader': '<rootDir>/packages/preloader/src',
-    '@arvinxu/macos-traffic-light': '<rootDir>/packages/macos-traffic-light/src',
+    '@arvinxu/macos-traffic-light':
+      '<rootDir>/packages/macos-traffic-light/src',
     '@arvinxu/journey-map': '<rootDir>/packages/journey-map/src',
     '@arvinxu/user-panel': '<rootDir>/packages/user-panel/src',
     '@arvinxu/heatmap-calendar': '<rootDir>/packages/heatmap-calendar/src',

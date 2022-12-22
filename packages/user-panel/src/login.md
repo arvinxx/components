@@ -1,9 +1,6 @@
 ---
 title: UserPanel.Login 登录面板
-group:
-  path: /
-nav:
-  path: /biz-components
+group: 登录/注册面板
 ---
 
 # UserPanel.Login 登录面板

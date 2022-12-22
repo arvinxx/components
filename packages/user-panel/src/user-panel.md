@@ -1,9 +1,6 @@
 ---
 title: UserPanel 用户面板
-group:
-  path: /
-nav:
-  path: /biz-components
+group: 登录/注册面板
 ---
 
 # UserPanel 用户面板

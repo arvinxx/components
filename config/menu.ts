@@ -2,7 +2,6 @@ export const menus = {
   '/components': [
     {
       title: '说明',
-
       children: ['components.md'],
     },
     {

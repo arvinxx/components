@@ -1,10 +1,7 @@
 ---
 title: PageLoading
-order: 1
-group:
-  path: /
-nav:
-  path: /components
+order: 2
+group: 信息展示
 ---
 
 # PageLoading

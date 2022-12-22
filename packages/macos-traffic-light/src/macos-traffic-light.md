@@ -1,9 +1,6 @@
 ---
 title: macOS TrafficLight
-group:
-  path: /
-nav:
-  path: /components
+order: 3
 ---
 
 ## Traffic Light
