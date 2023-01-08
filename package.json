@@ -66,7 +66,7 @@
     "@types/react": "^17.0.52",
     "@types/react-dom": "^17.0.18",
     "@types/uuid": "^8.3.4",
-    "@umijs/max": "^4",
+    "@umijs/lint": "^4",
     "@umijs/test": "^4.0.38",
     "ahooks": "^3.7.2",
     "antd": "^4.24.5",

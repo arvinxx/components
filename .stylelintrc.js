@@ -1,1 +1,1 @@
-module.exports = require.resolve('@umijs/fabric/dist/stylelint');
+module.exports = require('@umijs/lint/dist/config/stylelint');
