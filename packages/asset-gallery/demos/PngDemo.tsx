@@ -1,16 +1,17 @@
 /**
  * compact: true
  */
-import React from 'react';
 import AssetGallery from '@arvinxu/asset-gallery';
 
+import { useTheme } from 'antd-style';
 import { yml } from './png';
 
 const PngDemo = () => {
+  const token = useTheme();
   return (
     <div
       style={{
-        background: '#fafafa',
+        background: token.colorBgLayout,
         padding: 24,
       }}
     >

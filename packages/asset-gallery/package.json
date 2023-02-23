@@ -1,33 +1,33 @@
 {
   "name": "@arvinxu/asset-gallery",
   "version": "1.3.4",
-  "files": [
-    "dist"
-  ],
+  "homepage": "https://github.com/arvinxx/components/tree/master/packages/asset-gallery#readme",
+  "repository": "git+https://github.com/arvinxx/components.git",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "homepage": "https://github.com/arvinxx/components/tree/master/packages/asset-gallery#readme",
-  "repository": "git+https://github.com/arvinxx/components.git",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public"
-  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "father build",
     "prebuild": "pnpm run clean",
-    "test": "jest",
-    "test:update": "jest -u",
+    "build": "father build",
+    "clean": "rm -rf dist build coverage .umi",
     "cov": "jest --coverage",
     "prepublishOnly": "pnpm run build",
-    "clean": "rm -rf dist build coverage .umi"
+    "test": "jest",
+    "test:update": "jest -u"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.6.2",
-    "antd": "^4.18.5",
-    "copy-to-clipboard": "^3.3.1",
-    "classnames": "^2.3.1",
-    "js-yaml": "^4.1.0",
+    "@ant-design/icons": "^5",
+    "antd": "^5",
+    "classnames": "^2",
+    "copy-to-clipboard": "^3",
+    "js-yaml": "^4",
     "use-merge-value": "^1.0.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

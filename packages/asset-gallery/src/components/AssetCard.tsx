@@ -1,21 +1,12 @@
-import type { FC } from 'react';
-import React from 'react';
-import { Button, Card, Dropdown, Menu } from 'antd';
 import { EllipsisOutlined } from '@ant-design/icons';
-import {
-  copySVG,
-  copyPngFromSvg,
-  downloadSVG,
-  downloadPng,
-  checkSvg,
-  copyPng,
-} from '../utils';
-
-import './AssetCard.less';
-
-import ActionButton from './ActionButton';
+import { Button, Card, Dropdown, Menu } from 'antd';
+import type { FC } from 'react';
 import type { Asset } from '../types';
+
+import { checkSvg, copyPng, copyPngFromSvg, copySVG, downloadPng, downloadSVG } from '../utils';
 import { copySketch } from '../utils/sketch';
+import ActionButton from './ActionButton';
+import { useStyles } from './AssetCard.style';
 
 const AssetCard: FC<Asset> = ({
   padding = 12,
@@ -26,6 +17,7 @@ const AssetCard: FC<Asset> = ({
   description,
   sketch,
 }) => {
+  const { styles, cx } = useStyles();
   const isSketch = !!sketch;
   const isSvg = !isSketch && checkSvg(url);
 
@@ -105,21 +97,21 @@ const AssetCard: FC<Asset> = ({
   const noBody = !(title || description);
 
   return (
-    <div className="avx-asset-card-wrapper">
+    <div className={styles.wrapper}>
       <Card
-        className="avx-asset-card-item"
+        className={styles.item}
         cover={
           <div
-            className="avx-asset-card-image-ctn"
+            className={cx(styles.imgCtn)}
             style={{
               background: dark ? backgroundColor : undefined,
             }}
           >
-            <div className="avx-asset-card-image-type">
+            <div className={styles.imgType}>
               <img src={typeImage()} alt="sketch" width={18} height={18} />
             </div>
             <img
-              className="avx-asset-card-image"
+              className={styles.image}
               style={{ padding }}
               src={url}
               alt={title}
@@ -134,6 +126,7 @@ const AssetCard: FC<Asset> = ({
         actions={[
           ...actionList.map((action) => (
             <ActionButton
+              key={action.content}
               onClick={action.onClick}
               content={action.content}
               tooltip={action.tooltip}
@@ -165,7 +158,7 @@ const AssetCard: FC<Asset> = ({
                 </Menu>
               }
             >
-              <Button type={'link'} className="avx-asset-card-link">
+              <Button type={'link'} className={styles.link}>
                 <EllipsisOutlined key="ellipsis" />
               </Button>
             </Dropdown>

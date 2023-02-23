@@ -1,20 +1,12 @@
 import type { FC } from 'react';
-import React from 'react';
-import cls from 'classnames';
-
-import Header from './Header';
 
 import type { AssetGalleryProps } from '../types';
+import Header from './Header';
+import { useStyles } from './Layout.style';
 
 type LayoutProps = Pick<
   AssetGalleryProps,
-  | 'layout'
-  | 'showSlider'
-  | 'columns'
-  | 'logo'
-  | 'onColumnsChange'
-  | 'onLayoutChange'
-  | 'style'
+  'layout' | 'showSlider' | 'columns' | 'logo' | 'onColumnsChange' | 'onLayoutChange' | 'style'
 >;
 
 const Layout: FC<LayoutProps> = ({
@@ -27,6 +19,7 @@ const Layout: FC<LayoutProps> = ({
   showSlider,
   style,
 }) => {
+  const { styles, cx } = useStyles();
   return (
     <div style={style}>
       <Header
@@ -39,14 +32,14 @@ const Layout: FC<LayoutProps> = ({
       />
       {
         <div
-          className={cls(
-            'avx-asset-gallery-container',
-            `avx-asset-gallery-${layout}`,
+          className={cx(
+            styles.container,
+            layout === 'masonry' && styles.masonry,
+            layout === 'grid' && styles.grid,
           )}
           style={{
             columnCount: layout === 'masonry' ? columns : undefined,
-            gridTemplateColumns:
-              layout === 'grid' ? `repeat(${columns}, 1fr)` : undefined,
+            gridTemplateColumns: layout === 'grid' ? `repeat(${columns}, 1fr)` : undefined,
           }}
         >
           {children}

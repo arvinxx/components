@@ -1,23 +1,22 @@
 /**
  * compact: true
  */
-import React from 'react';
 import AssetGallery from '@arvinxu/asset-gallery';
 
+import { useTheme } from 'antd-style';
 import { sketch } from './sketch';
 
 const SketchDemo = () => {
+  const token = useTheme();
   return (
     <div
       style={{
-        background: '#fafafa',
+        background: token.colorBgLayout,
         padding: 24,
       }}
     >
       <AssetGallery
-        logo={
-          'https://gw.alipayobjects.com/zos/antfincdn/mj85r7V5aX/konggu.svg'
-        }
+        logo={'https://gw.alipayobjects.com/zos/antfincdn/mj85r7V5aX/konggu.svg'}
         data={sketch}
         darkBackground={'black'}
         layout={'grid'}

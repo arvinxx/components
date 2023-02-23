@@ -1,14 +1,11 @@
 import type { FC } from 'react';
-import React from 'react';
 import useMergeValue from 'use-merge-value';
 
-import Layout from './components/Layout';
 import AssetCard from './components/AssetCard';
+import Layout from './components/Layout';
 
-import { YMLToJSON } from './utils/yml';
 import type { AssetGalleryProps } from './types';
-
-import './AssetGallery.less';
+import { YMLToJSON } from './utils/yml';
 
 const AssetGallery: FC<AssetGalleryProps> = ({
   data,
@@ -50,8 +47,7 @@ const AssetGallery: FC<AssetGalleryProps> = ({
       {imageList.map((item, index) => {
         const { description, padding, url, title, dark, sketch } = item;
 
-        const backgroundColor =
-          item.darkBackground || darkBackground || '#1890ff';
+        const backgroundColor = item.darkBackground || darkBackground || '#1890ff';
 
         return (
           <AssetCard
