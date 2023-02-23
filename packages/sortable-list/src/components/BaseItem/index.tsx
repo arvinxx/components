@@ -104,12 +104,7 @@ export const Item = memo(
           ) : (
             <>
               {item.id}
-              <span
-                className={styles.action}
-                onClick={() => {
-                  console.log('123');
-                }}
-              >
+              <span className={styles.action}>
                 {removable ? (
                   <Remove
                     className={`${prefix}-action-remove`}

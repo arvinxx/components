@@ -1,6 +1,7 @@
 ---
 title: SortableList 可排序列表
 order: 2
+atomId: SortableList
 ---
 
 # SortableList 可排序列表

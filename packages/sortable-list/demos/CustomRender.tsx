@@ -1,5 +1,6 @@
 import SortableList from '@arvinxu/sortable-list';
 import { Badge, Button } from 'antd';
+import { useTheme } from 'antd-style';
 import { useState } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
@@ -9,6 +10,8 @@ interface Item {
 }
 
 const Demo = () => {
+  const token = useTheme();
+
   const [list, setList] = useState<Item[]>([
     { id: '1', text: '关关雎鸠' },
     { id: '2', text: '在河之洲' },
@@ -17,7 +20,7 @@ const Demo = () => {
   ]);
 
   return (
-    <Flexbox gap={24}>
+    <Flexbox gap={24} padding={24} style={{ background: token.colorBgLayout }}>
       <Flexbox horizontal gap={8}>
         <Button
           onClick={() => {
@@ -69,7 +72,7 @@ const Demo = () => {
               >
                 <Button
                   size={'small'}
-                  type={'link'}
+                  type={'text'}
                   onClick={() => {
                     onAddItem(index, {
                       id: Math.ceil(Math.random() * 100000).toString(16),
@@ -81,7 +84,7 @@ const Demo = () => {
                 </Button>
                 <Button
                   size={'small'}
-                  type={'link'}
+                  type={'text'}
                   onClick={() => {
                     onAddItem(index + 1, {
                       id: Math.ceil(Math.random() * 1000).toString(16),

@@ -1,11 +1,11 @@
-import create from 'zustand';
-import createContext from 'zustand/context';
+import { create, StoreApi } from 'zustand';
+import { createContext } from 'zustand-utils';
 
 import { arrayMove } from '@dnd-kit/sortable';
-import isEqual from 'lodash.isequal';
 import produce from 'immer';
-import initialState from './initialState';
+import isEqual from 'lodash.isequal';
 import type { SortableListStore } from '../types';
+import initialState from './initialState';
 const createStore = () =>
   create<SortableListStore>((set, get) => ({
     // 内部值
@@ -71,6 +71,6 @@ const createStore = () =>
     },
   }));
 
-const { Provider, useStore, useStoreApi } = createContext<SortableListStore>();
+const { Provider, useStore, useStoreApi } = createContext<StoreApi<SortableListStore>>();
 
 export { Provider, useStore, createStore, useStoreApi };

@@ -1,13 +1,10 @@
 import { useEffect } from 'react';
-import type { StoreUpdaterProps } from '../types';
-import { useStore } from '../store';
-import shallow from 'zustand/shallow';
+import { shallow } from 'zustand/shallow';
 
-export const useStoreUpdater = ({
-  data,
-  defaultData,
-  onDataChange,
-}: StoreUpdaterProps) => {
+import { useStore } from '../store';
+import type { StoreUpdaterProps } from '../types';
+
+export const useStoreUpdater = ({ data, defaultData, onDataChange }: StoreUpdaterProps) => {
   const { syncOnDataChange, syncOutsideData } = useStore(
     (s) => ({
       syncOutsideData: s.syncOutsideData,

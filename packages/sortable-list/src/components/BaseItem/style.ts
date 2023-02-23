@@ -95,6 +95,7 @@ export const useStyles = createStyles(({ token, prefixCls, css, cx }) => {
           }
 
           &-dragOverlay {
+            color: ${token.colorText};
             box-shadow: var(--box-shadow-picked-up);
             transform: scale(var(--scale));
             cursor: inherit;
