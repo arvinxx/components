@@ -1,5 +1,4 @@
 import type { CSSProperties, FC } from 'react';
-import React from 'react';
 import { createPortal } from 'react-dom';
 
 import cls from 'classnames';
@@ -13,17 +12,13 @@ import {
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
+import { SortableContext, sortableKeyboardCoordinates } from '@dnd-kit/sortable';
+import { Flexbox } from 'react-layout-kit';
 
-import {
-  SortableContext,
-  sortableKeyboardCoordinates,
-} from '@dnd-kit/sortable';
-import { Flexbox } from '@arvinxu/layout-kit';
-
-import SortableItem from '../components/SortableItem';
 import DraggingOverlay from '../components/DraggingOverlay';
+import SortableItem from '../components/SortableItem';
 
-import type { SortableProps, SortableListStore } from '../types';
+import type { SortableListStore, SortableProps } from '../types';
 
 import { useStore } from '../store';
 import { getIndexOfActiveItem } from '../store/utils';
@@ -48,11 +43,7 @@ const Wrapper: FC<{
   className?: string;
   gap?: number;
 }> = ({ children, style, className, gap = 8 }) => (
-  <Flexbox
-    className={cls('avx-sortable-list', className)}
-    style={style}
-    gap={gap}
-  >
+  <Flexbox className={cls('avx-sortable-list', className)} style={style} gap={gap}>
     {children}
   </Flexbox>
 );
@@ -98,8 +89,7 @@ export const Sortable: FC<SortableProps> = ({
 
   const items = useStore(dataSelector);
   const { activeIndex, isDragging } = useStore(activeSelector);
-  const { deactivateItem, activateItem, reorder, addItem, removeItem } =
-    useStore(actionSelector);
+  const { deactivateItem, activateItem, reorder, addItem, removeItem } = useStore(actionSelector);
 
   const handleRemove = (id: string) => {
     if (!removable) return;
@@ -134,12 +124,7 @@ export const Sortable: FC<SortableProps> = ({
     >
       {/* 排序 Context 和 SortableItem */}
       <SortableContext items={items} strategy={strategy}>
-        <Container
-          style={style}
-          direction={direction}
-          className={className}
-          gap={gap}
-        >
+        <Container style={style} direction={direction} className={className} gap={gap}>
           {items.map((value, index) => (
             <SortableItem
               key={value.id}

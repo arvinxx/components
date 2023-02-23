@@ -1,10 +1,6 @@
 ---
 title: SortableList 可排序列表
 order: 2
-group:
-  path: /
-nav:
-  path: /components
 ---
 
 # SortableList 可排序列表
@@ -24,7 +20,7 @@ nav:
 
 ### 默认
 
-<code src="../demos/Basic" />
+<code src="../demos/Basic" ></code>
 
 ### 自定义样式
 
@@ -45,10 +41,10 @@ type GetItemStyles = (status: GetItemStylesArgs) => React.CSSProperties;
 
 基于相应参数，可以自由控制列项的样式
 
-<code src="../demos/CustomStyle" />
+<code src="../demos/CustomStyle" ></code>
 
 ### 自定义渲染
 
 可自定义 itemRender 方法，第二个参数会传入组件相应状态和功能方法
 
-<code src="../demos/CustomRender" />
+<code src="../demos/CustomRender" ></code>

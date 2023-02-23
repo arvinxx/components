@@ -1,16 +1,16 @@
-import type { CSSProperties } from 'react';
-import React, { forwardRef, memo, useEffect } from 'react';
 import classNames from 'classnames';
+import type { CSSProperties } from 'react';
+import { forwardRef, memo, useEffect } from 'react';
 
 import { Handle } from '../Handle';
 import { Remove } from '../Remove';
 
 import type { BaseItemProps } from '../../types';
-
-import './index.less';
+import { useStyles } from './style';
 
 export const Item = memo(
   forwardRef<HTMLLIElement, BaseItemProps>((p, ref) => {
+    const { styles, prefixCls, cx } = useStyles();
     const {
       color,
       dragOverlay,
@@ -18,7 +18,8 @@ export const Item = memo(
       disabled,
       fadeIn,
       handle,
-      height,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      height: _,
       index,
       listeners,
       onRemove,
@@ -34,7 +35,7 @@ export const Item = memo(
       ...props
     } = p;
 
-    const prefix = 'avx-sortable';
+    const prefix = `${prefixCls}-sortable`;
 
     // 添加 overlay 抓手
     useEffect(() => {
@@ -51,9 +52,7 @@ export const Item = memo(
 
     const containerStyle = {
       ...wrapperStyle,
-      transition: [transition, wrapperStyle?.transition]
-        .filter(Boolean)
-        .join(', '),
+      transition: [transition, wrapperStyle?.transition].filter(Boolean).join(', '),
       '--translate-x': transform ? `${Math.round(transform.x)}px` : undefined,
       '--translate-y': transform ? `${Math.round(transform.y)}px` : undefined,
       '--scale-x': transform?.scaleX ? `${transform.scaleX}` : undefined,
@@ -64,18 +63,18 @@ export const Item = memo(
 
     return (
       <li
-        className={classNames(
-          `${prefix}-item-container`,
-          fadeIn && `${prefix}-fadeIn`,
+        className={cx(
+          styles.container,
+          fadeIn && styles.fadeIn,
           sorting && `${prefix}-sorting`,
-          dragOverlay && `${prefix}-dragOverlay`,
+          dragOverlay && styles.dragOverlay,
         )}
         style={containerStyle}
         ref={ref}
       >
         <div
           className={classNames(
-            `${prefix}-item`,
+            styles.item,
             dragging && `${prefix}-item-dragging`,
             handle && `${prefix}-withHandle`,
             dragOverlay && `${prefix}-item-dragOverlay`,
@@ -106,7 +105,7 @@ export const Item = memo(
             <>
               {item.id}
               <span
-                className={`${prefix}-action`}
+                className={styles.action}
                 onClick={() => {
                   console.log('123');
                 }}

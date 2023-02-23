@@ -1,8 +1,6 @@
 import type { CSSProperties, FC } from 'react';
 import React from 'react';
-import classNames from 'classnames';
-
-import styles from './index.less';
+import { useStyles } from './style';
 
 export interface ActionProps extends React.HTMLAttributes<HTMLButtonElement> {
   active?: {
@@ -12,24 +10,22 @@ export interface ActionProps extends React.HTMLAttributes<HTMLButtonElement> {
   cursor?: CSSProperties['cursor'];
 }
 
-export const Action: FC<ActionProps> = ({
-  active,
-  className,
-  cursor,
-  style,
-  ...props
-}) => (
-  <button
-    {...props}
-    className={classNames(styles.Action, className)}
-    tabIndex={0}
-    style={
-      {
-        ...style,
-        cursor,
-        '--fill': active?.fill,
-        '--background': active?.background,
-      } as CSSProperties
-    }
-  />
-);
+export const Action: FC<ActionProps> = ({ active, className, cursor, style, ...props }) => {
+  const { styles, cx } = useStyles();
+  return (
+    <button
+      type={'button'}
+      {...props}
+      className={cx(styles.action, className)}
+      tabIndex={0}
+      style={
+        {
+          ...style,
+          cursor,
+          '--fill': active?.fill,
+          '--background': active?.background,
+        } as CSSProperties
+      }
+    />
+  );
+};

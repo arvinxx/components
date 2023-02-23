@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-
+/**
+ * iframe: true
+ */
 import SortableList from '@arvinxu/sortable-list';
+import { useState } from 'react';
 
 const Demo = () => {
   const [list, setList] = useState([

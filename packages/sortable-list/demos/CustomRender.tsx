@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { Badge, Button } from 'antd';
-
 import SortableList from '@arvinxu/sortable-list';
-import { Flexbox } from '@arvinxu/layout-kit';
+import { Badge, Button } from 'antd';
+import { useState } from 'react';
+import { Flexbox } from 'react-layout-kit';
 
 interface Item {
   id: string;
@@ -54,12 +53,7 @@ const Demo = () => {
         getItemStyles={() => ({ padding: '16px' })}
         renderItem={(item: Item, { onRemove, onAddItem, index }) => {
           return (
-            <Flexbox
-              horizontal
-              width={'100%'}
-              distribution={'space-between'}
-              gap={12}
-            >
+            <Flexbox horizontal width={'100%'} distribution={'space-between'} gap={12}>
               <Flexbox horizontal gap={8}>
                 <div>
                   <Badge count={item.id} />
