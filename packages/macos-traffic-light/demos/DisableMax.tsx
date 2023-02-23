@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { Row, Col } from 'antd';
+import { Col, Row } from 'antd';
+import { FC } from 'react';
 
 import TrafficLight from '@arvinxu/macos-traffic-light';
 

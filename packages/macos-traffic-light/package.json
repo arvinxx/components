@@ -1,27 +1,32 @@
 {
   "name": "@arvinxu/macos-traffic-light",
   "version": "3.0.0",
-  "files": [
-    "dist"
+  "homepage": "https://github.com/arvinxx/components/tree/master/packages/macos-traffic-light#readme",
+  "repository": "git+https://github.com/arvinxx/components.git",
+  "sideEffects": [
+    "*.less"
   ],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "homepage": "https://github.com/arvinxx/components/tree/master/packages/macos-traffic-light#readme",
-  "repository": "git+https://github.com/arvinxx/components.git",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public"
-  },
-  "dependencies": {
-    "classnames": "^2.2.6"
-  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "father build",
-    "test": "jest",
-    "test:update": "jest -u",
-    "prepublishOnly": "pnpm run build",
+    "clean": "rm -rf dist coverage .umi",
     "cov": "jest --coverage",
-    "clean": "rm -rf dist coverage .umi"
+    "prepublishOnly": "pnpm run build",
+    "test": "jest",
+    "test:update": "jest -u"
+  },
+  "dependencies": {
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "classnames": "^2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

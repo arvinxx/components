@@ -28,5 +28,3 @@ macOS 上的 Traffic Light 控制按钮
 ## 其他配置
 
 <code src='../demos/DisableMax.tsx'></code>
-
-<API id='TrafficLight'></API>

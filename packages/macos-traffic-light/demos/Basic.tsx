@@ -1,4 +1,3 @@
-import React from 'react';
 import TrafficLight from '@arvinxu/macos-traffic-light';
 
 const Basic = () => {

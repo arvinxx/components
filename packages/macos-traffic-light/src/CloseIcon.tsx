@@ -1,16 +1,16 @@
-import React from 'react';
+import styled from '@emotion/styled';
 import type { FC } from 'react';
-import './icon.less';
 
-const CloseIcon: FC = () => {
+const CloseIcon: FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
-      className="avx-traffic-light-icon"
+      className={`avx-traffic-light-icon ${className}`}
       width="6"
       height="6"
       viewBox="0 0 6 6"
       xmlns="http://www.w3.org/2000/svg"
       data-testid="close-icon"
+      fill={'currentColor'}
     >
       <path
         fillRule="evenodd"
@@ -21,4 +21,12 @@ const CloseIcon: FC = () => {
   );
 };
 
-export default CloseIcon;
+export default styled(CloseIcon)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: rgba(0, 0, 0, 0.65);
+  fill: rgba(0, 0, 0, 0.65);
+`;
