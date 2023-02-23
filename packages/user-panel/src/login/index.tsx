@@ -1,14 +1,13 @@
 import { LockOutlined, MailOutlined, MobileOutlined, UserOutlined } from '@ant-design/icons';
+import ProForm, { ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-form';
 import { message, Tabs } from 'antd';
 import React, { useState } from 'react';
-import ProForm, { ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-form';
 import LoginErrorMessage from './LoginErrorMessage';
 
-import './index.less';
+import * as H from 'history';
 import { useFormatMessage } from '../components';
 import type { IUserLogin } from '../types';
-import * as H from 'history';
-import { useHistory } from 'react-router';
+import './index.less';
 
 export interface LoginProps {
   /**
@@ -39,7 +38,7 @@ const Login: React.FC<LoginProps> = (props) => {
   const { status, type: loginType } = loginStatus;
 
   const f = useFormatMessage();
-  const history = useHistory();
+  // const history = useHistory();
 
   return (
     <div className="avx-user-panel-login-container">

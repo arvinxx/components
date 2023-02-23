@@ -1,13 +1,12 @@
-import React from 'react';
-import type { FC } from 'react';
 import type * as H from 'history';
-import { useHistory } from 'react-router';
-import { Typography, Divider } from 'antd';
+import type { FC } from 'react';
+
+import { Divider, Typography } from 'antd';
 
 import WechatLogin from '../WechatLogin';
 
-import { useFormatMessage } from '../Intl';
 import type { PanelContentType } from '../../types';
+import { useFormatMessage } from '../Intl';
 
 import './style.less';
 
@@ -31,8 +30,6 @@ export interface FooterProps {
 
 export const Footer: FC<FooterProps> = ({ type, onWechatLoginClick, onRegisterClick }) => {
   const f = useFormatMessage();
-
-  const history = useHistory();
 
   const onClick = () => {
     switch (type) {
