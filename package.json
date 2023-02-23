@@ -52,7 +52,7 @@
     "**/*.{ts,tsx}": "pnpm run lint-staged:ts"
   },
   "devDependencies": {
-    "@ant-design/icons": "^4.8.0",
+    "@ant-design/icons": "^5",
     "@ant-design/pro-form": "^1.74.7",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13",
@@ -69,7 +69,7 @@
     "@umijs/lint": "^4",
     "@umijs/test": "^4.0.38",
     "ahooks": "^3.7.2",
-    "antd": "^4.24.5",
+    "antd": "^5",
     "babel-loader": "^8.3.0",
     "canvas": "^2.10.2",
     "commitlint": "^16.3.0",
@@ -79,6 +79,7 @@
     "dayjs": "^1.11.7",
     "dpdm": "^3.10.0",
     "dumi": "^2.0.16",
+    "dumi-theme-antd-style": "latest",
     "ejs": "^3.1.8",
     "enzyme-to-json": "^3.6.2",
     "eslint": "^8",

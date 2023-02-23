@@ -29,10 +29,6 @@ export default defineConfig({
   themeConfig: {
     name: '空谷的组件库',
     logo: 'https://gw.alipayobjects.com/zos/antfincdn/mj85r7V5aX/konggu.svg',
-    // sideBar: menus,
-  },
-  theme: {
-    '@c-primary': '#6CB7C7',
   },
   resolve: {
     atomDirs: [
@@ -50,7 +46,4 @@ export default defineConfig({
   alias,
 
   monorepoRedirect: {},
-  chainWebpack: (memo) => {
-    console.log(memo.resolve.alias);
-  },
 });

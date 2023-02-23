@@ -10,15 +10,15 @@ hero:
       link: /components
 
 features:
-  - emoji: 📦
+  - image: 📦
     title: 简单易用
-    desc: 在 Ant Design 上进行了自己的封装，更加易用
-  - emoji: ⚛
+    description: 在 Ant Design 上进行了自己的封装，更加易用
+  - image: ⚛
     title: Ant Design
-    desc: 与 Ant Design 设计体系一脉相承，无缝对接 antd 项目
-  - emoji: ⛑
+    description: 与 Ant Design 设计体系一脉相承，无缝对接 antd 项目
+  - image: ⛑
     title: TypeScript
-    desc: 使用 TypeScript 开发，提供完整的类型定义文件
+    description: 使用 TypeScript 开发，提供完整的类型定义文件
 
 footer: Open-source MIT Licensed | Copyright © 2021-present
 ---
