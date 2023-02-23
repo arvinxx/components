@@ -23,7 +23,6 @@ export default {
     '@arvinxu/journey-map': '<rootDir>/packages/journey-map/src',
     '@arvinxu/user-panel': '<rootDir>/packages/user-panel/src',
     '@arvinxu/heatmap-calendar': '<rootDir>/packages/heatmap-calendar/src',
-    '@arvinxu/utils': '<rootDir>/packages/utils/src',
     '@arvinxu/i18n': '<rootDir>/packages/i18n/src',
     '@arvinxu/sortable-list': '<rootDir>/packages/sortable-list/src',
     '@arvinxu/float-label-input': '<rootDir>/packages/float-label-input/src',
