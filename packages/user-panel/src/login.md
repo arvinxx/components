@@ -16,17 +16,17 @@ group: 登录/注册面板
 
 ## 登录面板
 
-<code src='../demos/Login.tsx' />
+<code src='../demos/Login.tsx' ></code>
 
 ### 带 Logo
 
-<code src='../demos/LoginWithLogo.tsx' />
+<code src='../demos/LoginWithLogo.tsx' ></code>
 
 ### 显示忘记密码
 
 填入 忘记密码所在 url 或者实现方法
 
-<code src='../demos/LoginWithForgotUrl.tsx' />
+<code src='../demos/LoginWithForgotUrl.tsx' ></code>
 
 ### 显示底部
 
@@ -36,6 +36,4 @@ group: 登录/注册面板
 
 支持通过 `react-i18next` 模块实现国际化文案
 
-<code src='../demos/LoginI18n.tsx' />
-
-<API src='./UserLogin.tsx'></API>
+<code src='../demos/LoginI18n.tsx' ></code>

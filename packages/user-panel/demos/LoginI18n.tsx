@@ -1,12 +1,12 @@
 /**
  * compact: true
  */
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import { Flexbox } from '@arvinxu/layout-kit';
 import UserPanel from '@arvinxu/user-panel';
 import { Switch } from 'antd';
 import { getI18n } from 'react-i18next';
+import { Flexbox } from 'react-layout-kit';
 
 const LoginWithLogo = () => {
   const [locale, setLocale] = useState('zh-CN');

@@ -27,5 +27,3 @@ nav:
 ### 高度
 
 <code src="./demos/Height" />
-
-<API src='./index.tsx'/></API>
