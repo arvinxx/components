@@ -28,28 +28,24 @@ group: 信息展示
 
 ### 默认用法
 
-<code src="./demos/Basic" />
+<code src="./demos/Basic" ></code>
 
 ### 不带进度条
 
-<code src="./demos/WithoutProgress" />
+<code src="./demos/WithoutProgress" ></code>
 
 ### 自定义颜色
 
-<code src="./demos/CustomColor" />
+<code src="./demos/CustomColor" ></code>
 
 ### 全屏加载
 
-<code src="./demos/Fullscreen" />
+<code src="./demos/Fullscreen" ></code>
 
 ### 加载状态控制
 
-<code src="./demos/LoadingState" />
+<code src="./demos/LoadingState" ></code>
 
 ### 自定义加载图形
 
-<code src="./demos/CustomLoader" />
-
-###
-
-<API src="./index.tsx"></API>
+<code src="./demos/CustomLoader" ></code>

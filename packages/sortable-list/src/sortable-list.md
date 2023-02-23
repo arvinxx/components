@@ -2,6 +2,7 @@
 title: SortableList 可排序列表
 order: 2
 atomId: SortableList
+group: 可排序
 ---
 
 # SortableList 可排序列表
