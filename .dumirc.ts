@@ -29,6 +29,7 @@ export default defineConfig({
   themeConfig: {
     name: '空谷的组件库',
     logo: 'https://gw.alipayobjects.com/zos/antfincdn/mj85r7V5aX/konggu.svg',
+    github: 'https://github.com/arvinxx/components',
   },
   resolve: {
     atomDirs: [
