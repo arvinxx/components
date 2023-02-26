@@ -1,5 +1,6 @@
 /**
  * compact: true
+ * inherit: true
  */
 import AssetGallery from '@arvinxu/asset-gallery';
 

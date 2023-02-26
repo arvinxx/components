@@ -2,6 +2,11 @@
 title: macOS TrafficLight
 atomId: TrafficLight
 group: 基础
+apiHeader:
+  pkg: '@arvinxu/macos-traffic-light'
+  defaultImport: true
+  docUrl: https://github.com/arvinxx/components/blob/master/packages/macos-traffic-light/src/macos-traffic-light.md
+  sourceUrl: https://github.com/arvinxx/components/blob/master/packages/macos-traffic-light/src/index.tsx
 ---
 
 ## Traffic Light

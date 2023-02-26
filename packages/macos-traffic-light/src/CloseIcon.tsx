@@ -29,4 +29,4 @@ export default styled(CloseIcon)`
 
   color: rgba(0, 0, 0, 0.65);
   fill: rgba(0, 0, 0, 0.65);
-`;
+` as any;

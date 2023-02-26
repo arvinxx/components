@@ -3,6 +3,11 @@ title: SortableList 可排序列表
 order: 2
 atomId: SortableList
 group: 可排序
+apiHeader:
+  pkg: '@arvinxu/sortable-list'
+  defaultImport: true
+  docUrl: https://github.com/arvinxx/components/blob/master/packages/sortable-list/src/sortable-list.md
+  sourceUrl: https://github.com/arvinxx/components/blob/master/packages/sortable-list/src/index.ts
 ---
 
 # SortableList 可排序列表

@@ -2,6 +2,11 @@
 title: PageLoading
 order: 2
 group: 信息展示
+apiHeader:
+  pkg: '@arvinxu/page-loading'
+  defaultImport: true
+  docUrl: https://github.com/arvinxx/components/blob/master/packages/page-loading/src/page-loading.md
+  sourceUrl: https://github.com/arvinxx/components/blob/master/packages/page-loading/src/index.tsx
 ---
 
 # PageLoading

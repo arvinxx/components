@@ -1,6 +1,7 @@
 ---
 title: 说明
 order: 1
+apiHeader: false
 nav:
   title: 基础组件
   order: 2

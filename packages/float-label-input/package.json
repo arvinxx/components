@@ -1,24 +1,28 @@
 {
   "name": "@arvinxu/float-label-input",
-  "version": "1.4.0",
-  "files": [
-    "dist"
+  "version": "1.4.1",
+  "homepage": "https://github.com/arvinxx/components/tree/master/packages/float-label-input#readme",
+  "repository": "git+https://github.com/arvinxx/components.git",
+  "sideEffects": [
+    "*.less"
   ],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "sideEffects": [
-    "*.less"
+  "files": [
+    "dist"
   ],
-  "homepage": "https://github.com/arvinxx/components/tree/master/packages/float-label-input#readme",
-  "repository": "git+https://github.com/arvinxx/components.git",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public"
+  "scripts": {
+    "build": "father build",
+    "clean": "rm -rf es lib dist build coverage .umi",
+    "cov": "jest --coverage",
+    "prepublishOnly": "pnpm run build",
+    "test": "jest",
+    "test:update": "jest -u"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
     "ahooks": "^2.9.6",
+    "classnames": "^2.2.6",
     "use-merge-value": "^1.0.2"
   },
   "peerDependencies": {
@@ -26,12 +30,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
-  "scripts": {
-    "build": "father build",
-    "test": "jest",
-    "test:update": "jest -u",
-    "prepublishOnly": "pnpm run build",
-    "cov": "jest --coverage",
-    "clean": "rm -rf es lib dist build coverage .umi"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

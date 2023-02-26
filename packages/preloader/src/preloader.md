@@ -2,6 +2,11 @@
 title: Preloader
 order: 1
 group: 信息展示
+apiHeader:
+  pkg: '@arvinxu/preloader'
+  defaultImport: true
+  docUrl: https://github.com/arvinxx/components/blob/master/packages/preloader/src/preloader.md
+  sourceUrl: https://github.com/arvinxx/components/blob/master/packages/preloader/src/index.ts
 ---
 
 # Preloader
