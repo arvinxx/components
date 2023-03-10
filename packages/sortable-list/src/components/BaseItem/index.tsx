@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import type { CSSProperties } from 'react';
 import { forwardRef, memo, useEffect } from 'react';
 
@@ -73,7 +72,7 @@ export const Item = memo(
         ref={ref}
       >
         <div
-          className={classNames(
+          className={cx(
             styles.item,
             dragging && `${prefix}-item-dragging`,
             handle && `${prefix}-withHandle`,

@@ -1,7 +1,7 @@
 import type { CSSProperties, FC } from 'react';
 import { createPortal } from 'react-dom';
 
-import cls from 'classnames';
+import { cx } from 'antd-style';
 
 import {
   closestCenter,
@@ -43,7 +43,7 @@ const Wrapper: FC<{
   className?: string;
   gap?: number;
 }> = ({ children, style, className, gap = 8 }) => (
-  <Flexbox className={cls('avx-sortable-list', className)} style={style} gap={gap}>
+  <Flexbox className={cx('avx-sortable-list', className)} style={style} gap={gap}>
     {children}
   </Flexbox>
 );
