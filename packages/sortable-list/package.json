@@ -4,11 +4,12 @@
   "homepage": "https://github.com/arvinxx/components/tree/master/packages/sortable-list#readme",
   "repository": "git+https://github.com/arvinxx/components.git",
   "sideEffects": false,
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
-    "dist"
+    "lib",
+    "es"
   ],
   "scripts": {
     "build": "father build",

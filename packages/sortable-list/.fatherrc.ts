@@ -1,4 +1,6 @@
 import { defineConfig } from 'father';
-import config from '../../.fatherrc';
 
-export default defineConfig({ ...config });
+export default defineConfig({
+  esm: { output: 'es' },
+  cjs: { output: 'lib', platform: 'browser' },
+});
