@@ -23,16 +23,17 @@ jobs:
         with:
           node-version: '18'
 
+      # npm 8 和 9 会在 `npm version` 时执行依赖树命令，进而报错退出
+      # Refs: https://github.com/semantic-release/npm/issues/540
+      - name: Setup npm 7
+        run: npm i -g npm@7 --registry=https://registry.npmjs.org
+
       - name: 🗳 安装依赖
         run: pnpm install
 
       - name: 📦 构建 npm 包
         run: pnpm run build
 
-      # npm 8 和 9 会在 `npm version` 时执行依赖树命令，进而报错退出
-      # Refs: https://github.com/semantic-release/npm/issues/540
-      - name: Setup npm 7
-        run: npm i -g npm@7 --registry=https://registry.npmjs.org
 
       - name: 🚀 npm 包发布
         run: pnpm run release
